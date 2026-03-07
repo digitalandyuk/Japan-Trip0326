@@ -3,111 +3,147 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Japan Family Trip — April 2026</title>
+<title>Japan Trip 2026</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500&display=swap');
-  :root {
-    --ink:#1a1a2e;--ink2:#16213e;--paper:#f5f0e8;
-    --blossom:#e8a0b0;--blossom2:#d4607a;--gold:#c9a84c;
-    --jade:#4a9e8e;--text:#2c2c3e;--muted:#7a7a8e;--white:#fdfbf7;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  body{font-family:'Noto Sans JP',sans-serif;background:var(--ink);color:var(--white);min-height:100vh;overflow-x:hidden;}
-  .header{background:linear-gradient(135deg,var(--ink) 0%,var(--ink2) 100%);padding:24px 20px 16px;text-align:center;position:relative;border-bottom:1px solid rgba(232,160,176,0.3);overflow:hidden;}
-  .header::before{content:'🌸';position:absolute;top:8px;left:16px;font-size:28px;opacity:0.4;}
-  .header::after{content:'🌸';position:absolute;top:8px;right:16px;font-size:28px;opacity:0.4;}
-  .header-jp{font-family:'Noto Serif JP',serif;font-size:13px;color:var(--blossom);letter-spacing:4px;margin-bottom:6px;}
-  .header h1{font-family:'Noto Serif JP',serif;font-size:clamp(20px,5vw,28px);font-weight:600;color:var(--white);letter-spacing:1px;}
-  .header-sub{font-size:12px;color:var(--muted);margin-top:6px;letter-spacing:1px;}
-  .family-tags{display:flex;justify-content:center;gap:8px;margin-top:12px;flex-wrap:wrap;}
-  .family-tag{background:rgba(232,160,176,0.15);border:1px solid rgba(232,160,176,0.3);color:var(--blossom);font-size:11px;padding:3px 10px;border-radius:20px;letter-spacing:0.5px;}
-  .sync-bar{background:rgba(255,255,255,0.04);border-bottom:1px solid rgba(255,255,255,0.06);padding:6px 16px;display:flex;align-items:center;justify-content:space-between;font-size:11px;color:var(--muted);}
-  .sync-dot{width:7px;height:7px;border-radius:50%;background:var(--muted);display:inline-block;margin-right:6px;}
-  .sync-dot.ok{background:#58d68d;}
-  .sync-dot.err{background:#e74c3c;}
-  .sync-dot.loading{background:var(--gold);animation:pulse 1s infinite;}
-  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.3;}}
-  .sync-refresh{background:none;border:1px solid rgba(255,255,255,0.1);color:var(--muted);font-size:10px;padding:2px 8px;border-radius:4px;cursor:pointer;font-family:'Noto Sans JP',sans-serif;}
-  .sync-refresh:hover{color:var(--white);}
-  .nav{display:flex;overflow-x:auto;background:var(--ink2);border-bottom:1px solid rgba(255,255,255,0.08);scrollbar-width:none;}
-  .nav::-webkit-scrollbar{display:none;}
-  .nav-btn{flex-shrink:0;background:none;border:none;color:var(--muted);font-family:'Noto Sans JP',sans-serif;font-size:12px;padding:14px 18px;cursor:pointer;letter-spacing:0.5px;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;}
-  .nav-btn:hover{color:var(--white);}
-  .nav-btn.active{color:var(--blossom);border-bottom-color:var(--blossom);}
-  .content{padding:20px;max-width:780px;margin:0 auto;}
-  .section{display:none;}
-  .section.active{display:block;}
-  .section-title{font-family:'Noto Serif JP',serif;font-size:18px;color:var(--blossom);margin-bottom:4px;}
-  .section-sub{font-size:12px;color:var(--muted);margin-bottom:20px;letter-spacing:0.5px;}
-  .day-card{background:var(--ink2);border:1px solid rgba(255,255,255,0.08);border-radius:12px;margin-bottom:12px;overflow:hidden;transition:border-color 0.2s;}
-  .day-card:hover{border-color:rgba(232,160,176,0.3);}
-  .day-header{padding:16px 18px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;user-select:none;}
-  .day-number{font-size:10px;color:var(--blossom);letter-spacing:2px;text-transform:uppercase;margin-bottom:3px;}
-  .day-title{font-family:'Noto Serif JP',serif;font-size:15px;color:var(--white);line-height:1.3;}
-  .day-date{font-size:11px;color:var(--muted);margin-top:3px;}
-  .day-chevron{color:var(--muted);font-size:16px;transition:transform 0.3s;margin-left:12px;}
-  .day-card.open .day-chevron{transform:rotate(180deg);}
-  .day-body{display:none;padding:0 18px 18px;border-top:1px solid rgba(255,255,255,0.06);}
-  .day-card.open .day-body{display:block;}
-  .coming-soon{padding:14px 18px;font-size:12px;color:var(--muted);font-style:italic;}
-  .timeline{margin-top:16px;}
-  .tl-item{display:grid;grid-template-columns:70px 1fr;gap:12px;margin-bottom:16px;position:relative;}
-  .tl-item::before{content:'';position:absolute;left:70px;top:24px;bottom:-16px;width:1px;background:rgba(232,160,176,0.15);}
-  .tl-item:last-child::before{display:none;}
-  .tl-time{font-size:11px;color:var(--blossom);padding-top:3px;text-align:right;letter-spacing:0.3px;line-height:1.4;}
-  .tl-content{background:rgba(255,255,255,0.04);border-radius:8px;padding:10px 12px;border-left:2px solid rgba(232,160,176,0.2);}
-  .tl-content.highlight{border-left-color:var(--blossom2);background:rgba(212,96,122,0.08);}
-  .tl-activity{font-size:13px;font-weight:500;color:var(--white);margin-bottom:4px;}
-  .tl-desc{font-size:12px;color:#aaa;line-height:1.5;margin-bottom:6px;}
-  .tl-meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
-  .tl-travel{font-size:11px;color:var(--jade);}
-  .tl-cost{font-size:11px;color:var(--gold);}
-  .tag{font-size:10px;padding:2px 7px;border-radius:10px;font-weight:500;letter-spacing:0.5px;text-transform:uppercase;}
-  .tag-BOOK{background:rgba(192,57,43,0.25);color:#e74c3c;border:1px solid rgba(231,76,60,0.3);}
-  .tag-OPT{background:rgba(142,68,173,0.2);color:#bb8fce;border:1px solid rgba(142,68,173,0.3);}
-  .tag-INCL{background:rgba(39,174,96,0.2);color:#58d68d;border:1px solid rgba(39,174,96,0.3);}
-  .tag-FREE{background:rgba(74,158,142,0.2);color:#76d7c4;border:1px solid rgba(74,158,142,0.3);}
-  .map-link{display:inline-block;margin-left:8px;font-size:10px;color:var(--jade);text-decoration:none;border:1px solid rgba(74,158,142,0.3);border-radius:4px;padding:1px 6px;vertical-align:middle;white-space:nowrap;}
-  .map-link:hover{background:rgba(74,158,142,0.15);}
-  .day-total{margin-top:16px;padding:12px;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);border-radius:8px;display:flex;justify-content:space-between;font-size:13px;}
-  .day-total span:first-child{color:var(--muted);}
-  .day-total span:last-child{color:var(--gold);font-weight:500;}
-  .checklist-group{margin-bottom:20px;}
-  .checklist-group-title{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--blossom);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid rgba(232,160,176,0.2);}
-  .check-item{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);}
-  .check-item:last-child{border-bottom:none;}
-  .check-box{width:18px;height:18px;flex-shrink:0;border:1.5px solid rgba(232,160,176,0.4);border-radius:4px;margin-top:1px;display:flex;align-items:center;justify-content:center;transition:all 0.2s;}
-  .check-item.checked .check-box{background:var(--blossom2);border-color:var(--blossom2);}
-  .check-item.checked .check-box::after{content:'✓';color:white;font-size:11px;}
-  .check-item.checked .check-label{text-decoration:line-through;color:var(--muted);}
-  .check-label{font-size:13px;color:var(--white);line-height:1.4;}
-  .check-note{font-size:11px;color:var(--muted);margin-top:2px;}
-  .progress-bar-wrap{background:rgba(255,255,255,0.08);border-radius:4px;height:4px;margin:12px 0 4px;overflow:hidden;}
-  .progress-bar{height:100%;background:var(--blossom2);border-radius:4px;transition:width 0.4s;}
-  .progress-label{font-size:11px;color:var(--muted);text-align:right;}
-  .transport-card,.emergency-card{background:var(--ink2);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:16px 18px;margin-bottom:12px;}
-  .transport-card h3{font-family:'Noto Serif JP',serif;font-size:14px;color:var(--blossom);margin-bottom:10px;}
-  .transport-card p{font-size:13px;color:#bbb;line-height:1.6;margin-bottom:6px;}
-  .tip{background:rgba(201,168,76,0.1);border-left:2px solid var(--gold);padding:8px 12px;border-radius:0 6px 6px 0;font-size:12px;color:#ccc;margin-top:8px;line-height:1.5;}
-  .emergency-card h3{font-size:13px;color:var(--blossom);letter-spacing:1px;text-transform:uppercase;margin-bottom:10px;}
-  .emergency-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:13px;}
-  .emergency-row:last-child{border-bottom:none;}
-  .emergency-label{color:var(--muted);}
-  .emergency-value{color:var(--white);font-weight:500;}
-  .emergency-value.red{color:#e74c3c;}
-  .phrase-card{background:var(--ink2);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:14px 16px;margin-bottom:10px;display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:center;}
-  .phrase-jp{font-family:'Noto Serif JP',serif;font-size:18px;color:var(--white);}
-  .phrase-en{font-size:13px;color:var(--blossom);margin-bottom:2px;}
-  .phrase-rom{font-size:11px;color:var(--muted);font-style:italic;}
-  .loading-msg{text-align:center;padding:40px 20px;color:var(--muted);font-size:13px;}
-  @media(max-width:480px){.phrase-card{grid-template-columns:1fr;gap:4px;}.tl-item{grid-template-columns:60px 1fr;}}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500&display=swap');
+:root{
+  --ink:#1a1a2e;--ink2:#16213e;--ink3:#0f172a;
+  --blossom:#e8a0b0;--blossom2:#d4607a;
+  --gold:#c9a84c;--jade:#4a9e8e;
+  --muted:#7a7a8e;--white:#fdfbf7;
+  --red:#e74c3c;--amber:#e67e22;--green:#27ae60;--purple:#8e44ad;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Noto Sans JP',sans-serif;background:var(--ink);color:var(--white);min-height:100vh;overflow-x:hidden;}
+
+/* HEADER */
+.header{background:linear-gradient(135deg,var(--ink) 0%,var(--ink2) 100%);padding:20px 20px 14px;text-align:center;position:relative;border-bottom:1px solid rgba(232,160,176,0.3);}
+.header::before{content:'🌸';position:absolute;top:8px;left:14px;font-size:24px;opacity:0.35;}
+.header::after{content:'🌸';position:absolute;top:8px;right:14px;font-size:24px;opacity:0.35;}
+.header-jp{font-family:'Noto Serif JP',serif;font-size:12px;color:var(--blossom);letter-spacing:4px;margin-bottom:5px;}
+.header h1{font-family:'Noto Serif JP',serif;font-size:clamp(18px,5vw,26px);font-weight:600;color:var(--white);}
+.header-sub{font-size:11px;color:var(--muted);margin-top:5px;letter-spacing:0.5px;}
+.family-tags{display:flex;justify-content:center;gap:6px;margin-top:10px;flex-wrap:wrap;}
+.family-tag{background:rgba(232,160,176,0.12);border:1px solid rgba(232,160,176,0.25);color:var(--blossom);font-size:11px;padding:2px 9px;border-radius:20px;}
+
+/* SYNC */
+.sync-bar{background:rgba(255,255,255,0.03);border-bottom:1px solid rgba(255,255,255,0.06);padding:5px 14px;display:flex;align-items:center;justify-content:space-between;font-size:11px;color:var(--muted);}
+.sync-dot{width:6px;height:6px;border-radius:50%;background:var(--muted);display:inline-block;margin-right:6px;vertical-align:middle;}
+.sync-dot.ok{background:#58d68d;}
+.sync-dot.err{background:var(--red);}
+.sync-dot.loading{background:var(--gold);animation:pulse 1s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.3;}}
+.sync-refresh{background:none;border:1px solid rgba(255,255,255,0.1);color:var(--muted);font-size:10px;padding:2px 7px;border-radius:4px;cursor:pointer;font-family:inherit;}
+.sync-refresh:hover{color:var(--white);}
+
+/* NAV */
+.nav{display:flex;overflow-x:auto;background:var(--ink2);border-bottom:1px solid rgba(255,255,255,0.07);scrollbar-width:none;}
+.nav::-webkit-scrollbar{display:none;}
+.nav-btn{flex-shrink:0;background:none;border:none;color:var(--muted);font-family:inherit;font-size:12px;padding:13px 16px;cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;}
+.nav-btn:hover{color:var(--white);}
+.nav-btn.active{color:var(--blossom);border-bottom-color:var(--blossom);}
+
+/* CONTENT */
+.content{padding:16px;max-width:800px;margin:0 auto;}
+.section{display:none;}
+.section.active{display:block;}
+.section-title{font-family:'Noto Serif JP',serif;font-size:17px;color:var(--blossom);margin-bottom:3px;}
+.section-sub{font-size:11px;color:var(--muted);margin-bottom:16px;}
+
+/* DAY CARDS */
+.day-card{background:var(--ink2);border:1px solid rgba(255,255,255,0.07);border-radius:12px;margin-bottom:10px;overflow:hidden;transition:border-color 0.2s;}
+.day-card:hover{border-color:rgba(232,160,176,0.25);}
+.day-header{padding:14px 16px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;user-select:none;}
+.day-label{font-size:10px;color:var(--blossom);letter-spacing:2px;text-transform:uppercase;margin-bottom:2px;}
+.day-title{font-family:'Noto Serif JP',serif;font-size:14px;color:var(--white);line-height:1.3;}
+.day-loc{font-size:11px;color:var(--muted);margin-top:2px;}
+.day-chevron{color:var(--muted);font-size:14px;transition:transform 0.3s;margin-left:10px;flex-shrink:0;}
+.day-card.open .day-chevron{transform:rotate(180deg);}
+.day-body{display:none;padding:0 16px 16px;border-top:1px solid rgba(255,255,255,0.05);}
+.day-card.open .day-body{display:block;}
+.coming-soon{padding:12px 16px;font-size:12px;color:var(--muted);font-style:italic;}
+
+/* TIMELINE */
+.timeline{margin-top:14px;}
+.tl-item{display:grid;grid-template-columns:68px 1fr;gap:10px;margin-bottom:14px;position:relative;}
+.tl-item::before{content:'';position:absolute;left:68px;top:22px;bottom:-14px;width:1px;background:rgba(232,160,176,0.12);}
+.tl-item:last-child::before{display:none;}
+.tl-time{font-size:10px;color:var(--blossom);padding-top:3px;text-align:right;line-height:1.4;}
+.tl-content{background:rgba(255,255,255,0.03);border-radius:8px;padding:9px 11px;border-left:2px solid rgba(232,160,176,0.15);}
+.tl-content.highlight{border-left-color:var(--blossom2);background:rgba(212,96,122,0.07);}
+.tl-content.confirmed{border-left-color:rgba(39,174,96,0.4);}
+.tl-content.pending{border-left-color:rgba(230,126,34,0.5);background:rgba(230,126,34,0.05);}
+.tl-activity{font-size:13px;font-weight:500;color:var(--white);margin-bottom:3px;line-height:1.3;}
+.tl-notes{font-size:11px;color:#aaa;line-height:1.5;margin-bottom:5px;}
+.tl-meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center;}
+.map-link{display:inline-flex;align-items:center;gap:3px;font-size:10px;color:var(--jade);text-decoration:none;border:1px solid rgba(74,158,142,0.3);border-radius:4px;padding:1px 6px;white-space:nowrap;}
+.map-link:hover{background:rgba(74,158,142,0.12);}
+.status-badge{font-size:10px;padding:1px 6px;border-radius:10px;font-weight:500;letter-spacing:0.3px;text-transform:uppercase;}
+.s-confirmed{background:rgba(39,174,96,0.15);color:#58d68d;border:1px solid rgba(39,174,96,0.25);}
+.s-booked{background:rgba(39,174,96,0.1);color:#76d7c4;border:1px solid rgba(74,158,142,0.25);}
+.s-pending{background:rgba(230,126,34,0.15);color:#f0a500;border:1px solid rgba(230,126,34,0.3);}
+.s-planning{background:rgba(142,68,173,0.12);color:#bb8fce;border:1px solid rgba(142,68,173,0.25);}
+.s-included{background:rgba(39,174,96,0.12);color:#58d68d;border:1px solid rgba(39,174,96,0.2);}
+.s-pay_at_property{background:rgba(201,168,76,0.15);color:var(--gold);border:1px solid rgba(201,168,76,0.3);}
+
+/* CHECKLIST */
+.checklist-toggle{display:flex;gap:8px;margin-bottom:16px;}
+.toggle-btn{flex:1;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:var(--muted);font-family:inherit;font-size:12px;cursor:pointer;transition:all 0.2s;}
+.toggle-btn.active{background:rgba(232,160,176,0.12);border-color:rgba(232,160,176,0.3);color:var(--blossom);}
+.progress-wrap{background:rgba(255,255,255,0.07);border-radius:4px;height:4px;margin-bottom:4px;overflow:hidden;}
+.progress-bar{height:100%;background:var(--blossom2);border-radius:4px;transition:width 0.4s;}
+.progress-label{font-size:11px;color:var(--muted);text-align:right;margin-bottom:16px;}
+.cl-group{margin-bottom:18px;}
+.cl-group-title{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--blossom);margin-bottom:8px;padding-bottom:5px;border-bottom:1px solid rgba(232,160,176,0.15);}
+.cl-item{background:rgba(255,255,255,0.03);border-radius:8px;padding:10px 12px;margin-bottom:6px;border-left:2px solid rgba(255,255,255,0.08);}
+.cl-item.urgent{border-left-color:var(--red);}
+.cl-item.soon{border-left-color:var(--amber);}
+.cl-item.done{border-left-color:var(--green);opacity:0.6;}
+.cl-item-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;}
+.cl-task{font-size:13px;color:var(--white);line-height:1.3;}
+.cl-item.done .cl-task{text-decoration:line-through;color:var(--muted);}
+.cl-meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:5px;align-items:center;}
+.cl-who{font-size:10px;color:var(--muted);background:rgba(255,255,255,0.06);padding:1px 6px;border-radius:10px;}
+.cl-deadline{font-size:10px;color:var(--gold);}
+.cl-notes{font-size:11px;color:#999;margin-top:4px;line-height:1.4;}
+.cl-status{font-size:10px;padding:1px 7px;border-radius:10px;white-space:nowrap;flex-shrink:0;}
+.cs-paid{background:rgba(39,174,96,0.15);color:#58d68d;border:1px solid rgba(39,174,96,0.25);}
+.cs-pending{background:rgba(230,126,34,0.15);color:#f0a500;border:1px solid rgba(230,126,34,0.3);}
+.cs-not_booked{background:rgba(231,76,60,0.15);color:#e74c3c;border:1px solid rgba(231,76,60,0.3);}
+.cs-on_arrival{background:rgba(142,68,173,0.12);color:#bb8fce;border:1px solid rgba(142,68,173,0.25);}
+.cs-pay_at_property{background:rgba(201,168,76,0.12);color:var(--gold);border:1px solid rgba(201,168,76,0.25);}
+.cs-reminder{background:rgba(74,158,142,0.12);color:#76d7c4;border:1px solid rgba(74,158,142,0.25);}
+.cs-incomplete{background:rgba(231,76,60,0.12);color:#e74c3c;border:1px solid rgba(231,76,60,0.2);}
+
+/* TRANSPORT / PHRASES / EMERGENCY */
+.info-card{background:var(--ink2);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:14px 16px;margin-bottom:10px;}
+.info-card h3{font-family:'Noto Serif JP',serif;font-size:14px;color:var(--blossom);margin-bottom:8px;}
+.info-card p{font-size:12px;color:#bbb;line-height:1.6;margin-bottom:5px;}
+.info-card p:last-child{margin-bottom:0;}
+.tip{background:rgba(201,168,76,0.08);border-left:2px solid var(--gold);padding:7px 10px;border-radius:0 5px 5px 0;font-size:11px;color:#ccc;margin-top:7px;line-height:1.5;}
+.e-row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:12px;}
+.e-row:last-child{border-bottom:none;}
+.e-label{color:var(--muted);}
+.e-value{color:var(--white);font-weight:500;}
+.e-value.red{color:var(--red);}
+.phrase-card{background:var(--ink2);border:1px solid rgba(255,255,255,0.07);border-radius:9px;padding:12px 14px;margin-bottom:8px;display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:center;}
+.phrase-jp{font-family:'Noto Serif JP',serif;font-size:17px;color:var(--white);}
+.phrase-en{font-size:12px;color:var(--blossom);margin-bottom:2px;}
+.phrase-rom{font-size:11px;color:var(--muted);font-style:italic;}
+.loading-msg{text-align:center;padding:40px;color:var(--muted);font-size:13px;}
+@media(max-width:480px){
+  .phrase-card{grid-template-columns:1fr;gap:3px;}
+  .tl-item{grid-template-columns:56px 1fr;}
+  .tl-item::before{left:56px;}
+}
 </style>
 </head>
 <body>
+
 <div class="header">
   <div class="header-jp">日本の旅 ・ 2026年4月</div>
-  <h1 id="trip-title">Japan Family Trip</h1>
-  <div class="header-sub" id="trip-dates">3–17 April 2026 · Tokyo · Hakone · Kyoto · Osaka</div>
+  <h1 id="trip-title">Japan Family Trip 2026</h1>
+  <div class="header-sub" id="trip-dates">Fri 3 Apr – Sat 18 Apr 2026</div>
   <div class="family-tags" id="family-tags">
     <span class="family-tag">Andy</span>
     <span class="family-tag">Sarah</span>
@@ -115,10 +151,12 @@
     <span class="family-tag">Charlie</span>
   </div>
 </div>
+
 <div class="sync-bar">
-  <span><span class="sync-dot loading" id="sync-dot"></span><span id="sync-status">Loading data...</span></span>
+  <span><span class="sync-dot loading" id="sync-dot"></span><span id="sync-status">Loading...</span></span>
   <button class="sync-refresh" onclick="loadData()">↻ Refresh</button>
 </div>
+
 <nav class="nav">
   <button class="nav-btn active" onclick="showSection('days',this)">📅 Days</button>
   <button class="nav-btn" onclick="showSection('before',this)">✅ Before You Go</button>
@@ -126,42 +164,80 @@
   <button class="nav-btn" onclick="showSection('phrases',this)">🗣 Phrases</button>
   <button class="nav-btn" onclick="showSection('emergency',this)">🆘 Emergency</button>
 </nav>
+
 <div class="content">
-  <div id="section-days" class="section active"><div class="loading-msg">Loading itinerary...</div></div>
+
+  <!-- DAYS -->
+  <div id="section-days" class="section active">
+    <div class="loading-msg" id="days-loading">Loading itinerary...</div>
+  </div>
+
+  <!-- BEFORE YOU GO -->
   <div id="section-before" class="section">
     <div class="section-title">Before You Go</div>
-    <div class="section-sub">Synced from the trip spreadsheet — master list updated by Cowork</div>
-    <div class="progress-bar-wrap"><div class="progress-bar" id="prog-bar" style="width:0%"></div></div>
-    <div class="progress-label" id="prog-label">0 of 0 complete</div>
+    <div class="section-sub">Synced from trip spreadsheet via Cowork</div>
+    <div class="checklist-toggle">
+      <button class="toggle-btn active" id="btn-urgency" onclick="setChecklistMode('urgency')">⚡ Urgency view</button>
+      <button class="toggle-btn" id="btn-simple" onclick="setChecklistMode('simple')">📋 Simple view</button>
+    </div>
+    <div class="progress-wrap"><div class="progress-bar" id="prog-bar" style="width:0%"></div></div>
+    <div class="progress-label" id="prog-label">Loading...</div>
     <div id="checklist-container"></div>
   </div>
+
+  <!-- TRANSPORT -->
   <div id="section-transport" class="section">
     <div class="section-title">Getting Around</div>
-    <div class="section-sub">Japan transport essentials for the family</div>
-    <div class="transport-card"><h3>🚃 IC Card (Suica / Pasmo)</h3><p>The essential tap-and-go card for all trains, buses and metro. Works across Tokyo, Kyoto, Osaka and most of Japan.</p><p>Pick up at any JR station arrivals hall or add to Apple Wallet before you fly.</p><div class="tip">💡 Load ¥3,000–5,000 per person on arrival. Top up at any ticket machine.</div></div>
-    <div class="transport-card"><h3>🚄 Shinkansen (Bullet Train)</h3><p>Tokyo → Kyoto takes ~2h 15min on the Nozomi. Book reserved seats in advance — especially in cherry blossom season.</p><div class="tip">💡 Sit on the right side (D/E seats) Tokyo → Kyoto for Mt Fuji views on a clear day.</div></div>
-    <div class="transport-card"><h3>🚕 Taxis</h3><p>Plentiful, metered and honest. No tipping required. Doors open and close automatically — don't touch them.</p><div class="tip">💡 Use GO app (Japan's Uber equivalent) to book ahead and pay by card.</div></div>
-    <div class="transport-card"><h3>🚇 Tokyo Metro</h3><p>Covers almost everywhere in central Tokyo. Google Maps works perfectly for routing.</p><div class="tip">💡 Stand to the left on escalators in Tokyo, right in Osaka.</div></div>
-    <div class="transport-card"><h3>🚌 Hakone Freepass</h3><p>Covers Romancecar train from Shinjuku + all transport within Hakone. Buy at Odakyu counter at Shinjuku or digitally on your phone.</p><div class="tip">💡 Still need to buy x4 Freepasses + Romancecar supplements.</div></div>
+    <div class="section-sub">Essential transport info for the trip</div>
+    <div class="info-card"><h3>🚃 IC Card (Suica)</h3><p>Tap-and-go card for all trains, metro and buses across Japan. Add to Apple Wallet before you fly or collect at Narita.</p><div class="tip">💡 Load ¥5,000–10,000 each on arrival. Top up at any ticket machine or 7-Eleven.</div></div>
+    <div class="info-card"><h3>🚌 Hakone Freepass</h3><p>Covers all transport within Hakone — ropeway, lake cruise, bus, local rail. Already booked via EMot app (Sarah). Romancecar supplement needed separately.</p><div class="tip">💡 Freepass × 4 already paid. Romancecar seats open Mon 9 Mar — book via EMot app.</div></div>
+    <div class="info-card"><h3>🚄 Shinkansen</h3><p>Odawara → Kyoto ~75 mins. Green Car seats open Tue 10 Mar on Klook (~¥13,000pp). Sit right side (D/E seats) for Mt Fuji views.</p><div class="tip">💡 Jack books his own ticket same service via Klook.</div></div>
+    <div class="info-card"><h3>🚕 Taxis in Japan</h3><p>Metered, honest, no tipping. Doors open automatically — don't touch them. Show destination in Japanese on your phone.</p><div class="tip">💡 Use GO app to book ahead and pay by card.</div></div>
+    <div class="info-card"><h3>✈️ Airport Transfers</h3><p>Narita → Shinjuku: Klook bus × 4 already paid (£91.28). Seoul taxis both ways confirmed via Tourmaker (Ref #1479-1 and #1479-2) — driver holds EVANS FAMILY banner.</p><div class="tip">💡 WhatsApp driver details arrive the evening before each transfer.</div></div>
   </div>
+
+  <!-- PHRASES -->
   <div id="section-phrases" class="section">
     <div class="section-title">Useful Phrases</div>
-    <div class="section-sub">The basics go a long way — Japanese people appreciate the effort</div>
+    <div class="section-sub">Japanese people appreciate the effort — even a few words go a long way</div>
     <div id="phrases-container"></div>
   </div>
+
+  <!-- EMERGENCY -->
   <div id="section-emergency" class="section">
     <div class="section-title">Emergency Info</div>
-    <div class="section-sub">Keep this section saved or screenshotted</div>
-    <div class="emergency-card"><h3>Emergency Numbers</h3><div class="emergency-row"><span class="emergency-label">Police</span><span class="emergency-value red">110</span></div><div class="emergency-row"><span class="emergency-label">Ambulance / Fire</span><span class="emergency-value red">119</span></div><div class="emergency-row"><span class="emergency-label">Tourist Helpline (24hr)</span><span class="emergency-value">0570-783-800</span></div><div class="emergency-row"><span class="emergency-label">JNTO Helpline</span><span class="emergency-value">050-3816-2787</span></div></div>
-    <div class="emergency-card"><h3>British Embassy — Tokyo</h3><div class="emergency-row"><span class="emergency-label">Address</span><span class="emergency-value">1 Ichiban-cho, Chiyoda-ku</span></div><div class="emergency-row"><span class="emergency-label">Phone</span><span class="emergency-value">+81 3-5211-1100</span></div></div>
-    <div class="emergency-card"><h3>Medical</h3><div class="emergency-row"><span class="emergency-label">Tokyo Medical & Surgical Clinic</span><span class="emergency-value">+81 3-3436-3028</span></div><div class="emergency-row"><span class="emergency-label">St Luke's International Hospital</span><span class="emergency-value">+81 3-5550-7166</span></div><div class="emergency-row"><span class="emergency-label">Japan Helpline (English 24hr)</span><span class="emergency-value">0120-461-997</span></div></div>
-    <div class="emergency-card"><h3>Travel Insurance</h3><div class="emergency-row"><span class="emergency-label">Provider</span><span class="emergency-value">Add your provider here</span></div><div class="emergency-row"><span class="emergency-label">Policy number</span><span class="emergency-value">Add policy number</span></div><div class="emergency-row"><span class="emergency-label">Emergency line</span><span class="emergency-value">Add emergency number</span></div></div>
+    <div class="section-sub">Screenshot this page before you travel</div>
+    <div class="info-card"><h3>🚨 Emergency Numbers</h3>
+      <div class="e-row"><span class="e-label">Police (Japan)</span><span class="e-value red">110</span></div>
+      <div class="e-row"><span class="e-label">Ambulance / Fire (Japan)</span><span class="e-value red">119</span></div>
+      <div class="e-row"><span class="e-label">Tourist Helpline 24hr</span><span class="e-value">0570-783-800</span></div>
+      <div class="e-row"><span class="e-label">JNTO English Helpline</span><span class="e-value">050-3816-2787</span></div>
+      <div class="e-row"><span class="e-label">Police (South Korea)</span><span class="e-value red">112</span></div>
+      <div class="e-row"><span class="e-label">Ambulance (South Korea)</span><span class="e-value red">119</span></div>
+    </div>
+    <div class="info-card"><h3>🇬🇧 British Embassy</h3>
+      <div class="e-row"><span class="e-label">Tokyo</span><span class="e-value">+81 3-5211-1100</span></div>
+      <div class="e-row"><span class="e-label">Seoul</span><span class="e-value">+82 2-3210-5500</span></div>
+    </div>
+    <div class="info-card"><h3>🏥 English-Speaking Medical</h3>
+      <div class="e-row"><span class="e-label">Tokyo Medical & Surgical</span><span class="e-value">+81 3-3436-3028</span></div>
+      <div class="e-row"><span class="e-label">St Luke's Tokyo</span><span class="e-value">+81 3-5550-7166</span></div>
+      <div class="e-row"><span class="e-label">Japan Helpline 24hr</span><span class="e-value">0120-461-997</span></div>
+    </div>
+    <div class="info-card"><h3>📋 Travel Insurance</h3>
+      <div class="e-row"><span class="e-label">Provider</span><span class="e-value">Add your provider</span></div>
+      <div class="e-row"><span class="e-label">Policy number</span><span class="e-value">Add policy number</span></div>
+      <div class="e-row"><span class="e-label">Emergency line</span><span class="e-value">Add emergency number</span></div>
+    </div>
   </div>
-</div>
+
+</div><!-- /content -->
+
 <script>
-const GIST_URL='https://gist.githubusercontent.com/digitalandyuk/723143532417d4e994ca1a16b3da339f/raw/japan-trip.json';
-const FALLBACK={trip:{title:"Japan Family Trip",dates:"3–17 April 2026",family:["Andy","Sarah","Jack","Charlie"]},days:[{day:1,date:"Thursday 3 April",title:"Arrival — Tokyo",items:[]},{day:2,date:"Monday 6 April",title:"Sumo · Tsukiji · Asakusa · Ueno · Shinjuku",totalYen:56580,totalGBP:"£269",items:[{time:"07:00",activity:"Breakfast — Keio Plaza",description:"Japanese/Western buffet — early start.",travel:"",cost:"INCL.",tag:"INCL",mapQuery:"Keio Plaza Hotel Shinjuku Tokyo"},{time:"07:40",activity:"Taxi to Arashio-beya Sumo Stable",description:"Direct from hotel to Hamacho (~20 mins). Stable opens 08:00.",travel:"🚕 Taxi ~20 mins",cost:"¥2,500",tag:"",mapQuery:"Keio Plaza Hotel Shinjuku Tokyo",destinationMapQuery:"Arashio Stable Hamacho Tokyo"},{time:"08:00–09:30",activity:"Sumo Morning Training — Arashio-beya",description:"Watch professional wrestlers train ringside. Book via magicaltripjapan.com — fills very fast in cherry blossom season.",travel:"",cost:"¥14,000",tag:"BOOK",mapQuery:"Arashio Stable Hamacho Tokyo"},{time:"09:45",activity:"Taxi to Tsukiji Outer Market",description:"Short hop from Hamacho — 10 mins direct.",travel:"🚕 Taxi ~10 mins",cost:"¥1,200",tag:"",mapQuery:"Arashio Stable Hamacho Tokyo",destinationMapQuery:"Tsukiji Outer Market Tokyo"},{time:"10:00–11:00",activity:"Tsukiji Outer Market — Food Grazing",description:"Tamagoyaki, uni, grilled scallops, fresh yakitori. Go stall to stall — most sell out by late morning.",travel:"",cost:"¥8,000",tag:"",mapQuery:"Tsukiji Outer Market Tokyo"},{time:"11:15",activity:"Taxi to Asakusa",description:"Direct transfer — comfortable for the group.",travel:"🚕 Taxi ~15 mins",cost:"¥1,800",tag:"",mapQuery:"Tsukiji Outer Market Tokyo",destinationMapQuery:"Senso-ji Temple Asakusa Tokyo"},{time:"11:30–13:00",activity:"Senso-ji Temple + Nakamise + Backstreets",description:"Oldest Tokyo temple (645 AD). Enter through Kaminarimon Gate.",travel:"",cost:"¥3,200",tag:"",mapQuery:"Senso-ji Temple Asakusa Tokyo"},{time:"13:00–14:00",activity:"Lunch in Asakusa",description:"Options: Daikokuya (tempura), Namiki Yabusoba (soba).",travel:"",cost:"¥5,200",tag:"",mapQuery:"Daikokuya Asakusa Tokyo"},{time:"14:15",activity:"Walk to Ueno Park",description:"Flat, easy 20–25 min walk along the river.",travel:"🚶 Walk ~20–25 mins",cost:"FREE",tag:"FREE",mapQuery:"Ueno Park Tokyo"},{time:"14:45–15:30",activity:"Ueno Park — Cherry Blossom Viewing",description:"One of Tokyo's best hanami spots in early April.",travel:"",cost:"FREE",tag:"FREE",mapQuery:"Ueno Park Tokyo"},{time:"15:45",activity:"Travel to Imperial Palace East Gardens",description:"JR Keihin-Tohoku from Ueno → Tokyo Station (~8 min) + 10 min walk.",travel:"🚃 JR ~8 mins + walk",cost:"¥640",tag:"OPT",mapQuery:"Ueno Station Tokyo",destinationMapQuery:"Imperial Palace East Gardens Tokyo"},{time:"16:00–17:00",activity:"Imperial Palace East Gardens",description:"Tranquil formal gardens. Skip entirely if time-poor.",travel:"",cost:"",tag:"OPT",mapQuery:"Imperial Palace East Gardens Tokyo"},{time:"17:30",activity:"Return to Shinjuku / Hotel",description:"JR Chuo Line — Tokyo Station → Shinjuku. Direct, no transfers.",travel:"🚃 JR Chuo ~14 mins",cost:"¥840",tag:"",mapQuery:"Tokyo Station",destinationMapQuery:"Shinjuku Station Tokyo"},{time:"19:00",activity:"Dinner — Kabukicho / Shinjuku",description:"Neon-lit entertainment district. Huge range of ramen, yakitori and izakaya.",travel:"🚶 Walk from hotel",cost:"¥11,200",tag:"",mapQuery:"Kabukicho Shinjuku Tokyo"},{time:"20:30",activity:"Golden Gai",description:"Six alleys of tiny themed bars. One drink per bar. Cash only in most bars.",travel:"🚶 Walk 3–4 mins",cost:"¥8,000",tag:"",mapQuery:"Golden Gai Shinjuku Tokyo"}]}],checklist:[{group:"Bookings to Confirm",items:[{label:"Sumo Training — Arashio-beya",note:"Book via magicaltripjapan.com or direct. Fills fast in cherry blossom season.",checked:false},{label:"Hakone Freepass x4",note:"Buy digitally on phones or at Odakyu counter, Shinjuku. Also buy Romancecar supplement.",checked:false},{label:"Shinkansen reserved seats",note:"Tokyo → Kyoto and return. Book in advance.",checked:false},{label:"Hotels — all nights confirmed",note:"Check all confirmation emails received.",checked:false},{label:"Airport transfers confirmed",note:"Arrival and departure.",checked:false}]},{group:"Before You Fly",items:[{label:"Travel insurance purchased",note:"Check covers all 4 family members for Japan.",checked:false},{label:"Passport validity checked",note:"Must be valid for duration of trip.",checked:false},{label:"Notify bank of travel dates",note:"Avoid cards being blocked abroad.",checked:false},{label:"Download Google Maps — Japan offline",note:"Essential for navigation without data.",checked:false},{label:"Download GO app (Japan taxi app)",note:"Book taxis by card in advance.",checked:false},{label:"Download Google Translate",note:"Enable Japanese offline + camera translation.",checked:false},{label:"Yen — order cash",note:"Many places in Japan are still cash only.",checked:false},{label:"Suica / Pasmo set up in Apple Wallet",note:"Or plan to pick up at airport on arrival.",checked:false}]},{group:"Packing",items:[{label:"Comfortable walking shoes for everyone",note:"You'll average 15,000+ steps a day.",checked:false},{label:"Portable phone charger (power bank)",note:"Long days out — essential.",checked:false},{label:"UK to Japan plug adaptor",note:"Japan uses Type A (same as US).",checked:false},{label:"Light layers / rain layer",note:"April weather is mild but changeable.",checked:false},{label:"Small day bag / backpack each",note:"For daily carry — coins, water, snacks.",checked:false}]},{group:"Admin",items:[{label:"Jack confirmed — travel from Cardiff",note:"Jack at Royal Welsh College of Music & Drama — confirm travel to meet family.",checked:false},{label:"All confirmation emails saved",note:"Hotels, activities, flights.",checked:false},{label:"Emergency info shared with family",note:"Embassy, insurance, hospital numbers.",checked:false},{label:"Travel insurance docs downloaded",note:"Accessible offline on phones.",checked:false}]}]};
-let tripData=null;
+const GIST='https://gist.githubusercontent.com/digitalandyuk/723143532417d4e994ca1a16b3da339f/raw/japan-trip.json';
+let tripData=null, clMode='urgency';
+
+// ── MAP LINKS ──────────────────────────────────────────
 function mapLink(q,dq){
   if(!q)return'';
   const url=dq
@@ -169,77 +245,209 @@ function mapLink(q,dq){
     :`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
   return`<a href="${url}" target="_blank" class="map-link">📍 Map</a>`;
 }
+
+// ── STATUS BADGES ──────────────────────────────────────
+function statusBadge(s){
+  const map={
+    confirmed:'Confirmed',booked:'Booked',pending:'Pending',
+    planning:'Planning',included:'Included',pay_at_property:'Pay on arrival'
+  };
+  return s&&map[s]?`<span class="status-badge s-${s}">${map[s]}</span>`:'';
+}
+function contentClass(s){
+  if(s==='confirmed'||s==='booked'||s==='included')return'confirmed';
+  if(s==='pending')return'pending';
+  if(s==='BOOK')return'highlight';
+  return'';
+}
+
+// ── LOAD DATA ──────────────────────────────────────────
 async function loadData(){
   setSyncStatus('loading','Loading...');
   try{
-    const res=await fetch(GIST_URL+'?t='+Date.now());
-    if(!res.ok)throw new Error('HTTP '+res.status);
-    tripData=await res.json();
-    setSyncStatus('ok','Live · Updated '+new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}));
+    const r=await fetch(GIST+'?t='+Date.now());
+    if(!r.ok)throw new Error();
+    tripData=await r.json();
+    setSyncStatus('ok','Live · '+new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}));
   }catch(e){
-    tripData=FALLBACK;
-    setSyncStatus('err','Using cached data — check Gist URL');
+    setSyncStatus('err','Could not load — check connection');
+    tripData=null;
   }
-  renderDays();updateHeader();renderChecklist();
+  if(tripData){renderDays();renderChecklist();updateHeader();}
 }
-function setSyncStatus(state,msg){
-  document.getElementById('sync-dot').className='sync-dot '+state;
-  document.getElementById('sync-status').textContent=msg;
+function setSyncStatus(s,m){
+  document.getElementById('sync-dot').className='sync-dot '+s;
+  document.getElementById('sync-status').textContent=m;
 }
 function updateHeader(){
   if(!tripData)return;
-  document.getElementById('trip-title').textContent=tripData.trip.title||'Japan Family Trip';
-  document.getElementById('trip-dates').textContent=tripData.trip.dates||'';
-  if(tripData.trip.family){document.getElementById('family-tags').innerHTML=tripData.trip.family.map(n=>`<span class="family-tag">${n}</span>`).join('');}
+  if(tripData.tripTitle)document.getElementById('trip-title').textContent=tripData.tripTitle.replace('🇯🇵 ','');
+  if(tripData.tripDates)document.getElementById('trip-dates').textContent=tripData.tripDates;
 }
+
+// ── RENDER DAYS ────────────────────────────────────────
 function renderDays(){
-  const c=document.getElementById('section-days');
-  c.innerHTML='<div class="section-title">Day by Day</div><div class="section-sub">Tap any day to expand the full schedule</div>';
-  (tripData.days||[]).forEach((day,idx)=>{
+  const wrap=document.getElementById('section-days');
+  wrap.innerHTML='<div class="section-title">Day by Day</div><div class="section-sub">Tap any day to expand · All times local</div>';
+  if(!tripData||!tripData.days){wrap.innerHTML+='<div class="loading-msg">No data available.</div>';return;}
+  tripData.days.forEach((day,i)=>{
     const hasItems=day.items&&day.items.length>0;
     const card=document.createElement('div');
-    card.className='day-card'+(idx===1?' open':'');
-    card.innerHTML=`<div class="day-header" onclick="this.closest('.day-card').classList.toggle('open')"><div><div class="day-number">Day ${day.day}</div><div class="day-title">${day.title}</div><div class="day-date">${day.date}</div></div><div class="day-chevron">▾</div></div>${hasItems?`<div class="day-body">${renderTimeline(day)}</div>`:'<div class="coming-soon">Full schedule coming soon.</div>'}`;
-    c.appendChild(card);
+    card.className='day-card';
+    const locMap=day.mapQuery?mapLink(day.mapQuery):'';
+    card.innerHTML=`
+      <div class="day-header" onclick="this.closest('.day-card').classList.toggle('open')">
+        <div style="flex:1">
+          <div class="day-label">${day.label||'Day '+i}</div>
+          <div class="day-title">${day.location||''}</div>
+          <div class="day-loc">${day.locationAddress?day.locationAddress.split(',').slice(-2).join(',').trim():''} ${locMap}</div>
+        </div>
+        <div class="day-chevron">▾</div>
+      </div>
+      ${hasItems?`<div class="day-body">${renderTimeline(day.items)}</div>`:'<div class="coming-soon">Schedule coming soon.</div>'}
+    `;
+    wrap.appendChild(card);
   });
 }
-function renderTimeline(day){
-  let html='<div class="timeline">';
-  day.items.forEach(item=>{
-    const hi=item.tag==='BOOK';
+
+function renderTimeline(items){
+  let h='<div class="timeline">';
+  items.forEach(item=>{
+    const cc=contentClass(item.status);
     const mLink=mapLink(item.mapQuery,item.destinationMapQuery||null);
-    html+=`<div class="tl-item"><div class="tl-time">${item.time}</div><div class="tl-content ${hi?'highlight':''}"><div class="tl-activity">${item.activity}${mLink}</div>${item.description?`<div class="tl-desc">${item.description}</div>`:''}<div class="tl-meta">${item.travel?`<span class="tl-travel">${item.travel}</span>`:''}${item.cost&&item.cost!=='INCL.'&&item.cost!=='FREE'?`<span class="tl-cost">${item.cost}</span>`:''}${item.tag?`<span class="tag tag-${item.tag}">${tagLabel(item.tag)}</span>`:''}</div></div></div>`;
+    h+=`<div class="tl-item">
+      <div class="tl-time">${item.time||''}</div>
+      <div class="tl-content ${cc}">
+        <div class="tl-activity">${item.activity||''}${mLink?` ${mLink}`:''}</div>
+        ${item.notes?`<div class="tl-notes">${item.notes}</div>`:''}
+        <div class="tl-meta">${statusBadge(item.status)}</div>
+      </div>
+    </div>`;
   });
-  html+='</div>';
-  if(day.totalYen){html+=`<div class="day-total"><span>Estimated day total</span><span>¥${day.totalYen.toLocaleString()} · ${day.totalGBP||''}</span></div>`;}
-  return html;
+  h+='</div>';
+  return h;
 }
-function tagLabel(t){return{BOOK:'⚠ Book Now',OPT:'Optional',INCL:'Included',FREE:'Free'}[t]||t;}
+
+// ── CHECKLIST ──────────────────────────────────────────
+function setChecklistMode(mode){
+  clMode=mode;
+  document.getElementById('btn-urgency').classList.toggle('active',mode==='urgency');
+  document.getElementById('btn-simple').classList.toggle('active',mode==='simple');
+  renderChecklist();
+}
+
+function clStatusBadge(s){
+  const map={
+    paid:'Paid',pending:'Pending',not_booked:'Not booked',
+    on_arrival:'On arrival',pay_at_property:'Pay on arrival',
+    reminder:'Reminder',incomplete:'Incomplete'
+  };
+  return s&&map[s]?`<span class="cl-status cs-${s}">${map[s]}</span>`:'';
+}
+
+function itemClass(status,group){
+  if(status==='paid'||group.includes('DONE'))return'done';
+  if(status==='not_booked'||status==='incomplete')return'urgent';
+  if(status==='pending')return'soon';
+  return'';
+}
+
+function renderChecklist(){
+  if(!tripData||!tripData.checklist){
+    document.getElementById('checklist-container').innerHTML='<div class="loading-msg">Checklist not yet loaded.</div>';
+    return;
+  }
+  const data=tripData.checklist;
+  let total=0,done=0,html='';
+
+  if(clMode==='urgency'){
+    // Show all groups with urgency styling
+    data.forEach(group=>{
+      html+=`<div class="cl-group"><div class="cl-group-title">${group.group}</div>`;
+      const items=group.items||[];
+      items.forEach(item=>{
+        const key=item.task||item.label||'';
+        const status=item.status||'';
+        const isDone=status==='paid'||group.group.includes('DONE');
+        total++;if(isDone)done++;
+        const ic=itemClass(status,group.group);
+        html+=`<div class="cl-item ${ic}">
+          <div class="cl-item-top">
+            <div class="cl-task">${key}</div>
+            ${clStatusBadge(status)}
+          </div>
+          ${item.notes?`<div class="cl-notes">${item.notes}</div>`:''}
+          <div class="cl-meta">
+            ${item.who?`<span class="cl-who">${item.who}</span>`:''}
+            ${item.deadline?`<span class="cl-deadline">${item.deadline}</span>`:''}
+            ${item.mapQuery?mapLink(item.mapQuery):''}
+          </div>
+        </div>`;
+      });
+      html+='</div>';
+    });
+  } else {
+    // Simple view — flat list, done items grouped at bottom
+    const pending=[],doneItems=[];
+    data.forEach(group=>{
+      (group.items||[]).forEach(item=>{
+        const isDone=(item.status==='paid')||group.group.includes('DONE');
+        total++;if(isDone)done++;
+        const entry={item,group:group.group,isDone};
+        isDone?doneItems.push(entry):pending.push(entry);
+      });
+    });
+    html+='<div class="cl-group"><div class="cl-group-title">To Do</div>';
+    pending.forEach(({item,group})=>{
+      html+=`<div class="cl-item ${itemClass(item.status,group)}">
+        <div class="cl-item-top"><div class="cl-task">${item.task||item.label||''}</div>${clStatusBadge(item.status)}</div>
+        ${item.notes?`<div class="cl-notes">${item.notes}</div>`:''}
+        <div class="cl-meta">${item.who?`<span class="cl-who">${item.who}</span>`:''}</div>
+      </div>`;
+    });
+    html+='</div>';
+    if(doneItems.length){
+      html+='<div class="cl-group"><div class="cl-group-title">✅ Done & Confirmed</div>';
+      doneItems.forEach(({item})=>{
+        html+=`<div class="cl-item done"><div class="cl-task">${item.task||item.label||''}</div>${item.notes?`<div class="cl-notes">${item.notes}</div>`:''}</div>`;
+      });
+      html+='</div>';
+    }
+  }
+
+  document.getElementById('checklist-container').innerHTML=html;
+  const pct=total?(done/total*100):0;
+  document.getElementById('prog-bar').style.width=pct+'%';
+  document.getElementById('prog-label').textContent=`${done} of ${total} complete`;
+}
+
+// ── NAV ────────────────────────────────────────────────
 function showSection(id,btn){
   document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
   document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
   document.getElementById('section-'+id).classList.add('active');
   btn.classList.add('active');
 }
-function renderChecklist(){
-  const data=(tripData&&tripData.checklist)?tripData.checklist:FALLBACK.checklist;
-  const container=document.getElementById('checklist-container');
-  let html='',total=0,done=0;
-  data.forEach(group=>{
-    html+=`<div class="checklist-group"><div class="checklist-group-title">${group.group}</div>`;
-    group.items.forEach(item=>{
-      total++;if(item.checked)done++;
-      html+=`<div class="check-item ${item.checked?'checked':''}"><div class="check-box"></div><div><div class="check-label">${item.label}</div>${item.note?`<div class="check-note">${item.note}</div>`:''}</div></div>`;
-    });
-    html+='</div>';
-  });
-  container.innerHTML=html;
-  document.getElementById('prog-bar').style.width=total?(done/total*100)+'%':'0%';
-  document.getElementById('prog-label').textContent=`${done} of ${total} complete`;
-}
-const phrases=[{jp:'ありがとうございます',en:'Thank you',rom:'Arigatou gozaimasu'},{jp:'すみません',en:'Excuse me / Sorry',rom:'Sumimasen'},{jp:'これをください',en:"I'll have this please",rom:'Kore wo kudasai'},{jp:'いくらですか？',en:'How much is this?',rom:'Ikura desu ka?'},{jp:'どこですか？',en:'Where is...?',rom:'Doko desu ka?'},{jp:'えいごをはなせますか？',en:'Do you speak English?',rom:'Eigo wo hanasemasu ka?'},{jp:'おすすめは何ですか？',en:'What do you recommend?',rom:'Osusume wa nan desu ka?'},{jp:'トイレはどこですか？',en:'Where is the toilet?',rom:'Toire wa doko desu ka?'},{jp:'カードは使えますか？',en:'Can I pay by card?',rom:'Kaado wa tsukaemasu ka?'},{jp:'おいしい！',en:'Delicious!',rom:'Oishii!'},{jp:'しゃしんをとってもいいですか？',en:'May I take a photo?',rom:'Shashin wo totte mo ii desu ka?'},{jp:'いただきます',en:"Let's eat (before meal)",rom:'Itadakimasu'},{jp:'ごちそうさまでした',en:'Thank you for the meal',rom:'Gochisousama deshita'}];
+
+// ── PHRASES ────────────────────────────────────────────
+const phrases=[
+  {jp:'ありがとうございます',en:'Thank you',rom:'Arigatou gozaimasu'},
+  {jp:'すみません',en:'Excuse me / Sorry',rom:'Sumimasen'},
+  {jp:'これをください',en:"I'll have this please",rom:'Kore wo kudasai'},
+  {jp:'いくらですか？',en:'How much is this?',rom:'Ikura desu ka?'},
+  {jp:'どこですか？',en:'Where is...?',rom:'Doko desu ka?'},
+  {jp:'えいごをはなせますか？',en:'Do you speak English?',rom:'Eigo wo hanasemasu ka?'},
+  {jp:'おすすめは何ですか？',en:'What do you recommend?',rom:'Osusume wa nan desu ka?'},
+  {jp:'トイレはどこですか？',en:'Where is the toilet?',rom:'Toire wa doko desu ka?'},
+  {jp:'カードは使えますか？',en:'Can I pay by card?',rom:'Kaado wa tsukaemasu ka?'},
+  {jp:'おいしい！',en:'Delicious!',rom:'Oishii!'},
+  {jp:'しゃしんをとってもいいですか？',en:'May I take a photo?',rom:'Shashin wo totte mo ii desu ka?'},
+  {jp:'いただきます',en:"Let's eat",rom:'Itadakimasu'},
+  {jp:'ごちそうさまでした',en:'Thank you for the meal',rom:'Gochisousama deshita'},
+];
 const pc=document.getElementById('phrases-container');
 phrases.forEach(p=>{pc.innerHTML+=`<div class="phrase-card"><div class="phrase-jp">${p.jp}</div><div><div class="phrase-en">${p.en}</div><div class="phrase-rom">${p.rom}</div></div></div>`;});
+
 loadData();
 </script>
 </body>
