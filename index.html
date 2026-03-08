@@ -8,248 +8,150 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 :root {
-  --ink: #0f0f1a;
-  --ink2: #1a1a2e;
-  --paper: #f7f2ea;
-  --blossom: #e8829a;
-  --blossom-light: rgba(232,130,154,0.15);
-  --gold: #c9a84c;
-  --jade: #4a9e8e;
-  --white: #fdfbf7;
-  --muted: #8888a0;
-  --border: rgba(255,255,255,0.08);
-  --status-booked: #e05050;
-  --status-confirmed: #4a9e8e;
-  --status-included: #4a8ec9;
-  --status-planning: #c9a84c;
-  --status-optional: #9e6ec9;
-  --status-free: #7ab87a;
+  --ink: #0f0f1a; --ink2: #1a1a2e;
+  --blossom: #e8829a; --gold: #c9a84c;
+  --jade: #4a9e8e; --white: #fdfbf7;
+  --muted: #8888a0; --border: rgba(255,255,255,0.08);
 }
-
 * { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'DM Sans', sans-serif; background: var(--ink); color: var(--white); min-height: 100vh; }
 
-body {
-  font-family: 'DM Sans', sans-serif;
-  background: var(--ink);
-  color: var(--white);
-  min-height: 100vh;
-}
-
-/* === HEADER === */
+/* HEADER */
 .header {
   background: linear-gradient(160deg, #0f0f1a 0%, #1a1a2e 50%, #0f1520 100%);
-  padding: 28px 20px 20px;
-  text-align: center;
+  padding: 24px 20px 16px; text-align: center;
   border-bottom: 1px solid rgba(232,130,154,0.2);
-  position: relative;
-  overflow: hidden;
+  position: relative; overflow: hidden;
 }
 .header::before {
-  content: '';
-  position: absolute; inset: 0;
+  content: ''; position: absolute; inset: 0;
   background: radial-gradient(ellipse at 50% 0%, rgba(232,130,154,0.08) 0%, transparent 70%);
   pointer-events: none;
 }
-.header-jp {
-  font-family: 'Noto Serif JP', serif;
-  font-size: 11px; color: var(--blossom);
-  letter-spacing: 6px; margin-bottom: 8px;
-  text-transform: uppercase; opacity: 0.8;
-}
-.header h1 {
-  font-family: 'Noto Serif JP', serif;
-  font-size: clamp(22px, 5vw, 32px);
-  font-weight: 600; color: var(--white);
-  letter-spacing: 0.5px; line-height: 1.2;
-}
-.header-dates {
-  font-size: 13px; color: var(--gold);
-  margin-top: 8px; letter-spacing: 1px;
-  font-weight: 500;
-}
-.family-row {
-  display: flex; justify-content: center; gap: 8px;
+.header-jp { font-family: 'Noto Serif JP', serif; font-size: 11px; color: var(--blossom); letter-spacing: 6px; margin-bottom: 6px; opacity: 0.8; }
+.header h1 { font-family: 'Noto Serif JP', serif; font-size: clamp(20px, 5vw, 28px); font-weight: 600; color: var(--white); line-height: 1.2; }
+.header-dates { font-size: 13px; color: var(--gold); margin-top: 6px; letter-spacing: 1px; font-weight: 500; }
+.family-row { display: flex; justify-content: center; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+.family-pill { background: rgba(232,130,154,0.12); border: 1px solid rgba(232,130,154,0.25); color: var(--blossom); font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 500; }
+
+/* COUNTDOWN */
+.countdown-bar {
+  display: flex; justify-content: center; gap: 16px;
   margin-top: 14px; flex-wrap: wrap;
 }
-.family-pill {
-  background: rgba(232,130,154,0.12);
-  border: 1px solid rgba(232,130,154,0.25);
-  color: var(--blossom); font-size: 11px;
-  padding: 4px 12px; border-radius: 20px;
-  letter-spacing: 0.5px; font-weight: 500;
+.countdown-unit {
+  text-align: center;
+  background: rgba(232,130,154,0.08);
+  border: 1px solid rgba(232,130,154,0.2);
+  border-radius: 12px; padding: 8px 14px; min-width: 60px;
 }
-.sync-bar {
-  display: flex; align-items: center; justify-content: center; gap: 8px;
-  margin-top: 14px; font-size: 11px; color: var(--muted);
-}
-.sync-dot {
-  width: 6px; height: 6px; border-radius: 50%;
-  background: var(--jade); flex-shrink: 0;
-}
+.countdown-num { font-family: 'Noto Serif JP', serif; font-size: 24px; font-weight: 700; color: var(--blossom); line-height: 1; }
+.countdown-lbl { font-size: 10px; color: var(--muted); margin-top: 3px; letter-spacing: 0.5px; text-transform: uppercase; }
+.countdown-gone { font-size: 12px; color: var(--jade); font-weight: 600; margin-top: 12px; letter-spacing: 0.5px; }
+
+.sync-bar { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 12px; font-size: 11px; color: var(--muted); }
+.sync-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--jade); flex-shrink: 0; }
 .sync-dot.loading { background: var(--gold); animation: pulse 1s infinite; }
-.sync-dot.error { background: var(--status-booked); }
+.sync-dot.error { background: #e05050; }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
-.refresh-btn {
-  background: none; border: 1px solid rgba(255,255,255,0.15);
-  color: var(--muted); font-size: 11px; padding: 3px 10px;
-  border-radius: 12px; cursor: pointer; font-family: inherit;
-  transition: all 0.2s;
-}
+.refresh-btn { background: none; border: 1px solid rgba(255,255,255,0.15); color: var(--muted); font-size: 11px; padding: 3px 10px; border-radius: 12px; cursor: pointer; font-family: inherit; transition: all 0.2s; }
 .refresh-btn:hover { border-color: var(--blossom); color: var(--blossom); }
 
-/* === NAV TABS === */
-.nav-tabs {
-  display: flex; gap: 0;
-  background: var(--ink2);
-  border-bottom: 1px solid var(--border);
-  overflow-x: auto;
-  scrollbar-width: none;
-}
+/* NAV */
+.nav-tabs { display: flex; background: var(--ink2); border-bottom: 1px solid var(--border); overflow-x: auto; scrollbar-width: none; }
 .nav-tabs::-webkit-scrollbar { display: none; }
-.nav-tab {
-  flex-shrink: 0; padding: 12px 16px;
-  font-size: 12px; font-weight: 500;
-  color: var(--muted); cursor: pointer;
-  border-bottom: 2px solid transparent;
-  transition: all 0.2s; white-space: nowrap;
-  font-family: inherit; background: none; border-top: none;
-  border-left: none; border-right: none;
-}
+.nav-tab { flex-shrink: 0; padding: 12px 15px; font-size: 12px; font-weight: 500; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.2s; white-space: nowrap; font-family: inherit; background: none; border-top: none; border-left: none; border-right: none; }
 .nav-tab:hover { color: var(--white); }
-.nav-tab.active {
-  color: var(--blossom);
-  border-bottom-color: var(--blossom);
-}
+.nav-tab.active { color: var(--blossom); border-bottom-color: var(--blossom); }
 
-/* === MAIN CONTENT === */
 .content { max-width: 760px; margin: 0 auto; padding: 0 16px 60px; }
 
-/* === OVERVIEW === */
-.overview-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 10px; padding: 20px 0 8px;
-}
-.stat-card {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid var(--border);
-  border-radius: 12px; padding: 14px 12px;
-  text-align: center;
-}
-.stat-num {
-  font-family: 'Noto Serif JP', serif;
-  font-size: 26px; font-weight: 600;
-  color: var(--blossom); line-height: 1;
-}
+/* OVERVIEW */
+.overview-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; padding: 20px 0 8px; }
+.stat-card { background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 12px; padding: 14px 12px; text-align: center; }
+.stat-num { font-family: 'Noto Serif JP', serif; font-size: 26px; font-weight: 600; color: var(--blossom); line-height: 1; }
 .stat-label { font-size: 11px; color: var(--muted); margin-top: 4px; }
-
-.route-strip {
-  display: flex; align-items: center; gap: 8px;
-  padding: 14px 16px; margin: 12px 0;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid var(--border);
-  border-radius: 12px; overflow-x: auto;
-  scrollbar-width: none;
-}
+.route-strip { display: flex; align-items: center; gap: 8px; padding: 14px 16px; margin: 12px 0; background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 12px; overflow-x: auto; scrollbar-width: none; }
 .route-strip::-webkit-scrollbar { display: none; }
-.route-city {
-  flex-shrink: 0; font-size: 12px; font-weight: 600;
-  color: var(--white);
-}
+.route-city { flex-shrink: 0; font-size: 12px; font-weight: 600; }
 .route-arrow { flex-shrink: 0; color: var(--blossom); font-size: 14px; }
-
 .hotel-list { padding: 8px 0; }
-.hotel-card {
-  display: flex; align-items: center; gap: 14px;
-  padding: 14px 16px; margin-bottom: 8px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-}
+.hotel-card { display: flex; align-items: center; gap: 14px; padding: 14px 16px; margin-bottom: 8px; background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 12px; }
 .hotel-icon { font-size: 22px; flex-shrink: 0; }
 .hotel-name { font-size: 14px; font-weight: 500; }
 .hotel-dates { font-size: 11px; color: var(--muted); margin-top: 2px; }
-.hotel-status {
-  margin-left: auto; font-size: 10px; font-weight: 600;
-  padding: 3px 9px; border-radius: 10px; flex-shrink: 0;
-}
+.hotel-status { margin-left: auto; font-size: 10px; font-weight: 600; padding: 3px 9px; border-radius: 10px; flex-shrink: 0; }
 .hotel-status.paid { background: rgba(74,158,142,0.2); color: var(--jade); border: 1px solid rgba(74,158,142,0.3); }
 .hotel-status.property { background: rgba(201,168,76,0.2); color: var(--gold); border: 1px solid rgba(201,168,76,0.3); }
 
-/* === DAYS === */
-.days-container { padding-top: 12px; }
+/* WEATHER */
+.weather-container { padding-top: 12px; }
+.weather-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+@media(min-width:500px){ .weather-grid { grid-template-columns: repeat(3, 1fr); } }
+.weather-card {
+  background: rgba(255,255,255,0.03); border: 1px solid var(--border);
+  border-radius: 14px; padding: 16px 14px; text-align: center;
+}
+.weather-city { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+.weather-dates { font-size: 10px; color: var(--muted); margin-bottom: 10px; }
+.weather-icon { font-size: 32px; margin-bottom: 6px; }
+.weather-temp { font-family: 'Noto Serif JP', serif; font-size: 22px; font-weight: 600; color: var(--blossom); }
+.weather-range { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.weather-desc { font-size: 11px; color: var(--gold); margin-top: 6px; font-weight: 500; }
+.weather-detail { font-size: 10px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+.weather-note { font-size: 11px; color: var(--muted); padding: 12px 0 4px; text-align: center; font-style: italic; }
+.section-title { font-size: 11px; color: var(--gold); font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; padding: 14px 0 8px; }
 
-.day-card {
-  margin-bottom: 8px;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  overflow: hidden;
-  background: rgba(255,255,255,0.02);
+/* MAP */
+.map-container { padding-top: 12px; }
+.map-iframe { width: 100%; height: 420px; border: none; border-radius: 14px; border: 1px solid var(--border); }
+.map-city-tabs { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding: 12px 0 8px; }
+.map-city-tabs::-webkit-scrollbar { display: none; }
+.map-city-btn {
+  flex-shrink: 0; padding: 6px 14px; font-size: 12px; font-weight: 500;
+  background: rgba(255,255,255,0.05); border: 1px solid var(--border);
+  color: var(--muted); border-radius: 20px; cursor: pointer;
+  font-family: inherit; transition: all 0.2s; white-space: nowrap;
 }
-.day-header {
-  display: flex; align-items: center; gap: 12px;
-  padding: 14px 16px; cursor: pointer;
-  transition: background 0.2s; user-select: none;
-}
+.map-city-btn:hover { color: var(--white); border-color: rgba(255,255,255,0.2); }
+.map-city-btn.active { background: rgba(232,130,154,0.15); border-color: rgba(232,130,154,0.4); color: var(--blossom); }
+.map-legend { display: flex; flex-wrap: wrap; gap: 10px; padding: 10px 0 4px; }
+.map-legend-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--muted); }
+.map-legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+/* DAYS */
+.days-container { padding-top: 12px; }
+.day-card { margin-bottom: 8px; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; background: rgba(255,255,255,0.02); }
+.day-header { display: flex; align-items: center; gap: 12px; padding: 14px 16px; cursor: pointer; transition: background 0.2s; user-select: none; }
 .day-header:hover { background: rgba(255,255,255,0.04); }
-.day-num {
-  font-family: 'Noto Serif JP', serif;
-  font-size: 22px; font-weight: 700;
-  color: var(--blossom); line-height: 1;
-  min-width: 30px;
-}
+.day-num { font-family: 'Noto Serif JP', serif; font-size: 22px; font-weight: 700; color: var(--blossom); line-height: 1; min-width: 30px; }
 .day-info { flex: 1; min-width: 0; }
 .day-title { font-size: 14px; font-weight: 600; }
-.day-loc { font-size: 11px; color: var(--muted); margin-top: 2px;
-  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.day-badge {
-  font-size: 10px; padding: 3px 8px; border-radius: 10px;
-  font-weight: 600; flex-shrink: 0;
-  background: rgba(201,168,76,0.15); color: var(--gold);
-  border: 1px solid rgba(201,168,76,0.25);
-}
-.day-chevron {
-  color: var(--muted); font-size: 14px; transition: transform 0.25s;
-  flex-shrink: 0;
-}
+.day-loc { font-size: 11px; color: var(--muted); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.day-badge { font-size: 10px; padding: 3px 8px; border-radius: 10px; font-weight: 600; flex-shrink: 0; background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid rgba(201,168,76,0.25); }
+.day-chevron { color: var(--muted); font-size: 14px; transition: transform 0.25s; flex-shrink: 0; }
 .day-card.open .day-chevron { transform: rotate(90deg); }
-
 .day-body { display: none; padding: 0 16px 14px; }
 .day-card.open .day-body { display: block; }
+.day-map-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 11px; color: var(--blossom); background: rgba(232,130,154,0.1);
+  border: 1px solid rgba(232,130,154,0.25); border-radius: 20px;
+  padding: 5px 12px; cursor: pointer; margin: 8px 0 4px;
+  font-family: inherit; transition: all 0.2s;
+}
+.day-map-btn:hover { background: rgba(232,130,154,0.2); }
+.day-map-frame { width: 100%; height: 280px; border: none; border-radius: 12px; border: 1px solid var(--border); margin: 8px 0; display: none; }
+.day-map-frame.visible { display: block; }
 
-.item {
-  display: grid;
-  grid-template-columns: 52px 1fr auto;
-  gap: 10px; padding: 10px 0;
-  border-top: 1px solid rgba(255,255,255,0.05);
-  align-items: start;
-}
-.item-time {
-  font-size: 11px; color: var(--muted);
-  font-weight: 500; padding-top: 2px;
-  text-align: right; line-height: 1.3;
-}
+.item { display: grid; grid-template-columns: 52px 1fr auto; gap: 10px; padding: 10px 0; border-top: 1px solid rgba(255,255,255,0.05); align-items: start; }
+.item-time { font-size: 11px; color: var(--muted); font-weight: 500; padding-top: 2px; text-align: right; line-height: 1.3; }
 .item-main { min-width: 0; }
-.item-activity {
-  font-size: 13px; font-weight: 500; line-height: 1.4;
-}
-.item-notes {
-  font-size: 11px; color: var(--muted); margin-top: 4px;
-  line-height: 1.5;
-}
-.item-map {
-  font-size: 10px; color: var(--blossom);
-  text-decoration: none; padding-top: 2px;
-  flex-shrink: 0; opacity: 0.7;
-  transition: opacity 0.2s; white-space: nowrap;
-}
+.item-activity { font-size: 13px; font-weight: 500; line-height: 1.4; }
+.item-notes { font-size: 11px; color: var(--muted); margin-top: 4px; line-height: 1.5; }
+.item-map { font-size: 10px; color: var(--blossom); text-decoration: none; padding-top: 2px; flex-shrink: 0; opacity: 0.7; transition: opacity 0.2s; white-space: nowrap; }
 .item-map:hover { opacity: 1; }
-
-.status-badge {
-  font-size: 9px; font-weight: 700;
-  padding: 2px 7px; border-radius: 8px;
-  letter-spacing: 0.5px; margin-top: 5px;
-  display: inline-block; text-transform: uppercase;
-}
+.status-badge { font-size: 9px; font-weight: 700; padding: 2px 7px; border-radius: 8px; letter-spacing: 0.5px; margin-top: 5px; display: inline-block; text-transform: uppercase; }
 .s-booked { background: rgba(224,80,80,0.2); color: #e05050; border: 1px solid rgba(224,80,80,0.3); }
 .s-confirmed { background: rgba(74,158,142,0.2); color: var(--jade); border: 1px solid rgba(74,158,142,0.3); }
 .s-included { background: rgba(74,142,201,0.2); color: #4a8ec9; border: 1px solid rgba(74,142,201,0.3); }
@@ -257,109 +159,37 @@ body {
 .s-optional { background: rgba(158,110,201,0.2); color: #9e6ec9; border: 1px solid rgba(158,110,201,0.3); }
 .s-free { background: rgba(122,184,122,0.2); color: #7ab87a; border: 1px solid rgba(122,184,122,0.3); }
 
-/* === CHECKLIST === */
+/* CHECKLIST */
 .checklist-container { padding-top: 12px; }
 .checklist-group { margin-bottom: 16px; }
-.checklist-group-title {
-  font-size: 12px; font-weight: 600;
-  color: var(--gold); letter-spacing: 0.5px;
-  padding: 10px 0 8px; text-transform: uppercase;
-}
-.checklist-item {
-  display: flex; align-items: flex-start; gap: 12px;
-  padding: 10px 14px; margin-bottom: 6px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid var(--border);
-  border-radius: 10px; cursor: pointer;
-  transition: all 0.2s;
-}
+.checklist-group-title { font-size: 12px; font-weight: 600; color: var(--gold); letter-spacing: 0.5px; padding: 10px 0 8px; text-transform: uppercase; }
+.checklist-item { display: flex; align-items: flex-start; gap: 12px; padding: 10px 14px; margin-bottom: 6px; background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 10px; cursor: pointer; transition: all 0.2s; }
 .checklist-item:hover { background: rgba(255,255,255,0.05); }
-.checklist-item.checked {
-  opacity: 0.45;
-  background: rgba(74,158,142,0.05);
-  border-color: rgba(74,158,142,0.2);
-}
-.checkbox {
-  width: 18px; height: 18px; border-radius: 5px;
-  border: 2px solid rgba(255,255,255,0.2);
-  flex-shrink: 0; margin-top: 1px;
-  display: flex; align-items: center; justify-content: center;
-  transition: all 0.2s;
-}
-.checklist-item.checked .checkbox {
-  background: var(--jade); border-color: var(--jade);
-}
+.checklist-item.checked { opacity: 0.45; background: rgba(74,158,142,0.05); border-color: rgba(74,158,142,0.2); }
+.checkbox { width: 18px; height: 18px; border-radius: 5px; border: 2px solid rgba(255,255,255,0.2); flex-shrink: 0; margin-top: 1px; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+.checklist-item.checked .checkbox { background: var(--jade); border-color: var(--jade); }
 .checkbox-tick { color: white; font-size: 11px; display: none; }
 .checklist-item.checked .checkbox-tick { display: block; }
 .check-task { font-size: 13px; font-weight: 500; flex: 1; }
 .check-meta { font-size: 11px; color: var(--muted); margin-top: 2px; }
-.check-who {
-  font-size: 10px; padding: 2px 8px; border-radius: 8px;
-  font-weight: 600; flex-shrink: 0; margin-top: 2px;
-  background: rgba(232,130,154,0.15); color: var(--blossom);
-  border: 1px solid rgba(232,130,154,0.25);
-}
-
-.progress-track {
-  background: rgba(255,255,255,0.08); border-radius: 4px;
-  height: 5px; margin: 6px 0 12px; overflow: hidden;
-}
-.progress-fill {
-  height: 100%; border-radius: 4px;
-  background: linear-gradient(90deg, var(--jade), var(--blossom));
-  transition: width 0.4s ease;
-}
+.check-who { font-size: 10px; padding: 2px 8px; border-radius: 8px; font-weight: 600; flex-shrink: 0; margin-top: 2px; background: rgba(232,130,154,0.15); color: var(--blossom); border: 1px solid rgba(232,130,154,0.25); }
+.progress-track { background: rgba(255,255,255,0.08); border-radius: 4px; height: 5px; margin: 6px 0 12px; overflow: hidden; }
+.progress-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--jade), var(--blossom)); transition: width 0.4s ease; }
 .progress-label { font-size: 11px; color: var(--muted); margin-bottom: 8px; }
 
-/* === PHRASES === */
+/* PHRASES */
 .phrases-container { padding-top: 12px; }
-.phrase-card {
-  display: flex; align-items: center; gap: 14px;
-  padding: 12px 16px; margin-bottom: 8px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid var(--border); border-radius: 12px;
-}
-.phrase-jp {
-  font-family: 'Noto Serif JP', serif;
-  font-size: 18px; min-width: 110px; color: var(--white);
-}
+.phrase-card { display: flex; align-items: center; gap: 14px; padding: 12px 16px; margin-bottom: 8px; background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 12px; }
+.phrase-jp { font-family: 'Noto Serif JP', serif; font-size: 18px; min-width: 110px; }
 .phrase-en { font-size: 13px; font-weight: 500; }
 .phrase-rom { font-size: 11px; color: var(--blossom); margin-top: 2px; font-style: italic; }
 
-/* === TIPS === */
+/* TIPS */
 .tips-container { padding-top: 12px; }
 .tip-section { margin-bottom: 20px; }
-.tip-section-title {
-  font-size: 12px; font-weight: 600; color: var(--gold);
-  letter-spacing: 0.5px; text-transform: uppercase;
-  padding: 10px 0 8px;
-}
-.tip-item {
-  padding: 10px 14px; margin-bottom: 6px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid var(--border); border-radius: 10px;
-  font-size: 13px; line-height: 1.5;
-}
+.tip-section-title { font-size: 12px; font-weight: 600; color: var(--gold); letter-spacing: 0.5px; text-transform: uppercase; padding: 10px 0 8px; }
+.tip-item { padding: 10px 14px; margin-bottom: 6px; background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 10px; font-size: 13px; line-height: 1.5; }
 .tip-item strong { color: var(--blossom); }
-
-/* === LOADING === */
-.loading-state {
-  text-align: center; padding: 60px 20px;
-  color: var(--muted);
-}
-.loading-spinner {
-  font-size: 32px; margin-bottom: 16px;
-  animation: spin 2s linear infinite;
-  display: block;
-}
-@keyframes spin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
-
-/* Responsive */
-@media(max-width:480px){
-  .overview-grid { grid-template-columns: repeat(3,1fr); gap:8px; }
-  .stat-num { font-size: 20px; }
-  .item { grid-template-columns: 44px 1fr auto; }
-}
 </style>
 </head>
 <body>
@@ -367,13 +197,14 @@ body {
 <div class="header">
   <div class="header-jp">日本家族旅行</div>
   <h1>🇯🇵 Japan Family Trip 2026</h1>
-  <div class="header-dates" id="header-dates">Fri 3 Apr – Sat 18 Apr 2026</div>
+  <div class="header-dates">Fri 3 Apr – Sat 18 Apr 2026</div>
   <div class="family-row">
     <span class="family-pill">Andy</span>
     <span class="family-pill">Sarah</span>
     <span class="family-pill">Jack</span>
     <span class="family-pill">Charlie</span>
   </div>
+  <div class="countdown-bar" id="countdown-bar"></div>
   <div class="sync-bar">
     <div class="sync-dot loading" id="sync-dot"></div>
     <span id="sync-status">Loading trip data…</span>
@@ -384,6 +215,8 @@ body {
 <div class="nav-tabs">
   <button class="nav-tab active" onclick="switchTab('overview',this)">Overview</button>
   <button class="nav-tab" onclick="switchTab('days',this)">Day by Day</button>
+  <button class="nav-tab" onclick="switchTab('map',this)">🗺 Map</button>
+  <button class="nav-tab" onclick="switchTab('weather',this)">🌤 Weather</button>
   <button class="nav-tab" onclick="switchTab('checklist',this)">Checklist</button>
   <button class="nav-tab" onclick="switchTab('phrases',this)">Japanese</button>
   <button class="nav-tab" onclick="switchTab('tips',this)">Tips</button>
@@ -392,6 +225,8 @@ body {
 <div class="content">
   <div id="tab-overview"></div>
   <div id="tab-days" style="display:none"></div>
+  <div id="tab-map" style="display:none"></div>
+  <div id="tab-weather" style="display:none"></div>
   <div id="tab-checklist" style="display:none"></div>
   <div id="tab-phrases" style="display:none"></div>
   <div id="tab-tips" style="display:none"></div>
@@ -403,41 +238,60 @@ let tripData = null;
 let checklistState = {};
 
 const STATUS_MAP = {
-  booked:    {cls:'s-booked',    label:'Booked'},
-  confirmed: {cls:'s-confirmed', label:'Confirmed'},
-  included:  {cls:'s-included',  label:'Included'},
-  planning:  {cls:'s-planning',  label:'Planning'},
-  optional:  {cls:'s-optional',  label:'Optional'},
-  free:      {cls:'s-free',      label:'Free'},
-  paid:      {cls:'s-confirmed', label:'Paid'},
-  on_arrival:{cls:'s-planning',  label:'On Arrival'},
-  reminder:  {cls:'s-optional',  label:'Reminder'},
-  incomplete:{cls:'s-booked',    label:'Incomplete'},
+  booked:{cls:'s-booked',label:'Booked'}, confirmed:{cls:'s-confirmed',label:'Confirmed'},
+  included:{cls:'s-included',label:'Included'}, planning:{cls:'s-planning',label:'Planning'},
+  optional:{cls:'s-optional',label:'Optional'}, free:{cls:'s-free',label:'Free'},
+  paid:{cls:'s-confirmed',label:'Paid'}, on_arrival:{cls:'s-planning',label:'On Arrival'},
+  reminder:{cls:'s-optional',label:'Reminder'}, incomplete:{cls:'s-booked',label:'Incomplete'},
   pay_at_property:{cls:'s-planning',label:'Pay on Arrival'},
 };
 
+/* ===== COUNTDOWN ===== */
+function renderCountdown() {
+  const departure = new Date('2026-04-03T00:00:00');
+  const now = new Date();
+  const diff = departure - now;
+  const bar = document.getElementById('countdown-bar');
+  if (diff <= 0) {
+    bar.innerHTML = '<div class="countdown-gone">✈️ Trip is underway — enjoy Japan!</div>';
+    return;
+  }
+  const d = Math.floor(diff / 86400000);
+  const h = Math.floor((diff % 86400000) / 3600000);
+  const m = Math.floor((diff % 3600000) / 60000);
+  const s = Math.floor((diff % 60000) / 1000);
+  bar.innerHTML = `
+    <div class="countdown-unit"><div class="countdown-num">${d}</div><div class="countdown-lbl">Days</div></div>
+    <div class="countdown-unit"><div class="countdown-num">${String(h).padStart(2,'0')}</div><div class="countdown-lbl">Hours</div></div>
+    <div class="countdown-unit"><div class="countdown-num">${String(m).padStart(2,'0')}</div><div class="countdown-lbl">Mins</div></div>
+    <div class="countdown-unit"><div class="countdown-num">${String(s).padStart(2,'0')}</div><div class="countdown-lbl">Secs</div></div>`;
+}
+renderCountdown();
+setInterval(renderCountdown, 1000);
+
+/* ===== SYNC ===== */
 function setSyncStatus(state, msg) {
   const dot = document.getElementById('sync-dot');
   const txt = document.getElementById('sync-status');
-  dot.className = 'sync-dot' + (state === 'loading' ? ' loading' : state === 'error' ? ' error' : '');
+  dot.className = 'sync-dot' + (state==='loading'?' loading':state==='error'?' error':'');
   txt.textContent = msg;
 }
 
 async function loadData() {
-  setSyncStatus('loading', 'Fetching latest data…');
+  setSyncStatus('loading','Fetching latest data…');
   try {
     const res = await fetch(RAW_URL + '?t=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     tripData = await res.json();
-    setSyncStatus('ok', 'Updated ' + new Date().toLocaleTimeString('en-GB', {hour:'2-digit',minute:'2-digit'}));
+    setSyncStatus('ok','Updated ' + new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}));
   } catch(e) {
-    setSyncStatus('error', 'Could not fetch — showing built-in data');
+    setSyncStatus('error','Could not fetch — showing built-in data');
+    tripData = { days: [], checklist: [] };
   }
   renderAll();
 }
 
 function renderAll() {
-  if (!tripData) return;
   renderOverview();
   renderDays();
   renderChecklist();
@@ -445,10 +299,8 @@ function renderAll() {
 
 /* ===== OVERVIEW ===== */
 function renderOverview() {
-  const d = tripData;
-  const days = d.days || [];
-  const totalItems = days.reduce((a,day)=>a+(day.items||[]).length,0);
-
+  const days = (tripData.days||[]);
+  const totalItems = days.reduce((a,d)=>a+(d.items||[]).length,0);
   const hotels = [
     {name:'Crown Park Hotel Seoul',       dates:'Sat 4 – Sun 5 Apr',   status:'paid'},
     {name:'Keio Plaza Hotel Tokyo',        dates:'Sun 5 – Wed 8 Apr',   status:'property'},
@@ -458,133 +310,219 @@ function renderOverview() {
     {name:'Grand Hyatt Incheon',           dates:'Fri 17 – Sat 18 Apr', status:'property'},
   ];
   const icons = ['🏨','🏙️','🛁','🌸','🎡','✈️'];
-
   document.getElementById('tab-overview').innerHTML = `
     <div class="overview-grid">
       <div class="stat-card"><div class="stat-num">15</div><div class="stat-label">Days</div></div>
-      <div class="stat-card"><div class="stat-num">4</div><div class="stat-label">Countries</div></div>
-      <div class="stat-card"><div class="stat-num">${totalItems}</div><div class="stat-label">Activities</div></div>
+      <div class="stat-card"><div class="stat-num">4</div><div class="stat-label">Cities</div></div>
+      <div class="stat-card"><div class="stat-num">${totalItems||'60+'}</div><div class="stat-label">Activities</div></div>
     </div>
     <div class="route-strip">
-      <span class="route-city">🇬🇧 London</span>
-      <span class="route-arrow">→</span>
-      <span class="route-city">🇰🇷 Seoul</span>
-      <span class="route-arrow">→</span>
-      <span class="route-city">🗼 Tokyo</span>
-      <span class="route-arrow">→</span>
-      <span class="route-city">⛰️ Hakone</span>
-      <span class="route-arrow">→</span>
-      <span class="route-city">⛩️ Kyoto</span>
-      <span class="route-arrow">→</span>
-      <span class="route-city">🏯 Nara</span>
-      <span class="route-arrow">→</span>
-      <span class="route-city">🦞 Osaka</span>
-      <span class="route-arrow">→</span>
+      <span class="route-city">🇬🇧 London</span><span class="route-arrow">→</span>
+      <span class="route-city">🇰🇷 Seoul</span><span class="route-arrow">→</span>
+      <span class="route-city">🗼 Tokyo</span><span class="route-arrow">→</span>
+      <span class="route-city">⛰️ Hakone</span><span class="route-arrow">→</span>
+      <span class="route-city">⛩️ Kyoto</span><span class="route-arrow">→</span>
+      <span class="route-city">🏯 Nara</span><span class="route-arrow">→</span>
+      <span class="route-city">🦞 Osaka</span><span class="route-arrow">→</span>
       <span class="route-city">🇬🇧 London</span>
     </div>
-    <div style="font-size:11px;color:var(--gold);font-weight:600;letter-spacing:0.5px;text-transform:uppercase;padding:14px 0 8px;">Accommodation</div>
+    <div class="section-title">Accommodation</div>
     <div class="hotel-list">
-      ${hotels.map((h,i)=>`
-        <div class="hotel-card">
-          <div class="hotel-icon">${icons[i]}</div>
-          <div>
-            <div class="hotel-name">${h.name}</div>
-            <div class="hotel-dates">${h.dates}</div>
-          </div>
-          <div class="hotel-status ${h.status === 'paid' ? 'paid' : 'property'}">${h.status === 'paid' ? 'Paid' : 'Pay on Arrival'}</div>
-        </div>`).join('')}
-    </div>
-    <div style="font-size:11px;color:var(--gold);font-weight:600;letter-spacing:0.5px;text-transform:uppercase;padding:14px 0 8px;">Estimated Total Cost</div>
-    <div class="hotel-card" style="justify-content:space-between;">
-      <div>
-        <div class="hotel-name">All in (flights, hotels, transfers)</div>
-        <div class="hotel-dates">Excl. food, activities & spending money</div>
+      ${hotels.map((h,i)=>`<div class="hotel-card">
+        <div class="hotel-icon">${icons[i]}</div>
+        <div><div class="hotel-name">${h.name}</div><div class="hotel-dates">${h.dates}</div></div>
+        <div class="hotel-status ${h.status==='paid'?'paid':'property'}">${h.status==='paid'?'Paid':'Pay on Arrival'}</div>
+      </div>`).join('')}
+    </div>`;
+}
+
+/* ===== MAP TAB ===== */
+const MAP_CITIES = [
+  { name:'Full Route', q:'Japan', zoom:5, center:'35.6762,139.6503',
+    embed:'https://www.google.com/maps/embed?pb=!1m54!1m8!1m3!1d6587503!2d136!3d35.5!3m2!1i1024!2i768!4f13.1!4m43!3e0!4m5!1s0x60188b857628235d%3A0xcdd8514571a31af0!2sKeio+Plaza+Hotel+Tokyo!3m2!1d35.6908!2d139.6994!4m5!1s0x60197b6e19700001%3A0xf9b32e9f8b0d1d4e!2sTEN-YU+Ryokan%2C+Hakone!3m2!1d35.2334!2d139.0699!4m5!1s0x6001076d8e368905%3A0x6e2ea3be7c17a7f3!2sMitsui+Garden+Hotel+Kyoto+Shijo!3m2!1d35.0036!2d135.7581!4m5!1s0x6000e8c0d6bc4fb9%3A0x9b1dd3a0e11b46b0!2sCandeo+Hotels+Osaka+The+Tower!3m2!1d34.6924!2d135.5022!5e0!3m2!1sen!2sjp!4v1700000000000!5m2!1sen!2sjp' },
+  { name:'Seoul', q:'Seoul South Korea',
+    embed:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100893!2d126.978!3d37.566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2012d5c6507%3A0x715bdde790189fe3!2sSeoul%2C+South+Korea!5e0!3m2!1sen!2sjp!4v1700000000000!5m2!1sen!2sjp' },
+  { name:'Tokyo', q:'Tokyo Japan',
+    embed:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207286!2d139.6917!3d35.6895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b0563339c6f%3A0x35c38d5ac4c557d0!2sTokyo%2C+Japan!5e0!3m2!1sen!2sjp!4v1700000000000!5m2!1sen!2sjp' },
+  { name:'Hakone', q:'Hakone Japan',
+    embed:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52877!2d139.0554!3d35.2324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601974ed1e09e2a1%3A0x4f3e11a66e18ff51!2sHakone%2C+Ashigarashimo+District%2C+Kanagawa!5e0!3m2!1sen!2sjp!4v1700000000000!5m2!1sen!2sjp' },
+  { name:'Kyoto', q:'Kyoto Japan',
+    embed:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104721!2d135.7681!3d35.0116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xd0bb56bf28c87a35!2sKyoto%2C+Japan!5e0!3m2!1sen!2sjp!4v1700000000000!5m2!1sen!2sjp' },
+  { name:'Nara', q:'Nara Japan',
+    embed:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52660!2d135.8048!3d34.6851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001395e7d34d5e9%3A0x5b2b7f5e61d6a62b!2sNara%2C+Japan!5e0!3m2!1sen!2sjp!4v1700000000000!5m2!1sen!2sjp' },
+  { name:'Osaka', q:'Osaka Japan',
+    embed:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104388!2d135.5022!3d34.6937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e8a01234e6bf%3A0x7e487d71f0530073!2sOsaka%2C+Japan!5e0!3m2!1sen!2sjp!4v1700000000000!5m2!1sen!2sjp' },
+];
+
+let activeMapCity = 0;
+function renderMapTab() {
+  document.getElementById('tab-map').innerHTML = `
+    <div class="map-container">
+      <div class="section-title">Interactive Maps</div>
+      <div class="map-city-tabs">
+        ${MAP_CITIES.map((c,i)=>`<button class="map-city-btn${i===0?' active':''}" onclick="switchMapCity(${i},this)">${c.name}</button>`).join('')}
       </div>
-      <div style="font-size:22px;font-family:'Noto Serif JP',serif;color:var(--blossom);font-weight:600;">~£15,800</div>
-    </div>
-  `;
+      <iframe id="main-map-frame" class="map-iframe" src="${MAP_CITIES[0].embed}" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="map-legend">
+        <div class="map-legend-item"><div class="map-legend-dot" style="background:#e8829a"></div>Hotels</div>
+        <div class="map-legend-item"><div class="map-legend-dot" style="background:#4a9e8e"></div>Attractions</div>
+        <div class="map-legend-item"><div class="map-legend-dot" style="background:#c9a84c"></div>Food & Drink</div>
+      </div>
+      <p style="font-size:11px;color:var(--muted);padding:4px 0 8px;">Tap a location on the map to explore. Per-day maps are available in the Day by Day tab.</p>
+    </div>`;
+}
+
+function switchMapCity(idx, btn) {
+  activeMapCity = idx;
+  document.querySelectorAll('.map-city-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const frame = document.getElementById('main-map-frame');
+  frame.src = MAP_CITIES[idx].embed;
+}
+
+/* ===== WEATHER TAB ===== */
+const WEATHER_DATA = [
+  { city:'Seoul', flag:'🇰🇷', dates:'4–5 Apr', icon:'🌤', avg:'13°C', range:'8–17°C', desc:'Mild spring, partly cloudy', details:'Light jacket needed evenings\nCherry blossom may still be around\nLow chance of rain' },
+  { city:'Tokyo', flag:'🇯🇵', dates:'5–8 Apr', icon:'🌸', avg:'16°C', range:'11–20°C', desc:'Peak cherry blossom season', details:'Warm days, cool evenings\nPossible light showers\nIdeal sightseeing weather' },
+  { city:'Hakone', flag:'⛰️', dates:'8–10 Apr', icon:'⛅', avg:'12°C', range:'7–16°C', desc:'Cooler at altitude', details:'Mt Fuji views best in morning\nCloud cover common afternoons\nWarm layers for onsen evenings' },
+  { city:'Kyoto', flag:'⛩️', dates:'10–14 Apr', icon:'🌸', avg:'17°C', range:'11–21°C', desc:'Beautiful spring weather', details:'Late cherry blossoms likely\nComfortable walking temps\nBusy with tourists — go early' },
+  { city:'Nara', flag:'🦌', dates:'~13 Apr', icon:'🌤', avg:'17°C', range:'11–21°C', desc:'Same as Kyoto region', details:'Day trip — very pleasant\nDeer park lovely in spring\nLight layers sufficient' },
+  { city:'Osaka', flag:'🎡', dates:'14–17 Apr', icon:'🌤', avg:'18°C', range:'13–22°C', desc:'Warm & bright', details:'Warmest city on the trip\nGreat street food weather\nLow rain probability' },
+];
+
+function renderWeather() {
+  document.getElementById('tab-weather').innerHTML = `
+    <div class="weather-container">
+      <div class="section-title">April Weather by City</div>
+      <div class="weather-grid">
+        ${WEATHER_DATA.map(w=>`
+          <div class="weather-card">
+            <div class="weather-city">${w.flag} ${w.city}</div>
+            <div class="weather-dates">${w.dates}</div>
+            <div class="weather-icon">${w.icon}</div>
+            <div class="weather-temp">${w.avg}</div>
+            <div class="weather-range">${w.range}</div>
+            <div class="weather-desc">${w.desc}</div>
+            <div class="weather-detail">${w.details.replace(/\n/g,'<br>')}</div>
+          </div>`).join('')}
+      </div>
+      <p class="weather-note">Based on April historical averages for each location. Always check forecasts closer to departure.</p>
+    </div>`;
 }
 
 /* ===== DAYS ===== */
+const DAY_MAPS = {
+  'Tokyo':   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207286!2d139.6917!3d35.6895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b0563339c6f%3A0x35c38d5ac4c557d0!2sTokyo%2C+Japan!5e0!3m2!1sen!2sjp!4v1700000000000',
+  'Hakone':  'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52877!2d139.0554!3d35.2324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601974ed1e09e2a1%3A0x4f3e11a66e18ff51!2sHakone!5e0!3m2!1sen!2sjp!4v1700000000000',
+  'Kyoto':   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104721!2d135.7681!3d35.0116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a8d6cd3cc3f1%3A0xd0bb56bf28c87a35!2sKyoto!5e0!3m2!1sen!2sjp!4v1700000000000',
+  'Nara':    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52660!2d135.8048!3d34.6851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001395e7d34d5e9%3A0x5b2b7f5e61d6a62b!2sNara!5e0!3m2!1sen!2sjp!4v1700000000000',
+  'Osaka':   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104388!2d135.5022!3d34.6937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e8a01234e6bf%3A0x7e487d71f0530073!2sOsaka!5e0!3m2!1sen!2sjp!4v1700000000000',
+  'Seoul':   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100893!2d126.978!3d37.566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2012d5c6507%3A0x715bdde790189fe3!2sSeoul!5e0!3m2!1sen!2sjp!4v1700000000000',
+};
+
+function getMapForDay(location) {
+  if (!location) return null;
+  const loc = location;
+  for (const key of Object.keys(DAY_MAPS)) {
+    if (loc.includes(key)) return { url: DAY_MAPS[key], city: key };
+  }
+  return null;
+}
+
 function renderDays() {
   const days = tripData.days || [];
   const container = document.getElementById('tab-days');
   container.innerHTML = '<div class="days-container">' + days.map((day,di) => {
     const items = day.items || [];
     const label = day.label || '';
-    const dayNum = label.match(/Day (\d+)/)?.[1] || di;
-    const titlePart = label.replace(/Day \d+ — \w+ \d+ \w+/, '').replace('—','').trim() || day.location || '';
+    const dayNum = label.match(/Day (\d+)/)?.[1] || (di+1);
+    const mapInfo = getMapForDay(day.location || '');
 
     const itemsHTML = items.map(item => {
       const sm = STATUS_MAP[item.status] || {cls:'s-planning',label:item.status||''};
       const mapLink = item.mapQuery
-        ? `<a class="item-map" href="https://maps.google.com/?q=${encodeURIComponent(item.mapQuery)}" target="_blank">📍 Map</a>`
-        : '';
+        ? `<a class="item-map" href="https://maps.google.com/?q=${encodeURIComponent(item.mapQuery)}" target="_blank">📍 Map</a>` : '';
       return `<div class="item">
-        <div class="item-time">${item.time || ''}</div>
+        <div class="item-time">${item.time||''}</div>
         <div class="item-main">
-          <div class="item-activity">${item.activity || ''}</div>
-          ${item.notes ? `<div class="item-notes">${item.notes}</div>` : ''}
+          <div class="item-activity">${item.activity||''}</div>
+          ${item.notes?`<div class="item-notes">${item.notes}</div>`:''}
           <span class="status-badge ${sm.cls}">${sm.label}</span>
         </div>
         ${mapLink}
       </div>`;
     }).join('');
 
+    const mapBtn = mapInfo
+      ? `<button class="day-map-btn" onclick="toggleDayMap(${di})">🗺 Show ${mapInfo.city} map</button>
+         <iframe id="day-map-${di}" class="day-map-frame" src="" data-src="${mapInfo.url}" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`
+      : '';
+
     return `<div class="day-card" id="day-${di}">
       <div class="day-header" onclick="toggleDay(${di})">
         <div class="day-num">${dayNum}</div>
         <div class="day-info">
           <div class="day-title">${formatDayDate(day.date)}</div>
-          <div class="day-loc">${day.location || ''}</div>
+          <div class="day-loc">${day.location||''}</div>
         </div>
         <div class="day-badge">${items.length} activities</div>
         <div class="day-chevron">›</div>
       </div>
-      <div class="day-body">${itemsHTML}</div>
+      <div class="day-body">
+        ${mapBtn}
+        ${itemsHTML}
+      </div>
     </div>`;
   }).join('') + '</div>';
+}
+
+function toggleDay(idx) {
+  document.getElementById('day-'+idx).classList.toggle('open');
+}
+
+function toggleDayMap(idx) {
+  const frame = document.getElementById('day-map-'+idx);
+  const btn = frame.previousElementSibling;
+  const isVisible = frame.classList.contains('visible');
+  if (!isVisible) {
+    frame.src = frame.dataset.src;
+    frame.classList.add('visible');
+    btn.textContent = btn.textContent.replace('Show','Hide');
+  } else {
+    frame.classList.remove('visible');
+    btn.textContent = btn.textContent.replace('Hide','Show');
+  }
 }
 
 function formatDayDate(dateStr) {
   if (!dateStr) return '';
   try {
-    const d = new Date(dateStr + 'T12:00:00');
-    return d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'short'});
+    return new Date(dateStr+'T12:00:00').toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'short'});
   } catch(e) { return dateStr; }
-}
-
-function toggleDay(idx) {
-  const card = document.getElementById('day-' + idx);
-  card.classList.toggle('open');
 }
 
 /* ===== CHECKLIST ===== */
 function renderChecklist() {
   const groups = tripData.checklist || [];
-  try { checklistState = JSON.parse(sessionStorage.getItem('japan-checklist') || '{}'); } catch(e){}
-
-  let total = 0, done = 0;
-  groups.forEach((g,gi) => (g.items||[]).forEach((_,ii)=>{ total++; if(checklistState[`${gi}-${ii}`]) done++; }));
-
-  const groupsHTML = groups.map((g,gi) => `
+  try { checklistState = JSON.parse(sessionStorage.getItem('japan-checklist')||'{}'); } catch(e){}
+  let total=0, done=0;
+  groups.forEach((g,gi)=>(g.items||[]).forEach((_,ii)=>{ total++; if(checklistState[`${gi}-${ii}`]) done++; }));
+  const groupsHTML = groups.map((g,gi)=>`
     <div class="checklist-group">
-      <div class="checklist-group-title">${g.group || ''}</div>
+      <div class="checklist-group-title">${g.group||''}</div>
       ${(g.items||[]).map((item,ii)=>{
-        const key = `${gi}-${ii}`;
-        const checked = !!checklistState[key];
+        const key=`${gi}-${ii}`, checked=!!checklistState[key];
         return `<div class="checklist-item${checked?' checked':''}" onclick="toggleCheck('${key}',this)">
           <div class="checkbox"><span class="checkbox-tick">✓</span></div>
           <div style="flex:1;min-width:0">
             <div class="check-task">${item.task||''}</div>
-            ${item.notes ? `<div class="check-meta">${item.notes}</div>` : ''}
-            ${item.deadline && item.deadline !== '✅ Done' ? `<div class="check-meta" style="color:var(--blossom)">⏰ ${item.deadline}</div>` : ''}
+            ${item.notes?`<div class="check-meta">${item.notes}</div>`:''}
+            ${item.deadline&&item.deadline!=='✅ Done'?`<div class="check-meta" style="color:var(--blossom)">⏰ ${item.deadline}</div>`:''}
           </div>
-          ${item.who ? `<div class="check-who">${item.who}</div>` : ''}
+          ${item.who?`<div class="check-who">${item.who}</div>`:''}
         </div>`;
       }).join('')}
     </div>`).join('');
-
   document.getElementById('tab-checklist').innerHTML = `
     <div class="checklist-container">
       <div class="progress-label">${done} of ${total} complete</div>
@@ -597,130 +535,96 @@ function toggleCheck(key, el) {
   checklistState[key] = !checklistState[key];
   try { sessionStorage.setItem('japan-checklist', JSON.stringify(checklistState)); } catch(e){}
   el.classList.toggle('checked');
-  // recount
-  const allItems = document.querySelectorAll('.checklist-item');
-  const total = allItems.length;
+  const total = document.querySelectorAll('.checklist-item').length;
   const done = document.querySelectorAll('.checklist-item.checked').length;
-  const pct = total ? Math.round(done/total*100) : 0;
   const fill = document.getElementById('prog-fill');
-  if (fill) fill.style.width = pct + '%';
+  if (fill) fill.style.width = (total?Math.round(done/total*100):0)+'%';
   const lbl = document.querySelector('.progress-label');
   if (lbl) lbl.textContent = `${done} of ${total} complete`;
 }
 
 /* ===== PHRASES ===== */
 const PHRASES = [
-  {jp:'ありがとうございます', en:'Thank you very much', rom:'Arigatou gozaimasu'},
-  {jp:'すみません', en:'Excuse me / Sorry', rom:'Sumimasen'},
-  {jp:'これをください', en:"I'll have this please", rom:'Kore wo kudasai'},
-  {jp:'いくらですか？', en:'How much is this?', rom:'Ikura desu ka?'},
-  {jp:'どこですか？', en:'Where is...?', rom:'Doko desu ka?'},
-  {jp:'えいごをはなせますか？', en:'Do you speak English?', rom:'Eigo wo hanasemasu ka?'},
-  {jp:'おすすめは何ですか？', en:'What do you recommend?', rom:'Osusume wa nan desu ka?'},
-  {jp:'トイレはどこですか？', en:'Where is the toilet?', rom:'Toire wa doko desu ka?'},
-  {jp:'カードは使えますか？', en:'Can I pay by card?', rom:'Kaado wa tsukaemasu ka?'},
-  {jp:'おいしい！', en:'Delicious!', rom:'Oishii!'},
-  {jp:'しゃしんをとってもいいですか？', en:'May I take a photo?', rom:'Shashin wo totte mo ii desu ka?'},
-  {jp:'いただきます', en:"Let's eat (before a meal)", rom:'Itadakimasu'},
-  {jp:'ごちそうさまでした', en:'Thank you for the meal', rom:'Gochisousama deshita'},
-  {jp:'よやくがあります', en:'I have a reservation', rom:'Yoyaku ga arimasu'},
-  {jp:'タクシーをよんでください', en:'Please call a taxi', rom:'Takushi wo yonde kudasai'},
+  {jp:'ありがとうございます',en:'Thank you very much',rom:'Arigatou gozaimasu'},
+  {jp:'すみません',en:'Excuse me / Sorry',rom:'Sumimasen'},
+  {jp:'これをください',en:"I'll have this please",rom:'Kore wo kudasai'},
+  {jp:'いくらですか？',en:'How much is this?',rom:'Ikura desu ka?'},
+  {jp:'どこですか？',en:'Where is...?',rom:'Doko desu ka?'},
+  {jp:'えいごをはなせますか？',en:'Do you speak English?',rom:'Eigo wo hanasemasu ka?'},
+  {jp:'おすすめは何ですか？',en:'What do you recommend?',rom:'Osusume wa nan desu ka?'},
+  {jp:'トイレはどこですか？',en:'Where is the toilet?',rom:'Toire wa doko desu ka?'},
+  {jp:'カードは使えますか？',en:'Can I pay by card?',rom:'Kaado wa tsukaemasu ka?'},
+  {jp:'おいしい！',en:'Delicious!',rom:'Oishii!'},
+  {jp:'しゃしんをとってもいいですか？',en:'May I take a photo?',rom:'Shashin wo totte mo ii desu ka?'},
+  {jp:'いただきます',en:"Let's eat (before a meal)",rom:'Itadakimasu'},
+  {jp:'ごちそうさまでした',en:'Thank you for the meal',rom:'Gochisousama deshita'},
+  {jp:'よやくがあります',en:'I have a reservation',rom:'Yoyaku ga arimasu'},
+  {jp:'タクシーをよんでください',en:'Please call a taxi',rom:'Takushi wo yonde kudasai'},
 ];
-
 function renderPhrases() {
   document.getElementById('tab-phrases').innerHTML = `
     <div class="phrases-container">
-      <div style="font-size:11px;color:var(--muted);padding:12px 0 8px;line-height:1.6;">Essential phrases for the trip. Tap to copy the Japanese text.</div>
-      ${PHRASES.map(p=>`
-        <div class="phrase-card" onclick="copyPhrase('${p.jp}')" style="cursor:pointer" title="Tap to copy">
-          <div class="phrase-jp">${p.jp}</div>
-          <div><div class="phrase-en">${p.en}</div><div class="phrase-rom">${p.rom}</div></div>
-        </div>`).join('')}
+      <div style="font-size:11px;color:var(--muted);padding:12px 0 8px;line-height:1.6;">Essential phrases. Tap to copy the Japanese text.</div>
+      ${PHRASES.map(p=>`<div class="phrase-card" onclick="copyPhrase('${p.jp}')" style="cursor:pointer">
+        <div class="phrase-jp">${p.jp}</div>
+        <div><div class="phrase-en">${p.en}</div><div class="phrase-rom">${p.rom}</div></div>
+      </div>`).join('')}
     </div>`;
 }
-
-function copyPhrase(text) {
-  navigator.clipboard?.writeText(text).catch(()=>{});
-}
+function copyPhrase(t){ navigator.clipboard?.writeText(t).catch(()=>{}); }
 
 /* ===== TIPS ===== */
 function renderTips() {
   const tips = [
-    {
-      title:'🚇 Getting Around',
-      items:[
-        '<strong>Suica card</strong> — load ¥5,000–10,000 each. Works on every metro, JR train and bus. Also pays at 7-Eleven, lawson, vending machines.',
-        '<strong>Hakone Freepass</strong> — 3-day pass covering everything: Romancecar, mountain railway, cable car, ropeway, pirate ship, buses. ¥8,000pp.',
-        '<strong>JR Pass</strong> — covers Shinkansen and most JR trains between cities. Huge saving on the Kyoto/Osaka/Himeji legs.',
-        '<strong>Narita</strong> — never take a taxi from the airport (~¥35,000). Pre-booked Klook highway bus to Shinjuku is the move.',
-        '<strong>Taxis</strong> — expensive but clean and honest. Use for short hops when needed. No tipping required or expected.',
-      ]
-    },
-    {
-      title:'💴 Money',
-      items:[
-        'Japan is still heavily <strong>cash-based</strong>. Withdraw ¥30,000–50,000 on arrival at Narita (Japan Post ATM or 7-Eleven).',
-        '<strong>7-Eleven ATMs</strong> accept foreign cards everywhere — most reliable option throughout the trip.',
-        'Golden Gai bars are <strong>cash only</strong>. Most small ramen shops are cash only. Always carry ¥5,000–10,000.',
-        'Cards are increasingly accepted at chain restaurants, department stores and hotels. Always ask first.',
-      ]
-    },
-    {
-      title:'🍜 Food & Eating',
-      items:[
-        'Say <strong>いただきます (itadakimasu)</strong> before eating and <strong>ごちそうさま (gochisousama)</strong> after — always appreciated.',
-        '<strong>Convenience stores (konbini)</strong> — 7-Eleven, Lawson and FamilyMart sell genuinely excellent food. Hot meals, sandwiches, onigiri. Not a last resort.',
-        'You do <strong>not tip</strong> in Japan. Ever. Tipping can cause confusion or offense.',
-        'Most ramen shops have <strong>vending machine ordering</strong> — buy your ticket first, hand to staff.',
-        '<strong>Tsukiji Outer Market</strong> — go early (before 11am). Most stalls sell out.',
-        'Osaka is Japan\'s food capital. <strong>Takoyaki, okonomiyaki, kushikatsu</strong> — all must-eats.',
-      ]
-    },
-    {
-      title:'🛁 Onsen & Ryokan Etiquette',
-      items:[
-        'Tattoos may be an issue at <strong>public onsen</strong> but private in-room rotenburo (like TEN-YU) has no restrictions.',
-        '<strong>Wash thoroughly</strong> at the shower station before entering the hot spring. This is non-negotiable.',
-        'The water is very hot — <strong>soak slowly</strong>, don\'t rush. Most people stay 10–20 mins.',
-        'Wear <strong>yukata</strong> (room robes) around the ryokan — perfectly normal, expected.',
-        'Kaiseki dinner will have <strong>many small courses</strong>. Pace yourself. It\'s an experience not just a meal.',
-      ]
-    },
-    {
-      title:'📱 Apps & Tech',
-      items:[
-        '<strong>Google Maps</strong> — download offline maps for Tokyo, Hakone, Kyoto, Osaka, Nara before leaving.',
-        '<strong>Navitime for Japan</strong> — best app for train/bus navigation in Japan.',
-        '<strong>Google Translate</strong> — camera mode is excellent for menus. Download Japanese offline pack.',
-        '<strong>eSIMs</strong> — activate at Narita. Check signal before leaving the airport.',
-        '<strong>Suica on iPhone</strong> — can be set up in Apple Wallet. Tap to pay everywhere.',
-      ]
-    },
+    { title:'🚇 Getting Around', items:[
+      '<strong>Suica card</strong> — load ¥5,000–10,000 each. Works on every metro, JR train and bus. Also pays at convenience stores and vending machines.',
+      '<strong>Hakone Freepass</strong> — 3-day pass covering Romancecar, mountain railway, cable car, ropeway, pirate ship, buses. ¥8,000pp.',
+      '<strong>JR Pass</strong> — covers Shinkansen and most JR trains between cities. Huge saving on the Kyoto/Osaka legs.',
+      '<strong>Narita</strong> — never take a taxi from the airport (~¥35,000). Pre-booked Klook highway bus to Shinjuku is the move.',
+    ]},
+    { title:'💴 Money', items:[
+      'Japan is still heavily <strong>cash-based</strong>. Withdraw ¥30,000–50,000 on arrival at Narita (Japan Post ATM or 7-Eleven).',
+      '<strong>7-Eleven ATMs</strong> accept foreign cards everywhere — most reliable option throughout the trip.',
+      'Golden Gai bars are <strong>cash only</strong>. Most small ramen shops too. Always carry ¥5,000–10,000.',
+    ]},
+    { title:'🍜 Food & Eating', items:[
+      'Say <strong>いただきます</strong> before eating and <strong>ごちそうさま</strong> after — always appreciated.',
+      '<strong>Konbini</strong> (convenience stores) sell genuinely excellent food. Not a last resort — a highlight.',
+      'You do <strong>not tip</strong> in Japan. Ever. Tipping can cause confusion or offense.',
+      'Most ramen shops use <strong>vending machine ordering</strong> — buy your ticket first, hand to staff.',
+    ]},
+    { title:'🛁 Onsen & Ryokan', items:[
+      'Private rotenburo at TEN-YU has <strong>no tattoo restrictions</strong>.',
+      '<strong>Wash thoroughly</strong> at the shower station before entering the hot spring — non-negotiable.',
+      'Wear <strong>yukata</strong> (room robes) around the ryokan — perfectly normal.',
+      'Kaiseki dinner has <strong>many small courses</strong>. Pace yourself — it\'s an experience.',
+    ]},
+    { title:'📱 Apps & Tech', items:[
+      '<strong>Google Maps</strong> — download offline maps for all cities before leaving.',
+      '<strong>Google Translate</strong> — camera mode is excellent for menus. Download Japanese offline pack.',
+      '<strong>eSIMs</strong> — activate at Narita. Check signal before leaving the airport.',
+      '<strong>Suica on iPhone</strong> — set up in Apple Wallet. Tap to pay everywhere.',
+    ]},
   ];
-
-  document.getElementById('tab-tips').innerHTML = `
-    <div class="tips-container">
-      ${tips.map(section=>`
-        <div class="tip-section">
-          <div class="tip-section-title">${section.title}</div>
-          ${section.items.map(t=>`<div class="tip-item">${t}</div>`).join('')}
-        </div>`).join('')}
-    </div>`;
+  document.getElementById('tab-tips').innerHTML = `<div class="tips-container">${
+    tips.map(s=>`<div class="tip-section"><div class="tip-section-title">${s.title}</div>${
+      s.items.map(t=>`<div class="tip-item">${t}</div>`).join('')}</div>`).join('')
+  }</div>`;
 }
 
-/* ===== TAB SWITCHING ===== */
-const TABS = ['overview','days','checklist','phrases','tips'];
+/* ===== TABS ===== */
+const TABS = ['overview','days','map','weather','checklist','phrases','tips'];
 function switchTab(tab, btn) {
-  TABS.forEach(t => {
-    document.getElementById('tab-'+t).style.display = (t===tab)?'block':'none';
-  });
-  document.querySelectorAll('.nav-tab').forEach(b => b.classList.remove('active'));
+  TABS.forEach(t => document.getElementById('tab-'+t).style.display = (t===tab)?'block':'none');
+  document.querySelectorAll('.nav-tab').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
 }
 
 /* ===== INIT ===== */
 renderPhrases();
 renderTips();
+renderWeather();
+renderMapTab();
 loadData();
 </script>
 </body>
