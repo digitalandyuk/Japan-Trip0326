@@ -1,6 +1,6 @@
 {
   "tripName": "Japan & South Korea · April 2026",
-  "lastUpdated": "2026-03-08",
+  "lastUpdated": "2026-03-09",
   "days": [
     {
       "day": "Day 0",
@@ -1538,6 +1538,170 @@
       ],
       "locationAddress": "Grand Hyatt Incheon, 208 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
       "mapQuery": "Grand Hyatt Incheon Airport Hotel"
+    }
+  ],
+  "checklist": [
+    {
+      "group": "Bookings to Complete",
+      "items": [
+        {
+          "task": "Book Shinkansen: Odawara → Kyoto",
+          "notes": "Via Klook. Green Car, D seats, rows 10–15. Opens for booking from Tue 10 Mar. Hakone → Kyoto leg (Day 6, Fri 10 Apr).",
+          "deadline": "From Tue 10 Mar — book ASAP",
+          "who": "Andy"
+        },
+        {
+          "task": "Confirm sumo seats with Keio Plaza concierge",
+          "notes": "Awaiting response from hotel. Sumo tournament expected early April — check availability.",
+          "who": "Andy"
+        }
+      ]
+    },
+    {
+      "group": "Documents & Travel",
+      "items": [
+        {
+          "task": "Check all passports valid 6+ months after 18 Apr",
+          "notes": "Must be valid until at least mid-October 2026.",
+          "deadline": "Before travel",
+          "who": "All"
+        },
+        {
+          "task": "Save travel insurance documents",
+          "notes": "Download and store policy docs offline and share with all travellers.",
+          "deadline": "Before travel",
+          "who": "Andy"
+        },
+        {
+          "task": "Confirm ESTA/ETA not required (UK passports → Japan)",
+          "notes": "UK passport holders do not need ESTA (US) or ETA for Japan. Verify no new requirements introduced before travel.",
+          "deadline": "Before travel",
+          "who": "Andy"
+        },
+        {
+          "task": "Confirm K-ETA not required for UK passport holders → South Korea",
+          "notes": "K-ETA waiver for UK nationals was in place as of 2024. Verify this is still current before travel.",
+          "deadline": "Before travel",
+          "who": "Andy"
+        }
+      ]
+    },
+    {
+      "group": "Money & Cards",
+      "items": [
+        {
+          "task": "Notify banks of travel dates (Japan + South Korea)",
+          "notes": "Inform all card providers: 5 Apr – 18 Apr Japan, 17–18 Apr South Korea.",
+          "deadline": "Before 3 Apr",
+          "who": "Andy"
+        },
+        {
+          "task": "Notify banks of travel dates",
+          "deadline": "Before 3 Apr",
+          "who": "Sarah"
+        },
+        {
+          "task": "Get Japanese yen cash",
+          "notes": "Aim for ¥50,000–¥100,000 per person. Many smaller restaurants, shrines and rural areas are cash-only.",
+          "deadline": "Before 3 Apr",
+          "who": "All"
+        },
+        {
+          "task": "Check Wise / Revolut loaded and ready",
+          "notes": "Top up before departure. Useful for ATM withdrawals in Japan at good exchange rates.",
+          "deadline": "Before 3 Apr",
+          "who": "Andy"
+        }
+      ]
+    },
+    {
+      "group": "Apps to Download",
+      "items": [
+        {
+          "task": "Download Google Maps offline maps",
+          "notes": "Download offline packs for: Tokyo, Kyoto, Osaka, Hakone area. Essential for navigating without data.",
+          "deadline": "Before 3 Apr",
+          "who": "All"
+        },
+        {
+          "task": "Download Google Translate Japanese offline pack",
+          "notes": "Enable camera translation for signs, menus, etc. Download offline Japanese language pack.",
+          "deadline": "Before 3 Apr",
+          "who": "All"
+        },
+        {
+          "task": "Install EMot app and check Hakone Freepasses",
+          "notes": "All 4 passes already purchased. Control nos: 2837515, 2837519, 2837521, 2837523. Log in with sarahevansemail@googlemail.com. DO NOT activate passes early — activate at first use at Shinjuku on 8 Apr.",
+          "deadline": "Before 8 Apr",
+          "who": "All"
+        },
+        {
+          "task": "Set up Suica / IC card",
+          "notes": "Add Suica to Apple Wallet (iPhone/Apple Watch) or get a physical Suica/ICOCA at airport. Essential for Tokyo metro, convenience stores, and vending machines.",
+          "deadline": "On arrival Day 1",
+          "who": "All"
+        }
+      ]
+    },
+    {
+      "group": "Packing",
+      "items": [
+        {
+          "task": "Pack universal travel adaptors (Japan uses Type A)",
+          "notes": "Japan uses Type A (flat 2-pin, same as US). UK plugs need an adaptor. Bring at least 2.",
+          "who": "Andy"
+        },
+        {
+          "task": "Pack portable battery / powerbank ×4",
+          "notes": "One per person. Full charge before each day out — essential for maps, translation, photos.",
+          "who": "Andy"
+        },
+        {
+          "task": "Broken-in comfortable walking shoes for everyone",
+          "notes": "Expect 15,000–25,000 steps per day. Do not bring new shoes.",
+          "who": "All"
+        },
+        {
+          "task": "Pack light layers for Hakone",
+          "notes": "Hakone (Days 4–5) will be cooler than Tokyo/Kyoto, especially evenings at altitude. Bring a fleece or light jacket.",
+          "who": "All"
+        },
+        {
+          "task": "Review onsen etiquette before Hakone",
+          "notes": "No tattoos visible at public baths (private in-room rotenburo at TEN-YU is fine). Wash thoroughly before entering. No swimwear.",
+          "deadline": "Before 8 Apr",
+          "who": "All"
+        }
+      ]
+    },
+    {
+      "group": "Pre-Departure",
+      "items": [
+        {
+          "task": "Confirm KwikPark booking at Heathrow",
+          "notes": "Booking ref: L4PUK-777209. Drop-off Thu 3 Apr morning before VS208 departure.",
+          "deadline": "Before 3 Apr",
+          "who": "Andy"
+        },
+        {
+          "task": "WhatsApp Tourmaker driver evening before departure",
+          "notes": "Contact Tourmaker driver eve of Thu 3 Apr (~9pm). Confirm pickup, time, and hotel meeting point for ICN → NRT transfer (booking #1479-2, EVANS FAMILY banner).",
+          "deadline": "Eve of Thu 3 Apr (~21:00)",
+          "who": "Andy"
+        },
+        {
+          "task": "Check in online for VS208 (LHR → ICN) when available",
+          "notes": "Virgin Atlantic typically opens online check-in 24hrs before departure. Confirm seat allocations.",
+          "deadline": "Wed 2 Apr (24hrs before)",
+          "who": "Andy"
+        },
+        {
+          "task": "Activate EMot Hakone Freepasses only at first use",
+          "notes": "Do NOT activate in advance. Activate each pass in the EMot app at Shinjuku on 8 Apr before boarding Romancecar.",
+          "deadline": "Day 4 — 8 Apr at Shinjuku",
+          "who": "All"
+        }
+      ]
     }
   ]
 }
