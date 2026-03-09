@@ -1,29 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>&#x1F1EF;&#x1F1F5; Japan Trip 2026 &#x2014; Evans Family</title>
+<title>🇯🇵 Japan Trip 2026 — Evans Family</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
-:root {
-  --ink:#0f0f1a; --ink2:#1a1a2e; --blossom:#e8829a; --gold:#c9a84c;
-  --jade:#4a9e8e; --white:#fdfbf7; --muted:#8888a0; --border:rgba(255,255,255,0.08);
+
+/* ── THEME VARIABLES ── */
+[data-theme="dark"] {
+  --ink:#0f0f1a; --ink2:#1a1a2e; --ink3:#12121f;
+  --blossom:#e8829a; --gold:#c9a84c; --jade:#4a9e8e;
+  --white:#fdfbf7; --muted:#8888a0; --border:rgba(255,255,255,0.08);
+  --card-bg:rgba(255,255,255,0.03); --card-hover:rgba(255,255,255,0.06);
+  --item-border:rgba(255,255,255,0.05); --shadow:rgba(0,0,0,0.4);
 }
+[data-theme="light"] {
+  --ink:#f5f3ef; --ink2:#eceae6; --ink3:#e8e4de;
+  --blossom:#c0546a; --gold:#9a7030; --jade:#2e7a6c;
+  --white:#1a1a2e; --muted:#666680; --border:rgba(0,0,0,0.1);
+  --card-bg:rgba(0,0,0,0.03); --card-hover:rgba(0,0,0,0.06);
+  --item-border:rgba(0,0,0,0.07); --shadow:rgba(0,0,0,0.15);
+}
+
 *{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);min-height:100vh;}
+body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);min-height:100vh;transition:background 0.3s,color 0.3s;}
 
 /* HEADER */
 .header{background:linear-gradient(160deg,#0f0f1a 0%,#1a1a2e 50%,#0f1520 100%);padding:24px 20px 16px;text-align:center;border-bottom:1px solid rgba(232,130,154,0.2);position:relative;overflow:hidden;}
+[data-theme="light"] .header{background:linear-gradient(160deg,#2a1a2e 0%,#3a1a2e 50%,#2a1520 100%);}
 .header::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(232,130,154,0.08) 0%,transparent 70%);pointer-events:none;}
 .header-jp{font-family:'Noto Serif JP',serif;font-size:11px;color:var(--blossom);letter-spacing:6px;margin-bottom:6px;opacity:0.8;}
-.header h1{font-family:'Noto Serif JP',serif;font-size:clamp(20px,5vw,28px);font-weight:600;color:var(--white);line-height:1.2;}
+.header h1{font-family:'Noto Serif JP',serif;font-size:clamp(20px,5vw,28px);font-weight:600;color:#fdfbf7;line-height:1.2;}
 .header-dates{font-size:13px;color:var(--gold);margin-top:6px;letter-spacing:1px;font-weight:500;}
-.family-row{display:flex;justify-content:center;gap:8px;margin-top:10px;flex-wrap:wrap;}
-.family-pill{background:rgba(232,130,154,0.12);border:1px solid rgba(232,130,154,0.25);color:var(--blossom);font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500;}
+.family-row{display:flex;justify-content:center;gap:8px;margin-top:10px;flex-wrap:wrap;align-items:center;}
+.family-pill{background:rgba(232,130,154,0.12);border:1px solid rgba(232,130,154,0.25);color:#e8829a;font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500;}
+
+/* THEME TOGGLE */
+.theme-toggle{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#fdfbf7;font-size:14px;padding:4px 10px;border-radius:20px;cursor:pointer;font-family:inherit;transition:all 0.2s;margin-left:6px;}
+.theme-toggle:hover{background:rgba(255,255,255,0.2);}
+
 .countdown-bar{display:flex;justify-content:center;gap:12px;margin-top:14px;flex-wrap:wrap;}
 .countdown-unit{text-align:center;background:rgba(232,130,154,0.08);border:1px solid rgba(232,130,154,0.2);border-radius:12px;padding:8px 14px;min-width:60px;}
-.countdown-num{font-family:'Noto Serif JP',serif;font-size:24px;font-weight:700;color:var(--blossom);line-height:1;}
+.countdown-num{font-family:'Noto Serif JP',serif;font-size:24px;font-weight:700;color:#e8829a;line-height:1;}
 .countdown-lbl{font-size:10px;color:var(--muted);margin-top:3px;letter-spacing:0.5px;text-transform:uppercase;}
 .countdown-gone{font-size:13px;color:var(--jade);font-weight:600;margin-top:12px;letter-spacing:0.5px;}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
@@ -34,58 +53,56 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .refresh-btn{background:none;border:1px solid rgba(255,255,255,0.15);color:var(--muted);font-size:11px;padding:3px 10px;border-radius:12px;cursor:pointer;font-family:inherit;transition:all 0.2s;}
 .refresh-btn:hover{border-color:var(--blossom);color:var(--blossom);}
 
+/* TODAY BANNER */
+.today-banner{background:linear-gradient(135deg,rgba(74,158,142,0.2),rgba(74,158,142,0.08));border:1px solid rgba(74,158,142,0.4);border-radius:12px;padding:12px 16px;margin:12px 0 4px;display:flex;align-items:center;gap:10px;cursor:pointer;transition:all 0.2s;}
+.today-banner:hover{background:rgba(74,158,142,0.25);}
+.today-banner-text{font-size:13px;font-weight:600;color:var(--jade);}
+.today-banner-sub{font-size:11px;color:var(--muted);margin-top:2px;}
+.today-badge{font-size:20px;flex-shrink:0;}
+
+/* TODAY DAY HIGHLIGHT */
+.day-card.today-day{border-color:rgba(74,158,142,0.5);box-shadow:0 0 0 1px rgba(74,158,142,0.3),0 4px 20px rgba(74,158,142,0.15);}
+.day-card.today-day .day-num{color:var(--jade);}
+.today-pill{font-size:9px;font-weight:700;background:rgba(74,158,142,0.2);color:var(--jade);border:1px solid rgba(74,158,142,0.4);padding:2px 7px;border-radius:8px;letter-spacing:0.5px;text-transform:uppercase;margin-left:6px;}
+
 /* NAV */
 .nav-tabs{display:flex;background:var(--ink2);border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none;}
 .nav-tabs::-webkit-scrollbar{display:none;}
-.nav-tab{flex-shrink:0;padding:12px 15px;font-size:12px;font-weight:500;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;font-family:inherit;background:none;border-top:none;border-left:none;border-right:none;}
+.nav-tab{flex-shrink:0;padding:12px 14px;font-size:11.5px;font-weight:500;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;font-family:inherit;background:none;border-top:none;border-left:none;border-right:none;}
 .nav-tab:hover{color:var(--white);}
 .nav-tab.active{color:var(--blossom);border-bottom-color:var(--blossom);}
 
-.content{max-width:760px;margin:0 auto;padding:0 16px 60px;}
+.content{max-width:760px;margin:0 auto;padding:0 16px 80px;}
 .section-title{font-size:11px;color:var(--gold);font-weight:600;letter-spacing:0.5px;text-transform:uppercase;padding:14px 0 8px;}
 
 /* OVERVIEW */
 .overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:20px 0 8px;}
-.stat-card{background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:12px;padding:14px 12px;text-align:center;}
+.stat-card{background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:14px 12px;text-align:center;}
 .stat-num{font-family:'Noto Serif JP',serif;font-size:26px;font-weight:600;color:var(--blossom);line-height:1;}
 .stat-label{font-size:11px;color:var(--muted);margin-top:4px;}
-.route-strip{display:flex;align-items:center;gap:8px;padding:14px 16px;margin:12px 0;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:12px;overflow-x:auto;scrollbar-width:none;}
+.route-strip{display:flex;align-items:center;gap:8px;padding:14px 16px;margin:12px 0;background:var(--card-bg);border:1px solid var(--border);border-radius:12px;overflow-x:auto;scrollbar-width:none;}
 .route-strip::-webkit-scrollbar{display:none;}
 .route-city{flex-shrink:0;font-size:12px;font-weight:600;}
 .route-arrow{flex-shrink:0;color:var(--blossom);font-size:14px;}
-.hotel-card{display:flex;align-items:center;gap:14px;padding:14px 16px;margin-bottom:8px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:12px;}
+.hotel-card{display:flex;align-items:center;gap:14px;padding:14px 16px;margin-bottom:8px;background:var(--card-bg);border:1px solid var(--border);border-radius:12px;}
 .hotel-icon{font-size:22px;flex-shrink:0;}
 .hotel-name{font-size:14px;font-weight:500;}
 .hotel-dates{font-size:11px;color:var(--muted);margin-top:2px;}
 .hotel-status{margin-left:auto;font-size:10px;font-weight:600;padding:3px 9px;border-radius:10px;flex-shrink:0;}
 .hotel-status.paid{background:rgba(74,158,142,0.2);color:var(--jade);border:1px solid rgba(74,158,142,0.3);}
 .hotel-status.property{background:rgba(201,168,76,0.2);color:var(--gold);border:1px solid rgba(201,168,76,0.3);}
-
-/* STATUS LEGEND */
 .status-legend{display:flex;flex-wrap:wrap;gap:8px;padding:4px 0 12px;}
 .legend-item{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--muted);}
 .legend-dot{width:8px;height:8px;border-radius:3px;flex-shrink:0;}
 
-/* MAP TAB */
-.map-view-toggle{display:flex;gap:8px;padding:12px 0 8px;}
-.map-toggle-btn{padding:6px 16px;font-size:12px;font-weight:500;background:rgba(255,255,255,0.05);border:1px solid var(--border);color:var(--muted);border-radius:20px;cursor:pointer;font-family:inherit;transition:all 0.2s;}
-.map-toggle-btn.active{background:rgba(232,130,154,0.15);border-color:rgba(232,130,154,0.4);color:var(--blossom);}
-.map-city-tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:4px 0 10px;}
-.map-city-tabs::-webkit-scrollbar{display:none;}
-.map-city-btn{flex-shrink:0;padding:6px 14px;font-size:12px;font-weight:500;background:rgba(255,255,255,0.05);border:1px solid var(--border);color:var(--muted);border-radius:20px;cursor:pointer;font-family:inherit;transition:all 0.2s;white-space:nowrap;}
-.map-city-btn:hover{color:var(--white);}
-.map-city-btn.active{background:rgba(232,130,154,0.15);border-color:rgba(232,130,154,0.4);color:var(--blossom);}
-.osm-frame{width:100%;height:420px;border:none;border-radius:14px;border:1px solid var(--border);display:block;}
-.route-svg-wrap{border-radius:14px;overflow:hidden;border:1px solid var(--border);}
-
 /* DAYS */
 .days-container{padding-top:12px;}
-.day-card{margin-bottom:8px;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:rgba(255,255,255,0.02);}
+.day-card{margin-bottom:8px;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--card-bg);transition:border-color 0.3s,box-shadow 0.3s;}
 .day-header{display:flex;align-items:center;gap:12px;padding:14px 16px;cursor:pointer;transition:background 0.2s;user-select:none;}
-.day-header:hover{background:rgba(255,255,255,0.04);}
+.day-header:hover{background:var(--card-hover);}
 .day-num{font-family:'Noto Serif JP',serif;font-size:22px;font-weight:700;color:var(--blossom);line-height:1;min-width:30px;}
 .day-info{flex:1;min-width:0;}
-.day-title{font-size:14px;font-weight:600;}
+.day-title{font-size:14px;font-weight:600;display:flex;align-items:center;flex-wrap:wrap;gap:4px;}
 .day-loc{font-size:11px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .day-badge{font-size:10px;padding:3px 8px;border-radius:10px;font-weight:600;flex-shrink:0;background:rgba(201,168,76,0.15);color:var(--gold);border:1px solid rgba(201,168,76,0.25);}
 .day-chevron{color:var(--muted);font-size:14px;transition:transform 0.25s;flex-shrink:0;}
@@ -93,7 +110,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .day-body{display:none;padding:0 16px 14px;}
 .day-card.open .day-body{display:block;}
 
-/* Day map button & frame */
+/* Day map */
 .day-map-btn{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--blossom);background:rgba(232,130,154,0.1);border:1px solid rgba(232,130,154,0.25);border-radius:20px;padding:5px 12px;cursor:pointer;margin:8px 0 4px;font-family:inherit;transition:all 0.2s;}
 .day-map-btn:hover{background:rgba(232,130,154,0.2);}
 .day-map-btn.active{background:rgba(232,130,154,0.25);}
@@ -101,17 +118,21 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .day-osm-frame.visible{display:block;}
 
 /* ITEMS */
-.item{display:grid;grid-template-columns:52px 1fr auto;gap:10px;padding:10px 0;border-top:1px solid rgba(255,255,255,0.05);align-items:start;}
+.item{display:grid;grid-template-columns:52px 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--item-border);align-items:start;}
 .item-time{font-size:11px;color:var(--muted);font-weight:500;padding-top:2px;text-align:right;line-height:1.3;}
 .item-main{min-width:0;}
 .item-activity{font-size:13px;font-weight:500;line-height:1.4;}
 .item-notes{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.5;}
-.item-maplink{font-size:10px;color:var(--blossom);text-decoration:none;padding-top:2px;flex-shrink:0;opacity:0.7;transition:opacity 0.2s;white-space:nowrap;}
+
+/* ITEM ACTIONS — fixed layout, no crowding */
+.item-actions{display:flex;align-items:center;gap:8px;margin-top:6px;}
+.item-maplink{font-size:11px;color:var(--blossom);text-decoration:none;opacity:0.7;transition:opacity 0.2s;flex-shrink:0;}
 .item-maplink:hover{opacity:1;}
-.item-actions{display:flex;flex-direction:column;align-items:center;gap:4px;padding-top:2px;}
+.detail-btn{background:rgba(232,130,154,0.12);border:1px solid rgba(232,130,154,0.25);color:var(--blossom);font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;cursor:pointer;font-family:inherit;transition:all 0.2s;flex-shrink:0;letter-spacing:0.3px;}
+.detail-btn:hover{background:rgba(232,130,154,0.25);}
 
 /* STATUS BADGES */
-.status-badge{font-size:9px;font-weight:700;padding:2px 7px;border-radius:8px;letter-spacing:0.5px;margin-top:5px;display:inline-block;text-transform:uppercase;}
+.status-badge{font-size:9px;font-weight:700;padding:2px 7px;border-radius:8px;letter-spacing:0.5px;margin-top:4px;display:inline-block;text-transform:uppercase;}
 .s-booked    {background:rgba(224,80,80,0.2);   color:#e05050; border:1px solid rgba(224,80,80,0.3);}
 .s-bookahead {background:rgba(201,130,50,0.2);  color:#e09040; border:1px solid rgba(201,130,50,0.3);}
 .s-confirmed {background:rgba(74,158,142,0.2);  color:var(--jade); border:1px solid rgba(74,158,142,0.3);}
@@ -121,32 +142,99 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .s-free      {background:rgba(122,184,122,0.2); color:#7ab87a; border:1px solid rgba(122,184,122,0.3);}
 .s-paid      {background:rgba(74,158,142,0.2);  color:var(--jade); border:1px solid rgba(74,158,142,0.3);}
 
+/* MODAL */
+.modal-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:1000;align-items:flex-end;justify-content:center;}
+.modal-backdrop.open{display:flex;}
+@media(min-width:500px){.modal-backdrop{align-items:center;}}
+.modal-box{background:#1a1a2e;border-radius:20px 20px 0 0;width:100%;max-width:500px;max-height:85vh;overflow-y:auto;padding:22px 20px 40px;border:1px solid rgba(255,255,255,0.1);border-bottom:none;}
+[data-theme="light"] .modal-box{background:#f0ecea;}
+@media(min-width:500px){.modal-box{border-radius:16px;border:1px solid rgba(255,255,255,0.1);max-height:80vh;}}
+.modal-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px;border-bottom:1px solid var(--border);padding-bottom:14px;}
+.modal-title{font-size:15px;font-weight:600;line-height:1.4;flex:1;color:var(--white);}
+.modal-close{background:rgba(255,255,255,0.08);border:none;color:var(--muted);font-size:16px;cursor:pointer;padding:4px 9px;line-height:1;border-radius:8px;flex-shrink:0;transition:all 0.2s;}
+.modal-close:hover{background:rgba(255,255,255,0.18);color:var(--white);}
+.modal-body{font-size:13px;color:rgba(255,255,255,0.85);line-height:1.9;white-space:pre-line;}
+[data-theme="light"] .modal-body{color:rgba(0,0,0,0.8);}
+[data-theme="light"] .modal-title{color:#1a1a2e;}
+
+/* TRANSPORT CARDS */
+.transport-card{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:10px;}
+.transport-route{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;}
+.transport-from,.transport-to{font-size:14px;font-weight:600;}
+.transport-arrow{color:var(--blossom);font-size:16px;flex-shrink:0;}
+.transport-type{font-size:10px;font-weight:700;padding:2px 8px;border-radius:8px;background:rgba(74,142,201,0.2);color:#4a8ec9;border:1px solid rgba(74,142,201,0.3);letter-spacing:0.5px;text-transform:uppercase;}
+.transport-meta{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;}
+.transport-meta-item{font-size:11px;color:var(--muted);}
+.transport-meta-item strong{color:var(--white);display:block;font-size:12px;margin-bottom:1px;}
+.transport-status{display:inline-flex;align-items:center;gap:6px;font-size:11px;margin-top:8px;padding:4px 10px;border-radius:10px;}
+.transport-status.confirmed{background:rgba(74,158,142,0.15);color:var(--jade);}
+.transport-status.book{background:rgba(201,130,50,0.15);color:#e09040;}
+.transport-note{font-size:11px;color:var(--muted);margin-top:8px;padding-top:8px;border-top:1px solid var(--item-border);line-height:1.5;}
+
+/* LINKS TAB */
+.links-group{margin-bottom:20px;}
+.links-group-title{font-size:12px;font-weight:600;color:var(--gold);letter-spacing:0.5px;text-transform:uppercase;padding:10px 0 8px;}
+.link-card{display:flex;align-items:center;gap:12px;padding:12px 14px;margin-bottom:6px;background:var(--card-bg);border:1px solid var(--border);border-radius:12px;text-decoration:none;transition:all 0.2s;}
+.link-card:hover{background:var(--card-hover);border-color:rgba(232,130,154,0.3);}
+.link-icon{font-size:20px;flex-shrink:0;}
+.link-name{font-size:13px;font-weight:500;color:var(--white);}
+.link-desc{font-size:11px;color:var(--muted);margin-top:1px;}
+.link-arrow{margin-left:auto;color:var(--blossom);font-size:14px;flex-shrink:0;}
+
+/* CURRENCY */
+.currency-widget{background:var(--card-bg);border:1px solid var(--border);border-radius:16px;padding:20px;margin-top:12px;}
+.currency-title{font-size:13px;font-weight:600;margin-bottom:16px;color:var(--white);}
+.currency-row{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
+.currency-input{flex:1;background:var(--ink2);border:1px solid var(--border);color:var(--white);font-size:18px;font-weight:600;padding:10px 14px;border-radius:10px;font-family:inherit;outline:none;transition:border-color 0.2s;-moz-appearance:textfield;}
+.currency-input::-webkit-outer-spin-button,.currency-input::-webkit-inner-spin-button{-webkit-appearance:none;}
+.currency-input:focus{border-color:var(--blossom);}
+.currency-label{font-size:13px;font-weight:600;min-width:28px;color:var(--muted);}
+.currency-result{font-size:24px;font-weight:700;color:var(--blossom);font-family:'Noto Serif JP',serif;}
+.currency-swap{background:rgba(232,130,154,0.12);border:1px solid rgba(232,130,154,0.25);color:var(--blossom);padding:8px 16px;border-radius:20px;cursor:pointer;font-size:12px;font-weight:600;font-family:inherit;transition:all 0.2s;margin-top:4px;}
+.currency-swap:hover{background:rgba(232,130,154,0.25);}
+.currency-rate{font-size:11px;color:var(--muted);margin-top:10px;padding-top:10px;border-top:1px solid var(--item-border);}
+.quick-amounts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;}
+.quick-btn{font-size:11px;font-weight:600;padding:5px 12px;background:var(--card-bg);border:1px solid var(--border);color:var(--muted);border-radius:14px;cursor:pointer;font-family:inherit;transition:all 0.2s;}
+.quick-btn:hover{border-color:var(--blossom);color:var(--blossom);}
+
+/* EMERGENCY TAB */
+.emergency-card{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:10px;}
+.emergency-card.urgent{border-color:rgba(224,80,80,0.4);background:rgba(224,80,80,0.05);}
+.emergency-card-title{font-size:12px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;color:var(--blossom);margin-bottom:10px;display:flex;align-items:center;gap:6px;}
+.emergency-card.urgent .emergency-card-title{color:#e05050;}
+.emergency-row{display:flex;justify-content:space-between;align-items:flex-start;padding:6px 0;border-top:1px solid var(--item-border);gap:12px;}
+.emergency-row:first-of-type{border-top:none;padding-top:0;}
+.emergency-label{font-size:11px;color:var(--muted);flex-shrink:0;min-width:100px;}
+.emergency-value{font-size:12px;font-weight:500;text-align:right;line-height:1.4;}
+.emergency-value a{color:var(--blossom);text-decoration:none;}
+.emergency-value a:hover{text-decoration:underline;}
+.emergency-number{font-size:16px;font-weight:700;color:var(--jade);}
+.emergency-banner{background:rgba(224,80,80,0.1);border:1px solid rgba(224,80,80,0.3);border-radius:12px;padding:12px 16px;margin-bottom:16px;font-size:12px;color:#e05050;line-height:1.5;text-align:center;font-weight:600;}
+
 /* CHECKLIST */
 .checklist-container{padding-top:12px;}
 .checklist-group{margin-bottom:16px;}
 .checklist-group-title{font-size:12px;font-weight:600;color:var(--gold);letter-spacing:0.5px;padding:10px 0 8px;text-transform:uppercase;}
-.checklist-item{display:flex;align-items:flex-start;gap:12px;padding:10px 14px;margin-bottom:6px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:10px;}
+.checklist-item{display:flex;align-items:flex-start;gap:12px;padding:10px 14px;margin-bottom:6px;background:var(--card-bg);border:1px solid var(--border);border-radius:10px;}
 .check-task{font-size:13px;font-weight:500;flex:1;}
 .check-meta{font-size:11px;color:var(--muted);margin-top:2px;}
 .check-who{font-size:10px;padding:2px 8px;border-radius:8px;font-weight:600;flex-shrink:0;margin-top:2px;background:rgba(232,130,154,0.15);color:var(--blossom);border:1px solid rgba(232,130,154,0.25);}
 .checklist-notice{background:rgba(232,130,154,0.1);border:1px solid rgba(232,130,154,0.3);border-radius:12px;padding:12px 16px;margin-bottom:18px;font-size:12.5px;color:var(--blossom);line-height:1.5;text-align:center;}
 
-/* DETAIL MODAL */
-.detail-btn{background:none;border:none;font-size:15px;cursor:pointer;opacity:0.4;padding:2px 4px;flex-shrink:0;line-height:1;transition:opacity 0.2s;}
-.detail-btn:hover{opacity:1;}
-.modal-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:1000;align-items:flex-end;justify-content:center;}
-.modal-backdrop.open{display:flex;}
-@media(min-width:500px){.modal-backdrop{align-items:center;}}
-.modal-box{background:#1a1a2e;border-radius:20px 20px 0 0;width:100%;max-width:480px;max-height:82vh;overflow-y:auto;padding:22px 20px 40px;border:1px solid rgba(255,255,255,0.1);border-bottom:none;}
-@media(min-width:500px){.modal-box{border-radius:16px;border:1px solid rgba(255,255,255,0.1);}}
-.modal-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px;border-bottom:1px solid var(--border);padding-bottom:14px;}
-.modal-title{font-size:15px;font-weight:600;line-height:1.4;flex:1;color:var(--white);}
-.modal-close{background:rgba(255,255,255,0.08);border:none;color:var(--muted);font-size:16px;cursor:pointer;padding:4px 9px;line-height:1;border-radius:8px;flex-shrink:0;transition:all 0.2s;}
-.modal-close:hover{background:rgba(255,255,255,0.18);color:var(--white);}
-.modal-body{font-size:13px;color:rgba(255,255,255,0.82);line-height:1.8;white-space:pre-line;}
+/* MAP */
+.map-view-toggle{display:flex;gap:8px;padding:12px 0 8px;}
+.map-toggle-btn{padding:6px 16px;font-size:12px;font-weight:500;background:var(--card-bg);border:1px solid var(--border);color:var(--muted);border-radius:20px;cursor:pointer;font-family:inherit;transition:all 0.2s;}
+.map-toggle-btn.active{background:rgba(232,130,154,0.15);border-color:rgba(232,130,154,0.4);color:var(--blossom);}
+.map-city-tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:4px 0 10px;}
+.map-city-tabs::-webkit-scrollbar{display:none;}
+.map-city-btn{flex-shrink:0;padding:6px 14px;font-size:12px;font-weight:500;background:var(--card-bg);border:1px solid var(--border);color:var(--muted);border-radius:20px;cursor:pointer;font-family:inherit;transition:all 0.2s;white-space:nowrap;}
+.map-city-btn:hover{color:var(--white);}
+.map-city-btn.active{background:rgba(232,130,154,0.15);border-color:rgba(232,130,154,0.4);color:var(--blossom);}
+.osm-frame{width:100%;height:420px;border:none;border-radius:14px;border:1px solid var(--border);display:block;}
+.route-svg-wrap{border-radius:14px;overflow:hidden;border:1px solid var(--border);}
 
 /* PHRASES */
-.phrase-card{display:flex;align-items:center;gap:14px;padding:12px 16px;margin-bottom:8px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:12px;}
+.phrase-card{display:flex;align-items:center;gap:14px;padding:12px 16px;margin-bottom:8px;background:var(--card-bg);border:1px solid var(--border);border-radius:12px;}
 .phrase-jp{font-family:'Noto Serif JP',serif;font-size:18px;min-width:110px;}
 .phrase-en{font-size:13px;font-weight:500;}
 .phrase-rom{font-size:11px;color:var(--blossom);margin-top:2px;font-style:italic;}
@@ -154,7 +242,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 /* WEATHER */
 .weather-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding-top:4px;}
 @media(min-width:500px){.weather-grid{grid-template-columns:repeat(3,1fr);}}
-.weather-card{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:14px;padding:16px 14px;text-align:center;}
+.weather-card{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:16px 14px;text-align:center;}
 .weather-city{font-size:13px;font-weight:600;margin-bottom:4px;}
 .weather-dates{font-size:10px;color:var(--muted);margin-bottom:10px;}
 .weather-icon{font-size:32px;margin-bottom:6px;}
@@ -166,46 +254,53 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 /* TIPS */
 .tip-section{margin-bottom:20px;}
 .tip-section-title{font-size:12px;font-weight:600;color:var(--gold);letter-spacing:0.5px;text-transform:uppercase;padding:10px 0 8px;}
-.tip-item{padding:10px 14px;margin-bottom:6px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:10px;font-size:13px;line-height:1.5;}
+.tip-item{padding:10px 14px;margin-bottom:6px;background:var(--card-bg);border:1px solid var(--border);border-radius:10px;font-size:13px;line-height:1.5;}
 .tip-item strong{color:var(--blossom);}
 </style>
 </head>
 <body>
 
 <div class="header">
-  <div class="header-jp">&#x65E5;&#x672C;&#x5BB6;&#x65CF;&#x65C5;&#x884C;</div>
-  <h1>&#x1F1EF;&#x1F1F5; Japan Family Trip 2026</h1>
-  <div class="header-dates">Fri 3 Apr &#x2013; Sat 18 Apr 2026</div>
+  <div class="header-jp">日本家族旅行</div>
+  <h1>🇯🇵 Japan Family Trip 2026</h1>
+  <div class="header-dates">Fri 3 Apr – Sat 18 Apr 2026</div>
   <div class="family-row">
     <span class="family-pill">Andy</span><span class="family-pill">Sarah</span>
     <span class="family-pill">Jack</span><span class="family-pill">Charlie</span>
+    <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn">☀️ Light</button>
   </div>
   <div class="countdown-bar" id="countdown-bar"></div>
   <div class="sync-bar">
     <div class="sync-dot loading" id="sync-dot"></div>
-    <span id="sync-status">Loading trip data&#x2026;</span>
-    <button class="refresh-btn" onclick="loadData()">&#x21BB; Refresh</button>
+    <span id="sync-status">Loading trip data…</span>
+    <button class="refresh-btn" onclick="loadData()">↻ Refresh</button>
   </div>
 </div>
 
 <div class="nav-tabs">
   <button class="nav-tab active" onclick="switchTab('overview',this)">Overview</button>
   <button class="nav-tab" onclick="switchTab('days',this)">Day by Day</button>
-  <button class="nav-tab" onclick="switchTab('map',this)">&#x1F5FA; Maps</button>
-  <button class="nav-tab" onclick="switchTab('weather',this)">&#x1F324; Weather</button>
+  <button class="nav-tab" onclick="switchTab('transport',this)">🚄 Transport</button>
+  <button class="nav-tab" onclick="switchTab('map',this)">🗺 Maps</button>
+  <button class="nav-tab" onclick="switchTab('weather',this)">🌤 Weather</button>
   <button class="nav-tab" onclick="switchTab('checklist',this)">Checklist</button>
   <button class="nav-tab" onclick="switchTab('phrases',this)">Japanese</button>
   <button class="nav-tab" onclick="switchTab('tips',this)">Tips</button>
+  <button class="nav-tab" onclick="switchTab('links',this)">🔗 Links</button>
+  <button class="nav-tab" onclick="switchTab('emergency',this)">🆘 Emergency</button>
 </div>
 
 <div class="content">
   <div id="tab-overview"></div>
-  <div id="tab-days"     style="display:none"></div>
-  <div id="tab-map"      style="display:none"></div>
-  <div id="tab-weather"  style="display:none"></div>
-  <div id="tab-checklist"style="display:none"></div>
-  <div id="tab-phrases"  style="display:none"></div>
-  <div id="tab-tips"     style="display:none"></div>
+  <div id="tab-days"      style="display:none"></div>
+  <div id="tab-transport" style="display:none"></div>
+  <div id="tab-map"       style="display:none"></div>
+  <div id="tab-weather"   style="display:none"></div>
+  <div id="tab-checklist" style="display:none"></div>
+  <div id="tab-phrases"   style="display:none"></div>
+  <div id="tab-tips"      style="display:none"></div>
+  <div id="tab-links"     style="display:none"></div>
+  <div id="tab-emergency" style="display:none"></div>
 </div>
 
 <!-- DETAIL MODAL -->
@@ -213,71 +308,87 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
   <div class="modal-box">
     <div class="modal-header">
       <div class="modal-title" id="modal-title"></div>
-      <button class="modal-close" onclick="closeDetailModal()">&#x2715;</button>
+      <button class="modal-close" onclick="document.getElementById('detail-modal').classList.remove('open');document.body.style.overflow='';">✕</button>
     </div>
     <div class="modal-body" id="modal-body"></div>
   </div>
 </div>
 
 <script>
-/* ─────────────────────────────────────────────
-   DATA
-───────────────────────────────────────────── */
+/* ═══════════════════════════════════════════
+   CONFIG & STATE
+═══════════════════════════════════════════ */
 const RAW_URL='https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japan-trip.json';
+const TRIP_START=new Date('2026-04-03');
+const TRIP_END  =new Date('2026-04-18');
+// Day dates for "on this day" matching
+// Each entry: { dayIndex, isoDate }
+const DAY_DATES=[
+  {di:0, date:'2026-04-03'},{di:1, date:'2026-04-04'},{di:2, date:'2026-04-05'},
+  {di:3, date:'2026-04-06'},{di:4, date:'2026-04-07'},{di:5, date:'2026-04-08'},
+  {di:6, date:'2026-04-09'},{di:7, date:'2026-04-10'},{di:8, date:'2026-04-11'},
+  {di:9, date:'2026-04-12'},{di:10,date:'2026-04-13'},{di:11,date:'2026-04-14'},
+  {di:12,date:'2026-04-15'},{di:13,date:'2026-04-16'},{di:14,date:'2026-04-17'},
+  {di:15,date:'2026-04-18'},
+];
 let tripData=null;
+let currencyMode='yenToGbp'; // or 'gbpToYen'
+const YEN_RATE=190; // ¥ per £1 — update before trip
 
+/* ═══════════════════════════════════════════
+   THEME
+═══════════════════════════════════════════ */
+function toggleTheme(){
+  const html=document.documentElement;
+  const isDark=html.getAttribute('data-theme')==='dark';
+  html.setAttribute('data-theme',isDark?'light':'dark');
+  document.getElementById('theme-btn').textContent=isDark?'🌙 Dark':'☀️ Light';
+}
+
+/* ═══════════════════════════════════════════
+   STATUS
+═══════════════════════════════════════════ */
 const STATUS_MAP={
-  booked:          {cls:'s-booked',    label:'Booked'},
-  bookahead:       {cls:'s-bookahead', label:'Book Ahead'},
-  book_ahead:      {cls:'s-bookahead', label:'Book Ahead'},
-  confirmed:       {cls:'s-confirmed', label:'Confirmed'},
-  included:        {cls:'s-included',  label:'Included'},
-  planning:        {cls:'s-planning',  label:'Planning'},
-  optional:        {cls:'s-optional',  label:'Optional'},
-  free:            {cls:'s-free',      label:'Free'},
-  paid:            {cls:'s-paid',      label:'Paid'},
-  on_arrival:      {cls:'s-planning',  label:'On Arrival'},
-  reminder:        {cls:'s-optional',  label:'Reminder'},
-  incomplete:      {cls:'s-booked',    label:'Incomplete'},
-  pay_at_property: {cls:'s-planning',  label:'Pay on Arrival'},
-  not_booked:      {cls:'s-bookahead', label:'Book Ahead'},
-  pending:         {cls:'s-bookahead', label:'Book Ahead'},
+  booked:{cls:'s-booked',label:'Booked'},bookahead:{cls:'s-bookahead',label:'Book Ahead'},
+  book_ahead:{cls:'s-bookahead',label:'Book Ahead'},confirmed:{cls:'s-confirmed',label:'Confirmed'},
+  included:{cls:'s-included',label:'Included'},planning:{cls:'s-planning',label:'Planning'},
+  optional:{cls:'s-optional',label:'Optional'},free:{cls:'s-free',label:'Free'},
+  paid:{cls:'s-paid',label:'Paid'},on_arrival:{cls:'s-planning',label:'On Arrival'},
+  pay_at_property:{cls:'s-planning',label:'Pay on Arrival'},not_booked:{cls:'s-bookahead',label:'Book Ahead'},
+  pending:{cls:'s-bookahead',label:'Book Ahead'},reminder:{cls:'s-optional',label:'Reminder'},
 };
-
 function resolveStatus(item){
   const s=(item.status||'').toLowerCase();
   if(s==='booked'){
-    const notes=item.notes||'';
+    const n=item.notes||'';
     const hasRef=(
-      notes.includes('Ref #')||notes.includes('ref #')||notes.includes('ref#')||
-      /booking[:\s]/i.test(notes)||
-      notes.toLowerCase().includes('confirmed booking')||
-      notes.toLowerCase().includes('klook')||
-      notes.toLowerCase().includes('expedia')||
-      /\u00a3\d/.test(notes)||
-      /\u00a5[\d,]+(paid|total)/i.test(notes)||
-      notes.toLowerCase().includes('booked via')||
-      notes.toLowerCase().includes('pre-booked')||
-      notes.toLowerCase().includes('emot')||
-      notes.toLowerCase().includes('odakyu.jp')
+      n.toLowerCase().includes('ref #')||n.toLowerCase().includes('ref#')||
+      /booking[:\s]/i.test(n)||n.toLowerCase().includes('confirmed booking')||
+      n.toLowerCase().includes('klook')||n.toLowerCase().includes('expedia')||
+      /\u00a3\d/.test(n)||/\u00a5[\d,]+(paid|total)/i.test(n)||
+      n.toLowerCase().includes('booked via')||n.toLowerCase().includes('pre-booked')||
+      n.toLowerCase().includes('emot')||n.toLowerCase().includes('odakyu')
     );
-    if(!hasRef) return {cls:'s-bookahead',label:'Book Ahead'};
+    if(!hasRef) return{cls:'s-bookahead',label:'Book Ahead'};
   }
   return STATUS_MAP[s]||{cls:'s-planning',label:item.status||''};
 }
 
-/* ─────────────────────────────────────────────
+/* ═══════════════════════════════════════════
    COUNTDOWN
-───────────────────────────────────────────── */
+═══════════════════════════════════════════ */
 function renderCountdown(){
   const dep=new Date('2026-04-03T00:00:00'),now=new Date(),diff=dep-now;
   const bar=document.getElementById('countdown-bar');
   if(!bar) return;
-  if(diff<=0){bar.innerHTML='<div class="countdown-gone">&#x2708;&#xFE0F; Trip is underway &#x2014; enjoy Japan!</div>';return;}
-  const d=Math.floor(diff/86400000),
-        h=Math.floor((diff%86400000)/3600000),
-        m=Math.floor((diff%3600000)/60000),
-        s=Math.floor((diff%60000)/1000);
+  if(diff<=0){
+    const end=new Date('2026-04-18T23:59:59');
+    if(now<=end) bar.innerHTML='<div class="countdown-gone">✈️ Trip is underway — enjoy Japan! 🌸</div>';
+    else bar.innerHTML='<div class="countdown-gone">🏡 Back home — what a trip!</div>';
+    return;
+  }
+  const d=Math.floor(diff/86400000),h=Math.floor((diff%86400000)/3600000),
+        m=Math.floor((diff%3600000)/60000),s=Math.floor((diff%60000)/1000);
   bar.innerHTML=`
     <div class="countdown-unit"><div class="countdown-num">${d}</div><div class="countdown-lbl">Days</div></div>
     <div class="countdown-unit"><div class="countdown-num">${String(h).padStart(2,'0')}</div><div class="countdown-lbl">Hours</div></div>
@@ -287,9 +398,47 @@ function renderCountdown(){
 renderCountdown();
 setInterval(renderCountdown,1000);
 
-/* ─────────────────────────────────────────────
+/* ═══════════════════════════════════════════
+   TODAY DETECTION
+═══════════════════════════════════════════ */
+function getTodayIndex(){
+  const now=new Date();
+  const todayISO=now.toISOString().slice(0,10);
+  const match=DAY_DATES.find(d=>d.date===todayISO);
+  return match?match.di:-1;
+}
+
+function renderTodayBanner(){
+  const idx=getTodayIndex();
+  if(idx<0) return '';
+  const days=(tripData&&tripData.days)||[];
+  const day=days[idx];
+  if(!day) return '';
+  return `<div class="today-banner" onclick="goToToday()">
+    <div class="today-badge">📅</div>
+    <div>
+      <div class="today-banner-text">Today: ${day.title||day.day||'Day '+idx}</div>
+      <div class="today-banner-sub">${day.date||''} · Tap to jump to today's day →</div>
+    </div>
+  </div>`;
+}
+
+function goToToday(){
+  const idx=getTodayIndex();
+  if(idx<0) return;
+  // Switch to days tab
+  switchTab('days',document.querySelector('.nav-tab:nth-child(2)'));
+  setTimeout(()=>{
+    const card=document.getElementById('day-'+idx);
+    if(!card) return;
+    if(!card.classList.contains('open')) card.classList.add('open');
+    card.scrollIntoView({behavior:'smooth',block:'start'});
+  },100);
+}
+
+/* ═══════════════════════════════════════════
    DATA LOAD
-───────────────────────────────────────────── */
+═══════════════════════════════════════════ */
 function setSyncStatus(state,msg){
   const dot=document.getElementById('sync-dot');
   const txt=document.getElementById('sync-status');
@@ -298,14 +447,14 @@ function setSyncStatus(state,msg){
 }
 
 async function loadData(){
-  setSyncStatus('loading','Fetching latest data\u2026');
+  setSyncStatus('loading','Fetching latest data…');
   try{
     const res=await fetch(RAW_URL+'?t='+Date.now());
     if(!res.ok) throw new Error('HTTP '+res.status);
     tripData=await res.json();
     setSyncStatus('ok','Updated '+new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}));
   }catch(e){
-    setSyncStatus('error','Could not fetch data \u2014 check connection');
+    setSyncStatus('error','Could not fetch — showing cached/fallback');
     tripData={days:[],checklist:[]};
   }
   renderOverview();
@@ -313,46 +462,67 @@ async function loadData(){
   renderChecklist();
 }
 
-/* ─────────────────────────────────────────────
+/* ═══════════════════════════════════════════
    OVERVIEW
-───────────────────────────────────────────── */
+═══════════════════════════════════════════ */
 function renderOverview(){
   const days=(tripData&&tripData.days)||[];
   const totalItems=days.reduce((a,d)=>a+(d.items||[]).length,0);
   const hotels=[
-    {name:'Crown Park Hotel Seoul',        dates:'Sat 4 \u2013 Sun 5 Apr',   status:'paid'},
-    {name:'Keio Plaza Hotel Tokyo',         dates:'Sun 5 \u2013 Wed 8 Apr',   status:'property'},
-    {name:'TEN-YU Ryokan, Hakone',          dates:'Wed 8 \u2013 Fri 10 Apr',  status:'paid'},
-    {name:'Mitsui Garden Hotel Kyoto',      dates:'Fri 10 \u2013 Tue 14 Apr', status:'paid'},
-    {name:'Candeo Hotels Osaka The Tower',  dates:'Tue 14 \u2013 Fri 17 Apr', status:'paid'},
-    {name:'Grand Hyatt Incheon',            dates:'Fri 17 \u2013 Sat 18 Apr', status:'property'},
+    {name:'Crown Park Hotel Seoul',       dates:'Sat 4 – Sun 5 Apr',   status:'paid'},
+    {name:'Keio Plaza Hotel Tokyo',        dates:'Sun 5 – Wed 8 Apr',   status:'property'},
+    {name:'TEN-YU Ryokan, Hakone',         dates:'Wed 8 – Fri 10 Apr',  status:'paid'},
+    {name:'Mitsui Garden Hotel Kyoto',     dates:'Fri 10 – Tue 14 Apr', status:'paid'},
+    {name:'Candeo Hotels Osaka The Tower', dates:'Tue 14 – Fri 17 Apr', status:'paid'},
+    {name:'Grand Hyatt Incheon',           dates:'Fri 17 – Sat 18 Apr', status:'property'},
   ];
-  const icons=['\u{1F3E8}','\u{1F3D9}\uFE0F','\u{1F6C1}','\u{1F338}','\u{1F3A1}','\u2708\uFE0F'];
+  const icons=['🏨','🏙️','🛁','🌸','🎡','✈️'];
   document.getElementById('tab-overview').innerHTML=`
+    ${renderTodayBanner()}
     <div class="overview-grid">
       <div class="stat-card"><div class="stat-num">15</div><div class="stat-label">Days</div></div>
       <div class="stat-card"><div class="stat-num">5</div><div class="stat-label">Cities</div></div>
       <div class="stat-card"><div class="stat-num">${totalItems||'60+'}</div><div class="stat-label">Activities</div></div>
     </div>
     <div class="route-strip">
-      <span class="route-city">\u{1F1EC}\u{1F1E7} London</span><span class="route-arrow">\u2192</span>
-      <span class="route-city">\u{1F1F0}\u{1F1F7} Seoul</span><span class="route-arrow">\u2192</span>
-      <span class="route-city">\u{1F5FC} Tokyo</span><span class="route-arrow">\u2192</span>
-      <span class="route-city">\u26F0\uFE0F Hakone</span><span class="route-arrow">\u2192</span>
-      <span class="route-city">\u26E9\uFE0F Kyoto</span><span class="route-arrow">\u2192</span>
-      <span class="route-city">\u{1F3EF} Nara</span><span class="route-arrow">\u2192</span>
-      <span class="route-city">\u{1F99E} Osaka</span><span class="route-arrow">\u2192</span>
-      <span class="route-city">\u{1F1EC}\u{1F1E7} London</span>
+      <span class="route-city">🇬🇧 London</span><span class="route-arrow">→</span>
+      <span class="route-city">🇰🇷 Seoul</span><span class="route-arrow">→</span>
+      <span class="route-city">🗼 Tokyo</span><span class="route-arrow">→</span>
+      <span class="route-city">⛰️ Hakone</span><span class="route-arrow">→</span>
+      <span class="route-city">⛩️ Kyoto</span><span class="route-arrow">→</span>
+      <span class="route-city">🦌 Nara</span><span class="route-arrow">→</span>
+      <span class="route-city">🎡 Osaka</span><span class="route-arrow">→</span>
+      <span class="route-city">🇬🇧 London</span>
     </div>
     <div class="section-title">Status Key</div>
     <div class="status-legend">
-      <div class="legend-item"><div class="legend-dot" style="background:#e05050"></div>Booked &amp; confirmed</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#e09040"></div>Book ahead recommended</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#e05050"></div>Booked & confirmed</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#e09040"></div>Book ahead</div>
       <div class="legend-item"><div class="legend-dot" style="background:#4a9e8e"></div>Confirmed / Paid</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#4a8ec9"></div>Included in trip</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#c9a84c"></div>Planning / To arrange</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#4a8ec9"></div>Included</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#c9a84c"></div>Planning</div>
       <div class="legend-item"><div class="legend-dot" style="background:#9e6ec9"></div>Optional</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#7ab87a"></div>Free activity</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#7ab87a"></div>Free</div>
+    </div>
+    <div class="section-title">¥ / £ Quick Converter</div>
+    <div class="currency-widget" style="margin-bottom:16px;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
+        <input class="currency-input" type="number" id="ov-currency-input" value="1000" oninput="ovConvert()" min="0" style="max-width:130px;">
+        <span class="currency-label" id="ov-from-label">¥</span>
+        <span style="font-size:18px;color:var(--muted)">→</span>
+        <span class="currency-result" id="ov-result">£5.26</span>
+        <span class="currency-label" id="ov-to-label">£</span>
+        <button class="currency-swap" style="margin-top:0;" onclick="ovSwap()">⇄</button>
+      </div>
+      <div class="quick-amounts" id="ov-quick">
+        <span style="font-size:11px;color:var(--muted);align-self:center;">Quick:</span>
+        <button class="quick-btn" onclick="ovSet(500)">¥500</button>
+        <button class="quick-btn" onclick="ovSet(1000)">¥1,000</button>
+        <button class="quick-btn" onclick="ovSet(5000)">¥5,000</button>
+        <button class="quick-btn" onclick="ovSet(10000)">¥10,000</button>
+        <button class="quick-btn" onclick="ovSet(50000)">¥50,000</button>
+      </div>
+      <div class="currency-rate">Rate: ¥${YEN_RATE} = £1 &nbsp;·&nbsp; Update <code>YEN_RATE</code> before departure</div>
     </div>
     <div class="section-title">Accommodation</div>
     ${hotels.map((h,i)=>`<div class="hotel-card">
@@ -360,98 +530,12 @@ function renderOverview(){
       <div><div class="hotel-name">${h.name}</div><div class="hotel-dates">${h.dates}</div></div>
       <div class="hotel-status ${h.status==='paid'?'paid':'property'}">${h.status==='paid'?'Paid':'Pay on Arrival'}</div>
     </div>`).join('')}`;
+  setTimeout(ovConvert,50);
 }
 
-/* ─────────────────────────────────────────────
-   MAPS TAB
-───────────────────────────────────────────── */
-const CITIES=[
-  {name:'Full Route',  osm:'https://www.openstreetmap.org/export/embed.html?bbox=121.0%2C33.0%2C142.0%2C38.5&layer=mapnik'},
-  {name:'\u{1F1F0}\u{1F1F7} Seoul',  osm:'https://www.openstreetmap.org/export/embed.html?bbox=126.734%2C37.413%2C127.183%2C37.701&layer=mapnik&marker=37.5665%2C126.9780'},
-  {name:'\u{1F5FC} Tokyo',   osm:'https://www.openstreetmap.org/export/embed.html?bbox=139.500%2C35.550%2C139.870%2C35.810&layer=mapnik&marker=35.6895%2C139.6917'},
-  {name:'\u26F0\uFE0F Hakone',  osm:'https://www.openstreetmap.org/export/embed.html?bbox=138.950%2C35.170%2C139.200%2C35.310&layer=mapnik&marker=35.2324%2C139.1067'},
-  {name:'\u26E9\uFE0F Kyoto',   osm:'https://www.openstreetmap.org/export/embed.html?bbox=135.630%2C34.930%2C135.870%2C35.090&layer=mapnik&marker=35.0116%2C135.7681'},
-  {name:'\u{1F98C} Nara',    osm:'https://www.openstreetmap.org/export/embed.html?bbox=135.760%2C34.650%2C135.860%2C34.720&layer=mapnik&marker=34.6851%2C135.8050'},
-  {name:'\u{1F3A1} Osaka',   osm:'https://www.openstreetmap.org/export/embed.html?bbox=135.390%2C34.600%2C135.620%2C34.780&layer=mapnik&marker=34.6937%2C135.5023'},
-  {name:'\u{1F3F0} Himeji',  osm:'https://www.openstreetmap.org/export/embed.html?bbox=134.630%2C34.790%2C134.740%2C34.860&layer=mapnik&marker=34.8394%2C134.6939'},
-];
-
-let mapView='osm',activeCity=0;
-
-function routeSVG(){
-  const W=560,H=340;
-  const stops=[
-    {label:'\u{1F1EC}\u{1F1E7} London',  x:40, y:60},
-    {label:'\u{1F1F0}\u{1F1F7} Seoul',   x:160,y:90},
-    {label:'\u{1F5FC} Tokyo',    x:310,y:80},
-    {label:'\u26F0\uFE0F Hakone',  x:350,y:140},
-    {label:'\u26E9\uFE0F Kyoto',   x:330,y:210},
-    {label:'\u{1F98C} Nara',    x:345,y:245},
-    {label:'\u{1F3A1} Osaka',   x:315,y:270},
-    {label:'\u{1F3F0} Himeji',  x:275,y:265},
-  ];
-  const pts=stops.map(s=>`${s.x},${s.y}`).join(' L ');
-  const last=stops[stops.length-1],first=stops[0];
-  return `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;background:#0f1520;">
-    ${[...Array(8)].map((_,i)=>`<line x1="0" y1="${i*50}" x2="${W}" y2="${i*50}" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>`).join('')}
-    ${[...Array(12)].map((_,i)=>`<line x1="${i*50}" y1="0" x2="${i*50}" y2="${H}" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>`).join('')}
-    <path d="M ${pts}" fill="none" stroke="#e8829a" stroke-width="2" stroke-dasharray="6,3" opacity="0.7"/>
-    <path d="M ${last.x},${last.y} Q 180,320 ${first.x},${first.y}" fill="none" stroke="#4a9e8e" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.5"/>
-    ${stops.map(s=>`
-      <circle cx="${s.x}" cy="${s.y}" r="7" fill="#e8829a" stroke="#0f1520" stroke-width="2"/>
-      <circle cx="${s.x}" cy="${s.y}" r="3" fill="white"/>
-      <text x="${s.x}" y="${s.y-13}" font-family="DM Sans,sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="600">${s.label}</text>
-    `).join('')}
-    <rect x="10" y="${H-28}" width="${W-20}" height="22" rx="4" fill="rgba(15,15,26,0.8)"/>
-    <line x1="20" y1="${H-17}" x2="50" y2="${H-17}" stroke="#e8829a" stroke-width="2" stroke-dasharray="6,3"/>
-    <text x="55" y="${H-13}" font-family="DM Sans,sans-serif" font-size="9" fill="#8888a0">Outbound route</text>
-    <line x1="150" y1="${H-17}" x2="180" y2="${H-17}" stroke="#4a9e8e" stroke-width="1.5" stroke-dasharray="4,4"/>
-    <text x="185" y="${H-13}" font-family="DM Sans,sans-serif" font-size="9" fill="#8888a0">Return</text>
-    <text x="${W-10}" y="${H-13}" font-family="DM Sans,sans-serif" font-size="9" fill="#c9a84c" text-anchor="end">Evans Family Japan 2026</text>
-  </svg>`;
-}
-
-function renderMapTab(){
-  document.getElementById('tab-map').innerHTML=`
-    <div style="padding-top:12px;">
-      <div class="section-title">Map Explorer</div>
-      <div class="map-view-toggle">
-        <button class="map-toggle-btn active" id="mtbtn-osm"   onclick="setMapView('osm',this)">\u{1F30D} Live Map</button>
-        <button class="map-toggle-btn"        id="mtbtn-route" onclick="setMapView('route',this)">\u{1F5FA} Route Overview</button>
-      </div>
-      <div class="map-city-tabs" id="city-tabs">
-        ${CITIES.map((c,i)=>`<button class="map-city-btn${i===0?' active':''}" onclick="switchMapCity(${i},this)">${c.name}</button>`).join('')}
-      </div>
-      <div id="map-osm-panel">
-        <iframe id="main-osm-frame" class="osm-frame" src="${CITIES[0].osm}" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div id="map-route-panel" style="display:none;" class="route-svg-wrap">${routeSVG()}</div>
-      <p style="font-size:11px;color:var(--muted);padding:10px 0 4px;">Per-city maps also inside each day in the Day by Day tab.</p>
-    </div>`;
-}
-
-function setMapView(v,btn){
-  mapView=v;
-  document.querySelectorAll('.map-toggle-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  const osmP=document.getElementById('map-osm-panel');
-  const routeP=document.getElementById('map-route-panel');
-  const cityTabs=document.getElementById('city-tabs');
-  if(v==='osm'){osmP.style.display='block';routeP.style.display='none';if(cityTabs)cityTabs.style.display='flex';}
-  else{osmP.style.display='none';routeP.style.display='block';if(cityTabs)cityTabs.style.display='none';}
-}
-
-function switchMapCity(idx,btn){
-  activeCity=idx;
-  document.querySelectorAll('.map-city-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  const frame=document.getElementById('main-osm-frame');
-  if(frame) frame.src=CITIES[idx].osm;
-}
-
-/* ─────────────────────────────────────────────
+/* ═══════════════════════════════════════════
    DAYS TAB
-───────────────────────────────────────────── */
+═══════════════════════════════════════════ */
 const DAY_OSM={
   'Seoul':  'https://www.openstreetmap.org/export/embed.html?bbox=126.734%2C37.413%2C127.183%2C37.701&layer=mapnik&marker=37.5665%2C126.9780',
   'Tokyo':  'https://www.openstreetmap.org/export/embed.html?bbox=139.500%2C35.550%2C139.870%2C35.810&layer=mapnik&marker=35.6895%2C139.6917',
@@ -463,68 +547,80 @@ const DAY_OSM={
   'Heathrow':'https://www.openstreetmap.org/export/embed.html?bbox=-0.510%2C51.440%2C-0.400%2C51.500&layer=mapnik&marker=51.4700%2C-0.4543',
   'Incheon':'https://www.openstreetmap.org/export/embed.html?bbox=126.300%2C37.400%2C126.650%2C37.550&layer=mapnik&marker=37.4602%2C126.4407',
 };
-
-function getOSMForDay(location){
-  if(!location) return null;
-  for(const k of Object.keys(DAY_OSM)){
-    if(location.includes(k)) return {url:DAY_OSM[k],city:k};
-  }
+function getOSMForDay(loc){
+  if(!loc) return null;
+  for(const k of Object.keys(DAY_OSM)) if(loc.includes(k)) return{url:DAY_OSM[k],city:k};
   return null;
 }
-
 const dayMapOpen={};
+
+function formatDayDate(ds){
+  if(!ds) return'';
+  if(/^\d{4}-\d{2}-\d{2}$/.test(ds)){
+    try{return new Date(ds+'T12:00:00').toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'short'});}catch(e){}
+  }
+  return ds;
+}
 
 function renderDays(){
   const days=(tripData&&tripData.days)||[];
+  const todayIdx=getTodayIndex();
   document.getElementById('tab-days').innerHTML='<div class="days-container">'+days.map((day,di)=>{
     const items=day.items||[];
     const label=day.label||day.day||'';
-    const dayNum=label.match(/Day (\d+)/)?.[1]||label.match(/(\d+)/)?.[1]||(di);
+    const dayNum=label.match(/Day (\d+)/)?.[1]||label.match(/(\d+)/)?.[1]||di;
     const dayTitle=day.title||'';
     const osmInfo=getOSMForDay(day.location||'');
+    const isToday=(di===todayIdx);
 
     const itemsHTML=items.map(item=>{
       const sm=resolveStatus(item);
-      const ml=item.mapQuery
-        ?`<a class="item-maplink" href="https://maps.google.com/?q=${encodeURIComponent(item.mapQuery)}" target="_blank">\u{1F4CD}</a>`:'';
-      const db=item.detail
-        ?`<button class="detail-btn" title="More info" onclick="openDetailModal(${JSON.stringify(item.activity||'')},${JSON.stringify(item.detail)})">\u2139\uFE0F</button>`
-        :'';
+      // Map link and detail button go in item-actions row, clearly separated
+      const mapLink=item.mapQuery
+        ?`<a class="item-maplink" href="https://maps.google.com/?q=${encodeURIComponent(item.mapQuery)}" target="_blank" title="Open in Google Maps">📍 Map</a>`:'';
+      const detailBtn=item.detail
+        ?`<button class="detail-btn" onclick="openDetailModal(${JSON.stringify(item.activity||'')},${JSON.stringify(item.detail)})">ℹ Info</button>`:'';
+      const actions=(mapLink||detailBtn)?`<div class="item-actions">${mapLink}${detailBtn}</div>`:'';
       return `<div class="item">
         <div class="item-time">${item.time||''}</div>
         <div class="item-main">
           <div class="item-activity">${item.activity||''}</div>
           ${item.notes?`<div class="item-notes">${item.notes}</div>`:''}
           <span class="status-badge ${sm.cls}">${sm.label}</span>
+          ${actions}
         </div>
-        <div class="item-actions">${ml}${db}</div>
       </div>`;
     }).join('');
 
     const mapSection=osmInfo?`
-      <button class="day-map-btn" id="mapbtn-${di}" onclick="toggleDayMap(${di})">\u{1F5FA} Show ${osmInfo.city} map</button>
+      <button class="day-map-btn" id="mapbtn-${di}" onclick="toggleDayMap(${di})">🗺 Show ${osmInfo.city} map</button>
       <iframe id="daymap-${di}" class="day-osm-frame" src="" data-src="${osmInfo.url}"
         allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`:'';
 
-    return `<div class="day-card" id="day-${di}">
+    return `<div class="day-card${isToday?' today-day':''}" id="day-${di}">
       <div class="day-header" onclick="toggleDay(${di})">
         <div class="day-num">${dayNum}</div>
         <div class="day-info">
-          <div class="day-title">${dayTitle||formatDayDate(day.date)}</div>
-          <div class="day-loc">${formatDayDate(day.date)}${day.location?' &middot; '+day.location:''}</div>
+          <div class="day-title">${dayTitle||formatDayDate(day.date)}${isToday?'<span class="today-pill">TODAY</span>':''}</div>
+          <div class="day-loc">${formatDayDate(day.date)}${day.location?' · '+day.location:''}</div>
         </div>
         <div class="day-badge">${items.length} activities</div>
-        <div class="day-chevron">\u203A</div>
+        <div class="day-chevron">›</div>
       </div>
       <div class="day-body">${mapSection}${itemsHTML}</div>
     </div>`;
   }).join('')+'</div>';
+
+  // Auto-open today's day if trip is underway
+  if(todayIdx>=0){
+    setTimeout(()=>{
+      const card=document.getElementById('day-'+todayIdx);
+      if(card&&!card.classList.contains('open')) card.classList.add('open');
+    },200);
+  }
 }
 
-function toggleDay(di){
-  document.getElementById('day-'+di).classList.toggle('open');
-}
-
+function toggleDay(di){document.getElementById('day-'+di).classList.toggle('open');}
 function toggleDayMap(di){
   const frame=document.getElementById('daymap-'+di);
   const btn=document.getElementById('mapbtn-'+di);
@@ -533,30 +629,17 @@ function toggleDayMap(di){
   dayMapOpen[di]=!on;
   if(!on){
     if(!frame.src||frame.src==='about:blank') frame.src=frame.dataset.src;
-    frame.classList.add('visible');
-    btn.classList.add('active');
+    frame.classList.add('visible');btn.classList.add('active');
     btn.textContent=btn.textContent.replace('Show','Hide');
-  } else {
-    frame.classList.remove('visible');
-    btn.classList.remove('active');
+  }else{
+    frame.classList.remove('visible');btn.classList.remove('active');
     btn.textContent=btn.textContent.replace('Hide','Show');
   }
 }
 
-function formatDayDate(ds){
-  if(!ds) return'';
-  // If it looks like YYYY-MM-DD, parse and reformat
-  if(/^\d{4}-\d{2}-\d{2}$/.test(ds)){
-    try{return new Date(ds+'T12:00:00').toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'short'});}
-    catch(e){}
-  }
-  // Otherwise return as-is (e.g. "Friday 3 April")
-  return ds;
-}
-
-/* ─────────────────────────────────────────────
+/* ═══════════════════════════════════════════
    DETAIL MODAL
-───────────────────────────────────────────── */
+═══════════════════════════════════════════ */
 function openDetailModal(title,detail){
   document.getElementById('modal-title').textContent=title;
   document.getElementById('modal-body').textContent=detail;
@@ -569,9 +652,118 @@ function closeDetailModal(e){
   document.body.style.overflow='';
 }
 
-/* ─────────────────────────────────────────────
+/* ═══════════════════════════════════════════
+   TRANSPORT TAB
+═══════════════════════════════════════════ */
+function renderTransport(){
+  const legs=[
+    {from:'London Heathrow',to:'Seoul Incheon',type:'Flight',date:'Fri 3 Apr',time:'13:25 → 10:05+1',duration:'~11h',cost:'Included',how:'Virgin Atlantic VS208',status:'confirmed',ref:'Ref E3FYHB · Seats 24D/24F/25D/25F'},
+    {from:'Seoul ICN T2',to:'Tokyo Narita T1',type:'Flight',date:'Sun 5 Apr',time:'15:45 → 18:25',duration:'2h 40m',cost:'Included',how:'Asiana OZ106',status:'confirmed',ref:'PNR D2MKD6 · Seats 24C / 24H,J,K'},
+    {from:'Narita Airport',to:'Keio Plaza Hotel',type:'Transfer',date:'Sun 5 Apr',time:'~19:00',duration:'~75 min',cost:'Klook booked',how:'Toyota Alphard private transfer · Meet & greet at arrivals',status:'confirmed',ref:'Klook XEB644582'},
+    {from:'Shinjuku',to:'Hakone-Yumoto',type:'Romancecar',date:'Wed 8 Apr',time:'10:00 → 11:27',duration:'1h 27m',cost:'¥4,600 total',how:'Odakyu Romancecar GSE "Hakone 3" · Car 7 Seats 5C,5D,6C,6D',status:'confirmed',ref:'Surcharge only — base via Freepass · Ref E786'},
+    {from:'Hakone-Yumoto',to:'Gora (& back)',type:'Mountain Rail',date:'Wed–Fri 8–10 Apr',time:'Various',duration:'~40 min',cost:'Included in Freepass',how:'Hakone Tozan Railway · All-day use',status:'confirmed',ref:'3-day Hakone Freepass × 4'},
+    {from:'Gora',to:'Owakudani via Sounzan',type:'Cable Car + Ropeway',date:'Thu 9 Apr',time:'~10:15',duration:'~45 min',cost:'Included in Freepass',how:'Cable car Gora→Sounzan then ropeway over volcanic ridge',status:'confirmed',ref:'Check ropeway closure due to volcanic activity'},
+    {from:'Owakudani',to:'Moto-Hakone (Lake Ashi)',type:'Ropeway + Boat',date:'Thu 9 Apr',time:'~12:20',duration:'~30 min ropeway + 40 min boat',cost:'Included in Freepass',how:'Ropeway descent then Hakone Pirate Ship cruise',status:'confirmed',ref:'Disembark at Moto-Hakone pier'},
+    {from:'Odawara',to:'Kyoto',type:'Shinkansen',date:'Fri 10 Apr',time:'~13:00',duration:'~2h 10m',cost:'Book via Klook',how:'Hikari Shinkansen · Green Car D seats rows 10–15 · Book from Tue 10 Mar',status:'book',ref:'Fuji visible on right first 30 mins from Odawara'},
+    {from:'Kyoto',to:'Osaka',type:'JR Train',date:'Tue 14 Apr',time:'~12:30',duration:'15–30 min',cost:'JR Pass covered',how:'Shinkansen (15 min) or JR Special Rapid (30 min)',status:'confirmed',ref:'No surcharge on Special Rapid with JR Pass'},
+    {from:'Osaka',to:'Himeji & back',type:'JR Train',date:'Thu 16 Apr',time:'08:15 depart',duration:'~60 min each way',cost:'JR Pass covered',how:'JR Special Rapid · No Shinkansen needed',status:'confirmed',ref:'Direct Osaka → Himeji · Walk north 15 min from station'},
+    {from:'Osaka (Tennoji)',to:'Kansai Airport KIX',type:'Haruka Express',date:'Fri 17 Apr',time:'~16:30',duration:'~29 min',cost:'~¥2,000–2,200pp',how:'Metro Namba→Tennoji (~¥230pp, 10 min) then JR Haruka · No booking needed',status:'confirmed',ref:'Buy at Tennoji JR machines on the day'},
+    {from:'Kansai Airport',to:'Seoul Incheon T2',type:'Flight',date:'Fri 17 Apr',time:'19:45 → 21:40',duration:'1h 55m',cost:'Included',how:'Asiana OZ113 · A350 · Seats 24H,J / 25H,J',status:'confirmed',ref:'PNR D2MKD6'},
+    {from:'Seoul Incheon',to:'London Heathrow',type:'Flight',date:'Sat 18 Apr',time:'12:25 → 18:50',duration:'~11h 45m',cost:'Included',how:'Virgin Atlantic VS209 · Seats 23D,23F,24D,24F',status:'confirmed',ref:'Ref E3FYHB'},
+  ];
+
+  document.getElementById('tab-transport').innerHTML=`<div style="padding-top:12px;">
+    <div class="section-title">All Journey Legs — in order</div>
+    <p style="font-size:11px;color:var(--muted);padding-bottom:12px;line-height:1.6;">Every major transfer, flight and train leg. Tap the day items for full booking details.</p>
+    ${legs.map(l=>`<div class="transport-card">
+      <div class="transport-route">
+        <span class="transport-from">${l.from}</span>
+        <span class="transport-arrow">→</span>
+        <span class="transport-to">${l.to}</span>
+        <span class="transport-type">${l.type}</span>
+      </div>
+      <div class="transport-meta">
+        <div class="transport-meta-item"><strong>${l.date}</strong>Date</div>
+        <div class="transport-meta-item"><strong>${l.time}</strong>Time</div>
+        <div class="transport-meta-item"><strong>${l.duration}</strong>Duration</div>
+        <div class="transport-meta-item"><strong>${l.cost}</strong>Cost</div>
+      </div>
+      <div class="transport-note">${l.how}</div>
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:8px;padding-top:8px;border-top:1px solid var(--item-border);">
+        <span class="transport-status ${l.status==='confirmed'?'confirmed':'book'}">${l.status==='confirmed'?'✓ Confirmed':'⚠ Action needed'}</span>
+        <span style="font-size:10px;color:var(--muted);">${l.ref}</span>
+      </div>
+    </div>`).join('')}
+  </div>`;
+}
+
+/* ═══════════════════════════════════════════
+   MAPS TAB
+═══════════════════════════════════════════ */
+const CITIES=[
+  {name:'Full Route', osm:'https://www.openstreetmap.org/export/embed.html?bbox=121.0%2C33.0%2C142.0%2C38.5&layer=mapnik'},
+  {name:'🇰🇷 Seoul',  osm:'https://www.openstreetmap.org/export/embed.html?bbox=126.734%2C37.413%2C127.183%2C37.701&layer=mapnik&marker=37.5665%2C126.9780'},
+  {name:'🗼 Tokyo',   osm:'https://www.openstreetmap.org/export/embed.html?bbox=139.500%2C35.550%2C139.870%2C35.810&layer=mapnik&marker=35.6895%2C139.6917'},
+  {name:'⛰️ Hakone',  osm:'https://www.openstreetmap.org/export/embed.html?bbox=138.950%2C35.170%2C139.200%2C35.310&layer=mapnik&marker=35.2324%2C139.1067'},
+  {name:'⛩️ Kyoto',   osm:'https://www.openstreetmap.org/export/embed.html?bbox=135.630%2C34.930%2C135.870%2C35.090&layer=mapnik&marker=35.0116%2C135.7681'},
+  {name:'🦌 Nara',    osm:'https://www.openstreetmap.org/export/embed.html?bbox=135.760%2C34.650%2C135.860%2C34.720&layer=mapnik&marker=34.6851%2C135.8050'},
+  {name:'🎡 Osaka',   osm:'https://www.openstreetmap.org/export/embed.html?bbox=135.390%2C34.600%2C135.620%2C34.780&layer=mapnik&marker=34.6937%2C135.5023'},
+  {name:'🏰 Himeji',  osm:'https://www.openstreetmap.org/export/embed.html?bbox=134.630%2C34.790%2C134.740%2C34.860&layer=mapnik&marker=34.8394%2C134.6939'},
+];
+let mapView='osm',activeCity=0;
+function renderMapTab(){
+  document.getElementById('tab-map').innerHTML=`<div style="padding-top:12px;">
+    <div class="section-title">Map Explorer</div>
+    <div class="map-view-toggle">
+      <button class="map-toggle-btn active" id="mtbtn-osm" onclick="setMapView('osm',this)">🌍 Live Map</button>
+      <button class="map-toggle-btn" id="mtbtn-route" onclick="setMapView('route',this)">🗺 Route Overview</button>
+    </div>
+    <div class="map-city-tabs" id="city-tabs">
+      ${CITIES.map((c,i)=>`<button class="map-city-btn${i===0?' active':''}" onclick="switchMapCity(${i},this)">${c.name}</button>`).join('')}
+    </div>
+    <div id="map-osm-panel">
+      <iframe id="main-osm-frame" class="osm-frame" src="${CITIES[0].osm}" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div id="map-route-panel" style="display:none;" class="route-svg-wrap">${routeSVG()}</div>
+    <p style="font-size:11px;color:var(--muted);padding:10px 0 4px;">Per-city maps also inside each day in the Day by Day tab.</p>
+  </div>`;
+}
+function routeSVG(){
+  const W=560,H=320;
+  const stops=[
+    {label:'🇬🇧 London',x:40,y:60},{label:'🇰🇷 Seoul',x:160,y:90},{label:'🗼 Tokyo',x:310,y:80},
+    {label:'⛰️ Hakone',x:350,y:140},{label:'⛩️ Kyoto',x:330,y:210},{label:'🦌 Nara',x:345,y:245},
+    {label:'🎡 Osaka',x:315,y:265},{label:'🏰 Himeji',x:275,y:260},
+  ];
+  const pts=stops.map(s=>`${s.x},${s.y}`).join(' L ');
+  const last=stops[stops.length-1],first=stops[0];
+  return `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;background:#0f1520;">
+    ${[...Array(7)].map((_,i)=>`<line x1="0" y1="${i*50}" x2="${W}" y2="${i*50}" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>`).join('')}
+    <path d="M ${pts}" fill="none" stroke="#e8829a" stroke-width="2" stroke-dasharray="6,3" opacity="0.7"/>
+    <path d="M ${last.x},${last.y} Q 180,310 ${first.x},${first.y}" fill="none" stroke="#4a9e8e" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.5"/>
+    ${stops.map(s=>`<circle cx="${s.x}" cy="${s.y}" r="7" fill="#e8829a" stroke="#0f1520" stroke-width="2"/><circle cx="${s.x}" cy="${s.y}" r="3" fill="white"/><text x="${s.x}" y="${s.y-13}" font-family="DM Sans,sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="600">${s.label}</text>`).join('')}
+    <text x="${W-10}" y="${H-8}" font-family="DM Sans,sans-serif" font-size="9" fill="#c9a84c" text-anchor="end">Evans Family Japan 2026</text>
+  </svg>`;
+}
+function setMapView(v,btn){
+  mapView=v;
+  document.querySelectorAll('.map-toggle-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const osmP=document.getElementById('map-osm-panel'),routeP=document.getElementById('map-route-panel'),ct=document.getElementById('city-tabs');
+  if(v==='osm'){osmP.style.display='block';routeP.style.display='none';if(ct)ct.style.display='flex';}
+  else{osmP.style.display='none';routeP.style.display='block';if(ct)ct.style.display='none';}
+}
+function switchMapCity(idx,btn){
+  activeCity=idx;
+  document.querySelectorAll('.map-city-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const f=document.getElementById('main-osm-frame');
+  if(f) f.src=CITIES[idx].osm;
+}
+
+/* ═══════════════════════════════════════════
    CHECKLIST
-───────────────────────────────────────────── */
+═══════════════════════════════════════════ */
 function renderChecklist(){
   const groups=(tripData&&tripData.checklist)||[];
   const html=groups.map(g=>`<div class="checklist-group">
@@ -580,29 +772,28 @@ function renderChecklist(){
       <div style="flex:1;min-width:0">
         <div class="check-task">${item.task||''}</div>
         ${item.notes?`<div class="check-meta">${item.notes}</div>`:''}
-        ${item.deadline&&item.deadline!=='\u2705 Done'&&item.deadline!=='\u2705 Booked'
-          ?`<div class="check-meta" style="color:var(--blossom)">\u23F0 ${item.deadline}</div>`:''}
+        ${item.deadline&&item.deadline!=='✅ Done'&&item.deadline!=='✅ Booked'?`<div class="check-meta" style="color:var(--blossom)">⏰ ${item.deadline}</div>`:''}
       </div>
       ${item.who?`<div class="check-who">${item.who}</div>`:''}
     </div>`).join('')}
   </div>`).join('');
   document.getElementById('tab-checklist').innerHTML=`<div class="checklist-container">
-    <div class="checklist-notice">\u{1F4CB} When something\u2019s done, don\u2019t forget to tell Andy \u2014 so he can update Claude and keep this app fully up to date.</div>
-    ${html}
+    <div class="checklist-notice">📋 When something's done, don't forget to tell Andy — so he can update Claude and keep this app fully up to date.</div>
+    ${html||'<p style="color:var(--muted);font-size:13px;padding:12px 0;">No checklist data loaded yet — tap Refresh above.</p>'}
   </div>`;
 }
 
-/* ─────────────────────────────────────────────
+/* ═══════════════════════════════════════════
    WEATHER
-───────────────────────────────────────────── */
+═══════════════════════════════════════════ */
 function renderWeather(){
   const data=[
-    {city:'Seoul',  flag:'\u{1F1F0}\u{1F1F7}',dates:'4\u20135 Apr', icon:'\u{1F324}',avg:'13\u00B0C',range:'8\u201317\u00B0C', desc:'Mild spring, partly cloudy',  details:'Light jacket needed evenings\nCherry blossom may still linger\nLow rain probability'},
-    {city:'Tokyo',  flag:'\u{1F1EF}\u{1F1F5}',dates:'5\u20138 Apr', icon:'\u{1F338}',avg:'16\u00B0C',range:'11\u201320\u00B0C',desc:'Peak cherry blossom season',  details:'Warm days, cool evenings\nPossible light showers\nIdeal sightseeing weather'},
-    {city:'Hakone', flag:'\u26F0\uFE0F', dates:'8\u201310 Apr',icon:'\u26C5',avg:'12\u00B0C',range:'7\u201316\u00B0C', desc:'Cooler at altitude',          details:'Fuji views best in morning\nCloud cover common afternoons\nWarm layers for onsen evenings'},
-    {city:'Kyoto',  flag:'\u26E9\uFE0F', dates:'10\u201314 Apr',icon:'\u{1F338}',avg:'17\u00B0C',range:'11\u201321\u00B0C',desc:'Beautiful spring weather',  details:'Late cherry blossoms likely\nComfortable walking temps\nGo early to avoid crowds'},
-    {city:'Nara',   flag:'\u{1F98C}', dates:'~13 Apr', icon:'\u{1F324}',avg:'17\u00B0C',range:'11\u201321\u00B0C',desc:'Same as Kyoto region',        details:'Day trip \u2014 very pleasant\nDeer park lovely in spring\nLight layers sufficient'},
-    {city:'Osaka',  flag:'\u{1F3A1}', dates:'14\u201317 Apr',icon:'\u{1F324}',avg:'18\u00B0C',range:'13\u201322\u00B0C',desc:'Warm &amp; bright',             details:'Warmest city on the trip\nGreat street food weather\nLow rain probability'},
+    {city:'Seoul',flag:'🇰🇷',dates:'4–5 Apr',icon:'🌤',avg:'13°C',range:'8–17°C',desc:'Mild spring, partly cloudy',details:'Light jacket needed evenings\nCherry blossom may still linger\nLow rain probability'},
+    {city:'Tokyo',flag:'🇯🇵',dates:'5–8 Apr',icon:'🌸',avg:'16°C',range:'11–20°C',desc:'Peak cherry blossom season',details:'Warm days, cool evenings\nPossible light showers\nIdeal sightseeing weather'},
+    {city:'Hakone',flag:'⛰️',dates:'8–10 Apr',icon:'⛅',avg:'12°C',range:'7–16°C',desc:'Cooler at altitude',details:'Fuji views best in morning\nCloud cover common afternoons\nWarm layers for onsen evenings'},
+    {city:'Kyoto',flag:'⛩️',dates:'10–14 Apr',icon:'🌸',avg:'17°C',range:'11–21°C',desc:'Beautiful spring weather',details:'Late cherry blossoms likely\nComfortable walking temps\nGo early to avoid crowds'},
+    {city:'Nara',flag:'🦌',dates:'~13 Apr',icon:'🌤',avg:'17°C',range:'11–21°C',desc:'Same as Kyoto region',details:'Day trip — very pleasant\nDeer park lovely in spring\nLight layers sufficient'},
+    {city:'Osaka',flag:'🎡',dates:'14–17 Apr',icon:'🌤',avg:'18°C',range:'13–22°C',desc:'Warm & bright',details:'Warmest city on the trip\nGreat street food weather\nLow rain probability'},
   ];
   document.getElementById('tab-weather').innerHTML=`<div style="padding-top:12px;">
     <div class="section-title">April Weather by City</div>
@@ -615,33 +806,33 @@ function renderWeather(){
       <div class="weather-desc">${w.desc}</div>
       <div class="weather-detail">${w.details.replace(/\n/g,'<br>')}</div>
     </div>`).join('')}</div>
-    <p style="font-size:11px;color:var(--muted);padding:12px 0 4px;text-align:center;font-style:italic;">Based on April historical averages. Check forecasts closer to departure.</p>
+    <p style="font-size:11px;color:var(--muted);padding:12px 0 4px;text-align:center;font-style:italic;">Based on April historical averages. Check closer to departure.</p>
   </div>`;
 }
 
-/* ─────────────────────────────────────────────
+/* ═══════════════════════════════════════════
    PHRASES
-───────────────────────────────────────────── */
+═══════════════════════════════════════════ */
 const PHRASES=[
-  {jp:'\u3042\u308A\u304C\u3068\u3046\u3054\u3056\u3044\u307E\u3059',en:'Thank you very much',rom:'Arigatou gozaimasu'},
-  {jp:'\u3059\u307F\u307E\u305B\u3093',en:'Excuse me / Sorry',rom:'Sumimasen'},
-  {jp:'\u3053\u308C\u3092\u304F\u3060\u3055\u3044',en:"I'll have this please",rom:'Kore wo kudasai'},
-  {jp:'\u3044\u304F\u3089\u3067\u3059\u304B\uFF1F',en:'How much is this?',rom:'Ikura desu ka?'},
-  {jp:'\u3069\u3053\u3067\u3059\u304B\uFF1F',en:'Where is...?',rom:'Doko desu ka?'},
-  {jp:'\u3048\u3044\u3054\u3092\u306F\u306A\u305B\u307E\u3059\u304B\uFF1F',en:'Do you speak English?',rom:'Eigo wo hanasemasu ka?'},
-  {jp:'\u304A\u3059\u3059\u3081\u306F\u4F55\u3067\u3059\u304B\uFF1F',en:'What do you recommend?',rom:'Osusume wa nan desu ka?'},
-  {jp:'\u30C8\u30A4\u30EC\u306F\u3069\u3053\u3067\u3059\u304B\uFF1F',en:'Where is the toilet?',rom:'Toire wa doko desu ka?'},
-  {jp:'\u30AB\u30FC\u30C9\u306F\u4F7F\u3048\u307E\u3059\u304B\uFF1F',en:'Can I pay by card?',rom:'Kaado wa tsukaemasu ka?'},
-  {jp:'\u304A\u3044\u3057\u3044\uFF01',en:'Delicious!',rom:'Oishii!'},
-  {jp:'\u3057\u3083\u3057\u3093\u3092\u3068\u3063\u3066\u3082\u3044\u3044\u3067\u3059\u304B\uFF1F',en:'May I take a photo?',rom:'Shashin wo totte mo ii desu ka?'},
-  {jp:'\u3044\u305F\u3060\u304D\u307E\u3059',en:"Let's eat (before a meal)",rom:'Itadakimasu'},
-  {jp:'\u3054\u3061\u305D\u3046\u3055\u307E\u3067\u3057\u305F',en:'Thank you for the meal',rom:'Gochisousama deshita'},
-  {jp:'\u3088\u3084\u304F\u304C\u3042\u308A\u307E\u3059',en:'I have a reservation',rom:'Yoyaku ga arimasu'},
-  {jp:'\u30BF\u30AF\u30B7\u30FC\u3092\u3088\u3093\u3067\u304F\u3060\u3055\u3044',en:'Please call a taxi',rom:'Takushi wo yonde kudasai'},
+  {jp:'ありがとうございます',en:'Thank you very much',rom:'Arigatou gozaimasu'},
+  {jp:'すみません',en:'Excuse me / Sorry',rom:'Sumimasen'},
+  {jp:'これをください',en:"I'll have this please",rom:'Kore wo kudasai'},
+  {jp:'いくらですか？',en:'How much is this?',rom:'Ikura desu ka?'},
+  {jp:'どこですか？',en:'Where is...?',rom:'Doko desu ka?'},
+  {jp:'えいごをはなせますか？',en:'Do you speak English?',rom:'Eigo wo hanasemasu ka?'},
+  {jp:'おすすめは何ですか？',en:'What do you recommend?',rom:'Osusume wa nan desu ka?'},
+  {jp:'トイレはどこですか？',en:'Where is the toilet?',rom:'Toire wa doko desu ka?'},
+  {jp:'カードは使えますか？',en:'Can I pay by card?',rom:'Kaado wa tsukaemasu ka?'},
+  {jp:'おいしい！',en:'Delicious!',rom:'Oishii!'},
+  {jp:'写真をとってもいいですか？',en:'May I take a photo?',rom:'Shashin wo totte mo ii desu ka?'},
+  {jp:'いただきます',en:"Let's eat (before a meal)",rom:'Itadakimasu'},
+  {jp:'ごちそうさまでした',en:'Thank you for the meal',rom:'Gochisousama deshita'},
+  {jp:'よやくがあります',en:'I have a reservation',rom:'Yoyaku ga arimasu'},
+  {jp:'タクシーをよんでください',en:'Please call a taxi',rom:'Takushi wo yonde kudasai'},
 ];
 function renderPhrases(){
   document.getElementById('tab-phrases').innerHTML=`<div style="padding-top:12px;">
-    <p style="font-size:11px;color:var(--muted);padding:0 0 10px;line-height:1.6;">Essential phrases. Tap any card to copy the Japanese text.</p>
+    <p style="font-size:11px;color:var(--muted);padding:0 0 10px;line-height:1.6;">Tap any card to copy the Japanese text to clipboard.</p>
     ${PHRASES.map(p=>`<div class="phrase-card" onclick="copyPhrase('${p.jp}')" style="cursor:pointer" title="Tap to copy">
       <div class="phrase-jp">${p.jp}</div>
       <div><div class="phrase-en">${p.en}</div><div class="phrase-rom">${p.rom}</div></div>
@@ -650,39 +841,39 @@ function renderPhrases(){
 }
 function copyPhrase(t){navigator.clipboard?.writeText(t).catch(()=>{});}
 
-/* ─────────────────────────────────────────────
+/* ═══════════════════════════════════════════
    TIPS
-───────────────────────────────────────────── */
+═══════════════════════════════════════════ */
 function renderTips(){
   const tips=[
-    {title:'\u{1F687} Getting Around',items:[
-      '<strong>Suica card</strong> \u2014 load \u00A55,000\u201310,000 each. Works on every metro, JR train and bus. Pays at convenience stores and vending machines.',
-      '<strong>Hakone Freepass</strong> \u2014 3-day pass covering Romancecar, mountain railway, cable car, ropeway, pirate ship, buses. \u00A58,000pp.',
-      '<strong>JR Pass</strong> \u2014 covers Shinkansen and JR trains between cities. Big saving on Tokyo\u2013Kyoto\u2013Osaka\u2013Himeji legs.',
-      '<strong>Narita airport</strong> \u2014 never take a taxi (~\u00A535,000). Pre-booked Klook highway bus to Shinjuku is the move.',
+    {title:'🚇 Getting Around',items:[
+      '<strong>Suica card</strong> — load ¥5,000–10,000 each. Works on every metro, JR train and bus. Pays at convenience stores and vending machines.',
+      '<strong>Hakone Freepass</strong> — 3-day pass covering Romancecar, mountain railway, cable car, ropeway, pirate ship, buses.',
+      '<strong>JR Pass</strong> — covers Shinkansen and JR trains between cities. Covers Tokyo–Kyoto–Osaka–Himeji legs.',
+      '<strong>Never take a taxi from Narita</strong> — ~¥35,000. Pre-booked Klook transfer is the move.',
     ]},
-    {title:'\u{1F4B4} Money',items:[
-      'Japan is still heavily <strong>cash-based</strong>. Withdraw \u00A530,000\u201350,000 on arrival at Narita.',
+    {title:'💴 Money',items:[
+      'Japan is still heavily <strong>cash-based</strong>. Withdraw ¥30,000–50,000 on arrival at Narita.',
       '<strong>7-Eleven ATMs</strong> accept foreign cards reliably throughout Japan.',
-      'Golden Gai bars and most small ramen shops are <strong>cash only</strong>. Always carry \u00A55,000\u201310,000.',
+      '<strong>Golden Gai bars, small ramen shops, markets</strong> — cash only. Always carry ¥5,000–10,000.',
     ]},
-    {title:'\u{1F35C} Food &amp; Eating',items:[
-      'Say <strong>\u3044\u305F\u3060\u304D\u307E\u3059</strong> before eating and <strong>\u3054\u3061\u305D\u3046\u3055\u307E</strong> after \u2014 always appreciated.',
+    {title:'🍜 Food & Eating',items:[
+      'Say <strong>いただきます</strong> before eating and <strong>ごちそうさま</strong> after — always appreciated.',
       '<strong>Konbini</strong> (7-Eleven, Lawson, FamilyMart) sell genuinely excellent food. Not a last resort.',
       'You do <strong>not tip</strong> in Japan. Ever. Tipping can cause confusion or offence.',
-      'Most ramen shops use <strong>vending machine ordering</strong> \u2014 buy your ticket first, hand to staff.',
+      'Most ramen shops use <strong>vending machine ordering</strong> — buy your ticket first, hand to staff.',
     ]},
-    {title:'\u{1F6C1} Onsen &amp; Ryokan',items:[
+    {title:'🛁 Onsen & Ryokan',items:[
       'Private rotenburo at TEN-YU has <strong>no tattoo restrictions</strong>.',
-      '<strong>Wash thoroughly</strong> at the shower station before entering the hot spring \u2014 non-negotiable.',
-      'Wear <strong>yukata</strong> (room robes) around the ryokan \u2014 perfectly normal.',
+      '<strong>Wash thoroughly</strong> at the shower station before entering the hot spring — non-negotiable.',
+      'Wear <strong>yukata</strong> (room robes) around the ryokan — perfectly normal.',
       'Kaiseki dinner has <strong>many small courses</strong>. Pace yourself.',
     ]},
-    {title:'\u{1F4F1} Apps &amp; Tech',items:[
-      '<strong>Google Maps</strong> \u2014 download offline maps for all cities before leaving.',
-      '<strong>Google Translate</strong> \u2014 camera mode excellent for menus. Download Japanese offline pack.',
-      '<strong>eSIMs</strong> \u2014 activate at Narita. Check signal before leaving the airport.',
-      '<strong>Suica on iPhone</strong> \u2014 set up in Apple Wallet. Tap to pay everywhere.',
+    {title:'📱 Apps & Tech',items:[
+      '<strong>Google Maps</strong> — download offline maps for all cities before leaving.',
+      '<strong>Google Translate</strong> — camera mode excellent for menus. Download Japanese offline pack.',
+      '<strong>eSIMs</strong> — activate at Narita. Check signal before leaving the airport.',
+      '<strong>Suica on iPhone</strong> — set up in Apple Wallet. Tap to pay everywhere.',
     ]},
   ];
   document.getElementById('tab-tips').innerHTML=`<div style="padding-top:8px;">${
@@ -693,23 +884,326 @@ function renderTips(){
   }</div>`;
 }
 
-/* ─────────────────────────────────────────────
-   TAB SWITCHING
-───────────────────────────────────────────── */
-const TABS=['overview','days','map','weather','checklist','phrases','tips'];
-function switchTab(tab,btn){
-  TABS.forEach(t=>{document.getElementById('tab-'+t).style.display=(t===tab)?'block':'none';});
-  document.querySelectorAll('.nav-tab').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
+/* ═══════════════════════════════════════════
+   LINKS TAB
+═══════════════════════════════════════════ */
+function renderLinks(){
+  const groups=[
+    {title:'✈️ Flights & Transfers',links:[
+      {icon:'🛫',name:'Virgin Atlantic — Manage Booking',desc:'Ref E3FYHB · LHR↔ICN',url:'https://www.virginatlantic.com/gb/en/manage-booking.html'},
+      {icon:'🛫',name:'Asiana Airlines — Manage Booking',desc:'PNR D2MKD6 · ICN↔NRT, KIX↔ICN',url:'https://flyasiana.com/C/GB/EN/manage-booking/reservation-inquiry'},
+      {icon:'🚗',name:'KwikPark — My Booking',desc:'Order L4PUK-777209 · LHR T3 Meet & Greet',url:'https://kwikpark.co.uk'},
+      {icon:'🚐',name:'Klook — My Bookings',desc:'Narita transfer XEB644582 & more',url:'https://www.klook.com/en-GB/profile/orders/'},
+    ]},
+    {title:'🚄 Japan Transport',links:[
+      {icon:'🚃',name:'EMot — My Tickets',desc:'Hakone Freepass × 4 · sarahevansemail@googlemail.com',url:'https://emot-tickets.jp/my-tickets'},
+      {icon:'🚄',name:'Odakyu Romancecar Booking',desc:'Book return leg if needed',url:'https://www.odakyu.jp/english/romancecar/'},
+      {icon:'🚅',name:'JR Ticket Booking (Klook)',desc:'Odawara → Kyoto Shinkansen — book from Tue 10 Mar',url:'https://www.klook.com/en-GB/search/?query=japan+rail+pass'},
+    ]},
+    {title:'🏨 Hotels',links:[
+      {icon:'🛎',name:'Expedia — My Trips',desc:'Crown Park Seoul · Keio Plaza · Mitsui Kyoto · Candeo Osaka',url:'https://www.expedia.co.uk/trips'},
+      {icon:'🏯',name:'TEN-YU Ryokan',desc:'Wed 8 – Fri 10 Apr · 2 nights · Paid',url:'https://www.tenyugroup.com'},
+      {icon:'🏨',name:'Grand Hyatt Incheon',desc:'Expedia Conf: 150513RA052227 · Pay at property',url:'https://www.hyatt.com'},
+    ]},
+    {title:'🌏 Useful Sites',links:[
+      {icon:'🌦',name:'Japan Meteorological Agency',desc:'Official Japan weather forecasts',url:'https://www.jma.go.jp/en/week/'},
+      {icon:'🗺',name:'Google Maps — Japan',desc:'Open in browser for saved lists',url:'https://maps.google.com/?hl=en'},
+      {icon:'🎌',name:'Visit Japan Web (Entry)',desc:'Immigration & customs pre-registration',url:'https://vjw-lp.digital.go.jp/en/'},
+      {icon:'💊',name:'JNTO Travel Info',desc:'Japan National Tourism Organisation',url:'https://www.japan.travel/en/'},
+    ]},
+
+  ];
+  document.getElementById('tab-links').innerHTML=`<div style="padding-top:12px;">
+    ${groups.map(g=>`<div class="links-group">
+      <div class="links-group-title">${g.title}</div>
+      ${g.links.map(l=>`<a class="link-card" href="${l.url}" target="_blank" rel="noopener">
+        <div class="link-icon">${l.icon}</div>
+        <div><div class="link-name">${l.name}</div><div class="link-desc">${l.desc}</div></div>
+        <div class="link-arrow">›</div>
+      </a>`).join('')}
+    </div>`).join('')}
+    <div style="padding-top:12px;border-top:1px solid var(--border);">
+      <div class="section-title">¥ / £ Currency Converter</div>
+      <div class="currency-widget">
+        <div class="currency-title">Quick Converter <span style="font-size:11px;font-weight:400;color:var(--muted);">— Static rate: ¥${YEN_RATE} per £1</span></div>
+        <div class="currency-row">
+          <input class="currency-input" type="number" id="currency-input" value="1000" oninput="convertCurrency()" min="0">
+          <span class="currency-label" id="currency-from-label">¥</span>
+          <span style="font-size:18px;color:var(--muted)">→</span>
+          <span class="currency-result" id="currency-result">£5.26</span>
+          <span class="currency-label" id="currency-to-label">£</span>
+        </div>
+        <button class="currency-swap" onclick="swapCurrency()">⇄ Swap ¥ / £</button>
+        <div class="quick-amounts" id="quick-amounts">
+          <span style="font-size:11px;color:var(--muted);align-self:center;">Quick:</span>
+          <button class="quick-btn" onclick="setAmount(500)">¥500</button>
+          <button class="quick-btn" onclick="setAmount(1000)">¥1,000</button>
+          <button class="quick-btn" onclick="setAmount(5000)">¥5,000</button>
+          <button class="quick-btn" onclick="setAmount(10000)">¥10,000</button>
+          <button class="quick-btn" onclick="setAmount(50000)">¥50,000</button>
+        </div>
+        <div class="currency-rate">Rate set to ¥${YEN_RATE} = £1 · Update in app code before departure if needed.</div>
+      </div>
+    </div>
+  </div>`;
+  convertCurrency();
 }
 
-/* ─────────────────────────────────────────────
+function ovConvert(){
+  const input=parseFloat(document.getElementById('ov-currency-input')?.value)||0;
+  const result=document.getElementById('ov-result');
+  if(!result) return;
+  if(window._ovMode!=='gbpToYen'){
+    result.textContent='£'+(input/YEN_RATE).toFixed(2);
+  }else{
+    result.textContent='¥'+(input*YEN_RATE).toLocaleString('en-GB',{maximumFractionDigits:0});
+  }
+}
+function ovSwap(){
+  window._ovMode=(window._ovMode!=='gbpToYen')?'gbpToYen':'yenToGbp';
+  const fl=document.getElementById('ov-from-label');
+  const tl=document.getElementById('ov-to-label');
+  const qa=document.getElementById('ov-quick');
+  if(window._ovMode!=='gbpToYen'){
+    if(fl)fl.textContent='¥';if(tl)tl.textContent='£';
+    if(qa)qa.innerHTML=`<span style="font-size:11px;color:var(--muted);align-self:center;">Quick:</span>
+      <button class="quick-btn" onclick="ovSet(500)">¥500</button>
+      <button class="quick-btn" onclick="ovSet(1000)">¥1,000</button>
+      <button class="quick-btn" onclick="ovSet(5000)">¥5,000</button>
+      <button class="quick-btn" onclick="ovSet(10000)">¥10,000</button>
+      <button class="quick-btn" onclick="ovSet(50000)">¥50,000</button>`;
+  }else{
+    if(fl)fl.textContent='£';if(tl)tl.textContent='¥';
+    if(qa)qa.innerHTML=`<span style="font-size:11px;color:var(--muted);align-self:center;">Quick:</span>
+      <button class="quick-btn" onclick="ovSet(5)">£5</button>
+      <button class="quick-btn" onclick="ovSet(10)">£10</button>
+      <button class="quick-btn" onclick="ovSet(20)">£20</button>
+      <button class="quick-btn" onclick="ovSet(50)">£50</button>
+      <button class="quick-btn" onclick="ovSet(100)">£100</button>`;
+  }
+  ovConvert();
+}
+function ovSet(v){
+  const inp=document.getElementById('ov-currency-input');
+  if(inp){inp.value=v;ovConvert();}
+}
+function convertCurrency(){
+  const input=parseFloat(document.getElementById('currency-input')?.value)||0;
+  const result=document.getElementById('currency-result');
+  if(!result) return;
+  if(currencyMode==='yenToGbp'){
+    result.textContent='£'+( input/YEN_RATE).toFixed(2);
+  }else{
+    result.textContent='¥'+(input*YEN_RATE).toLocaleString('en-GB',{maximumFractionDigits:0});
+  }
+}
+function swapCurrency(){
+  currencyMode=currencyMode==='yenToGbp'?'gbpToYen':'yenToGbp';
+  const fl=document.getElementById('currency-from-label');
+  const tl=document.getElementById('currency-to-label');
+  const qa=document.getElementById('quick-amounts');
+  if(currencyMode==='yenToGbp'){
+    if(fl) fl.textContent='¥'; if(tl) tl.textContent='£';
+    if(qa) qa.innerHTML=`<span style="font-size:11px;color:var(--muted);align-self:center;">Quick:</span>
+      <button class="quick-btn" onclick="setAmount(500)">¥500</button>
+      <button class="quick-btn" onclick="setAmount(1000)">¥1,000</button>
+      <button class="quick-btn" onclick="setAmount(5000)">¥5,000</button>
+      <button class="quick-btn" onclick="setAmount(10000)">¥10,000</button>
+      <button class="quick-btn" onclick="setAmount(50000)">¥50,000</button>`;
+  }else{
+    if(fl) fl.textContent='£'; if(tl) tl.textContent='¥';
+    if(qa) qa.innerHTML=`<span style="font-size:11px;color:var(--muted);align-self:center;">Quick:</span>
+      <button class="quick-btn" onclick="setAmount(5)">£5</button>
+      <button class="quick-btn" onclick="setAmount(10)">£10</button>
+      <button class="quick-btn" onclick="setAmount(20)">£20</button>
+      <button class="quick-btn" onclick="setAmount(50)">£50</button>
+      <button class="quick-btn" onclick="setAmount(100)">£100</button>`;
+  }
+  convertCurrency();
+}
+function setAmount(v){
+  const inp=document.getElementById('currency-input');
+  if(inp){inp.value=v;convertCurrency();}
+}
+
+/* ═══════════════════════════════════════════
+   EMERGENCY TAB
+═══════════════════════════════════════════ */
+function renderEmergency(){
+  document.getElementById('tab-emergency').innerHTML=`<div style="padding-top:12px;">
+    <div class="emergency-banner">🆘 Save this page to your home screen before you leave — it works offline</div>
+
+    <div class="emergency-card urgent">
+      <div class="emergency-card-title">🚨 Emergency Numbers</div>
+      <div class="emergency-row">
+        <span class="emergency-label">Police (Japan)</span>
+        <span class="emergency-value"><span class="emergency-number"><a href="tel:110">110</a></span></span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">Ambulance/Fire (Japan)</span>
+        <span class="emergency-value"><span class="emergency-number"><a href="tel:119">119</a></span></span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">Police (S. Korea)</span>
+        <span class="emergency-value"><span class="emergency-number"><a href="tel:112">112</a></span></span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">Ambulance (S. Korea)</span>
+        <span class="emergency-value"><span class="emergency-number"><a href="tel:119">119</a></span></span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">KwikPark (car)</span>
+        <span class="emergency-value"><a href="tel:07850366784">07850 366784</a></span>
+      </div>
+    </div>
+
+    <div class="emergency-card">
+      <div class="emergency-card-title">🏛 UK Embassies / Consulates</div>
+      <div class="emergency-row">
+        <span class="emergency-label">UK Embassy Tokyo</span>
+        <span class="emergency-value"><a href="tel:+81352117100">+81 3 5211 1100</a><br><span style="font-size:10px;color:var(--muted);">1 Ichiban-cho, Chiyoda-ku, Tokyo</span></span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">UK Consulate Osaka</span>
+        <span class="emergency-value"><a href="tel:+81662197200">+81 6 6219 7200</a></span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">UK Embassy Seoul</span>
+        <span class="emergency-value"><a href="tel:+82234108600">+82 2 3210 5500</a><br><span style="font-size:10px;color:var(--muted);">Jeong-dong, Jung-gu, Seoul</span></span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">FCDO 24hr Helpline</span>
+        <span class="emergency-value"><a href="tel:+442070081500">+44 20 7008 1500</a></span>
+      </div>
+    </div>
+
+    <div class="emergency-card">
+      <div class="emergency-card-title">🏥 Medical & Medicines</div>
+      <div class="emergency-row">
+        <span class="emergency-label">Andy — medicines</span>
+        <span class="emergency-value">Naproxen · Omeprazole · Nortriptyline<br><span style="font-size:10px;color:var(--muted);">Sciatica / back pain — TENS + Voltarol gel</span></span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">Andy — blood type</span>
+        <span class="emergency-value">Update here before trip</span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">Sarah — blood type</span>
+        <span class="emergency-value">Update here before trip</span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">Jack — blood type</span>
+        <span class="emergency-value">Update here before trip</span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">Charlie — blood type</span>
+        <span class="emergency-value">Update here before trip</span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">AMDA Japan helpline</span>
+        <span class="emergency-value"><a href="tel:+81662361990">+81 6 6636 2333</a><br><span style="font-size:10px;color:var(--muted);">English-speaking medical info, Tokyo area</span></span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">Japan Helpline (24hr)</span>
+        <span class="emergency-value"><a href="tel:0570000911">0570-000-911</a><br><span style="font-size:10px;color:var(--muted);">English crisis line, all Japan</span></span>
+      </div>
+    </div>
+
+    <div class="emergency-card">
+      <div class="emergency-card-title">🛡 Travel Insurance</div>
+      <div class="emergency-row">
+        <span class="emergency-label">Insurer</span>
+        <span class="emergency-value">Update before trip</span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">Policy number</span>
+        <span class="emergency-value">Update before trip</span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">Emergency claim no.</span>
+        <span class="emergency-value">Update before trip</span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">GP Surgery</span>
+        <span class="emergency-value">Update before trip</span>
+      </div>
+    </div>
+
+    <div class="emergency-card">
+      <div class="emergency-card-title">📞 Key Contacts</div>
+      <div class="emergency-row">
+        <span class="emergency-label">Tourmaker (Korea taxi)</span>
+        <span class="emergency-value">WhatsApp via booking app<br><span style="font-size:10px;color:var(--muted);">Ref #1479-1 & #1479-2</span></span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">Klook support</span>
+        <span class="emergency-value"><a href="https://www.klook.com/en-GB/contacts/" target="_blank">klook.com/contacts</a></span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">Virgin Atlantic (24hr)</span>
+        <span class="emergency-value"><a href="tel:+443448092770">0344 809 2770</a></span>
+      </div>
+      <div class="emergency-row">
+        <span class="emergency-label">Asiana Airlines UK</span>
+        <span class="emergency-value"><a href="tel:+442074840228">+44 20 7484 0228</a></span>
+      </div>
+    </div>
+
+    <p style="font-size:11px;color:var(--muted);padding:12px 0 4px;line-height:1.6;text-align:center;">⚠️ Update blood types, insurance policy & GP details before leaving home. Tell Andy to update Claude so the app reflects current info.</p>
+  </div>`;
+}
+
+/* ═══════════════════════════════════════════
+   TAB SWITCHING
+═══════════════════════════════════════════ */
+const TABS=['overview','days','transport','map','weather','checklist','phrases','tips','links','emergency'];
+function switchTab(tab,btn){
+  TABS.forEach(t=>{const el=document.getElementById('tab-'+t);if(el)el.style.display=(t===tab)?'block':'none';});
+  document.querySelectorAll('.nav-tab').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+}
+
+/* ═══════════════════════════════════════════
+   SERVICE WORKER (offline cache)
+═══════════════════════════════════════════ */
+if('serviceWorker' in navigator){
+  const SW_CODE=`
+const CACHE='japan-trip-v1';
+const ASSETS=['${location.href}'];
+self.addEventListener('install',e=>{
+  e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));
+  self.skipWaiting();
+});
+self.addEventListener('activate',e=>{
+  e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));
+  self.clients.claim();
+});
+self.addEventListener('fetch',e=>{
+  e.respondWith(
+    fetch(e.request).then(r=>{
+      if(r&&r.status===200){
+        const clone=r.clone();
+        caches.open(CACHE).then(c=>c.put(e.request,clone));
+      }
+      return r;
+    }).catch(()=>caches.match(e.request))
+  );
+});`;
+  const blob=new Blob([SW_CODE],{type:'application/javascript'});
+  const swUrl=URL.createObjectURL(blob);
+  navigator.serviceWorker.register(swUrl).catch(()=>{});
+}
+
+/* ═══════════════════════════════════════════
    INIT
-───────────────────────────────────────────── */
+═══════════════════════════════════════════ */
 renderPhrases();
 renderTips();
 renderWeather();
 renderMapTab();
+renderTransport();
+renderEmergency();
+renderLinks();
 loadData();
 </script>
 </body>
