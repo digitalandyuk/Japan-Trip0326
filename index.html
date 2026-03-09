@@ -478,8 +478,9 @@ function renderDays(){
   const days=(tripData&&tripData.days)||[];
   document.getElementById('tab-days').innerHTML='<div class="days-container">'+days.map((day,di)=>{
     const items=day.items||[];
-    const label=day.label||'';
-    const dayNum=label.match(/Day (\d+)/)?.[1]||(di);
+    const label=day.label||day.day||'';
+    const dayNum=label.match(/Day (\d+)/)?.[1]||label.match(/(\d+)/)?.[1]||(di);
+    const dayTitle=day.title||'';
     const osmInfo=getOSMForDay(day.location||'');
 
     const itemsHTML=items.map(item=>{
@@ -509,8 +510,8 @@ function renderDays(){
       <div class="day-header" onclick="toggleDay(${di})">
         <div class="day-num">${dayNum}</div>
         <div class="day-info">
-          <div class="day-title">${formatDayDate(day.date)}</div>
-          <div class="day-loc">${day.location||''}</div>
+          <div class="day-title">${dayTitle||formatDayDate(day.date)}</div>
+          <div class="day-loc">${formatDayDate(day.date)}${day.location?' &middot; '+day.location:''}</div>
         </div>
         <div class="day-badge">${items.length} activities</div>
         <div class="day-chevron">\u203A</div>
@@ -544,8 +545,13 @@ function toggleDayMap(di){
 
 function formatDayDate(ds){
   if(!ds) return'';
-  try{return new Date(ds+'T12:00:00').toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'short'});}
-  catch(e){return ds;}
+  // If it looks like YYYY-MM-DD, parse and reformat
+  if(/^\d{4}-\d{2}-\d{2}$/.test(ds)){
+    try{return new Date(ds+'T12:00:00').toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'short'});}
+    catch(e){}
+  }
+  // Otherwise return as-is (e.g. "Friday 3 April")
+  return ds;
 }
 
 /* ─────────────────────────────────────────────
