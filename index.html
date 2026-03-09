@@ -66,7 +66,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .today-pill{font-size:9px;font-weight:700;background:rgba(74,158,142,0.2);color:var(--jade);border:1px solid rgba(74,158,142,0.4);padding:2px 7px;border-radius:8px;letter-spacing:0.5px;text-transform:uppercase;margin-left:6px;}
 
 /* NAV */
-.nav-tabs{display:flex;background:var(--ink2);border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none;}
+.nav-tabs{display:flex;background:var(--ink2);border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none;justify-content:flex-start;}
+@media(min-width:700px){.nav-tabs{justify-content:center;}}
 .nav-tabs::-webkit-scrollbar{display:none;}
 .nav-tab{flex-shrink:0;padding:12px 14px;font-size:11.5px;font-weight:500;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;font-family:inherit;background:none;border-top:none;border-left:none;border-right:none;}
 .nav-tab:hover{color:var(--white);}
@@ -126,6 +127,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 
 /* ITEM ACTIONS — fixed layout, no crowding */
 .item-actions{display:flex;align-items:center;gap:8px;margin-top:6px;}
+.item-status-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:5px;}
+.item-info-row{margin-top:6px;}
 .item-maplink{font-size:11px;color:var(--blossom);text-decoration:none;opacity:0.7;transition:opacity 0.2s;flex-shrink:0;}
 .item-maplink:hover{opacity:1;}
 .detail-btn{background:rgba(232,130,154,0.12);border:1px solid rgba(232,130,154,0.25);color:var(--blossom);font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;cursor:pointer;font-family:inherit;transition:all 0.2s;flex-shrink:0;letter-spacing:0.3px;}
@@ -484,26 +487,6 @@ function renderOverview(){
       <div class="stat-card"><div class="stat-num">5</div><div class="stat-label">Cities</div></div>
       <div class="stat-card"><div class="stat-num">${totalItems||'60+'}</div><div class="stat-label">Activities</div></div>
     </div>
-    <div class="route-strip">
-      <span class="route-city">🇬🇧 London</span><span class="route-arrow">→</span>
-      <span class="route-city">🇰🇷 Seoul</span><span class="route-arrow">→</span>
-      <span class="route-city">🗼 Tokyo</span><span class="route-arrow">→</span>
-      <span class="route-city">⛰️ Hakone</span><span class="route-arrow">→</span>
-      <span class="route-city">⛩️ Kyoto</span><span class="route-arrow">→</span>
-      <span class="route-city">🦌 Nara</span><span class="route-arrow">→</span>
-      <span class="route-city">🎡 Osaka</span><span class="route-arrow">→</span>
-      <span class="route-city">🇬🇧 London</span>
-    </div>
-    <div class="section-title">Status Key</div>
-    <div class="status-legend">
-      <div class="legend-item"><div class="legend-dot" style="background:#e05050"></div>Booked & confirmed</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#e09040"></div>Book ahead</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#4a9e8e"></div>Confirmed / Paid</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#4a8ec9"></div>Included</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#c9a84c"></div>Planning</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#9e6ec9"></div>Optional</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#7ab87a"></div>Free</div>
-    </div>
     <div class="section-title">¥ / £ Quick Converter</div>
     <div class="currency-widget" style="margin-bottom:16px;">
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
@@ -529,7 +512,17 @@ function renderOverview(){
       <div class="hotel-icon">${icons[i]}</div>
       <div><div class="hotel-name">${h.name}</div><div class="hotel-dates">${h.dates}</div></div>
       <div class="hotel-status ${h.status==='paid'?'paid':'property'}">${h.status==='paid'?'Paid':'Pay on Arrival'}</div>
-    </div>`).join('')}`;
+    </div>`).join('')}
+    <div class="section-title" style="margin-top:20px;">Status Key</div>
+    <div class="status-legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#e05050"></div>Booked & confirmed</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#e09040"></div>Book ahead</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#4a9e8e"></div>Confirmed / Paid</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#4a8ec9"></div>Included</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#c9a84c"></div>Planning</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#9e6ec9"></div>Optional</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#7ab87a"></div>Free</div>
+    </div>`;
   setTimeout(ovConvert,50);
 }
 
@@ -580,14 +573,15 @@ function renderDays(){
         ?`<a class="item-maplink" href="https://maps.google.com/?q=${encodeURIComponent(item.mapQuery)}" target="_blank" title="Open in Google Maps">📍 Map</a>`:'';
       const detailBtn=item.detail
         ?`<button class="detail-btn" onclick="openDetailModal(${JSON.stringify(item.activity||'')},${JSON.stringify(item.detail)})">ℹ Info</button>`:'';
-      const actions=(mapLink||detailBtn)?`<div class="item-actions">${mapLink}${detailBtn}</div>`:'';
+      // Map on right of status row; Info below on its own line
+      const statusRow=`<div class="item-status-row"><span class="status-badge ${sm.cls}">${sm.label}</span>${mapLink}</div>`;
       return `<div class="item">
         <div class="item-time">${item.time||''}</div>
         <div class="item-main">
           <div class="item-activity">${item.activity||''}</div>
           ${item.notes?`<div class="item-notes">${item.notes}</div>`:''}
-          <span class="status-badge ${sm.cls}">${sm.label}</span>
-          ${actions}
+          ${statusRow}
+          ${detailBtn?`<div class="item-info-row">${detailBtn}</div>`:''}
         </div>
       </div>`;
     }).join('');
@@ -628,7 +622,7 @@ function toggleDayMap(di){
   const on=dayMapOpen[di];
   dayMapOpen[di]=!on;
   if(!on){
-    if(!frame.src||frame.src==='about:blank') frame.src=frame.dataset.src;
+    if(!frame.dataset.loaded){frame.src=frame.dataset.src;frame.dataset.loaded='1';}
     frame.classList.add('visible');btn.classList.add('active');
     btn.textContent=btn.textContent.replace('Show','Hide');
   }else{
@@ -766,11 +760,15 @@ function switchMapCity(idx,btn){
 ═══════════════════════════════════════════ */
 function renderChecklist(){
   const groups=(tripData&&tripData.checklist)||[];
+  if(!groups.length){
+    document.getElementById('tab-checklist').innerHTML='<div class="checklist-container"><div class="checklist-notice">📋 When something\'s done, don\'t forget to tell Andy — so he can update Claude and keep this app fully up to date.</div><p style="color:var(--muted);font-size:13px;padding:12px 0;">No checklist loaded — check your connection and refresh.</p></div>';
+    return;
+  }
   const html=groups.map(g=>`<div class="checklist-group">
-    <div class="checklist-group-title">${g.group||''}</div>
+    <div class="checklist-group-title">${g.group||g.category||g.name||g.title||'Checklist'}</div>
     ${(g.items||[]).map(item=>`<div class="checklist-item">
       <div style="flex:1;min-width:0">
-        <div class="check-task">${item.task||''}</div>
+        <div class="check-task">${item.task||item.item||item.name||item.text||item.activity||''}</div>
         ${item.notes?`<div class="check-meta">${item.notes}</div>`:''}
         ${item.deadline&&item.deadline!=='✅ Done'&&item.deadline!=='✅ Booked'?`<div class="check-meta" style="color:var(--blossom)">⏰ ${item.deadline}</div>`:''}
       </div>
