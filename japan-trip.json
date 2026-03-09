@@ -1,39 +1,53 @@
 {
-  "tripTitle": "🇯🇵 Japan Trip 2026",
-  "tripDates": "Fri 3 Apr – Sat 18 Apr 2026",
+  "tripName": "Japan & South Korea · April 2026",
   "lastUpdated": "2026-03-08",
   "days": [
     {
-      "date": "2026-04-03",
-      "label": "Day 0 — Friday 3 Apr",
-      "location": "London Heathrow, UK",
-      "locationAddress": "London Heathrow Airport, Hounslow TW6 1QG, UK",
-      "mapQuery": "London Heathrow Airport",
+      "day": "Day 0",
+      "date": "Friday 3 April",
+      "title": "London → Seoul",
+      "location": "London Heathrow Airport",
+      "locationAddress": "London Heathrow Airport Terminal 3, Hounslow TW6 1QG, UK",
+      "mapQuery": "Heathrow Terminal 3",
       "items": [
         {
-          "time": "evening",
-          "activity": "LHR Parking — KwikPark Meet & Greet T3",
-          "status": "booked",
-          "notes": "~£119.18 · ⚠️ Book ASAP",
-          "address": "KwikPark Terminal 3, Heathrow Airport, Hounslow TW6 1QG, UK",
-          "mapQuery": "KwikPark Heathrow Terminal 3"
+          "time": "09:30",
+          "activity": "Leave for Heathrow",
+          "status": "planning",
+          "notes": "Allow plenty of time. T3 check-in opens ~10:30."
         },
         {
-          "time": "evening",
-          "activity": "Check in at Heathrow Terminal 3 — VS208",
+          "time": "11:00",
+          "activity": "KwikPark Meet & Greet — T3",
           "status": "confirmed",
-          "notes": "Check-in opens ~3 hrs before 13:25 departure",
+          "notes": "Order ID: L4PUK-777209 · Plate: GL74VLV · Call 07850366784 when 30 mins away · T3 Short Stay Level 4 Row B · Airport Access Fee £7.50",
+          "detail": "Order ID: L4PUK-777209\nPlate: GL74VLV\n📞 Call 07850366784 when 30 mins from airport\n➡ T3 Short Stay Car Park · Level 4 · Row B\nRepresentative in KwikPark uniform will meet you\nSign vehicle inspection document on handover\n⚠ Airport Access Fee £7.50 payable on drop-off\n⚠ ULEZ payable for Fri 3 Apr\n\nReturn instructions:\n📞 Call 1 — as soon as you land\n📞 Call 2 — after collecting luggage\n➡ T3 Short Stay Car Park · Level 4 · Row B",
+          "address": "London Heathrow Airport Terminal 3, Hounslow TW6 1QG, UK",
+          "mapQuery": "Heathrow Terminal 3"
+        },
+        {
+          "time": "10:30",
+          "activity": "VS208 Check-in — T3",
+          "status": "confirmed",
+          "notes": "Virgin Atlantic VS208 · LHR 13:25 → ICN 10:05 Sat 4 Apr · Seats 24D/24F/25D/25F · Ref E3FYHB",
+          "address": "London Heathrow Airport Terminal 3, Hounslow TW6 1QG, UK",
+          "mapQuery": "Heathrow Terminal 3"
+        },
+        {
+          "time": "13:25",
+          "activity": "Depart LHR — VS208 Virgin Atlantic",
+          "status": "confirmed",
+          "notes": "Boeing 787-9 · Direct to Seoul Incheon T2 · Flight time ~11h",
           "address": "London Heathrow Airport Terminal 3, Hounslow TW6 1QG, UK",
           "mapQuery": "Heathrow Terminal 3"
         }
       ]
     },
     {
-      "date": "2026-04-04",
-      "label": "Day 1 — Saturday 4 Apr",
+      "day": "Day 1",
+      "date": "Saturday 4 April",
+      "title": "Seoul Arrival",
       "location": "In Flight / Seoul, South Korea",
-      "locationAddress": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-      "mapQuery": "Incheon International Airport Terminal 2",
       "items": [
         {
           "time": "10:05",
@@ -57,7 +71,8 @@
           "status": "confirmed",
           "notes": "Ref #1479-1 · 5-seater · Driver WhatsApp eve Thu 3 Apr ~9pm. Journey ~60 mins. Highway toll included.",
           "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Incheon International Airport Terminal 2"
+          "mapQuery": "Incheon International Airport Terminal 2",
+          "detail": "Booking Ref: #1479-1\n➡ EVANS FAMILY banner at arrivals hall\n📞 WhatsApp driver eve Thu 3 Apr ~9pm to confirm pickup\nTransfer: ICN → Crown Park Hotel\nCost: £71.12"
         },
         {
           "time": "12:30",
@@ -89,7 +104,8 @@
           "status": "confirmed",
           "notes": "Booked via Expedia. Central location near Myeongdong, Namdaemun Market, Namsan Hill.",
           "address": "Myeongdong Street, Jung-gu, Seoul 04534, South Korea",
-          "mapQuery": "Myeongdong Street Seoul Jung-gu"
+          "mapQuery": "Myeongdong Street Seoul Jung-gu",
+          "detail": "Expedia Conf: 25301968\nSat 4 Apr → Sun 5 Apr (1 night)\nCost: £388.78\nBreakfast for 2 included\nCheck-in from 3pm\nCharged to MC 3823"
         },
         {
           "time": "15:30",
@@ -123,14 +139,15 @@
           "address": "Myeongdong Street, Jung-gu, Seoul 04534, South Korea",
           "mapQuery": "Myeongdong Street Seoul Jung-gu"
         }
-      ]
+      ],
+      "locationAddress": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
+      "mapQuery": "Incheon International Airport Terminal 2"
     },
     {
-      "date": "2026-04-05",
-      "label": "Day 2 — Sunday 5 Apr",
+      "day": "Day 2",
+      "date": "Sunday 5 April",
+      "title": "Seoul → Tokyo",
       "location": "Seoul → Tokyo (in flight)",
-      "locationAddress": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-      "mapQuery": "Incheon International Airport Terminal 2",
       "items": [
         {
           "time": "09:00",
@@ -154,15 +171,17 @@
           "status": "confirmed",
           "notes": "Ref #1479-2 · 5-seater · Banner: EVANS FAMILY · Driver WhatsApp eve of Sat 4 Apr ~9pm. Journey ~60 mins to ICN T2.",
           "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Incheon International Airport Terminal 2"
+          "mapQuery": "Incheon International Airport Terminal 2",
+          "detail": "Booking Ref: #1479-2\n➡ EVANS FAMILY banner at hotel\nPickup: 12:00 from Crown Park Hotel lobby\n📞 WhatsApp driver eve Sat 4 Apr ~9pm to confirm\nTransfer: Crown Park → ICN\nCost: £71.12"
         },
         {
           "time": "13:30",
-          "activity": "ICN Terminal 2 — Check-in Asiana OZ108",
+          "activity": "ICN Terminal 2 — Check-in Asiana OZ106",
           "status": "planning",
           "notes": "Asiana Airlines counter, Terminal 2. Full luggage check. Allow 30 mins at check-in desk plus 20–30 mins security.",
           "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Incheon International Airport Terminal 2"
+          "mapQuery": "Incheon International Airport Terminal 2",
+          "detail": "Flight: Asiana OZ106\nRoute: ICN (Incheon) T2 → NRT (Narita) T1\nDate: Sunday 5 April 2026\nDeparts: 15:45 | Arrives: 18:25 | Flying time: 2h 40m\nPNR: D2MKD6\nSeats: Andy 24C · Sarah 24H · Jack 24J · Charlie 24K\n  (Row 24 together: C=left aisle, H/J/K=right 3-seat block)\nTickets: 9882489958593 (Andy) · 9882489958594 (Sarah)\n         9882489958595 (Jack) · 9882489958596 (Charlie)\nCost: £951.48 total"
         },
         {
           "time": "14:30",
@@ -173,23 +192,24 @@
           "mapQuery": "Incheon International Airport Terminal 2"
         },
         {
-          "time": "15:30",
-          "activity": "Depart ICN — Asiana OZ108 → Tokyo Narita",
+          "time": "15:45",
+          "activity": "Depart ICN — Asiana OZ106 → Tokyo Narita",
           "status": "confirmed",
-          "notes": "Flight time approx. 2h 10m. Confirmed booking.",
+          "notes": "Flight time 2h 40m. Seats: Andy 24C · Sarah 24H · Jack 24J · Charlie 24K. PNR D2MKD6 — all confirmed.",
           "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Incheon International Airport Terminal 2"
+          "mapQuery": "Incheon International Airport Terminal 2",
+          "detail": "Flight: Asiana OZ106\nRoute: ICN (Incheon) T2 → NRT (Narita) T1\nDate: Sunday 5 April 2026\nDeparts: 15:45 | Arrives: 18:25 | Flying time: 2h 40m\nPNR: D2MKD6\nSeats: Andy 24C · Sarah 24H · Jack 24J · Charlie 24K\n  (Row 24 together: C=left aisle, H/J/K=right 3-seat block)\nTickets: 9882489958593 (Andy) · 9882489958594 (Sarah)\n         9882489958595 (Jack) · 9882489958596 (Charlie)\nCost: £951.48 total"
         },
         {
-          "time": "17:40",
-          "activity": "Arrive Tokyo Narita NRT",
+          "time": "18:25",
+          "activity": "Arrive Tokyo Narita NRT — OZ106",
           "status": "planning",
           "notes": "Follow signs to JR / bus connections for Shinjuku. Do NOT take taxi — extremely expensive (~¥35,000).",
           "address": "Shinjuku Station, 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
           "mapQuery": "Shinjuku Station Tokyo"
         },
         {
-          "time": "18:00",
+          "time": "18:30",
           "activity": "Immigration & baggage — Narita",
           "status": "planning",
           "notes": "Allow 30–45 mins at immigration. IC card machines are near the exits for purchasing Suica cards (recommended for the whole trip).",
@@ -197,12 +217,13 @@
           "mapQuery": "Tokyo Narita Airport"
         },
         {
-          "time": "18:30",
-          "activity": "Klook bus: Narita → Shinjuku × 4",
+          "time": "19:00",
+          "activity": "Klook transfer: NRT → Keio Plaza (private car)",
           "status": "confirmed",
-          "notes": "Pre-booked via Klook app. Highway bus direct to Shinjuku. Comfortable, ~90 mins. Confirm stop and platform at airport.",
-          "address": "Shinjuku Station, 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
-          "mapQuery": "Shinjuku Station Tokyo"
+          "notes": "Toyota Alphard or similar · Meet & greet — driver at arrivals with EVANS name board · Direct to Keio Plaza · Driver waits 90 mins from landing",
+          "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
+          "mapQuery": "Keio Plaza Hotel Tokyo",
+          "detail": "Klook Transfer — BOOKED ✓\nBooking no: XEB644582\nVehicle: Toyota Alphard / Honda Odyssey (max 6 pax, max 4 luggage)\n➡ Meet & greet: driver at NRT arrivals holding name board\nFrom: Narita International Airport (NRT)\nTo: Keio Plaza Hotel, Shinjuku (Kabukichō, 1-chōme-7-3)\nFlight: OZ106 · Landing: 18:25\nDriver waits up to 90 mins from actual landing\nServices: Car charger · English support · Chinese-speaking driver"
         },
         {
           "time": "21:00",
@@ -210,7 +231,8 @@
           "status": "confirmed",
           "notes": "Base for first 3 nights. West Shinjuku — central for metro, walkable to Kabukicho and Golden Gai.",
           "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
-          "mapQuery": "Keio Plaza Hotel Tokyo"
+          "mapQuery": "Keio Plaza Hotel Tokyo",
+          "detail": "EXPEDIA BOOKED\nKeio Plaza Hotel Tokyo, Shinjuku\nCheck-in: Sun 5 Apr (arriving ~9pm)\nCost: £2,311\n➡ Show Expedia booking confirmation at check-in"
         },
         {
           "time": "21:30",
@@ -220,14 +242,15 @@
           "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
           "mapQuery": "Keio Plaza Hotel Tokyo"
         }
-      ]
+      ],
+      "locationAddress": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
+      "mapQuery": "Incheon International Airport Terminal 2"
     },
     {
-      "date": "2026-04-06",
-      "label": "Day 3 — Monday 6 Apr",
+      "day": "Day 3",
+      "date": "Monday 6 April",
+      "title": "Tokyo — Sumo · Tsukiji · Asakusa",
       "location": "Tokyo — Shinjuku",
-      "locationAddress": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
-      "mapQuery": "Keio Plaza Hotel Tokyo",
       "items": [
         {
           "time": "07:00",
@@ -238,20 +261,20 @@
           "mapQuery": "Keio Plaza Hotel Tokyo"
         },
         {
-          "time": "07:40",
-          "activity": "Taxi to Arashio-beya Sumo Stable",
+          "time": "07:15",
+          "activity": "Taxi to Sumo Stable (Oshiage area)",
           "status": "planning",
-          "notes": "Direct from hotel to Hamacho (~20 mins). Stable opens 08:00 — arrive a few minutes early.",
-          "address": "Arashio-beya Sumo Stable, 2-47-2 Hama-cho, Nihonbashi, Chuo-ku, Tokyo 103-0007, Japan",
-          "mapQuery": "Arashio-beya sumo stable Tokyo"
+          "notes": "Direct from hotel to Oshiage (~35 mins). Stable opens 06:00 — arrive early. Arrange via Keio Plaza concierge.",
+          "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
+          "mapQuery": "Keio Plaza Hotel Tokyo"
         },
         {
           "time": "08:00–09:30",
-          "activity": "Sumo Morning Training — Arashio-beya",
+          "activity": "Sumo Morning Training — Oshiage stable (TBC)",
           "status": "booked",
-          "notes": "Watch professional wrestlers (rikishi) train ringside. Intimate and authentic — no barriers, photographers welcome. One of Tokyo's most memorable mornings. Must book in advance via Magical Trip (magicaltripjapan.com) or direct via Arashio-beya website. April cherry blossom peak — fills very fast.",
-          "address": "Arashio-beya Sumo Stable, 2-47-2 Hama-cho, Nihonbashi, Chuo-ku, Tokyo 103-0007, Japan",
-          "mapQuery": "Arashio-beya sumo stable Tokyo"
+          "notes": "Watch professional wrestlers (rikishi) train ringside. Intimate and authentic — no barriers. One of Tokyo's most memorable mornings. Awaiting confirmation from Keio Plaza concierge — originally booked Arashio-beya (fully booked via Magical Trip). Direct arrangement via hotel — donation to stable as customary.",
+          "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
+          "mapQuery": "Keio Plaza Hotel Tokyo"
         },
         {
           "time": "09:45",
@@ -349,14 +372,15 @@
           "address": "Golden Gai, Kabukicho, Shinjuku-ku, Tokyo 160-0021, Japan",
           "mapQuery": "Golden Gai Shinjuku Tokyo"
         }
-      ]
+      ],
+      "locationAddress": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
+      "mapQuery": "Keio Plaza Hotel Tokyo"
     },
     {
-      "date": "2026-04-07",
-      "label": "Day 4 — Tuesday 7 Apr",
+      "day": "Day 4",
+      "date": "Tuesday 7 April",
+      "title": "Tokyo — Harajuku · Shibuya",
       "location": "Tokyo — Harajuku / Shibuya",
-      "locationAddress": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
-      "mapQuery": "Keio Plaza Hotel Tokyo",
       "items": [
         {
           "time": "07:30",
@@ -454,14 +478,15 @@
           "address": "Shibuya Crossing, 2-2-1 Dogenzaka, Shibuya-ku, Tokyo 150-0043, Japan",
           "mapQuery": "Shibuya Crossing Tokyo"
         }
-      ]
+      ],
+      "locationAddress": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
+      "mapQuery": "Keio Plaza Hotel Tokyo"
     },
     {
-      "date": "2026-04-08",
-      "label": "Day 5 — Wednesday 8 Apr",
+      "day": "Day 5",
+      "date": "Wednesday 8 April",
+      "title": "Tokyo → Hakone",
       "location": "Tokyo → Hakone",
-      "locationAddress": "Shinjuku Station, 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
-      "mapQuery": "Shinjuku Station Tokyo",
       "items": [
         {
           "time": "07:30",
@@ -489,22 +514,24 @@
         },
         {
           "time": "09:20",
-          "activity": "Buy Hakone Freepass — 3-day Adult",
-          "status": "planning",
-          "notes": "Odakyu Sightseeing Centre, West Exit — ¥8,000/person (3-day adult, covers all Hakone transport + Shinjuku↔Odawara for 8–10 Apr inclusive)",
+          "activity": "Hakone Freepass — Activate in EMot app (3-day × 4)",
+          "status": "confirmed",
+          "notes": "Pre-purchased via EMot — ¥7,500/person (3-day adult, covers all Hakone transport + Odakyu Shinjuku↔Odawara). Activate each pass in the EMot app on first use at Shinjuku today.",
           "address": "Shinjuku Station, 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
-          "mapQuery": "Shinjuku Station Tokyo"
+          "mapQuery": "Shinjuku Station Tokyo",
+          "detail": "Digital Hakone Freepass — BOOKED ✓ (×4 passes)\nDeparting: Shinjuku\nFirst day of use: Wed 8 Apr 2026\nPrice: ¥7,500 per person (3-day adult) | Total: ¥30,000\nValid: 8–10 Apr · Covers all Hakone transport + Odakyu Shinjuku↔Odawara\n\nControl numbers (all on EMot, same account):\n  Pass 1: 2837515\n  Pass 2: 2837519\n  Pass 3: 2837521\n  Pass 4: 2837523\n\nEMot account: sarahevansemail@googlemail.com\n⚠ Each pass must be activated in EMot app at first use — do NOT activate in advance\n🔗 emot-tickets.jp/my-tickets"
         },
         {
-          "time": "09:40",
-          "activity": "Romancecar Super View GSE (Train #43)",
-          "status": "booked",
-          "notes": "Car 1, rows 5–8, D seats (right window) for Mt. Fuji views. Surcharge only — base fare covered by Freepass. Book EMot/odakyu.jp on Mon 9 March.",
+          "time": "10:00",
+          "activity": "Romancecar Hakone 3 GSE — Shinjuku → Hakone-Yumoto",
+          "status": "confirmed",
+          "notes": "Car 7, seats 5C/5D/6C/6D — surcharge only, base fare covered by Freepass · Est. ¥4,600",
           "address": "Shinjuku Station, 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
-          "mapQuery": "Shinjuku Station Tokyo"
+          "mapQuery": "Shinjuku Station Tokyo",
+          "detail": "Romancecar: Hakone 3 (GSE) — BOOKED ✓\nDate: Wed 8 Apr\nDeparts: 10:00 Shinjuku → Arrives: 11:27 Hakone-Yumoto\nPassengers: 4 adults\nSeats: Car 7 — 5C, 5D, 6C, 6D\nCost: ¥4,600 total (surcharge — base fare via Freepass)\nControl no: E786\nLogin: sarahevansemail@googlemail.com (EMot app)"
         },
         {
-          "time": "11:05",
+          "time": "11:27",
           "activity": "Arrive Hakone-Yumoto",
           "status": "planning",
           "notes": "Transfer to Tozan mountain railway",
@@ -581,7 +608,8 @@
           "status": "planning",
           "notes": "3pm check-in. Superior Rooms with private open-air rotenburo bath",
           "address": "TEN-YU Ryokan, 1297 Sengokuhara, Hakone, Ashigarashimo-gun, Kanagawa 250-0631, Japan",
-          "mapQuery": "TEN-YU ryokan Hakone"
+          "mapQuery": "TEN-YU ryokan Hakone",
+          "detail": "Ryokan: TEN-YU\nCheck-in: Wed 8 Apr | Check-out: Fri 10 Apr (2 nights)\nCost: £1,765.14 + £5.88 payable at property\nCharged to MC 3823\n➡ Traditional ryokan — yukatas provided, meals included"
         },
         {
           "time": "17:00",
@@ -599,14 +627,15 @@
           "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
           "mapQuery": "Keio Plaza Hotel Tokyo"
         }
-      ]
+      ],
+      "locationAddress": "Shinjuku Station, 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
+      "mapQuery": "Shinjuku Station Tokyo"
     },
     {
-      "date": "2026-04-09",
-      "label": "Day 6 — Thursday 9 Apr",
+      "day": "Day 6",
+      "date": "Thursday 9 April",
+      "title": "Hakone",
       "location": "Hakone",
-      "locationAddress": "TEN-YU Ryokan, 1297 Sengokuhara, Hakone, Ashigarashimo-gun, Kanagawa 250-0631, Japan",
-      "mapQuery": "TEN-YU ryokan Hakone",
       "items": [
         {
           "time": "08:30",
@@ -712,14 +741,15 @@
           "address": "TEN-YU Ryokan, 1297 Sengokuhara, Hakone, Ashigarashimo-gun, Kanagawa 250-0631, Japan",
           "mapQuery": "TEN-YU ryokan Hakone"
         }
-      ]
+      ],
+      "locationAddress": "TEN-YU Ryokan, 1297 Sengokuhara, Hakone, Ashigarashimo-gun, Kanagawa 250-0631, Japan",
+      "mapQuery": "TEN-YU ryokan Hakone"
     },
     {
-      "date": "2026-04-10",
-      "label": "Day 7 — Friday 10 Apr",
+      "day": "Day 7",
+      "date": "Friday 10 April",
+      "title": "Hakone → Kyoto",
       "location": "Hakone → Kyoto",
-      "locationAddress": "TEN-YU Ryokan, 1297 Sengokuhara, Hakone, Ashigarashimo-gun, Kanagawa 250-0631, Japan",
-      "mapQuery": "TEN-YU ryokan Hakone",
       "items": [
         {
           "time": "09:00",
@@ -807,7 +837,8 @@
           "status": "confirmed",
           "notes": "Central Kyoto location — walking distance to Gion, Nishiki Market and Ponto-cho. Base for 4 nights.",
           "address": "Mitsui Garden Hotel Kyoto Shijo, 669 Banzai-cho, Shimogyo-ku, Kyoto 600-8096, Japan",
-          "mapQuery": "Mitsui Garden Hotel Kyoto Shijo"
+          "mapQuery": "Mitsui Garden Hotel Kyoto Shijo",
+          "detail": "EXPEDIA BOOKED\nMitsui Garden Hotel Kyoto Sanjo\n➡ Show Expedia booking confirmation at check-in"
         },
         {
           "time": "19:00",
@@ -817,14 +848,15 @@
           "address": "Gion District, Hanamikoji-dori, Higashiyama-ku, Kyoto 605-0074, Japan",
           "mapQuery": "Gion district Kyoto"
         }
-      ]
+      ],
+      "locationAddress": "TEN-YU Ryokan, 1297 Sengokuhara, Hakone, Ashigarashimo-gun, Kanagawa 250-0631, Japan",
+      "mapQuery": "TEN-YU ryokan Hakone"
     },
     {
-      "date": "2026-04-11",
-      "label": "Day 8 — Saturday 11 Apr",
+      "day": "Day 8",
+      "date": "Saturday 11 April",
+      "title": "Kyoto — Temples & Gion",
       "location": "Kyoto — Northern Temples + Gion",
-      "locationAddress": "Mitsui Garden Hotel Kyoto Shijo, 669 Banzai-cho, Shimogyo-ku, Kyoto 600-8096, Japan",
-      "mapQuery": "Mitsui Garden Hotel Kyoto Shijo",
       "items": [
         {
           "time": "08:30",
@@ -914,14 +946,15 @@
           "address": "Gion District, Hanamikoji-dori, Higashiyama-ku, Kyoto 605-0074, Japan",
           "mapQuery": "Gion district Kyoto"
         }
-      ]
+      ],
+      "locationAddress": "Mitsui Garden Hotel Kyoto Shijo, 669 Banzai-cho, Shimogyo-ku, Kyoto 600-8096, Japan",
+      "mapQuery": "Mitsui Garden Hotel Kyoto Shijo"
     },
     {
-      "date": "2026-04-12",
-      "label": "Day 9 — Sunday 12 Apr",
+      "day": "Day 9",
+      "date": "Sunday 12 April",
+      "title": "Kyoto — Arashiyama",
       "location": "Kyoto — Arashiyama",
-      "locationAddress": "Mitsui Garden Hotel Kyoto Shijo, 669 Banzai-cho, Shimogyo-ku, Kyoto 600-8096, Japan",
-      "mapQuery": "Mitsui Garden Hotel Kyoto Shijo",
       "items": [
         {
           "time": "08:30",
@@ -1003,14 +1036,15 @@
           "address": "Pontocho, Nakagyo-ku, Kyoto 604-8094, Japan",
           "mapQuery": "Pontocho alley Kyoto"
         }
-      ]
+      ],
+      "locationAddress": "Mitsui Garden Hotel Kyoto Shijo, 669 Banzai-cho, Shimogyo-ku, Kyoto 600-8096, Japan",
+      "mapQuery": "Mitsui Garden Hotel Kyoto Shijo"
     },
     {
-      "date": "2026-04-13",
-      "label": "Day 10 — Monday 13 Apr",
+      "day": "Day 10",
+      "date": "Monday 13 April",
+      "title": "Kyoto / Nara",
       "location": "Kyoto / Nara day trip",
-      "locationAddress": "Mitsui Garden Hotel Kyoto Shijo, 669 Banzai-cho, Shimogyo-ku, Kyoto 600-8096, Japan",
-      "mapQuery": "Mitsui Garden Hotel Kyoto Shijo",
       "items": [
         {
           "time": "08:30",
@@ -1092,14 +1126,15 @@
           "address": "Gion District, Hanamikoji-dori, Higashiyama-ku, Kyoto 605-0074, Japan",
           "mapQuery": "Gion district Kyoto"
         }
-      ]
+      ],
+      "locationAddress": "Mitsui Garden Hotel Kyoto Shijo, 669 Banzai-cho, Shimogyo-ku, Kyoto 600-8096, Japan",
+      "mapQuery": "Mitsui Garden Hotel Kyoto Shijo"
     },
     {
-      "date": "2026-04-14",
-      "label": "Day 11 — Tuesday 14 Apr",
+      "day": "Day 11",
+      "date": "Tuesday 14 April",
+      "title": "Kyoto → Osaka",
       "location": "Kyoto → Osaka",
-      "locationAddress": "Mitsui Garden Hotel Kyoto Shijo, 669 Banzai-cho, Shimogyo-ku, Kyoto 600-8096, Japan",
-      "mapQuery": "Mitsui Garden Hotel Kyoto Shijo",
       "items": [
         {
           "time": "08:30",
@@ -1147,7 +1182,8 @@
           "status": "confirmed",
           "notes": "Or drop bags if too early. Booking confirmed. Excellent location — 10 min walk to Dotonbori.",
           "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
-          "mapQuery": "Candeo Hotels Osaka The Tower"
+          "mapQuery": "Candeo Hotels Osaka The Tower",
+          "detail": "EXPEDIA BOOKED\nCandeo Hotels Osaka Namba\n➡ Show Expedia booking confirmation at check-in"
         },
         {
           "time": "14:30",
@@ -1173,14 +1209,15 @@
           "address": "Dotonbori, Chuo-ku, Osaka 542-0071, Japan",
           "mapQuery": "Dotonbori Osaka"
         }
-      ]
+      ],
+      "locationAddress": "Mitsui Garden Hotel Kyoto Shijo, 669 Banzai-cho, Shimogyo-ku, Kyoto 600-8096, Japan",
+      "mapQuery": "Mitsui Garden Hotel Kyoto Shijo"
     },
     {
-      "date": "2026-04-15",
-      "label": "Day 12 — Wednesday 15 Apr",
+      "day": "Day 12",
+      "date": "Wednesday 15 April",
+      "title": "Osaka",
       "location": "Osaka",
-      "locationAddress": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
-      "mapQuery": "Candeo Hotels Osaka The Tower",
       "items": [
         {
           "time": "08:30",
@@ -1262,14 +1299,15 @@
           "address": "Namba, Chuo-ku, Osaka 542-0075, Japan",
           "mapQuery": "Namba Osaka"
         }
-      ]
+      ],
+      "locationAddress": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+      "mapQuery": "Candeo Hotels Osaka The Tower"
     },
     {
-      "date": "2026-04-16",
-      "label": "Day 13 — Thursday 16 Apr",
+      "day": "Day 13",
+      "date": "Thursday 16 April",
+      "title": "Osaka / Himeji",
       "location": "Osaka / Himeji day trip",
-      "locationAddress": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
-      "mapQuery": "Candeo Hotels Osaka The Tower",
       "items": [
         {
           "time": "07:30",
@@ -1351,14 +1389,15 @@
           "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
           "mapQuery": "Candeo Hotels Osaka The Tower"
         }
-      ]
+      ],
+      "locationAddress": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+      "mapQuery": "Candeo Hotels Osaka The Tower"
     },
     {
-      "date": "2026-04-17",
-      "label": "Day 14 — Friday 17 Apr",
+      "day": "Day 14",
+      "date": "Friday 17 April",
+      "title": "Osaka → Seoul",
       "location": "Osaka → Seoul Incheon",
-      "locationAddress": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
-      "mapQuery": "Candeo Hotels Osaka The Tower",
       "items": [
         {
           "time": "08:00",
@@ -1385,31 +1424,34 @@
           "mapQuery": "Candeo Hotels Osaka The Tower"
         },
         {
-          "time": "~12:30",
-          "activity": "Travel to Kansai Airport (KIX)",
-          "status": "included",
-          "notes": "Options: JR Haruka Express (75 min, JR Pass covered, departs Shin-Osaka or Tennoji) or taxi (~¥7,000–8,000, 45–60 min). Recommend JR Haruka for cost.",
-          "address": "Kansai International Airport, 1 Senshukukokita, Izumisano, Osaka 549-0001, Japan",
-          "mapQuery": "Kansai International Airport KIX"
+          "time": "~16:00",
+          "activity": "JR Haruka Express — Tennoji → Kansai Airport (KIX)",
+          "status": "planning",
+          "notes": "From Candeo (Namba), take Osaka Metro Midosuji Line south to Tennoji (~10 min, ¥230pp). JR Haruka departs Tennoji every 30 min to KIX Terminal 1 — approx 29 min ride. No advance booking needed. Buy ticket at Tennoji JR ticket machines on the day. Approx fare: ¥2,000–2,200pp (unreserved). Total door-to-door: ~60–70 min.",
+          "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+          "mapQuery": "Candeo Hotels Osaka The Tower",
+          "detail": "JR Haruka Express (はるか)\nRoute: Tennoji → Kansai Airport T1\nJourney: ~29 min on Haruka (after ~10 min metro from Namba)\nFrequency: Every 30 min approx\nFare: ~¥2,000–2,200pp unreserved / ~¥2,400pp reserved\n4 people total: ~¥8,000–9,600\nNo booking needed — buy at Tennoji JR ticket machines\n⚡ Get to Tennoji by ~16:10–16:15 to catch ~16:30 departure"
         },
         {
-          "time": "14:00",
+          "time": "17:15",
           "activity": "KIX: check in Asiana, security & duty free",
           "status": "planning",
-          "notes": "Kansai Airport is well laid out. Asiana check-in counters in T1. Buy airport ramen or sushi for an early dinner before departure. · Est. ¥8,000",
+          "notes": "Kansai Airport T1. Asiana check-in counters open ~2hrs before departure. Grab airport ramen or sushi for dinner before the gate. · Est. ¥8,000",
           "address": "Kansai International Airport, 1 Senshukukokita, Izumisano, Osaka 549-0001, Japan",
-          "mapQuery": "Kansai International Airport KIX"
+          "mapQuery": "Kansai International Airport KIX",
+          "detail": "Flight: Asiana OZ113\nRoute: KIX (Kansai) T1 → ICN (Incheon) T2\nDate: Friday 17 April 2026\nDeparts: 19:45 | Arrives: 21:40 | Flying time: 1h 55m\nAircraft: A350\nPNR: D2MKD6\nSeats: Andy 24H · Sarah 24J | Jack 25H · Charlie 25J\n  (Andy+Sarah row 24, Jack+Charlie row 25 — due to aircraft change)\nTickets: 9882489958593 (Andy) · 9882489958594 (Sarah)\n         9882489958595 (Jack) · 9882489958596 (Charlie)"
         },
         {
-          "time": "19:25",
-          "activity": "Depart KIX — Asiana → Seoul ICN",
+          "time": "19:45",
+          "activity": "Depart KIX — Asiana OZ113 → Seoul ICN",
           "status": "confirmed",
-          "notes": "Approx 2h flight. Confirmed booking. Arrive Seoul ICN T2.",
+          "notes": "Approx 1h 55m flight. Aircraft: A350. Seats: Andy 24H · Sarah 24J (row 24) | Jack 25H · Charlie 25J (row 25). PNR: D2MKD6.",
           "address": "Kansai International Airport, 1 Senshukukokita, Izumisano, Osaka 549-0001, Japan",
-          "mapQuery": "Kansai International Airport KIX"
+          "mapQuery": "Kansai International Airport KIX",
+          "detail": "Flight: Asiana OZ113\nRoute: KIX (Kansai) T1 → ICN (Incheon) T2\nDate: Friday 17 April 2026\nDeparts: 19:45 | Arrives: 21:40 | Flying time: 1h 55m\nAircraft: A350\nPNR: D2MKD6\nSeats: Andy 24H · Sarah 24J | Jack 25H · Charlie 25J\n  (Andy+Sarah row 24, Jack+Charlie row 25 — due to aircraft change)\nTickets: 9882489958593 (Andy) · 9882489958594 (Sarah)\n         9882489958595 (Jack) · 9882489958596 (Charlie)"
         },
         {
-          "time": "21:30",
+          "time": "21:40",
           "activity": "Arrive Seoul Incheon ICN T2",
           "status": "planning",
           "notes": "Transfer to Grand Hyatt Incheon. Hotel shuttle operates from T2. Short journey — hotel is essentially at the airport.",
@@ -1422,16 +1464,18 @@
           "status": "confirmed",
           "notes": "Free shuttle from ICN T2. Check in, relax — early start tomorrow. Hotel is connected to the airport complex.",
           "address": "Grand Hyatt Incheon, 208 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Grand Hyatt Incheon Airport Hotel"
+          "mapQuery": "Grand Hyatt Incheon Airport Hotel",
+          "detail": "Expedia Conf: 150513RA052227\nGrand Hyatt Incheon\nCost: £277.04\n⚠ PAY AT PROPERTY (not prepaid)\n➡ Free hotel shuttle from ICN Terminal 2"
         }
-      ]
+      ],
+      "locationAddress": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+      "mapQuery": "Candeo Hotels Osaka The Tower"
     },
     {
-      "date": "2026-04-18",
-      "label": "Day 15 — Saturday 18 Apr",
+      "day": "Day 15",
+      "date": "Saturday 18 April",
+      "title": "Seoul → London",
       "location": "Seoul ICN → London LHR",
-      "locationAddress": "Grand Hyatt Incheon, 208 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-      "mapQuery": "Grand Hyatt Incheon Airport Hotel",
       "items": [
         {
           "time": "07:00",
@@ -1455,7 +1499,8 @@
           "status": "planning",
           "notes": "Check-in opens 3 hrs before departure. Priority queues for Upper Class (check ticket class). Baggage drop + security should take 30–45 mins. ICN is extremely efficient.",
           "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Incheon International Airport Terminal 2"
+          "mapQuery": "Incheon International Airport Terminal 2",
+          "detail": "Flight: Virgin Atlantic VS209\nBooking Ref: E3FYHB\nSeats: 23D / 23F / 24D / 24F\nRoute: ICN (Incheon) → LHR (Heathrow)\nDeparts: 12:25 | Arrives: 18:50"
         },
         {
           "time": "10:00",
@@ -1485,307 +1530,14 @@
           "time": "19:30",
           "activity": "KwikPark Meet & Greet pickup — T3",
           "status": "confirmed",
-          "notes": "Driver will be waiting at arrivals. Confirm via their booking system before landing. Home!",
+          "notes": "Order ID: L4PUK-777209 · Plate: GL74VLV · 📞 Call 1: as soon as you land — 07850366784 · 📞 Call 2: again after collecting luggage · Proceed to T3 Short Stay Car Park Level 4 Row B — representative will be waiting · Airport Access Fee £7.50 payable on return · ULEZ payable this day",
           "address": "KwikPark Terminal 3, Heathrow Airport, Hounslow TW6 1QG, UK",
-          "mapQuery": "KwikPark Heathrow Terminal 3"
+          "mapQuery": "KwikPark Heathrow Terminal 3",
+          "detail": "Order ID: L4PUK-777209\nPlate: GL74VLV\n📞 Call 1 — as soon as you land: 07850366784\n📞 Call 2 — again after collecting luggage: 07850366784\n➡ Proceed to T3 Short Stay Car Park · Level 4 · Row B\nRepresentative will be waiting in KwikPark uniform\n⚠ Airport Access Fee £7.50 payable on return\n⚠ ULEZ payable for Sat 18 Apr"
         }
-      ]
+      ],
+      "locationAddress": "Grand Hyatt Incheon, 208 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
+      "mapQuery": "Grand Hyatt Incheon Airport Hotel"
     }
-  ],
-  "checklist": [
-    {
-      "group": "🔴 NOW — Do This Weekend",
-      "items": [
-        {
-          "task": "Book Sumo Morning Training × 4",
-          "who": "Andy",
-          "deadline": "TODAY",
-          "status": "not_booked",
-          "notes": "magicaltripjapan.com · Mon 7 Apr 7:30–9:00 · ¥3,500pp",
-          "address": "Arashio Sumo Stable, 2-47-2 Hamacho, Nihonbashi, Chuo-ku, Tokyo 103-0007, Japan",
-          "mapQuery": "Arashio Sumo Stable Tokyo"
-        },
-        {
-          "task": "Book LHR Parking — KwikPark T3",
-          "who": "Andy",
-          "deadline": "ASAP",
-          "status": "not_booked",
-          "notes": "Dep Fri 3 Apr / Return Sat 18 Apr · ~£119.18 · kwikpark.co.uk",
-          "address": "KwikPark Terminal 3, Heathrow Airport, Hounslow TW6 1QG, UK",
-          "mapQuery": "KwikPark Heathrow Terminal 3"
-        }
-      ]
-    },
-    {
-      "group": "🟡 THIS WEEK — Specific Windows Opening",
-      "items": [
-        {
-          "task": "Book Romancecar × 3 (Andy, Sarah, Charlie)",
-          "who": "Andy",
-          "deadline": "Mon 9 Mar",
-          "status": "pending",
-          "notes": "EMot app · Shinjuku→Hakone-Yumoto · 8 Apr",
-          "address": "Shinjuku Station (Odakyu Line), 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
-          "mapQuery": "Shinjuku Station Odakyu Line"
-        },
-        {
-          "task": "Jack: Book own Romancecar ticket",
-          "who": "Jack",
-          "deadline": "Mon 9 Mar",
-          "status": "pending",
-          "notes": "Same train as family",
-          "address": "Shinjuku Station (Odakyu Line), 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
-          "mapQuery": "Shinjuku Station Odakyu Line"
-        },
-        {
-          "task": "Book Shinkansen × 3 (Andy, Sarah, Charlie)",
-          "who": "Andy",
-          "deadline": "Tue 10 Mar",
-          "status": "pending",
-          "notes": "Klook · Odawara→Kyoto · ~¥13,000pp Green Car · 10 Apr",
-          "address": "Odawara Station, 1-1 Jonai, Odawara, Kanagawa 250-0011, Japan",
-          "mapQuery": "Odawara Station Shinkansen"
-        },
-        {
-          "task": "Jack: Book own Shinkansen ticket",
-          "who": "Jack",
-          "deadline": "Tue 10 Mar",
-          "status": "pending",
-          "notes": "Same service as family",
-          "address": "Odawara Station, 1-1 Jonai, Odawara, Kanagawa 250-0011, Japan",
-          "mapQuery": "Odawara Station Shinkansen"
-        }
-      ]
-    },
-    {
-      "group": "🟠 BEFORE DEPARTURE — Complete by Thu 2 Apr",
-      "items": [
-        {
-          "task": "Buy Japan eSIMs × 4",
-          "who": "Andy",
-          "deadline": "By 2 Apr",
-          "status": "pending",
-          "notes": "Airalo or Holafly · 10–15 day data plan"
-        },
-        {
-          "task": "Set up Suica cards on iPhone Wallet",
-          "who": "Andy",
-          "deadline": "By 2 Apr",
-          "status": "pending",
-          "notes": "Apple Pay Suica or collect physical at Narita"
-        },
-        {
-          "task": "Download offline Google Maps",
-          "who": "Andy",
-          "deadline": "By 2 Apr",
-          "status": "pending",
-          "notes": "Tokyo, Hakone, Kyoto, Osaka, Nara"
-        },
-        {
-          "task": "Jack: Install EMot + Klook + Navitime apps",
-          "who": "Jack",
-          "deadline": "By 2 Apr",
-          "status": "pending",
-          "notes": ""
-        },
-        {
-          "task": "VA FlyReady — complete for Andrew Evans",
-          "who": "Andy",
-          "deadline": "By 2 Apr",
-          "status": "incomplete",
-          "notes": "va.com/flyready · Ref E3FYHB · Complete passport scan + all steps in Virgin Atlantic app"
-        },
-        {
-          "task": "VA FlyReady — complete for Jack Joseph Evans",
-          "who": "Jack",
-          "deadline": "By 2 Apr",
-          "status": "incomplete",
-          "notes": "va.com/flyready · Ref E3FYHB · Complete passport scan + all steps in Virgin Atlantic app"
-        },
-        {
-          "task": "VA FlyReady — complete for Charlie Alexander Evans",
-          "who": "Andy",
-          "deadline": "By 2 Apr",
-          "status": "incomplete",
-          "notes": "va.com/flyready · Ref E3FYHB · Complete passport scan + all steps in Virgin Atlantic app"
-        },
-        {
-          "task": "VA FlyReady — complete for Sarah Louise Evans",
-          "who": "Sarah",
-          "deadline": "By 2 Apr",
-          "status": "incomplete",
-          "notes": "va.com/flyready · Ref E3FYHB · Complete passport scan + all steps in Virgin Atlantic app"
-        },
-        {
-          "task": "Pack power banks in HAND LUGGAGE",
-          "who": "All",
-          "deadline": "Packing day",
-          "status": "reminder",
-          "notes": "Lithium batteries must be carry-on"
-        }
-      ]
-    },
-    {
-      "group": "🟢 ON ARRIVAL — Sun 5 Apr · Narita Airport",
-      "items": [
-        {
-          "task": "Activate Japan eSIMs",
-          "who": "All",
-          "deadline": "Day 1 · Narita",
-          "status": "on_arrival",
-          "notes": "Check signal before leaving airport",
-          "address": "Tokyo Narita International Airport, 1-1 Furugome, Narita, Chiba 282-0004, Japan",
-          "mapQuery": "Narita Airport Tokyo"
-        },
-        {
-          "task": "Top up Suica cards",
-          "who": "All",
-          "deadline": "Day 1 · Narita",
-          "status": "on_arrival",
-          "notes": "¥5,000–¥10,000 each · kiosk or 7-Eleven",
-          "address": "Tokyo Narita International Airport, 1-1 Furugome, Narita, Chiba 282-0004, Japan",
-          "mapQuery": "Narita Airport Tokyo"
-        },
-        {
-          "task": "Withdraw yen cash",
-          "who": "Andy/Sarah",
-          "deadline": "Day 1 · Narita",
-          "status": "on_arrival",
-          "notes": "Japan Post ATM or 7-Eleven inside airport",
-          "address": "Tokyo Narita International Airport, 1-1 Furugome, Narita, Chiba 282-0004, Japan",
-          "mapQuery": "Narita Airport Tokyo ATM"
-        },
-        {
-          "task": "Confirm Sumo Ticket pick-up",
-          "who": "Andy",
-          "deadline": "Day 1 · Narita",
-          "status": "on_arrival",
-          "notes": "Tickets at venue — confirm email saved"
-        }
-      ]
-    },
-    {
-      "group": "✅ DONE — Confirmed Bookings",
-      "items": [
-        {
-          "task": "Flights LHR↔Seoul VS208+VS209 × 4",
-          "who": "Andy",
-          "deadline": "✅ Done",
-          "status": "paid",
-          "notes": "Ref E3FYHB · VS208 13:25→10:05 Sat 4 Apr · VS209 12:25→18:50 Sat 18 Apr · 328k pts + Visa ****7377 · £2,276.76"
-        },
-        {
-          "task": "Seoul → Tokyo Asiana OZ108 × 4",
-          "who": "Andy",
-          "deadline": "✅ Done",
-          "status": "paid",
-          "notes": "Sun 5 Apr · ICN→NRT · £951.48"
-        },
-        {
-          "task": "Seoul arrival taxi — Tourmaker #1479-1",
-          "who": "Andy",
-          "deadline": "✅ Done",
-          "status": "paid",
-          "notes": "Sat 4 Apr · ICN T2→Crown Park Seoul · arr 10:05 · £71.12"
-        },
-        {
-          "task": "Seoul departure taxi — Tourmaker #1479-2",
-          "who": "Andy",
-          "deadline": "✅ Done",
-          "status": "paid",
-          "notes": "Sun 5 Apr · Crown Park Seoul→ICN · pickup 12:00 · £71.12"
-        },
-        {
-          "task": "Narita → Shinjuku Transfer (Klook)",
-          "who": "Andy",
-          "deadline": "✅ Done",
-          "status": "paid",
-          "notes": "Mon 5 Apr · bus × 4 · £91.28"
-        },
-        {
-          "task": "Hakone Freepass × 4",
-          "who": "Sarah",
-          "deadline": "✅ Done",
-          "status": "paid",
-          "notes": "Digital EMot · ¥8,000pp · all Hakone transport"
-        },
-        {
-          "task": "TEN-YU Ryokan, Hakone",
-          "who": "Andy",
-          "deadline": "✅ Done",
-          "status": "paid",
-          "notes": "Wed 8–Fri 10 Apr · £1,765.14 + £5.88 at property · MC 3823",
-          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
-          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
-        },
-        {
-          "task": "Keio Plaza Hotel Tokyo",
-          "who": "Andy",
-          "deadline": "✅ Booked",
-          "status": "pay_at_property",
-          "notes": "Exp 73304498303010 · ¥472,014 PAY AT PROPERTY · Free breakfast · 2 rooms",
-          "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
-          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
-        },
-        {
-          "task": "Mitsui Garden Hotel Kyoto",
-          "who": "Andy",
-          "deadline": "✅ Done",
-          "status": "paid",
-          "notes": "Exp 20251124078897910 · £1,932.76 MC 3823 · Free breakfast · Fri 10–Tue 14 Apr",
-          "address": "Mitsui Garden Hotel Kyoto Shijo Premier, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
-          "mapQuery": "Mitsui Garden Hotel Kyoto Shijo"
-        },
-        {
-          "task": "Candeo Hotels Osaka The Tower",
-          "who": "Andy",
-          "deadline": "✅ Done",
-          "status": "paid",
-          "notes": "Exp 20251124078913429 · £1,579.20 MC 3823 · Free breakfast + Exec Bar Lounge · Tue 14–Fri 17 Apr",
-          "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
-          "mapQuery": "Candeo Hotels Osaka The Tower Umeda"
-        },
-        {
-          "task": "Crown Park Hotel Seoul",
-          "who": "Andy",
-          "deadline": "✅ Done",
-          "status": "paid",
-          "notes": "Exp 25301968 · £388.78 MC 3823 · Breakfast for 2 · Sat 4–Sun 5 Apr",
-          "address": "Crown Park Hotel, 5 Namsandong 2-ga, Jung-gu, Seoul 04605, South Korea",
-          "mapQuery": "Crown Park Hotel Seoul Jung-gu"
-        },
-        {
-          "task": "Grand Hyatt Incheon (airport hotel)",
-          "who": "Andy",
-          "deadline": "✅ Booked",
-          "status": "pay_at_property",
-          "notes": "Exp 150513RA052227 · £277.04 · PAY AT PROPERTY · Fri 17–Sat 18 Apr",
-          "address": "Grand Hyatt Incheon, 208 Yeongjonghaean-ro 321beon-gil, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Grand Hyatt Incheon Airport Hotel"
-        }
-      ]
-    }
-  ],
-  "costSummary": {
-    "currency": "GBP",
-    "exchangeRate": "¥1 = £0.0047523456",
-    "totalEstimatedGBP": "~£15,800",
-    "flights": 2276.76,
-    "hotels": {
-      "keioPlazaTokyo_GBP_estimate": 2244,
-      "keioPlazaTokyo_JPY": 472014,
-      "tenYuHakone": 1777,
-      "mitsuiGardenKyoto": 1932.76,
-      "candeoOsaka": 1579.2,
-      "crownParkSeoul": 388.78,
-      "grandHyattIncheon": 277.04
-    },
-    "transfers": {
-      "lhrParking": 119.18,
-      "tourmaker1479_1": 71.12,
-      "tourmaker1479_2": 71.12,
-      "naritaShinjuku": 91.28,
-      "asianaFlights": 951.48
-    }
-  }
+  ]
 }
