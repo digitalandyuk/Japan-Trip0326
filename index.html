@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🇯🇵 Japan Trip 2026 — Evans Family</title>
+<title>&#x1F1EF;&#x1F1F5; Japan Trip 2026 &#x2014; Evans Family</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
 :root {
@@ -108,6 +108,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .item-notes{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.5;}
 .item-maplink{font-size:10px;color:var(--blossom);text-decoration:none;padding-top:2px;flex-shrink:0;opacity:0.7;transition:opacity 0.2s;white-space:nowrap;}
 .item-maplink:hover{opacity:1;}
+.item-actions{display:flex;flex-direction:column;align-items:center;gap:4px;padding-top:2px;}
 
 /* STATUS BADGES */
 .status-badge{font-size:9px;font-weight:700;padding:2px 7px;border-radius:8px;letter-spacing:0.5px;margin-top:5px;display:inline-block;text-transform:uppercase;}
@@ -124,19 +125,25 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .checklist-container{padding-top:12px;}
 .checklist-group{margin-bottom:16px;}
 .checklist-group-title{font-size:12px;font-weight:600;color:var(--gold);letter-spacing:0.5px;padding:10px 0 8px;text-transform:uppercase;}
-.checklist-item{display:flex;align-items:flex-start;gap:12px;padding:10px 14px;margin-bottom:6px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:10px;cursor:pointer;transition:all 0.2s;}
-.checklist-item:hover{background:rgba(255,255,255,0.05);}
-.checklist-item.checked{opacity:0.45;background:rgba(74,158,142,0.05);border-color:rgba(74,158,142,0.2);}
-.checkbox{width:18px;height:18px;border-radius:5px;border:2px solid rgba(255,255,255,0.2);flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;transition:all 0.2s;}
-.checklist-item.checked .checkbox{background:var(--jade);border-color:var(--jade);}
-.checkbox-tick{color:white;font-size:11px;display:none;}
-.checklist-item.checked .checkbox-tick{display:block;}
+.checklist-item{display:flex;align-items:flex-start;gap:12px;padding:10px 14px;margin-bottom:6px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:10px;}
 .check-task{font-size:13px;font-weight:500;flex:1;}
 .check-meta{font-size:11px;color:var(--muted);margin-top:2px;}
 .check-who{font-size:10px;padding:2px 8px;border-radius:8px;font-weight:600;flex-shrink:0;margin-top:2px;background:rgba(232,130,154,0.15);color:var(--blossom);border:1px solid rgba(232,130,154,0.25);}
-.progress-track{background:rgba(255,255,255,0.08);border-radius:4px;height:5px;margin:6px 0 12px;overflow:hidden;}
-.progress-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--jade),var(--blossom));transition:width 0.4s ease;}
-.progress-label{font-size:11px;color:var(--muted);margin-bottom:8px;}
+.checklist-notice{background:rgba(232,130,154,0.1);border:1px solid rgba(232,130,154,0.3);border-radius:12px;padding:12px 16px;margin-bottom:18px;font-size:12.5px;color:var(--blossom);line-height:1.5;text-align:center;}
+
+/* DETAIL MODAL */
+.detail-btn{background:none;border:none;font-size:15px;cursor:pointer;opacity:0.4;padding:2px 4px;flex-shrink:0;line-height:1;transition:opacity 0.2s;}
+.detail-btn:hover{opacity:1;}
+.modal-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:1000;align-items:flex-end;justify-content:center;}
+.modal-backdrop.open{display:flex;}
+@media(min-width:500px){.modal-backdrop{align-items:center;}}
+.modal-box{background:#1a1a2e;border-radius:20px 20px 0 0;width:100%;max-width:480px;max-height:82vh;overflow-y:auto;padding:22px 20px 40px;border:1px solid rgba(255,255,255,0.1);border-bottom:none;}
+@media(min-width:500px){.modal-box{border-radius:16px;border:1px solid rgba(255,255,255,0.1);}}
+.modal-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px;border-bottom:1px solid var(--border);padding-bottom:14px;}
+.modal-title{font-size:15px;font-weight:600;line-height:1.4;flex:1;color:var(--white);}
+.modal-close{background:rgba(255,255,255,0.08);border:none;color:var(--muted);font-size:16px;cursor:pointer;padding:4px 9px;line-height:1;border-radius:8px;flex-shrink:0;transition:all 0.2s;}
+.modal-close:hover{background:rgba(255,255,255,0.18);color:var(--white);}
+.modal-body{font-size:13px;color:rgba(255,255,255,0.82);line-height:1.8;white-space:pre-line;}
 
 /* PHRASES */
 .phrase-card{display:flex;align-items:center;gap:14px;padding:12px 16px;margin-bottom:8px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:12px;}
@@ -166,9 +173,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 <body>
 
 <div class="header">
-  <div class="header-jp">日本家族旅行</div>
-  <h1>🇯🇵 Japan Family Trip 2026</h1>
-  <div class="header-dates">Fri 3 Apr – Sat 18 Apr 2026</div>
+  <div class="header-jp">&#x65E5;&#x672C;&#x5BB6;&#x65CF;&#x65C5;&#x884C;</div>
+  <h1>&#x1F1EF;&#x1F1F5; Japan Family Trip 2026</h1>
+  <div class="header-dates">Fri 3 Apr &#x2013; Sat 18 Apr 2026</div>
   <div class="family-row">
     <span class="family-pill">Andy</span><span class="family-pill">Sarah</span>
     <span class="family-pill">Jack</span><span class="family-pill">Charlie</span>
@@ -176,16 +183,16 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
   <div class="countdown-bar" id="countdown-bar"></div>
   <div class="sync-bar">
     <div class="sync-dot loading" id="sync-dot"></div>
-    <span id="sync-status">Loading trip data…</span>
-    <button class="refresh-btn" onclick="loadData()">↻ Refresh</button>
+    <span id="sync-status">Loading trip data&#x2026;</span>
+    <button class="refresh-btn" onclick="loadData()">&#x21BB; Refresh</button>
   </div>
 </div>
 
 <div class="nav-tabs">
   <button class="nav-tab active" onclick="switchTab('overview',this)">Overview</button>
   <button class="nav-tab" onclick="switchTab('days',this)">Day by Day</button>
-  <button class="nav-tab" onclick="switchTab('map',this)">🗺 Maps</button>
-  <button class="nav-tab" onclick="switchTab('weather',this)">🌤 Weather</button>
+  <button class="nav-tab" onclick="switchTab('map',this)">&#x1F5FA; Maps</button>
+  <button class="nav-tab" onclick="switchTab('weather',this)">&#x1F324; Weather</button>
   <button class="nav-tab" onclick="switchTab('checklist',this)">Checklist</button>
   <button class="nav-tab" onclick="switchTab('phrases',this)">Japanese</button>
   <button class="nav-tab" onclick="switchTab('tips',this)">Tips</button>
@@ -201,14 +208,24 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
   <div id="tab-tips"     style="display:none"></div>
 </div>
 
+<!-- DETAIL MODAL -->
+<div class="modal-backdrop" id="detail-modal" onclick="closeDetailModal(event)">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div class="modal-title" id="modal-title"></div>
+      <button class="modal-close" onclick="closeDetailModal()">&#x2715;</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
 <script>
 /* ─────────────────────────────────────────────
    DATA
 ───────────────────────────────────────────── */
 const RAW_URL='https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japan-trip.json';
-let tripData=null, checklistState={};
+let tripData=null;
 
-/* Status map — now includes bookahead */
 const STATUS_MAP={
   booked:          {cls:'s-booked',    label:'Booked'},
   bookahead:       {cls:'s-bookahead', label:'Book Ahead'},
@@ -228,23 +245,35 @@ const STATUS_MAP={
 };
 
 function resolveStatus(item){
-  const s = (item.status||'').toLowerCase();
+  const s=(item.status||'').toLowerCase();
   if(s==='booked'){
-    const n=(item.notes||'').toLowerCase();
-    const hasRef = /ref\s*#|booking[:\s]|confirmed booking|klook|expedia|£\d|¥[\d,]+\s*(paid|total)|booked via|pre-booked|emot|odakyu\.jp/i.test(item.notes||'');
-    if(!hasRef) return {cls:'s-bookahead', label:'Book Ahead'};
+    const notes=item.notes||'';
+    const hasRef=(
+      notes.includes('Ref #')||notes.includes('ref #')||notes.includes('ref#')||
+      /booking[:\s]/i.test(notes)||
+      notes.toLowerCase().includes('confirmed booking')||
+      notes.toLowerCase().includes('klook')||
+      notes.toLowerCase().includes('expedia')||
+      /\u00a3\d/.test(notes)||
+      /\u00a5[\d,]+(paid|total)/i.test(notes)||
+      notes.toLowerCase().includes('booked via')||
+      notes.toLowerCase().includes('pre-booked')||
+      notes.toLowerCase().includes('emot')||
+      notes.toLowerCase().includes('odakyu.jp')
+    );
+    if(!hasRef) return {cls:'s-bookahead',label:'Book Ahead'};
   }
-  return STATUS_MAP[s] || {cls:'s-planning', label: item.status||''};
+  return STATUS_MAP[s]||{cls:'s-planning',label:item.status||''};
 }
 
 /* ─────────────────────────────────────────────
    COUNTDOWN
 ───────────────────────────────────────────── */
 function renderCountdown(){
-  const dep=new Date('2026-04-03T00:00:00'), now=new Date(), diff=dep-now;
+  const dep=new Date('2026-04-03T00:00:00'),now=new Date(),diff=dep-now;
   const bar=document.getElementById('countdown-bar');
   if(!bar) return;
-  if(diff<=0){bar.innerHTML='<div class="countdown-gone">✈️ Trip is underway — enjoy Japan!</div>';return;}
+  if(diff<=0){bar.innerHTML='<div class="countdown-gone">&#x2708;&#xFE0F; Trip is underway &#x2014; enjoy Japan!</div>';return;}
   const d=Math.floor(diff/86400000),
         h=Math.floor((diff%86400000)/3600000),
         m=Math.floor((diff%3600000)/60000),
@@ -269,14 +298,14 @@ function setSyncStatus(state,msg){
 }
 
 async function loadData(){
-  setSyncStatus('loading','Fetching latest data…');
+  setSyncStatus('loading','Fetching latest data\u2026');
   try{
     const res=await fetch(RAW_URL+'?t='+Date.now());
     if(!res.ok) throw new Error('HTTP '+res.status);
     tripData=await res.json();
     setSyncStatus('ok','Updated '+new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}));
   }catch(e){
-    setSyncStatus('error','Could not fetch data — check connection');
+    setSyncStatus('error','Could not fetch data \u2014 check connection');
     tripData={days:[],checklist:[]};
   }
   renderOverview();
@@ -291,14 +320,14 @@ function renderOverview(){
   const days=(tripData&&tripData.days)||[];
   const totalItems=days.reduce((a,d)=>a+(d.items||[]).length,0);
   const hotels=[
-    {name:'Crown Park Hotel Seoul',        dates:'Sat 4 – Sun 5 Apr',   status:'paid'},
-    {name:'Keio Plaza Hotel Tokyo',         dates:'Sun 5 – Wed 8 Apr',   status:'property'},
-    {name:'TEN-YU Ryokan, Hakone',          dates:'Wed 8 – Fri 10 Apr',  status:'paid'},
-    {name:'Mitsui Garden Hotel Kyoto',      dates:'Fri 10 – Tue 14 Apr', status:'paid'},
-    {name:'Candeo Hotels Osaka The Tower',  dates:'Tue 14 – Fri 17 Apr', status:'paid'},
-    {name:'Grand Hyatt Incheon',            dates:'Fri 17 – Sat 18 Apr', status:'property'},
+    {name:'Crown Park Hotel Seoul',        dates:'Sat 4 \u2013 Sun 5 Apr',   status:'paid'},
+    {name:'Keio Plaza Hotel Tokyo',         dates:'Sun 5 \u2013 Wed 8 Apr',   status:'property'},
+    {name:'TEN-YU Ryokan, Hakone',          dates:'Wed 8 \u2013 Fri 10 Apr',  status:'paid'},
+    {name:'Mitsui Garden Hotel Kyoto',      dates:'Fri 10 \u2013 Tue 14 Apr', status:'paid'},
+    {name:'Candeo Hotels Osaka The Tower',  dates:'Tue 14 \u2013 Fri 17 Apr', status:'paid'},
+    {name:'Grand Hyatt Incheon',            dates:'Fri 17 \u2013 Sat 18 Apr', status:'property'},
   ];
-  const icons=['🏨','🏙️','🛁','🌸','🎡','✈️'];
+  const icons=['\u{1F3E8}','\u{1F3D9}\uFE0F','\u{1F6C1}','\u{1F338}','\u{1F3A1}','\u2708\uFE0F'];
   document.getElementById('tab-overview').innerHTML=`
     <div class="overview-grid">
       <div class="stat-card"><div class="stat-num">15</div><div class="stat-label">Days</div></div>
@@ -306,18 +335,18 @@ function renderOverview(){
       <div class="stat-card"><div class="stat-num">${totalItems||'60+'}</div><div class="stat-label">Activities</div></div>
     </div>
     <div class="route-strip">
-      <span class="route-city">🇬🇧 London</span><span class="route-arrow">→</span>
-      <span class="route-city">🇰🇷 Seoul</span><span class="route-arrow">→</span>
-      <span class="route-city">🗼 Tokyo</span><span class="route-arrow">→</span>
-      <span class="route-city">⛰️ Hakone</span><span class="route-arrow">→</span>
-      <span class="route-city">⛩️ Kyoto</span><span class="route-arrow">→</span>
-      <span class="route-city">🏯 Nara</span><span class="route-arrow">→</span>
-      <span class="route-city">🦞 Osaka</span><span class="route-arrow">→</span>
-      <span class="route-city">🇬🇧 London</span>
+      <span class="route-city">\u{1F1EC}\u{1F1E7} London</span><span class="route-arrow">\u2192</span>
+      <span class="route-city">\u{1F1F0}\u{1F1F7} Seoul</span><span class="route-arrow">\u2192</span>
+      <span class="route-city">\u{1F5FC} Tokyo</span><span class="route-arrow">\u2192</span>
+      <span class="route-city">\u26F0\uFE0F Hakone</span><span class="route-arrow">\u2192</span>
+      <span class="route-city">\u26E9\uFE0F Kyoto</span><span class="route-arrow">\u2192</span>
+      <span class="route-city">\u{1F3EF} Nara</span><span class="route-arrow">\u2192</span>
+      <span class="route-city">\u{1F99E} Osaka</span><span class="route-arrow">\u2192</span>
+      <span class="route-city">\u{1F1EC}\u{1F1E7} London</span>
     </div>
     <div class="section-title">Status Key</div>
     <div class="status-legend">
-      <div class="legend-item"><div class="legend-dot" style="background:#e05050"></div>Booked & confirmed</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#e05050"></div>Booked &amp; confirmed</div>
       <div class="legend-item"><div class="legend-dot" style="background:#e09040"></div>Book ahead recommended</div>
       <div class="legend-item"><div class="legend-dot" style="background:#4a9e8e"></div>Confirmed / Paid</div>
       <div class="legend-item"><div class="legend-dot" style="background:#4a8ec9"></div>Included in trip</div>
@@ -338,37 +367,37 @@ function renderOverview(){
 ───────────────────────────────────────────── */
 const CITIES=[
   {name:'Full Route',  osm:'https://www.openstreetmap.org/export/embed.html?bbox=121.0%2C33.0%2C142.0%2C38.5&layer=mapnik'},
-  {name:'🇰🇷 Seoul',  osm:'https://www.openstreetmap.org/export/embed.html?bbox=126.734%2C37.413%2C127.183%2C37.701&layer=mapnik&marker=37.5665%2C126.9780'},
-  {name:'🗼 Tokyo',   osm:'https://www.openstreetmap.org/export/embed.html?bbox=139.500%2C35.550%2C139.870%2C35.810&layer=mapnik&marker=35.6895%2C139.6917'},
-  {name:'⛰️ Hakone',  osm:'https://www.openstreetmap.org/export/embed.html?bbox=138.950%2C35.170%2C139.200%2C35.310&layer=mapnik&marker=35.2324%2C139.1067'},
-  {name:'⛩️ Kyoto',   osm:'https://www.openstreetmap.org/export/embed.html?bbox=135.630%2C34.930%2C135.870%2C35.090&layer=mapnik&marker=35.0116%2C135.7681'},
-  {name:'🦌 Nara',    osm:'https://www.openstreetmap.org/export/embed.html?bbox=135.760%2C34.650%2C135.860%2C34.720&layer=mapnik&marker=34.6851%2C135.8050'},
-  {name:'🎡 Osaka',   osm:'https://www.openstreetmap.org/export/embed.html?bbox=135.390%2C34.600%2C135.620%2C34.780&layer=mapnik&marker=34.6937%2C135.5023'},
-  {name:'🏰 Himeji',  osm:'https://www.openstreetmap.org/export/embed.html?bbox=134.630%2C34.790%2C134.740%2C34.860&layer=mapnik&marker=34.8394%2C134.6939'},
+  {name:'\u{1F1F0}\u{1F1F7} Seoul',  osm:'https://www.openstreetmap.org/export/embed.html?bbox=126.734%2C37.413%2C127.183%2C37.701&layer=mapnik&marker=37.5665%2C126.9780'},
+  {name:'\u{1F5FC} Tokyo',   osm:'https://www.openstreetmap.org/export/embed.html?bbox=139.500%2C35.550%2C139.870%2C35.810&layer=mapnik&marker=35.6895%2C139.6917'},
+  {name:'\u26F0\uFE0F Hakone',  osm:'https://www.openstreetmap.org/export/embed.html?bbox=138.950%2C35.170%2C139.200%2C35.310&layer=mapnik&marker=35.2324%2C139.1067'},
+  {name:'\u26E9\uFE0F Kyoto',   osm:'https://www.openstreetmap.org/export/embed.html?bbox=135.630%2C34.930%2C135.870%2C35.090&layer=mapnik&marker=35.0116%2C135.7681'},
+  {name:'\u{1F98C} Nara',    osm:'https://www.openstreetmap.org/export/embed.html?bbox=135.760%2C34.650%2C135.860%2C34.720&layer=mapnik&marker=34.6851%2C135.8050'},
+  {name:'\u{1F3A1} Osaka',   osm:'https://www.openstreetmap.org/export/embed.html?bbox=135.390%2C34.600%2C135.620%2C34.780&layer=mapnik&marker=34.6937%2C135.5023'},
+  {name:'\u{1F3F0} Himeji',  osm:'https://www.openstreetmap.org/export/embed.html?bbox=134.630%2C34.790%2C134.740%2C34.860&layer=mapnik&marker=34.8394%2C134.6939'},
 ];
 
-let mapView='osm', activeCity=0;
+let mapView='osm',activeCity=0;
 
 function routeSVG(){
   const W=560,H=340;
   const stops=[
-    {label:'🇬🇧 London',  x:40, y:60},
-    {label:'🇰🇷 Seoul',   x:160,y:90},
-    {label:'🗼 Tokyo',    x:310,y:80},
-    {label:'⛰️ Hakone',  x:350,y:140},
-    {label:'⛩️ Kyoto',   x:330,y:210},
-    {label:'🦌 Nara',    x:345,y:245},
-    {label:'🎡 Osaka',   x:315,y:270},
-    {label:'🏰 Himeji',  x:275,y:265},
+    {label:'\u{1F1EC}\u{1F1E7} London',  x:40, y:60},
+    {label:'\u{1F1F0}\u{1F1F7} Seoul',   x:160,y:90},
+    {label:'\u{1F5FC} Tokyo',    x:310,y:80},
+    {label:'\u26F0\uFE0F Hakone',  x:350,y:140},
+    {label:'\u26E9\uFE0F Kyoto',   x:330,y:210},
+    {label:'\u{1F98C} Nara',    x:345,y:245},
+    {label:'\u{1F3A1} Osaka',   x:315,y:270},
+    {label:'\u{1F3F0} Himeji',  x:275,y:265},
   ];
   const pts=stops.map(s=>`${s.x},${s.y}`).join(' L ');
-  const last=stops[stops.length-1], first=stops[0];
+  const last=stops[stops.length-1],first=stops[0];
   return `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;background:#0f1520;">
     ${[...Array(8)].map((_,i)=>`<line x1="0" y1="${i*50}" x2="${W}" y2="${i*50}" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>`).join('')}
     ${[...Array(12)].map((_,i)=>`<line x1="${i*50}" y1="0" x2="${i*50}" y2="${H}" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>`).join('')}
     <path d="M ${pts}" fill="none" stroke="#e8829a" stroke-width="2" stroke-dasharray="6,3" opacity="0.7"/>
     <path d="M ${last.x},${last.y} Q 180,320 ${first.x},${first.y}" fill="none" stroke="#4a9e8e" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.5"/>
-    ${stops.map((s,i)=>`
+    ${stops.map(s=>`
       <circle cx="${s.x}" cy="${s.y}" r="7" fill="#e8829a" stroke="#0f1520" stroke-width="2"/>
       <circle cx="${s.x}" cy="${s.y}" r="3" fill="white"/>
       <text x="${s.x}" y="${s.y-13}" font-family="DM Sans,sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="600">${s.label}</text>
@@ -387,8 +416,8 @@ function renderMapTab(){
     <div style="padding-top:12px;">
       <div class="section-title">Map Explorer</div>
       <div class="map-view-toggle">
-        <button class="map-toggle-btn active" id="mtbtn-osm"   onclick="setMapView('osm',this)">🌍 Live Map</button>
-        <button class="map-toggle-btn"        id="mtbtn-route" onclick="setMapView('route',this)">🗺 Route Overview</button>
+        <button class="map-toggle-btn active" id="mtbtn-osm"   onclick="setMapView('osm',this)">\u{1F30D} Live Map</button>
+        <button class="map-toggle-btn"        id="mtbtn-route" onclick="setMapView('route',this)">\u{1F5FA} Route Overview</button>
       </div>
       <div class="map-city-tabs" id="city-tabs">
         ${CITIES.map((c,i)=>`<button class="map-city-btn${i===0?' active':''}" onclick="switchMapCity(${i},this)">${c.name}</button>`).join('')}
@@ -408,13 +437,8 @@ function setMapView(v,btn){
   const osmP=document.getElementById('map-osm-panel');
   const routeP=document.getElementById('map-route-panel');
   const cityTabs=document.getElementById('city-tabs');
-  if(v==='osm'){
-    osmP.style.display='block'; routeP.style.display='none';
-    if(cityTabs) cityTabs.style.display='flex';
-  } else {
-    osmP.style.display='none'; routeP.style.display='block';
-    if(cityTabs) cityTabs.style.display='none';
-  }
+  if(v==='osm'){osmP.style.display='block';routeP.style.display='none';if(cityTabs)cityTabs.style.display='flex';}
+  else{osmP.style.display='none';routeP.style.display='block';if(cityTabs)cityTabs.style.display='none';}
 }
 
 function switchMapCity(idx,btn){
@@ -443,7 +467,7 @@ const DAY_OSM={
 function getOSMForDay(location){
   if(!location) return null;
   for(const k of Object.keys(DAY_OSM)){
-    if(location.includes(k)) return {url:DAY_OSM[k], city:k};
+    if(location.includes(k)) return {url:DAY_OSM[k],city:k};
   }
   return null;
 }
@@ -452,7 +476,7 @@ const dayMapOpen={};
 
 function renderDays(){
   const days=(tripData&&tripData.days)||[];
-  document.getElementById('tab-days').innerHTML=`<div class="days-container">`+days.map((day,di)=>{
+  document.getElementById('tab-days').innerHTML='<div class="days-container">'+days.map((day,di)=>{
     const items=day.items||[];
     const label=day.label||'';
     const dayNum=label.match(/Day (\d+)/)?.[1]||(di);
@@ -461,7 +485,10 @@ function renderDays(){
     const itemsHTML=items.map(item=>{
       const sm=resolveStatus(item);
       const ml=item.mapQuery
-        ?`<a class="item-maplink" href="https://maps.google.com/?q=${encodeURIComponent(item.mapQuery)}" target="_blank">📍</a>`:'';
+        ?`<a class="item-maplink" href="https://maps.google.com/?q=${encodeURIComponent(item.mapQuery)}" target="_blank">\u{1F4CD}</a>`:'';
+      const db=item.detail
+        ?`<button class="detail-btn" title="More info" onclick="openDetailModal(${JSON.stringify(item.activity||'')},${JSON.stringify(item.detail)})">\u2139\uFE0F</button>`
+        :'';
       return `<div class="item">
         <div class="item-time">${item.time||''}</div>
         <div class="item-main">
@@ -469,12 +496,12 @@ function renderDays(){
           ${item.notes?`<div class="item-notes">${item.notes}</div>`:''}
           <span class="status-badge ${sm.cls}">${sm.label}</span>
         </div>
-        ${ml}
+        <div class="item-actions">${ml}${db}</div>
       </div>`;
     }).join('');
 
     const mapSection=osmInfo?`
-      <button class="day-map-btn" id="mapbtn-${di}" onclick="toggleDayMap(${di})">🗺 Show ${osmInfo.city} map</button>
+      <button class="day-map-btn" id="mapbtn-${di}" onclick="toggleDayMap(${di})">\u{1F5FA} Show ${osmInfo.city} map</button>
       <iframe id="daymap-${di}" class="day-osm-frame" src="" data-src="${osmInfo.url}"
         allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`:'';
 
@@ -486,11 +513,11 @@ function renderDays(){
           <div class="day-loc">${day.location||''}</div>
         </div>
         <div class="day-badge">${items.length} activities</div>
-        <div class="day-chevron">›</div>
+        <div class="day-chevron">\u203A</div>
       </div>
       <div class="day-body">${mapSection}${itemsHTML}</div>
     </div>`;
-  }).join('')+`</div>`;
+  }).join('')+'</div>';
 }
 
 function toggleDay(di){
@@ -517,8 +544,23 @@ function toggleDayMap(di){
 
 function formatDayDate(ds){
   if(!ds) return'';
-  try{ return new Date(ds+'T12:00:00').toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'short'}); }
-  catch(e){ return ds; }
+  try{return new Date(ds+'T12:00:00').toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'short'});}
+  catch(e){return ds;}
+}
+
+/* ─────────────────────────────────────────────
+   DETAIL MODAL
+───────────────────────────────────────────── */
+function openDetailModal(title,detail){
+  document.getElementById('modal-title').textContent=title;
+  document.getElementById('modal-body').textContent=detail;
+  document.getElementById('detail-modal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeDetailModal(e){
+  if(e&&e.target!==document.getElementById('detail-modal')) return;
+  document.getElementById('detail-modal').classList.remove('open');
+  document.body.style.overflow='';
 }
 
 /* ─────────────────────────────────────────────
@@ -526,45 +568,22 @@ function formatDayDate(ds){
 ───────────────────────────────────────────── */
 function renderChecklist(){
   const groups=(tripData&&tripData.checklist)||[];
-  try{ checklistState=JSON.parse(sessionStorage.getItem('japan-checklist')||'{}'); }catch(e){}
-  let total=0,done=0;
-  groups.forEach((g,gi)=>(g.items||[]).forEach((_,ii)=>{total++;if(checklistState[`${gi}-${ii}`])done++;}));
-
-  const html=groups.map((g,gi)=>`<div class="checklist-group">
+  const html=groups.map(g=>`<div class="checklist-group">
     <div class="checklist-group-title">${g.group||''}</div>
-    ${(g.items||[]).map((item,ii)=>{
-      const key=`${gi}-${ii}`, checked=!!checklistState[key];
-      const sm=STATUS_MAP[(item.status||'').toLowerCase()]||{cls:'s-planning',label:''};
-      return `<div class="checklist-item${checked?' checked':''}" onclick="toggleCheck('${key}',this)">
-        <div class="checkbox"><span class="checkbox-tick">✓</span></div>
-        <div style="flex:1;min-width:0">
-          <div class="check-task">${item.task||''}</div>
-          ${item.notes?`<div class="check-meta">${item.notes}</div>`:''}
-          ${item.deadline&&item.deadline!=='✅ Done'&&item.deadline!=='✅ Booked'
-            ?`<div class="check-meta" style="color:var(--blossom)">⏰ ${item.deadline}</div>`:''}
-        </div>
-        ${item.who?`<div class="check-who">${item.who}</div>`:''}
-      </div>`;
-    }).join('')}
+    ${(g.items||[]).map(item=>`<div class="checklist-item">
+      <div style="flex:1;min-width:0">
+        <div class="check-task">${item.task||''}</div>
+        ${item.notes?`<div class="check-meta">${item.notes}</div>`:''}
+        ${item.deadline&&item.deadline!=='\u2705 Done'&&item.deadline!=='\u2705 Booked'
+          ?`<div class="check-meta" style="color:var(--blossom)">\u23F0 ${item.deadline}</div>`:''}
+      </div>
+      ${item.who?`<div class="check-who">${item.who}</div>`:''}
+    </div>`).join('')}
   </div>`).join('');
-
   document.getElementById('tab-checklist').innerHTML=`<div class="checklist-container">
-    <div class="progress-label">${done} of ${total} complete</div>
-    <div class="progress-track"><div class="progress-fill" id="prog-fill" style="width:${total?Math.round(done/total*100):0}%"></div></div>
+    <div class="checklist-notice">\u{1F4CB} When something\u2019s done, don\u2019t forget to tell Andy \u2014 so he can update Claude and keep this app fully up to date.</div>
     ${html}
   </div>`;
-}
-
-function toggleCheck(key,el){
-  checklistState[key]=!checklistState[key];
-  try{ sessionStorage.setItem('japan-checklist',JSON.stringify(checklistState)); }catch(e){}
-  el.classList.toggle('checked');
-  const total=document.querySelectorAll('.checklist-item').length;
-  const done=document.querySelectorAll('.checklist-item.checked').length;
-  const fill=document.getElementById('prog-fill');
-  if(fill) fill.style.width=(total?Math.round(done/total*100):0)+'%';
-  const lbl=document.querySelector('.progress-label');
-  if(lbl) lbl.textContent=`${done} of ${total} complete`;
 }
 
 /* ─────────────────────────────────────────────
@@ -572,12 +591,12 @@ function toggleCheck(key,el){
 ───────────────────────────────────────────── */
 function renderWeather(){
   const data=[
-    {city:'Seoul',  flag:'🇰🇷',dates:'4–5 Apr', icon:'🌤',avg:'13°C',range:'8–17°C', desc:'Mild spring, partly cloudy',  details:'Light jacket needed evenings\nCherry blossom may still linger\nLow rain probability'},
-    {city:'Tokyo',  flag:'🇯🇵',dates:'5–8 Apr', icon:'🌸',avg:'16°C',range:'11–20°C',desc:'Peak cherry blossom season',  details:'Warm days, cool evenings\nPossible light showers\nIdeal sightseeing weather'},
-    {city:'Hakone', flag:'⛰️', dates:'8–10 Apr',icon:'⛅',avg:'12°C',range:'7–16°C', desc:'Cooler at altitude',          details:'Fuji views best in morning\nCloud cover common afternoons\nWarm layers for onsen evenings'},
-    {city:'Kyoto',  flag:'⛩️', dates:'10–14 Apr',icon:'🌸',avg:'17°C',range:'11–21°C',desc:'Beautiful spring weather',  details:'Late cherry blossoms likely\nComfortable walking temps\nGo early to avoid crowds'},
-    {city:'Nara',   flag:'🦌', dates:'~13 Apr', icon:'🌤',avg:'17°C',range:'11–21°C',desc:'Same as Kyoto region',        details:'Day trip — very pleasant\nDeer park lovely in spring\nLight layers sufficient'},
-    {city:'Osaka',  flag:'🎡', dates:'14–17 Apr',icon:'🌤',avg:'18°C',range:'13–22°C',desc:'Warm & bright',             details:'Warmest city on the trip\nGreat street food weather\nLow rain probability'},
+    {city:'Seoul',  flag:'\u{1F1F0}\u{1F1F7}',dates:'4\u20135 Apr', icon:'\u{1F324}',avg:'13\u00B0C',range:'8\u201317\u00B0C', desc:'Mild spring, partly cloudy',  details:'Light jacket needed evenings\nCherry blossom may still linger\nLow rain probability'},
+    {city:'Tokyo',  flag:'\u{1F1EF}\u{1F1F5}',dates:'5\u20138 Apr', icon:'\u{1F338}',avg:'16\u00B0C',range:'11\u201320\u00B0C',desc:'Peak cherry blossom season',  details:'Warm days, cool evenings\nPossible light showers\nIdeal sightseeing weather'},
+    {city:'Hakone', flag:'\u26F0\uFE0F', dates:'8\u201310 Apr',icon:'\u26C5',avg:'12\u00B0C',range:'7\u201316\u00B0C', desc:'Cooler at altitude',          details:'Fuji views best in morning\nCloud cover common afternoons\nWarm layers for onsen evenings'},
+    {city:'Kyoto',  flag:'\u26E9\uFE0F', dates:'10\u201314 Apr',icon:'\u{1F338}',avg:'17\u00B0C',range:'11\u201321\u00B0C',desc:'Beautiful spring weather',  details:'Late cherry blossoms likely\nComfortable walking temps\nGo early to avoid crowds'},
+    {city:'Nara',   flag:'\u{1F98C}', dates:'~13 Apr', icon:'\u{1F324}',avg:'17\u00B0C',range:'11\u201321\u00B0C',desc:'Same as Kyoto region',        details:'Day trip \u2014 very pleasant\nDeer park lovely in spring\nLight layers sufficient'},
+    {city:'Osaka',  flag:'\u{1F3A1}', dates:'14\u201317 Apr',icon:'\u{1F324}',avg:'18\u00B0C',range:'13\u201322\u00B0C',desc:'Warm &amp; bright',             details:'Warmest city on the trip\nGreat street food weather\nLow rain probability'},
   ];
   document.getElementById('tab-weather').innerHTML=`<div style="padding-top:12px;">
     <div class="section-title">April Weather by City</div>
@@ -598,21 +617,21 @@ function renderWeather(){
    PHRASES
 ───────────────────────────────────────────── */
 const PHRASES=[
-  {jp:'ありがとうございます',en:'Thank you very much',rom:'Arigatou gozaimasu'},
-  {jp:'すみません',en:'Excuse me / Sorry',rom:'Sumimasen'},
-  {jp:'これをください',en:"I'll have this please",rom:'Kore wo kudasai'},
-  {jp:'いくらですか？',en:'How much is this?',rom:'Ikura desu ka?'},
-  {jp:'どこですか？',en:'Where is...?',rom:'Doko desu ka?'},
-  {jp:'えいごをはなせますか？',en:'Do you speak English?',rom:'Eigo wo hanasemasu ka?'},
-  {jp:'おすすめは何ですか？',en:'What do you recommend?',rom:'Osusume wa nan desu ka?'},
-  {jp:'トイレはどこですか？',en:'Where is the toilet?',rom:'Toire wa doko desu ka?'},
-  {jp:'カードは使えますか？',en:'Can I pay by card?',rom:'Kaado wa tsukaemasu ka?'},
-  {jp:'おいしい！',en:'Delicious!',rom:'Oishii!'},
-  {jp:'しゃしんをとってもいいですか？',en:'May I take a photo?',rom:'Shashin wo totte mo ii desu ka?'},
-  {jp:'いただきます',en:"Let's eat (before a meal)",rom:'Itadakimasu'},
-  {jp:'ごちそうさまでした',en:'Thank you for the meal',rom:'Gochisousama deshita'},
-  {jp:'よやくがあります',en:'I have a reservation',rom:'Yoyaku ga arimasu'},
-  {jp:'タクシーをよんでください',en:'Please call a taxi',rom:'Takushi wo yonde kudasai'},
+  {jp:'\u3042\u308A\u304C\u3068\u3046\u3054\u3056\u3044\u307E\u3059',en:'Thank you very much',rom:'Arigatou gozaimasu'},
+  {jp:'\u3059\u307F\u307E\u305B\u3093',en:'Excuse me / Sorry',rom:'Sumimasen'},
+  {jp:'\u3053\u308C\u3092\u304F\u3060\u3055\u3044',en:"I'll have this please",rom:'Kore wo kudasai'},
+  {jp:'\u3044\u304F\u3089\u3067\u3059\u304B\uFF1F',en:'How much is this?',rom:'Ikura desu ka?'},
+  {jp:'\u3069\u3053\u3067\u3059\u304B\uFF1F',en:'Where is...?',rom:'Doko desu ka?'},
+  {jp:'\u3048\u3044\u3054\u3092\u306F\u306A\u305B\u307E\u3059\u304B\uFF1F',en:'Do you speak English?',rom:'Eigo wo hanasemasu ka?'},
+  {jp:'\u304A\u3059\u3059\u3081\u306F\u4F55\u3067\u3059\u304B\uFF1F',en:'What do you recommend?',rom:'Osusume wa nan desu ka?'},
+  {jp:'\u30C8\u30A4\u30EC\u306F\u3069\u3053\u3067\u3059\u304B\uFF1F',en:'Where is the toilet?',rom:'Toire wa doko desu ka?'},
+  {jp:'\u30AB\u30FC\u30C9\u306F\u4F7F\u3048\u307E\u3059\u304B\uFF1F',en:'Can I pay by card?',rom:'Kaado wa tsukaemasu ka?'},
+  {jp:'\u304A\u3044\u3057\u3044\uFF01',en:'Delicious!',rom:'Oishii!'},
+  {jp:'\u3057\u3083\u3057\u3093\u3092\u3068\u3063\u3066\u3082\u3044\u3044\u3067\u3059\u304B\uFF1F',en:'May I take a photo?',rom:'Shashin wo totte mo ii desu ka?'},
+  {jp:'\u3044\u305F\u3060\u304D\u307E\u3059',en:"Let's eat (before a meal)",rom:'Itadakimasu'},
+  {jp:'\u3054\u3061\u305D\u3046\u3055\u307E\u3067\u3057\u305F',en:'Thank you for the meal',rom:'Gochisousama deshita'},
+  {jp:'\u3088\u3084\u304F\u304C\u3042\u308A\u307E\u3059',en:'I have a reservation',rom:'Yoyaku ga arimasu'},
+  {jp:'\u30BF\u30AF\u30B7\u30FC\u3092\u3088\u3093\u3067\u304F\u3060\u3055\u3044',en:'Please call a taxi',rom:'Takushi wo yonde kudasai'},
 ];
 function renderPhrases(){
   document.getElementById('tab-phrases').innerHTML=`<div style="padding-top:12px;">
@@ -623,41 +642,41 @@ function renderPhrases(){
     </div>`).join('')}
   </div>`;
 }
-function copyPhrase(t){ navigator.clipboard?.writeText(t).catch(()=>{}); }
+function copyPhrase(t){navigator.clipboard?.writeText(t).catch(()=>{});}
 
 /* ─────────────────────────────────────────────
    TIPS
 ───────────────────────────────────────────── */
 function renderTips(){
   const tips=[
-    {title:'🚇 Getting Around',items:[
-      '<strong>Suica card</strong> — load ¥5,000–10,000 each. Works on every metro, JR train and bus. Pays at convenience stores and vending machines.',
-      '<strong>Hakone Freepass</strong> — 3-day pass covering Romancecar, mountain railway, cable car, ropeway, pirate ship, buses. ¥8,000pp.',
-      '<strong>JR Pass</strong> — covers Shinkansen and JR trains between cities. Big saving on Tokyo–Kyoto–Osaka–Himeji legs.',
-      '<strong>Narita airport</strong> — never take a taxi (~¥35,000). Pre-booked Klook highway bus to Shinjuku is the move.',
+    {title:'\u{1F687} Getting Around',items:[
+      '<strong>Suica card</strong> \u2014 load \u00A55,000\u201310,000 each. Works on every metro, JR train and bus. Pays at convenience stores and vending machines.',
+      '<strong>Hakone Freepass</strong> \u2014 3-day pass covering Romancecar, mountain railway, cable car, ropeway, pirate ship, buses. \u00A58,000pp.',
+      '<strong>JR Pass</strong> \u2014 covers Shinkansen and JR trains between cities. Big saving on Tokyo\u2013Kyoto\u2013Osaka\u2013Himeji legs.',
+      '<strong>Narita airport</strong> \u2014 never take a taxi (~\u00A535,000). Pre-booked Klook highway bus to Shinjuku is the move.',
     ]},
-    {title:'💴 Money',items:[
-      'Japan is still heavily <strong>cash-based</strong>. Withdraw ¥30,000–50,000 on arrival at Narita.',
+    {title:'\u{1F4B4} Money',items:[
+      'Japan is still heavily <strong>cash-based</strong>. Withdraw \u00A530,000\u201350,000 on arrival at Narita.',
       '<strong>7-Eleven ATMs</strong> accept foreign cards reliably throughout Japan.',
-      'Golden Gai bars and most small ramen shops are <strong>cash only</strong>. Always carry ¥5,000–10,000.',
+      'Golden Gai bars and most small ramen shops are <strong>cash only</strong>. Always carry \u00A55,000\u201310,000.',
     ]},
-    {title:'🍜 Food & Eating',items:[
-      'Say <strong>いただきます</strong> before eating and <strong>ごちそうさま</strong> after — always appreciated.',
+    {title:'\u{1F35C} Food &amp; Eating',items:[
+      'Say <strong>\u3044\u305F\u3060\u304D\u307E\u3059</strong> before eating and <strong>\u3054\u3061\u305D\u3046\u3055\u307E</strong> after \u2014 always appreciated.',
       '<strong>Konbini</strong> (7-Eleven, Lawson, FamilyMart) sell genuinely excellent food. Not a last resort.',
       'You do <strong>not tip</strong> in Japan. Ever. Tipping can cause confusion or offence.',
-      'Most ramen shops use <strong>vending machine ordering</strong> — buy your ticket first, hand to staff.',
+      'Most ramen shops use <strong>vending machine ordering</strong> \u2014 buy your ticket first, hand to staff.',
     ]},
-    {title:'🛁 Onsen & Ryokan',items:[
+    {title:'\u{1F6C1} Onsen &amp; Ryokan',items:[
       'Private rotenburo at TEN-YU has <strong>no tattoo restrictions</strong>.',
-      '<strong>Wash thoroughly</strong> at the shower station before entering the hot spring — non-negotiable.',
-      'Wear <strong>yukata</strong> (room robes) around the ryokan — perfectly normal.',
+      '<strong>Wash thoroughly</strong> at the shower station before entering the hot spring \u2014 non-negotiable.',
+      'Wear <strong>yukata</strong> (room robes) around the ryokan \u2014 perfectly normal.',
       'Kaiseki dinner has <strong>many small courses</strong>. Pace yourself.',
     ]},
-    {title:'📱 Apps & Tech',items:[
-      '<strong>Google Maps</strong> — download offline maps for all cities before leaving.',
-      '<strong>Google Translate</strong> — camera mode excellent for menus. Download Japanese offline pack.',
-      '<strong>eSIMs</strong> — activate at Narita. Check signal before leaving the airport.',
-      '<strong>Suica on iPhone</strong> — set up in Apple Wallet. Tap to pay everywhere.',
+    {title:'\u{1F4F1} Apps &amp; Tech',items:[
+      '<strong>Google Maps</strong> \u2014 download offline maps for all cities before leaving.',
+      '<strong>Google Translate</strong> \u2014 camera mode excellent for menus. Download Japanese offline pack.',
+      '<strong>eSIMs</strong> \u2014 activate at Narita. Check signal before leaving the airport.',
+      '<strong>Suica on iPhone</strong> \u2014 set up in Apple Wallet. Tap to pay everywhere.',
     ]},
   ];
   document.getElementById('tab-tips').innerHTML=`<div style="padding-top:8px;">${
@@ -673,7 +692,7 @@ function renderTips(){
 ───────────────────────────────────────────── */
 const TABS=['overview','days','map','weather','checklist','phrases','tips'];
 function switchTab(tab,btn){
-  TABS.forEach(t=>{ document.getElementById('tab-'+t).style.display=(t===tab)?'block':'none'; });
+  TABS.forEach(t=>{document.getElementById('tab-'+t).style.display=(t===tab)?'block':'none';});
   document.querySelectorAll('.nav-tab').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
 }
