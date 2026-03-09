@@ -558,6 +558,8 @@ function formatDayDate(ds){
 function renderDays(){
   const days=(tripData&&tripData.days)||[];
   const todayIdx=getTodayIndex();
+  // Build detail registry — avoids backtick/quote injection in onclick attributes
+  window._details=[];
   document.getElementById('tab-days').innerHTML='<div class="days-container">'+days.map((day,di)=>{
     const items=day.items||[];
     const label=day.label||day.day||'';
@@ -571,8 +573,12 @@ function renderDays(){
       // Map link and detail button go in item-actions row, clearly separated
       const mapLink=item.mapQuery
         ?`<a class="item-maplink" href="https://maps.google.com/?q=${encodeURIComponent(item.mapQuery)}" target="_blank" title="Open in Google Maps">📍 Map</a>`:'';
-      const detailBtn=item.detail
-        ?`<button class="detail-btn" onclick="openDetailModal(${JSON.stringify(item.activity||'')},${JSON.stringify(item.detail)})">ℹ Info</button>`:'';
+      let detailBtn='';
+      if(item.detail){
+        const idx=window._details.length;
+        window._details.push({title:item.activity||'',body:item.detail});
+        detailBtn=`<button class="detail-btn" onclick="openDetailByIndex(${idx})">ℹ Info</button>`;
+      }
       // Map on right of status row; Info below on its own line
       const statusRow=`<div class="item-status-row"><span class="status-badge ${sm.cls}">${sm.label}</span>${mapLink}</div>`;
       return `<div class="item">
@@ -634,6 +640,11 @@ function toggleDayMap(di){
 /* ═══════════════════════════════════════════
    DETAIL MODAL
 ═══════════════════════════════════════════ */
+function openDetailByIndex(i){
+  const d=window._details&&window._details[i];
+  if(!d) return;
+  openDetailModal(d.title,d.body);
+}
 function openDetailModal(title,detail){
   document.getElementById('modal-title').textContent=title;
   document.getElementById('modal-body').textContent=detail;
