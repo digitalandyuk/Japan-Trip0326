@@ -1,6 +1,6 @@
 {
   "tripName": "Japan & South Korea · April 2026",
-  "lastUpdated": "2026-03-09",
+  "lastUpdated": "2026-03-10",
   "days": [
     {
       "day": "Day 0",
@@ -755,36 +755,36 @@
           "time": "09:00",
           "activity": "Final breakfast — TEN-YU",
           "status": "included",
-          "notes": "Last morning at the ryokan. Savour the buffet — check-out is 11:00am.",
+          "notes": "Last morning at the ryokan. Savour the buffet — note early departure today, check out by 10:40.",
+          "address": "TEN-YU Ryokan, 1297 Sengokuhara, Hakone, Ashigarashimo-gun, Kanagawa 250-0631, Japan",
+          "mapQuery": "TEN-YU ryokan Hakone"
+        },
+        {
+          "time": "09:30",
+          "activity": "Final rotenburo + pack",
+          "status": "included",
+          "notes": "Last soak in the private open-air bath. Do this early — you need to be packed and ready to leave by 10:40.",
           "address": "TEN-YU Ryokan, 1297 Sengokuhara, Hakone, Ashigarashimo-gun, Kanagawa 250-0631, Japan",
           "mapQuery": "TEN-YU ryokan Hakone"
         },
         {
           "time": "10:30",
-          "activity": "Final rotenburo + pack",
-          "status": "included",
-          "notes": "Last soak in the private open-air bath. Pack and bring luggage to reception.",
-          "address": "TEN-YU Ryokan, 1297 Sengokuhara, Hakone, Ashigarashimo-gun, Kanagawa 250-0631, Japan",
-          "mapQuery": "TEN-YU ryokan Hakone"
-        },
-        {
-          "time": "11:00",
           "activity": "Check out TEN-YU",
           "status": "planning",
-          "notes": "Luggage collected at reception. 3-day Freepass still active — Day 3.",
+          "notes": "Luggage collected at reception. Takuhaibin bags already forwarded to Kyoto (arranged Day 5). Travel with day bags only today. 3-day Freepass still active — Day 3.",
           "address": "TEN-YU Ryokan, 1297 Sengokuhara, Hakone, Ashigarashimo-gun, Kanagawa 250-0631, Japan",
           "mapQuery": "TEN-YU ryokan Hakone"
         },
         {
-          "time": "11:10",
+          "time": "10:40",
           "activity": "Hotel shuttle → Gora Station",
           "status": "free",
-          "notes": "Free shuttle from TEN-YU front — last ride.",
+          "notes": "Free shuttle from TEN-YU front — last ride. Must depart by 10:40 to catch the 12:07 Shinkansen.",
           "address": "TEN-YU Ryokan, 1297 Sengokuhara, Hakone, Ashigarashimo-gun, Kanagawa 250-0631, Japan",
           "mapQuery": "TEN-YU ryokan Hakone"
         },
         {
-          "time": "11:20",
+          "time": "10:50",
           "activity": "Gora → Hakone-Yumoto (Tozan Railway)",
           "status": "included",
           "notes": "Mountain railway descent through cedar forest. Scenic even on the way down.",
@@ -792,31 +792,33 @@
           "mapQuery": "Hakone-Yumoto Station"
         },
         {
-          "time": "11:55",
+          "time": "11:33",
           "activity": "Hakone-Yumoto → Odawara (Odakyu)",
           "status": "included",
-          "notes": "Last journey on the 3-day Hakone Freepass. Transfer to JR Shinkansen platforms at Odawara. — Book via Klook (SmartEX not available in UK). Green Car D seats rows 10–15.",
+          "notes": "Last journey on the 3-day Hakone Freepass. Head to JR Shinkansen platforms at Odawara — upstairs.",
           "address": "Hakone-Yumoto Station, 707 Yumoto, Hakone, Ashigarashimo-gun, Kanagawa 250-0311, Japan",
           "mapQuery": "Hakone-Yumoto Station"
         },
         {
-          "time": "12:15",
-          "activity": "Arrive Odawara — grab ekiben",
+          "time": "11:48",
+          "activity": "Arrive Odawara — collect tickets + grab ekiben",
           "status": "planning",
-          "notes": "JR Shinkansen platforms upstairs. Buy station bento boxes — Odawara is famous for kamaboko (fish cakes). Eat on the train. — Book via Klook (SmartEX not available in UK). Green Car D seats rows 10–15.",
+          "notes": "Go straight to JR Central ticket machines (NOT JR East). Insert physical Revolut Mastercard ending 9666 + 4-digit ID to collect tickets. Then grab station bento boxes — Odawara is famous for kamaboko (fish cakes). Eat on the train.",
           "address": "Odawara Station, 1-1-1 Jonai-cho, Odawara, Kanagawa 250-0011, Japan",
-          "mapQuery": "Odawara Station Japan"
+          "mapQuery": "Odawara Station Japan",
+          "detail": "⚠️ COLLECT TICKETS AT JR CENTRAL MACHINES\nPhysical Revolut Mastercard ending 9666 required\n4-digit card ID also required\nNOT JR East machines — JR Central only"
         },
         {
-          "time": "~13:00",
-          "activity": "Hikari Shinkansen: Odawara → Kyoto — Book via Klook (SmartEX not available in UK). Green Car D seats rows 10–15.",
-          "status": "booked",
-          "notes": "Green Car, D seats rows 10–15 (right window). Mt. Fuji visible on right between Odawara and Mishima — first ~30 mins. Book via Klook from Tue 10 March. Confirm exact departure time when booking.",
+          "time": "12:07",
+          "activity": "Hikari 641: Odawara → Kyoto",
+          "status": "confirmed",
+          "notes": "Ordinary Car, Car 6. Seats 14-D & 14-E + 15-D & 15-E — four seats together, right-side window. Mt. Fuji visible on right (E seats) almost immediately after departure — first ~30 mins. · Est. ¥49,200",
           "address": "Odawara Station, 1-1-1 Jonai-cho, Odawara, Kanagawa 250-0011, Japan",
-          "mapQuery": "Odawara Station Japan"
+          "mapQuery": "Odawara Station Japan",
+          "detail": "JR CENTRAL — BOOKED ✓\nReservation No: 40422\nReceipt ID: ADK3908L\nTrain: Hikari 641\nOdawara 12:07 → Kyoto 14:12\nOrdinary Car — CAR 6\nSeat 14-D, 14-E, 15-D, 15-E\n¥49,200 total (¥12,300pp)\nPaid: Revolut Mastercard ****9666\n⚠️ Bring physical Revolut card to collect tickets at Odawara"
         },
         {
-          "time": "~15:10",
+          "time": "14:12",
           "activity": "Arrive Kyoto Station",
           "status": "planning",
           "notes": "One of Japan's most dramatic station buildings — worth a few mins to look around.",
@@ -824,7 +826,7 @@
           "mapQuery": "Kyoto Station"
         },
         {
-          "time": "15:20",
+          "time": "14:20",
           "activity": "Subway: Kyoto Station → Shijo Station",
           "status": "planning",
           "notes": "Karasuma subway line northbound — 3 stops, 6 mins. Exit Shijo, 5 min walk east to hotel.",
@@ -832,7 +834,7 @@
           "mapQuery": "Kyoto Station"
         },
         {
-          "time": "~15:30",
+          "time": "~14:30",
           "activity": "Check in — Mitsui Garden Hotel Kyoto",
           "status": "confirmed",
           "notes": "Central Kyoto location — walking distance to Gion, Nishiki Market and Ponto-cho. Base for 4 nights.",
@@ -1538,170 +1540,6 @@
       ],
       "locationAddress": "Grand Hyatt Incheon, 208 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
       "mapQuery": "Grand Hyatt Incheon Airport Hotel"
-    }
-  ],
-  "checklist": [
-    {
-      "group": "Bookings to Complete",
-      "items": [
-        {
-          "task": "Book Shinkansen: Odawara → Kyoto",
-          "notes": "Via Klook. Green Car, D seats, rows 10–15. Opens for booking from Tue 10 Mar. Hakone → Kyoto leg (Day 6, Fri 10 Apr).",
-          "deadline": "From Tue 10 Mar — book ASAP",
-          "who": "Andy"
-        },
-        {
-          "task": "Confirm sumo seats with Keio Plaza concierge",
-          "notes": "Awaiting response from hotel. Sumo tournament expected early April — check availability.",
-          "who": "Andy"
-        }
-      ]
-    },
-    {
-      "group": "Documents & Travel",
-      "items": [
-        {
-          "task": "Check all passports valid 6+ months after 18 Apr",
-          "notes": "Must be valid until at least mid-October 2026.",
-          "deadline": "Before travel",
-          "who": "All"
-        },
-        {
-          "task": "Save travel insurance documents",
-          "notes": "Download and store policy docs offline and share with all travellers.",
-          "deadline": "Before travel",
-          "who": "Andy"
-        },
-        {
-          "task": "Confirm ESTA/ETA not required (UK passports → Japan)",
-          "notes": "UK passport holders do not need ESTA (US) or ETA for Japan. Verify no new requirements introduced before travel.",
-          "deadline": "Before travel",
-          "who": "Andy"
-        },
-        {
-          "task": "Confirm K-ETA not required for UK passport holders → South Korea",
-          "notes": "K-ETA waiver for UK nationals was in place as of 2024. Verify this is still current before travel.",
-          "deadline": "Before travel",
-          "who": "Andy"
-        }
-      ]
-    },
-    {
-      "group": "Money & Cards",
-      "items": [
-        {
-          "task": "Notify banks of travel dates (Japan + South Korea)",
-          "notes": "Inform all card providers: 5 Apr – 18 Apr Japan, 17–18 Apr South Korea.",
-          "deadline": "Before 3 Apr",
-          "who": "Andy"
-        },
-        {
-          "task": "Notify banks of travel dates",
-          "deadline": "Before 3 Apr",
-          "who": "Sarah"
-        },
-        {
-          "task": "Get Japanese yen cash",
-          "notes": "Aim for ¥50,000–¥100,000 per person. Many smaller restaurants, shrines and rural areas are cash-only.",
-          "deadline": "Before 3 Apr",
-          "who": "All"
-        },
-        {
-          "task": "Check Wise / Revolut loaded and ready",
-          "notes": "Top up before departure. Useful for ATM withdrawals in Japan at good exchange rates.",
-          "deadline": "Before 3 Apr",
-          "who": "Andy"
-        }
-      ]
-    },
-    {
-      "group": "Apps to Download",
-      "items": [
-        {
-          "task": "Download Google Maps offline maps",
-          "notes": "Download offline packs for: Tokyo, Kyoto, Osaka, Hakone area. Essential for navigating without data.",
-          "deadline": "Before 3 Apr",
-          "who": "All"
-        },
-        {
-          "task": "Download Google Translate Japanese offline pack",
-          "notes": "Enable camera translation for signs, menus, etc. Download offline Japanese language pack.",
-          "deadline": "Before 3 Apr",
-          "who": "All"
-        },
-        {
-          "task": "Install EMot app and check Hakone Freepasses",
-          "notes": "All 4 passes already purchased. Control nos: 2837515, 2837519, 2837521, 2837523. Log in with sarahevansemail@googlemail.com. DO NOT activate passes early — activate at first use at Shinjuku on 8 Apr.",
-          "deadline": "Before 8 Apr",
-          "who": "All"
-        },
-        {
-          "task": "Set up Suica / IC card",
-          "notes": "Add Suica to Apple Wallet (iPhone/Apple Watch) or get a physical Suica/ICOCA at airport. Essential for Tokyo metro, convenience stores, and vending machines.",
-          "deadline": "On arrival Day 1",
-          "who": "All"
-        }
-      ]
-    },
-    {
-      "group": "Packing",
-      "items": [
-        {
-          "task": "Pack universal travel adaptors (Japan uses Type A)",
-          "notes": "Japan uses Type A (flat 2-pin, same as US). UK plugs need an adaptor. Bring at least 2.",
-          "who": "Andy"
-        },
-        {
-          "task": "Pack portable battery / powerbank ×4",
-          "notes": "One per person. Full charge before each day out — essential for maps, translation, photos.",
-          "who": "Andy"
-        },
-        {
-          "task": "Broken-in comfortable walking shoes for everyone",
-          "notes": "Expect 15,000–25,000 steps per day. Do not bring new shoes.",
-          "who": "All"
-        },
-        {
-          "task": "Pack light layers for Hakone",
-          "notes": "Hakone (Days 4–5) will be cooler than Tokyo/Kyoto, especially evenings at altitude. Bring a fleece or light jacket.",
-          "who": "All"
-        },
-        {
-          "task": "Review onsen etiquette before Hakone",
-          "notes": "No tattoos visible at public baths (private in-room rotenburo at TEN-YU is fine). Wash thoroughly before entering. No swimwear.",
-          "deadline": "Before 8 Apr",
-          "who": "All"
-        }
-      ]
-    },
-    {
-      "group": "Pre-Departure",
-      "items": [
-        {
-          "task": "Confirm KwikPark booking at Heathrow",
-          "notes": "Booking ref: L4PUK-777209. Drop-off Thu 3 Apr morning before VS208 departure.",
-          "deadline": "Before 3 Apr",
-          "who": "Andy"
-        },
-        {
-          "task": "WhatsApp Tourmaker driver evening before departure",
-          "notes": "Contact Tourmaker driver eve of Thu 3 Apr (~9pm). Confirm pickup, time, and hotel meeting point for ICN → NRT transfer (booking #1479-2, EVANS FAMILY banner).",
-          "deadline": "Eve of Thu 3 Apr (~21:00)",
-          "who": "Andy"
-        },
-        {
-          "task": "Check in online for VS208 (LHR → ICN) when available",
-          "notes": "Virgin Atlantic typically opens online check-in 24hrs before departure. Confirm seat allocations.",
-          "deadline": "Wed 2 Apr (24hrs before)",
-          "who": "Andy"
-        },
-        {
-          "task": "Activate EMot Hakone Freepasses only at first use",
-          "notes": "Do NOT activate in advance. Activate each pass in the EMot app at Shinjuku on 8 Apr before boarding Romancecar.",
-          "deadline": "Day 4 — 8 Apr at Shinjuku",
-          "who": "All"
-        }
-      ]
     }
   ]
 }
