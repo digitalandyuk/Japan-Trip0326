@@ -1,6 +1,125 @@
 {
   "tripName": "Japan & South Korea · April 2026",
   "lastUpdated": "2026-03-10",
+  "checklist": [
+    {
+      "group": "Still to Book",
+      "items": [
+        {
+          "task": "Book sumo tickets via Keio Plaza concierge",
+          "notes": "Awaiting concierge confirmation. Ask on arrival Day 2.",
+          "deadline": "Before 5 Apr",
+          "who": "Andy"
+        },
+        {
+          "task": "Assign Hakone Freepass control numbers to Jack and Charlie",
+          "notes": "Control numbers 2837515, 2837519, 2837521 — assign to Andy, Jack, Charlie. Sarah = 2837523.",
+          "deadline": "Before 8 Apr",
+          "who": "Andy"
+        }
+      ]
+    },
+    {
+      "group": "Luggage Forwarding (Takuhaibin)",
+      "items": [
+        {
+          "task": "Send takuhaibin request email to TEN-YU",
+          "notes": "Email drafted and ready. Fill in: number of large suitcases + TEN-YU booking reference. Forward bags Thu 9 Apr, arriving Mitsui Garden Kyoto Fri afternoon.",
+          "deadline": "Before 8 Apr",
+          "who": "Andy"
+        },
+        {
+          "task": "Confirm takuhaibin collection with TEN-YU concierge on arrival",
+          "notes": "Arrange on Day 5 (Wed 9 Apr). Collection from TEN-YU Thu 9 Apr morning, delivery Fri 10 Apr afternoon to Mitsui Garden Kyoto.",
+          "deadline": "9 Apr",
+          "who": "Andy"
+        }
+      ]
+    },
+    {
+      "group": "Tickets to Collect",
+      "items": [
+        {
+          "task": "Collect Shinkansen tickets at Odawara — JR Central machines only",
+          "notes": "Reservation No: 40422 · Receipt ID: ADK3908L · Bring physical Revolut Mastercard ****9666 + 4-digit card ID. Use JR CENTRAL machines, not JR East.",
+          "deadline": "10 Apr (on the day)",
+          "who": "Andy"
+        }
+      ]
+    },
+    {
+      "group": "Before You Fly",
+      "items": [
+        {
+          "task": "Check in online for VS208",
+          "notes": "Virgin Atlantic LHR → ICN · Fri 3 Apr, departs 13:25 · Ref E3FYHB · Seats 24D/F + 25D/F",
+          "deadline": "By 2 Apr",
+          "who": "Andy"
+        },
+        {
+          "task": "Download offline maps for Japan and South Korea",
+          "notes": "Google Maps or Maps.me — download Tokyo, Hakone, Kyoto, Osaka, Seoul before departure. Saves data and works with no signal.",
+          "deadline": "Before 3 Apr",
+          "who": "All"
+        },
+        {
+          "task": "Top up Revolut and confirm card is packed",
+          "notes": "Physical Revolut Mastercard ****9666 is REQUIRED to collect JR Shinkansen tickets at Odawara on 10 Apr. Do not leave without it.",
+          "deadline": "Before 3 Apr",
+          "who": "Andy"
+        },
+        {
+          "task": "Save Klook transfer confirmation",
+          "notes": "Booking no: XEB644582 · Toyota Alphard NRT → Keio Plaza · Fri 4 Apr, driver meets at arrivals with EVANS board. Call 07850366784 when 30 mins away.",
+          "deadline": "Before 3 Apr",
+          "who": "Andy"
+        },
+        {
+          "task": "Call KwikPark when 30 mins from Heathrow",
+          "notes": "07850366784 · T3 Short Stay Level 4 Row B · Plate GL74VLV · Order L4PUK-777209. Also call twice on return: on landing, then after baggage.",
+          "deadline": "3 Apr (on the day)",
+          "who": "Andy"
+        }
+      ]
+    },
+    {
+      "group": "Packing Essentials",
+      "items": [
+        {
+          "task": "Pack physical Revolut Mastercard ****9666",
+          "notes": "Essential — required to collect JR Shinkansen tickets at Odawara station on 10 Apr. Cannot collect without it.",
+          "who": "Andy"
+        },
+        {
+          "task": "Pack Hakone Freepass printouts / confirmation",
+          "notes": "Four passes. Control numbers: 2837515, 2837519, 2837521, 2837523.",
+          "who": "Andy"
+        },
+        {
+          "task": "Pack small day bag for Hakone → Kyoto travel day",
+          "notes": "Suitcases go via takuhaibin. Travel light on Day 6 — just a day bag on the Shinkansen.",
+          "who": "All"
+        }
+      ]
+    },
+    {
+      "group": "On Arrival in Japan",
+      "items": [
+        {
+          "task": "Collect Japan SIM or activate eSIM",
+          "notes": "Pick up at NRT arrivals or activate eSIM before landing.",
+          "deadline": "4 Apr",
+          "who": "Andy"
+        },
+        {
+          "task": "Ask Keio Plaza concierge about sumo tickets",
+          "notes": "Ryogoku Kokugikan — ask on arrival Day 2.",
+          "deadline": "5 Apr",
+          "who": "Andy"
+        }
+      ]
+    }
+  ],
   "days": [
     {
       "day": "Day 0",
