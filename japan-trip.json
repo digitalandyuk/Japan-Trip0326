@@ -1,7 +1,7 @@
 {
   "tripTitle": "🇯🇵 Japan Trip 2026",
   "tripDates": "Fri 3 Apr – Sat 18 Apr 2026",
-  "lastUpdated": "2026-03-11",
+  "lastUpdated": "2026-03-20",
   "days": [
     {
       "date": "2026-04-03",
@@ -11,18 +11,28 @@
       "mapQuery": "London Heathrow Airport",
       "items": [
         {
-          "time": "evening",
-          "activity": "LHR Parking — KwikPark Meet & Greet T3",
-          "status": "booked",
-          "notes": "~£119.18 · ⚠️ Book ASAP",
+          "time": "11:00",
+          "activity": "KwikPark Meet & Greet — T3",
+          "status": "confirmed",
+          "notes": "Order ID: L4PUK-777209 · Plate: GL74VLV · Call 07850366784 when 30 mins away · T3 Short Stay Level 4 Row B · Airport Access Fee £7.50",
+          "detail": "Order ID: L4PUK-777209\nPlate: GL74VLV\n📞 Call 07850366784 when 30 mins from airport\n➡ T3 Short Stay Car Park · Level 4 · Row B\nSign vehicle inspection document on handover\n⚠ Airport Access Fee £7.50 payable on drop-off\n⚠ ULEZ payable for Fri 3 Apr\n\nReturn instructions:\n📞 Call 1 — as soon as you land\n📞 Call 2 — after collecting luggage\n➡ T3 Short Stay Car Park · Level 4 · Row B",
           "address": "KwikPark Terminal 3, Heathrow Airport, Hounslow TW6 1QG, UK",
           "mapQuery": "KwikPark Heathrow Terminal 3"
         },
         {
-          "time": "evening",
-          "activity": "Check in at Heathrow Terminal 3 — VS208",
+          "time": "10:30",
+          "activity": "VS208 Check-in — T3",
           "status": "confirmed",
-          "notes": "Check-in opens ~3 hrs before 13:25 departure",
+          "notes": "Virgin Atlantic VS208 · LHR 13:25 → ICN 10:05 Sat 4 Apr · Seats 24D/24F/25D/25F · Ref E3FYHB",
+          "detail": "Flight: Virgin Atlantic VS208\nRef: E3FYHB\nRoute: LHR T3 → ICN T2\nDeparts: 13:25 Fri 3 Apr | Arrives: 10:05 Sat 4 Apr\nAircraft: Boeing 787-9 · Seats: 24D/24F/25D/25F\n⚠ FlyReady: Complete at virginatlantic.com → My Booking\n⚠ Online check-in opens 24hrs before departure\n⚠ Gates close 30 mins before departure",
+          "address": "London Heathrow Airport Terminal 3, Hounslow TW6 1QG, UK",
+          "mapQuery": "Heathrow Terminal 3"
+        },
+        {
+          "time": "13:25",
+          "activity": "Depart LHR — VS208 Virgin Atlantic",
+          "status": "confirmed",
+          "notes": "Boeing 787-9 · Direct to Seoul Incheon T2 · ~11h · Ref E3FYHB",
           "address": "London Heathrow Airport Terminal 3, Hounslow TW6 1QG, UK",
           "mapQuery": "Heathrow Terminal 3"
         }
@@ -31,23 +41,23 @@
     {
       "date": "2026-04-04",
       "label": "Day 1 — Saturday 4 Apr",
-      "location": "In Flight / Seoul, South Korea",
+      "location": "Seoul, South Korea",
       "locationAddress": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
       "mapQuery": "Incheon International Airport Terminal 2",
       "items": [
         {
-          "time": "13:25",
-          "activity": "Depart LHR — VS208 Virgin Atlantic",
+          "time": "10:05",
+          "activity": "Arrive Seoul Incheon ICN — Terminal 2",
           "status": "confirmed",
-          "notes": "Terminal 3 · Boeing 787-9 · Seats: 24D/24F/25D/25F · Ref E3FYHB",
-          "address": "London Heathrow Airport Terminal 3, Hounslow TW6 1QG, UK",
-          "mapQuery": "Heathrow Terminal 3"
+          "notes": "VS208 from LHR. E-gates available for UK passports. Meet Tourmaker driver — EVANS FAMILY banner.",
+          "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
+          "mapQuery": "Incheon International Airport Terminal 2"
         },
         {
-          "time": "10:05+1",
-          "activity": "Arrive ICN — Terminal 2",
-          "status": "confirmed",
-          "notes": "Sat 5 Apr · Schedule change: was 10:30",
+          "time": "10:05–11:15",
+          "activity": "Immigration · Baggage · Meet driver",
+          "status": "planning",
+          "notes": "Allow 60–70 mins for immigration, baggage reclaim and customs. Driver waits 1h30 from landing.",
           "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
           "mapQuery": "Incheon International Airport Terminal 2"
         },
@@ -55,19 +65,51 @@
           "time": "~11:30",
           "activity": "Tourmaker taxi — ICN T2 → Crown Park Hotel Seoul",
           "status": "confirmed",
-          "notes": "Ref #1479-1 · 5-seater · Banner: EVANS FAMILY · Driver waits 1h30 from landing · WhatsApp details Thu 3 Apr ~9pm",
+          "notes": "Ref #1479-1 · 5-seater · Banner: EVANS FAMILY · WhatsApp driver Thu 3 Apr ~9pm",
+          "detail": "Booking Ref: #1479-1\n➡ EVANS FAMILY banner at arrivals hall\n📞 WhatsApp driver eve Thu 3 Apr ~9pm to confirm pickup\nTransfer: ICN T2 → Crown Park Hotel\nCost: £71.12",
           "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Incheon International Airport Terminal 2",
-          "destinationAddress": "Crown Park Hotel, 5 Namsandong 2-ga, Jung-gu, Seoul 04605, South Korea",
-          "destinationMapQuery": "Crown Park Hotel Seoul"
+          "mapQuery": "Incheon International Airport Terminal 2"
+        },
+        {
+          "time": "12:30",
+          "activity": "Crown Park Hotel Seoul — drop bags",
+          "status": "planning",
+          "notes": "Check-in not until 3pm. Hotel will store luggage.",
+          "address": "Crown Park Hotel, 5 Namsandong 2-ga, Jung-gu, Seoul 04605, South Korea",
+          "mapQuery": "Crown Park Hotel Seoul"
+        },
+        {
+          "time": "13:00",
+          "activity": "Lunch — Myeongdong / Namdaemun area",
+          "status": "planning",
+          "notes": "Namdaemun Market is 5 mins walk. Or Myeongdong for casual street food.",
+          "address": "Myeongdong Street, Jung-gu, Seoul 04534, South Korea",
+          "mapQuery": "Myeongdong Street Seoul Jung-gu"
         },
         {
           "time": "15:00",
           "activity": "Check in — Crown Park Hotel Seoul",
           "status": "confirmed",
-          "notes": "Exp 25301968 · PAID £388.78 MC 3823 · Breakfast for 2 · Check-in 15:00",
+          "notes": "Booked via Expedia. Central location near Myeongdong, Namdaemun Market, Namsan Hill.",
+          "detail": "Expedia Conf: 25301968\nSat 4 Apr → Sun 5 Apr (1 night)\nCost: £388.78 · PAID MC 3823\nBreakfast for 2 included\nCheck-in from 3pm",
           "address": "Crown Park Hotel, 5 Namsandong 2-ga, Jung-gu, Seoul 04605, South Korea",
-          "mapQuery": "Crown Park Hotel Seoul, Jung-gu"
+          "mapQuery": "Crown Park Hotel Seoul"
+        },
+        {
+          "time": "18:30",
+          "activity": "Myeongdong — street food & shopping",
+          "status": "planning",
+          "notes": "Evening street stalls — tteokbokki, hotteok, Korean fried chicken. K-beauty shops.",
+          "address": "Myeongdong Street, Jung-gu, Seoul 04534, South Korea",
+          "mapQuery": "Myeongdong Street Seoul Jung-gu"
+        },
+        {
+          "time": "20:00",
+          "activity": "Korean BBQ dinner",
+          "status": "optional",
+          "notes": "Samgyeopsal (pork belly) or galbi (beef ribs). ₩60,000–80,000 for 4.",
+          "address": "Myeongdong Street, Jung-gu, Seoul 04534, South Korea",
+          "mapQuery": "Myeongdong Street Seoul Jung-gu"
         }
       ]
     },
@@ -79,28 +121,52 @@
       "mapQuery": "Crown Park Hotel Seoul",
       "items": [
         {
-          "time": "12:00",
-          "activity": "Tourmaker taxi — Crown Park Seoul → ICN",
-          "status": "confirmed",
-          "notes": "Ref #1479-2 · 5-seater · Banner: EVANS FAMILY · Driver WhatsApp eve Sat 4 Apr ~9pm",
+          "time": "09:00",
+          "activity": "Breakfast — Crown Park Hotel",
+          "status": "included",
+          "notes": "Last Korean morning. Sit-down breakfast before the journey.",
           "address": "Crown Park Hotel, 5 Namsandong 2-ga, Jung-gu, Seoul 04605, South Korea",
-          "mapQuery": "Crown Park Hotel Seoul",
-          "destinationAddress": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-          "destinationMapQuery": "Incheon International Airport Terminal 2"
+          "mapQuery": "Crown Park Hotel Seoul"
+        },
+        {
+          "time": "10:30",
+          "activity": "Final Seoul hour",
+          "status": "free",
+          "notes": "Quick walk to Namdaemun Market for last-minute Korean snacks or souvenirs. 5 mins from hotel.",
+          "address": "Namdaemun Market, 21 Namdaemunsijang 4-gil, Jung-gu, Seoul 04532, South Korea",
+          "mapQuery": "Namdaemun Market Seoul"
+        },
+        {
+          "time": "12:00",
+          "activity": "Tourmaker taxi — Crown Park → ICN T1",
+          "status": "confirmed",
+          "notes": "Ref #1479-2 · 5-seater · Banner: EVANS FAMILY · Driver WhatsApp eve Sat 4 Apr ~9pm. Journey ~60 mins.",
+          "detail": "Booking Ref: #1479-2\n➡ EVANS FAMILY banner at hotel\nPickup: 12:00 from Crown Park Hotel lobby\n📞 WhatsApp driver eve Sat 4 Apr ~9pm to confirm\nTransfer: Crown Park → ICN\nCost: £71.12",
+          "address": "Crown Park Hotel, 5 Namsandong 2-ga, Jung-gu, Seoul 04605, South Korea",
+          "mapQuery": "Crown Park Hotel Seoul"
+        },
+        {
+          "time": "13:30",
+          "activity": "ICN Terminal 1 — Check-in Asiana OZ106",
+          "status": "planning",
+          "notes": "Asiana Airlines counter, Terminal 1. Allow 30 mins check-in plus 20–30 mins security.",
+          "detail": "Flight: Asiana OZ106\nRoute: ICN T1 → NRT T1\nDate: Sunday 5 April 2026\nDeparts: 15:30 | Arrives: 17:40\nPNR: D2MKD6 · Cost: £951.48 total",
+          "address": "Incheon International Airport Terminal 1, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
+          "mapQuery": "Incheon International Airport Terminal 1"
         },
         {
           "time": "15:30",
-          "activity": "Depart ICN — Asiana OZ108 → Tokyo Narita",
+          "activity": "Depart ICN — Asiana OZ106 → Tokyo Narita",
           "status": "confirmed",
-          "notes": "PAID · £951.48 for 4",
+          "notes": "~2h 10m. PNR: D2MKD6 · PAID £951.48",
           "address": "Incheon International Airport Terminal 1, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
           "mapQuery": "Incheon International Airport Terminal 1"
         },
         {
           "time": "17:40",
-          "activity": "Arrive Tokyo Narita NRT",
-          "status": "confirmed",
-          "notes": "Terminal 1",
+          "activity": "Arrive Tokyo Narita NRT — Terminal 1",
+          "status": "planning",
+          "notes": "Allow 30–45 mins at immigration. IC card machines near exits for Suica cards.",
           "address": "Tokyo Narita International Airport, 1-1 Furugome, Narita, Chiba 282-0004, Japan",
           "mapQuery": "Narita International Airport Tokyo"
         },
@@ -109,18 +175,26 @@
           "activity": "Narita → Shinjuku transfer (Klook bus × 4)",
           "status": "confirmed",
           "notes": "PAID · £91.28 · Direct bus to Shinjuku",
+          "detail": "Klook Transfer — PAID\nCost: £91.28 for 4\nDirect bus NRT → Busta Shinjuku Bus Terminal",
           "address": "Tokyo Narita International Airport, 1-1 Furugome, Narita, Chiba 282-0004, Japan",
-          "mapQuery": "Narita International Airport bus stop Shinjuku",
-          "destinationAddress": "Shinjuku Bus Terminal (Busta Shinjuku), 5-24-55 Sendagaya, Shibuya-ku, Tokyo 151-0051, Japan",
-          "destinationMapQuery": "Busta Shinjuku Bus Terminal"
+          "mapQuery": "Narita International Airport Tokyo"
         },
         {
           "time": "21:00",
           "activity": "Check in — Keio Plaza Hotel Tokyo",
-          "status": "booked",
-          "notes": "Exp 73304498303010 · ¥472,014 PAY AT PROPERTY · Free breakfast · 2 rooms · Stay until Tue 8 Apr",
+          "status": "confirmed",
+          "notes": "3 nights. West Shinjuku — central for metro, walkable to Kabukicho and Golden Gai.",
+          "detail": "Expedia Itinerary: 73304498303010\n¥472,014 · PAY AT PROPERTY\nFree breakfast · 2 rooms\nCheck-in: Sun 5 Apr | Check-out: Wed 8 Apr\n➡ Show Expedia confirmation at check-in",
           "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
           "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
+        },
+        {
+          "time": "21:30",
+          "activity": "Dinner — Omoide Yokocho (Memory Lane)",
+          "status": "planning",
+          "notes": "2 min walk from Keio Plaza. Narrow alleyway of tiny yakitori bars. Cash only.",
+          "address": "Omoide Yokocho, Shinjuku-ku, Tokyo 160-0021, Japan",
+          "mapQuery": "Omoide Yokocho Memory Lane Tokyo"
         }
       ]
     },
@@ -135,25 +209,41 @@
           "time": "07:30",
           "activity": "Breakfast at Keio Plaza",
           "status": "included",
-          "notes": "Free breakfast included",
+          "notes": "Free breakfast included.",
           "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
-          "mapQuery": "Keio Plaza Hotel Tokyo"
+          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
         },
         {
           "time": "10:00",
           "activity": "Shibuya Crossing & Harajuku",
           "status": "planning",
-          "notes": "Estimated ¥20,000 for 4 (food + transport + incidentals)",
+          "notes": "JR Yamanote Line from Shinjuku. Takeshita Street · Meiji Shrine · Shibuya Crossing.",
           "address": "Shibuya Crossing, 2-2-1 Dogenzaka, Shibuya-ku, Tokyo 150-0043, Japan",
           "mapQuery": "Shibuya Crossing Tokyo"
         },
         {
-          "time": "afternoon",
+          "time": "14:00",
           "activity": "Senso-ji Temple, Asakusa",
           "status": "planning",
-          "notes": "Free entry to temple grounds",
+          "notes": "Oldest Tokyo temple (645 AD). Kaminarimon Gate, side streets to beat crowds. Free entry.",
           "address": "Senso-ji Temple, 2-3-1 Asakusa, Taito-ku, Tokyo 111-0032, Japan",
           "mapQuery": "Senso-ji Temple Asakusa Tokyo"
+        },
+        {
+          "time": "19:00",
+          "activity": "Dinner — Kabukicho / Shinjuku",
+          "status": "planning",
+          "notes": "Neon-lit entertainment district. Ramen, yakitori, izakaya.",
+          "address": "Shinjuku Station, 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
+          "mapQuery": "Shinjuku Station Tokyo"
+        },
+        {
+          "time": "20:30",
+          "activity": "Golden Gai",
+          "status": "planning",
+          "notes": "Six alleys of tiny themed bars — 200 venues. Cash only in most bars.",
+          "address": "Golden Gai, Kabukicho, Shinjuku-ku, Tokyo 160-0021, Japan",
+          "mapQuery": "Golden Gai Shinjuku Tokyo"
         }
       ]
     },
@@ -166,34 +256,43 @@
       "items": [
         {
           "time": "07:30",
-          "activity": "Sumo Morning Training (Magical Trip)",
-          "status": "pending",
-          "notes": "⚠️ Book NOW · magicaltripjapan.com · 7:30–9:00 · ¥3,500pp · Mon 7 Apr",
-          "address": "Arashio Sumo Stable, 2-47-2 Hamacho, Nihonbashi, Chuo-ku, Tokyo 103-0007, Japan",
-          "mapQuery": "Arashio Sumo Stable Tokyo Hamacho"
+          "activity": "Breakfast at Keio Plaza",
+          "status": "included",
+          "notes": "Early start — fuel up before Sumo.",
+          "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
+          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
+        },
+        {
+          "time": "07:30",
+          "activity": "Sumo Morning Training",
+          "status": "booked",
+          "notes": "⚠ Awaiting confirmation from Keio Plaza concierge · Oshiage stable · One of Tokyo's most memorable mornings.",
+          "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
+          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
         },
         {
           "time": "10:00",
           "activity": "Tsukiji Outer Market",
           "status": "planning",
-          "notes": "Street food, fresh seafood stalls",
+          "notes": "Tamagoyaki, uni, grilled scallops. Go stall to stall — most sell out by late morning.",
           "address": "Tsukiji Outer Market, 4-16-2 Tsukiji, Chuo-ku, Tokyo 104-0045, Japan",
           "mapQuery": "Tsukiji Outer Market Tokyo"
         },
         {
-          "time": "afternoon",
-          "activity": "teamLab Planets (Toyosu) or Odaiba",
-          "status": "planning",
-          "notes": "Check availability / book in advance",
-          "address": "teamLab Planets Tokyo, 6-1-16 Toyosu, Koto-ku, Tokyo 135-0061, Japan",
-          "mapQuery": "teamLab Planets Tokyo Toyosu"
+          "time": "14:00",
+          "activity": "Ueno Park — Cherry Blossom Viewing",
+          "status": "free",
+          "notes": "One of Tokyo's best hanami spots in early April.",
+          "address": "Ueno Park, 5-20 Ueno Koen, Taito-ku, Tokyo 110-0007, Japan",
+          "mapQuery": "Ueno Park Tokyo"
         },
         {
-          "time": "ideas",
-          "activity": "Samurai Experience",
+          "time": "18:00",
+          "activity": "Dinner — Shibuya",
           "status": "planning",
-          "notes": "¥18,000/£84pp · To be confirmed if going · Book in advance",
-          "mapQuery": "Samurai Experience Tokyo"
+          "notes": "Ramen, izakaya or yakiniku. Options: Uobei (conveyor belt sushi), Han no Daidokoro (yakiniku).",
+          "address": "Shibuya Crossing, 2-2-1 Dogenzaka, Shibuya-ku, Tokyo 150-0043, Japan",
+          "mapQuery": "Shibuya Crossing Tokyo"
         }
       ]
     },
@@ -205,28 +304,85 @@
       "mapQuery": "Shinjuku Station Tokyo",
       "items": [
         {
-          "time": "morning",
-          "activity": "Romancecar — Shinjuku → Hakone-Yumoto × 3 (Andy, Sarah, Charlie)",
-          "status": "pending",
-          "notes": "Opens Mon 9 Mar · EMot app · ~1hr 10min journey",
-          "address": "Shinjuku Station (Odakyu Line), 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
-          "mapQuery": "Shinjuku Station Odakyu Line Tokyo",
-          "destinationAddress": "Hakone-Yumoto Station, 706 Yumoto, Hakone, Ashigarashimo District, Kanagawa 250-0311, Japan",
-          "destinationMapQuery": "Hakone-Yumoto Station Kanagawa"
+          "time": "07:30",
+          "activity": "Breakfast — Keio Plaza",
+          "status": "included",
+          "notes": "Last Tokyo morning.",
+          "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
+          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
         },
         {
-          "time": "morning",
-          "activity": "Jack: own Romancecar ticket — same train",
-          "status": "pending",
-          "notes": "Opens Mon 9 Mar · EMot app",
-          "address": "Shinjuku Station (Odakyu Line), 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
-          "mapQuery": "Shinjuku Station Odakyu Line Tokyo"
+          "time": "08:30",
+          "activity": "Pack & check out",
+          "status": "planning",
+          "notes": "Leave bags at hotel reception until departure.",
+          "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
+          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
+        },
+        {
+          "time": "09:20",
+          "activity": "Hakone Freepass — Activate in EMot app (3-day × 4)",
+          "status": "confirmed",
+          "notes": "Pre-purchased via EMot — ¥7,500/person. Activate in EMot app on first use at Shinjuku — do NOT activate in advance.",
+          "detail": "Digital Hakone Freepass — BOOKED (×4 passes)\nFirst day of use: Wed 8 Apr 2026\nPrice: ¥7,500pp (3-day adult) | Total: ¥30,000\nValid: 8–10 Apr · All Hakone transport + Odakyu Shinjuku→Odawara\n\nControl numbers (EMot: sarahevansemail@googlemail.com):\n  Pass 1: 2837515\n  Pass 2: 2837519\n  Pass 3: 2837521\n  Pass 4: 2837523\n\n⚠ Activate in EMot app at first use only — do NOT activate early",
+          "address": "Shinjuku Station, 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
+          "mapQuery": "Shinjuku Station Tokyo"
+        },
+        {
+          "time": "10:00",
+          "activity": "Romancecar Hakone 3 GSE — Shinjuku → Hakone-Yumoto",
+          "status": "confirmed",
+          "notes": "Car 7, seats 5C/5D/6C/6D — surcharge only, base fare covered by Freepass.",
+          "detail": "Romancecar: Hakone 3 (GSE) — BOOKED\nDate: Wed 8 Apr\nDeparts: 10:00 Shinjuku → Arrives: 11:27 Hakone-Yumoto\nSeats: Car 7 — 5C, 5D, 6C, 6D\nCost: ¥4,600 total (surcharge — base fare via Freepass)\nControl no: E786\nEMot: sarahevansemail@googlemail.com",
+          "address": "Shinjuku Station, 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
+          "mapQuery": "Shinjuku Station Tokyo"
+        },
+        {
+          "time": "11:27",
+          "activity": "Arrive Hakone-Yumoto — Tozan Train to Gora",
+          "status": "included",
+          "notes": "Rack railway through cedar forest. Covered by Freepass.",
+          "address": "Hakone-Yumoto Station, 707 Yumoto, Hakone, Ashigarashimo-gun, Kanagawa 250-0311, Japan",
+          "mapQuery": "Hakone-Yumoto Station"
+        },
+        {
+          "time": "12:10",
+          "activity": "Arrive TEN-YU — drop bags",
+          "status": "planning",
+          "notes": "Free shuttle from Gora Station Stop #1 (every 15–20 min). Reception holds bags until 3pm.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "12:50–14:50",
+          "activity": "Hakone Open Air Museum",
+          "status": "planning",
+          "notes": "120+ sculptures incl. Rodin, Moore, Picasso. Outdoor foot onsen at end. Freepass discount applies.",
+          "address": "Hakone Open Air Museum, 1121 Ninotaira, Hakone, Kanagawa 250-0492, Japan",
+          "mapQuery": "Hakone Open Air Museum"
         },
         {
           "time": "15:00",
           "activity": "Check in — TEN-YU Ryokan Hakone",
           "status": "confirmed",
-          "notes": "PAID £1,765.14 + £5.88 at property · MC 3823 · Stay Wed 8–Fri 10 Apr",
+          "notes": "Superior Rooms with private open-air rotenburo bath. Yukatas provided.",
+          "detail": "Ryokan: TEN-YU (Hakone Kowakien)\nConf: 20251118076112540 · Expedia: 73304509243260\nCheck-in: Wed 8 Apr | Check-out: Fri 10 Apr (2 nights)\nRoom 1: Andrew Evans (2 adults) · Room 2: Andrew Evans (1 adult + 1 child)\nCost: £1,765.14 + £5.88 at property · MC 3823\nF&B credit ¥5,605 per room · Buffet dinner from 5pm\n⚠ Arrange Takuhaibin luggage forwarding Thu evening",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "18:30",
+          "activity": "Buffet Kaiseki Dinner",
+          "status": "included",
+          "notes": "¥5,605 F&B credit per room. Buffet style. Wear yukata.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "Evening",
+          "activity": "Private open-air rotenburo onsen",
+          "status": "included",
+          "notes": "In-room outdoor hot spring bath. Best after dinner.",
           "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
           "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
         }
@@ -240,28 +396,124 @@
       "mapQuery": "Ten-yu Ryokan Hakone",
       "items": [
         {
-          "time": "09:00",
-          "activity": "Hakone Ropeway — Sounzan → Owakudani",
-          "status": "planning",
-          "notes": "Covered by Hakone Freepass · Mt Fuji views (weather permitting)",
-          "address": "Sounzan Station, 1251 Gora, Hakone, Ashigarashimo District, Kanagawa 250-0408, Japan",
+          "time": "08:30",
+          "activity": "Breakfast — TEN-YU",
+          "status": "included",
+          "notes": "Full kaiseki/Western buffet. Take your time.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "10:00",
+          "activity": "Hotel shuttle → Gora Station",
+          "status": "free",
+          "notes": "Free shuttle every 15–20 mins. Day 2 of 3-day Freepass.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "10:15",
+          "activity": "Gora → Sounzan by Cable Car",
+          "status": "included",
+          "notes": "Hakone Tozan Cable Car through cedar forest. Covered by Freepass. ⚠ Check ropeway status on the morning — occasionally closes due to volcanic activity.",
+          "address": "Sounzan Station, Gora, Hakone, Kanagawa 250-0408, Japan",
           "mapQuery": "Hakone Ropeway Sounzan Station"
         },
         {
-          "time": "11:00",
-          "activity": "Owakudani — volcanic valley & black eggs",
+          "time": "10:30",
+          "activity": "Hakone Ropeway: Sounzan → Owakudani",
+          "status": "included",
+          "notes": "Aerial gondola over volcanic ridgeline. Mt. Fuji framed ahead on clear mornings. Covered by Freepass.",
+          "address": "Sounzan Station, Gora, Hakone, Kanagawa 250-0408, Japan",
+          "mapQuery": "Hakone Ropeway Sounzan Station"
+        },
+        {
+          "time": "10:55–12:00",
+          "activity": "Owakudani — Volcanic Valley + Black Eggs",
           "status": "planning",
-          "notes": "Active volcanic area · ~15 min from ropeway",
+          "notes": "Active volcanic zone. Black eggs (kurotamago, ¥600 per 5-egg bag). Legend says each adds 7 years to your life.",
           "address": "Owakudani, Hakone, Ashigarashimo District, Kanagawa 250-0631, Japan",
           "mapQuery": "Owakudani Hakone volcanic valley"
         },
         {
-          "time": "13:00",
-          "activity": "Lake Ashi — scenic boat cruise",
-          "status": "planning",
-          "notes": "Covered by Hakone Freepass · Views of Mt Fuji across lake",
+          "time": "12:10",
+          "activity": "Ropeway: Owakudani → Togendai",
+          "status": "included",
+          "notes": "Final descent to Lake Ashi. Covered by Freepass.",
+          "address": "Owakudani, Hakone, Ashigarashimo District, Kanagawa 250-0631, Japan",
+          "mapQuery": "Owakudani Hakone volcanic valley"
+        },
+        {
+          "time": "12:50",
+          "activity": "Lake Ashi — Hakone Pirate Ship Cruise",
+          "status": "included",
+          "notes": "Iconic sightseeing cruise. Fuji reflected in water on clear days. Disembark at Moto-Hakone. Covered by Freepass.",
           "address": "Togendai Pier, Hakone, Ashigarashimo District, Kanagawa 250-0522, Japan",
           "mapQuery": "Lake Ashi Togendai Pier Hakone"
+        },
+        {
+          "time": "13:35",
+          "activity": "Hakone Shrine",
+          "status": "free",
+          "notes": "Ancient cedar path to the famous red torii gate rising from the lake. Free to enter.",
+          "address": "Hakone Shrine, 80-1 Motohakone, Hakone, Ashigarashimo-gun, Kanagawa 250-0522, Japan",
+          "mapQuery": "Hakone Shrine Moto-Hakone"
+        },
+        {
+          "time": "14:15",
+          "activity": "Amazake-chaya Teahouse",
+          "status": "planning",
+          "notes": "350-year-old thatched teahouse on the old Tokaido Highway. Warm amazake and mochi ~¥500pp.",
+          "address": "Amazake-chaya, 395-1 Moto-Hakone, Hakone, Kanagawa 250-0522, Japan",
+          "mapQuery": "Amazake-chaya Hakone"
+        },
+        {
+          "time": "14:45",
+          "activity": "Old Tokaido Cedar Avenue",
+          "status": "free",
+          "notes": "1km Edo-era road flanked by 400-year-old cedar trees. Free. Connects Moto-Hakone to Hakone-machi. Allow 30 mins.",
+          "address": "Hakone Shrine, 80-1 Motohakone, Hakone, Ashigarashimo-gun, Kanagawa 250-0522, Japan",
+          "mapQuery": "Hakone Shrine Moto-Hakone"
+        },
+        {
+          "time": "15:30",
+          "activity": "Lunch — lakeside restaurant",
+          "status": "planning",
+          "notes": "Yuba (silky tofu skin) is a local Hakone speciality.",
+          "address": "Hakone Shrine, 80-1 Motohakone, Hakone, Ashigarashimo-gun, Kanagawa 250-0522, Japan",
+          "mapQuery": "Hakone Shrine Moto-Hakone"
+        },
+        {
+          "time": "16:30",
+          "activity": "Bus back → TEN-YU area",
+          "status": "included",
+          "notes": "Hakone Tozan bus — covered by Freepass.",
+          "address": "Hakone-Yumoto Station, 707 Yumoto, Hakone, Ashigarashimo-gun, Kanagawa 250-0311, Japan",
+          "mapQuery": "Hakone-Yumoto Station"
+        },
+        {
+          "time": "17:30",
+          "activity": "Return to TEN-YU — rotenburo",
+          "status": "included",
+          "notes": "Soak in the private open-air bath before dinner.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "19:00",
+          "activity": "Kaiseki buffet dinner — TEN-YU",
+          "status": "included",
+          "notes": "Multi-course buffet. Included in room rate. Final night at the ryokan.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "After dinner",
+          "activity": "⚠ Arrange Takuhaibin luggage forwarding",
+          "status": "planning",
+          "notes": "Ask front desk to forward luggage to Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji for Sat 11 Apr delivery. ~¥1,500–2,000 per bag. Must arrange tonight.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
         }
       ]
     },
@@ -269,34 +521,107 @@
       "date": "2026-04-10",
       "label": "Day 7 — Friday 10 Apr",
       "location": "Hakone → Kyoto",
-      "locationAddress": "Odawara Station, 1-1 Jonai, Odawara, Kanagawa 250-0011, Japan",
-      "mapQuery": "Odawara Station Kanagawa Shinkansen",
+      "locationAddress": "TEN-YU Ryokan, 1297 Sengokuhara, Hakone, Ashigarashimo-gun, Kanagawa 250-0631, Japan",
+      "mapQuery": "Ten-yu Ryokan Hakone",
       "items": [
         {
-          "time": "morning",
-          "activity": "Shinkansen — Odawara → Kyoto × 3 (Andy, Sarah, Charlie)",
-          "status": "pending",
-          "notes": "Opens Tue 10 Mar · Klook · ~¥13,000pp Green Car · ~75 min journey",
-          "address": "Odawara Station, 1-1 Jonai, Odawara, Kanagawa 250-0011, Japan",
-          "mapQuery": "Odawara Station Shinkansen Kanagawa",
-          "destinationAddress": "Kyoto Station, Karasuma Higashi-shiokoji-cho, Shimogyo Ward, Kyoto 600-8216, Japan",
-          "destinationMapQuery": "Kyoto Station"
+          "time": "09:00",
+          "activity": "Final breakfast — TEN-YU",
+          "status": "included",
+          "notes": "Last morning at the ryokan. Check out by 10:30.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
         },
         {
-          "time": "morning",
-          "activity": "Jack: own Shinkansen ticket — same service",
-          "status": "pending",
-          "notes": "Opens Tue 10 Mar · Klook",
-          "address": "Odawara Station, 1-1 Jonai, Odawara, Kanagawa 250-0011, Japan",
-          "mapQuery": "Odawara Station Shinkansen"
+          "time": "09:30",
+          "activity": "Final rotenburo + pack",
+          "status": "included",
+          "notes": "Last soak. Packed and ready to leave by 10:30.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
         },
         {
-          "time": "15:00",
-          "activity": "Check in — Mitsui Garden Hotel Kyoto Shijo Premier",
+          "time": "10:30",
+          "activity": "Check out TEN-YU",
+          "status": "planning",
+          "notes": "Luggage forwarded to Kyoto via Takuhaibin. Travel with day bags only. 3-day Freepass active — Day 3.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "10:40",
+          "activity": "Hotel shuttle → Gora Station",
+          "status": "free",
+          "notes": "Last shuttle ride. Must depart by 10:40 to catch 12:07 Shinkansen.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "10:50",
+          "activity": "Gora → Hakone-Yumoto (Tozan Railway)",
+          "status": "included",
+          "notes": "Mountain railway descent. Last journey on Freepass.",
+          "address": "Hakone-Yumoto Station, 707 Yumoto, Hakone, Ashigarashimo-gun, Kanagawa 250-0311, Japan",
+          "mapQuery": "Hakone-Yumoto Station"
+        },
+        {
+          "time": "11:33",
+          "activity": "Hakone-Yumoto → Odawara (Odakyu)",
+          "status": "included",
+          "notes": "Final Freepass journey. Transfer to JR Shinkansen platforms at Odawara — upstairs.",
+          "address": "Hakone-Yumoto Station, 707 Yumoto, Hakone, Ashigarashimo-gun, Kanagawa 250-0311, Japan",
+          "mapQuery": "Hakone-Yumoto Station"
+        },
+        {
+          "time": "11:48",
+          "activity": "Arrive Odawara — collect tickets + grab ekiben",
+          "status": "planning",
+          "notes": "Go to JR Central ticket machines (NOT JR East). Insert physical Revolut Mastercard ending 9666 + 4-digit ID to collect tickets. Then grab station bento boxes.",
+          "detail": "⚠ COLLECT TICKETS AT JR CENTRAL MACHINES ONLY\nPhysical Revolut Mastercard ending 9666 required\n4-digit card ID also required\nDo NOT use JR East machines",
+          "address": "Odawara Station, 1-1 Jonai, Odawara, Kanagawa 250-0011, Japan",
+          "mapQuery": "Odawara Station Shinkansen Kanagawa"
+        },
+        {
+          "time": "12:07",
+          "activity": "Hikari 641: Odawara → Kyoto",
           "status": "confirmed",
-          "notes": "Exp 20251124078897910 · PAID £1,932.76 MC 3823 · Free breakfast · Stay Fri 10–Tue 14 Apr",
-          "address": "Mitsui Garden Hotel Kyoto Shijo Premier, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
-          "mapQuery": "Mitsui Garden Hotel Kyoto Shijo Premier"
+          "notes": "Ordinary Car, Car 6. Seats 14D, 14E, 15D, 15E. Mt. Fuji visible on right (E seats) first ~30 mins.",
+          "detail": "JR CENTRAL — BOOKED\nReservation No: 40422\nReceipt ID: ADK3908L\nTrain: Hikari 641\nOdawara 12:07 → Kyoto 14:12\nOrdinary Car — CAR 6\nSeats: 14-D, 14-E, 15-D, 15-E\nTotal: ¥49,200 (¥12,300pp)\nPaid: Revolut Mastercard ending 9666\n⚠ Bring physical Revolut card to collect tickets",
+          "address": "Odawara Station, 1-1 Jonai, Odawara, Kanagawa 250-0011, Japan",
+          "mapQuery": "Odawara Station Shinkansen Kanagawa"
+        },
+        {
+          "time": "14:12",
+          "activity": "Arrive Kyoto Station",
+          "status": "planning",
+          "notes": "One of Japan's most dramatic station buildings.",
+          "address": "Kyoto Station, Karasuma-dori, Shimogyo-ku, Kyoto 600-8216, Japan",
+          "mapQuery": "Kyoto Station"
+        },
+        {
+          "time": "14:20",
+          "activity": "Subway + walk to hotel",
+          "status": "planning",
+          "notes": "Karasuma Line northbound → Shijo Station. Follow underground path east along Shijo Street towards Kawaramachi. Exit Teramachi Street (Exit 10) — 1 min walk to hotel.",
+          "address": "Kyoto Station, Karasuma-dori, Shimogyo-ku, Kyoto 600-8216, Japan",
+          "mapQuery": "Kyoto Station"
+        },
+        {
+          "time": "~14:30",
+          "activity": "Check in — Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
+          "status": "confirmed",
+          "notes": "4-night stay. Hotel built around 500-year-old Jokyoji Temple. Large public bath free for guests (15:00–10:00). Walking distance to Gion, Nishiki Market, Ponto-cho.",
+          "detail": "EXPEDIA BOOKED\nMitsui Garden Hotel Kyoto Kawaramachi Jokyoji\nExp: 20251124078897910\n4 nights: Fri 10 – Tue 14 April · 2 rooms · 4 guests\nTotal: £1,932.76 · PAID MC 3823\nFree breakfast included\n➡ Show Expedia booking confirmation at check-in\nNearest station: Kyoto-Kawaramachi (Hankyu) — 1 min walk\nPublic bath: Free for guests, 15:00–10:00",
+          "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+        },
+        {
+          "time": "19:00",
+          "activity": "Dinner — Ponto-cho or Gion",
+          "status": "planning",
+          "notes": "Atmospheric riverside alley dining. Cherry blossom season — some restaurants open kawayuka terraces over the Kamo River.",
+          "address": "Pontocho, Nakagyo-ku, Kyoto 604-8094, Japan",
+          "mapQuery": "Pontocho alley Kyoto"
         }
       ]
     },
@@ -304,30 +629,94 @@
       "date": "2026-04-11",
       "label": "Day 8 — Saturday 11 Apr",
       "location": "Kyoto",
-      "locationAddress": "Mitsui Garden Hotel Kyoto Shijo Premier, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
-      "mapQuery": "Mitsui Garden Hotel Kyoto Shijo Premier",
+      "locationAddress": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+      "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
       "items": [
         {
+          "time": "08:30",
+          "activity": "Breakfast — Mitsui Garden Hotel",
+          "status": "included",
+          "notes": "Hotel breakfast. Sanga Ono restaurant — seasonal Japanese set or Western option.",
+          "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+        },
+        {
           "time": "09:00",
+          "activity": "Subway: Shijo → Kitaoji",
+          "status": "planning",
+          "notes": "Karasuma Line northbound to Kitaoji (¥260pp). Try to arrive at Kinkaku-ji by 09:30 before tour buses.",
+          "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+        },
+        {
+          "time": "09:30–10:30",
           "activity": "Kinkaku-ji — Golden Pavilion",
           "status": "planning",
-          "notes": "~¥500pp entry · Book timed entry in advance if possible",
-          "address": "Kinkaku-ji (Golden Pavilion), 1 Kinkakujicho, Kita Ward, Kyoto 603-8361, Japan",
+          "notes": "Gold-leaf pavilion reflecting in Mirror Pond. ¥1,200pp. Arrive early before crowds.",
+          "address": "Kinkaku-ji Temple, 1 Kinkakujicho, Kita Ward, Kyoto 603-8361, Japan",
           "mapQuery": "Kinkaku-ji Golden Pavilion Kyoto"
         },
         {
-          "time": "11:30",
-          "activity": "Nishiki Market — Kyoto's food market",
+          "time": "11:00–11:50",
+          "activity": "Ryoan-ji Temple — Rock Garden",
           "status": "planning",
-          "notes": "Free to browse · Street food · 'Kyoto's Kitchen'",
-          "address": "Nishiki Market, Nishiki-koji, Nakagyo Ward, Kyoto 604-8054, Japan",
-          "mapQuery": "Nishiki Market Kyoto"
+          "notes": "Famous karesansui dry rock garden — 15 stones, no two ever visible at once. ¥800pp.",
+          "address": "Ryoan-ji Temple, 13 Ryoanjigoranocho, Ukyo-ku, Kyoto 616-8001, Japan",
+          "mapQuery": "Ryoanji rock garden Kyoto"
         },
         {
-          "time": "afternoon",
-          "activity": "Gion District — geisha quarter",
+          "time": "12:15",
+          "activity": "Bus/taxi: Ryoan-ji → Ginkaku-ji",
           "status": "planning",
-          "notes": "Free to walk · Hanamikoji Street in evening for geiko spotting",
+          "notes": "Bus (Kyoto bus day pass ¥700/person) or taxi ~¥1,500. Allow 45–50 min on Saturday.",
+          "address": "Ryoan-ji Temple, 13 Ryoanjigoranocho, Ukyo-ku, Kyoto 616-8001, Japan",
+          "mapQuery": "Ryoanji rock garden Kyoto"
+        },
+        {
+          "time": "13:00–13:50",
+          "activity": "Ginkaku-ji — Silver Pavilion",
+          "status": "planning",
+          "notes": "Sea of Silver Sand moss garden. ¥1,100pp. Quieter than Kinkaku-ji.",
+          "address": "Ginkaku-ji Temple, 2 Ginkakujicho, Sakyo-ku, Kyoto 606-8402, Japan",
+          "mapQuery": "Ginkaku-ji Silver Pavilion Kyoto"
+        },
+        {
+          "time": "13:50–15:00",
+          "activity": "Philosopher's Path — walk south",
+          "status": "free",
+          "notes": "2km cherry tree-lined canal path from Ginkaku-ji towards Nanzen-ji. Most beautiful walk in cherry blossom season.",
+          "address": "Ginkaku-ji Temple, 2 Ginkakujicho, Sakyo-ku, Kyoto 606-8402, Japan",
+          "mapQuery": "Ginkaku-ji Silver Pavilion Kyoto"
+        },
+        {
+          "time": "15:00",
+          "activity": "Lunch — Nanzen-ji area",
+          "status": "planning",
+          "notes": "Yudofu (tofu hotpot) or Omen noodle restaurant on the Path.",
+          "address": "Nanzen-ji Temple, 86 Fukuchicho, Sakyo-ku, Kyoto 606-8435, Japan",
+          "mapQuery": "Nanzen-ji Temple Kyoto"
+        },
+        {
+          "time": "16:30",
+          "activity": "Return to hotel — rest before Gion",
+          "status": "planning",
+          "notes": "Subway from Keage or Higashiyama Station back to Shijo/Kawaramachi.",
+          "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+        },
+        {
+          "time": "18:30",
+          "activity": "Dinner — Gion district",
+          "status": "booked",
+          "notes": "⚠ BOOK NOW — Saturday in Gion during cherry blossom season fills weeks ahead. Tempura Endo or walk Hanamikoji.",
+          "address": "Gion District, Higashiyama Ward, Kyoto 605-0073, Japan",
+          "mapQuery": "Gion District Kyoto Hanamikoji"
+        },
+        {
+          "time": "20:00",
+          "activity": "Evening — Hanamikoji Street & Yasaka Shrine",
+          "status": "free",
+          "notes": "Beautifully lit machiya townhouses. Walk to Yasaka Shrine — free, open all night, stunning lanterns.",
           "address": "Gion District, Higashiyama Ward, Kyoto 605-0073, Japan",
           "mapQuery": "Gion District Kyoto Hanamikoji"
         }
@@ -336,85 +725,85 @@
     {
       "date": "2026-04-12",
       "label": "Day 9 — Sunday 12 Apr",
-      "location": "Kyoto",
-      "locationAddress": "Mitsui Garden Hotel Kyoto Shijo Premier, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
-      "mapQuery": "Mitsui Garden Hotel Kyoto Shijo Premier",
+      "location": "Kyoto — Arashiyama",
+      "locationAddress": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+      "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
       "items": [
         {
+          "time": "08:30",
+          "activity": "Breakfast — Mitsui Garden Hotel",
+          "status": "included",
+          "notes": "Hotel breakfast. Pack light day bag — full day outside.",
+          "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+        },
+        {
           "time": "07:30",
-          "activity": "Travel to Arashiyama",
+          "activity": "Travel to Arashiyama — JR Sagano Line",
           "status": "planning",
-          "notes": "JR Sagano Line (Sanin Main Line) from Kyoto Station → Saga-Arashiyama Station · 15–20 min · ¥240pp each way · Trains every 15–20 min",
-          "address": "Kyoto Station, Higashishiokojicho, Shimogyo Ward, Kyoto 600-8216, Japan",
+          "notes": "JR Sagano Line from Kyoto Station → Saga-Arashiyama Station · 15–20 min · ¥240pp",
+          "address": "Kyoto Station, Karasuma-dori, Shimogyo-ku, Kyoto 600-8216, Japan",
           "mapQuery": "Kyoto Station JR Sagano Line"
         },
         {
           "time": "08:00",
-          "activity": "Arashiyama Bamboo Grove",
-          "status": "planning",
-          "notes": "Free · Aim to arrive by 8–9am for smaller crowds · 5–10 min walk from Saga-Arashiyama Station · 🚲 Cycling or walking around Arashiyama is preferable in spring — avoids worst crowds · Bikes for hire near station",
+          "activity": "Arashiyama Bamboo Grove + Nonomiya Shrine",
+          "status": "free",
+          "notes": "Arrive early for smaller crowds. Nonomiya Shrine is a small black torii shrine inside the grove — atmospheric and free.",
           "address": "Arashiyama Bamboo Grove, Ogurayama Sagano, Ukyo Ward, Kyoto 616-8394, Japan",
           "mapQuery": "Arashiyama Bamboo Grove Kyoto"
         },
         {
           "time": "09:00",
-          "activity": "Tenryu-ji Temple & Ōkōchi Sansō",
+          "activity": "Tenryu-ji Temple Garden",
           "status": "planning",
-          "notes": "Tenryu-ji ¥500–600pp · Sogenchi Garden included · Then walk 15 min uphill to Ōkōchi Sansō Villa on Mt Ogura — ¥1,000pp incl. matcha · UNESCO World Heritage Site",
+          "notes": "UNESCO World Heritage Rinzai Zen temple. Garden using borrowed mountain scenery. ¥1,200pp garden only.",
           "address": "Tenryu-ji Temple, 68 Sagatenryuji Susukinobabacho, Ukyo Ward, Kyoto 616-8385, Japan",
           "mapQuery": "Tenryu-ji Temple Arashiyama Kyoto"
         },
         {
           "time": "10:00",
           "activity": "Togetsukyo Bridge & Riverside Walk",
-          "status": "planning",
-          "notes": "Free · Iconic bridge over the Oi River · Scenic riverside walk",
-          "address": "Togetsukyo Bridge, Sagatenryuji Tsukurimichi-cho, Ukyo Ward, Kyoto 616-8384, Japan",
+          "status": "free",
+          "notes": "Iconic bridge over the Oi River. Scenic riverside walk. Free.",
+          "address": "Togetsukyo Bridge, Arashiyama, Ukyo Ward, Kyoto 616-8384, Japan",
           "mapQuery": "Togetsukyo Bridge Arashiyama Kyoto"
         },
         {
           "time": "10:30",
           "activity": "Sagano Romantic Train — Torokko Saga → Kameoka",
           "status": "planning",
-          "bookingRequired": true,
-          "notes": "⚠️ BOOK IN ADVANCE · Departs Torokko Saga Station · 25 min along Hozu River gorge · Disembark at Kameoka · Walk back to Arashiyama via river path · ~¥880pp each way",
+          "notes": "⚠ BOOK IN ADVANCE · 25 min along Hozu River gorge · ~¥880pp each way",
           "address": "Torokko Saga Station, Sagakameyamacho, Ukyo Ward, Kyoto 616-8373, Japan",
           "mapQuery": "Torokko Saga Station Sagano Romantic Train"
         },
         {
-          "time": "12:00",
-          "activity": "Lunch near Arashiyama Station",
+          "time": "12:30",
+          "activity": "Monkey Park Iwatayama",
           "status": "planning",
-          "notes": "Recommend Arashiyama Yoshimura (soba, udon, yudofu) · Riverside views",
-          "address": "Arashiyama Yoshimura, 3 Sagatenryuji Susukinobabacho, Ukyo Ward, Kyoto 616-8385, Japan",
-          "mapQuery": "Arashiyama Yoshimura restaurant Kyoto"
-        },
-        {
-          "time": "13:00",
-          "activity": "Iwatayama Monkey Park",
-          "status": "planning",
-          "notes": "¥800pp · 25 min uphill walk from Togetsukyo Bridge · Views over Kyoto from the top",
+          "notes": "120+ wild Japanese macaques. ¥800pp. 25 min uphill walk. Great valley views.",
           "address": "Iwatayama Monkey Park, Arashiyamanishiichinicho, Nishikyo Ward, Kyoto 616-0007, Japan",
           "mapQuery": "Iwatayama Monkey Park Arashiyama Kyoto"
         },
         {
-          "time": "15:00",
-          "activity": "Hozuwa River Path walk OR Hozugawa Riverboat",
+          "time": "14:00",
+          "activity": "Lunch — Kyoto Arashiyama Nishiki",
           "status": "planning",
-          "notes": "Option A: River Path walk — free · 25 min towards Togetsukyo Bridge · Option B: Hozugawa Pleasure Boat — 50 min · ⚠️ Book in advance if taking boat · Scenic Hozu River gorge",
-          "address": "Kameoka Hozugawa Pleasure Boat, Yanba, Kameoka, Kyoto 621-0005, Japan",
-          "mapQuery": "Hozugawa Pleasure Boat Kameoka Kyoto"
+          "notes": "Traditional kaiseki ryotei on Nakanoshibashi island, next to Togetsukyo Bridge. ⚠ Book ahead — ☎ 075-871-8888. Closed Tuesdays.",
+          "detail": "Kyoto Arashiyama Nishiki\nAddress: Nakanoshibashi Park, Arashiyama, Kyoto\nReservations: 075-871-8888 (10:00–21:00)\nWebsite: arashiyama-nishiki.com\nHours: 11:00–21:00 (L.O. 19:00) · Closed Tuesdays\nSignature dish: Sakura-juku-zen (seasonal kaiseki box set)\n⚠ Book ahead — busy in cherry blossom season",
+          "address": "Nakanoshibashi Park, Arashiyama, Ukyo Ward, Kyoto 616-0007, Japan",
+          "mapQuery": "Arashiyama Nishiki restaurant Kyoto"
         },
         {
-          "time": "16:30",
-          "activity": "Riverside Café near Togetsukyo Bridge",
-          "status": "planning",
-          "notes": "Relax by the river · Various cafés along the Arashiyama riverside",
+          "time": "15:30",
+          "activity": "Riverside café + free time",
+          "status": "free",
+          "notes": "Relax by the river. Various cafés along the Arashiyama riverside.",
           "address": "Togetsukyo Bridge area, Arashiyama, Ukyo Ward, Kyoto 616-8384, Japan",
           "mapQuery": "Arashiyama riverside café Togetsukyo Bridge"
         },
         {
-          "time": "17:30",
+          "time": "17:00",
           "activity": "Return to Kyoto — Hankyu Arashiyama Line",
           "status": "planning",
           "notes": "Hankyu Arashiyama Station → Kawaramachi Station · ~25 min · ¥220pp",
@@ -422,16 +811,14 @@
           "mapQuery": "Hankyu Arashiyama Station Kyoto"
         },
         {
-          "time": "evening",
-          "activity": "Fushimi Inari Taisha — thousand torii gates",
-          "status": "planning",
-          "notes": "Free · 24hr access · Beautiful at dusk/golden hour · ~20 min from Kawaramachi · Keep as an option — may not fit depending on energy levels",
-          "address": "Fushimi Inari Taisha, 68 Fukakusa Yabunouchicho, Fushimi Ward, Kyoto 612-0882, Japan",
-          "mapQuery": "Fushimi Inari Taisha Kyoto"
+          "time": "19:00",
+          "activity": "Dinner — Ponto-cho",
+          "status": "booked",
+          "notes": "⚠ BOOK AHEAD for riverside kawayuka terrace seats.",
+          "address": "Pontocho, Nakagyo-ku, Kyoto 604-8094, Japan",
+          "mapQuery": "Pontocho alley Kyoto"
         }
-      ],
-      "mapLink": "https://chatgpt.com/s/m_69b041f50ca88191b07e62ea2d41ca11",
-      "mapNote": "Map of Arashiyama Day Out (Sarah — ChatGPT)"
+      ]
     },
     {
       "date": "2026-04-13",
@@ -441,30 +828,84 @@
       "mapQuery": "Nara Park Japan deer",
       "items": [
         {
-          "time": "09:00",
-          "activity": "Day trip to Nara — Kintetsu Kyoto Line",
-          "status": "planning",
-          "notes": "~45 min from Kyoto · JR Pass or Kintetsu (~¥720pp)",
-          "address": "Kintetsu Kyoto Station, Higashi-Shiokoji-cho, Shimogyo Ward, Kyoto 600-8215, Japan",
-          "mapQuery": "Kintetsu Kyoto Station",
-          "destinationAddress": "Kintetsu Nara Station, 1 Onjo-jicho, Nara 630-8121, Japan",
-          "destinationMapQuery": "Kintetsu Nara Station"
+          "time": "08:30",
+          "activity": "Breakfast — Mitsui Garden Hotel",
+          "status": "included",
+          "notes": "Hotel breakfast before early departure.",
+          "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+        },
+        {
+          "time": "09:15",
+          "activity": "JR Nara Line: Kyoto → Nara",
+          "status": "included",
+          "notes": "JR Pass covered. Direct, 45 min from Kyoto Station.",
+          "address": "Kyoto Station, Karasuma-dori, Shimogyo-ku, Kyoto 600-8216, Japan",
+          "mapQuery": "Kyoto Station"
         },
         {
           "time": "10:00",
           "activity": "Nara Park — deer feeding",
-          "status": "planning",
-          "notes": "Free entry to park · Deer crackers ~¥200 · Over 1,000 wild deer roam free",
+          "status": "free",
+          "notes": "Walk east from Nara Station (~10 min). 1,200+ free-roaming sika deer. Deer crackers ¥200/pack.",
           "address": "Nara Park, 469 Zoushicho, Nara 630-8211, Japan",
           "mapQuery": "Nara Park deer Nara Japan"
         },
         {
-          "time": "11:00",
-          "activity": "Todai-ji Temple — Great Buddha",
+          "time": "11:00–12:30",
+          "activity": "Todai-ji Temple — The Great Buddha",
           "status": "planning",
-          "notes": "~¥600pp entry · World's largest bronze Buddha (15m tall)",
+          "notes": "Largest wooden structure in the world. 15m bronze Buddha. ¥1,400pp. Allow 90 min.",
           "address": "Todai-ji Temple, 406-1 Zoshicho, Nara 630-8211, Japan",
           "mapQuery": "Todai-ji Temple Nara Great Buddha"
+        },
+        {
+          "time": "12:30",
+          "activity": "Kasuga Taisha Shrine — forest path",
+          "status": "free",
+          "notes": "Ancient Shinto shrine. Hundreds of stone and bronze lanterns. Free to walk the approach.",
+          "address": "Kasuga Taisha Shrine, 160 Kasuganocho, Nara 630-8212, Japan",
+          "mapQuery": "Kasuga Taisha Shrine Nara"
+        },
+        {
+          "time": "13:30",
+          "activity": "Lunch — Naramachi old town",
+          "status": "planning",
+          "notes": "Kakinoha-zushi (persimmon leaf sushi, Nara's speciality) and mochi shops.",
+          "address": "Nara Park, 469 Zoushicho, Nara 630-8211, Japan",
+          "mapQuery": "Nara Park Japan"
+        },
+        {
+          "time": "15:30",
+          "activity": "JR to Inari Station — Fushimi Inari",
+          "status": "planning",
+          "notes": "JR Nara Line → Inari Station (40 min, JR Pass covered). Thousands of vermillion torii gates. Free, open 24hrs.",
+          "address": "Fushimi Inari Taisha, 68 Fukakusa Yabunouchicho, Fushimi Ward, Kyoto 612-0882, Japan",
+          "mapQuery": "Fushimi Inari Taisha Kyoto"
+        },
+        {
+          "time": "16:40–17:30",
+          "activity": "Fushimi Inari — lower gates walk",
+          "status": "planning",
+          "notes": "One of Japan's most photographed sites. Lower section to first viewing platform: ~35–40 mins return.",
+          "address": "Fushimi Inari Taisha, 68 Fukakusa Yabunouchicho, Fushimi Ward, Kyoto 612-0882, Japan",
+          "mapQuery": "Fushimi Inari Taisha Kyoto"
+        },
+        {
+          "time": "18:00",
+          "activity": "Nishiki Market browse",
+          "status": "free",
+          "notes": "Last chance for Kyoto pickles, yuba tofu and matcha sweets. Stalls close ~18:00.",
+          "address": "Nishiki Market, Nishiki-koji, Nakagyo Ward, Kyoto 604-8054, Japan",
+          "mapQuery": "Nishiki Market Kyoto"
+        },
+        {
+          "time": "19:30",
+          "activity": "Farewell Kyoto dinner",
+          "status": "booked",
+          "notes": "⚠ BOOK AHEAD. Last night in Kyoto. Traditional kaiseki or high-quality kaiseki donburi.",
+          "address": "Gion District, Hanamikoji-dori, Higashiyama-ku, Kyoto 605-0074, Japan",
+          "mapQuery": "Gion district Kyoto"
         }
       ]
     },
@@ -476,26 +917,67 @@
       "mapQuery": "Candeo Hotels Osaka The Tower Umeda",
       "items": [
         {
-          "time": "after 10:30",
-          "activity": "Check out Mitsui Garden → Travel to Osaka via Keihan Line",
+          "time": "08:30",
+          "activity": "Breakfast — Mitsui Garden Hotel",
+          "status": "included",
+          "notes": "Last Kyoto morning. Pack all luggage.",
+          "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+        },
+        {
+          "time": "09:30",
+          "activity": "⭐ Traditional Tea Ceremony (optional)",
+          "status": "optional",
+          "notes": "90 min experience. Multiple operators in Kyoto. Book in advance.",
+          "address": "Camellia Tea Experience, 184-6 Shimogawaracho, Higashiyama-ku, Kyoto 605-0814, Japan",
+          "mapQuery": "tea ceremony Kyoto"
+        },
+        {
+          "time": "10:30",
+          "activity": "Check out — Mitsui Garden Hotel Kyoto",
           "status": "planning",
-          "notes": "Walk from hotel to Sanjo Station (Keihan Line) · Keihan Limited Express: Sanjo → Yodoyabashi (Osaka) · ~50 min · Depart after 10:30am to avoid commuter crush · Regular ticket: ~¥430pp (buy at station) · Premium Car option: +¥400–500pp supplement · reserved seats · power outlets · luggage space · buy at platform machine 10–20 min before (not commonly booked in advance internationally)",
-          "address": "Sanjo Station (Keihan), Sanjo Ohashi, Higashiyama Ward, Kyoto, Japan",
+          "notes": "4-night stay. Short walk or subway to Kyoto Station.",
+          "address": "Kyoto Station, Karasuma-dori, Shimogyo-ku, Kyoto 600-8216, Japan",
+          "mapQuery": "Kyoto Station"
+        },
+        {
+          "time": "11:00",
+          "activity": "Travel to Osaka — Keihan Line",
+          "status": "planning",
+          "notes": "Walk from hotel to Sanjo Station (Keihan Line) · Keihan Limited Express: Sanjo → Yodoyabashi · ~50 min · ~¥430pp",
+          "address": "Sanjo Station, Higashiyama Ward, Kyoto, Japan",
           "mapQuery": "Sanjo Station Keihan Kyoto"
         },
         {
-          "time": "15:00",
+          "time": "~13:00",
           "activity": "Check in — Candeo Hotels Osaka The Tower",
           "status": "confirmed",
-          "notes": "Exp 20251124078913429 · PAID £1,579.20 MC 3823 · Free breakfast + Exec Bar Lounge · Stay Tue 14–Fri 17 Apr",
+          "notes": "Or drop bags if too early. 3 nights. Hotel is in Kita-ku (Umeda area) — Dotonbori is ~25 min walk south or metro.",
+          "detail": "EXPEDIA BOOKED\nCandeo Hotels Osaka The Tower\nExp: 20251124078913429\nTue 14 – Fri 17 April · 3 nights · 2 rooms · 4 guests\nTotal: £1,579.20 · PAID MC 3823\nFree breakfast + Exec Bar Lounge\n➡ Show Expedia booking confirmation at check-in\nLocation: Kita-ku (Umeda) — near Osaka Station\nNote: Dotonbori is ~25 min walk south or Midosuji Line (2 stops)",
           "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
-          "mapQuery": "Candeo Hotels Osaka The Tower Kita"
+          "mapQuery": "Candeo Hotels Osaka The Tower"
         },
         {
-          "time": "evening",
-          "activity": "Dotonbori — street food & neon",
+          "time": "14:30",
+          "activity": "Dotonbori — first impressions",
+          "status": "free",
+          "notes": "Metro or walk south. Glico Running Man photo, Kani Doraku crab sign.",
+          "address": "Dotonbori, 1-chome Dotonbori, Chuo Ward, Osaka 542-0071, Japan",
+          "mapQuery": "Dotonbori Osaka neon food street"
+        },
+        {
+          "time": "16:00",
+          "activity": "Amerikamura — shopping",
           "status": "planning",
-          "notes": "Takoyaki, okonomiyaki, ramen · The heart of Osaka food culture",
+          "notes": "Osaka's answer to Harajuku. Vintage stores, streetwear, record shops.",
+          "address": "Amerikamura, Chuo Ward, Osaka 542-0086, Japan",
+          "mapQuery": "Amerikamura Osaka"
+        },
+        {
+          "time": "18:30",
+          "activity": "Dinner — Dotonbori / Namba",
+          "status": "planning",
+          "notes": "Osaka is Japan's food capital. Ichiran Ramen, takoyaki crawl, or kushikatsu izakaya.",
           "address": "Dotonbori, 1-chome Dotonbori, Chuo Ward, Osaka 542-0071, Japan",
           "mapQuery": "Dotonbori Osaka neon food street"
         }
@@ -509,70 +991,222 @@
       "mapQuery": "Candeo Hotels Osaka The Tower",
       "items": [
         {
+          "time": "08:30",
+          "activity": "Breakfast at Candeo",
+          "status": "included",
+          "notes": "Hotel breakfast or nearby konbini.",
+          "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+          "mapQuery": "Candeo Hotels Osaka The Tower"
+        },
+        {
           "time": "09:00",
           "activity": "Osaka Castle & Park",
           "status": "planning",
-          "notes": "~¥600pp castle entry · Park free · Surrounded by moat",
+          "notes": "¥1,400pp for 8F observation deck. Park free — excellent cherry blossoms in mid-April.",
           "address": "Osaka Castle, 1-1 Osakajo, Chuo Ward, Osaka 540-0002, Japan",
           "mapQuery": "Osaka Castle Park Japan"
         },
         {
-          "time": "13:00",
-          "activity": "Kuromon Ichiba Market",
+          "time": "12:00",
+          "activity": "Kuromon Ichiba Market — Osaka's Kitchen",
           "status": "planning",
-          "notes": "Free to browse · 'Osaka's Kitchen' · Fresh seafood, wagyu, street food",
+          "notes": "170 stalls of fresh seafood, wagyu, fruit and street food. Eat as you walk.",
           "address": "Kuromon Ichiba Market, 2-4-1 Nipponbashi, Chuo Ward, Osaka 542-0073, Japan",
           "mapQuery": "Kuromon Ichiba Market Osaka"
         },
         {
-          "time": "evening",
-          "activity": "Shinsekai District",
+          "time": "13:30",
+          "activity": "Shinsekai + Tsutenkaku Tower",
           "status": "planning",
-          "notes": "Retro 1920s district · Kushikatsu (deep-fried skewers) · Tsutenkaku Tower",
+          "notes": "1920s retro entertainment district. Tsutenkaku observation deck ¥2,000pp.",
           "address": "Shinsekai, Naniwa Ward, Osaka 556-0002, Japan",
           "mapQuery": "Shinsekai Tsutenkaku Tower Osaka"
+        },
+        {
+          "time": "15:00",
+          "activity": "Spa World (optional)",
+          "status": "optional",
+          "notes": "Enormous onsen complex. Themed floors. ¥1,000pp. Great after a long day.",
+          "address": "Spa World, 3-4-24 Ebisuhigashi, Naniwa Ward, Osaka 556-0002, Japan",
+          "mapQuery": "Spa World Osaka"
+        },
+        {
+          "time": "16:00",
+          "activity": "Den Den Town — electronics & anime",
+          "status": "planning",
+          "notes": "Osaka's Akihabara. Retro game shops, Gunpla, anime figures.",
+          "address": "Den Den Town, Nipponbashi, Naniwa Ward, Osaka 556-0005, Japan",
+          "mapQuery": "Den Den Town electronics Osaka"
+        },
+        {
+          "time": "17:30",
+          "activity": "Shinsaibashi — shopping arcade",
+          "status": "planning",
+          "notes": "Longest covered shopping arcade in Japan. Good for souvenirs, beauty products, fashion.",
+          "address": "Shinsaibashi, Chuo Ward, Osaka 542-0085, Japan",
+          "mapQuery": "Shinsaibashi Osaka"
+        },
+        {
+          "time": "19:30",
+          "activity": "Dinner — Osaka yakiniku",
+          "status": "booked",
+          "notes": "⚠ BOOK AHEAD. Proper yakiniku — BBQ wagyu at the table. ~¥4,000–5,000pp. Namba area.",
+          "address": "Namba, Chuo Ward, Osaka 542-0075, Japan",
+          "mapQuery": "Namba Osaka"
         }
       ]
     },
     {
       "date": "2026-04-16",
       "label": "Day 13 — Thursday 16 Apr",
-      "location": "Osaka",
+      "location": "Osaka / Himeji day trip",
       "locationAddress": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
       "mapQuery": "Candeo Hotels Osaka The Tower",
       "items": [
         {
-          "time": "09:00",
-          "activity": "Universal Studios Japan",
+          "time": "07:30",
+          "activity": "Breakfast at Candeo",
+          "status": "included",
+          "notes": "Early-ish start for Himeji.",
+          "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+          "mapQuery": "Candeo Hotels Osaka The Tower"
+        },
+        {
+          "time": "08:15",
+          "activity": "JR Special Rapid: Osaka → Himeji",
+          "status": "included",
+          "notes": "JR Pass fully covered. Direct, ~60 min.",
+          "address": "Osaka Station, 3-1-1 Umeda, Kita Ward, Osaka 530-0001, Japan",
+          "mapQuery": "Osaka Station JR Special Rapid"
+        },
+        {
+          "time": "09:20",
+          "activity": "Arrive Himeji — walk to castle",
+          "status": "free",
+          "notes": "Straight 15 min walk north from station — you can see it from the exit.",
+          "address": "Himeji Station, 68 Ekimae-cho, Himeji, Hyogo 670-0927, Japan",
+          "mapQuery": "Himeji Station Japan"
+        },
+        {
+          "time": "09:40–11:45",
+          "activity": "Himeji Castle — White Egret Castle",
           "status": "planning",
-          "notes": "Book tickets in advance · Full day · Wizarding World of Harry Potter etc.",
-          "address": "Universal Studios Japan, 2-1-33 Sakurajima, Konohana Ward, Osaka 554-0031, Japan",
-          "mapQuery": "Universal Studios Japan Osaka"
+          "notes": "UNESCO World Heritage. Japan's finest surviving feudal castle. ¥2,400pp. Allow 2 hours. Steep narrow stairs.",
+          "address": "Himeji Castle, 68 Honmachi, Himeji, Hyogo 670-0012, Japan",
+          "mapQuery": "Himeji Castle Japan"
+        },
+        {
+          "time": "12:00–13:00",
+          "activity": "Koko-en Garden",
+          "status": "planning",
+          "notes": "9 connected traditional Japanese gardens. ¥1,000pp (combo ticket with castle ¥3,000pp saves ¥400pp).",
+          "address": "Himeji Castle, 68 Honmachi, Himeji, Hyogo 670-0012, Japan",
+          "mapQuery": "Himeji Castle Japan"
+        },
+        {
+          "time": "13:15",
+          "activity": "Lunch near Himeji Castle",
+          "status": "planning",
+          "notes": "Anago (sea eel) and locally grown rice are Himeji specialities.",
+          "address": "Himeji Castle, 68 Honmachi, Himeji, Hyogo 670-0012, Japan",
+          "mapQuery": "Himeji Castle Japan"
+        },
+        {
+          "time": "15:00",
+          "activity": "JR back to Osaka",
+          "status": "included",
+          "notes": "JR Pass covered. Direct, 60 min.",
+          "address": "Himeji Station, 68 Ekimae-cho, Himeji, Hyogo 670-0927, Japan",
+          "mapQuery": "Himeji Station Japan"
+        },
+        {
+          "time": "16:30",
+          "activity": "Hozenji Yokocho — evening wander",
+          "status": "free",
+          "notes": "Tiny atmospheric alley with moss-covered Fudo statue, candlelit restaurants.",
+          "address": "Hozenji Yokocho, Chuo Ward, Osaka 542-0076, Japan",
+          "mapQuery": "Hozenji Yokocho Osaka"
+        },
+        {
+          "time": "17:00",
+          "activity": "Final Osaka shopping — Namba / Shinsaibashi",
+          "status": "planning",
+          "notes": "Last full evening in Japan. Konbini snacks, KitKat flavours. Pack tonight.",
+          "address": "Shinsaibashi, Chuo Ward, Osaka 542-0085, Japan",
+          "mapQuery": "Shinsaibashi Osaka"
+        },
+        {
+          "time": "19:30",
+          "activity": "Final Japan dinner",
+          "status": "booked",
+          "notes": "⚠ BOOK AHEAD. Osaka is Japan's food capital — make this one count.",
+          "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+          "mapQuery": "Candeo Hotels Osaka The Tower"
         }
       ]
     },
     {
       "date": "2026-04-17",
       "label": "Day 14 — Friday 17 Apr",
-      "location": "Osaka → Incheon (transit night)",
+      "location": "Osaka → Seoul Incheon",
       "locationAddress": "Kansai International Airport, 1 Senshukukokita, Izumisano, Osaka 549-0001, Japan",
       "mapQuery": "Kansai International Airport KIX Osaka",
       "items": [
         {
-          "time": "afternoon",
-          "activity": "Check out Candeo, travel to Kansai Airport",
+          "time": "08:00",
+          "activity": "Breakfast — Candeo Hotels",
+          "status": "included",
+          "notes": "Final Japan breakfast.",
+          "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+          "mapQuery": "Candeo Hotels Osaka The Tower"
+        },
+        {
+          "time": "09:00",
+          "activity": "Morning — final shopping & souvenirs",
           "status": "planning",
-          "notes": "~75 min by Haruka Express from Osaka/Tennoji",
+          "notes": "Last chance. Namba Don Quijote opens 09:00.",
+          "address": "Namba, Chuo Ward, Osaka 542-0075, Japan",
+          "mapQuery": "Namba Osaka"
+        },
+        {
+          "time": "11:00",
+          "activity": "Check out — Candeo Hotels Osaka",
+          "status": "planning",
+          "notes": "Store luggage at hotel if needed. Checkout 11:00am.",
+          "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+          "mapQuery": "Candeo Hotels Osaka The Tower"
+        },
+        {
+          "time": "11:30–15:30",
+          "activity": "Osaka Aquarium Kaiyukan (optional)",
+          "status": "optional",
+          "notes": "World-class aquarium, 15 min from Namba. ¥2,700pp, takes 2 hours.",
+          "address": "Osaka Aquarium Kaiyukan, 1-1-10 Kaigandori, Minato Ward, Osaka 552-0022, Japan",
+          "mapQuery": "Osaka Aquarium Kaiyukan"
+        },
+        {
+          "time": "~16:00",
+          "activity": "JR Haruka Express — Tennoji → Kansai Airport",
+          "status": "planning",
+          "notes": "Osaka Metro Midosuji Line south to Tennoji (~10 min, ¥230pp). JR Haruka from Tennoji → KIX T1 (~29 min). Buy at Tennoji JR machines on day.",
+          "detail": "JR Haruka Express\nRoute: Tennoji → Kansai Airport T1\nJourney: ~29 min (after ~10 min metro)\nFare: ~¥2,000–2,200pp unreserved\nNo booking needed — buy at Tennoji JR machines\n⚡ Get to Tennoji by ~16:10 to catch ~16:30 departure",
           "address": "Osaka (Tennoji) Station, 1-17 Hidenin-cho, Tennoji Ward, Osaka 543-0055, Japan",
-          "mapQuery": "Tennoji Station Osaka Haruka Express KIX",
-          "destinationAddress": "Kansai International Airport, 1 Senshukukokita, Izumisano, Osaka 549-0001, Japan",
-          "destinationMapQuery": "Kansai International Airport KIX"
+          "mapQuery": "Tennoji Station Osaka Haruka Express KIX"
+        },
+        {
+          "time": "17:15",
+          "activity": "KIX: check in Asiana OZ113, security & duty free",
+          "status": "planning",
+          "notes": "Kansai Airport T1. Check-in opens ~2hrs before departure.",
+          "detail": "Flight: Asiana OZ113\nRoute: KIX T1 → ICN T2\nDate: Friday 17 April 2026\nDeparts: 19:25 | Arrives: 21:30 | Flying time: ~1h 55m\nPNR: D2MKD6\nSeats: Andy 24H · Sarah 24J | Jack 25H · Charlie 25J",
+          "address": "Kansai International Airport, 1 Senshukukokita, Izumisano, Osaka 549-0001, Japan",
+          "mapQuery": "Kansai International Airport KIX"
         },
         {
           "time": "19:25",
-          "activity": "Depart KIX — Asiana return leg → ICN",
+          "activity": "Depart KIX — Asiana OZ113 → Seoul ICN",
           "status": "confirmed",
-          "notes": "PAID (included in Asiana booking)",
+          "notes": "~1h 55m. PNR: D2MKD6. Seats: Andy 24H · Sarah 24J | Jack 25H · Charlie 25J.",
           "address": "Kansai International Airport, 1 Senshukukokita, Izumisano, Osaka 549-0001, Japan",
           "mapQuery": "Kansai International Airport KIX"
         },
@@ -580,15 +1214,16 @@
           "time": "21:30",
           "activity": "Arrive Seoul ICN T2",
           "status": "confirmed",
-          "notes": "Terminal 2",
+          "notes": "Transfer to Grand Hyatt Incheon. Free hotel shuttle from T2.",
           "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
           "mapQuery": "Incheon International Airport Terminal 2"
         },
         {
           "time": "22:00",
           "activity": "Shuttle to Grand Hyatt Incheon & check in",
-          "status": "booked",
-          "notes": "Exp 150513RA052227 · £277.04 · ⚠️ PAY AT PROPERTY · ~5 min from airport · complimentary shuttle",
+          "status": "confirmed",
+          "notes": "Free shuttle from ICN T2. Early start tomorrow. Hotel connected to airport complex.",
+          "detail": "Expedia Conf: 150513RA052227\nGrand Hyatt Incheon\nFri 17 → Sat 18 April\nCost: £277.04\n⚠ PAY AT PROPERTY (not prepaid)\n➡ Free hotel shuttle from ICN Terminal 2\nNo breakfast included",
           "address": "Grand Hyatt Incheon, 208 Yeongjonghaean-ro 321beon-gil, Jung-gu, Incheon 22382, South Korea",
           "mapQuery": "Grand Hyatt Incheon Airport Hotel"
         }
@@ -602,38 +1237,62 @@
       "mapQuery": "Incheon International Airport Terminal 2",
       "items": [
         {
-          "time": "08:00",
-          "activity": "Breakfast at Grand Hyatt Incheon",
-          "status": "booked",
-          "notes": "Eat at airport hotel before checking out",
+          "time": "07:00",
+          "activity": "Breakfast — Grand Hyatt or airport",
+          "status": "planning",
+          "notes": "No breakfast included at Grand Hyatt. ICN T2 food options open from 06:00.",
+          "address": "Grand Hyatt Incheon, 208 Yeongjonghaean-ro 321beon-gil, Jung-gu, Incheon 22382, South Korea",
+          "mapQuery": "Grand Hyatt Incheon Airport Hotel"
+        },
+        {
+          "time": "08:30",
+          "activity": "Hotel shuttle → ICN Terminal 2",
+          "status": "free",
+          "notes": "Free hotel shuttle. Confirm pickup time at reception tonight. 10–15 min.",
           "address": "Grand Hyatt Incheon, 208 Yeongjonghaean-ro 321beon-gil, Jung-gu, Incheon 22382, South Korea",
           "mapQuery": "Grand Hyatt Incheon Airport Hotel"
         },
         {
           "time": "09:00",
-          "activity": "Hotel shuttle to ICN Terminal 2",
-          "status": "confirmed",
-          "notes": "Complimentary shuttle · ~5 min",
-          "address": "Grand Hyatt Incheon, 208 Yeongjonghaean-ro 321beon-gil, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Grand Hyatt Incheon Airport Hotel",
-          "destinationAddress": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-          "destinationMapQuery": "Incheon International Airport Terminal 2"
+          "activity": "ICN T2: Virgin Atlantic VS209 check-in",
+          "status": "planning",
+          "notes": "Check-in opens 3 hrs before departure. Baggage drop + security 30–45 mins. ICN is extremely efficient.",
+          "detail": "Flight: Virgin Atlantic VS209\nBooking Ref: E3FYHB\nRoute: ICN T2 → LHR T3\nDeparts: 12:25 | Arrives: 18:50\nSeats: 23D / 23F / 24D / 24F",
+          "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
+          "mapQuery": "Incheon International Airport Terminal 2"
+        },
+        {
+          "time": "10:00",
+          "activity": "ICN Airside — duty free & departures",
+          "status": "planning",
+          "notes": "Outstanding duty free — cosmetics, electronics, luxury brands.",
+          "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
+          "mapQuery": "Incheon International Airport Terminal 2"
         },
         {
           "time": "12:25",
           "activity": "Depart ICN — VS209 Virgin Atlantic → LHR",
           "status": "confirmed",
-          "notes": "Terminal 2 · Boeing 787-9 · Seats: 23D/23F/24D/24F · Ref E3FYHB",
+          "notes": "Direct, ~11h 45m. Arrive LHR Terminal 3. Ref E3FYHB.",
           "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
           "mapQuery": "Incheon International Airport Terminal 2"
         },
         {
           "time": "18:50",
           "activity": "Arrive London Heathrow Terminal 3",
-          "status": "confirmed",
-          "notes": "KwikPark car collection",
+          "status": "planning",
+          "notes": "UK time. Through UK passport eGates. Baggage reclaim T3.",
           "address": "London Heathrow Airport Terminal 3, Hounslow TW6 1QG, UK",
-          "mapQuery": "Heathrow Terminal 3 Arrivals"
+          "mapQuery": "Heathrow Terminal 3"
+        },
+        {
+          "time": "19:30",
+          "activity": "KwikPark Meet & Greet pickup — T3",
+          "status": "confirmed",
+          "notes": "Order ID: L4PUK-777209 · Plate: GL74VLV · Call 1: as soon as you land — 07850366784 · Call 2: after collecting luggage · T3 Short Stay Car Park Level 4 Row B",
+          "detail": "Order ID: L4PUK-777209\nPlate: GL74VLV\n📞 Call 1 — as soon as you land: 07850366784\n📞 Call 2 — after collecting luggage: 07850366784\n➡ T3 Short Stay Car Park · Level 4 · Row B\n⚠ Airport Access Fee £7.50 payable on return\n⚠ ULEZ payable for Sat 18 Apr",
+          "address": "KwikPark Terminal 3, Heathrow Airport, Hounslow TW6 1QG, UK",
+          "mapQuery": "KwikPark Heathrow Terminal 3"
         }
       ]
     }
@@ -646,42 +1305,48 @@
           "task": "Book Sumo Morning Training × 4",
           "who": "Andy",
           "deadline": "TODAY",
-          "status": "not_booked",
-          "notes": "magicaltripjapan.com · Mon 7 Apr 7:30–9:00 · ¥3,500pp",
-          "address": "Arashio Sumo Stable, 2-47-2 Hamacho, Nihonbashi, Chuo-ku, Tokyo 103-0007, Japan",
-          "mapQuery": "Arashio Sumo Stable Tokyo"
+          "status": "booked",
+          "notes": "⚠ Awaiting confirmation from Keio Plaza concierge · Oshiage stable · Tue 7 Apr 7:30–9:00"
         },
         {
-          "task": "Book LHR Parking — KwikPark T3",
+          "task": "⚠ VA FlyReady — complete for Andrew Evans",
           "who": "Andy",
-          "deadline": "ASAP",
-          "status": "not_booked",
-          "notes": "Dep Fri 3 Apr / Return Sat 18 Apr · ~£119.18 · kwikpark.co.uk",
-          "address": "KwikPark Terminal 3, Heathrow Airport, Hounslow TW6 1QG, UK",
-          "mapQuery": "KwikPark Heathrow Terminal 3"
+          "deadline": "Before 3 Apr",
+          "status": "incomplete",
+          "notes": "Virgin app shows remaining steps · scan passport + docs · virginatlantic.com → My Booking → FlyReady"
         }
       ]
     },
     {
-      "group": "🟡 THIS WEEK — Specific Windows Opening",
+      "group": "🟡 THIS WEEK — Booking Windows",
       "items": [
         {
           "task": "Book Romancecar × 3 (Andy, Sarah, Charlie)",
           "who": "Andy",
           "deadline": "Mon 9 Mar",
-          "status": "pending",
-          "notes": "EMot app · Shinjuku→Hakone-Yumoto · 8 Apr",
-          "address": "Shinjuku Station (Odakyu Line), 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
-          "mapQuery": "Shinjuku Station Odakyu Line"
+          "status": "confirmed",
+          "notes": "BOOKED · EMot app · Shinjuku→Hakone-Yumoto · Wed 8 Apr · Car 7 seats 5C/5D/6C/6D · Control E786"
         },
         {
           "task": "Jack: Book own Romancecar ticket",
           "who": "Jack",
           "deadline": "Mon 9 Mar",
+          "status": "confirmed",
+          "notes": "BOOKED · Same train as family"
+        },
+        {
+          "task": "Book Shinkansen × 3 (Andy, Sarah, Charlie)",
+          "who": "Andy",
+          "deadline": "Tue 10 Mar",
+          "status": "confirmed",
+          "notes": "BOOKED · Hikari 641 · Odawara 12:07 → Kyoto 14:12 · Car 6 · Seats 14D/14E/15D/15E · Res 40422 · Paid Revolut 9666"
+        },
+        {
+          "task": "Jack: Book own Shinkansen ticket",
+          "who": "Jack",
+          "deadline": "Tue 10 Mar",
           "status": "pending",
-          "notes": "Same train as family",
-          "address": "Shinjuku Station (Odakyu Line), 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
-          "mapQuery": "Shinjuku Station Odakyu Line"
+          "notes": "Same service as family · Klook · ~¥13,000pp"
         }
       ]
     },
@@ -690,53 +1355,108 @@
       "items": [
         {
           "task": "Buy Japan eSIMs × 4",
-          "who": "Andy",
+          "who": "All",
           "deadline": "By 2 Apr",
           "status": "pending",
           "notes": "Airalo or Holafly · 10–15 day data plan"
         },
         {
           "task": "Set up Suica cards on iPhone Wallet",
-          "who": "Andy",
+          "who": "All",
           "deadline": "By 2 Apr",
           "status": "pending",
-          "notes": "Apple Pay Suica or collect physical at Narita"
+          "notes": "Apple Pay Suica from UK · or collect physical at Narita"
         },
         {
           "task": "Download offline Google Maps",
-          "who": "Andy",
+          "who": "All",
           "deadline": "By 2 Apr",
           "status": "pending",
-          "notes": "Tokyo, Hakone, Kyoto, Osaka, Nara"
+          "notes": "Tokyo, Hakone, Kyoto, Osaka, Nara areas"
         },
         {
           "task": "Jack: Install EMot + Klook + Navitime apps",
           "who": "Jack",
           "deadline": "By 2 Apr",
           "status": "pending",
-          "notes": ""
-        },
-        {
-          "task": "VA FlyReady — complete for Andrew Evans",
-          "who": "Andy",
-          "deadline": "By 2 Apr",
-          "status": "incomplete",
-          "notes": "Virgin app shows remaining steps · scan passport + docs"
+          "notes": "So Jack can manage own bookings on the go"
         },
         {
           "task": "Pack power banks in HAND LUGGAGE",
           "who": "All",
           "deadline": "Packing day",
           "status": "reminder",
-          "notes": "Lithium batteries must be carry-on"
+          "notes": "IATA regulations — lithium batteries must be carry-on only"
         },
         {
-          "task": "Assign Hakone Freepass control numbers to Andy / Jack / Charlie",
-          "notes": "Control numbers: 2837515, 2837519, 2837521"
+          "task": "Assign Hakone Freepass control numbers",
+          "who": "Andy",
+          "deadline": "Before 8 Apr",
+          "status": "reminder",
+          "notes": "Control numbers: 2837515, 2837519, 2837521, 2837523 · Activate in EMot app at first use only"
         },
         {
-          "task": "Luggage forwarding TEN-YU Hakone → Mitsui Garden Kyoto (takuhaibin)",
-          "notes": "SE emailed TEN-YU concierge 11/03/26 · awaiting response · Need: no. of large suitcases + booking ref"
+          "task": "Luggage forwarding TEN-YU → Mitsui Garden Kyoto (Takuhaibin)",
+          "who": "Andy",
+          "deadline": "Thu 9 Apr evening",
+          "status": "reminder",
+          "notes": "Arrange at TEN-YU front desk Thu evening · ~¥1,500–2,000 per bag · Delivery Sat 11 Apr"
+        },
+        {
+          "task": "Book e-bikes for Arashiyama day (Sun 12 Apr)",
+          "who": "Andy",
+          "deadline": "Before 12 Apr",
+          "status": "pending",
+          "notes": "⚠ Book ahead — Sunday in cherry blossom season · ~¥1,500–2,000pp"
+        },
+        {
+          "task": "Book Arashiyama Nishiki restaurant — lunch Sun 12 Apr",
+          "who": "Andy",
+          "deadline": "Before 12 Apr",
+          "status": "pending",
+          "notes": "☎ 075-871-8888 · arashiyama-nishiki.com · Peak cherry blossom season — book well ahead"
+        },
+        {
+          "task": "Book Gion dinner — Sat 11 Apr",
+          "who": "Andy",
+          "deadline": "ASAP",
+          "status": "pending",
+          "notes": "⚠ Saturday in Gion during cherry blossom season fills weeks ahead · Tempura Endo or similar"
+        },
+        {
+          "task": "Book Ponto-cho dinner — Sun 12 Apr",
+          "who": "Andy",
+          "deadline": "ASAP",
+          "status": "pending",
+          "notes": "Book ahead for riverside kawayuka terrace seats"
+        },
+        {
+          "task": "Book farewell Kyoto dinner — Mon 13 Apr",
+          "who": "Andy",
+          "deadline": "Before 13 Apr",
+          "status": "pending",
+          "notes": "Traditional kaiseki or kaiseki donburi · Shijo/Gion area"
+        },
+        {
+          "task": "Book Osaka yakiniku dinner — Wed 15 Apr",
+          "who": "Andy",
+          "deadline": "Before 15 Apr",
+          "status": "pending",
+          "notes": "Proper yakiniku · ~¥4,000–5,000pp · Namba area"
+        },
+        {
+          "task": "Book final Japan dinner — Thu 16 Apr",
+          "who": "Andy",
+          "deadline": "Before 16 Apr",
+          "status": "pending",
+          "notes": "Unagi (eel) or high-end ramen · Osaka"
+        },
+        {
+          "task": "Book Sagano Romantic Train — Sun 12 Apr",
+          "who": "Andy",
+          "deadline": "Before 12 Apr",
+          "status": "pending",
+          "notes": "Torokko Saga → Kameoka · ⚠ Book in advance · ~¥880pp each way"
         }
       ]
     },
@@ -748,30 +1468,24 @@
           "who": "All",
           "deadline": "Day 1 · Narita",
           "status": "on_arrival",
-          "notes": "Check signal before leaving airport",
-          "address": "Tokyo Narita International Airport, 1-1 Furugome, Narita, Chiba 282-0004, Japan",
-          "mapQuery": "Narita Airport Tokyo"
+          "notes": "Check signal before leaving airport"
         },
         {
           "task": "Top up Suica cards",
           "who": "All",
           "deadline": "Day 1 · Narita",
           "status": "on_arrival",
-          "notes": "¥5,000–¥10,000 each · kiosk or 7-Eleven",
-          "address": "Tokyo Narita International Airport, 1-1 Furugome, Narita, Chiba 282-0004, Japan",
-          "mapQuery": "Narita Airport Tokyo"
+          "notes": "¥5,000–¥10,000 each · kiosk or 7-Eleven"
         },
         {
           "task": "Withdraw yen cash",
           "who": "Andy/Sarah",
           "deadline": "Day 1 · Narita",
           "status": "on_arrival",
-          "notes": "Japan Post ATM or 7-Eleven inside airport",
-          "address": "Tokyo Narita International Airport, 1-1 Furugome, Narita, Chiba 282-0004, Japan",
-          "mapQuery": "Narita Airport Tokyo ATM"
+          "notes": "Japan Post ATM or 7-Eleven inside airport"
         },
         {
-          "task": "Confirm Sumo Ticket pick-up",
+          "task": "Confirm Sumo ticket pick-up",
           "who": "Andy",
           "deadline": "Day 1 · Narita",
           "status": "on_arrival",
@@ -787,124 +1501,107 @@
           "who": "Andy",
           "deadline": "✅ Done",
           "status": "paid",
-          "notes": "Ref E3FYHB · VS208 13:25→10:05 Sat 4 Apr · VS209 12:25→18:50 Sat 18 Apr · 328k pts + Visa ****7377 · £2,276.76"
+          "notes": "Ref E3FYHB · VS208 LHR 13:25→ICN 10:05 Sat 4 Apr · Seats 24D/24F/25D/25F · VS209 ICN 12:25→LHR 18:50 Sat 18 Apr · Seats 23D/23F/24D/24F · £2,276.76 · 328k pts + Visa 7377"
         },
         {
-          "task": "Seoul → Tokyo Asiana OZ108 × 4",
+          "task": "Seoul → Tokyo Asiana OZ106 × 4",
           "who": "Andy",
           "deadline": "✅ Done",
           "status": "paid",
-          "notes": "Sun 5 Apr · ICN→NRT · £951.48"
+          "notes": "Sun 5 Apr · ICN T1 → NRT · £951.48 · PNR D2MKD6"
         },
         {
           "task": "Seoul arrival taxi — Tourmaker #1479-1",
           "who": "Andy",
           "deadline": "✅ Done",
           "status": "paid",
-          "notes": "Sat 4 Apr · ICN T2→Crown Park Seoul · arr 10:05 · £71.12"
+          "notes": "Sat 4 Apr · ICN T2 → Crown Park Seoul · £71.12"
         },
         {
           "task": "Seoul departure taxi — Tourmaker #1479-2",
           "who": "Andy",
           "deadline": "✅ Done",
           "status": "paid",
-          "notes": "Sun 5 Apr · Crown Park Seoul→ICN · pickup 12:00 · £71.12"
+          "notes": "Sun 5 Apr · Crown Park Seoul → ICN · pickup 12:00 · £71.12"
         },
         {
-          "task": "Narita → Shinjuku Transfer (Klook)",
+          "task": "Narita → Shinjuku Transfer (Klook bus × 4)",
           "who": "Andy",
           "deadline": "✅ Done",
           "status": "paid",
-          "notes": "Mon 5 Apr · bus × 4 · £91.28"
+          "notes": "Sun 5 Apr · £91.28"
         },
         {
           "task": "Hakone Freepass × 4",
           "who": "Sarah",
           "deadline": "✅ Done",
           "status": "paid",
-          "notes": "Digital EMot · ¥8,000pp · all Hakone transport"
+          "notes": "Digital EMot · ¥7,500pp (3-day) · all Hakone transport · Control: 2837515/2837519/2837521/2837523"
         },
         {
-          "task": "TEN-YU Ryokan, Hakone",
+          "task": "Romancecar Hakone 3 (GSE) × 4",
           "who": "Andy",
           "deadline": "✅ Done",
           "status": "paid",
-          "notes": "Wed 8–Fri 10 Apr · £1,765.14 + £5.88 at property · MC 3823",
-          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
-          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+          "notes": "Wed 8 Apr · Shinjuku 10:00→Hakone-Yumoto 11:27 · Car 7 seats 5C/5D/6C/6D · Control E786 · ¥4,600 total"
+        },
+        {
+          "task": "Shinkansen Hikari 641 × 3 (Andy, Sarah, Charlie)",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Fri 10 Apr · Odawara 12:07→Kyoto 14:12 · Car 6 · Seats 14D/14E/15D/15E · Res 40422 · ¥49,200 · Revolut 9666"
+        },
+        {
+          "task": "LHR Parking — KwikPark Meet & Greet T3",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Order ID: L4PUK-777209 · £119.18 · Dep Fri 3 Apr / Return Sat 18 Apr · Plate GL74VLV"
+        },
+        {
+          "task": "TEN-YU Ryokan Hakone",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Conf: 20251118076112540 · Wed 8–Fri 10 Apr · £1,765.14 + £5.88 at property · MC 3823"
         },
         {
           "task": "Keio Plaza Hotel Tokyo",
           "who": "Andy",
           "deadline": "✅ Booked",
           "status": "pay_at_property",
-          "notes": "Exp 73304498303010 · ¥472,014 PAY AT PROPERTY · Free breakfast · 2 rooms",
-          "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
-          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
+          "notes": "Exp 73304498303010 · ¥472,014 PAY AT PROPERTY · Free breakfast · 2 rooms · Sun 5–Wed 8 Apr"
         },
         {
-          "task": "Mitsui Garden Hotel Kyoto",
+          "task": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
           "who": "Andy",
           "deadline": "✅ Done",
           "status": "paid",
-          "notes": "Exp 20251124078897910 · £1,932.76 MC 3823 · Free breakfast · Fri 10–Tue 14 Apr",
-          "address": "Mitsui Garden Hotel Kyoto Shijo Premier, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
-          "mapQuery": "Mitsui Garden Hotel Kyoto Shijo"
+          "notes": "Exp 20251124078897910 · £1,932.76 · PAID MC 3823 · Free breakfast · 2 rooms · Fri 10–Tue 14 Apr"
         },
         {
           "task": "Candeo Hotels Osaka The Tower",
           "who": "Andy",
           "deadline": "✅ Done",
           "status": "paid",
-          "notes": "Exp 20251124078913429 · £1,579.20 MC 3823 · Free breakfast + Exec Bar Lounge · Tue 14–Fri 17 Apr",
-          "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
-          "mapQuery": "Candeo Hotels Osaka The Tower Umeda"
+          "notes": "Exp 20251124078913429 · £1,579.20 · PAID MC 3823 · Free breakfast + Exec Bar Lounge · 2 rooms · Tue 14–Fri 17 Apr"
         },
         {
           "task": "Crown Park Hotel Seoul",
           "who": "Andy",
           "deadline": "✅ Done",
           "status": "paid",
-          "notes": "Exp 25301968 · £388.78 MC 3823 · Breakfast for 2 · Sat 4–Sun 5 Apr",
-          "address": "Crown Park Hotel, 5 Namsandong 2-ga, Jung-gu, Seoul 04605, South Korea",
-          "mapQuery": "Crown Park Hotel Seoul Jung-gu"
+          "notes": "Exp 25301968 · £388.78 · PAID MC 3823 · Breakfast for 2 · Sat 4–Sun 5 Apr"
         },
         {
           "task": "Grand Hyatt Incheon (airport hotel)",
           "who": "Andy",
           "deadline": "✅ Booked",
           "status": "pay_at_property",
-          "notes": "Exp 150513RA052227 · £277.04 · PAY AT PROPERTY · Fri 17–Sat 18 Apr",
-          "address": "Grand Hyatt Incheon, 208 Yeongjonghaean-ro 321beon-gil, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Grand Hyatt Incheon Airport Hotel"
-        },
-        {
-          "task": "Shinkansen Hikari 641 × 3 (Andy, Sarah, Charlie) — Odawara → Kyoto",
-          "notes": "Booked JR website 10/03/26 · Paid Revolut · Jack books own"
+          "notes": "Exp 150513RA052227 · £277.04 · PAY AT PROPERTY · Fri 17–Sat 18 Apr"
         }
       ]
     }
-  ],
-  "costSummary": {
-    "currency": "GBP",
-    "exchangeRate": "¥1 = £0.0047523456",
-    "totalEstimatedGBP": "~£15,800",
-    "flights": 2276.76,
-    "hotels": {
-      "keioPlazaTokyo_GBP_estimate": 2244,
-      "keioPlazaTokyo_JPY": 472014,
-      "tenYuHakone": 1777,
-      "mitsuiGardenKyoto": 1932.76,
-      "candeoOsaka": 1579.2,
-      "crownParkSeoul": 388.78,
-      "grandHyattIncheon": 277.04
-    },
-    "transfers": {
-      "lhrParking": 119.18,
-      "tourmaker1479_1": 71.12,
-      "tourmaker1479_2": 71.12,
-      "naritaShinjuku": 91.28,
-      "asianaFlights": 951.48
-    }
-  }
+  ]
 }
