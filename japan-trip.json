@@ -1,1223 +1,1623 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🇯🇵 Japan Trip 2026 — Evans Family</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
-
-/* ── THEME VARIABLES ── */
-[data-theme="dark"] {
-  --ink:#0f0f1a; --ink2:#1a1a2e; --ink3:#12121f;
-  --blossom:#e8829a; --gold:#c9a84c; --jade:#4a9e8e;
-  --white:#fdfbf7; --muted:#8888a0; --border:rgba(255,255,255,0.08);
-  --card-bg:rgba(255,255,255,0.03); --card-hover:rgba(255,255,255,0.06);
-  --item-border:rgba(255,255,255,0.05); --shadow:rgba(0,0,0,0.4);
+{
+  "tripTitle": "🇯🇵 Japan Trip 2026",
+  "tripDates": "Fri 3 Apr – Sat 18 Apr 2026",
+  "lastUpdated": "2026-03-20",
+  "days": [
+    {
+      "date": "2026-04-03",
+      "label": "Day 0 — Friday 3 Apr",
+      "location": "London Heathrow, UK",
+      "locationAddress": "London Heathrow Airport, Hounslow TW6 1QG, UK",
+      "mapQuery": "London Heathrow Airport",
+      "items": [
+        {
+          "time": "11:00",
+          "activity": "KwikPark Meet & Greet — T3",
+          "status": "confirmed",
+          "notes": "Order ID: L4PUK-777209 · Plate: GL74VLV · Call 07850366784 when 30 mins away · T3 Short Stay Level 4 Row B · Airport Access Fee £7.50",
+          "detail": "Order ID: L4PUK-777209\nPlate: GL74VLV\n📞 Call 07850366784 when 30 mins from airport\n➡ T3 Short Stay Car Park · Level 4 · Row B\nSign vehicle inspection document on handover\n⚠ Airport Access Fee £7.50 payable on drop-off\n⚠ ULEZ payable for Fri 3 Apr\n\nReturn instructions:\n📞 Call 1 — as soon as you land\n📞 Call 2 — after collecting luggage\n➡ T3 Short Stay Car Park · Level 4 · Row B",
+          "address": "KwikPark Terminal 3, Heathrow Airport, Hounslow TW6 1QG, UK",
+          "mapQuery": "KwikPark Heathrow Terminal 3"
+        },
+        {
+          "time": "10:30",
+          "activity": "VS208 Check-in — T3",
+          "status": "confirmed",
+          "notes": "Virgin Atlantic VS208 · LHR 13:25 → ICN 10:05 Sat 4 Apr · Seats 24D/24F/25D/25F · Ref E3FYHB",
+          "detail": "Flight: Virgin Atlantic VS208\nRef: E3FYHB\nRoute: LHR T3 → ICN T2\nDeparts: 13:25 Fri 3 Apr | Arrives: 10:05 Sat 4 Apr\nAircraft: Boeing 787-9 · Seats: 24D/24F/25D/25F\n⚠ FlyReady: Complete at virginatlantic.com → My Booking\n⚠ Online check-in opens 24hrs before departure\n⚠ Gates close 30 mins before departure",
+          "address": "London Heathrow Airport Terminal 3, Hounslow TW6 1QG, UK",
+          "mapQuery": "Heathrow Terminal 3"
+        },
+        {
+          "time": "13:25",
+          "activity": "Depart LHR — VS208 Virgin Atlantic",
+          "status": "confirmed",
+          "notes": "Boeing 787-9 · Direct to Seoul Incheon T2 · ~11h · Ref E3FYHB",
+          "address": "London Heathrow Airport Terminal 3, Hounslow TW6 1QG, UK",
+          "mapQuery": "Heathrow Terminal 3"
+        }
+      ],
+      "title": "London → Seoul"
+    },
+    {
+      "date": "2026-04-04",
+      "label": "Day 1 — Saturday 4 Apr",
+      "location": "Seoul, South Korea",
+      "locationAddress": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
+      "mapQuery": "Incheon International Airport Terminal 2",
+      "items": [
+        {
+          "time": "10:05",
+          "activity": "Arrive Seoul Incheon ICN — Terminal 2",
+          "status": "confirmed",
+          "notes": "VS208 from LHR. E-gates available for UK passports. Meet Tourmaker driver — EVANS FAMILY banner.",
+          "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
+          "mapQuery": "Incheon International Airport Terminal 2"
+        },
+        {
+          "time": "10:05–11:15",
+          "activity": "Immigration · Baggage · Meet driver",
+          "status": "planning",
+          "notes": "Allow 60–70 mins for immigration, baggage reclaim and customs. Driver waits 1h30 from landing.",
+          "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
+          "mapQuery": "Incheon International Airport Terminal 2"
+        },
+        {
+          "time": "~11:30",
+          "activity": "Tourmaker taxi — ICN T2 → Crown Park Hotel Seoul",
+          "status": "confirmed",
+          "notes": "Ref #1479-1 · 5-seater · Banner: EVANS FAMILY · WhatsApp driver Thu 3 Apr ~9pm",
+          "detail": "Booking Ref: #1479-1\n➡ EVANS FAMILY banner at arrivals hall\n📞 WhatsApp driver eve Thu 3 Apr ~9pm to confirm pickup\nTransfer: ICN T2 → Crown Park Hotel\nCost: £71.12",
+          "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
+          "mapQuery": "Incheon International Airport Terminal 2"
+        },
+        {
+          "time": "12:30",
+          "activity": "Crown Park Hotel Seoul — drop bags",
+          "status": "planning",
+          "notes": "Check-in not until 3pm. Hotel will store luggage.",
+          "address": "Crown Park Hotel, 5 Namsandong 2-ga, Jung-gu, Seoul 04605, South Korea",
+          "mapQuery": "Crown Park Hotel Seoul"
+        },
+        {
+          "time": "13:00",
+          "activity": "Lunch — Myeongdong / Namdaemun area",
+          "status": "planning",
+          "notes": "Namdaemun Market is 5 mins walk. Or Myeongdong for casual street food.",
+          "address": "Myeongdong Street, Jung-gu, Seoul 04534, South Korea",
+          "mapQuery": "Myeongdong Street Seoul Jung-gu"
+        },
+        {
+          "time": "15:00",
+          "activity": "Check in — Crown Park Hotel Seoul",
+          "status": "confirmed",
+          "notes": "Booked via Expedia. Central location near Myeongdong, Namdaemun Market, Namsan Hill.",
+          "detail": "Expedia Conf: 25301968\nSat 4 Apr → Sun 5 Apr (1 night)\nCost: £388.78 · PAID MC 3823\nBreakfast for 2 included\nCheck-in from 3pm",
+          "address": "Crown Park Hotel, 5 Namsandong 2-ga, Jung-gu, Seoul 04605, South Korea",
+          "mapQuery": "Crown Park Hotel Seoul"
+        },
+        {
+          "time": "18:30",
+          "activity": "Myeongdong — street food & shopping",
+          "status": "planning",
+          "notes": "Evening street stalls — tteokbokki, hotteok, Korean fried chicken. K-beauty shops.",
+          "address": "Myeongdong Street, Jung-gu, Seoul 04534, South Korea",
+          "mapQuery": "Myeongdong Street Seoul Jung-gu"
+        },
+        {
+          "time": "20:00",
+          "activity": "Korean BBQ dinner",
+          "status": "optional",
+          "notes": "Samgyeopsal (pork belly) or galbi (beef ribs). ₩60,000–80,000 for 4.",
+          "address": "Myeongdong Street, Jung-gu, Seoul 04534, South Korea",
+          "mapQuery": "Myeongdong Street Seoul Jung-gu"
+        }
+      ],
+      "title": "Seoul Arrival"
+    },
+    {
+      "date": "2026-04-05",
+      "label": "Day 2 — Sunday 5 Apr",
+      "location": "Seoul → Tokyo",
+      "locationAddress": "Crown Park Hotel, 5 Namsandong 2-ga, Jung-gu, Seoul 04605, South Korea",
+      "mapQuery": "Crown Park Hotel Seoul",
+      "items": [
+        {
+          "time": "09:00",
+          "activity": "Breakfast — Crown Park Hotel",
+          "status": "included",
+          "notes": "Last Korean morning. Sit-down breakfast before the journey.",
+          "address": "Crown Park Hotel, 5 Namsandong 2-ga, Jung-gu, Seoul 04605, South Korea",
+          "mapQuery": "Crown Park Hotel Seoul"
+        },
+        {
+          "time": "10:30",
+          "activity": "Final Seoul hour",
+          "status": "free",
+          "notes": "Quick walk to Namdaemun Market for last-minute Korean snacks or souvenirs. 5 mins from hotel.",
+          "address": "Namdaemun Market, 21 Namdaemunsijang 4-gil, Jung-gu, Seoul 04532, South Korea",
+          "mapQuery": "Namdaemun Market Seoul"
+        },
+        {
+          "time": "12:00",
+          "activity": "Tourmaker taxi — Crown Park → ICN T1",
+          "status": "confirmed",
+          "notes": "Ref #1479-2 · 5-seater · Banner: EVANS FAMILY · Driver WhatsApp eve Sat 4 Apr ~9pm. Journey ~60 mins.",
+          "detail": "Booking Ref: #1479-2\n➡ EVANS FAMILY banner at hotel\nPickup: 12:00 from Crown Park Hotel lobby\n📞 WhatsApp driver eve Sat 4 Apr ~9pm to confirm\nTransfer: Crown Park → ICN\nCost: £71.12",
+          "address": "Crown Park Hotel, 5 Namsandong 2-ga, Jung-gu, Seoul 04605, South Korea",
+          "mapQuery": "Crown Park Hotel Seoul"
+        },
+        {
+          "time": "13:30",
+          "activity": "ICN Terminal 1 — Check-in Asiana OZ106",
+          "status": "planning",
+          "notes": "Asiana Airlines counter, Terminal 1. Allow 30 mins check-in plus 20–30 mins security.",
+          "detail": "Flight: Asiana OZ106\nRoute: ICN T1 → NRT T1\nDate: Sunday 5 April 2026\nDeparts: 15:30 | Arrives: 17:40\nPNR: D2MKD6 · Cost: £951.48 total",
+          "address": "Incheon International Airport Terminal 1, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
+          "mapQuery": "Incheon International Airport Terminal 1"
+        },
+        {
+          "time": "15:30",
+          "activity": "Depart ICN — Asiana OZ106 → Tokyo Narita",
+          "status": "confirmed",
+          "notes": "~2h 10m. PNR: D2MKD6 · PAID £951.48",
+          "address": "Incheon International Airport Terminal 1, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
+          "mapQuery": "Incheon International Airport Terminal 1"
+        },
+        {
+          "time": "17:40",
+          "activity": "Arrive Tokyo Narita NRT — Terminal 1",
+          "status": "planning",
+          "notes": "Allow 30–45 mins at immigration. IC card machines near exits for Suica cards.",
+          "address": "Tokyo Narita International Airport, 1-1 Furugome, Narita, Chiba 282-0004, Japan",
+          "mapQuery": "Narita International Airport Tokyo"
+        },
+        {
+          "time": "18:30",
+          "activity": "Narita → Shinjuku transfer (Klook bus × 4)",
+          "status": "confirmed",
+          "notes": "PAID · £91.28 · Direct bus to Shinjuku",
+          "detail": "Klook Transfer — PAID\nCost: £91.28 for 4\nDirect bus NRT → Busta Shinjuku Bus Terminal",
+          "address": "Tokyo Narita International Airport, 1-1 Furugome, Narita, Chiba 282-0004, Japan",
+          "mapQuery": "Narita International Airport Tokyo"
+        },
+        {
+          "time": "21:00",
+          "activity": "Check in — Keio Plaza Hotel Tokyo",
+          "status": "confirmed",
+          "notes": "3 nights. West Shinjuku — central for metro, walkable to Kabukicho and Golden Gai.",
+          "detail": "Expedia Itinerary: 73304498303010\n¥472,014 · PAY AT PROPERTY\nFree breakfast · 2 rooms\nCheck-in: Sun 5 Apr | Check-out: Wed 8 Apr\n➡ Show Expedia confirmation at check-in",
+          "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
+          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
+        },
+        {
+          "time": "21:30",
+          "activity": "Dinner — Omoide Yokocho (Memory Lane)",
+          "status": "planning",
+          "notes": "2 min walk from Keio Plaza. Narrow alleyway of tiny yakitori bars. Cash only.",
+          "address": "Omoide Yokocho, Shinjuku-ku, Tokyo 160-0021, Japan",
+          "mapQuery": "Omoide Yokocho Memory Lane Tokyo"
+        }
+      ],
+      "title": "Seoul → Tokyo"
+    },
+    {
+      "date": "2026-04-06",
+      "label": "Day 3 — Monday 6 Apr",
+      "location": "Tokyo",
+      "locationAddress": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
+      "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku",
+      "items": [
+        {
+          "time": "07:30",
+          "activity": "Breakfast at Keio Plaza",
+          "status": "included",
+          "notes": "Free breakfast included.",
+          "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
+          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
+        },
+        {
+          "time": "10:00",
+          "activity": "Shibuya Crossing & Harajuku",
+          "status": "planning",
+          "notes": "JR Yamanote Line from Shinjuku. Takeshita Street · Meiji Shrine · Shibuya Crossing.",
+          "address": "Shibuya Crossing, 2-2-1 Dogenzaka, Shibuya-ku, Tokyo 150-0043, Japan",
+          "mapQuery": "Shibuya Crossing Tokyo"
+        },
+        {
+          "time": "14:00",
+          "activity": "Senso-ji Temple, Asakusa",
+          "status": "planning",
+          "notes": "Oldest Tokyo temple (645 AD). Kaminarimon Gate, side streets to beat crowds. Free entry.",
+          "address": "Senso-ji Temple, 2-3-1 Asakusa, Taito-ku, Tokyo 111-0032, Japan",
+          "mapQuery": "Senso-ji Temple Asakusa Tokyo"
+        },
+        {
+          "time": "19:00",
+          "activity": "Dinner — Kabukicho / Shinjuku",
+          "status": "planning",
+          "notes": "Neon-lit entertainment district. Ramen, yakitori, izakaya.",
+          "address": "Shinjuku Station, 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
+          "mapQuery": "Shinjuku Station Tokyo"
+        },
+        {
+          "time": "20:30",
+          "activity": "Golden Gai",
+          "status": "planning",
+          "notes": "Six alleys of tiny themed bars — 200 venues. Cash only in most bars.",
+          "address": "Golden Gai, Kabukicho, Shinjuku-ku, Tokyo 160-0021, Japan",
+          "mapQuery": "Golden Gai Shinjuku Tokyo"
+        }
+      ],
+      "title": "Tokyo — Shibuya · Harajuku · Asakusa"
+    },
+    {
+      "date": "2026-04-07",
+      "label": "Day 4 — Tuesday 7 Apr",
+      "location": "Tokyo",
+      "locationAddress": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
+      "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku",
+      "items": [
+        {
+          "time": "07:30",
+          "activity": "Breakfast at Keio Plaza",
+          "status": "included",
+          "notes": "Early start — fuel up before Sumo.",
+          "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
+          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
+        },
+        {
+          "time": "07:30",
+          "activity": "Sumo Morning Training",
+          "status": "booked",
+          "notes": "⚠ Awaiting confirmation from Keio Plaza concierge · Oshiage stable · One of Tokyo's most memorable mornings.",
+          "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
+          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
+        },
+        {
+          "time": "10:00",
+          "activity": "Tsukiji Outer Market",
+          "status": "planning",
+          "notes": "Tamagoyaki, uni, grilled scallops. Go stall to stall — most sell out by late morning.",
+          "address": "Tsukiji Outer Market, 4-16-2 Tsukiji, Chuo-ku, Tokyo 104-0045, Japan",
+          "mapQuery": "Tsukiji Outer Market Tokyo"
+        },
+        {
+          "time": "14:00",
+          "activity": "Ueno Park — Cherry Blossom Viewing",
+          "status": "free",
+          "notes": "One of Tokyo's best hanami spots in early April.",
+          "address": "Ueno Park, 5-20 Ueno Koen, Taito-ku, Tokyo 110-0007, Japan",
+          "mapQuery": "Ueno Park Tokyo"
+        },
+        {
+          "time": "18:00",
+          "activity": "Dinner — Shibuya",
+          "status": "planning",
+          "notes": "Ramen, izakaya or yakiniku. Options: Uobei (conveyor belt sushi), Han no Daidokoro (yakiniku).",
+          "address": "Shibuya Crossing, 2-2-1 Dogenzaka, Shibuya-ku, Tokyo 150-0043, Japan",
+          "mapQuery": "Shibuya Crossing Tokyo"
+        }
+      ],
+      "title": "Tokyo — Sumo · Tsukiji · Ueno"
+    },
+    {
+      "date": "2026-04-08",
+      "label": "Day 5 — Wednesday 8 Apr",
+      "location": "Tokyo → Hakone",
+      "locationAddress": "Shinjuku Station, 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
+      "mapQuery": "Shinjuku Station Tokyo",
+      "items": [
+        {
+          "time": "07:30",
+          "activity": "Breakfast — Keio Plaza",
+          "status": "included",
+          "notes": "Last Tokyo morning.",
+          "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
+          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
+        },
+        {
+          "time": "08:30",
+          "activity": "Pack & check out",
+          "status": "planning",
+          "notes": "Leave bags at hotel reception until departure.",
+          "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
+          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
+        },
+        {
+          "time": "09:20",
+          "activity": "Hakone Freepass — Activate in EMot app (3-day × 4)",
+          "status": "confirmed",
+          "notes": "Pre-purchased via EMot — ¥7,500/person. Activate in EMot app on first use at Shinjuku — do NOT activate in advance.",
+          "detail": "Digital Hakone Freepass — BOOKED (×4 passes)\nFirst day of use: Wed 8 Apr 2026\nPrice: ¥7,500pp (3-day adult) | Total: ¥30,000\nValid: 8–10 Apr · All Hakone transport + Odakyu Shinjuku→Odawara\n\nControl numbers (EMot: sarahevansemail@googlemail.com):\n  Pass 1: 2837515\n  Pass 2: 2837519\n  Pass 3: 2837521\n  Pass 4: 2837523\n\n⚠ Activate in EMot app at first use only — do NOT activate early",
+          "address": "Shinjuku Station, 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
+          "mapQuery": "Shinjuku Station Tokyo"
+        },
+        {
+          "time": "10:00",
+          "activity": "Romancecar Hakone 3 GSE — Shinjuku → Hakone-Yumoto",
+          "status": "confirmed",
+          "notes": "Car 7, seats 5C/5D/6C/6D — surcharge only, base fare covered by Freepass.",
+          "detail": "Romancecar: Hakone 3 (GSE) — BOOKED\nDate: Wed 8 Apr\nDeparts: 10:00 Shinjuku → Arrives: 11:27 Hakone-Yumoto\nSeats: Car 7 — 5C, 5D, 6C, 6D\nCost: ¥4,600 total (surcharge — base fare via Freepass)\nControl no: E786\nEMot: sarahevansemail@googlemail.com",
+          "address": "Shinjuku Station, 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
+          "mapQuery": "Shinjuku Station Tokyo"
+        },
+        {
+          "time": "11:27",
+          "activity": "Arrive Hakone-Yumoto — Tozan Train to Gora",
+          "status": "included",
+          "notes": "Rack railway through cedar forest. Covered by Freepass.",
+          "address": "Hakone-Yumoto Station, 707 Yumoto, Hakone, Ashigarashimo-gun, Kanagawa 250-0311, Japan",
+          "mapQuery": "Hakone-Yumoto Station"
+        },
+        {
+          "time": "12:10",
+          "activity": "Arrive TEN-YU — drop bags",
+          "status": "planning",
+          "notes": "Free shuttle from Gora Station Stop #1 (every 15–20 min). Reception holds bags until 3pm.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "12:50–14:50",
+          "activity": "Hakone Open Air Museum",
+          "status": "planning",
+          "notes": "120+ sculptures incl. Rodin, Moore, Picasso. Outdoor foot onsen at end. Freepass discount applies.",
+          "address": "Hakone Open Air Museum, 1121 Ninotaira, Hakone, Kanagawa 250-0492, Japan",
+          "mapQuery": "Hakone Open Air Museum"
+        },
+        {
+          "time": "15:00",
+          "activity": "Check in — TEN-YU Ryokan Hakone",
+          "status": "confirmed",
+          "notes": "Superior Rooms with private open-air rotenburo bath. Yukatas provided.",
+          "detail": "Ryokan: TEN-YU (Hakone Kowakien)\nConf: 20251118076112540 · Expedia: 73304509243260\nCheck-in: Wed 8 Apr | Check-out: Fri 10 Apr (2 nights)\nRoom 1: Andrew Evans (2 adults) · Room 2: Andrew Evans (1 adult + 1 child)\nCost: £1,765.14 + £5.88 at property · MC 3823\nF&B credit ¥5,605 per room · Buffet dinner from 5pm\n⚠ Arrange Takuhaibin luggage forwarding Thu evening",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "18:30",
+          "activity": "Buffet Kaiseki Dinner",
+          "status": "included",
+          "notes": "¥5,605 F&B credit per room. Buffet style. Wear yukata.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "Evening",
+          "activity": "Private open-air rotenburo onsen",
+          "status": "included",
+          "notes": "In-room outdoor hot spring bath. Best after dinner.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        }
+      ],
+      "title": "Tokyo → Hakone"
+    },
+    {
+      "date": "2026-04-09",
+      "label": "Day 6 — Thursday 9 Apr",
+      "location": "Hakone",
+      "locationAddress": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+      "mapQuery": "Ten-yu Ryokan Hakone",
+      "items": [
+        {
+          "time": "08:30",
+          "activity": "Breakfast — TEN-YU",
+          "status": "included",
+          "notes": "Full kaiseki/Western buffet. Take your time.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "10:00",
+          "activity": "Hotel shuttle → Gora Station",
+          "status": "free",
+          "notes": "Free shuttle every 15–20 mins. Day 2 of 3-day Freepass.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "10:15",
+          "activity": "Gora → Sounzan by Cable Car",
+          "status": "included",
+          "notes": "Hakone Tozan Cable Car through cedar forest. Covered by Freepass. ⚠ Check ropeway status on the morning — occasionally closes due to volcanic activity.",
+          "address": "Sounzan Station, Gora, Hakone, Kanagawa 250-0408, Japan",
+          "mapQuery": "Hakone Ropeway Sounzan Station"
+        },
+        {
+          "time": "10:30",
+          "activity": "Hakone Ropeway: Sounzan → Owakudani",
+          "status": "included",
+          "notes": "Aerial gondola over volcanic ridgeline. Mt. Fuji framed ahead on clear mornings. Covered by Freepass.",
+          "address": "Sounzan Station, Gora, Hakone, Kanagawa 250-0408, Japan",
+          "mapQuery": "Hakone Ropeway Sounzan Station"
+        },
+        {
+          "time": "10:55–12:00",
+          "activity": "Owakudani — Volcanic Valley + Black Eggs",
+          "status": "planning",
+          "notes": "Active volcanic zone. Black eggs (kurotamago, ¥600 per 5-egg bag). Legend says each adds 7 years to your life.",
+          "address": "Owakudani, Hakone, Ashigarashimo District, Kanagawa 250-0631, Japan",
+          "mapQuery": "Owakudani Hakone volcanic valley"
+        },
+        {
+          "time": "12:10",
+          "activity": "Ropeway: Owakudani → Togendai",
+          "status": "included",
+          "notes": "Final descent to Lake Ashi. Covered by Freepass.",
+          "address": "Owakudani, Hakone, Ashigarashimo District, Kanagawa 250-0631, Japan",
+          "mapQuery": "Owakudani Hakone volcanic valley"
+        },
+        {
+          "time": "12:50",
+          "activity": "Lake Ashi — Hakone Pirate Ship Cruise",
+          "status": "included",
+          "notes": "Iconic sightseeing cruise. Fuji reflected in water on clear days. Disembark at Moto-Hakone. Covered by Freepass.",
+          "address": "Togendai Pier, Hakone, Ashigarashimo District, Kanagawa 250-0522, Japan",
+          "mapQuery": "Lake Ashi Togendai Pier Hakone"
+        },
+        {
+          "time": "13:35",
+          "activity": "Hakone Shrine",
+          "status": "free",
+          "notes": "Ancient cedar path to the famous red torii gate rising from the lake. Free to enter.",
+          "address": "Hakone Shrine, 80-1 Motohakone, Hakone, Ashigarashimo-gun, Kanagawa 250-0522, Japan",
+          "mapQuery": "Hakone Shrine Moto-Hakone"
+        },
+        {
+          "time": "14:15",
+          "activity": "Amazake-chaya Teahouse",
+          "status": "planning",
+          "notes": "350-year-old thatched teahouse on the old Tokaido Highway. Warm amazake and mochi ~¥500pp.",
+          "address": "Amazake-chaya, 395-1 Moto-Hakone, Hakone, Kanagawa 250-0522, Japan",
+          "mapQuery": "Amazake-chaya Hakone"
+        },
+        {
+          "time": "14:45",
+          "activity": "Old Tokaido Cedar Avenue",
+          "status": "free",
+          "notes": "1km Edo-era road flanked by 400-year-old cedar trees. Free. Connects Moto-Hakone to Hakone-machi. Allow 30 mins.",
+          "address": "Hakone Shrine, 80-1 Motohakone, Hakone, Ashigarashimo-gun, Kanagawa 250-0522, Japan",
+          "mapQuery": "Hakone Shrine Moto-Hakone"
+        },
+        {
+          "time": "15:30",
+          "activity": "Lunch — lakeside restaurant",
+          "status": "planning",
+          "notes": "Yuba (silky tofu skin) is a local Hakone speciality.",
+          "address": "Hakone Shrine, 80-1 Motohakone, Hakone, Ashigarashimo-gun, Kanagawa 250-0522, Japan",
+          "mapQuery": "Hakone Shrine Moto-Hakone"
+        },
+        {
+          "time": "16:30",
+          "activity": "Bus back → TEN-YU area",
+          "status": "included",
+          "notes": "Hakone Tozan bus — covered by Freepass.",
+          "address": "Hakone-Yumoto Station, 707 Yumoto, Hakone, Ashigarashimo-gun, Kanagawa 250-0311, Japan",
+          "mapQuery": "Hakone-Yumoto Station"
+        },
+        {
+          "time": "17:30",
+          "activity": "Return to TEN-YU — rotenburo",
+          "status": "included",
+          "notes": "Soak in the private open-air bath before dinner.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "19:00",
+          "activity": "Kaiseki buffet dinner — TEN-YU",
+          "status": "included",
+          "notes": "Multi-course buffet. Included in room rate. Final night at the ryokan.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "After dinner",
+          "activity": "⚠ Arrange Takuhaibin luggage forwarding",
+          "status": "planning",
+          "notes": "Ask front desk to forward luggage to Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji for Sat 11 Apr delivery. ~¥1,500–2,000 per bag. Must arrange tonight.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        }
+      ],
+      "title": "Hakone — Ropeway · Lake Ashi · Shrine"
+    },
+    {
+      "date": "2026-04-10",
+      "label": "Day 7 — Friday 10 Apr",
+      "location": "Hakone → Kyoto",
+      "locationAddress": "TEN-YU Ryokan, 1297 Sengokuhara, Hakone, Ashigarashimo-gun, Kanagawa 250-0631, Japan",
+      "mapQuery": "Ten-yu Ryokan Hakone",
+      "items": [
+        {
+          "time": "09:00",
+          "activity": "Final breakfast — TEN-YU",
+          "status": "included",
+          "notes": "Last morning at the ryokan. Check out by 10:30.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "09:30",
+          "activity": "Final rotenburo + pack",
+          "status": "included",
+          "notes": "Last soak. Packed and ready to leave by 10:30.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "10:30",
+          "activity": "Check out TEN-YU",
+          "status": "planning",
+          "notes": "Luggage forwarded to Kyoto via Takuhaibin. Travel with day bags only. 3-day Freepass active — Day 3.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "10:40",
+          "activity": "Hotel shuttle → Gora Station",
+          "status": "free",
+          "notes": "Last shuttle ride. Must depart by 10:40 to catch 12:07 Shinkansen.",
+          "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "10:50",
+          "activity": "Gora → Hakone-Yumoto (Tozan Railway)",
+          "status": "included",
+          "notes": "Mountain railway descent. Last journey on Freepass.",
+          "address": "Hakone-Yumoto Station, 707 Yumoto, Hakone, Ashigarashimo-gun, Kanagawa 250-0311, Japan",
+          "mapQuery": "Hakone-Yumoto Station"
+        },
+        {
+          "time": "11:33",
+          "activity": "Hakone-Yumoto → Odawara (Odakyu)",
+          "status": "included",
+          "notes": "Final Freepass journey. Transfer to JR Shinkansen platforms at Odawara — upstairs.",
+          "address": "Hakone-Yumoto Station, 707 Yumoto, Hakone, Ashigarashimo-gun, Kanagawa 250-0311, Japan",
+          "mapQuery": "Hakone-Yumoto Station"
+        },
+        {
+          "time": "11:48",
+          "activity": "Arrive Odawara — collect tickets + grab ekiben",
+          "status": "planning",
+          "notes": "Go to JR Central ticket machines (NOT JR East). Insert physical Revolut Mastercard ending 9666 + 4-digit ID to collect tickets. Then grab station bento boxes.",
+          "detail": "⚠ COLLECT TICKETS AT JR CENTRAL MACHINES ONLY\nPhysical Revolut Mastercard ending 9666 required\n4-digit card ID also required\nDo NOT use JR East machines",
+          "address": "Odawara Station, 1-1 Jonai, Odawara, Kanagawa 250-0011, Japan",
+          "mapQuery": "Odawara Station Shinkansen Kanagawa"
+        },
+        {
+          "time": "12:07",
+          "activity": "Hikari 641: Odawara → Kyoto",
+          "status": "confirmed",
+          "notes": "Ordinary Car, Car 6. Seats 14D, 14E, 15D, 15E. Mt. Fuji visible on right (E seats) first ~30 mins.",
+          "detail": "JR CENTRAL — BOOKED\nReservation No: 40422\nReceipt ID: ADK3908L\nTrain: Hikari 641\nOdawara 12:07 → Kyoto 14:12\nOrdinary Car — CAR 6\nSeats: 14-D, 14-E, 15-D, 15-E\nTotal: ¥49,200 (¥12,300pp)\nPaid: Revolut Mastercard ending 9666\n⚠ Bring physical Revolut card to collect tickets",
+          "address": "Odawara Station, 1-1 Jonai, Odawara, Kanagawa 250-0011, Japan",
+          "mapQuery": "Odawara Station Shinkansen Kanagawa"
+        },
+        {
+          "time": "14:12",
+          "activity": "Arrive Kyoto Station",
+          "status": "planning",
+          "notes": "One of Japan's most dramatic station buildings.",
+          "address": "Kyoto Station, Karasuma-dori, Shimogyo-ku, Kyoto 600-8216, Japan",
+          "mapQuery": "Kyoto Station"
+        },
+        {
+          "time": "14:20",
+          "activity": "Subway + walk to hotel",
+          "status": "planning",
+          "notes": "Karasuma Line northbound → Shijo Station. Follow underground path east along Shijo Street towards Kawaramachi. Exit Teramachi Street (Exit 10) — 1 min walk to hotel.",
+          "address": "Kyoto Station, Karasuma-dori, Shimogyo-ku, Kyoto 600-8216, Japan",
+          "mapQuery": "Kyoto Station"
+        },
+        {
+          "time": "~14:30",
+          "activity": "Check in — Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
+          "status": "confirmed",
+          "notes": "4-night stay. Hotel built around 500-year-old Jokyoji Temple. Large public bath free for guests (15:00–10:00). Walking distance to Gion, Nishiki Market, Ponto-cho.",
+          "detail": "EXPEDIA BOOKED\nMitsui Garden Hotel Kyoto Kawaramachi Jokyoji\nExp: 20251124078897910\n4 nights: Fri 10 – Tue 14 April · 2 rooms · 4 guests\nTotal: £1,932.76 · PAID MC 3823\nFree breakfast included\n➡ Show Expedia booking confirmation at check-in\nNearest station: Kyoto-Kawaramachi (Hankyu) — 1 min walk\nPublic bath: Free for guests, 15:00–10:00",
+          "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+        },
+        {
+          "time": "19:00",
+          "activity": "Dinner — Ponto-cho or Gion",
+          "status": "planning",
+          "notes": "Atmospheric riverside alley dining. Cherry blossom season — some restaurants open kawayuka terraces over the Kamo River.",
+          "address": "Pontocho, Nakagyo-ku, Kyoto 604-8094, Japan",
+          "mapQuery": "Pontocho alley Kyoto"
+        }
+      ],
+      "title": "Hakone → Kyoto"
+    },
+    {
+      "date": "2026-04-11",
+      "label": "Day 8 — Saturday 11 Apr",
+      "location": "Kyoto",
+      "locationAddress": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+      "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
+      "items": [
+        {
+          "time": "08:30",
+          "activity": "Breakfast — Mitsui Garden Hotel",
+          "status": "included",
+          "notes": "Hotel breakfast. Sanga Ono restaurant — seasonal Japanese set or Western option.",
+          "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+        },
+        {
+          "time": "09:00",
+          "activity": "Subway: Shijo → Kitaoji",
+          "status": "planning",
+          "notes": "Karasuma Line northbound to Kitaoji (¥260pp). Try to arrive at Kinkaku-ji by 09:30 before tour buses.",
+          "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+        },
+        {
+          "time": "09:30–10:30",
+          "activity": "Kinkaku-ji — Golden Pavilion",
+          "status": "planning",
+          "notes": "Gold-leaf pavilion reflecting in Mirror Pond. ¥1,200pp. Arrive early before crowds.",
+          "address": "Kinkaku-ji Temple, 1 Kinkakujicho, Kita Ward, Kyoto 603-8361, Japan",
+          "mapQuery": "Kinkaku-ji Golden Pavilion Kyoto"
+        },
+        {
+          "time": "11:00–11:50",
+          "activity": "Ryoan-ji Temple — Rock Garden",
+          "status": "planning",
+          "notes": "Famous karesansui dry rock garden — 15 stones, no two ever visible at once. ¥800pp.",
+          "address": "Ryoan-ji Temple, 13 Ryoanjigoranocho, Ukyo-ku, Kyoto 616-8001, Japan",
+          "mapQuery": "Ryoanji rock garden Kyoto"
+        },
+        {
+          "time": "12:15",
+          "activity": "Bus/taxi: Ryoan-ji → Ginkaku-ji",
+          "status": "planning",
+          "notes": "Bus (Kyoto bus day pass ¥700/person) or taxi ~¥1,500. Allow 45–50 min on Saturday.",
+          "address": "Ryoan-ji Temple, 13 Ryoanjigoranocho, Ukyo-ku, Kyoto 616-8001, Japan",
+          "mapQuery": "Ryoanji rock garden Kyoto"
+        },
+        {
+          "time": "13:00–13:50",
+          "activity": "Ginkaku-ji — Silver Pavilion",
+          "status": "planning",
+          "notes": "Sea of Silver Sand moss garden. ¥1,100pp. Quieter than Kinkaku-ji.",
+          "address": "Ginkaku-ji Temple, 2 Ginkakujicho, Sakyo-ku, Kyoto 606-8402, Japan",
+          "mapQuery": "Ginkaku-ji Silver Pavilion Kyoto"
+        },
+        {
+          "time": "13:50–15:00",
+          "activity": "Philosopher's Path — walk south",
+          "status": "free",
+          "notes": "2km cherry tree-lined canal path from Ginkaku-ji towards Nanzen-ji. Most beautiful walk in cherry blossom season.",
+          "address": "Ginkaku-ji Temple, 2 Ginkakujicho, Sakyo-ku, Kyoto 606-8402, Japan",
+          "mapQuery": "Ginkaku-ji Silver Pavilion Kyoto"
+        },
+        {
+          "time": "15:00",
+          "activity": "Lunch — Nanzen-ji area",
+          "status": "planning",
+          "notes": "Yudofu (tofu hotpot) or Omen noodle restaurant on the Path.",
+          "address": "Nanzen-ji Temple, 86 Fukuchicho, Sakyo-ku, Kyoto 606-8435, Japan",
+          "mapQuery": "Nanzen-ji Temple Kyoto"
+        },
+        {
+          "time": "16:30",
+          "activity": "Return to hotel — rest before Gion",
+          "status": "planning",
+          "notes": "Subway from Keage or Higashiyama Station back to Shijo/Kawaramachi.",
+          "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+        },
+        {
+          "time": "18:30",
+          "activity": "Dinner — Gion district",
+          "status": "booked",
+          "notes": "⚠ BOOK NOW — Saturday in Gion during cherry blossom season fills weeks ahead. Tempura Endo or walk Hanamikoji.",
+          "address": "Gion District, Higashiyama Ward, Kyoto 605-0073, Japan",
+          "mapQuery": "Gion District Kyoto Hanamikoji"
+        },
+        {
+          "time": "20:00",
+          "activity": "Evening — Hanamikoji Street & Yasaka Shrine",
+          "status": "free",
+          "notes": "Beautifully lit machiya townhouses. Walk to Yasaka Shrine — free, open all night, stunning lanterns.",
+          "address": "Gion District, Higashiyama Ward, Kyoto 605-0073, Japan",
+          "mapQuery": "Gion District Kyoto Hanamikoji"
+        }
+      ],
+      "title": "Kyoto — Northern Temples · Gion"
+    },
+    {
+      "date": "2026-04-12",
+      "label": "Day 9 — Sunday 12 Apr",
+      "location": "Kyoto — Arashiyama",
+      "locationAddress": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+      "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
+      "items": [
+        {
+          "time": "08:30",
+          "activity": "Breakfast — Mitsui Garden Hotel",
+          "status": "included",
+          "notes": "Hotel breakfast. Pack light day bag — full day outside.",
+          "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+        },
+        {
+          "time": "07:30",
+          "activity": "Travel to Arashiyama — JR Sagano Line",
+          "status": "planning",
+          "notes": "JR Sagano Line from Kyoto Station → Saga-Arashiyama Station · 15–20 min · ¥240pp",
+          "address": "Kyoto Station, Karasuma-dori, Shimogyo-ku, Kyoto 600-8216, Japan",
+          "mapQuery": "Kyoto Station JR Sagano Line"
+        },
+        {
+          "time": "08:00",
+          "activity": "Arashiyama Bamboo Grove + Nonomiya Shrine",
+          "status": "free",
+          "notes": "Arrive early for smaller crowds. Nonomiya Shrine is a small black torii shrine inside the grove — atmospheric and free.",
+          "address": "Arashiyama Bamboo Grove, Ogurayama Sagano, Ukyo Ward, Kyoto 616-8394, Japan",
+          "mapQuery": "Arashiyama Bamboo Grove Kyoto"
+        },
+        {
+          "time": "09:00",
+          "activity": "Tenryu-ji Temple Garden",
+          "status": "planning",
+          "notes": "UNESCO World Heritage Rinzai Zen temple. Garden using borrowed mountain scenery. ¥1,200pp garden only.",
+          "address": "Tenryu-ji Temple, 68 Sagatenryuji Susukinobabacho, Ukyo Ward, Kyoto 616-8385, Japan",
+          "mapQuery": "Tenryu-ji Temple Arashiyama Kyoto"
+        },
+        {
+          "time": "10:00",
+          "activity": "Togetsukyo Bridge & Riverside Walk",
+          "status": "free",
+          "notes": "Iconic bridge over the Oi River. Scenic riverside walk. Free.",
+          "address": "Togetsukyo Bridge, Arashiyama, Ukyo Ward, Kyoto 616-8384, Japan",
+          "mapQuery": "Togetsukyo Bridge Arashiyama Kyoto"
+        },
+        {
+          "time": "10:30",
+          "activity": "Sagano Romantic Train — Torokko Saga → Kameoka",
+          "status": "planning",
+          "notes": "⚠ BOOK IN ADVANCE · 25 min along Hozu River gorge · ~¥880pp each way",
+          "address": "Torokko Saga Station, Sagakameyamacho, Ukyo Ward, Kyoto 616-8373, Japan",
+          "mapQuery": "Torokko Saga Station Sagano Romantic Train"
+        },
+        {
+          "time": "12:30",
+          "activity": "Monkey Park Iwatayama",
+          "status": "planning",
+          "notes": "120+ wild Japanese macaques. ¥800pp. 25 min uphill walk. Great valley views.",
+          "address": "Iwatayama Monkey Park, Arashiyamanishiichinicho, Nishikyo Ward, Kyoto 616-0007, Japan",
+          "mapQuery": "Iwatayama Monkey Park Arashiyama Kyoto"
+        },
+        {
+          "time": "14:00",
+          "activity": "Lunch — Kyoto Arashiyama Nishiki",
+          "status": "planning",
+          "notes": "Traditional kaiseki ryotei on Nakanoshibashi island, next to Togetsukyo Bridge. ⚠ Book ahead — ☎ 075-871-8888. Closed Tuesdays.",
+          "detail": "Kyoto Arashiyama Nishiki\nAddress: Nakanoshibashi Park, Arashiyama, Kyoto\nReservations: 075-871-8888 (10:00–21:00)\nWebsite: arashiyama-nishiki.com\nHours: 11:00–21:00 (L.O. 19:00) · Closed Tuesdays\nSignature dish: Sakura-juku-zen (seasonal kaiseki box set)\n⚠ Book ahead — busy in cherry blossom season",
+          "address": "Nakanoshibashi Park, Arashiyama, Ukyo Ward, Kyoto 616-0007, Japan",
+          "mapQuery": "Arashiyama Nishiki restaurant Kyoto"
+        },
+        {
+          "time": "15:30",
+          "activity": "Riverside café + free time",
+          "status": "free",
+          "notes": "Relax by the river. Various cafés along the Arashiyama riverside.",
+          "address": "Togetsukyo Bridge area, Arashiyama, Ukyo Ward, Kyoto 616-8384, Japan",
+          "mapQuery": "Arashiyama riverside café Togetsukyo Bridge"
+        },
+        {
+          "time": "17:00",
+          "activity": "Return to Kyoto — Hankyu Arashiyama Line",
+          "status": "planning",
+          "notes": "Hankyu Arashiyama Station → Kawaramachi Station · ~25 min · ¥220pp",
+          "address": "Hankyu Arashiyama Station, Nishikyo Ward, Kyoto, Japan",
+          "mapQuery": "Hankyu Arashiyama Station Kyoto"
+        },
+        {
+          "time": "19:00",
+          "activity": "Dinner — Ponto-cho",
+          "status": "booked",
+          "notes": "⚠ BOOK AHEAD for riverside kawayuka terrace seats.",
+          "address": "Pontocho, Nakagyo-ku, Kyoto 604-8094, Japan",
+          "mapQuery": "Pontocho alley Kyoto"
+        }
+      ],
+      "title": "Kyoto — Arashiyama"
+    },
+    {
+      "date": "2026-04-13",
+      "label": "Day 10 — Monday 13 Apr",
+      "location": "Kyoto / Nara day trip",
+      "locationAddress": "Nara Park, 469 Zoushicho, Nara 630-8211, Japan",
+      "mapQuery": "Nara Park Japan deer",
+      "items": [
+        {
+          "time": "08:30",
+          "activity": "Breakfast — Mitsui Garden Hotel",
+          "status": "included",
+          "notes": "Hotel breakfast before early departure.",
+          "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+        },
+        {
+          "time": "09:15",
+          "activity": "JR Nara Line: Kyoto → Nara",
+          "status": "included",
+          "notes": "JR Pass covered. Direct, 45 min from Kyoto Station.",
+          "address": "Kyoto Station, Karasuma-dori, Shimogyo-ku, Kyoto 600-8216, Japan",
+          "mapQuery": "Kyoto Station"
+        },
+        {
+          "time": "10:00",
+          "activity": "Nara Park — deer feeding",
+          "status": "free",
+          "notes": "Walk east from Nara Station (~10 min). 1,200+ free-roaming sika deer. Deer crackers ¥200/pack.",
+          "address": "Nara Park, 469 Zoushicho, Nara 630-8211, Japan",
+          "mapQuery": "Nara Park deer Nara Japan"
+        },
+        {
+          "time": "11:00–12:30",
+          "activity": "Todai-ji Temple — The Great Buddha",
+          "status": "planning",
+          "notes": "Largest wooden structure in the world. 15m bronze Buddha. ¥1,400pp. Allow 90 min.",
+          "address": "Todai-ji Temple, 406-1 Zoshicho, Nara 630-8211, Japan",
+          "mapQuery": "Todai-ji Temple Nara Great Buddha"
+        },
+        {
+          "time": "12:30",
+          "activity": "Kasuga Taisha Shrine — forest path",
+          "status": "free",
+          "notes": "Ancient Shinto shrine. Hundreds of stone and bronze lanterns. Free to walk the approach.",
+          "address": "Kasuga Taisha Shrine, 160 Kasuganocho, Nara 630-8212, Japan",
+          "mapQuery": "Kasuga Taisha Shrine Nara"
+        },
+        {
+          "time": "13:30",
+          "activity": "Lunch — Naramachi old town",
+          "status": "planning",
+          "notes": "Kakinoha-zushi (persimmon leaf sushi, Nara's speciality) and mochi shops.",
+          "address": "Nara Park, 469 Zoushicho, Nara 630-8211, Japan",
+          "mapQuery": "Nara Park Japan"
+        },
+        {
+          "time": "15:30",
+          "activity": "JR to Inari Station — Fushimi Inari",
+          "status": "planning",
+          "notes": "JR Nara Line → Inari Station (40 min, JR Pass covered). Thousands of vermillion torii gates. Free, open 24hrs.",
+          "address": "Fushimi Inari Taisha, 68 Fukakusa Yabunouchicho, Fushimi Ward, Kyoto 612-0882, Japan",
+          "mapQuery": "Fushimi Inari Taisha Kyoto"
+        },
+        {
+          "time": "16:40–17:30",
+          "activity": "Fushimi Inari — lower gates walk",
+          "status": "planning",
+          "notes": "One of Japan's most photographed sites. Lower section to first viewing platform: ~35–40 mins return.",
+          "address": "Fushimi Inari Taisha, 68 Fukakusa Yabunouchicho, Fushimi Ward, Kyoto 612-0882, Japan",
+          "mapQuery": "Fushimi Inari Taisha Kyoto"
+        },
+        {
+          "time": "18:00",
+          "activity": "Nishiki Market browse",
+          "status": "free",
+          "notes": "Last chance for Kyoto pickles, yuba tofu and matcha sweets. Stalls close ~18:00.",
+          "address": "Nishiki Market, Nishiki-koji, Nakagyo Ward, Kyoto 604-8054, Japan",
+          "mapQuery": "Nishiki Market Kyoto"
+        },
+        {
+          "time": "19:30",
+          "activity": "Farewell Kyoto dinner",
+          "status": "booked",
+          "notes": "⚠ BOOK AHEAD. Last night in Kyoto. Traditional kaiseki or high-quality kaiseki donburi.",
+          "address": "Gion District, Hanamikoji-dori, Higashiyama-ku, Kyoto 605-0074, Japan",
+          "mapQuery": "Gion district Kyoto"
+        }
+      ],
+      "title": "Kyoto / Nara Day Trip"
+    },
+    {
+      "date": "2026-04-14",
+      "label": "Day 11 — Tuesday 14 Apr",
+      "location": "Kyoto → Osaka",
+      "locationAddress": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+      "mapQuery": "Candeo Hotels Osaka The Tower Umeda",
+      "items": [
+        {
+          "time": "08:30",
+          "activity": "Breakfast — Mitsui Garden Hotel",
+          "status": "included",
+          "notes": "Last Kyoto morning. Pack all luggage.",
+          "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+        },
+        {
+          "time": "09:30",
+          "activity": "⭐ Traditional Tea Ceremony (optional)",
+          "status": "optional",
+          "notes": "90 min experience. Multiple operators in Kyoto. Book in advance.",
+          "address": "Camellia Tea Experience, 184-6 Shimogawaracho, Higashiyama-ku, Kyoto 605-0814, Japan",
+          "mapQuery": "tea ceremony Kyoto"
+        },
+        {
+          "time": "10:30",
+          "activity": "Check out — Mitsui Garden Hotel Kyoto",
+          "status": "planning",
+          "notes": "4-night stay. Short walk or subway to Kyoto Station.",
+          "address": "Kyoto Station, Karasuma-dori, Shimogyo-ku, Kyoto 600-8216, Japan",
+          "mapQuery": "Kyoto Station"
+        },
+        {
+          "time": "11:00",
+          "activity": "Travel to Osaka — Keihan Line",
+          "status": "planning",
+          "notes": "Walk from hotel to Sanjo Station (Keihan Line) · Keihan Limited Express: Sanjo → Yodoyabashi · ~50 min · ~¥430pp",
+          "address": "Sanjo Station, Higashiyama Ward, Kyoto, Japan",
+          "mapQuery": "Sanjo Station Keihan Kyoto"
+        },
+        {
+          "time": "~13:00",
+          "activity": "Check in — Candeo Hotels Osaka The Tower",
+          "status": "confirmed",
+          "notes": "Or drop bags if too early. 3 nights. Hotel is in Kita-ku (Umeda area) — Dotonbori is ~25 min walk south or metro.",
+          "detail": "EXPEDIA BOOKED\nCandeo Hotels Osaka The Tower\nExp: 20251124078913429\nTue 14 – Fri 17 April · 3 nights · 2 rooms · 4 guests\nTotal: £1,579.20 · PAID MC 3823\nFree breakfast + Exec Bar Lounge\n➡ Show Expedia booking confirmation at check-in\nLocation: Kita-ku (Umeda) — near Osaka Station\nNote: Dotonbori is ~25 min walk south or Midosuji Line (2 stops)",
+          "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+          "mapQuery": "Candeo Hotels Osaka The Tower"
+        },
+        {
+          "time": "14:30",
+          "activity": "Dotonbori — first impressions",
+          "status": "free",
+          "notes": "Metro or walk south. Glico Running Man photo, Kani Doraku crab sign.",
+          "address": "Dotonbori, 1-chome Dotonbori, Chuo Ward, Osaka 542-0071, Japan",
+          "mapQuery": "Dotonbori Osaka neon food street"
+        },
+        {
+          "time": "16:00",
+          "activity": "Amerikamura — shopping",
+          "status": "planning",
+          "notes": "Osaka's answer to Harajuku. Vintage stores, streetwear, record shops.",
+          "address": "Amerikamura, Chuo Ward, Osaka 542-0086, Japan",
+          "mapQuery": "Amerikamura Osaka"
+        },
+        {
+          "time": "18:30",
+          "activity": "Dinner — Dotonbori / Namba",
+          "status": "planning",
+          "notes": "Osaka is Japan's food capital. Ichiran Ramen, takoyaki crawl, or kushikatsu izakaya.",
+          "address": "Dotonbori, 1-chome Dotonbori, Chuo Ward, Osaka 542-0071, Japan",
+          "mapQuery": "Dotonbori Osaka neon food street"
+        }
+      ],
+      "title": "Kyoto → Osaka"
+    },
+    {
+      "date": "2026-04-15",
+      "label": "Day 12 — Wednesday 15 Apr",
+      "location": "Osaka",
+      "locationAddress": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+      "mapQuery": "Candeo Hotels Osaka The Tower",
+      "items": [
+        {
+          "time": "08:30",
+          "activity": "Breakfast at Candeo",
+          "status": "included",
+          "notes": "Hotel breakfast or nearby konbini.",
+          "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+          "mapQuery": "Candeo Hotels Osaka The Tower"
+        },
+        {
+          "time": "09:00",
+          "activity": "Osaka Castle & Park",
+          "status": "planning",
+          "notes": "¥1,400pp for 8F observation deck. Park free — excellent cherry blossoms in mid-April.",
+          "address": "Osaka Castle, 1-1 Osakajo, Chuo Ward, Osaka 540-0002, Japan",
+          "mapQuery": "Osaka Castle Park Japan"
+        },
+        {
+          "time": "12:00",
+          "activity": "Kuromon Ichiba Market — Osaka's Kitchen",
+          "status": "planning",
+          "notes": "170 stalls of fresh seafood, wagyu, fruit and street food. Eat as you walk.",
+          "address": "Kuromon Ichiba Market, 2-4-1 Nipponbashi, Chuo Ward, Osaka 542-0073, Japan",
+          "mapQuery": "Kuromon Ichiba Market Osaka"
+        },
+        {
+          "time": "13:30",
+          "activity": "Shinsekai + Tsutenkaku Tower",
+          "status": "planning",
+          "notes": "1920s retro entertainment district. Tsutenkaku observation deck ¥2,000pp.",
+          "address": "Shinsekai, Naniwa Ward, Osaka 556-0002, Japan",
+          "mapQuery": "Shinsekai Tsutenkaku Tower Osaka"
+        },
+        {
+          "time": "15:00",
+          "activity": "Spa World (optional)",
+          "status": "optional",
+          "notes": "Enormous onsen complex. Themed floors. ¥1,000pp. Great after a long day.",
+          "address": "Spa World, 3-4-24 Ebisuhigashi, Naniwa Ward, Osaka 556-0002, Japan",
+          "mapQuery": "Spa World Osaka"
+        },
+        {
+          "time": "16:00",
+          "activity": "Den Den Town — electronics & anime",
+          "status": "planning",
+          "notes": "Osaka's Akihabara. Retro game shops, Gunpla, anime figures.",
+          "address": "Den Den Town, Nipponbashi, Naniwa Ward, Osaka 556-0005, Japan",
+          "mapQuery": "Den Den Town electronics Osaka"
+        },
+        {
+          "time": "17:30",
+          "activity": "Shinsaibashi — shopping arcade",
+          "status": "planning",
+          "notes": "Longest covered shopping arcade in Japan. Good for souvenirs, beauty products, fashion.",
+          "address": "Shinsaibashi, Chuo Ward, Osaka 542-0085, Japan",
+          "mapQuery": "Shinsaibashi Osaka"
+        },
+        {
+          "time": "19:30",
+          "activity": "Dinner — Osaka yakiniku",
+          "status": "booked",
+          "notes": "⚠ BOOK AHEAD. Proper yakiniku — BBQ wagyu at the table. ~¥4,000–5,000pp. Namba area.",
+          "address": "Namba, Chuo Ward, Osaka 542-0075, Japan",
+          "mapQuery": "Namba Osaka"
+        }
+      ],
+      "title": "Osaka — Castle · Kuromon · Shinsekai"
+    },
+    {
+      "date": "2026-04-16",
+      "label": "Day 13 — Thursday 16 Apr",
+      "location": "Osaka / Himeji day trip",
+      "locationAddress": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+      "mapQuery": "Candeo Hotels Osaka The Tower",
+      "items": [
+        {
+          "time": "07:30",
+          "activity": "Breakfast at Candeo",
+          "status": "included",
+          "notes": "Early-ish start for Himeji.",
+          "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+          "mapQuery": "Candeo Hotels Osaka The Tower"
+        },
+        {
+          "time": "08:15",
+          "activity": "JR Special Rapid: Osaka → Himeji",
+          "status": "included",
+          "notes": "JR Pass fully covered. Direct, ~60 min.",
+          "address": "Osaka Station, 3-1-1 Umeda, Kita Ward, Osaka 530-0001, Japan",
+          "mapQuery": "Osaka Station JR Special Rapid"
+        },
+        {
+          "time": "09:20",
+          "activity": "Arrive Himeji — walk to castle",
+          "status": "free",
+          "notes": "Straight 15 min walk north from station — you can see it from the exit.",
+          "address": "Himeji Station, 68 Ekimae-cho, Himeji, Hyogo 670-0927, Japan",
+          "mapQuery": "Himeji Station Japan"
+        },
+        {
+          "time": "09:40–11:45",
+          "activity": "Himeji Castle — White Egret Castle",
+          "status": "planning",
+          "notes": "UNESCO World Heritage. Japan's finest surviving feudal castle. ¥2,400pp. Allow 2 hours. Steep narrow stairs.",
+          "address": "Himeji Castle, 68 Honmachi, Himeji, Hyogo 670-0012, Japan",
+          "mapQuery": "Himeji Castle Japan"
+        },
+        {
+          "time": "12:00–13:00",
+          "activity": "Koko-en Garden",
+          "status": "planning",
+          "notes": "9 connected traditional Japanese gardens. ¥1,000pp (combo ticket with castle ¥3,000pp saves ¥400pp).",
+          "address": "Himeji Castle, 68 Honmachi, Himeji, Hyogo 670-0012, Japan",
+          "mapQuery": "Himeji Castle Japan"
+        },
+        {
+          "time": "13:15",
+          "activity": "Lunch near Himeji Castle",
+          "status": "planning",
+          "notes": "Anago (sea eel) and locally grown rice are Himeji specialities.",
+          "address": "Himeji Castle, 68 Honmachi, Himeji, Hyogo 670-0012, Japan",
+          "mapQuery": "Himeji Castle Japan"
+        },
+        {
+          "time": "15:00",
+          "activity": "JR back to Osaka",
+          "status": "included",
+          "notes": "JR Pass covered. Direct, 60 min.",
+          "address": "Himeji Station, 68 Ekimae-cho, Himeji, Hyogo 670-0927, Japan",
+          "mapQuery": "Himeji Station Japan"
+        },
+        {
+          "time": "16:30",
+          "activity": "Hozenji Yokocho — evening wander",
+          "status": "free",
+          "notes": "Tiny atmospheric alley with moss-covered Fudo statue, candlelit restaurants.",
+          "address": "Hozenji Yokocho, Chuo Ward, Osaka 542-0076, Japan",
+          "mapQuery": "Hozenji Yokocho Osaka"
+        },
+        {
+          "time": "17:00",
+          "activity": "Final Osaka shopping — Namba / Shinsaibashi",
+          "status": "planning",
+          "notes": "Last full evening in Japan. Konbini snacks, KitKat flavours. Pack tonight.",
+          "address": "Shinsaibashi, Chuo Ward, Osaka 542-0085, Japan",
+          "mapQuery": "Shinsaibashi Osaka"
+        },
+        {
+          "time": "19:30",
+          "activity": "Final Japan dinner",
+          "status": "booked",
+          "notes": "⚠ BOOK AHEAD. Osaka is Japan's food capital — make this one count.",
+          "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+          "mapQuery": "Candeo Hotels Osaka The Tower"
+        }
+      ],
+      "title": "Osaka / Himeji Day Trip"
+    },
+    {
+      "date": "2026-04-17",
+      "label": "Day 14 — Friday 17 Apr",
+      "location": "Osaka → Seoul Incheon",
+      "locationAddress": "Kansai International Airport, 1 Senshukukokita, Izumisano, Osaka 549-0001, Japan",
+      "mapQuery": "Kansai International Airport KIX Osaka",
+      "items": [
+        {
+          "time": "08:00",
+          "activity": "Breakfast — Candeo Hotels",
+          "status": "included",
+          "notes": "Final Japan breakfast.",
+          "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+          "mapQuery": "Candeo Hotels Osaka The Tower"
+        },
+        {
+          "time": "09:00",
+          "activity": "Morning — final shopping & souvenirs",
+          "status": "planning",
+          "notes": "Last chance. Namba Don Quijote opens 09:00.",
+          "address": "Namba, Chuo Ward, Osaka 542-0075, Japan",
+          "mapQuery": "Namba Osaka"
+        },
+        {
+          "time": "11:00",
+          "activity": "Check out — Candeo Hotels Osaka",
+          "status": "planning",
+          "notes": "Store luggage at hotel if needed. Checkout 11:00am.",
+          "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+          "mapQuery": "Candeo Hotels Osaka The Tower"
+        },
+        {
+          "time": "11:30–15:30",
+          "activity": "Osaka Aquarium Kaiyukan (optional)",
+          "status": "optional",
+          "notes": "World-class aquarium, 15 min from Namba. ¥2,700pp, takes 2 hours.",
+          "address": "Osaka Aquarium Kaiyukan, 1-1-10 Kaigandori, Minato Ward, Osaka 552-0022, Japan",
+          "mapQuery": "Osaka Aquarium Kaiyukan"
+        },
+        {
+          "time": "~16:00",
+          "activity": "JR Haruka Express — Tennoji → Kansai Airport",
+          "status": "planning",
+          "notes": "Osaka Metro Midosuji Line south to Tennoji (~10 min, ¥230pp). JR Haruka from Tennoji → KIX T1 (~29 min). Buy at Tennoji JR machines on day.",
+          "detail": "JR Haruka Express\nRoute: Tennoji → Kansai Airport T1\nJourney: ~29 min (after ~10 min metro)\nFare: ~¥2,000–2,200pp unreserved\nNo booking needed — buy at Tennoji JR machines\n⚡ Get to Tennoji by ~16:10 to catch ~16:30 departure",
+          "address": "Osaka (Tennoji) Station, 1-17 Hidenin-cho, Tennoji Ward, Osaka 543-0055, Japan",
+          "mapQuery": "Tennoji Station Osaka Haruka Express KIX"
+        },
+        {
+          "time": "17:15",
+          "activity": "KIX: check in Asiana OZ113, security & duty free",
+          "status": "planning",
+          "notes": "Kansai Airport T1. Check-in opens ~2hrs before departure.",
+          "detail": "Flight: Asiana OZ113\nRoute: KIX T1 → ICN T2\nDate: Friday 17 April 2026\nDeparts: 19:25 | Arrives: 21:30 | Flying time: ~1h 55m\nPNR: D2MKD6\nSeats: Andy 24H · Sarah 24J | Jack 25H · Charlie 25J",
+          "address": "Kansai International Airport, 1 Senshukukokita, Izumisano, Osaka 549-0001, Japan",
+          "mapQuery": "Kansai International Airport KIX"
+        },
+        {
+          "time": "19:25",
+          "activity": "Depart KIX — Asiana OZ113 → Seoul ICN",
+          "status": "confirmed",
+          "notes": "~1h 55m. PNR: D2MKD6. Seats: Andy 24H · Sarah 24J | Jack 25H · Charlie 25J.",
+          "address": "Kansai International Airport, 1 Senshukukokita, Izumisano, Osaka 549-0001, Japan",
+          "mapQuery": "Kansai International Airport KIX"
+        },
+        {
+          "time": "21:30",
+          "activity": "Arrive Seoul ICN T2",
+          "status": "confirmed",
+          "notes": "Transfer to Grand Hyatt Incheon. Free hotel shuttle from T2.",
+          "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
+          "mapQuery": "Incheon International Airport Terminal 2"
+        },
+        {
+          "time": "22:00",
+          "activity": "Shuttle to Grand Hyatt Incheon & check in",
+          "status": "confirmed",
+          "notes": "Free shuttle from ICN T2. Early start tomorrow. Hotel connected to airport complex.",
+          "detail": "Expedia Conf: 150513RA052227\nGrand Hyatt Incheon\nFri 17 → Sat 18 April\nCost: £277.04\n⚠ PAY AT PROPERTY (not prepaid)\n➡ Free hotel shuttle from ICN Terminal 2\nNo breakfast included",
+          "address": "Grand Hyatt Incheon, 208 Yeongjonghaean-ro 321beon-gil, Jung-gu, Incheon 22382, South Korea",
+          "mapQuery": "Grand Hyatt Incheon Airport Hotel"
+        }
+      ],
+      "title": "Osaka → Seoul Incheon"
+    },
+    {
+      "date": "2026-04-18",
+      "label": "Day 15 — Saturday 18 Apr",
+      "location": "Seoul ICN → London LHR",
+      "locationAddress": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
+      "mapQuery": "Incheon International Airport Terminal 2",
+      "items": [
+        {
+          "time": "07:00",
+          "activity": "Breakfast — Grand Hyatt or airport",
+          "status": "planning",
+          "notes": "No breakfast included at Grand Hyatt. ICN T2 food options open from 06:00.",
+          "address": "Grand Hyatt Incheon, 208 Yeongjonghaean-ro 321beon-gil, Jung-gu, Incheon 22382, South Korea",
+          "mapQuery": "Grand Hyatt Incheon Airport Hotel"
+        },
+        {
+          "time": "08:30",
+          "activity": "Hotel shuttle → ICN Terminal 2",
+          "status": "free",
+          "notes": "Free hotel shuttle. Confirm pickup time at reception tonight. 10–15 min.",
+          "address": "Grand Hyatt Incheon, 208 Yeongjonghaean-ro 321beon-gil, Jung-gu, Incheon 22382, South Korea",
+          "mapQuery": "Grand Hyatt Incheon Airport Hotel"
+        },
+        {
+          "time": "09:00",
+          "activity": "ICN T2: Virgin Atlantic VS209 check-in",
+          "status": "planning",
+          "notes": "Check-in opens 3 hrs before departure. Baggage drop + security 30–45 mins. ICN is extremely efficient.",
+          "detail": "Flight: Virgin Atlantic VS209\nBooking Ref: E3FYHB\nRoute: ICN T2 → LHR T3\nDeparts: 12:25 | Arrives: 18:50\nSeats: 23D / 23F / 24D / 24F",
+          "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
+          "mapQuery": "Incheon International Airport Terminal 2"
+        },
+        {
+          "time": "10:00",
+          "activity": "ICN Airside — duty free & departures",
+          "status": "planning",
+          "notes": "Outstanding duty free — cosmetics, electronics, luxury brands.",
+          "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
+          "mapQuery": "Incheon International Airport Terminal 2"
+        },
+        {
+          "time": "12:25",
+          "activity": "Depart ICN — VS209 Virgin Atlantic → LHR",
+          "status": "confirmed",
+          "notes": "Direct, ~11h 45m. Arrive LHR Terminal 3. Ref E3FYHB.",
+          "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
+          "mapQuery": "Incheon International Airport Terminal 2"
+        },
+        {
+          "time": "18:50",
+          "activity": "Arrive London Heathrow Terminal 3",
+          "status": "planning",
+          "notes": "UK time. Through UK passport eGates. Baggage reclaim T3.",
+          "address": "London Heathrow Airport Terminal 3, Hounslow TW6 1QG, UK",
+          "mapQuery": "Heathrow Terminal 3"
+        },
+        {
+          "time": "19:30",
+          "activity": "KwikPark Meet & Greet pickup — T3",
+          "status": "confirmed",
+          "notes": "Order ID: L4PUK-777209 · Plate: GL74VLV · Call 1: as soon as you land — 07850366784 · Call 2: after collecting luggage · T3 Short Stay Car Park Level 4 Row B",
+          "detail": "Order ID: L4PUK-777209\nPlate: GL74VLV\n📞 Call 1 — as soon as you land: 07850366784\n📞 Call 2 — after collecting luggage: 07850366784\n➡ T3 Short Stay Car Park · Level 4 · Row B\n⚠ Airport Access Fee £7.50 payable on return\n⚠ ULEZ payable for Sat 18 Apr",
+          "address": "KwikPark Terminal 3, Heathrow Airport, Hounslow TW6 1QG, UK",
+          "mapQuery": "KwikPark Heathrow Terminal 3"
+        }
+      ],
+      "title": "Seoul → London"
+    }
+  ],
+  "checklist": [
+    {
+      "group": "🔴 NOW — Do This Weekend",
+      "items": [
+        {
+          "task": "Book Sumo Morning Training × 4",
+          "who": "Andy",
+          "deadline": "TODAY",
+          "status": "booked",
+          "notes": "⚠ Awaiting confirmation from Keio Plaza concierge · Oshiage stable · Tue 7 Apr 7:30–9:00"
+        },
+        {
+          "task": "⚠ VA FlyReady — complete for Andrew Evans",
+          "who": "Andy",
+          "deadline": "Before 3 Apr",
+          "status": "incomplete",
+          "notes": "Virgin app shows remaining steps · scan passport + docs · virginatlantic.com → My Booking → FlyReady"
+        }
+      ]
+    },
+    {
+      "group": "🟡 THIS WEEK — Booking Windows",
+      "items": [
+        {
+          "task": "Book Romancecar × 3 (Andy, Sarah, Charlie)",
+          "who": "Andy",
+          "deadline": "Mon 9 Mar",
+          "status": "confirmed",
+          "notes": "BOOKED · EMot app · Shinjuku→Hakone-Yumoto · Wed 8 Apr · Car 7 seats 5C/5D/6C/6D · Control E786"
+        },
+        {
+          "task": "Jack: Book own Romancecar ticket",
+          "who": "Jack",
+          "deadline": "Mon 9 Mar",
+          "status": "confirmed",
+          "notes": "BOOKED · Same train as family"
+        },
+        {
+          "task": "Book Shinkansen × 3 (Andy, Sarah, Charlie)",
+          "who": "Andy",
+          "deadline": "Tue 10 Mar",
+          "status": "confirmed",
+          "notes": "BOOKED · Hikari 641 · Odawara 12:07 → Kyoto 14:12 · Car 6 · Seats 14D/14E/15D/15E · Res 40422 · Paid Revolut 9666"
+        },
+        {
+          "task": "Jack: Book own Shinkansen ticket",
+          "who": "Jack",
+          "deadline": "Tue 10 Mar",
+          "status": "pending",
+          "notes": "Same service as family · Klook · ~¥13,000pp"
+        }
+      ]
+    },
+    {
+      "group": "🟠 BEFORE DEPARTURE — Complete by Thu 2 Apr",
+      "items": [
+        {
+          "task": "Buy Japan eSIMs × 4",
+          "who": "All",
+          "deadline": "By 2 Apr",
+          "status": "pending",
+          "notes": "Airalo or Holafly · 10–15 day data plan"
+        },
+        {
+          "task": "Set up Suica cards on iPhone Wallet",
+          "who": "All",
+          "deadline": "By 2 Apr",
+          "status": "pending",
+          "notes": "Apple Pay Suica from UK · or collect physical at Narita"
+        },
+        {
+          "task": "Download offline Google Maps",
+          "who": "All",
+          "deadline": "By 2 Apr",
+          "status": "pending",
+          "notes": "Tokyo, Hakone, Kyoto, Osaka, Nara areas"
+        },
+        {
+          "task": "Jack: Install EMot + Klook + Navitime apps",
+          "who": "Jack",
+          "deadline": "By 2 Apr",
+          "status": "pending",
+          "notes": "So Jack can manage own bookings on the go"
+        },
+        {
+          "task": "Pack power banks in HAND LUGGAGE",
+          "who": "All",
+          "deadline": "Packing day",
+          "status": "reminder",
+          "notes": "IATA regulations — lithium batteries must be carry-on only"
+        },
+        {
+          "task": "Assign Hakone Freepass control numbers",
+          "who": "Andy",
+          "deadline": "Before 8 Apr",
+          "status": "reminder",
+          "notes": "Control numbers: 2837515, 2837519, 2837521, 2837523 · Activate in EMot app at first use only"
+        },
+        {
+          "task": "Luggage forwarding TEN-YU → Mitsui Garden Kyoto (Takuhaibin)",
+          "who": "Andy",
+          "deadline": "Thu 9 Apr evening",
+          "status": "reminder",
+          "notes": "Arrange at TEN-YU front desk Thu evening · ~¥1,500–2,000 per bag · Delivery Sat 11 Apr"
+        },
+        {
+          "task": "Book e-bikes for Arashiyama day (Sun 12 Apr)",
+          "who": "Andy",
+          "deadline": "Before 12 Apr",
+          "status": "pending",
+          "notes": "⚠ Book ahead — Sunday in cherry blossom season · ~¥1,500–2,000pp"
+        },
+        {
+          "task": "Book Arashiyama Nishiki restaurant — lunch Sun 12 Apr",
+          "who": "Andy",
+          "deadline": "Before 12 Apr",
+          "status": "pending",
+          "notes": "☎ 075-871-8888 · arashiyama-nishiki.com · Peak cherry blossom season — book well ahead"
+        },
+        {
+          "task": "Book Gion dinner — Sat 11 Apr",
+          "who": "Andy",
+          "deadline": "ASAP",
+          "status": "pending",
+          "notes": "⚠ Saturday in Gion during cherry blossom season fills weeks ahead · Tempura Endo or similar"
+        },
+        {
+          "task": "Book Ponto-cho dinner — Sun 12 Apr",
+          "who": "Andy",
+          "deadline": "ASAP",
+          "status": "pending",
+          "notes": "Book ahead for riverside kawayuka terrace seats"
+        },
+        {
+          "task": "Book farewell Kyoto dinner — Mon 13 Apr",
+          "who": "Andy",
+          "deadline": "Before 13 Apr",
+          "status": "pending",
+          "notes": "Traditional kaiseki or kaiseki donburi · Shijo/Gion area"
+        },
+        {
+          "task": "Book Osaka yakiniku dinner — Wed 15 Apr",
+          "who": "Andy",
+          "deadline": "Before 15 Apr",
+          "status": "pending",
+          "notes": "Proper yakiniku · ~¥4,000–5,000pp · Namba area"
+        },
+        {
+          "task": "Book final Japan dinner — Thu 16 Apr",
+          "who": "Andy",
+          "deadline": "Before 16 Apr",
+          "status": "pending",
+          "notes": "Unagi (eel) or high-end ramen · Osaka"
+        },
+        {
+          "task": "Book Sagano Romantic Train — Sun 12 Apr",
+          "who": "Andy",
+          "deadline": "Before 12 Apr",
+          "status": "pending",
+          "notes": "Torokko Saga → Kameoka · ⚠ Book in advance · ~¥880pp each way"
+        }
+      ]
+    },
+    {
+      "group": "🟢 ON ARRIVAL — Sun 5 Apr · Narita Airport",
+      "items": [
+        {
+          "task": "Activate Japan eSIMs",
+          "who": "All",
+          "deadline": "Day 1 · Narita",
+          "status": "on_arrival",
+          "notes": "Check signal before leaving airport"
+        },
+        {
+          "task": "Top up Suica cards",
+          "who": "All",
+          "deadline": "Day 1 · Narita",
+          "status": "on_arrival",
+          "notes": "¥5,000–¥10,000 each · kiosk or 7-Eleven"
+        },
+        {
+          "task": "Withdraw yen cash",
+          "who": "Andy/Sarah",
+          "deadline": "Day 1 · Narita",
+          "status": "on_arrival",
+          "notes": "Japan Post ATM or 7-Eleven inside airport"
+        },
+        {
+          "task": "Confirm Sumo ticket pick-up",
+          "who": "Andy",
+          "deadline": "Day 1 · Narita",
+          "status": "on_arrival",
+          "notes": "Tickets at venue — confirm email saved"
+        }
+      ]
+    },
+    {
+      "group": "✅ DONE — Confirmed Bookings",
+      "items": [
+        {
+          "task": "Flights LHR↔Seoul VS208+VS209 × 4",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Ref E3FYHB · VS208 LHR 13:25→ICN 10:05 Sat 4 Apr · Seats 24D/24F/25D/25F · VS209 ICN 12:25→LHR 18:50 Sat 18 Apr · Seats 23D/23F/24D/24F · £2,276.76 · 328k pts + Visa 7377"
+        },
+        {
+          "task": "Seoul → Tokyo Asiana OZ106 × 4",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Sun 5 Apr · ICN T1 → NRT · £951.48 · PNR D2MKD6"
+        },
+        {
+          "task": "Seoul arrival taxi — Tourmaker #1479-1",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Sat 4 Apr · ICN T2 → Crown Park Seoul · £71.12"
+        },
+        {
+          "task": "Seoul departure taxi — Tourmaker #1479-2",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Sun 5 Apr · Crown Park Seoul → ICN · pickup 12:00 · £71.12"
+        },
+        {
+          "task": "Narita → Shinjuku Transfer (Klook bus × 4)",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Sun 5 Apr · £91.28"
+        },
+        {
+          "task": "Hakone Freepass × 4",
+          "who": "Sarah",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Digital EMot · ¥7,500pp (3-day) · all Hakone transport · Control: 2837515/2837519/2837521/2837523"
+        },
+        {
+          "task": "Romancecar Hakone 3 (GSE) × 4",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Wed 8 Apr · Shinjuku 10:00→Hakone-Yumoto 11:27 · Car 7 seats 5C/5D/6C/6D · Control E786 · ¥4,600 total"
+        },
+        {
+          "task": "Shinkansen Hikari 641 × 3 (Andy, Sarah, Charlie)",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Fri 10 Apr · Odawara 12:07→Kyoto 14:12 · Car 6 · Seats 14D/14E/15D/15E · Res 40422 · ¥49,200 · Revolut 9666"
+        },
+        {
+          "task": "LHR Parking — KwikPark Meet & Greet T3",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Order ID: L4PUK-777209 · £119.18 · Dep Fri 3 Apr / Return Sat 18 Apr · Plate GL74VLV"
+        },
+        {
+          "task": "TEN-YU Ryokan Hakone",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Conf: 20251118076112540 · Wed 8–Fri 10 Apr · £1,765.14 + £5.88 at property · MC 3823"
+        },
+        {
+          "task": "Keio Plaza Hotel Tokyo",
+          "who": "Andy",
+          "deadline": "✅ Booked",
+          "status": "pay_at_property",
+          "notes": "Exp 73304498303010 · ¥472,014 PAY AT PROPERTY · Free breakfast · 2 rooms · Sun 5–Wed 8 Apr"
+        },
+        {
+          "task": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Exp 20251124078897910 · £1,932.76 · PAID MC 3823 · Free breakfast · 2 rooms · Fri 10–Tue 14 Apr"
+        },
+        {
+          "task": "Candeo Hotels Osaka The Tower",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Exp 20251124078913429 · £1,579.20 · PAID MC 3823 · Free breakfast + Exec Bar Lounge · 2 rooms · Tue 14–Fri 17 Apr"
+        },
+        {
+          "task": "Crown Park Hotel Seoul",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Exp 25301968 · £388.78 · PAID MC 3823 · Breakfast for 2 · Sat 4–Sun 5 Apr"
+        },
+        {
+          "task": "Grand Hyatt Incheon (airport hotel)",
+          "who": "Andy",
+          "deadline": "✅ Booked",
+          "status": "pay_at_property",
+          "notes": "Exp 150513RA052227 · £277.04 · PAY AT PROPERTY · Fri 17–Sat 18 Apr"
+        }
+      ]
+    }
+  ]
 }
-[data-theme="light"] {
-  --ink:#f5f3ef; --ink2:#eceae6; --ink3:#e8e4de;
-  --blossom:#c0546a; --gold:#9a7030; --jade:#2e7a6c;
-  --white:#1a1a2e; --muted:#666680; --border:rgba(0,0,0,0.1);
-  --card-bg:rgba(0,0,0,0.03); --card-hover:rgba(0,0,0,0.06);
-  --item-border:rgba(0,0,0,0.07); --shadow:rgba(0,0,0,0.15);
-}
-
-*{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);min-height:100vh;transition:background 0.3s,color 0.3s;}
-
-/* HEADER */
-.header{background:linear-gradient(160deg,#0f0f1a 0%,#1a1a2e 50%,#0f1520 100%);padding:24px 20px 16px;text-align:center;border-bottom:1px solid rgba(232,130,154,0.2);position:relative;overflow:hidden;}
-[data-theme="light"] .header{background:linear-gradient(160deg,#2a1a2e 0%,#3a1a2e 50%,#2a1520 100%);}
-.header::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(232,130,154,0.08) 0%,transparent 70%);pointer-events:none;}
-.header-jp{font-family:'Noto Serif JP',serif;font-size:11px;color:var(--blossom);letter-spacing:6px;margin-bottom:6px;opacity:0.8;}
-.header h1{font-family:'Noto Serif JP',serif;font-size:clamp(20px,5vw,28px);font-weight:600;color:#fdfbf7;line-height:1.2;}
-.header-dates{font-size:13px;color:var(--gold);margin-top:6px;letter-spacing:1px;font-weight:500;}
-.family-row{display:flex;justify-content:center;gap:8px;margin-top:10px;flex-wrap:wrap;align-items:center;}
-.family-pill{background:rgba(232,130,154,0.12);border:1px solid rgba(232,130,154,0.25);color:#e8829a;font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500;}
-
-/* THEME TOGGLE */
-.theme-toggle{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#fdfbf7;font-size:14px;padding:4px 10px;border-radius:20px;cursor:pointer;font-family:inherit;transition:all 0.2s;margin-left:6px;}
-.theme-toggle:hover{background:rgba(255,255,255,0.2);}
-
-.countdown-bar{display:flex;justify-content:center;gap:12px;margin-top:14px;flex-wrap:wrap;}
-.countdown-unit{text-align:center;background:rgba(232,130,154,0.08);border:1px solid rgba(232,130,154,0.2);border-radius:12px;padding:8px 14px;min-width:60px;}
-.countdown-num{font-family:'Noto Serif JP',serif;font-size:24px;font-weight:700;color:#e8829a;line-height:1;}
-.countdown-lbl{font-size:10px;color:var(--muted);margin-top:3px;letter-spacing:0.5px;text-transform:uppercase;}
-.countdown-gone{font-size:13px;color:var(--jade);font-weight:600;margin-top:12px;letter-spacing:0.5px;}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
-.sync-bar{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px;font-size:11px;color:var(--muted);}
-.sync-dot{width:6px;height:6px;border-radius:50%;background:var(--jade);flex-shrink:0;}
-.sync-dot.loading{background:var(--gold);animation:pulse 1s infinite;}
-.sync-dot.error{background:#e05050;}
-.refresh-btn{background:none;border:1px solid rgba(255,255,255,0.15);color:var(--muted);font-size:11px;padding:3px 10px;border-radius:12px;cursor:pointer;font-family:inherit;transition:all 0.2s;}
-.refresh-btn:hover{border-color:var(--blossom);color:var(--blossom);}
-
-/* TODAY BANNER */
-.today-banner{background:linear-gradient(135deg,rgba(74,158,142,0.2),rgba(74,158,142,0.08));border:1px solid rgba(74,158,142,0.4);border-radius:12px;padding:12px 16px;margin:12px 0 4px;display:flex;align-items:center;gap:10px;cursor:pointer;transition:all 0.2s;}
-.today-banner:hover{background:rgba(74,158,142,0.25);}
-.today-banner-text{font-size:13px;font-weight:600;color:var(--jade);}
-.today-banner-sub{font-size:11px;color:var(--muted);margin-top:2px;}
-.today-badge{font-size:20px;flex-shrink:0;}
-
-/* TODAY DAY HIGHLIGHT */
-.day-card.today-day{border-color:rgba(74,158,142,0.5);box-shadow:0 0 0 1px rgba(74,158,142,0.3),0 4px 20px rgba(74,158,142,0.15);}
-.day-card.today-day .day-num{color:var(--jade);}
-.today-pill{font-size:9px;font-weight:700;background:rgba(74,158,142,0.2);color:var(--jade);border:1px solid rgba(74,158,142,0.4);padding:2px 7px;border-radius:8px;letter-spacing:0.5px;text-transform:uppercase;margin-left:6px;}
-
-/* NAV */
-.nav-tabs{display:flex;background:var(--ink2);border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none;justify-content:flex-start;}
-@media(min-width:700px){.nav-tabs{justify-content:center;}}
-.nav-tabs::-webkit-scrollbar{display:none;}
-.nav-tab{flex-shrink:0;padding:12px 14px;font-size:11.5px;font-weight:500;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;font-family:inherit;background:none;border-top:none;border-left:none;border-right:none;}
-.nav-tab:hover{color:var(--white);}
-.nav-tab.active{color:var(--blossom);border-bottom-color:var(--blossom);}
-
-.content{max-width:760px;margin:0 auto;padding:0 16px 80px;}
-.section-title{font-size:11px;color:var(--gold);font-weight:600;letter-spacing:0.5px;text-transform:uppercase;padding:14px 0 8px;}
-
-/* OVERVIEW */
-.overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:20px 0 8px;}
-.stat-card{background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:14px 12px;text-align:center;}
-.stat-num{font-family:'Noto Serif JP',serif;font-size:26px;font-weight:600;color:var(--blossom);line-height:1;}
-.stat-label{font-size:11px;color:var(--muted);margin-top:4px;}
-.route-strip{display:flex;align-items:center;gap:8px;padding:14px 16px;margin:12px 0;background:var(--card-bg);border:1px solid var(--border);border-radius:12px;overflow-x:auto;scrollbar-width:none;}
-.route-strip::-webkit-scrollbar{display:none;}
-.route-city{flex-shrink:0;font-size:12px;font-weight:600;}
-.route-arrow{flex-shrink:0;color:var(--blossom);font-size:14px;}
-.hotel-card{display:flex;align-items:center;gap:14px;padding:14px 16px;margin-bottom:8px;background:var(--card-bg);border:1px solid var(--border);border-radius:12px;}
-.hotel-icon{font-size:22px;flex-shrink:0;}
-.hotel-name{font-size:14px;font-weight:500;}
-.hotel-dates{font-size:11px;color:var(--muted);margin-top:2px;}
-.hotel-status{margin-left:auto;font-size:10px;font-weight:600;padding:3px 9px;border-radius:10px;flex-shrink:0;}
-.hotel-status.paid{background:rgba(74,158,142,0.2);color:var(--jade);border:1px solid rgba(74,158,142,0.3);}
-.hotel-status.property{background:rgba(201,168,76,0.2);color:var(--gold);border:1px solid rgba(201,168,76,0.3);}
-.status-legend{display:flex;flex-wrap:wrap;gap:8px;padding:4px 0 12px;}
-.legend-item{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--muted);}
-.legend-dot{width:8px;height:8px;border-radius:3px;flex-shrink:0;}
-
-/* DAYS */
-.days-container{padding-top:12px;}
-.day-card{margin-bottom:8px;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--card-bg);transition:border-color 0.3s,box-shadow 0.3s;}
-.day-header{display:flex;align-items:center;gap:12px;padding:14px 16px;cursor:pointer;transition:background 0.2s;user-select:none;}
-.day-header:hover{background:var(--card-hover);}
-.day-num{font-family:'Noto Serif JP',serif;font-size:22px;font-weight:700;color:var(--blossom);line-height:1;min-width:30px;}
-.day-info{flex:1;min-width:0;}
-.day-title{font-size:14px;font-weight:600;display:flex;align-items:center;flex-wrap:wrap;gap:4px;}
-.day-loc{font-size:11px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.day-badge{font-size:10px;padding:3px 8px;border-radius:10px;font-weight:600;flex-shrink:0;background:rgba(201,168,76,0.15);color:var(--gold);border:1px solid rgba(201,168,76,0.25);}
-.day-chevron{color:var(--muted);font-size:14px;transition:transform 0.25s;flex-shrink:0;}
-.day-card.open .day-chevron{transform:rotate(90deg);}
-.day-body{display:none;padding:0 16px 14px;}
-.day-card.open .day-body{display:block;}
-
-/* Day map */
-.day-map-btn{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--blossom);background:rgba(232,130,154,0.1);border:1px solid rgba(232,130,154,0.25);border-radius:20px;padding:5px 12px;cursor:pointer;margin:8px 0 4px;font-family:inherit;transition:all 0.2s;}
-.day-map-btn:hover{background:rgba(232,130,154,0.2);}
-.day-map-btn.active{background:rgba(232,130,154,0.25);}
-.day-osm-frame{width:100%;height:260px;border:none;border-radius:12px;border:1px solid var(--border);margin:8px 0;display:none;}
-.day-osm-frame.visible{display:block;}
-
-/* ITEMS */
-.item{display:grid;grid-template-columns:52px 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--item-border);align-items:start;}
-.item-time{font-size:11px;color:var(--muted);font-weight:500;padding-top:2px;text-align:right;line-height:1.3;}
-.item-main{min-width:0;}
-.item-activity{font-size:13px;font-weight:500;line-height:1.4;}
-.item-notes{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.5;}
-
-/* ITEM ACTIONS — fixed layout, no crowding */
-.item-actions{display:flex;align-items:center;gap:8px;margin-top:6px;}
-.item-status-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:5px;}
-.item-info-row{margin-top:6px;}
-.item-maplink{font-size:11px;color:var(--blossom);text-decoration:none;opacity:0.7;transition:opacity 0.2s;flex-shrink:0;}
-.item-maplink:hover{opacity:1;}
-.detail-btn{background:rgba(232,130,154,0.12);border:1px solid rgba(232,130,154,0.25);color:var(--blossom);font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;cursor:pointer;font-family:inherit;transition:all 0.2s;flex-shrink:0;letter-spacing:0.3px;}
-.detail-btn:hover{background:rgba(232,130,154,0.25);}
-
-/* STATUS BADGES */
-.status-badge{font-size:9px;font-weight:700;padding:2px 7px;border-radius:8px;letter-spacing:0.5px;margin-top:4px;display:inline-block;text-transform:uppercase;}
-.s-booked    {background:rgba(224,80,80,0.2);   color:#e05050; border:1px solid rgba(224,80,80,0.3);}
-.s-bookahead {background:rgba(201,130,50,0.2);  color:#e09040; border:1px solid rgba(201,130,50,0.3);}
-.s-confirmed {background:rgba(74,158,142,0.2);  color:var(--jade); border:1px solid rgba(74,158,142,0.3);}
-.s-included  {background:rgba(74,142,201,0.2);  color:#4a8ec9; border:1px solid rgba(74,142,201,0.3);}
-.s-planning  {background:rgba(201,168,76,0.2);  color:var(--gold); border:1px solid rgba(201,168,76,0.3);}
-.s-optional  {background:rgba(158,110,201,0.2); color:#9e6ec9; border:1px solid rgba(158,110,201,0.3);}
-.s-free      {background:rgba(122,184,122,0.2); color:#7ab87a; border:1px solid rgba(122,184,122,0.3);}
-.s-paid      {background:rgba(74,158,142,0.2);  color:var(--jade); border:1px solid rgba(74,158,142,0.3);}
-
-/* MODAL */
-.modal-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:1000;align-items:flex-end;justify-content:center;}
-.modal-backdrop.open{display:flex;}
-@media(min-width:500px){.modal-backdrop{align-items:center;}}
-.modal-box{background:#1a1a2e;border-radius:20px 20px 0 0;width:100%;max-width:500px;max-height:85vh;overflow-y:auto;padding:22px 20px 40px;border:1px solid rgba(255,255,255,0.1);border-bottom:none;}
-[data-theme="light"] .modal-box{background:#f0ecea;}
-@media(min-width:500px){.modal-box{border-radius:16px;border:1px solid rgba(255,255,255,0.1);max-height:80vh;}}
-.modal-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px;border-bottom:1px solid var(--border);padding-bottom:14px;}
-.modal-title{font-size:15px;font-weight:600;line-height:1.4;flex:1;color:var(--white);}
-.modal-close{background:rgba(255,255,255,0.08);border:none;color:var(--muted);font-size:16px;cursor:pointer;padding:4px 9px;line-height:1;border-radius:8px;flex-shrink:0;transition:all 0.2s;}
-.modal-close:hover{background:rgba(255,255,255,0.18);color:var(--white);}
-.modal-body{font-size:13px;color:rgba(255,255,255,0.85);line-height:1.9;white-space:pre-line;}
-[data-theme="light"] .modal-body{color:rgba(0,0,0,0.8);}
-[data-theme="light"] .modal-title{color:#1a1a2e;}
-
-/* TRANSPORT CARDS */
-.transport-card{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:10px;}
-.transport-route{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;}
-.transport-from,.transport-to{font-size:14px;font-weight:600;}
-.transport-arrow{color:var(--blossom);font-size:16px;flex-shrink:0;}
-.transport-type{font-size:10px;font-weight:700;padding:2px 8px;border-radius:8px;background:rgba(74,142,201,0.2);color:#4a8ec9;border:1px solid rgba(74,142,201,0.3);letter-spacing:0.5px;text-transform:uppercase;}
-.transport-meta{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;}
-.transport-meta-item{font-size:11px;color:var(--muted);}
-.transport-meta-item strong{color:var(--white);display:block;font-size:12px;margin-bottom:1px;}
-.transport-status{display:inline-flex;align-items:center;gap:6px;font-size:11px;margin-top:8px;padding:4px 10px;border-radius:10px;}
-.transport-status.confirmed{background:rgba(74,158,142,0.15);color:var(--jade);}
-.transport-status.book{background:rgba(201,130,50,0.15);color:#e09040;}
-.transport-note{font-size:11px;color:var(--muted);margin-top:8px;padding-top:8px;border-top:1px solid var(--item-border);line-height:1.5;}
-
-/* LINKS TAB */
-.links-group{margin-bottom:20px;}
-.links-group-title{font-size:12px;font-weight:600;color:var(--gold);letter-spacing:0.5px;text-transform:uppercase;padding:10px 0 8px;}
-.link-card{display:flex;align-items:center;gap:12px;padding:12px 14px;margin-bottom:6px;background:var(--card-bg);border:1px solid var(--border);border-radius:12px;text-decoration:none;transition:all 0.2s;}
-.link-card:hover{background:var(--card-hover);border-color:rgba(232,130,154,0.3);}
-.link-icon{font-size:20px;flex-shrink:0;}
-.link-name{font-size:13px;font-weight:500;color:var(--white);}
-.link-desc{font-size:11px;color:var(--muted);margin-top:1px;}
-.link-arrow{margin-left:auto;color:var(--blossom);font-size:14px;flex-shrink:0;}
-
-/* CURRENCY */
-.currency-widget{background:var(--card-bg);border:1px solid var(--border);border-radius:16px;padding:20px;margin-top:12px;}
-.currency-title{font-size:13px;font-weight:600;margin-bottom:16px;color:var(--white);}
-.currency-row{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
-.currency-input{flex:1;background:var(--ink2);border:1px solid var(--border);color:var(--white);font-size:18px;font-weight:600;padding:10px 14px;border-radius:10px;font-family:inherit;outline:none;transition:border-color 0.2s;-moz-appearance:textfield;}
-.currency-input::-webkit-outer-spin-button,.currency-input::-webkit-inner-spin-button{-webkit-appearance:none;}
-.currency-input:focus{border-color:var(--blossom);}
-.currency-label{font-size:13px;font-weight:600;min-width:28px;color:var(--muted);}
-.currency-result{font-size:24px;font-weight:700;color:var(--blossom);font-family:'Noto Serif JP',serif;}
-.currency-swap{background:rgba(232,130,154,0.12);border:1px solid rgba(232,130,154,0.25);color:var(--blossom);padding:8px 16px;border-radius:20px;cursor:pointer;font-size:12px;font-weight:600;font-family:inherit;transition:all 0.2s;margin-top:4px;}
-.currency-swap:hover{background:rgba(232,130,154,0.25);}
-.currency-rate{font-size:11px;color:var(--muted);margin-top:10px;padding-top:10px;border-top:1px solid var(--item-border);}
-.quick-amounts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;}
-.quick-btn{font-size:11px;font-weight:600;padding:5px 12px;background:var(--card-bg);border:1px solid var(--border);color:var(--muted);border-radius:14px;cursor:pointer;font-family:inherit;transition:all 0.2s;}
-.quick-btn:hover{border-color:var(--blossom);color:var(--blossom);}
-
-/* EMERGENCY TAB */
-.emergency-card{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:10px;}
-.emergency-card.urgent{border-color:rgba(224,80,80,0.4);background:rgba(224,80,80,0.05);}
-.emergency-card-title{font-size:12px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;color:var(--blossom);margin-bottom:10px;display:flex;align-items:center;gap:6px;}
-.emergency-card.urgent .emergency-card-title{color:#e05050;}
-.emergency-row{display:flex;justify-content:space-between;align-items:flex-start;padding:6px 0;border-top:1px solid var(--item-border);gap:12px;}
-.emergency-row:first-of-type{border-top:none;padding-top:0;}
-.emergency-label{font-size:11px;color:var(--muted);flex-shrink:0;min-width:100px;}
-.emergency-value{font-size:12px;font-weight:500;text-align:right;line-height:1.4;}
-.emergency-value a{color:var(--blossom);text-decoration:none;}
-.emergency-value a:hover{text-decoration:underline;}
-.emergency-number{font-size:16px;font-weight:700;color:var(--jade);}
-.emergency-banner{background:rgba(224,80,80,0.1);border:1px solid rgba(224,80,80,0.3);border-radius:12px;padding:12px 16px;margin-bottom:16px;font-size:12px;color:#e05050;line-height:1.5;text-align:center;font-weight:600;}
-
-/* CHECKLIST */
-.checklist-container{padding-top:12px;}
-.checklist-group{margin-bottom:16px;}
-.checklist-group-title{font-size:12px;font-weight:600;color:var(--gold);letter-spacing:0.5px;padding:10px 0 8px;text-transform:uppercase;}
-.checklist-item{display:flex;align-items:flex-start;gap:12px;padding:10px 14px;margin-bottom:6px;background:var(--card-bg);border:1px solid var(--border);border-radius:10px;}
-.check-task{font-size:13px;font-weight:500;flex:1;}
-.check-meta{font-size:11px;color:var(--muted);margin-top:2px;}
-.check-who{font-size:10px;padding:2px 8px;border-radius:8px;font-weight:600;flex-shrink:0;margin-top:2px;background:rgba(232,130,154,0.15);color:var(--blossom);border:1px solid rgba(232,130,154,0.25);}
-.checklist-notice{background:rgba(232,130,154,0.1);border:1px solid rgba(232,130,154,0.3);border-radius:12px;padding:12px 16px;margin-bottom:18px;font-size:12.5px;color:var(--blossom);line-height:1.5;text-align:center;}
-
-/* MAP */
-.map-view-toggle{display:flex;gap:8px;padding:12px 0 8px;}
-.map-toggle-btn{padding:6px 16px;font-size:12px;font-weight:500;background:var(--card-bg);border:1px solid var(--border);color:var(--muted);border-radius:20px;cursor:pointer;font-family:inherit;transition:all 0.2s;}
-.map-toggle-btn.active{background:rgba(232,130,154,0.15);border-color:rgba(232,130,154,0.4);color:var(--blossom);}
-.map-city-tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:4px 0 10px;}
-.map-city-tabs::-webkit-scrollbar{display:none;}
-.map-city-btn{flex-shrink:0;padding:6px 14px;font-size:12px;font-weight:500;background:var(--card-bg);border:1px solid var(--border);color:var(--muted);border-radius:20px;cursor:pointer;font-family:inherit;transition:all 0.2s;white-space:nowrap;}
-.map-city-btn:hover{color:var(--white);}
-.map-city-btn.active{background:rgba(232,130,154,0.15);border-color:rgba(232,130,154,0.4);color:var(--blossom);}
-.osm-frame{width:100%;height:420px;border:none;border-radius:14px;border:1px solid var(--border);display:block;}
-.route-svg-wrap{border-radius:14px;overflow:hidden;border:1px solid var(--border);}
-
-/* PHRASES */
-.phrase-card{display:flex;align-items:center;gap:14px;padding:12px 16px;margin-bottom:8px;background:var(--card-bg);border:1px solid var(--border);border-radius:12px;}
-.phrase-jp{font-family:'Noto Serif JP',serif;font-size:18px;min-width:110px;}
-.phrase-en{font-size:13px;font-weight:500;}
-.phrase-rom{font-size:11px;color:var(--blossom);margin-top:2px;font-style:italic;}
-
-/* WEATHER */
-.weather-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding-top:4px;}
-@media(min-width:500px){.weather-grid{grid-template-columns:repeat(3,1fr);}}
-.weather-card{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:16px 14px;text-align:center;}
-.weather-city{font-size:13px;font-weight:600;margin-bottom:4px;}
-.weather-dates{font-size:10px;color:var(--muted);margin-bottom:10px;}
-.weather-icon{font-size:32px;margin-bottom:6px;}
-.weather-temp{font-family:'Noto Serif JP',serif;font-size:22px;font-weight:600;color:var(--blossom);}
-.weather-range{font-size:11px;color:var(--muted);margin-top:2px;}
-.weather-desc{font-size:11px;color:var(--gold);margin-top:6px;font-weight:500;}
-.weather-detail{font-size:10px;color:var(--muted);margin-top:8px;line-height:1.6;}
-
-/* TIPS */
-.tip-section{margin-bottom:20px;}
-.tip-section-title{font-size:12px;font-weight:600;color:var(--gold);letter-spacing:0.5px;text-transform:uppercase;padding:10px 0 8px;}
-.tip-item{padding:10px 14px;margin-bottom:6px;background:var(--card-bg);border:1px solid var(--border);border-radius:10px;font-size:13px;line-height:1.5;}
-.tip-item strong{color:var(--blossom);}
-</style>
-</head>
-<body>
-
-<div class="header">
-  <div class="header-jp">日本家族旅行</div>
-  <h1>🇯🇵 Japan Family Trip 2026</h1>
-  <div class="header-dates">Fri 3 Apr – Sat 18 Apr 2026</div>
-  <div class="family-row">
-    <span class="family-pill">Andy</span><span class="family-pill">Sarah</span>
-    <span class="family-pill">Jack</span><span class="family-pill">Charlie</span>
-    <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn">☀️ Light</button>
-  </div>
-  <div class="countdown-bar" id="countdown-bar"></div>
-  <div class="sync-bar">
-    <div class="sync-dot loading" id="sync-dot"></div>
-    <span id="sync-status">Loading trip data…</span>
-    <button class="refresh-btn" onclick="loadData()">↻ Refresh</button>
-  </div>
-</div>
-
-<div class="nav-tabs">
-  <button class="nav-tab active" onclick="switchTab('overview',this)">Overview</button>
-  <button class="nav-tab" onclick="switchTab('days',this)">Day by Day</button>
-  <button class="nav-tab" onclick="switchTab('transport',this)">🚄 Transport</button>
-  <button class="nav-tab" onclick="switchTab('map',this)">🗺 Maps</button>
-  <button class="nav-tab" onclick="switchTab('weather',this)">🌤 Weather</button>
-  <button class="nav-tab" onclick="switchTab('checklist',this)">Checklist</button>
-  <button class="nav-tab" onclick="switchTab('phrases',this)">Japanese</button>
-  <button class="nav-tab" onclick="switchTab('tips',this)">Tips</button>
-  <button class="nav-tab" onclick="switchTab('links',this)">🔗 Links</button>
-  <button class="nav-tab" onclick="switchTab('emergency',this)">🆘 Emergency</button>
-</div>
-
-<div class="content">
-  <div id="tab-overview"></div>
-  <div id="tab-days"      style="display:none"></div>
-  <div id="tab-transport" style="display:none"></div>
-  <div id="tab-map"       style="display:none"></div>
-  <div id="tab-weather"   style="display:none"></div>
-  <div id="tab-checklist" style="display:none"></div>
-  <div id="tab-phrases"   style="display:none"></div>
-  <div id="tab-tips"      style="display:none"></div>
-  <div id="tab-links"     style="display:none"></div>
-  <div id="tab-emergency" style="display:none"></div>
-</div>
-
-<!-- DETAIL MODAL -->
-<div class="modal-backdrop" id="detail-modal" onclick="closeDetailModal(event)">
-  <div class="modal-box">
-    <div class="modal-header">
-      <div class="modal-title" id="modal-title"></div>
-      <button class="modal-close" onclick="document.getElementById('detail-modal').classList.remove('open');document.body.style.overflow='';">✕</button>
-    </div>
-    <div class="modal-body" id="modal-body"></div>
-  </div>
-</div>
-
-<script>
-/* ═══════════════════════════════════════════
-   CONFIG & STATE
-═══════════════════════════════════════════ */
-const RAW_URL='https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japan-trip.json';
-const TRIP_START=new Date('2026-04-03');
-const TRIP_END  =new Date('2026-04-18');
-// Day dates for "on this day" matching
-// Each entry: { dayIndex, isoDate }
-const DAY_DATES=[
-  {di:0, date:'2026-04-03'},{di:1, date:'2026-04-04'},{di:2, date:'2026-04-05'},
-  {di:3, date:'2026-04-06'},{di:4, date:'2026-04-07'},{di:5, date:'2026-04-08'},
-  {di:6, date:'2026-04-09'},{di:7, date:'2026-04-10'},{di:8, date:'2026-04-11'},
-  {di:9, date:'2026-04-12'},{di:10,date:'2026-04-13'},{di:11,date:'2026-04-14'},
-  {di:12,date:'2026-04-15'},{di:13,date:'2026-04-16'},{di:14,date:'2026-04-17'},
-  {di:15,date:'2026-04-18'},
-];
-let tripData=null;
-let currencyMode='yenToGbp'; // or 'gbpToYen'
-const YEN_RATE=190; // ¥ per £1 — update before trip
-
-/* ═══════════════════════════════════════════
-   THEME
-═══════════════════════════════════════════ */
-function toggleTheme(){
-  const html=document.documentElement;
-  const isDark=html.getAttribute('data-theme')==='dark';
-  html.setAttribute('data-theme',isDark?'light':'dark');
-  document.getElementById('theme-btn').textContent=isDark?'🌙 Dark':'☀️ Light';
-}
-
-/* ═══════════════════════════════════════════
-   STATUS
-═══════════════════════════════════════════ */
-const STATUS_MAP={
-  booked:{cls:'s-booked',label:'Booked'},bookahead:{cls:'s-bookahead',label:'Book Ahead'},
-  book_ahead:{cls:'s-bookahead',label:'Book Ahead'},confirmed:{cls:'s-confirmed',label:'Confirmed'},
-  included:{cls:'s-included',label:'Included'},planning:{cls:'s-planning',label:'Planning'},
-  optional:{cls:'s-optional',label:'Optional'},free:{cls:'s-free',label:'Free'},
-  paid:{cls:'s-paid',label:'Paid'},on_arrival:{cls:'s-planning',label:'On Arrival'},
-  pay_at_property:{cls:'s-planning',label:'Pay on Arrival'},not_booked:{cls:'s-bookahead',label:'Book Ahead'},
-  pending:{cls:'s-bookahead',label:'Book Ahead'},reminder:{cls:'s-optional',label:'Reminder'},
-  incomplete:{cls:'s-bookahead',label:'Incomplete'},
-};
-function resolveStatus(item){
-  const s=(item.status||'').toLowerCase();
-  if(s==='booked'){
-    const n=item.notes||'';
-    const hasRef=(
-      n.toLowerCase().includes('ref #')||n.toLowerCase().includes('ref#')||
-      /booking[:\s]/i.test(n)||n.toLowerCase().includes('confirmed booking')||
-      n.toLowerCase().includes('klook')||n.toLowerCase().includes('expedia')||
-      /\u00a3\d/.test(n)||/\u00a5[\d,]+(paid|total)/i.test(n)||
-      n.toLowerCase().includes('booked via')||n.toLowerCase().includes('pre-booked')||
-      n.toLowerCase().includes('emot')||n.toLowerCase().includes('odakyu')
-    );
-    if(!hasRef) return{cls:'s-bookahead',label:'Book Ahead'};
-  }
-  return STATUS_MAP[s]||{cls:'s-planning',label:item.status||''};
-}
-
-/* ═══════════════════════════════════════════
-   COUNTDOWN
-═══════════════════════════════════════════ */
-function renderCountdown(){
-  const dep=new Date('2026-04-03T00:00:00'),now=new Date(),diff=dep-now;
-  const bar=document.getElementById('countdown-bar');
-  if(!bar) return;
-  if(diff<=0){
-    const end=new Date('2026-04-18T23:59:59');
-    if(now<=end) bar.innerHTML='<div class="countdown-gone">✈️ Trip is underway — enjoy Japan! 🌸</div>';
-    else bar.innerHTML='<div class="countdown-gone">🏡 Back home — what a trip!</div>';
-    return;
-  }
-  const d=Math.floor(diff/86400000),h=Math.floor((diff%86400000)/3600000),
-        m=Math.floor((diff%3600000)/60000),s=Math.floor((diff%60000)/1000);
-  bar.innerHTML=`
-    <div class="countdown-unit"><div class="countdown-num">${d}</div><div class="countdown-lbl">Days</div></div>
-    <div class="countdown-unit"><div class="countdown-num">${String(h).padStart(2,'0')}</div><div class="countdown-lbl">Hours</div></div>
-    <div class="countdown-unit"><div class="countdown-num">${String(m).padStart(2,'0')}</div><div class="countdown-lbl">Mins</div></div>
-    <div class="countdown-unit"><div class="countdown-num">${String(s).padStart(2,'0')}</div><div class="countdown-lbl">Secs</div></div>`;
-}
-renderCountdown();
-setInterval(renderCountdown,1000);
-
-/* ═══════════════════════════════════════════
-   TODAY DETECTION
-═══════════════════════════════════════════ */
-function getTodayIndex(){
-  const now=new Date();
-  const todayISO=now.toISOString().slice(0,10);
-  const match=DAY_DATES.find(d=>d.date===todayISO);
-  return match?match.di:-1;
-}
-
-function renderTodayBanner(){
-  const idx=getTodayIndex();
-  if(idx<0) return '';
-  const days=(tripData&&tripData.days)||[];
-  const day=days[idx];
-  if(!day) return '';
-  return `<div class="today-banner" onclick="goToToday()">
-    <div class="today-badge">📅</div>
-    <div>
-      <div class="today-banner-text">Today: ${day.title||day.day||'Day '+idx}</div>
-      <div class="today-banner-sub">${day.date||''} · Tap to jump to today's day →</div>
-    </div>
-  </div>`;
-}
-
-function goToToday(){
-  const idx=getTodayIndex();
-  if(idx<0) return;
-  // Switch to days tab
-  switchTab('days',document.querySelector('.nav-tab:nth-child(2)'));
-  setTimeout(()=>{
-    const card=document.getElementById('day-'+idx);
-    if(!card) return;
-    if(!card.classList.contains('open')) card.classList.add('open');
-    card.scrollIntoView({behavior:'smooth',block:'start'});
-  },100);
-}
-
-/* ═══════════════════════════════════════════
-   DATA LOAD
-═══════════════════════════════════════════ */
-function setSyncStatus(state,msg){
-  const dot=document.getElementById('sync-dot');
-  const txt=document.getElementById('sync-status');
-  if(dot) dot.className='sync-dot'+(state==='loading'?' loading':state==='error'?' error':'');
-  if(txt) txt.textContent=msg;
-}
-
-async function loadData(){
-  setSyncStatus('loading','Fetching latest data…');
-  try{
-    const res=await fetch(RAW_URL+'?t='+Date.now());
-    if(!res.ok) throw new Error('HTTP '+res.status);
-    tripData=await res.json();
-    setSyncStatus('ok','Updated '+new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}));
-  }catch(e){
-    setSyncStatus('error','Could not fetch — showing cached/fallback');
-    tripData={days:[],checklist:[]};
-  }
-  renderOverview();
-  renderDays();
-  renderChecklist();
-}
-
-/* ═══════════════════════════════════════════
-   OVERVIEW
-═══════════════════════════════════════════ */
-function renderOverview(){
-  const days=(tripData&&tripData.days)||[];
-  const totalItems=days.reduce((a,d)=>a+(d.items||[]).length,0);
-  const hotels=[
-    {name:'Crown Park Hotel Seoul',       dates:'Sat 4 – Sun 5 Apr',   status:'paid'},
-    {name:'Keio Plaza Hotel Tokyo',        dates:'Sun 5 – Wed 8 Apr',   status:'property'},
-    {name:'TEN-YU Ryokan, Hakone',         dates:'Wed 8 – Fri 10 Apr',  status:'paid'},
-    {name:'Mitsui Garden Hotel Kyoto',     dates:'Fri 10 – Tue 14 Apr', status:'paid'},
-    {name:'Candeo Hotels Osaka The Tower', dates:'Tue 14 – Fri 17 Apr', status:'paid'},
-    {name:'Grand Hyatt Incheon',           dates:'Fri 17 – Sat 18 Apr', status:'property'},
-  ];
-  const icons=['🏨','🏙️','🛁','🌸','🎡','✈️'];
-  document.getElementById('tab-overview').innerHTML=`
-    ${renderTodayBanner()}
-    <div class="overview-grid">
-      <div class="stat-card"><div class="stat-num">15</div><div class="stat-label">Days</div></div>
-      <div class="stat-card"><div class="stat-num">5</div><div class="stat-label">Cities</div></div>
-      <div class="stat-card"><div class="stat-num">${totalItems||'60+'}</div><div class="stat-label">Activities</div></div>
-    </div>
-    <div class="section-title">¥ / £ Quick Converter</div>
-    <div class="currency-widget" style="margin-bottom:16px;">
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
-        <input class="currency-input" type="number" id="ov-currency-input" value="1000" oninput="ovConvert()" min="0" style="max-width:130px;">
-        <span class="currency-label" id="ov-from-label">¥</span>
-        <span style="font-size:18px;color:var(--muted)">→</span>
-        <span class="currency-result" id="ov-result">£5.26</span>
-        <span class="currency-label" id="ov-to-label">£</span>
-        <button class="currency-swap" style="margin-top:0;" onclick="ovSwap()">⇄</button>
-      </div>
-      <div class="quick-amounts" id="ov-quick">
-        <span style="font-size:11px;color:var(--muted);align-self:center;">Quick:</span>
-        <button class="quick-btn" onclick="ovSet(500)">¥500</button>
-        <button class="quick-btn" onclick="ovSet(1000)">¥1,000</button>
-        <button class="quick-btn" onclick="ovSet(5000)">¥5,000</button>
-        <button class="quick-btn" onclick="ovSet(10000)">¥10,000</button>
-        <button class="quick-btn" onclick="ovSet(50000)">¥50,000</button>
-      </div>
-      <div class="currency-rate">Rate: ¥${YEN_RATE} = £1 &nbsp;·&nbsp; Update <code>YEN_RATE</code> before departure</div>
-    </div>
-    <div class="section-title">Accommodation</div>
-    ${hotels.map((h,i)=>`<div class="hotel-card">
-      <div class="hotel-icon">${icons[i]}</div>
-      <div><div class="hotel-name">${h.name}</div><div class="hotel-dates">${h.dates}</div></div>
-      <div class="hotel-status ${h.status==='paid'?'paid':'property'}">${h.status==='paid'?'Paid':'Pay on Arrival'}</div>
-    </div>`).join('')}
-    <div class="section-title" style="margin-top:20px;">Status Key</div>
-    <div class="status-legend">
-      <div class="legend-item"><div class="legend-dot" style="background:#e05050"></div>Booked & confirmed</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#e09040"></div>Book ahead</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#4a9e8e"></div>Confirmed / Paid</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#4a8ec9"></div>Included</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#c9a84c"></div>Planning</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#9e6ec9"></div>Optional</div>
-      <div class="legend-item"><div class="legend-dot" style="background:#7ab87a"></div>Free</div>
-    </div>`;
-  setTimeout(ovConvert,50);
-}
-
-/* ═══════════════════════════════════════════
-   DAYS TAB
-═══════════════════════════════════════════ */
-const DAY_OSM={
-  'Seoul':  'https://www.openstreetmap.org/export/embed.html?bbox=126.734%2C37.413%2C127.183%2C37.701&layer=mapnik&marker=37.5665%2C126.9780',
-  'Tokyo':  'https://www.openstreetmap.org/export/embed.html?bbox=139.500%2C35.550%2C139.870%2C35.810&layer=mapnik&marker=35.6895%2C139.6917',
-  'Hakone': 'https://www.openstreetmap.org/export/embed.html?bbox=138.950%2C35.170%2C139.200%2C35.310&layer=mapnik&marker=35.2324%2C139.1067',
-  'Kyoto':  'https://www.openstreetmap.org/export/embed.html?bbox=135.630%2C34.930%2C135.870%2C35.090&layer=mapnik&marker=35.0116%2C135.7681',
-  'Nara':   'https://www.openstreetmap.org/export/embed.html?bbox=135.760%2C34.650%2C135.860%2C34.720&layer=mapnik&marker=34.6851%2C135.8050',
-  'Osaka':  'https://www.openstreetmap.org/export/embed.html?bbox=135.390%2C34.600%2C135.620%2C34.780&layer=mapnik&marker=34.6937%2C135.5023',
-  'Himeji': 'https://www.openstreetmap.org/export/embed.html?bbox=134.630%2C34.790%2C134.740%2C34.860&layer=mapnik&marker=34.8394%2C134.6939',
-  'Heathrow':'https://www.openstreetmap.org/export/embed.html?bbox=-0.510%2C51.440%2C-0.400%2C51.500&layer=mapnik&marker=51.4700%2C-0.4543',
-  'Incheon':'https://www.openstreetmap.org/export/embed.html?bbox=126.300%2C37.400%2C126.650%2C37.550&layer=mapnik&marker=37.4602%2C126.4407',
-};
-function getOSMForDay(loc){
-  if(!loc) return null;
-  for(const k of Object.keys(DAY_OSM)) if(loc.includes(k)) return{url:DAY_OSM[k],city:k};
-  return null;
-}
-const dayMapOpen={};
-
-function formatDayDate(ds){
-  if(!ds) return'';
-  if(/^\d{4}-\d{2}-\d{2}$/.test(ds)){
-    try{return new Date(ds+'T12:00:00').toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'short'});}catch(e){}
-  }
-  return ds;
-}
-
-function renderDays(){
-  const days=(tripData&&tripData.days)||[];
-  const todayIdx=getTodayIndex();
-  // Build detail registry — avoids backtick/quote injection in onclick attributes
-  window._details=[];
-  document.getElementById('tab-days').innerHTML='<div class="days-container">'+days.map((day,di)=>{
-    const items=day.items||[];
-    const label=day.label||day.day||'';
-    const dayNum=label.match(/Day (\d+)/)?.[1]||label.match(/(\d+)/)?.[1]||di;
-    const dayTitle=day.title||'';
-    const osmInfo=getOSMForDay(day.location||'');
-    const isToday=(di===todayIdx);
-
-    const itemsHTML=items.map(item=>{
-      const sm=resolveStatus(item);
-      // Map link and detail button go in item-actions row, clearly separated
-      const mapLink=item.mapQuery
-        ?`<a class="item-maplink" href="https://maps.google.com/?q=${encodeURIComponent(item.mapQuery)}" target="_blank" title="Open in Google Maps">📍 Map</a>`:'';
-      let detailBtn='';
-      if(item.detail){
-        const idx=window._details.length;
-        window._details.push({title:item.activity||'',body:item.detail});
-        detailBtn=`<button class="detail-btn" onclick="openDetailByIndex(${idx})">ℹ Info</button>`;
-      }
-      // Map on right of status row; Info below on its own line
-      const statusRow=`<div class="item-status-row"><span class="status-badge ${sm.cls}">${sm.label}</span>${mapLink}</div>`;
-      return `<div class="item">
-        <div class="item-time">${item.time||''}</div>
-        <div class="item-main">
-          <div class="item-activity">${item.activity||''}</div>
-          ${item.notes?`<div class="item-notes">${item.notes}</div>`:''}
-          ${statusRow}
-          ${detailBtn?`<div class="item-info-row">${detailBtn}</div>`:''}
-        </div>
-      </div>`;
-    }).join('');
-
-    const mapSection=osmInfo?`
-      <button class="day-map-btn" id="mapbtn-${di}" onclick="toggleDayMap(${di})">🗺 Show ${osmInfo.city} map</button>
-      <iframe id="daymap-${di}" class="day-osm-frame" src="" data-src="${osmInfo.url}"
-        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`:'';
-
-    return `<div class="day-card${isToday?' today-day':''}" id="day-${di}">
-      <div class="day-header" onclick="toggleDay(${di})">
-        <div class="day-num">${dayNum}</div>
-        <div class="day-info">
-          <div class="day-title">${dayTitle||formatDayDate(day.date)}${isToday?'<span class="today-pill">TODAY</span>':''}</div>
-          <div class="day-loc">${formatDayDate(day.date)}${day.location?' · '+day.location:''}</div>
-        </div>
-        <div class="day-badge">${items.length} activities</div>
-        <div class="day-chevron">›</div>
-      </div>
-      <div class="day-body">${mapSection}${itemsHTML}</div>
-    </div>`;
-  }).join('')+'</div>';
-
-  // Auto-open today's day if trip is underway
-  if(todayIdx>=0){
-    setTimeout(()=>{
-      const card=document.getElementById('day-'+todayIdx);
-      if(card&&!card.classList.contains('open')) card.classList.add('open');
-    },200);
-  }
-}
-
-function toggleDay(di){document.getElementById('day-'+di).classList.toggle('open');}
-function toggleDayMap(di){
-  const frame=document.getElementById('daymap-'+di);
-  const btn=document.getElementById('mapbtn-'+di);
-  if(!frame||!btn) return;
-  const on=dayMapOpen[di];
-  dayMapOpen[di]=!on;
-  if(!on){
-    if(!frame.dataset.loaded){frame.src=frame.dataset.src;frame.dataset.loaded='1';}
-    frame.classList.add('visible');btn.classList.add('active');
-    btn.textContent=btn.textContent.replace('Show','Hide');
-  }else{
-    frame.classList.remove('visible');btn.classList.remove('active');
-    btn.textContent=btn.textContent.replace('Hide','Show');
-  }
-}
-
-/* ═══════════════════════════════════════════
-   DETAIL MODAL
-═══════════════════════════════════════════ */
-function openDetailByIndex(i){
-  const d=window._details&&window._details[i];
-  if(!d) return;
-  openDetailModal(d.title,d.body);
-}
-function openDetailModal(title,detail){
-  document.getElementById('modal-title').textContent=title;
-  document.getElementById('modal-body').textContent=detail;
-  document.getElementById('detail-modal').classList.add('open');
-  document.body.style.overflow='hidden';
-}
-function closeDetailModal(e){
-  if(e&&e.target!==document.getElementById('detail-modal')) return;
-  document.getElementById('detail-modal').classList.remove('open');
-  document.body.style.overflow='';
-}
-
-/* ═══════════════════════════════════════════
-   TRANSPORT TAB
-═══════════════════════════════════════════ */
-function renderTransport(){
-  const legs=[
-    {from:'London Heathrow',to:'Seoul Incheon',type:'Flight',date:'Fri 3 Apr',time:'13:25 → 10:05+1',duration:'~11h',cost:'Included',how:'Virgin Atlantic VS208',status:'confirmed',ref:'Ref E3FYHB · Seats 24D/24F/25D/25F'},
-    {from:'Seoul ICN T2',to:'Tokyo Narita T1',type:'Flight',date:'Sun 5 Apr',time:'15:45 → 18:25',duration:'2h 40m',cost:'Included',how:'Asiana OZ106',status:'confirmed',ref:'PNR D2MKD6 · Seats 24C / 24H,J,K'},
-    {from:'Narita Airport',to:'Keio Plaza Hotel',type:'Transfer',date:'Sun 5 Apr',time:'~19:00',duration:'~75 min',cost:'Klook booked',how:'Toyota Alphard private transfer · Meet & greet at arrivals',status:'confirmed',ref:'Klook XEB644582'},
-    {from:'Shinjuku',to:'Hakone-Yumoto',type:'Romancecar',date:'Wed 8 Apr',time:'10:00 → 11:27',duration:'1h 27m',cost:'¥4,600 total',how:'Odakyu Romancecar GSE "Hakone 3" · Car 7 Seats 5C,5D,6C,6D',status:'confirmed',ref:'Surcharge only — base via Freepass · Ref E786'},
-    {from:'Hakone-Yumoto',to:'Gora (& back)',type:'Mountain Rail',date:'Wed–Fri 8–10 Apr',time:'Various',duration:'~40 min',cost:'Included in Freepass',how:'Hakone Tozan Railway · All-day use',status:'confirmed',ref:'3-day Hakone Freepass × 4'},
-    {from:'Gora',to:'Owakudani via Sounzan',type:'Cable Car + Ropeway',date:'Thu 9 Apr',time:'~10:15',duration:'~45 min',cost:'Included in Freepass',how:'Cable car Gora→Sounzan then ropeway over volcanic ridge',status:'confirmed',ref:'Check ropeway closure due to volcanic activity'},
-    {from:'Owakudani',to:'Moto-Hakone (Lake Ashi)',type:'Ropeway + Boat',date:'Thu 9 Apr',time:'~12:20',duration:'~30 min ropeway + 40 min boat',cost:'Included in Freepass',how:'Ropeway descent then Hakone Pirate Ship cruise',status:'confirmed',ref:'Disembark at Moto-Hakone pier'},
-    {from:'Odawara',to:'Kyoto',type:'Shinkansen',date:'Fri 10 Apr',time:'~13:00',duration:'~2h 10m',cost:'Book via Klook',how:'Hikari Shinkansen · Green Car D seats rows 10–15 · Book from Tue 10 Mar',status:'book',ref:'Fuji visible on right first 30 mins from Odawara'},
-    {from:'Kyoto',to:'Osaka',type:'JR Train',date:'Tue 14 Apr',time:'~12:30',duration:'15–30 min',cost:'JR Pass covered',how:'Shinkansen (15 min) or JR Special Rapid (30 min)',status:'confirmed',ref:'No surcharge on Special Rapid with JR Pass'},
-    {from:'Osaka',to:'Himeji & back',type:'JR Train',date:'Thu 16 Apr',time:'08:15 depart',duration:'~60 min each way',cost:'JR Pass covered',how:'JR Special Rapid · No Shinkansen needed',status:'confirmed',ref:'Direct Osaka → Himeji · Walk north 15 min from station'},
-    {from:'Osaka (Tennoji)',to:'Kansai Airport KIX',type:'Haruka Express',date:'Fri 17 Apr',time:'~16:30',duration:'~29 min',cost:'~¥2,000–2,200pp',how:'Metro Namba→Tennoji (~¥230pp, 10 min) then JR Haruka · No booking needed',status:'confirmed',ref:'Buy at Tennoji JR machines on the day'},
-    {from:'Kansai Airport',to:'Seoul Incheon T2',type:'Flight',date:'Fri 17 Apr',time:'19:45 → 21:40',duration:'1h 55m',cost:'Included',how:'Asiana OZ113 · A350 · Seats 24H,J / 25H,J',status:'confirmed',ref:'PNR D2MKD6'},
-    {from:'Seoul Incheon',to:'London Heathrow',type:'Flight',date:'Sat 18 Apr',time:'12:25 → 18:50',duration:'~11h 45m',cost:'Included',how:'Virgin Atlantic VS209 · Seats 23D,23F,24D,24F',status:'confirmed',ref:'Ref E3FYHB'},
-  ];
-
-  document.getElementById('tab-transport').innerHTML=`<div style="padding-top:12px;">
-    <div class="section-title">All Journey Legs — in order</div>
-    <p style="font-size:11px;color:var(--muted);padding-bottom:12px;line-height:1.6;">Every major transfer, flight and train leg. Tap the day items for full booking details.</p>
-    ${legs.map(l=>`<div class="transport-card">
-      <div class="transport-route">
-        <span class="transport-from">${l.from}</span>
-        <span class="transport-arrow">→</span>
-        <span class="transport-to">${l.to}</span>
-        <span class="transport-type">${l.type}</span>
-      </div>
-      <div class="transport-meta">
-        <div class="transport-meta-item"><strong>${l.date}</strong>Date</div>
-        <div class="transport-meta-item"><strong>${l.time}</strong>Time</div>
-        <div class="transport-meta-item"><strong>${l.duration}</strong>Duration</div>
-        <div class="transport-meta-item"><strong>${l.cost}</strong>Cost</div>
-      </div>
-      <div class="transport-note">${l.how}</div>
-      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:8px;padding-top:8px;border-top:1px solid var(--item-border);">
-        <span class="transport-status ${l.status==='confirmed'?'confirmed':'book'}">${l.status==='confirmed'?'✓ Confirmed':'⚠ Action needed'}</span>
-        <span style="font-size:10px;color:var(--muted);">${l.ref}</span>
-      </div>
-    </div>`).join('')}
-  </div>`;
-}
-
-/* ═══════════════════════════════════════════
-   MAPS TAB
-═══════════════════════════════════════════ */
-const CITIES=[
-  {name:'Full Route', osm:'https://www.openstreetmap.org/export/embed.html?bbox=121.0%2C33.0%2C142.0%2C38.5&layer=mapnik'},
-  {name:'🇰🇷 Seoul',  osm:'https://www.openstreetmap.org/export/embed.html?bbox=126.734%2C37.413%2C127.183%2C37.701&layer=mapnik&marker=37.5665%2C126.9780'},
-  {name:'🗼 Tokyo',   osm:'https://www.openstreetmap.org/export/embed.html?bbox=139.500%2C35.550%2C139.870%2C35.810&layer=mapnik&marker=35.6895%2C139.6917'},
-  {name:'⛰️ Hakone',  osm:'https://www.openstreetmap.org/export/embed.html?bbox=138.950%2C35.170%2C139.200%2C35.310&layer=mapnik&marker=35.2324%2C139.1067'},
-  {name:'⛩️ Kyoto',   osm:'https://www.openstreetmap.org/export/embed.html?bbox=135.630%2C34.930%2C135.870%2C35.090&layer=mapnik&marker=35.0116%2C135.7681'},
-  {name:'🦌 Nara',    osm:'https://www.openstreetmap.org/export/embed.html?bbox=135.760%2C34.650%2C135.860%2C34.720&layer=mapnik&marker=34.6851%2C135.8050'},
-  {name:'🎡 Osaka',   osm:'https://www.openstreetmap.org/export/embed.html?bbox=135.390%2C34.600%2C135.620%2C34.780&layer=mapnik&marker=34.6937%2C135.5023'},
-  {name:'🏰 Himeji',  osm:'https://www.openstreetmap.org/export/embed.html?bbox=134.630%2C34.790%2C134.740%2C34.860&layer=mapnik&marker=34.8394%2C134.6939'},
-];
-let mapView='osm',activeCity=0;
-function renderMapTab(){
-  document.getElementById('tab-map').innerHTML=`<div style="padding-top:12px;">
-    <div class="section-title">Map Explorer</div>
-    <div class="map-view-toggle">
-      <button class="map-toggle-btn active" id="mtbtn-osm" onclick="setMapView('osm',this)">🌍 Live Map</button>
-      <button class="map-toggle-btn" id="mtbtn-route" onclick="setMapView('route',this)">🗺 Route Overview</button>
-    </div>
-    <div class="map-city-tabs" id="city-tabs">
-      ${CITIES.map((c,i)=>`<button class="map-city-btn${i===0?' active':''}" onclick="switchMapCity(${i},this)">${c.name}</button>`).join('')}
-    </div>
-    <div id="map-osm-panel">
-      <iframe id="main-osm-frame" class="osm-frame" src="${CITIES[0].osm}" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div id="map-route-panel" style="display:none;" class="route-svg-wrap">${routeSVG()}</div>
-    <p style="font-size:11px;color:var(--muted);padding:10px 0 4px;">Per-city maps also inside each day in the Day by Day tab.</p>
-  </div>`;
-}
-function routeSVG(){
-  const W=560,H=320;
-  const stops=[
-    {label:'🇬🇧 London',x:40,y:60},{label:'🇰🇷 Seoul',x:160,y:90},{label:'🗼 Tokyo',x:310,y:80},
-    {label:'⛰️ Hakone',x:350,y:140},{label:'⛩️ Kyoto',x:330,y:210},{label:'🦌 Nara',x:345,y:245},
-    {label:'🎡 Osaka',x:315,y:265},{label:'🏰 Himeji',x:275,y:260},
-  ];
-  const pts=stops.map(s=>`${s.x},${s.y}`).join(' L ');
-  const last=stops[stops.length-1],first=stops[0];
-  return `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;background:#0f1520;">
-    ${[...Array(7)].map((_,i)=>`<line x1="0" y1="${i*50}" x2="${W}" y2="${i*50}" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>`).join('')}
-    <path d="M ${pts}" fill="none" stroke="#e8829a" stroke-width="2" stroke-dasharray="6,3" opacity="0.7"/>
-    <path d="M ${last.x},${last.y} Q 180,310 ${first.x},${first.y}" fill="none" stroke="#4a9e8e" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.5"/>
-    ${stops.map(s=>`<circle cx="${s.x}" cy="${s.y}" r="7" fill="#e8829a" stroke="#0f1520" stroke-width="2"/><circle cx="${s.x}" cy="${s.y}" r="3" fill="white"/><text x="${s.x}" y="${s.y-13}" font-family="DM Sans,sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="600">${s.label}</text>`).join('')}
-    <text x="${W-10}" y="${H-8}" font-family="DM Sans,sans-serif" font-size="9" fill="#c9a84c" text-anchor="end">Evans Family Japan 2026</text>
-  </svg>`;
-}
-function setMapView(v,btn){
-  mapView=v;
-  document.querySelectorAll('.map-toggle-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  const osmP=document.getElementById('map-osm-panel'),routeP=document.getElementById('map-route-panel'),ct=document.getElementById('city-tabs');
-  if(v==='osm'){osmP.style.display='block';routeP.style.display='none';if(ct)ct.style.display='flex';}
-  else{osmP.style.display='none';routeP.style.display='block';if(ct)ct.style.display='none';}
-}
-function switchMapCity(idx,btn){
-  activeCity=idx;
-  document.querySelectorAll('.map-city-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  const f=document.getElementById('main-osm-frame');
-  if(f) f.src=CITIES[idx].osm;
-}
-
-/* ═══════════════════════════════════════════
-   CHECKLIST
-═══════════════════════════════════════════ */
-function renderChecklist(){
-  const groups=(tripData&&tripData.checklist)||[];
-  if(!groups.length){
-    document.getElementById('tab-checklist').innerHTML='<div class="checklist-container"><div class="checklist-notice">📋 When something\'s done, don\'t forget to tell Andy — so he can update Claude and keep this app fully up to date.</div><p style="color:var(--muted);font-size:13px;padding:12px 0;">No checklist loaded — check your connection and refresh.</p></div>';
-    return;
-  }
-  const html=groups.map(g=>`<div class="checklist-group">
-    <div class="checklist-group-title">${g.group||g.category||g.name||g.title||'Checklist'}</div>
-    ${(g.items||[]).map(item=>`<div class="checklist-item">
-      <div style="flex:1;min-width:0">
-        <div class="check-task">${item.task||item.item||item.name||item.text||item.activity||''}</div>
-        ${item.notes?`<div class="check-meta">${item.notes}</div>`:''}
-        ${item.deadline&&item.deadline!=='✅ Done'&&item.deadline!=='✅ Booked'?`<div class="check-meta" style="color:var(--blossom)">⏰ ${item.deadline}</div>`:''}
-      </div>
-      ${item.who?`<div class="check-who">${item.who}</div>`:''}
-    </div>`).join('')}
-  </div>`).join('');
-  document.getElementById('tab-checklist').innerHTML=`<div class="checklist-container">
-    <div class="checklist-notice">📋 When something's done, don't forget to tell Andy — so he can update Claude and keep this app fully up to date.</div>
-    ${html||'<p style="color:var(--muted);font-size:13px;padding:12px 0;">No checklist data loaded yet — tap Refresh above.</p>'}
-  </div>`;
-}
-
-/* ═══════════════════════════════════════════
-   WEATHER
-═══════════════════════════════════════════ */
-function renderWeather(){
-  const data=[
-    {city:'Seoul',flag:'🇰🇷',dates:'4–5 Apr',icon:'🌤',avg:'13°C',range:'8–17°C',desc:'Mild spring, partly cloudy',details:'Light jacket needed evenings\nCherry blossom may still linger\nLow rain probability'},
-    {city:'Tokyo',flag:'🇯🇵',dates:'5–8 Apr',icon:'🌸',avg:'16°C',range:'11–20°C',desc:'Peak cherry blossom season',details:'Warm days, cool evenings\nPossible light showers\nIdeal sightseeing weather'},
-    {city:'Hakone',flag:'⛰️',dates:'8–10 Apr',icon:'⛅',avg:'12°C',range:'7–16°C',desc:'Cooler at altitude',details:'Fuji views best in morning\nCloud cover common afternoons\nWarm layers for onsen evenings'},
-    {city:'Kyoto',flag:'⛩️',dates:'10–14 Apr',icon:'🌸',avg:'17°C',range:'11–21°C',desc:'Beautiful spring weather',details:'Late cherry blossoms likely\nComfortable walking temps\nGo early to avoid crowds'},
-    {city:'Nara',flag:'🦌',dates:'~13 Apr',icon:'🌤',avg:'17°C',range:'11–21°C',desc:'Same as Kyoto region',details:'Day trip — very pleasant\nDeer park lovely in spring\nLight layers sufficient'},
-    {city:'Osaka',flag:'🎡',dates:'14–17 Apr',icon:'🌤',avg:'18°C',range:'13–22°C',desc:'Warm & bright',details:'Warmest city on the trip\nGreat street food weather\nLow rain probability'},
-  ];
-  document.getElementById('tab-weather').innerHTML=`<div style="padding-top:12px;">
-    <div class="section-title">April Weather by City</div>
-    <div class="weather-grid">${data.map(w=>`<div class="weather-card">
-      <div class="weather-city">${w.flag} ${w.city}</div>
-      <div class="weather-dates">${w.dates}</div>
-      <div class="weather-icon">${w.icon}</div>
-      <div class="weather-temp">${w.avg}</div>
-      <div class="weather-range">${w.range}</div>
-      <div class="weather-desc">${w.desc}</div>
-      <div class="weather-detail">${w.details.replace(/\n/g,'<br>')}</div>
-    </div>`).join('')}</div>
-    <p style="font-size:11px;color:var(--muted);padding:12px 0 4px;text-align:center;font-style:italic;">Based on April historical averages. Check closer to departure.</p>
-  </div>`;
-}
-
-/* ═══════════════════════════════════════════
-   PHRASES
-═══════════════════════════════════════════ */
-const PHRASES=[
-  {jp:'ありがとうございます',en:'Thank you very much',rom:'Arigatou gozaimasu'},
-  {jp:'すみません',en:'Excuse me / Sorry',rom:'Sumimasen'},
-  {jp:'これをください',en:"I'll have this please",rom:'Kore wo kudasai'},
-  {jp:'いくらですか？',en:'How much is this?',rom:'Ikura desu ka?'},
-  {jp:'どこですか？',en:'Where is...?',rom:'Doko desu ka?'},
-  {jp:'えいごをはなせますか？',en:'Do you speak English?',rom:'Eigo wo hanasemasu ka?'},
-  {jp:'おすすめは何ですか？',en:'What do you recommend?',rom:'Osusume wa nan desu ka?'},
-  {jp:'トイレはどこですか？',en:'Where is the toilet?',rom:'Toire wa doko desu ka?'},
-  {jp:'カードは使えますか？',en:'Can I pay by card?',rom:'Kaado wa tsukaemasu ka?'},
-  {jp:'おいしい！',en:'Delicious!',rom:'Oishii!'},
-  {jp:'写真をとってもいいですか？',en:'May I take a photo?',rom:'Shashin wo totte mo ii desu ka?'},
-  {jp:'いただきます',en:"Let's eat (before a meal)",rom:'Itadakimasu'},
-  {jp:'ごちそうさまでした',en:'Thank you for the meal',rom:'Gochisousama deshita'},
-  {jp:'よやくがあります',en:'I have a reservation',rom:'Yoyaku ga arimasu'},
-  {jp:'タクシーをよんでください',en:'Please call a taxi',rom:'Takushi wo yonde kudasai'},
-];
-function renderPhrases(){
-  document.getElementById('tab-phrases').innerHTML=`<div style="padding-top:12px;">
-    <p style="font-size:11px;color:var(--muted);padding:0 0 10px;line-height:1.6;">Tap any card to copy the Japanese text to clipboard.</p>
-    ${PHRASES.map(p=>`<div class="phrase-card" onclick="copyPhrase('${p.jp}')" style="cursor:pointer" title="Tap to copy">
-      <div class="phrase-jp">${p.jp}</div>
-      <div><div class="phrase-en">${p.en}</div><div class="phrase-rom">${p.rom}</div></div>
-    </div>`).join('')}
-  </div>`;
-}
-function copyPhrase(t){navigator.clipboard?.writeText(t).catch(()=>{});}
-
-/* ═══════════════════════════════════════════
-   TIPS
-═══════════════════════════════════════════ */
-function renderTips(){
-  const tips=[
-    {title:'🚇 Getting Around',items:[
-      '<strong>Suica card</strong> — load ¥5,000–10,000 each. Works on every metro, JR train and bus. Pays at convenience stores and vending machines.',
-      '<strong>Hakone Freepass</strong> — 3-day pass covering Romancecar, mountain railway, cable car, ropeway, pirate ship, buses.',
-      '<strong>JR Pass</strong> — covers Shinkansen and JR trains between cities. Covers Tokyo–Kyoto–Osaka–Himeji legs.',
-      '<strong>Never take a taxi from Narita</strong> — ~¥35,000. Pre-booked Klook transfer is the move.',
-    ]},
-    {title:'💴 Money',items:[
-      'Japan is still heavily <strong>cash-based</strong>. Withdraw ¥30,000–50,000 on arrival at Narita.',
-      '<strong>7-Eleven ATMs</strong> accept foreign cards reliably throughout Japan.',
-      '<strong>Golden Gai bars, small ramen shops, markets</strong> — cash only. Always carry ¥5,000–10,000.',
-    ]},
-    {title:'🍜 Food & Eating',items:[
-      'Say <strong>いただきます</strong> before eating and <strong>ごちそうさま</strong> after — always appreciated.',
-      '<strong>Konbini</strong> (7-Eleven, Lawson, FamilyMart) sell genuinely excellent food. Not a last resort.',
-      'You do <strong>not tip</strong> in Japan. Ever. Tipping can cause confusion or offence.',
-      'Most ramen shops use <strong>vending machine ordering</strong> — buy your ticket first, hand to staff.',
-    ]},
-    {title:'🛁 Onsen & Ryokan',items:[
-      'Private rotenburo at TEN-YU has <strong>no tattoo restrictions</strong>.',
-      '<strong>Wash thoroughly</strong> at the shower station before entering the hot spring — non-negotiable.',
-      'Wear <strong>yukata</strong> (room robes) around the ryokan — perfectly normal.',
-      'Kaiseki dinner has <strong>many small courses</strong>. Pace yourself.',
-    ]},
-    {title:'📱 Apps & Tech',items:[
-      '<strong>Google Maps</strong> — download offline maps for all cities before leaving.',
-      '<strong>Google Translate</strong> — camera mode excellent for menus. Download Japanese offline pack.',
-      '<strong>eSIMs</strong> — activate at Narita. Check signal before leaving the airport.',
-      '<strong>Suica on iPhone</strong> — set up in Apple Wallet. Tap to pay everywhere.',
-    ]},
-  ];
-  document.getElementById('tab-tips').innerHTML=`<div style="padding-top:8px;">${
-    tips.map(s=>`<div class="tip-section">
-      <div class="tip-section-title">${s.title}</div>
-      ${s.items.map(t=>`<div class="tip-item">${t}</div>`).join('')}
-    </div>`).join('')
-  }</div>`;
-}
-
-/* ═══════════════════════════════════════════
-   LINKS TAB
-═══════════════════════════════════════════ */
-function renderLinks(){
-  const groups=[
-    {title:'✈️ Flights & Transfers',links:[
-      {icon:'🛫',name:'Virgin Atlantic — Manage Booking',desc:'Ref E3FYHB · LHR↔ICN',url:'https://www.virginatlantic.com/gb/en/manage-booking.html'},
-      {icon:'🛫',name:'Asiana Airlines — Manage Booking',desc:'PNR D2MKD6 · ICN↔NRT, KIX↔ICN',url:'https://flyasiana.com/C/GB/EN/manage-booking/reservation-inquiry'},
-      {icon:'🚗',name:'KwikPark — My Booking',desc:'Order L4PUK-777209 · LHR T3 Meet & Greet',url:'https://kwikpark.co.uk'},
-      {icon:'🚐',name:'Klook — My Bookings',desc:'Narita transfer XEB644582 & more',url:'https://www.klook.com/en-GB/profile/orders/'},
-    ]},
-    {title:'🚄 Japan Transport',links:[
-      {icon:'🚃',name:'EMot — My Tickets',desc:'Hakone Freepass × 4 · sarahevansemail@googlemail.com',url:'https://emot-tickets.jp/my-tickets'},
-      {icon:'🚄',name:'Odakyu Romancecar Booking',desc:'Book return leg if needed',url:'https://www.odakyu.jp/english/romancecar/'},
-      {icon:'🚅',name:'JR Ticket Booking (Klook)',desc:'Odawara → Kyoto Shinkansen — book from Tue 10 Mar',url:'https://www.klook.com/en-GB/search/?query=japan+rail+pass'},
-    ]},
-    {title:'🏨 Hotels',links:[
-      {icon:'🛎',name:'Expedia — My Trips',desc:'Crown Park Seoul · Keio Plaza · Mitsui Kyoto · Candeo Osaka',url:'https://www.expedia.co.uk/trips'},
-      {icon:'🏯',name:'TEN-YU Ryokan',desc:'Wed 8 – Fri 10 Apr · 2 nights · Paid',url:'https://www.tenyugroup.com'},
-      {icon:'🏨',name:'Grand Hyatt Incheon',desc:'Expedia Conf: 150513RA052227 · Pay at property',url:'https://www.hyatt.com'},
-    ]},
-    {title:'🍱 Restaurants & Food',links:[
-      {icon:'🎋',name:'Kyoto Arashiyama Nishiki',desc:'Traditional kaiseki in Arashiyama — signature sakura-juku-zen box-set, lunch & dinner, riverside setting next to Togetsukyo Bridge. Book ahead. Closed Tuesdays.',url:'https://www.arashiyama-nishiki.com/'},
-    ]},
-    {title:'🌏 Useful Sites',links:[
-      {icon:'🌦',name:'Japan Meteorological Agency',desc:'Official Japan weather forecasts',url:'https://www.jma.go.jp/en/week/'},
-      {icon:'🗺',name:'Google Maps — Japan',desc:'Open in browser for saved lists',url:'https://maps.google.com/?hl=en'},
-      {icon:'🎌',name:'Visit Japan Web (Entry)',desc:'Immigration & customs pre-registration',url:'https://vjw-lp.digital.go.jp/en/'},
-      {icon:'💊',name:'JNTO Travel Info',desc:'Japan National Tourism Organisation',url:'https://www.japan.travel/en/'},
-    ]},
-
-  ];
-  document.getElementById('tab-links').innerHTML=`<div style="padding-top:12px;">
-    ${groups.map(g=>`<div class="links-group">
-      <div class="links-group-title">${g.title}</div>
-      ${g.links.map(l=>`<a class="link-card" href="${l.url}" target="_blank" rel="noopener">
-        <div class="link-icon">${l.icon}</div>
-        <div><div class="link-name">${l.name}</div><div class="link-desc">${l.desc}</div></div>
-        <div class="link-arrow">›</div>
-      </a>`).join('')}
-    </div>`).join('')}
-    <div style="padding-top:12px;border-top:1px solid var(--border);">
-      <div class="section-title">¥ / £ Currency Converter</div>
-      <div class="currency-widget">
-        <div class="currency-title">Quick Converter <span style="font-size:11px;font-weight:400;color:var(--muted);">— Static rate: ¥${YEN_RATE} per £1</span></div>
-        <div class="currency-row">
-          <input class="currency-input" type="number" id="currency-input" value="1000" oninput="convertCurrency()" min="0">
-          <span class="currency-label" id="currency-from-label">¥</span>
-          <span style="font-size:18px;color:var(--muted)">→</span>
-          <span class="currency-result" id="currency-result">£5.26</span>
-          <span class="currency-label" id="currency-to-label">£</span>
-        </div>
-        <button class="currency-swap" onclick="swapCurrency()">⇄ Swap ¥ / £</button>
-        <div class="quick-amounts" id="quick-amounts">
-          <span style="font-size:11px;color:var(--muted);align-self:center;">Quick:</span>
-          <button class="quick-btn" onclick="setAmount(500)">¥500</button>
-          <button class="quick-btn" onclick="setAmount(1000)">¥1,000</button>
-          <button class="quick-btn" onclick="setAmount(5000)">¥5,000</button>
-          <button class="quick-btn" onclick="setAmount(10000)">¥10,000</button>
-          <button class="quick-btn" onclick="setAmount(50000)">¥50,000</button>
-        </div>
-        <div class="currency-rate">Rate set to ¥${YEN_RATE} = £1 · Update in app code before departure if needed.</div>
-      </div>
-    </div>
-  </div>`;
-  convertCurrency();
-}
-
-function ovConvert(){
-  const input=parseFloat(document.getElementById('ov-currency-input')?.value)||0;
-  const result=document.getElementById('ov-result');
-  if(!result) return;
-  if(window._ovMode!=='gbpToYen'){
-    result.textContent='£'+(input/YEN_RATE).toFixed(2);
-  }else{
-    result.textContent='¥'+(input*YEN_RATE).toLocaleString('en-GB',{maximumFractionDigits:0});
-  }
-}
-function ovSwap(){
-  window._ovMode=(window._ovMode!=='gbpToYen')?'gbpToYen':'yenToGbp';
-  const fl=document.getElementById('ov-from-label');
-  const tl=document.getElementById('ov-to-label');
-  const qa=document.getElementById('ov-quick');
-  if(window._ovMode!=='gbpToYen'){
-    if(fl)fl.textContent='¥';if(tl)tl.textContent='£';
-    if(qa)qa.innerHTML=`<span style="font-size:11px;color:var(--muted);align-self:center;">Quick:</span>
-      <button class="quick-btn" onclick="ovSet(500)">¥500</button>
-      <button class="quick-btn" onclick="ovSet(1000)">¥1,000</button>
-      <button class="quick-btn" onclick="ovSet(5000)">¥5,000</button>
-      <button class="quick-btn" onclick="ovSet(10000)">¥10,000</button>
-      <button class="quick-btn" onclick="ovSet(50000)">¥50,000</button>`;
-  }else{
-    if(fl)fl.textContent='£';if(tl)tl.textContent='¥';
-    if(qa)qa.innerHTML=`<span style="font-size:11px;color:var(--muted);align-self:center;">Quick:</span>
-      <button class="quick-btn" onclick="ovSet(5)">£5</button>
-      <button class="quick-btn" onclick="ovSet(10)">£10</button>
-      <button class="quick-btn" onclick="ovSet(20)">£20</button>
-      <button class="quick-btn" onclick="ovSet(50)">£50</button>
-      <button class="quick-btn" onclick="ovSet(100)">£100</button>`;
-  }
-  ovConvert();
-}
-function ovSet(v){
-  const inp=document.getElementById('ov-currency-input');
-  if(inp){inp.value=v;ovConvert();}
-}
-function convertCurrency(){
-  const input=parseFloat(document.getElementById('currency-input')?.value)||0;
-  const result=document.getElementById('currency-result');
-  if(!result) return;
-  if(currencyMode==='yenToGbp'){
-    result.textContent='£'+( input/YEN_RATE).toFixed(2);
-  }else{
-    result.textContent='¥'+(input*YEN_RATE).toLocaleString('en-GB',{maximumFractionDigits:0});
-  }
-}
-function swapCurrency(){
-  currencyMode=currencyMode==='yenToGbp'?'gbpToYen':'yenToGbp';
-  const fl=document.getElementById('currency-from-label');
-  const tl=document.getElementById('currency-to-label');
-  const qa=document.getElementById('quick-amounts');
-  if(currencyMode==='yenToGbp'){
-    if(fl) fl.textContent='¥'; if(tl) tl.textContent='£';
-    if(qa) qa.innerHTML=`<span style="font-size:11px;color:var(--muted);align-self:center;">Quick:</span>
-      <button class="quick-btn" onclick="setAmount(500)">¥500</button>
-      <button class="quick-btn" onclick="setAmount(1000)">¥1,000</button>
-      <button class="quick-btn" onclick="setAmount(5000)">¥5,000</button>
-      <button class="quick-btn" onclick="setAmount(10000)">¥10,000</button>
-      <button class="quick-btn" onclick="setAmount(50000)">¥50,000</button>`;
-  }else{
-    if(fl) fl.textContent='£'; if(tl) tl.textContent='¥';
-    if(qa) qa.innerHTML=`<span style="font-size:11px;color:var(--muted);align-self:center;">Quick:</span>
-      <button class="quick-btn" onclick="setAmount(5)">£5</button>
-      <button class="quick-btn" onclick="setAmount(10)">£10</button>
-      <button class="quick-btn" onclick="setAmount(20)">£20</button>
-      <button class="quick-btn" onclick="setAmount(50)">£50</button>
-      <button class="quick-btn" onclick="setAmount(100)">£100</button>`;
-  }
-  convertCurrency();
-}
-function setAmount(v){
-  const inp=document.getElementById('currency-input');
-  if(inp){inp.value=v;convertCurrency();}
-}
-
-/* ═══════════════════════════════════════════
-   EMERGENCY TAB
-═══════════════════════════════════════════ */
-function renderEmergency(){
-  document.getElementById('tab-emergency').innerHTML=`<div style="padding-top:12px;">
-    <div class="emergency-banner">🆘 Save this page to your home screen before you leave — it works offline</div>
-
-    <div class="emergency-card urgent">
-      <div class="emergency-card-title">🚨 Emergency Numbers</div>
-      <div class="emergency-row">
-        <span class="emergency-label">Police (Japan)</span>
-        <span class="emergency-value"><span class="emergency-number"><a href="tel:110">110</a></span></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Ambulance/Fire (Japan)</span>
-        <span class="emergency-value"><span class="emergency-number"><a href="tel:119">119</a></span></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Police (S. Korea)</span>
-        <span class="emergency-value"><span class="emergency-number"><a href="tel:112">112</a></span></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Ambulance (S. Korea)</span>
-        <span class="emergency-value"><span class="emergency-number"><a href="tel:119">119</a></span></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">KwikPark (car)</span>
-        <span class="emergency-value"><a href="tel:07850366784">07850 366784</a></span>
-      </div>
-    </div>
-
-    <div class="emergency-card">
-      <div class="emergency-card-title">🏛 UK Embassies / Consulates</div>
-      <div class="emergency-row">
-        <span class="emergency-label">UK Embassy Tokyo</span>
-        <span class="emergency-value"><a href="tel:+81352117100">+81 3 5211 1100</a><br><span style="font-size:10px;color:var(--muted);">1 Ichiban-cho, Chiyoda-ku, Tokyo</span></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">UK Consulate Osaka</span>
-        <span class="emergency-value"><a href="tel:+81662197200">+81 6 6219 7200</a></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">UK Embassy Seoul</span>
-        <span class="emergency-value"><a href="tel:+82234108600">+82 2 3210 5500</a><br><span style="font-size:10px;color:var(--muted);">Jeong-dong, Jung-gu, Seoul</span></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">FCDO 24hr Helpline</span>
-        <span class="emergency-value"><a href="tel:+442070081500">+44 20 7008 1500</a></span>
-      </div>
-    </div>
-
-    <div class="emergency-card">
-      <div class="emergency-card-title">🏥 Medical & Medicines</div>
-      <div class="emergency-row">
-        <span class="emergency-label">Andy — medicines</span>
-        <span class="emergency-value">Naproxen · Omeprazole · Nortriptyline<br><span style="font-size:10px;color:var(--muted);">Sciatica / back pain — TENS + Voltarol gel</span></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Andy — blood type</span>
-        <span class="emergency-value">Update here before trip</span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Sarah — blood type</span>
-        <span class="emergency-value">Update here before trip</span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Jack — blood type</span>
-        <span class="emergency-value">Update here before trip</span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Charlie — blood type</span>
-        <span class="emergency-value">Update here before trip</span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">AMDA Japan helpline</span>
-        <span class="emergency-value"><a href="tel:+81662361990">+81 6 6636 2333</a><br><span style="font-size:10px;color:var(--muted);">English-speaking medical info, Tokyo area</span></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Japan Helpline (24hr)</span>
-        <span class="emergency-value"><a href="tel:0570000911">0570-000-911</a><br><span style="font-size:10px;color:var(--muted);">English crisis line, all Japan</span></span>
-      </div>
-    </div>
-
-    <div class="emergency-card">
-      <div class="emergency-card-title">🛡 Travel Insurance</div>
-      <div class="emergency-row">
-        <span class="emergency-label">Insurer</span>
-        <span class="emergency-value">Update before trip</span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Policy number</span>
-        <span class="emergency-value">Update before trip</span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Emergency claim no.</span>
-        <span class="emergency-value">Update before trip</span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">GP Surgery</span>
-        <span class="emergency-value">Update before trip</span>
-      </div>
-    </div>
-
-    <div class="emergency-card">
-      <div class="emergency-card-title">📞 Key Contacts</div>
-      <div class="emergency-row">
-        <span class="emergency-label">Tourmaker (Korea taxi)</span>
-        <span class="emergency-value">WhatsApp via booking app<br><span style="font-size:10px;color:var(--muted);">Ref #1479-1 & #1479-2</span></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Klook support</span>
-        <span class="emergency-value"><a href="https://www.klook.com/en-GB/contacts/" target="_blank">klook.com/contacts</a></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Virgin Atlantic (24hr)</span>
-        <span class="emergency-value"><a href="tel:+443448092770">0344 809 2770</a></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Asiana Airlines UK</span>
-        <span class="emergency-value"><a href="tel:+442074840228">+44 20 7484 0228</a></span>
-      </div>
-    </div>
-
-    <p style="font-size:11px;color:var(--muted);padding:12px 0 4px;line-height:1.6;text-align:center;">⚠️ Update blood types, insurance policy & GP details before leaving home. Tell Andy to update Claude so the app reflects current info.</p>
-  </div>`;
-}
-
-/* ═══════════════════════════════════════════
-   TAB SWITCHING
-═══════════════════════════════════════════ */
-const TABS=['overview','days','transport','map','weather','checklist','phrases','tips','links','emergency'];
-function switchTab(tab,btn){
-  TABS.forEach(t=>{const el=document.getElementById('tab-'+t);if(el)el.style.display=(t===tab)?'block':'none';});
-  document.querySelectorAll('.nav-tab').forEach(b=>b.classList.remove('active'));
-  if(btn) btn.classList.add('active');
-}
-
-/* ═══════════════════════════════════════════
-   SERVICE WORKER (offline cache)
-═══════════════════════════════════════════ */
-if('serviceWorker' in navigator){
-  const SW_CODE=`
-const CACHE='japan-trip-v1';
-const ASSETS=['${location.href}'];
-self.addEventListener('install',e=>{
-  e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));
-  self.skipWaiting();
-});
-self.addEventListener('activate',e=>{
-  e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));
-  self.clients.claim();
-});
-self.addEventListener('fetch',e=>{
-  e.respondWith(
-    fetch(e.request).then(r=>{
-      if(r&&r.status===200){
-        const clone=r.clone();
-        caches.open(CACHE).then(c=>c.put(e.request,clone));
-      }
-      return r;
-    }).catch(()=>caches.match(e.request))
-  );
-});`;
-  const blob=new Blob([SW_CODE],{type:'application/javascript'});
-  const swUrl=URL.createObjectURL(blob);
-  navigator.serviceWorker.register(swUrl).catch(()=>{});
-}
-
-/* ═══════════════════════════════════════════
-   INIT
-═══════════════════════════════════════════ */
-renderPhrases();
-renderTips();
-renderWeather();
-renderMapTab();
-renderTransport();
-renderEmergency();
-renderLinks();
-loadData();
-</script>
-</body>
-</html>
