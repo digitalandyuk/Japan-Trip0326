@@ -359,6 +359,7 @@ const STATUS_MAP={
   paid:{cls:'s-paid',label:'Paid'},on_arrival:{cls:'s-planning',label:'On Arrival'},
   pay_at_property:{cls:'s-planning',label:'Pay on Arrival'},not_booked:{cls:'s-bookahead',label:'Book Ahead'},
   pending:{cls:'s-bookahead',label:'Book Ahead'},reminder:{cls:'s-optional',label:'Reminder'},
+  incomplete:{cls:'s-bookahead',label:'Incomplete'},
 };
 function resolveStatus(item){
   const s=(item.status||'').toLowerCase();
@@ -564,7 +565,7 @@ function renderDays(){
     const items=day.items||[];
     const label=day.label||day.day||'';
     const dayNum=label.match(/Day (\d+)/)?.[1]||label.match(/(\d+)/)?.[1]||di;
-    const dayTitle=day.title||'';
+    const dayTitle=day.title||day.location||'';
     const osmInfo=getOSMForDay(day.location||'');
     const isToday=(di===todayIdx);
 
@@ -913,6 +914,9 @@ function renderLinks(){
       {icon:'🛎',name:'Expedia — My Trips',desc:'Crown Park Seoul · Keio Plaza · Mitsui Kyoto · Candeo Osaka',url:'https://www.expedia.co.uk/trips'},
       {icon:'🏯',name:'TEN-YU Ryokan',desc:'Wed 8 – Fri 10 Apr · 2 nights · Paid',url:'https://www.tenyugroup.com'},
       {icon:'🏨',name:'Grand Hyatt Incheon',desc:'Expedia Conf: 150513RA052227 · Pay at property',url:'https://www.hyatt.com'},
+    ]},
+    {title:'🍱 Restaurants & Food',links:[
+      {icon:'🎋',name:'Kyoto Arashiyama Nishiki',desc:'Traditional kaiseki in Arashiyama — signature sakura-juku-zen box-set, lunch & dinner, riverside setting next to Togetsukyo Bridge. Book ahead. Closed Tuesdays.',url:'https://www.arashiyama-nishiki.com/'},
     ]},
     {title:'🌏 Useful Sites',links:[
       {icon:'🌦',name:'Japan Meteorological Agency',desc:'Official Japan weather forecasts',url:'https://www.jma.go.jp/en/week/'},
