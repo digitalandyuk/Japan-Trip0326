@@ -317,6 +317,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
   <button class="nav-tab" onclick="switchTab('transport',this)">🚄 Transport</button>
   <button class="nav-tab" onclick="switchTab('map',this)">🗺 Maps</button>
   <button class="nav-tab" onclick="switchTab('weather',this)">🌤 Weather</button>
+  <button class="nav-tab" onclick="switchTab('booked',this)">✅ Booked</button>
   <button class="nav-tab" onclick="switchTab('checklist',this)">Checklist</button>
   <button class="nav-tab" onclick="switchTab('phrases',this)">Japanese</button>
   <button class="nav-tab" onclick="switchTab('tips',this)">Tips</button>
@@ -330,6 +331,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
   <div id="tab-transport" style="display:none"></div>
   <div id="tab-map"       style="display:none"></div>
   <div id="tab-weather"   style="display:none"></div>
+  <div id="tab-booked"    style="display:none"></div>
   <div id="tab-checklist" style="display:none"></div>
   <div id="tab-phrases"   style="display:none"></div>
   <div id="tab-tips"      style="display:none"></div>
@@ -1221,11 +1223,68 @@ function renderEmergency(){
 /* ═══════════════════════════════════════════
    TAB SWITCHING
 ═══════════════════════════════════════════ */
-const TABS=['overview','days','transport','map','weather','checklist','phrases','tips','links','emergency'];
+const TABS=['overview','days','transport','map','weather','booked','checklist','phrases','tips','links','emergency'];
+/* ═══════════════════════════════════════════
+   BOOKED TAB
+═══════════════════════════════════════════ */
+function renderBooked(){
+  if(!tripData){
+    document.getElementById('tab-booked').innerHTML='<p style="color:var(--muted);padding:16px;">Loading...</p>';
+    return;
+  }
+  const BOOKED_STATUSES=new Set(['booked','confirmed','paid','pay_at_property','included']);
+  const rows=[];
+  (tripData.days||[]).forEach(day=>{
+    (day.items||[]).forEach(item=>{
+      if(BOOKED_STATUSES.has(item.status)){
+        rows.push({date:day.date,label:day.label,time:item.time||'',activity:item.activity||'',status:item.status,notes:item.notes||'',detail:item.detail||''});
+      }
+    });
+  });
+  // Sort by date then time (already in order but be safe)
+  rows.sort((a,b)=>{
+    if(a.date!==b.date) return a.date<b.date?-1:1;
+    const ta=a.time.replace(':','').padStart(4,'0');
+    const tb=b.time.replace(':','').padStart(4,'0');
+    return ta<tb?-1:ta>tb?1:0;
+  });
+  const STATUS_LABEL={'booked':'Booked','confirmed':'Confirmed','paid':'Paid','pay_at_property':'Pay on arrival','included':'Included'};
+  const STATUS_COLOUR={'booked':'var(--jade)','confirmed':'var(--jade)','paid':'var(--blossom)','pay_at_property':'#e09040','included':'var(--muted)'};
+  let html=`<div style="padding:12px 0;">
+  <p style="font-size:11px;color:var(--muted);padding:0 0 12px;">${rows.length} confirmed/included items across all days</p>
+  <table style="width:100%;border-collapse:collapse;font-size:12.5px;">
+  <thead><tr style="background:var(--ink2);">
+    <th style="padding:8px 10px;text-align:left;color:var(--muted);font-weight:500;white-space:nowrap;">Date</th>
+    <th style="padding:8px 6px;text-align:left;color:var(--muted);font-weight:500;white-space:nowrap;">Time</th>
+    <th style="padding:8px 6px;text-align:left;color:var(--muted);font-weight:500;">Activity</th>
+    <th style="padding:8px 6px;text-align:left;color:var(--muted);font-weight:500;white-space:nowrap;">Status</th>
+  </tr></thead><tbody>`;
+  let lastDate='';
+  rows.forEach((r,i)=>{
+    const dayLabel=r.label.replace(/Day \d+ — /,'');
+    const isNewDate=r.date!==lastDate;
+    if(isNewDate) lastDate=r.date;
+    const rowBg=i%2===0?'var(--ink2)':'var(--ink)';
+    const dateCell=isNewDate?`<td style="padding:8px 10px;color:var(--gold);font-weight:600;white-space:nowrap;vertical-align:top;">${dayLabel}</td>`
+      :`<td style="padding:8px 10px;"></td>`;
+    const notesHtml=r.notes?`<div style="color:var(--muted);font-size:11px;margin-top:3px;line-height:1.4;">${r.notes}</div>`:'';
+    const infoBtn=r.detail?`<button onclick="event.stopPropagation();alert(${JSON.stringify(r.detail)})" style="margin-left:8px;font-size:10px;padding:1px 6px;border-radius:10px;border:1px solid var(--jade);color:var(--jade);background:none;cursor:pointer;">ℹ</button>`:'';
+    html+=`<tr style="background:${rowBg};border-bottom:1px solid var(--border);">
+      ${dateCell}
+      <td style="padding:8px 6px;color:var(--muted);white-space:nowrap;vertical-align:top;">${r.time}</td>
+      <td style="padding:8px 6px;vertical-align:top;"><span style="color:var(--white);">${r.activity}</span>${infoBtn}${notesHtml}</td>
+      <td style="padding:8px 6px;white-space:nowrap;vertical-align:top;"><span style="font-size:10px;padding:2px 7px;border-radius:10px;background:${STATUS_COLOUR[r.status]||'var(--muted)'};color:var(--ink);font-weight:600;">${STATUS_LABEL[r.status]||r.status}</span></td>
+    </tr>`;
+  });
+  html+=`</tbody></table></div>`;
+  document.getElementById('tab-booked').innerHTML=html;
+}
+
 function switchTab(tab,btn){
   TABS.forEach(t=>{const el=document.getElementById('tab-'+t);if(el)el.style.display=(t===tab)?'block':'none';});
   document.querySelectorAll('.nav-tab').forEach(b=>b.classList.remove('active'));
   if(btn) btn.classList.add('active');
+  if(tab==='booked') renderBooked();
 }
 
 /* ═══════════════════════════════════════════
