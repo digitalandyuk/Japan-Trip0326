@@ -37,7 +37,30 @@
           "mapQuery": "Heathrow Terminal 3"
         }
       ],
-      "title": "London → Seoul"
+      "title": "London → Seoul",
+      "ideas": [
+        {
+          "title": "Complete Visit Japan Web immigration forms",
+          "type": "Admin",
+          "notes": "Get your QR code for the express immigration lane at ICN. Saves 30–60 mins. vjw-lp.digital.go.jp",
+          "url": "https://www.vjw.digital.go.jp"
+        },
+        {
+          "title": "Download all Japan apps before leaving",
+          "type": "Prep",
+          "notes": "Tabelog, Navitime, Klook, Airalo eSIM (code ERICA20 for 20% off), Ramen Beast, Flush, Payke, KuliKuli, Japan Travel. Add Suica to Apple Wallet now — much easier from the UK."
+        },
+        {
+          "title": "Pack coin purse",
+          "type": "Packing",
+          "notes": "Japan uses coins constantly. ¥100 and ¥500 coins are the workhorses."
+        },
+        {
+          "title": "Disable cellular data on landing",
+          "type": "Tech",
+          "notes": "Switch to your eSIM immediately at ICN. Avoid any accidental roaming on UK SIM."
+        }
+      ]
     },
     {
       "date": "2026-04-04",
@@ -113,7 +136,37 @@
           "mapQuery": "Myeongdong Street Seoul Jung-gu"
         }
       ],
-      "title": "Seoul Arrival"
+      "title": "Seoul Arrival",
+      "ideas": [
+        {
+          "title": "Deoksugung Palace — Changing of the Guard",
+          "type": "Sightseeing",
+          "notes": "Compact, beautiful royal palace. 20 min walk from Crown Park. Guard ceremony at 2pm most days. ₩1,000pp. Allow 1 hour.",
+          "mapQuery": "Deoksugung Palace Seoul"
+        },
+        {
+          "title": "N Seoul Tower — Namsan cable car",
+          "type": "Viewpoint",
+          "notes": "Cable car ₩9,500pp return · Tower entry ₩21,000pp. Panoramic city views. Best at sunset but gets busy.",
+          "mapQuery": "N Seoul Tower Namsan"
+        },
+        {
+          "title": "Bukchon Hanok Village",
+          "type": "Sightseeing",
+          "notes": "Traditional Korean village, wooden hanok houses. Best in late afternoon light. Taxi 15 min from hotel. Free to explore.",
+          "mapQuery": "Bukchon Hanok Village Seoul"
+        },
+        {
+          "title": "Korean BBQ dinner in Myeongdong",
+          "type": "Food",
+          "notes": "Samgyeopsal (pork belly) or galbi (beef ribs). ₩60,000–80,000 for 4. Many excellent spots within walking distance of Crown Park."
+        },
+        {
+          "title": "7-Eleven ATM — get Korean won",
+          "type": "Practical",
+          "notes": "Don't exchange at the airport. 7-Eleven ATMs accept UK cards and give much better rates."
+        }
+      ]
     },
     {
       "date": "2026-04-05",
@@ -199,7 +252,24 @@
           "mapQuery": "Omoide Yokocho Memory Lane Tokyo"
         }
       ],
-      "title": "Seoul → Tokyo"
+      "title": "Seoul → Tokyo",
+      "ideas": [
+        {
+          "title": "Namdaemun Market — last Seoul stop",
+          "type": "Shopping",
+          "notes": "5 mins walk from hotel. One of Seoul's oldest markets. Good for last-minute Korean snacks and souvenirs before heading to ICN."
+        },
+        {
+          "title": "Buy yen at Korean convenience store ATM",
+          "type": "Practical",
+          "notes": "Better rates than airport or UK. Get ¥50,000 per person minimum before you leave Korea."
+        },
+        {
+          "title": "Activate Japanese eSIM at Narita",
+          "type": "Tech",
+          "notes": "Turn off Korean eSIM, activate Japan eSIM before leaving the arrivals hall. Check signal works."
+        }
+      ]
     },
     {
       "date": "2026-04-06",
@@ -249,7 +319,48 @@
           "mapQuery": "Golden Gai Shinjuku Tokyo"
         }
       ],
-      "title": "Tokyo — Shibuya · Harajuku · Asakusa"
+      "title": "Tokyo — Shibuya · Harajuku · Asakusa",
+      "ideas": [
+        {
+          "title": "Shibuya Sky rooftop viewpoint",
+          "type": "Viewpoint",
+          "notes": "Open-air observation deck on Shibuya Scramble Square. 360° Tokyo views. Book midnight 30 days in advance.",
+          "url": "https://www.shibuya-scramble-square.com/sky/"
+        },
+        {
+          "title": "Shibuya 12F hidden viewpoint (free)",
+          "type": "Viewpoint",
+          "notes": "Free secret viewing area behind the teppanyaki restaurant on the 12th floor of Shibuya Scramble Square. No one talks about it."
+        },
+        {
+          "title": "Harajuku thrift: Laforet / Loveless / Atmos / Beauty & Youth",
+          "type": "Shopping",
+          "notes": "Best Harajuku stores for youth fashion, streetwear and mid-range basics. Dense — allow 2 hours minimum."
+        },
+        {
+          "title": "2nd Street / Mode Off / Treasure Factory (thrift chains)",
+          "type": "Shopping",
+          "notes": "Large-format vintage and second-hand chains. Great for clothing, records, accessories. Very local experience."
+        },
+        {
+          "title": "Don Quijote Shibuya",
+          "type": "Shopping",
+          "notes": "Largest Don Quijote in Japan. Open 24/7. Less crowded after 10pm. Classic Japan experience — everything under one roof.",
+          "mapQuery": "Don Quijote Shibuya Tokyo"
+        },
+        {
+          "title": "Omoide Yokocho (Memory Lane) — yakitori alley",
+          "type": "Food",
+          "notes": "2 min walk from Keio Plaza. Tiny smoky yakitori bars. Cash only. Classic Tokyo first evening.",
+          "mapQuery": "Omoide Yokocho Memory Lane Tokyo"
+        },
+        {
+          "title": "Tir na nÓg underground bar, Ginza",
+          "type": "Bar",
+          "notes": "Underground cocktail bar. Cover charge likely ¥500–1,000pp. Check sign at entrance.",
+          "mapQuery": "Tir na Nog Ginza Tokyo"
+        }
+      ]
     },
     {
       "date": "2026-04-07",
@@ -299,7 +410,57 @@
           "mapQuery": "Shibuya Crossing Tokyo"
         }
       ],
-      "title": "Tokyo — Sumo · Tsukiji · Ueno"
+      "title": "Tokyo — Sumo · Tsukiji · Ueno",
+      "ideas": [
+        {
+          "title": "Sumo Museum (free)",
+          "type": "Culture",
+          "notes": "Free entry. In the Ryogoku Kokugikan sumo stadium. Good intro to sumo history and culture. Near the Oshiage stable area.",
+          "mapQuery": "Sumo Museum Ryogoku Tokyo"
+        },
+        {
+          "title": "Chankonabe (sumo stew)",
+          "type": "Food",
+          "notes": "Traditional sumo wrestler diet. Restaurants near Ryogoku station. Hearty, warming, very local. About ¥1,500–2,500pp."
+        },
+        {
+          "title": "TeamLab Planets (Toyosu)",
+          "type": "Experience",
+          "notes": "Immersive digital art. Barefoot through water. Otherworldly. ⚠ Book 2 months in advance — 9am slots are hardest to get.",
+          "url": "https://planets.teamlab.art/tokyo/",
+          "mapQuery": "teamLab Planets Tokyo Toyosu"
+        },
+        {
+          "title": "Tokyo Skytree observation deck",
+          "type": "Viewpoint",
+          "notes": "Tallest structure in Japan. Observation deck + Solamachi shopping at the base. Book midnight, 30 days in advance.",
+          "url": "https://www.tokyo-skytree.jp/en/",
+          "mapQuery": "Tokyo Skytree"
+        },
+        {
+          "title": "Shimokitazawa neighbourhood",
+          "type": "Neighbourhood",
+          "notes": "Very un-touristy. Strong coffee culture, unique thrift shops. Short train from Shinjuku. Very different vibe to central Tokyo.",
+          "mapQuery": "Shimokitazawa Tokyo"
+        },
+        {
+          "title": "Gotokuji Temple (lucky cats)",
+          "type": "Temple",
+          "notes": "Hundreds of ceramic maneki-neko (lucky cat) figures. Very photogenic. Near Shimokitazawa.",
+          "mapQuery": "Gotokuji Temple Tokyo"
+        },
+        {
+          "title": "Standing sushi bar",
+          "type": "Food",
+          "notes": "Must-do Tokyo experience. Look for ones near Tsukiji or around major train stations. Fast, cheap, excellent quality."
+        },
+        {
+          "title": "Ichiran Ramen",
+          "type": "Food",
+          "notes": "Solo-booth tonkotsu ramen. 24 hours. You order on a sheet, food arrives through a hatch. No social pressure. Classic.",
+          "mapQuery": "Ichiran Ramen Tokyo"
+        }
+      ]
     },
     {
       "date": "2026-04-08",
@@ -392,7 +553,20 @@
           "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
         }
       ],
-      "title": "Tokyo → Hakone"
+      "title": "Tokyo → Hakone",
+      "ideas": [
+        {
+          "title": "Hakone Open Air Museum",
+          "type": "Museum",
+          "notes": "120+ sculptures including Rodin, Henry Moore and Picasso. Outdoor foot onsen at the end. Freepass discount. Allow 2 hours.",
+          "mapQuery": "Hakone Open Air Museum"
+        },
+        {
+          "title": "Yuba (tofu skin) — Hakone speciality",
+          "type": "Food",
+          "notes": "Silky, delicate local speciality. Found in restaurants around Gora and the ryokan area."
+        }
+      ]
     },
     {
       "date": "2026-04-09",
@@ -522,7 +696,31 @@
           "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
         }
       ],
-      "title": "Hakone — Ropeway · Lake Ashi · Shrine"
+      "title": "Hakone — Ropeway · Lake Ashi · Shrine",
+      "ideas": [
+        {
+          "title": "Amazake-chaya teahouse",
+          "type": "Historic café",
+          "notes": "350-year-old thatched teahouse on the original Tokaido Highway. Warm amazake (sweet rice drink) and mochi. ¥500pp. One of Japan's oldest still-operating rest stops.",
+          "mapQuery": "Amazake-chaya Hakone"
+        },
+        {
+          "title": "Old Tokaido Cedar Avenue",
+          "type": "Walk",
+          "notes": "1km of 400-year-old cedar trees on the original Edo-era samurai road. Free. Connects Moto-Hakone to Hakone-machi. Very atmospheric.",
+          "mapQuery": "Tokaido Cedar Avenue Hakone"
+        },
+        {
+          "title": "Black eggs (kurotamago) at Owakudani",
+          "type": "Food/Attraction",
+          "notes": "Boiled in volcanic hot springs. ¥600 per 5-egg bag. Legend: each egg adds 7 years. Don't skip this."
+        },
+        {
+          "title": "Hakone Pirate Ship across Lake Ashi",
+          "type": "Transport/Attraction",
+          "notes": "Covered by Freepass. Views of Mt Fuji on clear days. Very dramatic."
+        }
+      ]
     },
     {
       "date": "2026-04-10",
@@ -631,7 +829,19 @@
           "mapQuery": "Pontocho alley Kyoto"
         }
       ],
-      "title": "Hakone → Kyoto"
+      "title": "Hakone → Kyoto",
+      "ideas": [
+        {
+          "title": "Odawara ekiben (station bento)",
+          "type": "Food",
+          "notes": "Buy at Odawara station before boarding the Shinkansen. Kamaboko (fish cake) bento is the local speciality. Eat on the train."
+        },
+        {
+          "title": "Mt Fuji view from Shinkansen",
+          "type": "Sightseeing",
+          "notes": "Right-hand side (E seats — which you have). Visible from immediately after Odawara for first ~30 mins. Have your camera ready."
+        }
+      ]
     },
     {
       "date": "2026-04-11",
@@ -729,7 +939,46 @@
           "mapQuery": "Gion District Kyoto Hanamikoji"
         }
       ],
-      "title": "Kyoto — Northern Temples · Gion"
+      "title": "Kyoto — Northern Temples · Gion",
+      "ideas": [
+        {
+          "title": "Otagi Nenbutsuji Temple",
+          "type": "Temple",
+          "notes": "1,200 unique stone Rakan statues each with a different expression. Quiet, very photogenic. At the top of Arashiyama walking route.",
+          "mapQuery": "Otagi Nenbutsuji Temple Kyoto"
+        },
+        {
+          "title": "Ōkōchi Sansō Villa",
+          "type": "Garden",
+          "notes": "15 min uphill from Bamboo Grove. ¥1,000pp includes matcha tea. Mountain views. Less crowded than main Arashiyama sights.",
+          "mapQuery": "Okochi Sanso Villa Arashiyama Kyoto"
+        },
+        {
+          "title": "Sannenzaka + Ninenzaka preserved streets",
+          "type": "Walk",
+          "notes": "Stone-paved streets below Kiyomizudera. Traditional machiya townhouses, Yasaka Pagoda views. Very photogenic.",
+          "mapQuery": "Sannenzaka Kyoto"
+        },
+        {
+          "title": "Kiyomizudera spring illumination",
+          "type": "Temple/Event",
+          "notes": "Special night illumination during cherry blossom season in April. Book ahead — separate ticket from daytime entry.",
+          "mapQuery": "Kiyomizudera Temple Kyoto"
+        },
+        {
+          "title": "Yasaka Shrine at night",
+          "type": "Shrine",
+          "notes": "Open all night. Stunning paper lanterns along Hanamikoji. Free. Best after Gion dinner.",
+          "mapQuery": "Yasaka Shrine Kyoto"
+        },
+        {
+          "title": "Tempura Endo, Gion",
+          "type": "Restaurant",
+          "notes": "Excellent counter tempura in Gion. Book ahead — very popular on Saturday evenings.",
+          "url": "https://www.tempura-endo.com/",
+          "mapQuery": "Tempura Endo Gion Kyoto"
+        }
+      ]
     },
     {
       "date": "2026-04-12",
@@ -828,7 +1077,42 @@
           "mapQuery": "Pontocho alley Kyoto"
         }
       ],
-      "title": "Kyoto — Arashiyama"
+      "title": "Kyoto — Arashiyama",
+      "ideas": [
+        {
+          "title": "Sagano Romantic Train (Torokko)",
+          "type": "Experience",
+          "notes": "⚠ BOOK AHEAD — sells out in cherry blossom season. 25 min scenic ride along Hozu River gorge. Torokko Saga → Kameoka. ¥880pp.",
+          "url": "https://www.sagano-kanko.co.jp/en/",
+          "mapQuery": "Torokko Saga Station Kyoto"
+        },
+        {
+          "title": "Nonomiya Shrine inside Bamboo Grove",
+          "type": "Shrine",
+          "notes": "Small black torii shrine inside the bamboo grove area. 10 mins, free, dedicated to matchmaking and good fortune. Very atmospheric.",
+          "mapQuery": "Nonomiya Shrine Arashiyama Kyoto"
+        },
+        {
+          "title": "Arashiyama Yoshimura (soba/udon)",
+          "type": "Restaurant",
+          "notes": "Good riverside soba and udon with Arashiyama views. Near Togetsukyo Bridge.",
+          "mapQuery": "Arashiyama Yoshimura restaurant Kyoto"
+        },
+        {
+          "title": "Kyoto Arashiyama Nishiki",
+          "type": "Restaurant",
+          "notes": "Traditional kaiseki on Nakanoshibashi island. Seasonal sakura-juku-zen box set. ☎ 075-871-8888. Book ahead. Closed Tuesdays.",
+          "url": "https://www.arashiyama-nishiki.com/",
+          "mapQuery": "Arashiyama Nishiki restaurant Kyoto"
+        },
+        {
+          "title": "Hozugawa Pleasure Boat (river gorge)",
+          "type": "Experience",
+          "notes": "50 min boat ride down the Hozu River gorge from Kameoka to Arashiyama. Scenic and peaceful. ⚠ Book in advance.",
+          "url": "https://www.hozugawakudari.jp/en",
+          "mapQuery": "Hozugawa Pleasure Boat Kameoka"
+        }
+      ]
     },
     {
       "date": "2026-04-13",
@@ -918,7 +1202,38 @@
           "mapQuery": "Gion district Kyoto"
         }
       ],
-      "title": "Kyoto / Nara Day Trip"
+      "title": "Kyoto / Nara Day Trip",
+      "ideas": [
+        {
+          "title": "Fushimi Inari Taisha (return from Nara)",
+          "type": "Shrine",
+          "notes": "Stop en route back. JR to Inari Station (5 min from Kyoto Station). Walk the lower gates to first viewpoint ~35–40 min. Free, open 24hrs. Thousands of vermillion torii gates.",
+          "mapQuery": "Fushimi Inari Taisha Kyoto"
+        },
+        {
+          "title": "Shika senbei — deer crackers, Nara Park",
+          "type": "Experience",
+          "notes": "Buy ¥200 packs from vendors. The deer genuinely bow for them. Buy 5–6 packs minimum — you will be mobbed.",
+          "mapQuery": "Nara Park Japan"
+        },
+        {
+          "title": "Naramachi old town",
+          "type": "District",
+          "notes": "Preserved Edo-era merchant houses. Craft shops, sake merchants, galleries. Quieter than the park area. 15 min south of Todai-ji.",
+          "mapQuery": "Naramachi Nara Japan"
+        },
+        {
+          "title": "Kakinoha-zushi (persimmon leaf sushi)",
+          "type": "Food",
+          "notes": "Nara's speciality. The persimmon leaf acts as a natural preservative and adds gentle flavour. Available throughout Naramachi.",
+          "mapQuery": "Naramachi Nara Japan"
+        },
+        {
+          "title": "Shim restaurant, Kyoto",
+          "type": "Restaurant",
+          "notes": "Recommended by Tokyo locals for traditional Kyoto meals. Worth seeking out for farewell Kyoto dinner."
+        }
+      ]
     },
     {
       "date": "2026-04-14",
@@ -993,7 +1308,34 @@
           "mapQuery": "Dotonbori Osaka neon food street"
         }
       ],
-      "title": "Kyoto → Osaka"
+      "title": "Kyoto → Osaka",
+      "ideas": [
+        {
+          "title": "Heian Jingu Shrine",
+          "type": "Shrine",
+          "notes": "Enormous 24m vermillion torii — one of Japan's largest. Free to approach. Garden ¥1,500pp optional. 5 min from Okazaki area.",
+          "mapQuery": "Heian Jingu Shrine Kyoto"
+        },
+        {
+          "title": "Tea ceremony (final Kyoto morning)",
+          "type": "Experience",
+          "notes": "Multiple operators. Camellia Tea Experience recommended — English-speaking, 75 min, near Higashiyama. Book ahead.",
+          "url": "https://www.tea-kyoto.com/",
+          "mapQuery": "tea ceremony Kyoto"
+        },
+        {
+          "title": "Nishiki Market — last Kyoto browse",
+          "type": "Market",
+          "notes": "Kyoto's kitchen. Last chance for pickles, yuba tofu, matcha sweets. Stalls close ~18:00. 5 min walk from hotel.",
+          "mapQuery": "Nishiki Market Kyoto"
+        },
+        {
+          "title": "Dotonbori at night (Osaka arrival eve)",
+          "type": "District",
+          "notes": "Much better after dark with all the neon. Glico Running Man, Kani Doraku crab sign. Walk the canal. Don't plan too much — just wander.",
+          "mapQuery": "Dotonbori Osaka"
+        }
+      ]
     },
     {
       "date": "2026-04-15",
@@ -1067,7 +1409,44 @@
           "mapQuery": "Namba Osaka"
         }
       ],
-      "title": "Osaka — Castle · Kuromon · Shinsekai"
+      "title": "Osaka — Castle · Kuromon · Shinsekai",
+      "ideas": [
+        {
+          "title": "Umeda Sky Building rooftop",
+          "type": "Viewpoint",
+          "notes": "Twin towers with floating observatory ring. ¥1,500pp. Great at sunset. Only 15 min walk from Candeo hotel.",
+          "mapQuery": "Umeda Sky Building Osaka"
+        },
+        {
+          "title": "Hozenji Yokocho alley",
+          "type": "Alley",
+          "notes": "Tiny atmospheric alley near Dotonbori. Moss-covered Fudo statue, candlelit restaurants. Perfect slow pre-dinner wander.",
+          "mapQuery": "Hozenji Yokocho Osaka"
+        },
+        {
+          "title": "Den Den Town (Osaka Akihabara)",
+          "type": "Shopping",
+          "notes": "Osaka's electronics and anime district. Retro game shops, Gunpla (Gundam models), anime figures. Jack and Charlie in their element.",
+          "mapQuery": "Den Den Town Osaka"
+        },
+        {
+          "title": "Kushikatsu — DO NOT double dip",
+          "type": "Food",
+          "notes": "Shinsekai is the home of kushikatsu. Deep-fried breadcrumbed skewers. ⚠ Cardinal sin to double-dip the communal sauce. ~¥200 per skewer.",
+          "mapQuery": "Kushikatsu Shinsekai Osaka"
+        },
+        {
+          "title": "Kobe beef dinner (splurge night)",
+          "type": "Restaurant",
+          "notes": "One high-end wagyu meal. Worth it at least once. Look for certified Kobe beef restaurant. ¥8,000–15,000pp. Book ahead.",
+          "mapQuery": "Kobe beef restaurant Osaka"
+        },
+        {
+          "title": "Melon pan ice cream, Dotonbori",
+          "type": "Street food",
+          "notes": "Freshly baked melon bread with soft-serve inside. Very photogenic. Very Osaka."
+        }
+      ]
     },
     {
       "date": "2026-04-16",
@@ -1157,7 +1536,33 @@
           "mapQuery": "Candeo Hotels Osaka The Tower"
         }
       ],
-      "title": "Osaka / Himeji Day Trip"
+      "title": "Osaka / Himeji Day Trip",
+      "ideas": [
+        {
+          "title": "Betty Smith custom denim, Kojima (future trip)",
+          "type": "Note",
+          "notes": "Japan's denim capital. Design your own jeans. Kojima is 60 min from Himeji by JR. Needs a full day — not possible on current itinerary, but worth noting for a future Japan trip.",
+          "url": "https://bettysmith.jp"
+        },
+        {
+          "title": "Himeji leather goods",
+          "type": "Shopping",
+          "notes": "Himeji has a centuries-old leather craft tradition. Unique souvenirs along the castle approach street.",
+          "mapQuery": "Himeji Castle Japan"
+        },
+        {
+          "title": "Anago (sea eel) lunch in Himeji",
+          "type": "Food",
+          "notes": "Himeji's local speciality. Restaurants on Otemon-dori approach to the castle.",
+          "mapQuery": "Himeji Castle Japan"
+        },
+        {
+          "title": "Spa World (back in Osaka)",
+          "type": "Onsen",
+          "notes": "Enormous onsen complex in Shinsekai. Themed floors — Roman baths, Japanese onsen. ¥1,000pp. Ideal after a long Himeji day.",
+          "mapQuery": "Spa World Osaka"
+        }
+      ]
     },
     {
       "date": "2026-04-17",
@@ -1242,7 +1647,31 @@
           "mapQuery": "Grand Hyatt Incheon Airport Hotel"
         }
       ],
-      "title": "Osaka → Seoul Incheon"
+      "title": "Osaka → Seoul Incheon",
+      "ideas": [
+        {
+          "title": "Osaka Aquarium Kaiyukan",
+          "type": "Attraction",
+          "notes": "World-class aquarium. 15 min from Namba. ¥2,700pp, 2 hours. Best option for the afternoon gap before the airport.",
+          "mapQuery": "Osaka Aquarium Kaiyukan"
+        },
+        {
+          "title": "Final konbini haul — 7-Eleven / Lawson",
+          "type": "Shopping",
+          "notes": "Stock up on: Pocky, regional KitKats, matcha snacks, Calbee crisps, instant ramen packs, Japanese curry sachets. All airport-safe."
+        },
+        {
+          "title": "Don Quijote Namba — last souvenirs",
+          "type": "Shopping",
+          "notes": "Open from 09:00. Last chance for Japanese snacks, cosmetics, electronic accessories, unusual gifts.",
+          "mapQuery": "Don Quijote Namba Osaka"
+        },
+        {
+          "title": "Alinamin + Lipovitan — buy for the flight",
+          "type": "Practical",
+          "notes": "Buy at any drugstore or convenience store before leaving. Alinamin Night Recovery for the long flight home. Yukon no Chikara for sore legs."
+        }
+      ]
     },
     {
       "date": "2026-04-18",
@@ -1310,7 +1739,14 @@
           "mapQuery": "KwikPark Heathrow Terminal 3"
         }
       ],
-      "title": "Seoul → London"
+      "title": "Seoul → London",
+      "ideas": [
+        {
+          "title": "Incheon duty free — last Korean shopping",
+          "type": "Shopping",
+          "notes": "ICN T2 has outstanding duty free — cosmetics, luxury brands, electronics. Last chance for Korean beauty products if you missed Seoul."
+        }
+      ]
     }
   ],
   "checklist": [
