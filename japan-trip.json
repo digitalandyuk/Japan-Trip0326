@@ -1909,8 +1909,8 @@
           "notes": "⚠ Awaiting confirmation from Keio Plaza concierge · Oshiage stable · Tue 7 Apr 7:30–9:00"
         },
         {
-          "task": "⚠ VA FlyReady — complete for Andrew Evans",
-          "who": "Andy",
+          "task": "✈️ Complete VA FlyReady — Andrew Evans (Sarah to do)",
+          "who": "Sarah",
           "deadline": "Before 3 Apr",
           "status": "incomplete",
           "notes": "Virgin app shows remaining steps · scan passport + docs · virginatlantic.com → My Booking → FlyReady"
@@ -2064,6 +2064,20 @@
           "deadline": "Before 12 Apr",
           "status": "pending",
           "notes": "Torokko Saga → Kameoka · ⚠ Book in advance · ~¥880pp each way"
+        },
+        {
+          "task": "🇰🇷 South Korea e-Arrival Card — OUTBOUND (Seoul 4 Apr)",
+          "who": "All 4",
+          "deadline": "2 Apr 2026",
+          "status": "incomplete",
+          "notes": "Complete online within 72 hrs of flying to Seoul. Site: e-arrivalcard.go.kr — fill in for all 4 family members, save/print the PDF confirmation. No visa or K-ETA required (UK passports exempt until Dec 2026). Have PDF ready at ICN immigration on arrival 4 Apr."
+        },
+        {
+          "task": "🇰🇷 South Korea e-Arrival Card — RETURN (Incheon 17 Apr)",
+          "who": "All 4",
+          "deadline": "15 Apr 2026",
+          "status": "incomplete",
+          "notes": "Complete again for the return Seoul transit/overnight (arriving KIX→ICN 17 Apr, departing ICN→LHR 18 Apr). Site: e-arrivalcard.go.kr — same process, complete within 72 hrs of the Asiana OZ113 Osaka→Seoul flight. Save the PDF confirmation."
         }
       ]
     },
