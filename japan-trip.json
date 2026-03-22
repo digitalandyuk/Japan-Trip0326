@@ -1,7 +1,7 @@
 {
   "tripTitle": "🇯🇵 Japan Trip 2026",
   "tripDates": "Fri 3 Apr – Sat 18 Apr 2026",
-  "lastUpdated": "2026-03-20",
+  "lastUpdated": "2026-03-22",
   "days": [
     {
       "date": "2026-04-03",
@@ -34,7 +34,8 @@
           "status": "confirmed",
           "notes": "Boeing 787-9 · Direct to Seoul Incheon T2 · ~11h · Ref E3FYHB",
           "address": "London Heathrow Airport Terminal 3, Hounslow TW6 1QG, UK",
-          "mapQuery": "Heathrow Terminal 3"
+          "mapQuery": "Heathrow Terminal 3",
+          "detail": "Flight: VS208 · Boeing 787-9 Dreamliner\nRoute: LHR → ICN T2 · Duration: ~11 hours\nSeats: 24D/24F (row 24) + 25D/25F (row 25)\n\nThe 787 has larger windows, better cabin pressure and humidity than older aircraft — less dehydrating on long haul.\n\nTime zone: Seoul is UTC+9. London (BST) is UTC+1 in April — 8 hours ahead.\nTip: Set watches to Seoul time as you board and try to sleep — arrival Day 1 has a full afternoon planned."
         }
       ],
       "title": "London → Seoul",
@@ -76,7 +77,8 @@
           "status": "confirmed",
           "notes": "VS208 from LHR. E-gates available for UK passports. Meet Tourmaker driver — EVANS FAMILY banner.",
           "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Incheon International Airport Terminal 2"
+          "mapQuery": "Incheon International Airport Terminal 2",
+          "detail": "Arriving at ICN Terminal 2\n\nImmigration: UK passports can use automated e-gates. No visa required.\n⚠ e-Arrival Card: Must have completed this at e-arrivalcard.go.kr within 72 hrs of the flight. Have the confirmation QR ready.\nBaggage reclaim: Allow 20–30 mins. Customs: Green lane if nothing to declare.\nMeet driver: Tourmaker driver holds EVANS FAMILY banner beyond customs. Allow 60–75 mins total from landing to meeting your driver."
         },
         {
           "time": "10:05–11:15",
@@ -126,7 +128,8 @@
           "status": "planning",
           "notes": "Evening street stalls — tteokbokki, hotteok, Korean fried chicken. K-beauty shops.",
           "address": "Myeongdong Street, Jung-gu, Seoul 04534, South Korea",
-          "mapQuery": "Myeongdong Street Seoul Jung-gu"
+          "mapQuery": "Myeongdong Street Seoul Jung-gu",
+          "detail": "Myeongdong at night is the classic Seoul evening. Street stalls fill the pedestrian street from ~17:00.\n\nMust try:\n- Tteokbokki (spicy rice cake skewers) — the defining Seoul street food\n- Hotteok (warm sugar-filled pancake)\n- Korean fried chicken — lighter and crispier than Western versions\n- Tornado potato on a stick\n- Egg bread (gyeran ppang) — warm, savoury, filling\n\nK-beauty: Innisfree, Etude House, Laneige, Sulwhasoo, Olive Young. Good for gifts.\nPayment: Most stalls and shops accept card. Some stalls cash only."
         },
         {
           "time": "20:00",
@@ -134,7 +137,8 @@
           "status": "optional",
           "notes": "Samgyeopsal (pork belly) or galbi (beef ribs). ₩60,000–80,000 for 4.",
           "address": "Myeongdong Street, Jung-gu, Seoul 04534, South Korea",
-          "mapQuery": "Myeongdong Street Seoul Jung-gu"
+          "mapQuery": "Myeongdong Street Seoul Jung-gu",
+          "detail": "Korean BBQ — meat grilled at the table, eaten wrapped in lettuce with garlic, gochujang and banchan (side dishes).\n\nBest cuts for first-timers:\n- Samgyeopsal (삼겹살): Thick-cut pork belly — juicy, fatty, the default\n- Chadolbaegi (차돌박이): Very thinly sliced beef brisket — cooks in seconds\n- Galbi (갈비): Marinated beef short ribs — sweet, tender\n\nHow it works: Order meat by the portion. Staff usually cook the first batch. Banchan (side dishes) are refillable free — always ask for more.\nDrinks: Soju (₩5,000/bottle) or somaek (beer + soju mixed)."
         }
       ],
       "title": "Seoul Arrival",
@@ -191,7 +195,8 @@
           "status": "free",
           "notes": "Quick walk to Namdaemun Market for last-minute Korean snacks or souvenirs. 5 mins from hotel.",
           "address": "Namdaemun Market, 21 Namdaemunsijang 4-gil, Jung-gu, Seoul 04532, South Korea",
-          "mapQuery": "Namdaemun Market Seoul"
+          "mapQuery": "Namdaemun Market Seoul",
+          "detail": "Namdaemun Market (남대문시장) — 5 min walk from hotel\nOne of Seoul's oldest and most authentic markets.\n\nGood last-minute picks:\n- Dried seaweed snacks (gim) — excellent quality, very packable\n- Korean instant noodles (ramyeon) — varieties not in UK\n- Traditional snacks: yeot (taffy), dasik (pressed rice sweets)\n- Korean BBQ sauce sets — good gifts\n\nNote: Haggling normal for clothing/accessories. Tip: Keep some Korean won — mostly cash."
         },
         {
           "time": "12:00",
@@ -225,7 +230,8 @@
           "status": "planning",
           "notes": "Allow 30–45 mins at immigration. IC card machines near exits for Suica cards.",
           "address": "Tokyo Narita International Airport, 1-1 Furugome, Narita, Chiba 282-0004, Japan",
-          "mapQuery": "Narita International Airport Tokyo"
+          "mapQuery": "Narita International Airport Tokyo",
+          "detail": "Arriving at Narita Terminal 1:\n1. Immigration: UK passports — automated gates if pre-registered with Visit Japan Web\n2. Baggage reclaim: Allow 20 mins\n3. Customs: Green lane\n4. Arrivals hall: Klook bus pickup from the bus terminal outside\n\n⚠ Activate Japan eSIM before leaving the arrivals hall. Turn off UK SIM cellular data.\n⚠ Top up Suica: IC card machines near exits. Load ¥5,000–10,000 per person minimum.\nATM: Japan Post or 7-Eleven ATM. Withdraw ¥50,000–80,000 per adult. Do NOT use currency exchange counters."
         },
         {
           "time": "18:30",
@@ -251,7 +257,8 @@
           "status": "planning",
           "notes": "2 min walk from Keio Plaza. Narrow alleyway of tiny yakitori bars. Cash only.",
           "address": "Omoide Yokocho, Shinjuku-ku, Tokyo 160-0021, Japan",
-          "mapQuery": "Omoide Yokocho Memory Lane Tokyo"
+          "mapQuery": "Omoide Yokocho Memory Lane Tokyo",
+          "detail": "Omoide Yokocho (思い出横丁) — Memory Lane\nDistance: 2 min walk northwest of Shinjuku Station West Exit\nHours: Most bars open from 17:00 until midnight+\n⚠ Cash only in almost all bars\n\nOne of Tokyo's most atmospheric spots — barely 2m wide, tiny bars seating 6–8 people each, filled with charcoal smoke and grilling chicken. Looks exactly as it did in the 1960s.\n\nHow it works: Walk in, pick a bar with seats. Point at what you want. Best skewers: Negima (chicken and spring onion), tsukune (meatball), kawa (crispy skin), torikawa (cartilage). Usually ¥150–300 each.\n\nTip: 'Kore kudasai' (this please) + pointing works perfectly. The atmosphere is the whole point on night one."
         }
       ],
       "title": "Seoul → Tokyo",
@@ -287,7 +294,8 @@
           "status": "included",
           "notes": "Free breakfast included.",
           "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
-          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
+          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku",
+          "detail": "Keio Plaza Hotel breakfast — included in room rate.\nVenue: Main dining room, floors 3–4. Hours: 07:00–10:00 (busy 08:00–09:00 — go early or late).\nJapanese breakfast: Miso soup, grilled salmon, tamagoyaki, natto, rice, pickles. Great introduction to Japanese breakfast culture.\nTip: Load up — full day of walking ahead."
         },
         {
           "time": "10:00",
@@ -295,7 +303,8 @@
           "status": "planning",
           "notes": "JR Yamanote Line from Shinjuku. Takeshita Street · Meiji Shrine · Shibuya Crossing.",
           "address": "Shibuya Crossing, 2-2-1 Dogenzaka, Shibuya-ku, Tokyo 150-0043, Japan",
-          "mapQuery": "Shibuya Crossing Tokyo"
+          "mapQuery": "Shibuya Crossing Tokyo",
+          "detail": "Getting there: JR Yamanote Line from Shinjuku (1 stop to Harajuku, 2 to Shibuya). ~4 min. Use Suica.\n\nHarajuku (start here):\n- Takeshita Street: Famous youth fashion street. Narrow, colourful, chaotic. Crepe shops, kawaii fashion.\n- Omotesando: Wide tree-lined luxury boulevard 10 min south. Flagship stores, beautiful architecture.\n- Meiji Shrine: Enormous forested Shinto shrine. 10 min walk from Takeshita St. Free. Allow 45 mins.\n\nShibuya Crossing:\n- 3,000 people crossing simultaneously every 60 seconds. Best viewed from 2F Starbucks or Mag's Park.\n- Shibuya Scramble Square 12F: Free secret viewpoint behind the teppanyaki restaurant.\n- Parco Shibuya: Floor 6 = Nintendo Tokyo, Pokémon Center Shibuya. Queues 30–60 mins — go early."
         },
         {
           "time": "14:00",
@@ -303,7 +312,8 @@
           "status": "planning",
           "notes": "Oldest Tokyo temple (645 AD). Kaminarimon Gate, side streets to beat crowds. Free entry.",
           "address": "Senso-ji Temple, 2-3-1 Asakusa, Taito-ku, Tokyo 111-0032, Japan",
-          "mapQuery": "Senso-ji Temple Asakusa Tokyo"
+          "mapQuery": "Senso-ji Temple Asakusa Tokyo",
+          "detail": "Senso-ji Temple (浅草寺) — Asakusa\nAccess: Tokyo Metro Ginza Line from Shibuya → Asakusa (30 min, ¥260). Entry: Free\n\nKaminarimon Gate: The enormous red lantern gate is iconic. Nakamise-dori (souvenir street) leads to the main hall.\nThe main hall: Wave incense smoke over yourself for good health. ¥5 coin for a prayer.\nOmikuji: Fortune papers ¥100 — if the fortune is bad, tie it to the wire rack.\n\nBeat the crowds: Walk left or right of main Nakamise into the side alleys — same temple, fraction of the tourists. The five-storey pagoda is particularly peaceful.\nNearby: Asakusa Culture Tourist Information Centre (opposite main gate) — free 8th floor observation deck with great views."
         },
         {
           "time": "19:00",
@@ -311,7 +321,8 @@
           "status": "planning",
           "notes": "Neon-lit entertainment district. Ramen, yakitori, izakaya.",
           "address": "Shinjuku Station, 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
-          "mapQuery": "Shinjuku Station Tokyo"
+          "mapQuery": "Shinjuku Station Tokyo",
+          "detail": "Kabukicho & East Shinjuku — Dinner Options\n\nKabukicho is safe, lively and fun. Top options nearby:\n- Ramen: Ichiran (solo booths, ¥900–1,200pp) or Fuunji (tsukemen — thick dipping ramen, queue outside ~20 min)\n- Gyukatsu Motomura: Lightly fried beef cutlets, cook on a small hot stone at the table. ~¥1,500pp\n- Torikizoku: Excellent-value yakitori chain — everything ¥385 per item. Loud, fun, very local\n\nAfter dinner: Golden Gai is 5 min walk — themed tiny bars, cash only, cover charge ¥500–1,000."
         },
         {
           "time": "20:30",
@@ -319,7 +330,8 @@
           "status": "planning",
           "notes": "Six alleys of tiny themed bars — 200 venues. Cash only in most bars.",
           "address": "Golden Gai, Kabukicho, Shinjuku-ku, Tokyo 160-0021, Japan",
-          "mapQuery": "Golden Gai Shinjuku Tokyo"
+          "mapQuery": "Golden Gai Shinjuku Tokyo",
+          "detail": "Golden Gai (ゴールデン街)\nLocation: Off Hanazono Shrine, east of Kabukicho — 12 min walk from Keio Plaza\nHours: Most bars 19:00 until late · ⚠ Cash only · Cover charge ¥500–1,000 in many bars\n\n~200 tiny bars across 6 narrow alleyways. Each bar seats 4–12 people, each has its own theme — film, jazz, horror, art, manga. Some for regulars only (English sign if so). Most welcome tourists.\n\nHow it works: Walk the alleys, find a bar that appeals, check cover charge sign, sit down. Drinks ¥800–1,500 each.\nBest approach: No plan — the discovery is the point. Don't like a bar? Finish your drink and move on.\nNearby: Hanazono Shrine is right next to Golden Gai — lantern-lit at night, free, always open."
         }
       ],
       "title": "Tokyo — Shibuya · Harajuku · Asakusa",
@@ -446,7 +458,8 @@
           "status": "planning",
           "notes": "Tamagoyaki, uni, grilled scallops. Go stall to stall — most sell out by late morning.",
           "address": "Tsukiji Outer Market, 4-16-2 Tsukiji, Chuo-ku, Tokyo 104-0045, Japan",
-          "mapQuery": "Tsukiji Outer Market Tokyo"
+          "mapQuery": "Tsukiji Outer Market Tokyo",
+          "detail": "Tsukiji Outer Market (築地場外市場)\nAccess: From Hamacho after sumo, Toei Shinjuku Line to Shintomicho (~10 min) then 10 min walk. Or taxi ~¥700.\nHours: Most stalls 05:00–14:00. Go early for best selection.\n\nMust try while walking:\n- Tamagoyaki (sweet rolled omelette) on a stick — buy fresh from Tsukumo or Maruya\n- Uni (sea urchin) on a rice bowl — ¥1,500–2,000 for a small, rich bowl\n- Grilled scallops (hotate) with butter and soy — ¥500–800 each\n- Tamago sushi (egg nigiri) — simple and excellent here\n\nSouvenirs: Nori, bonito flakes, wasabi, kitchen knives (world-class), dashi stock packs.\nKnives: Budget ¥3,000–8,000 for a good Gyuto. Ask to sharpen before purchase."
         },
         {
           "time": "14:00",
@@ -454,7 +467,8 @@
           "status": "free",
           "notes": "One of Tokyo's best hanami spots in early April.",
           "address": "Ueno Park, 5-20 Ueno Koen, Taito-ku, Tokyo 110-0007, Japan",
-          "mapQuery": "Ueno Park Tokyo"
+          "mapQuery": "Ueno Park Tokyo",
+          "detail": "Ueno Park (上野公園) — Hanami\nAccess: JR Yamanote Line to Ueno Station (Shinobazu Exit). ~20 min from Tsukiji.\nEntry: Free\n\nUeno has 1,000+ cherry trees. In early April the blossoms canopy is extraordinary. Buy konbini picnic food and find a patch of grass — this is how locals do hanami.\n\nWhile in Ueno:\n- Tokyo National Museum: Japan's largest museum. ¥1,000pp. Extraordinary samurai armour, pottery, Buddhist sculpture. Allow 90 mins.\n- Shinobazu Pond: The lotus pond at the south end. Paddle boats for hire.\n- Ameya-Yokocho (Ameyoko): Busy street market directly outside Ueno Station — snacks, cheap cosmetics, dried fish."
         },
         {
           "time": "18:00",
@@ -462,7 +476,8 @@
           "status": "planning",
           "notes": "Ramen, izakaya or yakiniku. Options: Uobei (conveyor belt sushi), Han no Daidokoro (yakiniku).",
           "address": "Shibuya Crossing, 2-2-1 Dogenzaka, Shibuya-ku, Tokyo 150-0043, Japan",
-          "mapQuery": "Shibuya Crossing Tokyo"
+          "mapQuery": "Shibuya Crossing Tokyo",
+          "detail": "Dinner options around Shibuya for 4:\n\nUobei (魚べい): Touch-screen conveyor belt sushi — plates delivered by express rail to your seat. Very fun, ~¥1,500–2,000pp.\n\nFuunji (風雲児): Outstanding tsukemen (dipping ramen). Usually a 30 min queue outside. Near Shinjuku.\n\nGyukatsu Motomura: Lightly breaded beef cutlet you cook on a hot stone at your table. ¥1,500–2,000pp. Queue outside ~20 min, worth it.\n\nQuick and local: Yoshinoya or Sukiya — Japanese beef bowl chains, 24hrs, ¥500–700pp. Not fancy but genuinely delicious and very Japanese."
         }
       ],
       "title": "Tokyo — Sumo · Tsukiji · Ueno",
@@ -581,7 +596,8 @@
           "status": "included",
           "notes": "Last Tokyo morning.",
           "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
-          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
+          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku",
+          "detail": "Last Tokyo breakfast. Departure for Shinjuku Station at 09:20 — Romancecar departs 10:00 sharp.\nPack everything this morning — you check out today and travel to Hakone with all bags."
         },
         {
           "time": "08:30",
@@ -589,7 +605,8 @@
           "status": "planning",
           "notes": "Leave bags at hotel reception until departure.",
           "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
-          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
+          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku",
+          "detail": "Check out of Keio Plaza today. 3 nights completed.\n\nLuggage strategy: You will be sending most bags from TEN-YU to Kyoto via Takuhaibin on Day 6 evening. Pack a separate overnight bag now with what you need for 2 nights at the ryokan — the rest can go in the main forwarding bags.\n\nTip: Wear comfortable clothes for the Romancecar and ryokan arrival. You'll be in yukatas at TEN-YU most of the evening."
         },
         {
           "time": "09:20",
@@ -615,7 +632,8 @@
           "status": "included",
           "notes": "Rack railway through cedar forest. Covered by Freepass.",
           "address": "Hakone-Yumoto Station, 707 Yumoto, Hakone, Ashigarashimo-gun, Kanagawa 250-0311, Japan",
-          "mapQuery": "Hakone-Yumoto Station"
+          "mapQuery": "Hakone-Yumoto Station",
+          "detail": "Hakone Tozan Railway: Hakone-Yumoto → Gora\nDuration: ~40 minutes · Covered by Freepass\nThe train zigzags up the mountain using switchbacks — the driver gets out at each switchback to switch ends. Unusual and memorable.\nThe train climbs through dense cedar and maple forest. In early April some cherry blossoms may still be visible in the valley.\nAlight at Gora Station (end of the line). Hotel shuttle pickup at Gora Station Bus Stop #1 — follow signs."
         },
         {
           "time": "12:10",
@@ -623,7 +641,8 @@
           "status": "planning",
           "notes": "Free shuttle from Gora Station Stop #1 (every 15–20 min). Reception holds bags until 3pm.",
           "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
-          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira",
+          "detail": "Free hotel shuttle from Gora Station Bus Stop #1. Runs every 15–20 mins. Journey ~5–10 mins up the hillside.\n\nCheck-in from 15:00 but reception holds all bags. Yukatas and toiletries provided in room.\n\nAsk reception about:\n1. Buffet dinner reservation time (usually 17:30–20:30, confirm slot)\n2. Takuhaibin luggage forwarding to Kyoto (arrange this evening after dinner)\n3. Morning shuttle times for Day 6"
         },
         {
           "time": "12:50–14:50",
@@ -648,7 +667,8 @@
           "status": "included",
           "notes": "¥5,605 F&B credit per room. Buffet style. Wear yukata.",
           "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
-          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira",
+          "detail": "Kaiseki Buffet Dinner — TEN-YU\nF&B credit: ¥5,605 per room (2 rooms = ¥11,210 total credit)\nDress: Wear your yukata — this is expected and part of the experience.\n\nKaiseki is Japan's multi-course haute cuisine — small, exquisite seasonal dishes.\nExpect: Sashimi station, grilled fish and wagyu, mountain vegetables (sansai), chawanmushi (savoury egg custard), miso soup, rice, pickles, desserts.\n\nAfter dinner: Arrange Takuhaibin at the front desk before going to bed. Then rotenburo."
         },
         {
           "time": "Evening",
@@ -656,7 +676,8 @@
           "status": "included",
           "notes": "In-room outdoor hot spring bath. Best after dinner.",
           "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
-          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira",
+          "detail": "Private Rotenburo (露天風呂) — In-Room Outdoor Onsen\n\nYour room has a private outdoor hot spring bath on the balcony. Water fed directly from Hakone's volcanic springs.\n\nOnsen etiquette:\n- Shower and wash thoroughly before entering the bath\n- Enter slowly — water is very hot (42°C+)\n- No soap in the bath itself\n- Drink water before and after — the heat is dehydrating\n\nBest time: After dinner, under the night sky. The mineral water (sodium bicarbonate) leaves skin noticeably soft.\nCommunal baths: TEN-YU also has indoor/outdoor shared baths separated by gender — worth trying for the different atmosphere."
         },
         {
           "time": "Before bed",
@@ -704,7 +725,8 @@
           "status": "included",
           "notes": "Full kaiseki/Western buffet. Take your time.",
           "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
-          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira",
+          "detail": "Japanese breakfast at the ryokan — one of the great experiences of the trip.\nExpect: Grilled fish (shioyaki), miso soup, pickles (tsukemono), chawanmushi, rice, natto (optional), tofu, seasonal vegetables.\nTake your time — the Hakone Loop day is easy-paced with no fixed train times until the afternoon bus back."
         },
         {
           "time": "10:00",
@@ -712,7 +734,8 @@
           "status": "free",
           "notes": "Free shuttle every 15–20 mins. Day 2 of 3-day Freepass.",
           "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
-          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira",
+          "detail": "Free hotel shuttle from TEN-YU to Gora Station. Runs every 15–20 minutes. Ask reception for exact times.\n\n⚠ Check ropeway status before leaving: Hakone Ropeway (Owakudani section) occasionally closes due to volcanic activity or strong winds. Check hakonenavi.jp or ask the hotel front desk. If closed, ask hotel for alternative route."
         },
         {
           "time": "10:15",
@@ -720,7 +743,8 @@
           "status": "included",
           "notes": "Hakone Tozan Cable Car through cedar forest. Covered by Freepass. ⚠ Check ropeway status on the morning — occasionally closes due to volcanic activity.",
           "address": "Sounzan Station, Gora, Hakone, Kanagawa 250-0408, Japan",
-          "mapQuery": "Hakone Ropeway Sounzan Station"
+          "mapQuery": "Hakone Ropeway Sounzan Station",
+          "detail": "Hakone Tozan Cable Car: Gora → Sounzan\nDuration: ~10 minutes · 4 stops · Covered by Freepass\nGradient: The steepest cable car in Japan.\nThe car climbs steeply through dense forest. Views open up as you approach the summit.\nAt Sounzan: Transfer immediately to the Hakone Ropeway gondola — the two systems connect seamlessly."
         },
         {
           "time": "10:30",
@@ -736,7 +760,8 @@
           "status": "planning",
           "notes": "Active volcanic zone. Sulphur steam venting from cracked earth. Short hiking trail (~30 min loop). Food stalls for snacks. Allow 1 hour. Check trail status on arrival — occasionally closed due to volcanic activity.",
           "address": "Owakudani, Hakone, Ashigarashimo District, Kanagawa 250-0631, Japan",
-          "mapQuery": "Owakudani Hakone volcanic valley"
+          "mapQuery": "Owakudani Hakone volcanic valley",
+          "detail": "Owakudani (大涌谷) — Great Boiling Valley\nEntry: Free to walk around the main viewing platform\nHiking trail: ¥1,000pp when open — 30 min loop through the volcanic zone\n\nActive volcanic zone formed 3,000 years ago. Sulphur gases vent from cracked yellow earth. The smell of eggs (hydrogen sulphide) hangs in the air.\n\nKuro Tamago (black eggs): Boiled in the volcanic spring, turning shells black. Sold at stalls (¥600 for 5). Legend: each adds 7 years to your life. ⚠ Stalls may be closed — check on arrival.\n\nViews: Mt Fuji is framed perfectly ahead on clear days. Often the single best Fuji view of the trip."
         },
         {
           "time": "11:55",
@@ -776,7 +801,8 @@
           "status": "free",
           "notes": "Ancient cedar path to the famous red torii gate rising from the lake. Free to enter.",
           "address": "Hakone Shrine, 80-1 Motohakone, Hakone, Ashigarashimo-gun, Kanagawa 250-0522, Japan",
-          "mapQuery": "Hakone Shrine Moto-Hakone"
+          "mapQuery": "Hakone Shrine Moto-Hakone",
+          "detail": "Hakone Shrine (箱根神社)\nAddress: 80-1 Motohakone · Entry: Free · Open all hours\nAccess: 10 min walk from Shinsho Soba along the lakeshore\n\nFounded 757 AD. Approach is through a tunnel of ancient cedars.\n\nThe Peace Torii: The iconic red torii gate standing in Lake Ashi — reached via a path from the main shrine down to the water's edge. Best at dawn or dusk.\n\nMain shrine: Good for omamori (protective charms) — Hakone Shrine charms for safe travel are sold here.\nAmazake-chaya teahouse is 15 min walk from the shrine along the Old Tokaido Highway."
         },
         {
           "time": "14:45",
@@ -784,7 +810,8 @@
           "status": "planning",
           "notes": "350-year-old thatched teahouse on the old Tokaido Highway. Warm amazake and mochi ~¥500pp.",
           "address": "Amazake-chaya, 395-1 Moto-Hakone, Hakone, Kanagawa 250-0522, Japan",
-          "mapQuery": "Amazake-chaya Hakone"
+          "mapQuery": "Amazake-chaya Hakone",
+          "detail": "Amazake-chaya (甘酒茶屋)\nAddress: 395-1 Moto-Hakone · Hours: 07:00–17:30 · Price: ~¥500pp\n\nA beautifully preserved 350-year-old thatched-roof teahouse on the original Edo-era Tokaido Highway. Serving travellers continuously for 300+ years.\n\nAmazake: Warm, sweet, fermented rice drink. Very low/no alcohol. Earthy, warming, slightly sweet. Traditional post-journey restorative.\nMochi: Freshly pounded rice cakes with kinako (roasted soybean flour).\n\nThe setting: Dark wooden interior, open fire, smell of wood smoke, cedar trees outside."
         },
         {
           "time": "15:15",
@@ -792,7 +819,8 @@
           "status": "free",
           "notes": "1km Edo-era road flanked by 400-year-old cedar trees. Free. Connects Moto-Hakone to Hakone-machi. Allow 30 mins.",
           "address": "Hakone Shrine, 80-1 Motohakone, Hakone, Ashigarashimo-gun, Kanagawa 250-0522, Japan",
-          "mapQuery": "Hakone Shrine Moto-Hakone"
+          "mapQuery": "Hakone Shrine Moto-Hakone",
+          "detail": "Old Tokaido Cedar Avenue (旧東海道杉並木)\nLength: ~1km · Free · Flat, easy walk\nRoute: From Amazake-chaya south to Hakone-machi\n\nThe original feudal highway between Edo (Tokyo) and Kyoto. The cedar trees are 400 years old, planted in the early Edo period as shade for travellers. Towering, dramatic, beautifully atmospheric.\n\nThe avenue ends at Hakone-machi — a small lakeside village with souvenir shops and the Old Hakone Checkpoint museum (Edo-period checkpoint, ¥500pp if interested)."
         },
         {
           "time": "15:45",
@@ -808,7 +836,8 @@
           "status": "included",
           "notes": "Soak in the private open-air bath before dinner.",
           "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
-          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira",
+          "detail": "Back at TEN-YU — final afternoon at the ryokan.\nRotenburo: The private outdoor bath is at its best in late afternoon — light changing, air cooling, birds in the trees.\nYukata: Change for dinner."
         },
         {
           "time": "19:00",
@@ -816,7 +845,8 @@
           "status": "included",
           "notes": "Multi-course buffet. Included in room rate. Final night at the ryokan.",
           "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
-          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira",
+          "detail": "Final kaiseki dinner at TEN-YU. The buffet allows you to try everything — make the most of it.\nIn April the menu features spring mountain vegetables (sansai), fresh local fish, wagyu.\n\nAfter dinner: Arrange Takuhaibin with front desk if not done last night."
         },
         {
           "time": "After dinner",
@@ -867,7 +897,8 @@
           "status": "included",
           "notes": "Last morning at the ryokan. Check out by 10:30.",
           "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
-          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira",
+          "detail": "Last ryokan breakfast. Take your time — departure shuttle is at 10:40.\nAfter breakfast: Return to room, change into travel clothes (out of yukata), final pack. Leave yukata, slippers and ryokan items in the room."
         },
         {
           "time": "09:30",
@@ -883,7 +914,8 @@
           "status": "planning",
           "notes": "Luggage forwarded to Kyoto via Takuhaibin. Travel with day bags only. 3-day Freepass active — Day 3.",
           "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
-          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira",
+          "detail": "Check out of TEN-YU. Confirm with front desk:\n- Takuhaibin bags have been collected\n- Any outstanding charges on the account\n- Morning shuttle time to Gora\n\nTravel today with day bags only — main luggage is on its way to Kyoto, arriving Saturday."
         },
         {
           "time": "10:40",
@@ -891,7 +923,8 @@
           "status": "free",
           "notes": "Last shuttle ride. Must depart by 10:40 to catch 12:07 Shinkansen.",
           "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
-          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira",
+          "detail": "Final TEN-YU shuttle to Gora. Day 3 of Hakone Freepass — fully covered.\n⚠ Timings are tight: shuttle → Gora → Tozan Railway → Hakone-Yumoto → Odakyu to Odawara → collect Shinkansen tickets → board Hikari 641 at 12:07. Do not miss this shuttle."
         },
         {
           "time": "10:50",
@@ -899,7 +932,8 @@
           "status": "included",
           "notes": "Mountain railway descent. Last journey on Freepass.",
           "address": "Hakone-Yumoto Station, 707 Yumoto, Hakone, Ashigarashimo-gun, Kanagawa 250-0311, Japan",
-          "mapQuery": "Hakone-Yumoto Station"
+          "mapQuery": "Hakone-Yumoto Station",
+          "detail": "Hakone Tozan Railway: Gora → Hakone-Yumoto\nDuration: ~35–40 min (switchback mountain descent) · Covered by Freepass — Day 3\n\nThis is your last use of the Hakone Freepass. The pass expires at end of Day 3 (10 April).\nAt Hakone-Yumoto: Transfer to Odakyu Line → Odawara. Use Suica or Freepass."
         },
         {
           "time": "11:33",
@@ -907,7 +941,8 @@
           "status": "included",
           "notes": "Final Freepass journey. Transfer to JR Shinkansen platforms at Odawara — upstairs.",
           "address": "Hakone-Yumoto Station, 707 Yumoto, Hakone, Ashigarashimo-gun, Kanagawa 250-0311, Japan",
-          "mapQuery": "Hakone-Yumoto Station"
+          "mapQuery": "Hakone-Yumoto Station",
+          "detail": "Odakyu Local: Hakone-Yumoto → Odawara\nDuration: ~15 min · Covered by Freepass\n\nAt Odawara: JR Shinkansen platforms are upstairs from the Odakyu platforms. Follow signs for JR / 新幹線.\nYou need to:\n1. Go to JR Central ticket machines (NOT JR East — blue/grey machines)\n2. Collect Shinkansen tickets using Revolut card 9666\n3. Buy ekiben (station bento) if you want to eat on the train"
         },
         {
           "time": "11:48",
@@ -933,7 +968,8 @@
           "status": "planning",
           "notes": "One of Japan's most dramatic station buildings.",
           "address": "Kyoto Station, Karasuma-dori, Shimogyo-ku, Kyoto 600-8216, Japan",
-          "mapQuery": "Kyoto Station"
+          "mapQuery": "Kyoto Station",
+          "detail": "Kyoto Station (京都駅)\nThe station building is a landmark — vast glass and steel atrium, 15-storey structure.\n\nOn arrival:\n1. From Shinkansen platforms, escalators/lifts down to the central concourse\n2. Follow signs for Karasuma Line subway (地下鉄烏丸線)\n3. Northbound Karasuma Line to Shijo Station (2 stops, ¥260pp)\n4. At Shijo: Follow underground passage east toward Kawaramachi\n5. Hotel is 1 min walk from Teramachi Street Exit 10\n\nAlternatively: Taxi from the station ~¥800–1,200, 10–15 mins."
         },
         {
           "time": "14:20",
@@ -941,7 +977,8 @@
           "status": "planning",
           "notes": "Karasuma Line northbound → Shijo Station. Follow underground path east along Shijo Street towards Kawaramachi. Exit Teramachi Street (Exit 10) — 1 min walk to hotel.",
           "address": "Kyoto Station, Karasuma-dori, Shimogyo-ku, Kyoto 600-8216, Japan",
-          "mapQuery": "Kyoto Station"
+          "mapQuery": "Kyoto Station",
+          "detail": "Kyoto Station → Mitsui Garden Hotel\nRoute: Karasuma Line subway (北行 northbound) → Shijo Station (¥260pp, ~6 min)\nExit: Shijo Station, follow signs east toward Kawaramachi\nWalk: ~5 min east along Shijo-dori to hotel\nSuica works on Kyoto subway — tap in at Kyoto Station, tap out at Shijo."
         },
         {
           "time": "~14:30",
@@ -990,7 +1027,8 @@
           "status": "planning",
           "notes": "⚠ Book ahead — first night in Kyoto, cherry blossom season. Ponto-cho for kawayuka riverside dining, or Gion for a traditional Kyoto meal. Both a short walk from the hotel.",
           "address": "Pontocho, Nakagyo-ku, Kyoto 604-8094, Japan",
-          "mapQuery": "Pontocho alley Kyoto"
+          "mapQuery": "Pontocho alley Kyoto",
+          "detail": "First dinner in Kyoto — the start of what many consider the finest food city in Japan.\n\nPonto-cho (先斗町): The narrow alley running parallel to the Kamo River. 5 min walk from hotel. In April the kawayuka (riverside platforms) may just be opening. Best: Pontocho Fujita (kaiseki, Tablecheck), Pontocho Robin (hotpot, private rooms).\n\nGion (祇園): 10 min walk. More upscale. Tempura Endo is excellent (book ahead).\n\n⚠ Book in advance — cherry blossom season is the busiest time in Kyoto."
         }
       ],
       "title": "Hakone → Kyoto",
@@ -1021,7 +1059,8 @@
           "status": "included",
           "notes": "Hotel breakfast. Sanga Ono restaurant — seasonal Japanese set or Western option.",
           "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
-          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
+          "detail": "Free breakfast included. Restaurant: Sanga Ono, ground floor. Hours: 07:00–10:00.\nJapanese set (miso soup, grilled fish, rice, pickles) or Western option.\nToday is a full day out — eat well."
         },
         {
           "time": "09:00",
@@ -1029,7 +1068,8 @@
           "status": "planning",
           "notes": "Karasuma Line northbound to Kitaoji (¥260pp). Try to arrive at Kinkaku-ji by 09:30 before tour buses.",
           "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
-          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
+          "detail": "Route: Walk 1 min to Karasuma-Shijo Station → Karasuma Line northbound → Kitaoji Station (3 stops, ¥260pp, ~9 min)\nFrom Kitaoji: Bus 101 or 102 or taxi (~¥1,000) to Kinkaku-ji, 10–15 min.\n\nTiming: Arrive at Kinkaku-ji by 09:30 to beat tour buses which start arriving from 10:00. The difference is significant."
         },
         {
           "time": "09:30–10:30",
@@ -1037,7 +1077,8 @@
           "status": "planning",
           "notes": "Gold-leaf pavilion reflecting in Mirror Pond. ¥1,200pp. Arrive early before crowds.",
           "address": "Kinkaku-ji Temple, 1 Kinkakujicho, Kita Ward, Kyoto 603-8361, Japan",
-          "mapQuery": "Kinkaku-ji Golden Pavilion Kyoto"
+          "mapQuery": "Kinkaku-ji Golden Pavilion Kyoto",
+          "detail": "Kinkaku-ji (金閣寺) — Temple of the Golden Pavilion\nHours: 09:00–17:00 · Entry: ¥1,200pp · Access: 15 min bus from Kitaoji\n\nThree-storey pavilion covered in gold leaf reflecting in the Mirror Pond. UNESCO World Heritage.\n\nFloors: Ground = Heian palace style (unpainted). Second = samurai style (gold). Third = Zen Buddhist style (entirely gold). Phoenix on roof = eternal life.\n\nOne-way path: Fixed clockwise route. Best photo spots at main viewing platform and Anmintaku Pond.\nSouvenirs: Exit path has excellent matcha ice cream and Kinkaku-ji merchandise unique to the temple."
         },
         {
           "time": "11:00–11:50",
@@ -1045,7 +1086,8 @@
           "status": "planning",
           "notes": "Famous karesansui dry rock garden — 15 stones, no two ever visible at once. ¥800pp.",
           "address": "Ryoan-ji Temple, 13 Ryoanjigoranocho, Ukyo-ku, Kyoto 616-8001, Japan",
-          "mapQuery": "Ryoanji rock garden Kyoto"
+          "mapQuery": "Ryoanji rock garden Kyoto",
+          "detail": "Ryoan-ji (龍安寺) — Temple of the Peaceful Dragon\nHours: 08:00–17:00 · Entry: ¥800pp · Access: 15 min walk from Kinkaku-ji\n\nThe rock garden: 15 stones in groups of 7, 5 and 3, set in raked white gravel. 30m × 10m. From any angle within the veranda, one stone is always hidden — only all 15 visible from directly above.\n\nThe meaning: Deliberately enigmatic — no official interpretation given by the temple. Contemplation is the point.\n\nBeyond the garden: The large Mirror Pond and woodland garden are beautiful and much less visited. Allow 30 mins to walk around.\nTip: Sit quietly in the veranda for 10 minutes. The experience is very different from hurrying through."
         },
         {
           "time": "12:15",
@@ -1053,7 +1095,8 @@
           "status": "planning",
           "notes": "Bus (Kyoto bus day pass ¥700/person) or taxi ~¥1,500. Allow 45–50 min on Saturday.",
           "address": "Ryoan-ji Temple, 13 Ryoanjigoranocho, Ukyo-ku, Kyoto 616-8001, Japan",
-          "mapQuery": "Ryoanji rock garden Kyoto"
+          "mapQuery": "Ryoanji rock garden Kyoto",
+          "detail": "Ginkaku-ji (銀閣寺) — Temple of the Silver Pavilion\nHours: 08:30–17:00 · Entry: ¥1,100pp\n\nDespite the name, the pavilion was never actually covered in silver — the shogun ran out of money. The garden is the real draw:\n- Kogetsudai: 1.8m high cone of raked sand representing Mt Fuji\n- Sea of Silver Sand: raked gravel representing moonlit water\n- Moss garden behind the main buildings — lush, perfectly maintained\n\nFrom here: Philosopher's Path starts right outside the gates — walk south to Nanzen-ji (2km, ~45 min)."
         },
         {
           "time": "13:00–13:50",
@@ -1069,7 +1112,8 @@
           "status": "free",
           "notes": "2km cherry tree-lined canal path from Ginkaku-ji towards Nanzen-ji. Most beautiful walk in cherry blossom season.",
           "address": "Ginkaku-ji Temple, 2 Ginkakujicho, Sakyo-ku, Kyoto 606-8402, Japan",
-          "mapQuery": "Ginkaku-ji Silver Pavilion Kyoto"
+          "mapQuery": "Ginkaku-ji Silver Pavilion Kyoto",
+          "detail": "Philosopher's Path (哲学の道)\nRoute: Ginkaku-ji → Nanzen-ji (~2km, ~45 min flat walk along a small canal) · Entry: Free\n\nNamed after philosopher Nishida Kitaro who meditated here daily on walks to Kyoto University.\n\nIn early April: Cherry trees arch over the canal, petals falling into the water. One of Kyoto's most celebrated hanami spots.\n\nAlong the path: Small cafés, art galleries, craft shops. Eikan-do Zenrin-ji is beautiful in spring — ¥1,000pp.\n\nEnd of path: Nanzen-ji Aqueduct — a striking brick Roman-style aqueduct from the Meiji era running through the temple grounds. Very unusual. Free to walk under."
         },
         {
           "time": "15:00",
@@ -1077,7 +1121,8 @@
           "status": "planning",
           "notes": "Yudofu (tofu hotpot) or Omen noodle restaurant on the Path.",
           "address": "Nanzen-ji Temple, 86 Fukuchicho, Sakyo-ku, Kyoto 606-8435, Japan",
-          "mapQuery": "Nanzen-ji Temple Kyoto"
+          "mapQuery": "Nanzen-ji Temple Kyoto",
+          "detail": "Lunch options around Nanzen-ji:\n\nYudofu (湯豆腐): Kyoto's most traditional dish — silken tofu simmered in kombu dashi broth. Multiple dedicated restaurants near Nanzen-ji (Junsei, Okutan). ~¥2,500–3,500pp. Famous and busy — expect a short wait.\n\nOmen (おめん): Famous handmade udon on the Philosopher's Path (north end). Thick, chewy noodles in a light broth. Queue moves fast. ~¥1,200–1,500pp. Very popular with locals."
         },
         {
           "time": "16:30",
@@ -1085,7 +1130,8 @@
           "status": "planning",
           "notes": "Subway from Keage or Higashiyama Station back to Shijo/Kawaramachi.",
           "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
-          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
+          "detail": "Return to Mitsui Garden Hotel:\n- From Nanzen-ji: Walk 10 min to Keage Station (Tozai Line) → west to Karasuma → change to Karasuma Line south to Shijo. ~35 mins.\n- Or taxi ~¥1,200, 15 mins.\n\nRest and refresh before the evening — Gion dinner and night walk ahead."
         },
         {
           "time": "18:30",
@@ -1101,7 +1147,8 @@
           "status": "free",
           "notes": "Beautifully lit machiya townhouses. Walk to Yasaka Shrine — free, open all night, stunning lanterns.",
           "address": "Gion District, Higashiyama Ward, Kyoto 605-0073, Japan",
-          "mapQuery": "Gion District Kyoto Hanamikoji"
+          "mapQuery": "Gion District Kyoto Hanamikoji",
+          "detail": "Gion after dark — arguably the most atmospheric urban experience of the trip.\n\nHanamikoji-dori at night: Ochaya (teahouses) glow with orange lantern light. Quieter than day but still lively. Between 20:00–22:00 you may see maiko being escorted to appointments. Quiet, respectful observation only.\n\nYasaka Shrine (八坂神社): Free, open all night. Stone lanterns lit, broad promenade beautiful. The Okera Lantern burns with sacred fire — used traditionally to light New Year fires in Kyoto homes.\n\nMaruyama Park: Beyond the shrine. Giant illuminated weeping cherry (shidarezakura) in April. The park fills with picnickers and revellers. Very festive, very local."
         }
       ],
       "title": "Kyoto — Northern Temples · Gion",
@@ -1158,35 +1205,40 @@
           "activity": "Breakfast — Mitsui Garden Hotel (early start)",
           "status": "included",
           "notes": "Free breakfast included. Aim to leave hotel by 07:30 to beat the crowds at the bamboo grove.",
-          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
+          "detail": "Early start today. Breakfast at 07:00, leave by 07:30.\nThe Arashiyama Bamboo Grove is genuinely magical before 08:30 and genuinely awful after 10:00 in cherry blossom season. The early start makes a significant difference."
         },
         {
           "time": "07:30",
           "activity": "Travel to Torokko Saga Station",
           "status": "planning",
           "notes": "From hotel: walk to Kawaramachi Station, Hankyu to Kyoto, then JR Sagano Line to JR Saga-Arashiyama (17 min, ¥240pp). Torokko Saga Station is adjacent to JR Saga-Arashiyama Station south exit — 1 min walk.",
-          "mapQuery": "Torokko Saga Station Arashiyama Kyoto"
+          "mapQuery": "Torokko Saga Station Arashiyama Kyoto",
+          "detail": "Route: Hotel → Hankyu Kawaramachi (1 min walk) → Hankyu to Kyoto-Kawaramachi → JR at Kyoto Station → JR Sagano Line to JR Saga-Arashiyama\nTotal: ~30 mins · Cost: ~¥600pp\n\nTorokko Saga Station: Adjacent to JR Saga-Arashiyama south exit — 1 min walk. Sagano Romantic Train ticket gate opens ~08:35.\nTip: Bamboo Grove is right next to the station — go there first before collecting train tickets (grove is open from dawn)."
         },
         {
           "time": "08:00",
           "activity": "Arashiyama Bamboo Grove + Nonomiya Shrine",
           "status": "free",
           "notes": "Go now — this is one of the most crowded spots in Japan during cherry blossom season. 08:00 is genuinely quiet. Nonomiya Shrine is hidden inside the grove — small black torii, very atmospheric. Free.",
-          "mapQuery": "Arashiyama Bamboo Grove Kyoto"
+          "mapQuery": "Arashiyama Bamboo Grove Kyoto",
+          "detail": "Arashiyama Bamboo Grove (嵐山竹林の小径)\nEntry: Free · Open from dawn\nPath: 400m long. Stems 20m high, swaying gently, extraordinary filtered light. In early morning (before 09:00) genuinely one of the most beautiful places in Japan. After 10:00 a tourist crush.\n\nNonomiya Shrine: Hidden inside the grove. Small black-lacquered torii gate on the right. Dedicated to matchmaking and safe childbirth. Very quiet even when the grove is busy.\n\nWander the lanes branching off the main path — equally beautiful and much quieter."
         },
         {
           "time": "09:00",
           "activity": "Tenryu-ji Temple Garden",
           "status": "planning",
           "notes": "UNESCO World Heritage garden. Cherry blossoms over the pond. ¥500pp for garden, ¥300 extra for main hall. Allow 45 mins.",
-          "mapQuery": "Tenryuji Temple Arashiyama Kyoto"
+          "mapQuery": "Tenryuji Temple Arashiyama Kyoto",
+          "detail": "Tenryu-ji (天龍寺)\nHours: 08:30–17:30 · Entry: ¥500pp (garden) · ¥800pp (garden + main hall)\n\nFounded 1339 by shogun Ashikaga Takauji. Garden by Muso Soseki — Japan's greatest garden designer. UNESCO World Heritage.\n\nThe main garden (Sogenchi): Large pond garden framed by Arashiyama mountain — 'borrowed scenery' (shakkei) technique where the surrounding mountain becomes part of the composition. In early April cherry trees around the pond are spectacular.\n\nMain hall: The painted cloud and dragon ceiling (by Kayama Matazo, 1997) is worth the extra ¥300.\nFrom Tenryu-ji: Walk out through the rear gate directly into the bamboo grove or toward Torokko Saga Station."
         },
         {
           "time": "09:50",
           "activity": "Walk to Torokko Saga Station",
           "status": "planning",
           "notes": "1 min from JR Saga-Arashiyama Station south exit. Collect e-ticket at gate via the mobile voucher link — do NOT use the printed PDF.",
-          "mapQuery": "Torokko Saga Station Arashiyama Kyoto"
+          "mapQuery": "Torokko Saga Station Arashiyama Kyoto",
+          "detail": "Walk to Torokko Saga Station — 1 min from JR Saga-Arashiyama Station south exit.\n\n⚠ Ticket collection: Use the e-ticket link linkt.to/oGdvHgf1 — show this screen at the ticket gate. Do NOT use the printed PDF voucher.\n\nArrive at the gate by 09:55 to allow time to check in and find your carriage (Car 3) before the 10:02 departure."
         },
         {
           "time": "10:02",
@@ -1201,7 +1253,8 @@
           "activity": "Arrive Torokko Kameoka — shuttle to boat dock",
           "status": "planning",
           "notes": "Free shuttle bus from Torokko Kameoka Station to Hozugawa boat dock (~15 min). Alternatively a horse-drawn carriage connects the two. Departures timed to the train arrivals.",
-          "mapQuery": "Hozugawa River Boat Ride Kameoka Kyoto"
+          "mapQuery": "Hozugawa River Boat Ride Kameoka Kyoto",
+          "detail": "At Torokko Kameoka Station:\nFree shuttle bus to Hozugawa boat dock: Timed to meet incoming trains. Walk out of the station and follow staff directions to the bus. Journey ~15 mins.\nHorse-drawn carriage: Also available — slower, more expensive, but memorable.\n\nAt the dock: Check in for your 11:00 Hozugawa River Cruise. Show Klook QR code at the reception desk. Life jackets issued here.\n⚠ No restrooms on the boat — use facilities before boarding."
         },
         {
           "time": "11:00",
@@ -1216,7 +1269,8 @@
           "activity": "Arrive Arashiyama — Togetsukyo Bridge",
           "status": "free",
           "notes": "Boat docks just below Togetsukyo Bridge. 5 min walk to Arashiyama Nishiki restaurant on Nakanoshibashi island.",
-          "mapQuery": "Togetsukyo Bridge Arashiyama Kyoto"
+          "mapQuery": "Togetsukyo Bridge Arashiyama Kyoto",
+          "detail": "The boat docks at the base of Togetsukyo Bridge (渡月橋) in central Arashiyama.\nTogetsukyo Bridge itself is worth pausing on — views of the river and wooded mountains. In April cherry blossoms frame the mountain backdrop.\nArashiyama Nishiki restaurant is on Nakanoshibashi island (the small island in the river) — 5 min walk from the dock."
         },
         {
           "time": "13:30",
@@ -1231,28 +1285,32 @@
           "activity": "Ōkōchi Sansō Villa — optional",
           "status": "optional",
           "notes": "15 min uphill walk from the bridge. Villa of 1920s samurai film star — stunning gardens over the Kyoto valley. ¥1,000pp includes matcha and tea. Worth it if energy allows after the cruise.",
-          "mapQuery": "Okochi Sanso Villa Arashiyama Kyoto"
+          "mapQuery": "Okochi Sanso Villa Arashiyama Kyoto",
+          "detail": "Ōkōchi Sansō Villa (大河内山荘)\nEntry: ¥1,000pp (includes matcha and wagashi sweet)\nAccess: 15 min uphill walk from Togetsukyo Bridge · Hours: 09:00–17:00\n\nVilla and gardens of Ōkōchi Denjiro, a famous 1920s samurai film actor. Spread across the hillside above Arashiyama with panoramic views over the entire Kyoto valley.\n\nMultiple garden styles — Japanese stroll garden, raked gravel, moss gardens, tea garden. The matcha rest stop at the end of the garden route is a welcome pause.\n\nBest views: From the upper terrace looking south over the city. On clear days visible all the way to Osaka."
         },
         {
           "time": "16:00",
           "activity": "Free time in Arashiyama",
           "status": "free",
           "notes": "Riverside wander, shops, Tenryu-ji garden exit, Togetsukyo Bridge photos with the mountains.",
-          "mapQuery": "Arashiyama Kyoto Japan"
+          "mapQuery": "Arashiyama Kyoto Japan",
+          "detail": "Last free time in Arashiyama:\n- Riverside stroll along the Oi River south of the bridge\n- Arashiyama shops: Good craft shops, matcha ice cream, bamboo goods\n- Sagano bamboo crafts — the area has excellent bamboo products\n- Café break: Several good independent cafés near the Hankyu station"
         },
         {
           "time": "17:00",
           "activity": "Return to Kyoto",
           "status": "planning",
           "notes": "Hankyu Arashiyama Line from Arashiyama Station → Katsura → Kawaramachi (35 min, ¥270pp). Or JR from Saga-Arashiyama → Kyoto Station (17 min, ¥240pp).",
-          "mapQuery": "Hankyu Arashiyama Station Kyoto"
+          "mapQuery": "Hankyu Arashiyama Station Kyoto",
+          "detail": "Two return options:\n1. Hankyu Arashiyama Line: Hankyu Arashiyama Station → Katsura → Kawaramachi. ~35 min, ¥270pp. Drops very close to the hotel. Recommended.\n2. JR Sagano Line: JR Saga-Arashiyama → Kyoto Station. ~17 min, ¥240pp. Faster but requires subway or taxi from Kyoto Station."
         },
         {
           "time": "19:00",
           "activity": "Dinner — Ponto-cho",
           "status": "not_booked",
           "notes": "⚠ BOOK AHEAD — Sunday evening cherry blossom season, this will be very busy. Riverside kawayuka terrace dining. Book as soon as possible.",
-          "mapQuery": "Pontocho Kyoto dining"
+          "mapQuery": "Pontocho Kyoto dining",
+          "detail": "Ponto-cho Sunday dinner — book in advance.\n\nRecommended:\n- Pontocho Robin (Rubin): Traditional Japanese hotpot (duck, kinmedai). Private rooms 4–6 people. River views. ¥8,800–16,500pp. Tabelog bookable.\n- Pontocho Fujita: Kaiseki, dashi-focused, private rooms. Tablecheck bookable.\n- Via hotel concierge: Ask Mitsui Garden to call on your behalf — most reliable for cherry blossom season.\n\nKawayuka: Riverside dining platforms may just be opening in mid-April — worth asking when you call."
         }
       ],
       "title": "Kyoto — Arashiyama",
@@ -1306,7 +1364,8 @@
           "status": "included",
           "notes": "Hotel breakfast before early departure.",
           "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
-          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
+          "detail": "Last free breakfast at Mitsui Garden Hotel.\n⚠ Today: Nara morning, back to Kyoto by 13:00 for the Miyako Odori tea ceremony at 13:45. Do NOT spend too long in Nara."
         },
         {
           "time": "09:15",
@@ -1314,7 +1373,8 @@
           "status": "included",
           "notes": "JR Pass covered. Direct, 45 min from Kyoto Station.",
           "address": "Kyoto Station, Karasuma-dori, Shimogyo-ku, Kyoto 600-8216, Japan",
-          "mapQuery": "Kyoto Station"
+          "mapQuery": "Kyoto Station",
+          "detail": "JR Nara Line: Kyoto Station → Nara Station\nDuration: ~45 min (Miyako Route Rapid) · ¥740pp or JR Pass\nDepartures: Every 30 mins from Platform 8\n\nAlternative: Kintetsu Line from Kintetsu-Kyoto Station → Kintetsu Nara. ~35 min, ¥760pp. Faster and drops closer to Nara Park.\n\n⚠ Time constraint: Need to be back in Kyoto by 13:00 to reach the Miyako Odori by 13:45. Plan accordingly."
         },
         {
           "time": "10:00",
@@ -1322,7 +1382,8 @@
           "status": "free",
           "notes": "Walk east from Nara Station (~10 min). 1,200+ free-roaming sika deer. Deer crackers ¥200/pack.",
           "address": "Nara Park, 469 Zoushicho, Nara 630-8211, Japan",
-          "mapQuery": "Nara Park deer Nara Japan"
+          "mapQuery": "Nara Park deer Nara Japan",
+          "detail": "Nara Park (奈良公園)\nAccess: 10 min walk east from JR or Kintetsu Nara Station · Entry: Free\n\nOver 1,200 sika deer roam freely — considered sacred messengers of the gods, protected by law. They genuinely bow for shika senbei (deer crackers). Buy 5–6 packs (¥200 each) minimum — you will be completely surrounded.\n\nTip: Don't wave crackers in the air. Hold one at a time, low and forward. Small children may find the deer pushy — keep young ones behind adults."
         },
         {
           "time": "11:00–12:30",
@@ -1330,7 +1391,8 @@
           "status": "planning",
           "notes": "Largest wooden structure in the world. 15m bronze Buddha. ¥1,400pp. Allow 90 min.",
           "address": "Todai-ji Temple, 406-1 Zoshicho, Nara 630-8211, Japan",
-          "mapQuery": "Todai-ji Temple Nara Great Buddha"
+          "mapQuery": "Todai-ji Temple Nara Great Buddha",
+          "detail": "Todai-ji (東大寺)\nHours: 08:00–17:00 · Entry: ¥1,400pp · Access: 15 min walk from Nara Station through the park\n\nThe Daibutsuden (Great Buddha Hall): Largest wooden structure in the world (current building 1709, rebuilt after fire). Inside: Vairocana Buddha in bronze, 15m tall, 500 tonnes.\n\nThe pillar with the hole: Same size as the Great Buddha's nostril. Squeeze through and enlightenment is guaranteed. Children usually manage. Adults may struggle.\n\n⚠ Time constraint today: Leave Nara by 12:30 to reach the Miyako Odori theatre by 13:45."
         },
         {
           "time": "12:30",
@@ -1373,12 +1435,41 @@
           "mapQuery": "Nishiki Market Kyoto"
         },
         {
+          "time": "13:45",
+          "activity": "Arrive Gion Kobu Kaburenjo — tea ceremony check-in",
+          "status": "booked",
+          "notes": "Arrive by 13:45 for pre-show Ryurei-style tea ceremony. Show Order 00101707 QR codes at entrance.",
+          "address": "Gion Kobu Kaburenjo Theater, 570-2 Gionmachi Minamigawa, Higashiyama-ku, Kyoto 605-0074, Japan",
+          "mapQuery": "Gion Kobu Kaburenjo Theater Kyoto",
+          "detail": "Gion Kobu Kaburenjo Theatre\nAddress: 570-2 Gionmachi Minamigawa, Higashiyama-ku, Kyoto\nAccess: 8 min walk from Keihan Gion-Shijo Station Exit 6 · 3 min from Hankyu Kawaramachi Station Exit 1\n\n⚠ Arrive 13:45 — tea ceremony begins approximately 30 minutes before the 14:30 show.\n\nCheck in: Show QR codes at entrance (Order 00101707). Four separate QR codes — use the Show QR Code button in the e-get system to display each in turn, or send to each family member via email/LINE.\n\nTea ceremony: Ryurei-style (tables and chairs, no kneeling). Matcha and wagashi sweet served by geiko and maiko. The glazed sweet plate is yours to take home as a souvenir.\n\nThe renovated strolling garden is accessible before the show — worth a short walk through.\n\n⚠ Souvenirs: Buy any programme books or merchandise BEFORE the show. The exit after the performance leads to a different part of the building where no souvenir stalls exist."
+        },
+        {
+          "time": "14:30",
+          "activity": "152nd Miyako Odori — Geiko & Maiko dance performance",
+          "status": "booked",
+          "notes": "Order 00101707 · 4 x First Class + Tea Service · Row 22 seats 6-9 · ¥28,860 · Revolut 9666 · QR tickets via Less Q — screenshot all 4 QR codes as backup",
+          "address": "Gion Kobu Kaburenjo Theater, 570-2 Gionmachi Minamigawa, Higashiyama-ku, Kyoto 605-0074, Japan",
+          "mapQuery": "Gion Kobu Kaburenjo Theater Kyoto",
+          "url": "https://miyako-odori.jp/english/",
+          "detail": "152nd Miyako Odori 2026\nOrder: 00101707\nDate: Monday 13 April 2026 · 14:30\nVenue: Gion Kobu Kaburenjo Theater, Kyoto\nTickets: 4 × First Class Seat with Tea Service · ¥7,000pp\nSeats: 1階 (Ground Floor) · Row 22 · Seats 6, 7, 8, 9\nTotal: ¥28,860 · Revolut Mastercard 9666\nTicket method: Less Q (electronic) — QR codes in email. Screenshot all 4 as backup.\n\nTheme: Kanei Gyoko Miyako Karei — commemorating the 400th anniversary of the Kanei Imperial Visit. ~50 geiko and maiko from Gion Kobu perform 8 seasonal dance scenes, running ~1 hour continuously with no curtain drops. Shamisen, taiko and vocal accompaniment throughout.\n\nFirst Class seats: Ground floor (1階) · Row 22 is forward-middle — good visibility of stage and side musicians (balcony cannot see side musicians).\n\nPhotography: NOT permitted during the performance.\n\n⚠ Souvenirs: Buy programme books BEFORE the show at the entrance stalls."
+        },
+        {
+          "time": "15:45",
+          "activity": "Post-show — Gion evening walk",
+          "status": "free",
+          "notes": "Walk Hanamikoji after the performance. Geiko and maiko visible on their way to engagements from ~17:00. This is your last evening in Kyoto.",
+          "address": "Gion District, Higashiyama Ward, Kyoto 605-0073, Japan",
+          "mapQuery": "Gion District Kyoto Hanamikoji",
+          "detail": "After the Miyako Odori ends (~15:30), you are in the heart of Gion with the whole evening ahead.\n\nHanamikoji-dori: 5 min walk from the theatre. Post-show light is perfect for the machiya facades.\n\nGeiko sightings: Best window is 17:00–19:00 when maiko travel between engagements. After seeing them on stage, spotting one in the street in full costume is something else.\n\nMaruyama Park: 15 min walk north through Yasaka Shrine. The illuminated weeping cherry (if still in bloom mid-April) is one of Kyoto's most memorable evening sights.\n\nThis is your last evening in Kyoto — the most culturally rich city of the trip."
+        },
+        {
           "time": "19:30",
           "activity": "Farewell Kyoto dinner",
           "status": "booked",
           "notes": "⚠ BOOK AHEAD. Last night in Kyoto. Traditional kaiseki or high-quality kaiseki donburi.",
           "address": "Gion District, Hanamikoji-dori, Higashiyama-ku, Kyoto 605-0074, Japan",
-          "mapQuery": "Gion district Kyoto"
+          "mapQuery": "Gion district Kyoto",
+          "detail": "Final dinner in Kyoto — make it count.\nOptions:\n- Mid-range kaiseki: ~¥8,000–12,000pp. Book through hotel concierge or Tablecheck.\n- Pontocho restaurant: If the earlier booking didn't happen on another evening, this is the night.\n- Gion Hanamikoji: Post-Miyako Odori, walking distance from the theatre.\n\nBook via Mitsui Garden Hotel concierge — explain it's your last night in Kyoto and you want something special."
         }
       ],
       "title": "Kyoto / Nara Day Trip",
@@ -1428,7 +1519,8 @@
           "status": "included",
           "notes": "Last Kyoto morning. Pack all luggage.",
           "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
-          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
+          "detail": "Final breakfast at Mitsui Garden Hotel. Pack everything — checkout is 10:30.\nThis is your last morning in Kyoto. A short optional tea ceremony (09:30) could fit if you want one final cultural experience before Osaka."
         },
         {
           "time": "09:30",
@@ -1444,7 +1536,8 @@
           "status": "planning",
           "notes": "4-night stay. Short walk or subway to Kyoto Station.",
           "address": "Kyoto Station, Karasuma-dori, Shimogyo-ku, Kyoto 600-8216, Japan",
-          "mapQuery": "Kyoto Station"
+          "mapQuery": "Kyoto Station",
+          "detail": "Check out of Mitsui Garden Hotel. 4 nights. Confirm no outstanding charges.\nBaggage: You can leave luggage with the hotel until you're ready if checkout is before your departure time."
         },
         {
           "time": "11:00",
@@ -1452,7 +1545,8 @@
           "status": "planning",
           "notes": "Walk from hotel to Sanjo Station (Keihan Line) · Keihan Limited Express: Sanjo → Yodoyabashi · ~50 min · ~¥430pp",
           "address": "Sanjo Station, Higashiyama Ward, Kyoto, Japan",
-          "mapQuery": "Sanjo Station Keihan Kyoto"
+          "mapQuery": "Sanjo Station Keihan Kyoto",
+          "detail": "Route: Hotel → Sanjo-Keihan Station (10 min walk north) → Keihan Limited Express (特急) → Yodoyabashi Station, Osaka (~50 min, ¥430pp)\n\nAt Yodoyabashi: Transfer to Osaka Metro Midosuji Line → Umeda (1 stop, 2 min). Candeo Hotels is near Osaka/Umeda Station.\n\nAlternative: JR from Kyoto Station → Osaka Station (~15 min, ¥580pp, more frequent).\n\nRecommendation: The Keihan is more scenic — runs along the Kamo River through the Fushimi sake district."
         },
         {
           "time": "~13:00",
@@ -1469,7 +1563,8 @@
           "status": "free",
           "notes": "Metro or walk south. Glico Running Man photo, Kani Doraku crab sign.",
           "address": "Dotonbori, 1-chome Dotonbori, Chuo Ward, Osaka 542-0071, Japan",
-          "mapQuery": "Dotonbori Osaka neon food street"
+          "mapQuery": "Dotonbori Osaka neon food street",
+          "detail": "Dotonbori (道頓堀) — Osaka's most famous district\nAccess: Osaka Metro Midosuji Line from Umeda → Namba (3 stops, ¥230pp) or ~25 min walk south\n\nDotonbori is the neon heart of Osaka. The canal-side strip has the densest concentration of restaurants in Japan.\n\n- Glico Running Man: LED billboard above the canal. Cross Ebisu-bashi bridge and look back — that's the classic shot.\n- Kani Doraku: The moving mechanical crab sign (a restaurant). Another Osaka icon.\n- Street food: Takoyaki (octopus balls) — dozens of competing stalls. Also kushikatsu and okonomiyaki.\n\nVibe: Louder, grittier and more fun than Kyoto. Japan's most extroverted city."
         },
         {
           "time": "16:00",
@@ -1477,7 +1572,8 @@
           "status": "planning",
           "notes": "Osaka's answer to Harajuku. Vintage stores, streetwear, record shops.",
           "address": "Amerikamura, Chuo Ward, Osaka 542-0086, Japan",
-          "mapQuery": "Amerikamura Osaka"
+          "mapQuery": "Amerikamura Osaka",
+          "detail": "Amerikamura (アメリカ村) — American Village\nAccess: 5 min walk west of Dotonbori · Shinsaibashi-suji arcade connects the two\n\nOsaka's equivalent of Harajuku/Shimokitazawa. Radiates from Triangle Park.\n\nWhat's here:\n- Vintage and thrift: 2nd Street, Super Bookoff. Jack's territory.\n- Streetwear: Supreme, Carhartt, local Japanese streetwear labels\n- Record shops: Good vinyl selection\n- Food: American-style diners, unique cafés"
         },
         {
           "time": "18:30",
@@ -1485,7 +1581,8 @@
           "status": "planning",
           "notes": "Osaka is Japan's food capital. Ichiran Ramen, takoyaki crawl, or kushikatsu izakaya.",
           "address": "Dotonbori, 1-chome Dotonbori, Chuo Ward, Osaka 542-0071, Japan",
-          "mapQuery": "Dotonbori Osaka neon food street"
+          "mapQuery": "Dotonbori Osaka neon food street",
+          "detail": "First dinner in Osaka — the food capital of Japan.\n\nOsaka food ethos: 'Kuidaore' (食い倒れ) — 'eat until you drop'.\n\nOptions:\n- Takoyaki crawl: Hit 3–4 different stalls. Best: Aizuya (the original, since 1933), Kukuru, Wanaka.\n- Kushikatsu in Dotonbori: Multiple izakayas. ⚠ NEVER double dip the communal sauce.\n- Kinryu Ramen: Famous Dotonbori noodle shop (giant dragon sign on roof). Open until late.\n- Okonomiyaki: Mizuno on Dotonbori — Osaka-style savoury pancake made in front of you. Queue outside."
         }
       ],
       "title": "Kyoto → Osaka",
@@ -1546,7 +1643,8 @@
           "status": "planning",
           "notes": "¥1,400pp for 8F observation deck. Park free — excellent cherry blossoms in mid-April.",
           "address": "Osaka Castle, 1-1 Osakajo, Chuo Ward, Osaka 540-0002, Japan",
-          "mapQuery": "Osaka Castle Park Japan"
+          "mapQuery": "Osaka Castle Park Japan",
+          "detail": "Osaka Castle (大阪城)\nAccess: Osaka Metro Tanimachi Line from Higashi-Umeda → Tanimachi 4-chome (~10 min, ¥230pp), then 10 min walk east\nPark entry: Free · Castle tower: ¥1,400pp · Hours: 09:00–17:00\n\nThe park is one of Osaka's best hanami spots — 600+ cherry trees in mid-April (late varieties may still be in bloom).\n\nThe castle tower: 8 floors + observation deck. Exhibits cover Toyotomi Hideyoshi and the history of Osaka.\nHistorical context: Built by Toyotomi Hideyoshi in 1583. The original stone foundation walls are genuinely extraordinary — some stones weighing hundreds of tonnes, fitted without mortar."
         },
         {
           "time": "12:00",
@@ -1554,7 +1652,8 @@
           "status": "planning",
           "notes": "170 stalls of fresh seafood, wagyu, fruit and street food. Eat as you walk.",
           "address": "Kuromon Ichiba Market, 2-4-1 Nipponbashi, Chuo Ward, Osaka 542-0073, Japan",
-          "mapQuery": "Kuromon Ichiba Market Osaka"
+          "mapQuery": "Kuromon Ichiba Market Osaka",
+          "detail": "Kuromon Ichiba Market (黒門市場)\nAccess: Osaka Metro Sennichimae Line → Nippombashi Station. 2 min walk. Hours: Most stalls 07:00–18:00\n\nOsaka's professional food market — originally wholesale for restaurants, now open to the public. 170+ stalls in a covered 580m arcade.\n\nMust try:\n- Live sea urchin (uni) — some stalls cut it open right in front of you\n- A5 wagyu beef: Stalls offer skewers seared on charcoal grill\n- Tiger prawn tempura — huge, crispy, on a stick\n- Whole steamed snow crab legs\n- Fugu (pufferfish) — Osaka is the centre of fugu culture, safe when prepared by a licensed chef\n\nBudget ¥2,000–4,000pp for a walking lunch."
         },
         {
           "time": "13:30",
@@ -1562,7 +1661,8 @@
           "status": "planning",
           "notes": "1920s retro entertainment district. Tsutenkaku observation deck ¥2,000pp.",
           "address": "Shinsekai, Naniwa Ward, Osaka 556-0002, Japan",
-          "mapQuery": "Shinsekai Tsutenkaku Tower Osaka"
+          "mapQuery": "Shinsekai Tsutenkaku Tower Osaka",
+          "detail": "Shinsekai (新世界) — New World\nAccess: Osaka Metro Midosuji Line → Dobutsuen-mae Station. 5 min walk.\n\nBuilt in 1912 modelled on New York and Paris. Now deliberately retro — untouched in a way that makes it extraordinary.\n\nTsutenkaku Tower (通天閣): 103m tower, symbol of Shinsekai. Observation deck ¥2,000pp. Biliken statue on top floor — rub his feet for good luck.\n\nKushikatsu in Shinsekai: This is the home of kushikatsu — authentic experience. Daruma is the most famous (established 1929). ⚠ NEVER double dip the communal sauce — this rule is taken very seriously, signs everywhere."
         },
         {
           "time": "15:00",
@@ -1578,7 +1678,8 @@
           "status": "planning",
           "notes": "Osaka's Akihabara. Retro game shops, Gunpla, anime figures.",
           "address": "Den Den Town, Nipponbashi, Naniwa Ward, Osaka 556-0005, Japan",
-          "mapQuery": "Den Den Town electronics Osaka"
+          "mapQuery": "Den Den Town electronics Osaka",
+          "detail": "Den Den Town (でんでんタウン) — Nipponbashi\nAccess: Osaka Metro Sennichimae Line to Nippombashi · 10 min walk from Shinsekai\n\nOsaka's Akihabara — more compact and less overwhelming. Main street and side alleys lined with electronics, retro game stores, maid cafés, anime merchandise and Gunpla.\n\nFor Jack and Charlie:\n- Super Potato: Best retro game shop in Osaka — SNES, N64, PS1, Dreamcast, everything. Multiple floors.\n- Joshin Super Kids Land: 9-floor electronics and toy megastore. Gunpla floor exceptional.\n- Animate: Major anime merchandise chain. Figures, manga, doujinshi.\n- Lashinbang: Used anime goods — good for older figures at reasonable prices."
         },
         {
           "time": "17:30",
@@ -1586,7 +1687,8 @@
           "status": "planning",
           "notes": "Longest covered shopping arcade in Japan. Good for souvenirs, beauty products, fashion.",
           "address": "Shinsaibashi, Chuo Ward, Osaka 542-0085, Japan",
-          "mapQuery": "Shinsaibashi Osaka"
+          "mapQuery": "Shinsaibashi Osaka",
+          "detail": "Shinsaibashi-suji (心斎橋筋)\nAccess: Osaka Metro Midosuji Line → Shinsaibashi Station\nLength: 600m covered arcade · Hours: Most shops 11:00–21:00\n\nLongest covered shopping arcade in Japan — 600m running north-south, connecting directly to Dotonbori at the south end.\n\nGood for:\n- Japanese skincare and cosmetics: Matsumoto Kiyoshi, Daikoku Drug, Ainz & Tulpe\n- Souvenir shopping: Osaka-specific snacks, KitKat flavours, Pocky varieties\n- Electronics accessories at reasonable prices\n- Fast fashion (Zara, H&M, domestic brands)"
         },
         {
           "time": "19:30",
@@ -1594,7 +1696,8 @@
           "status": "booked",
           "notes": "⚠ BOOK AHEAD. Proper yakiniku — BBQ wagyu at the table. ~¥4,000–5,000pp. Namba area.",
           "address": "Namba, Chuo Ward, Osaka 542-0075, Japan",
-          "mapQuery": "Namba Osaka"
+          "mapQuery": "Namba Osaka",
+          "detail": "Osaka yakiniku dinner — book in advance.\n\nOsaka has an extraordinary yakiniku culture — the largest concentration of Korean-Japanese communities in Japan developed this cuisine here.\n\nWhat to order:\n- Karubi (short rib): The classic cut, fatty and full of flavour\n- Harami (outside skirt): Tender, well-marbled, quick to cook\n- Tongue (tan): Thin sliced, grilled quickly, dipped in lemon\n- Wagyu special course: Worth the splurge for one proper wagyu night\n\nBudget: ¥4,000–5,000pp for a good set course with drinks."
         }
       ],
       "title": "Osaka — Castle · Kuromon · Shinsekai",
@@ -1682,7 +1785,8 @@
           "status": "included",
           "notes": "JR Pass fully covered. Direct, ~60 min.",
           "address": "Osaka Station, 3-1-1 Umeda, Kita Ward, Osaka 530-0001, Japan",
-          "mapQuery": "Osaka Station JR Special Rapid"
+          "mapQuery": "Osaka Station JR Special Rapid",
+          "detail": "JR Special Rapid (新快速) from Osaka Station Platform 4–7\nRoute: Osaka → Himeji · Duration: ~60 min · ¥1,520pp or JR Pass\nDepartures: Every 15–30 mins. No reservation needed.\n\nHimeji is visible from the train on the right as you pull into the station — the castle is that close."
         },
         {
           "time": "09:20",
@@ -1690,7 +1794,8 @@
           "status": "free",
           "notes": "Straight 15 min walk north from station — you can see it from the exit.",
           "address": "Himeji Station, 68 Ekimae-cho, Himeji, Hyogo 670-0927, Japan",
-          "mapQuery": "Himeji Station Japan"
+          "mapQuery": "Himeji Station Japan",
+          "detail": "Himeji Station North Exit → Castle: Straight 1km walk north along Otemae-dori.\nYou can see the white castle at the end of the boulevard from the moment you exit the station.\nThe walk takes ~15 min. Castle entrance is at the south base of the hill."
         },
         {
           "time": "09:40–11:45",
@@ -1698,7 +1803,8 @@
           "status": "planning",
           "notes": "UNESCO World Heritage. Japan's finest surviving feudal castle. ¥2,400pp. Allow 2 hours. Steep narrow stairs.",
           "address": "Himeji Castle, 68 Honmachi, Himeji, Hyogo 670-0012, Japan",
-          "mapQuery": "Himeji Castle Japan"
+          "mapQuery": "Himeji Castle Japan",
+          "detail": "Himeji Castle (姫路城) — Shirasagi-jo (White Egret Castle)\nHours: 09:00–17:00 (last entry 16:00) · Entry: ¥2,400pp · Combo with Koko-en: ¥3,000pp\n\nJapan's most spectacular surviving feudal castle. UNESCO World Heritage, National Treasure. Remarkably survived earthquakes, fires, WWII bombing raids and 400 years of weather intact.\n\nStructure: Main donjon is 6 storeys visible, 7 inside. Steep narrow staircases — hold the rope rail.\n\nDefensive features: Boiling water holes, gun and arrow ports shaped asymmetrically to confuse enemies, a maze-like approach to slow attackers.\n\nTop floor: Small Shinto shrine. Views across Himeji city."
         },
         {
           "time": "12:00–13:00",
@@ -1706,7 +1812,8 @@
           "status": "planning",
           "notes": "9 connected traditional Japanese gardens. ¥1,000pp (combo ticket with castle ¥3,000pp saves ¥400pp).",
           "address": "Himeji Castle, 68 Honmachi, Himeji, Hyogo 670-0012, Japan",
-          "mapQuery": "Himeji Castle Japan"
+          "mapQuery": "Himeji Castle Japan",
+          "detail": "Koko-en Garden (好古園)\nEntry: ¥1,000pp standalone · ¥3,000pp combo with castle · Hours: 09:00–18:00\nAccess: Directly adjacent to the castle, west moat side\n\nNine connected traditional Japanese gardens on the former site of Himeji domain's outer samurai residences. Built 1992 in authentic Edo period garden styles.\n\nHighlights: Garden of the Residence (large stroll garden), Pine Tree Garden, Bamboo Grove, Tea Garden.\nMuch quieter than the castle itself."
         },
         {
           "time": "13:15",
@@ -1714,7 +1821,8 @@
           "status": "planning",
           "notes": "Anago (sea eel) and locally grown rice are Himeji specialities.",
           "address": "Himeji Castle, 68 Honmachi, Himeji, Hyogo 670-0012, Japan",
-          "mapQuery": "Himeji Castle Japan"
+          "mapQuery": "Himeji Castle Japan",
+          "detail": "Lunch in Himeji — local specialities:\nAnago (穴子 — conger sea eel): Himeji's defining local dish. Lighter and more delicate than unagi (freshwater eel). Restaurants along Otemon-dori specialise in anago rice bowls (anago-meshi). Budget ¥1,500–2,500pp.\n\nHimeji ramen: Mild soy base, thin noodles — regional style worth trying."
         },
         {
           "time": "15:00",
@@ -1730,7 +1838,8 @@
           "status": "free",
           "notes": "Tiny atmospheric alley with moss-covered Fudo statue, candlelit restaurants.",
           "address": "Hozenji Yokocho, Chuo Ward, Osaka 542-0076, Japan",
-          "mapQuery": "Hozenji Yokocho Osaka"
+          "mapQuery": "Hozenji Yokocho Osaka",
+          "detail": "Hozenji Yokocho (法善寺横丁)\nAccess: 2 min walk from Dotonbori east end · Only 80m long\n\nThe centrepiece: Fudo Myo-o stone statue completely covered in thick moss — growing for over 60 years from visitors continuously ladling water over it as offerings. At night with candlelight, one of Osaka's most remarkable sights.\n\nThe alley: Both sides lined with traditional wooden restaurant fronts, paper lanterns. Complete contrast with the neon of Dotonbori just steps away."
         },
         {
           "time": "17:00",
@@ -1738,7 +1847,8 @@
           "status": "planning",
           "notes": "Last full evening in Japan. Konbini snacks, KitKat flavours. Pack tonight.",
           "address": "Shinsaibashi, Chuo Ward, Osaka 542-0085, Japan",
-          "mapQuery": "Shinsaibashi Osaka"
+          "mapQuery": "Shinsaibashi Osaka",
+          "detail": "Last shopping evening in Japan.\n\nFinal purchases:\n- Konbini haul: 7-Eleven or Lawson — Pocky, regional KitKat flavours (matcha, sake, wasabi, sakura), Calbee crisps, unusual snacks\n- Don Quijote Namba: Open until 05:00. Last-minute electronics accessories, cosmetics, food gifts, unusual items\n- Matsumoto Kiyoshi: Japanese skincare, health products\n- Souvenir shops: Osaka-specific gifts — takoyaki plates, Biliken figures, Glico Running Man merchandise\n\nTip: Pack tonight — early start tomorrow."
         },
         {
           "time": "19:30",
@@ -1746,7 +1856,8 @@
           "status": "booked",
           "notes": "⚠ BOOK AHEAD. Osaka is Japan's food capital — make this one count.",
           "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
-          "mapQuery": "Candeo Hotels Osaka The Tower"
+          "mapQuery": "Candeo Hotels Osaka The Tower",
+          "detail": "Final dinner in Japan — make it exceptional.\n\nOsaka is the right city for a memorable last dinner. Options:\n\nKobe beef experience: Certified Kobe beef restaurant. ¥8,000–15,000pp. Look for the official Kobe beef certification mark.\n\nHigh-end sushi (omakase): Counter omakase with a skilled chef making each piece in front of you. ¥8,000–15,000pp. Book well ahead.\n\nFarewell izakaya crawl: 2–3 excellent izakayas in Dotonbori, each for 1–2 dishes and a drink. Total ~¥4,000pp but memorable.\n\nBook via hotel concierge or Tablecheck."
         }
       ],
       "title": "Osaka / Himeji Day Trip",
@@ -1799,7 +1910,8 @@
           "status": "planning",
           "notes": "Last chance. Namba Don Quijote opens 09:00.",
           "address": "Namba, Chuo Ward, Osaka 542-0075, Japan",
-          "mapQuery": "Namba Osaka"
+          "mapQuery": "Namba Osaka",
+          "detail": "Final Japan shopping window: 09:00–11:00.\n\nPriority stops:\n- Don Quijote Namba (opens 09:00): KitKat flavours, snacks, cosmetics, gadgets, gifts. Basement floor has best food selection.\n- Matsumoto Kiyoshi: Japanese skincare, health products. Open from 09:00.\n- 7-Eleven: Final konbini haul — regional snack varieties.\n\n⚠ Osaka Aquarium Kaiyukan: If anyone wants one more activity — world-class aquarium 15 min from Namba. ¥2,700pp, 2 hours. Aim to leave by 14:30 to reach Tennoji for the Haruka Express to KIX."
         },
         {
           "time": "11:00",
@@ -1807,7 +1919,8 @@
           "status": "planning",
           "notes": "Store luggage at hotel if needed. Checkout 11:00am.",
           "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
-          "mapQuery": "Candeo Hotels Osaka The Tower"
+          "mapQuery": "Candeo Hotels Osaka The Tower",
+          "detail": "Check out of Candeo Hotels. 3 nights. Confirm no outstanding charges.\nIf the afternoon involves activities before the airport, store luggage at reception until ~15:00."
         },
         {
           "time": "11:30–15:30",
@@ -1849,7 +1962,8 @@
           "status": "confirmed",
           "notes": "Transfer to Grand Hyatt Incheon. Free hotel shuttle from T2.",
           "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Incheon International Airport Terminal 2"
+          "mapQuery": "Incheon International Airport Terminal 2",
+          "detail": "Arriving at ICN Terminal 2.\n⚠ This is the return Korea entry — have your second e-Arrival Card QR ready (completed at e-arrivalcard.go.kr, deadline 15 Apr).\n\nProcess: Immigration → baggage → customs → arrivals hall → Grand Hyatt shuttle bus.\nGrand Hyatt Incheon shuttle: Free, departs from outside arrivals hall. Hotel connected to airport complex — journey ~10 mins."
         },
         {
           "time": "22:00",
@@ -1901,7 +2015,8 @@
           "status": "planning",
           "notes": "No breakfast included at Grand Hyatt. ICN T2 food options open from 06:00.",
           "address": "Grand Hyatt Incheon, 208 Yeongjonghaean-ro 321beon-gil, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Grand Hyatt Incheon Airport Hotel"
+          "mapQuery": "Grand Hyatt Incheon Airport Hotel",
+          "detail": "No breakfast included at Grand Hyatt Incheon.\n\nOptions:\n- Grand Hyatt restaurant: À la carte (expensive, ₩30,000–50,000pp)\n- ICN T2 airside: Multiple options from 06:00 including Korean restaurant, café, bakery. Far cheaper.\n\nRecommendation: Quick hotel coffee, then eat airside after check-in."
         },
         {
           "time": "08:30",
@@ -1909,7 +2024,8 @@
           "status": "free",
           "notes": "Free hotel shuttle. Confirm pickup time at reception tonight. 10–15 min.",
           "address": "Grand Hyatt Incheon, 208 Yeongjonghaean-ro 321beon-gil, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Grand Hyatt Incheon Airport Hotel"
+          "mapQuery": "Grand Hyatt Incheon Airport Hotel",
+          "detail": "Free Grand Hyatt Incheon shuttle to ICN T2.\n⚠ Confirm shuttle time at reception tonight.\nJourney: ~10–15 mins. Hotel is directly connected to the airport complex.\nVS209 check-in opens at 09:00 — being at the terminal by 08:45 gives a comfortable margin."
         },
         {
           "time": "09:00",
@@ -1926,7 +2042,8 @@
           "status": "planning",
           "notes": "Outstanding duty free — cosmetics, electronics, luxury brands.",
           "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Incheon International Airport Terminal 2"
+          "mapQuery": "Incheon International Airport Terminal 2",
+          "detail": "ICN T2 Airside — 2 hours before boarding\n\nDuty free:\n- Korean cosmetics: Sulwhasoo, History of Whoo, Laneige, Innisfree — significantly cheaper at ICN than Seoul retail\n- Luxury brands: LV, Gucci, Hermes — all tax-free\n- Electronics: Samsung flagship items\n- Snacks: Korean snack gift packs, ginseng, seaweed\n\nActivities airside:\n- Cultural Street: Free exhibitions on Korean traditional culture\n- ICN rooftop garden: Free, accessible via escalators near Gate 250\n\nFood: Multiple restaurants including Korean bibimbap, soups, café chains."
         },
         {
           "time": "12:25",
@@ -1934,7 +2051,8 @@
           "status": "confirmed",
           "notes": "Direct, ~11h 45m. Arrive LHR Terminal 3. Ref E3FYHB.",
           "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Incheon International Airport Terminal 2"
+          "mapQuery": "Incheon International Airport Terminal 2",
+          "detail": "VS209 · ICN T2 → LHR T3 · ~11h 45m\nSeats: 23D/23F/24D/24F\n\nLast flight. The sky outside Korea as you depart — final views of Asia.\n\nTime zone: Arrive London 18:50 BST (UTC+1). Japan/Korea were UTC+9 — clock goes back 8 hours.\n\nHeathrow: UK passport eGates. Baggage reclaim T3. KwikPark Meet & Greet — call as soon as you land, then again after collecting luggage."
         },
         {
           "time": "18:50",
@@ -1942,7 +2060,8 @@
           "status": "planning",
           "notes": "UK time. Through UK passport eGates. Baggage reclaim T3.",
           "address": "London Heathrow Airport Terminal 3, Hounslow TW6 1QG, UK",
-          "mapQuery": "Heathrow Terminal 3"
+          "mapQuery": "Heathrow Terminal 3",
+          "detail": "Arriving home at LHR Terminal 3.\nUK passport eGates — fast. Baggage reclaim T3.\n\nKwikPark: Call 07850366784 immediately on landing (Call 1). Call again after collecting luggage (Call 2). Make your way to T3 Short Stay Car Park Level 4 Row B."
         },
         {
           "time": "19:30",
@@ -2254,6 +2373,13 @@
           "deadline": "",
           "status": "paid",
           "notes": "✅ BOOKED via Klook · KLOOK-20260323-DB5V · £99.93 · 4 adults (Andrew, Sarah, Jack, Charlie Evans) · Sun 12 Apr · 11:00 slot · Show QR code smartphone ticket at dock"
+        },
+        {
+          "task": "152nd Miyako Odori × 4 — Mon 13 Apr 14:30",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Order 00101707 · 4 x First Class + Tea Service · Row 22 seats 6-9 · ¥28,860 · Revolut 9666 · QR via Less Q"
         }
       ]
     }
