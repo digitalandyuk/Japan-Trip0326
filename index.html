@@ -1229,32 +1229,18 @@ const TABS=['overview','days','transport','map','weather','booked','checklist','
 ═══════════════════════════════════════════ */
 function renderBooked(){
   if(!tripData){
-    document.getElementById('tab-booked').innerHTML='<p style="color:var(--muted);padding:16px;">Loading...</p>';
+    document.getElementById('tab-booked').innerHTML='<p style="color:var(--muted);padding:16px;">Loading\u2026</p>';
     return;
   }
   const doneGroup=(tripData.checklist||[]).find(g=>g.group&&g.group.includes('DONE'));
-  const items=(doneGroup&&doneGroup.items)||[];
+  const raw=(doneGroup&&doneGroup.items)||[];
 
-  // Derive a sort date from notes text — look for month names
-  const MONTHS={Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
-  function sortDate(item){
-    const t=item.task||'';const n=item.notes||'';
-    // Known fallbacks for items whose notes lack a clear date
-    const FALLBACKS={'Hakone Freepass':408,'Asiana OZ113':417};
-    for(const[k,v] of Object.entries(FALLBACKS)){if(t.includes(k)) return v;}
-    // Try to extract "D Mon" or "Mon D" from notes — require month+number together
-    const m=(n+' '+t).match(/(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)/i)
-          ||(n+' '+t).match(/(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2})/i);
-    if(m){
-      const day=parseInt(m[1])||parseInt(m[2]);
-      const mon=MONTHS[(m[2]||m[1]).substring(0,3)];
-      if(mon) return mon*100+day;
-    }
-    return 999; // no date found — push to end
-  }
-
-  // Sort a copy by date
-  const sorted=[...items].sort((a,b)=>sortDate(a)-sortDate(b));
+  // Sort by sortDate field added to JSON
+  const items=[...raw].sort((a,b)=>{
+    const da=a.sortDate||'9999';
+    const db=b.sortDate||'9999';
+    return da<db?-1:da>db?1:0;
+  });
 
   const LINKS={
     'VS208':'https://www.virginatlantic.com/','VS209':'https://www.virginatlantic.com/',
@@ -1278,34 +1264,44 @@ function renderBooked(){
   const STATUS_COLOUR={'paid':'var(--blossom)','pay_at_property':'#e09040','confirmed':'var(--jade)'};
   const STATUS_LABEL={'paid':'Paid \u2714','pay_at_property':'Pay on arrival','confirmed':'Confirmed \u2714'};
 
-  // Store notes in a global map so onclick can reference by index — avoids quote-escaping issues
-  window._bookedNotes={};
-
   function getLink(task){
     for(const[k,v] of Object.entries(LINKS)){if(task.includes(k))return v;}
     return null;
   }
 
-  const cards=sorted.map((item,i)=>{
+  let lastDate='';
+  const cards=items.map((item,i)=>{
     const status=item.status||'paid';
     const badgeColour=STATUS_COLOUR[status]||'var(--jade)';
     const badgeLabel=STATUS_LABEL[status]||status;
     const link=getLink(item.task||'');
-    const linkHtml=link?`<a href="${link}" target="_blank" rel="noopener" style="font-size:11px;color:var(--jade);text-decoration:none;display:inline-flex;align-items:center;gap:3px;margin-top:7px;">&#x1F517; View booking site</a>`:'';
-    if(item.notes) window._bookedNotes[i]=(item.notes).replace(/\xb7/g,'\n\xb7');
-    const infoBtn=item.notes?`<button onclick="event.stopPropagation();var n=window._bookedNotes[${i}];if(n)alert(n);" style="margin-left:8px;font-size:10px;padding:2px 8px;border-radius:10px;border:1px solid var(--jade);color:var(--jade);background:none;cursor:pointer;vertical-align:middle;">\u2139 details</button>`:'';
-    return `<div style="background:var(--ink2);border:1px solid var(--border);border-radius:10px;padding:13px 14px;margin-bottom:10px;">
+    const linkHtml=link?`<a href="${link}" target="_blank" rel="noopener" style="font-size:11px;color:var(--jade);text-decoration:none;margin-top:7px;display:inline-block;">\uD83D\uDD17 View booking site</a>`:'';
+    const dateLabel=item.dateLabel||item.sortDate||'';
+    const isNewDate=dateLabel!==lastDate;
+    if(isNewDate) lastDate=dateLabel;
+    const dateSep=isNewDate?`<div style="font-size:10px;font-weight:700;color:var(--gold);letter-spacing:0.05em;text-transform:uppercase;padding:${i===0?'4px':'16px'} 0 6px;">${dateLabel}</div>`:'';
+
+    // Inline expandable detail panel — no alert(), works in all contexts
+    const detailId='bk-detail-'+i;
+    const detailLines=(item.notes||'').split('\xb7').map(s=>s.trim()).filter(Boolean);
+    const detailHtml=item.notes?`
+      <div id="${detailId}" style="display:none;margin-top:10px;background:var(--ink);border-radius:8px;padding:10px 12px;font-size:11.5px;color:var(--muted);line-height:1.7;">
+        ${detailLines.map(l=>`<div>\xb7 ${l}</div>`).join('')}
+        ${linkHtml}
+      </div>`:'';
+    const infoBtn=item.notes?`<button onclick="(function(id){const el=document.getElementById(id);el.style.display=el.style.display==='none'?'block':'none';}('${detailId}'))" style="margin-left:8px;font-size:10px;padding:2px 8px;border-radius:10px;border:1px solid var(--jade);color:var(--jade);background:none;cursor:pointer;vertical-align:middle;">\u2139 details</button>`:'';
+
+    return `${dateSep}<div style="background:var(--ink2);border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;">
       <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;">
-        <div style="font-size:13.5px;font-weight:600;color:var(--white);line-height:1.3;">${item.task||''}${infoBtn}</div>
+        <div style="font-size:13px;font-weight:600;color:var(--white);line-height:1.4;">${item.task||''}${infoBtn}</div>
         <span style="flex-shrink:0;font-size:10px;padding:3px 8px;border-radius:10px;background:${badgeColour};color:var(--ink);font-weight:700;">${badgeLabel}</span>
       </div>
-      <div style="font-size:11.5px;color:var(--muted);margin-top:6px;line-height:1.5;">${item.notes||''}</div>
-      ${linkHtml}
+      ${detailHtml}
     </div>`;
   }).join('');
 
   document.getElementById('tab-booked').innerHTML=`<div style="padding:12px 0;">
-    <p style="font-size:11px;color:var(--muted);padding:0 0 14px;">${sorted.length} confirmed bookings &mdash; sorted by travel date</p>
+    <p style="font-size:11px;color:var(--muted);padding:0 0 6px;">${items.length} confirmed bookings \u2014 sorted by travel date</p>
     ${cards}
   </div>`;
 }
