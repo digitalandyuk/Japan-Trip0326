@@ -953,10 +953,42 @@
           "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
         },
         {
-          "time": "19:00",
+          "time": "15:00",
+          "activity": "Nishiki Market — Kyoto's Kitchen",
+          "status": "free",
+          "notes": "5 min walk from hotel. Covered 400-year-old market, 5 blocks, 100+ stalls. Kyoto pickles, yuba tofu, matcha sweets, grilled skewers. Close at 18:00 — go now while it's still open. Perfect first taste of Kyoto.",
+          "mapQuery": "Nishiki Market Kyoto",
+          "detail": "Nishiki Market (錦市場) — Kyoto's Kitchen\nDistance from hotel: 5 min walk\nHours: 09:00–18:00 (most stalls). Go before 18:00.\nEntry: Free to walk through\n\nA covered arcade market running 5 blocks through central Kyoto. Over 100 stalls, many run by the same families for generations. Known as \"Kyoto's Kitchen\" — the best place to taste what makes Kyoto food distinctive.\n\nWhat to try:\n- Kyoto tsukemono (pickles) — dozens of varieties, beautiful colours\n- Yuba (silky tofu skin) — Kyoto speciality, served on skewers\n- Tamagoyaki (sweet rolled omelette) on a stick\n- Matcha sweets and mochi\n- Grilled wagyu skewers\n- Fresh seasonal fruit\n\nIn April look for: sakura-flavoured wagashi, spring takenoko (bamboo shoots), cherry blossom pickles.\n\nTip: It's narrow and gets busy — go with the flow, eat as you walk (stalls provide napkins). Cash and IC cards accepted at most stalls.\n\nAt the eastern end: Nishiki Tenmangu Shrine — tiny, historic, with a magnificent old camphor tree. Worth a quick look."
+        },
+        {
+          "time": "16:00",
+          "activity": "Kamo River walk — Sanjo to Shijo",
+          "status": "free",
+          "notes": "5 min walk from Nishiki. Cherry blossoms along both banks. Flat, easy, beautiful. Locals picnicking on the riverbanks. The classic Kyoto evening stroll.",
+          "mapQuery": "Kamo River Sanjo Bridge Kyoto",
+          "detail": "Kamo River (鴨川) — Sanjo to Shijo stretch\nDistance from Nishiki: 5 min walk east\nEntry: Free · Open 24hrs · Flat, easy walking\n\nThe Kamo River is the beating heart of Kyoto. The riverbanks between Sanjo and Shijo bridges are one of the city's great gathering places — locals sit on the stone steps watching the water, cyclists pass, herons stand motionless in the shallows.\n\nIn early April: Cherry trees line both banks in full bloom. The reflection of blossoms in the river in the late afternoon light is one of Kyoto's most beautiful sights. Locals spread picnic mats on the grass for hanami (blossom viewing).\n\nThe Shirakawa Canal, a smaller branch that runs parallel through southern Gion, is even more intimate — cherry trees hang directly over the water between traditional machiya townhouses. Branch off from the main river and walk along it toward Gion if you want a quieter, more atmospheric route.\n\nWalk north from Shijo Bridge to Sanjo Bridge (~15 min) or south — either direction is lovely. The riverside steps make a perfect spot to sit with a coffee from a nearby konbini and just watch the city.\n\nThis walk connects naturally into Gion for an early evening wander."
+        },
+        {
+          "time": "17:00",
+          "activity": "Gion wander — Hanamikoji & Shirakawa Canal",
+          "status": "free",
+          "notes": "Kyoto's famous geisha district. 10 min walk from the river. Stone-paved alleys, wooden machiya teahouses, lanterns beginning to glow. Chance of spotting a maiko in the early evening. Free to wander.",
+          "mapQuery": "Gion District Kyoto Hanamikoji",
+          "detail": "Gion District — Hanamikoji & Shirakawa Canal\nDistance from Kamo River: 10 min walk\nEntry: Free to wander · Best 17:00–19:00\n\nGion is Kyoto's most famous geisha district and genuinely one of the most beautiful urban environments in Japan. The main street (Hanamikoji-dori) is lined with centuries-old wooden ochaya (teahouses) behind latticed facades.\n\nEarly evening is the best time — the lanterns start to glow as dusk falls, the tour groups thin out, and maiko (apprentice geisha) begin moving between appointments. Photography of maiko on the street is now discouraged out of respect — enjoy the encounter naturally.\n\nShirakawa Canal: The small canal running through southern Gion has cherry trees positioned along the water between traditional wooden machiya houses — one of Kyoto's most intimate blossom spots. Follow it east from the main Gion crossing.\n\nYasaka Shrine: At the top of Hanamikoji Street. Free, always open. Red lanterns, stone torii, the broad shrine grounds giving way to Maruyama Park beyond. Worth walking through toward the park if energy allows.\n\nThis area is also where Ponto-cho begins — the narrow alley running parallel to the river, perfect for dinner later."
+        },
+        {
+          "time": "18:00",
+          "activity": "Explore Teramachi + Shinkyogoku arcades",
+          "status": "optional",
+          "notes": "Optional — two covered shopping arcades 2 min from hotel. Teramachi is more traditional (antiques, stationery, knives). Shinkyogoku is younger and livelier (street food, fashion, souvenirs, arcades). Good if anyone wants to split off shopping.",
+          "mapQuery": "Teramachi Street Kyoto Kawaramachi",
+          "detail": "Teramachi-dori & Shinkyogoku\nDistance from hotel: 2 min walk\nHours: Most shops open until 20:00–21:00\n\nTwo parallel covered shopping arcades running north-south through central Kyoto, a 2-minute walk from the hotel.\n\nTeramachi-dori (寺町通): The more atmospheric of the two. Traditional Kyoto shops — antiques, Japanese stationery and washi paper, handmade knives, tea shops, Buddhist goods. Some of the oldest continuous businesses in Kyoto are here. Worth a slow wander.\n\nShinkyogoku (新京極): Livelier, more youth-oriented. Street food, fashion shops, souvenir stalls, game arcades, cinemas. Jack and Charlie will find more here. Good for cheap Kyoto souvenirs.\n\nThe two arcades run parallel and are connected by several cross streets — easy to hop between them. Both lead south to Shijo-dori (the main shopping street) and north toward Nijo-dori.\n\nGood option if the family wants to split — some wander Teramachi for traditional finds while others browse Shinkyogoku."
+        },
+        {
+          "time": "19:30",
           "activity": "Dinner — Ponto-cho or Gion",
           "status": "planning",
-          "notes": "Atmospheric riverside alley dining. Cherry blossom season — some restaurants open kawayuka terraces over the Kamo River.",
+          "notes": "⚠ Book ahead — first night in Kyoto, cherry blossom season. Ponto-cho for kawayuka riverside dining, or Gion for a traditional Kyoto meal. Both a short walk from the hotel.",
           "address": "Pontocho, Nakagyo-ku, Kyoto 604-8094, Japan",
           "mapQuery": "Pontocho alley Kyoto"
         }
