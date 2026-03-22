@@ -2270,6 +2270,13 @@
           "notes": "Sun 5 Apr · ICN T1 → NRT · £951.48 · PNR D2MKD6"
         },
         {
+          "task": "Osaka → Seoul Asiana OZ113 × 4",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Fri 17 Apr · KIX T1→ICN T2 · 19:45→21:40 · PNR D2MKD6 · A350 · Seats: Andy 24H · Sarah 24J · Jack 25H · Charlie 25J"
+        },
+        {
           "task": "Seoul arrival taxi — Tourmaker #1479-1",
           "who": "Andy",
           "deadline": "✅ Done",
@@ -2305,11 +2312,11 @@
           "notes": "Wed 8 Apr · Shinjuku 10:00→Hakone-Yumoto 11:27 · Car 7 seats 5C/5D/6C/6D · Control E786 · ¥4,600 total"
         },
         {
-          "task": "Shinkansen Hikari 641 × 3 (Andy, Sarah, Charlie)",
+          "task": "Shinkansen Hikari 641 × 4",
           "who": "Andy",
           "deadline": "✅ Done",
           "status": "paid",
-          "notes": "Fri 10 Apr · Odawara 12:07→Kyoto 14:12 · Car 6 · Seats 14D/14E/15D/15E · Res 40422 · ¥49,200 · Revolut 9666"
+          "notes": "Fri 10 Apr · Odawara 12:07 → Kyoto 14:12 · Res 40422 · Car 6 seats 14D/14E/15D/15E · ¥49,200 · Revolut card 9666"
         },
         {
           "task": "LHR Parking — KwikPark Meet & Greet T3",
