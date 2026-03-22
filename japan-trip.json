@@ -434,9 +434,9 @@
         },
         {
           "time": "07:30",
-          "activity": "Sumo Morning Training",
-          "status": "booked",
-          "notes": "⚠ Awaiting confirmation from Keio Plaza concierge · Oshiage stable · One of Tokyo's most memorable mornings.",
+          "activity": "Arashio Stable — Sumo Morning Practice",
+          "status": "confirmed",
+          "notes": "Free walk-up viewing through street-facing window. No reservation needed. 7:30–10:00am. Arrive by 6:45am in April — gets crowded fast. Watch wrestlers train from outside (window has mesh so photography is tricky — enjoy in person rather than worrying about shots). Wrestlers sometimes come outside for photos after practice. No talking, no flash, no food/drink. 2-47-2 Nihonbashihamacho, Chuo-ku — 2 min from Hamacho Station Exit A2 (Toei Shinjuku Line). Check calendar before going: arashio.net/tour_e.html",
           "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
           "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
         },
@@ -1098,93 +1098,105 @@
       "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
       "items": [
         {
-          "time": "08:30",
-          "activity": "Breakfast — Mitsui Garden Hotel",
+          "time": "07:00",
+          "activity": "Breakfast — Mitsui Garden Hotel (early start)",
           "status": "included",
-          "notes": "Hotel breakfast. Pack light day bag — full day outside.",
-          "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
+          "notes": "Free breakfast included. Aim to leave hotel by 07:30 to beat the crowds at the bamboo grove.",
           "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
         },
         {
           "time": "07:30",
-          "activity": "Travel to Arashiyama — JR Sagano Line",
+          "activity": "Travel to Torokko Saga Station",
           "status": "planning",
-          "notes": "JR Sagano Line from Kyoto Station → Saga-Arashiyama Station · 15–20 min · ¥240pp",
-          "address": "Kyoto Station, Karasuma-dori, Shimogyo-ku, Kyoto 600-8216, Japan",
-          "mapQuery": "Kyoto Station JR Sagano Line"
+          "notes": "From hotel: walk to Kawaramachi Station, Hankyu to Kyoto, then JR Sagano Line to JR Saga-Arashiyama (17 min, ¥240pp). Torokko Saga Station is adjacent to JR Saga-Arashiyama Station south exit — 1 min walk.",
+          "mapQuery": "Torokko Saga Station Arashiyama Kyoto"
         },
         {
           "time": "08:00",
           "activity": "Arashiyama Bamboo Grove + Nonomiya Shrine",
           "status": "free",
-          "notes": "Arrive early for smaller crowds. Nonomiya Shrine is a small black torii shrine inside the grove — atmospheric and free.",
-          "address": "Arashiyama Bamboo Grove, Ogurayama Sagano, Ukyo Ward, Kyoto 616-8394, Japan",
+          "notes": "Go now — this is one of the most crowded spots in Japan during cherry blossom season. 08:00 is genuinely quiet. Nonomiya Shrine is hidden inside the grove — small black torii, very atmospheric. Free.",
           "mapQuery": "Arashiyama Bamboo Grove Kyoto"
         },
         {
           "time": "09:00",
           "activity": "Tenryu-ji Temple Garden",
           "status": "planning",
-          "notes": "UNESCO World Heritage Rinzai Zen temple. Garden using borrowed mountain scenery. ¥1,200pp garden only.",
-          "address": "Tenryu-ji Temple, 68 Sagatenryuji Susukinobabacho, Ukyo Ward, Kyoto 616-8385, Japan",
-          "mapQuery": "Tenryu-ji Temple Arashiyama Kyoto"
+          "notes": "UNESCO World Heritage garden. Cherry blossoms over the pond. ¥500pp for garden, ¥300 extra for main hall. Allow 45 mins.",
+          "mapQuery": "Tenryuji Temple Arashiyama Kyoto"
         },
         {
-          "time": "10:00",
-          "activity": "Togetsukyo Bridge & Riverside Walk",
+          "time": "09:50",
+          "activity": "Walk to Torokko Saga Station",
+          "status": "planning",
+          "notes": "1 min from JR Saga-Arashiyama Station south exit. Collect e-ticket at gate via the mobile voucher link — do NOT use the printed PDF.",
+          "mapQuery": "Torokko Saga Station Arashiyama Kyoto"
+        },
+        {
+          "time": "10:02",
+          "activity": "Sagano Romantic Train — Torokko Saga → Kameoka",
+          "status": "booked",
+          "notes": "✅ BOOKED · 4 adults · Car 3 · ¥3,520 paid · E-ticket: linkt.to/oGdvHgf1 — show screen at ticket gate, not the PDF · Arrives Torokko Kameoka ~10:27",
+          "mapQuery": "Torokko Saga Station Arashiyama Kyoto",
+          "detail": "Booking ref: ARS_SAGANO_KANKO-20260323-4F63 · Supplier ref: I-260323-1106180 · Traveller: Andy Evans · Route: Torokko Saga (嵯峨駅) → Kameoka (亀岡駅) · Date: Sun 12 Apr 2026 · 4 adults · ¥3,520 paid · Purchased: 23 Mar 2026\n\nE-TICKET: linkt.to/oGdvHgf1 — click this link before boarding and show the screen at the ticket gate. The printed/PDF voucher CANNOT be used for boarding.\n\nCar 3 is an enclosed car with opening windows. The No.5 \"Rich\" open-air car has no glass — great views but you may get wet in rain, and umbrellas are not allowed onboard.\n\nJourney: 25 minutes through the Hozugawa River gorge. 7.3km of preserved 1989 railway line. Cherry blossoms line the gorge in April.\n\nBoarding: Torokko Saga Station is 1 min from JR Saga-Arashiyama Station south exit. Business hours open ~08:35. Timetable: sagano-kanko.co.jp/en/train-info\n\nSeat changes allowed up to 1 day before departure (max 3 changes)."
+        },
+        {
+          "time": "10:27",
+          "activity": "Arrive Torokko Kameoka — shuttle to boat dock",
+          "status": "planning",
+          "notes": "Free shuttle bus from Torokko Kameoka Station to Hozugawa boat dock (~15 min). Alternatively a horse-drawn carriage connects the two. Departures timed to the train arrivals.",
+          "mapQuery": "Hozugawa River Boat Ride Kameoka Kyoto"
+        },
+        {
+          "time": "11:00",
+          "activity": "Hozugawa River Cruise — Kameoka → Arashiyama",
+          "status": "booked",
+          "notes": "✅ BOOKED via Klook · £99.93 for 4 · ~2 hrs · Life jackets provided · Allow ~30 min wait at dock before departure · Arrives Arashiyama ~13:15",
+          "mapQuery": "Hozugawa River Boat Ride Kameoka Kyoto",
+          "detail": "Booked via Klook · £99.93 for 4 adults\n\n16km traditional flat-bottomed wooden boat ride down the Hozu River gorge from Kameoka to Arashiyama. Three boatmen navigate with bamboo poles and oars. History dates back 400 years — originally used to transport lumber and rice to Kyoto.\n\nWhat to expect: Mix of calm stretches and genuine rapids. You WILL get splashed on the rapids sections — staff warn in advance and signal when to hold up plastic side sheets. Life jackets provided. A refreshment boat pulls alongside near the end.\n\nIn April: Cherry blossoms hang over the water throughout the gorge. You will see the Sagano Romantic Train passing above you on the hillside at one point.\n\nBoatmen point out: Koayu-no-taki waterfall, Daihikaku Senkoji temple on the hilltop, 19th-century pole marks carved into riverside cliffs, kingfishers, grey herons, cormorants.\n\nNote: Service operates in light rain (plastic tent cover provided) but is cancelled in heavy rain or if water levels change significantly. Check morning of.\n\nArrival: Boat docks at Arashiyama, steps from Togetsukyo Bridge — 5 min walk to Arashiyama Nishiki restaurant."
+        },
+        {
+          "time": "13:15",
+          "activity": "Arrive Arashiyama — Togetsukyo Bridge",
           "status": "free",
-          "notes": "Iconic bridge over the Oi River. Scenic riverside walk. Free.",
-          "address": "Togetsukyo Bridge, Arashiyama, Ukyo Ward, Kyoto 616-8384, Japan",
+          "notes": "Boat docks just below Togetsukyo Bridge. 5 min walk to Arashiyama Nishiki restaurant on Nakanoshibashi island.",
           "mapQuery": "Togetsukyo Bridge Arashiyama Kyoto"
         },
         {
-          "time": "10:30",
-          "activity": "Sagano Romantic Train — Torokko Saga → Kameoka",
-          "status": "planning",
-          "notes": "⚠ BOOK IN ADVANCE · 25 min along Hozu River gorge · ~¥880pp each way",
-          "address": "Torokko Saga Station, Sagakameyamacho, Ukyo Ward, Kyoto 616-8373, Japan",
-          "mapQuery": "Torokko Saga Station Sagano Romantic Train"
+          "time": "13:30",
+          "activity": "Lunch — Arashiyama Nishiki",
+          "status": "not_booked",
+          "notes": "⚠ BOOK AHEAD — Sunday cherry blossom season. Traditional kaiseki ryotei on Nakanoshibashi island beside Togetsukyo Bridge. Sakura-juku-zen seasonal box-set in April. ☎ 075-871-8888 · Hours 11:00–21:00 L.O. 19:00 · Closed Tuesdays · 4 min from Hankyu Arashiyama Station",
+          "mapQuery": "Arashiyama Nishiki restaurant Kyoto",
+          "url": "https://www.arashiyama-nishiki.com/"
         },
         {
-          "time": "12:30",
-          "activity": "Monkey Park Iwatayama",
-          "status": "planning",
-          "notes": "120+ wild Japanese macaques. ¥800pp. 25 min uphill walk. Great valley views.",
-          "address": "Iwatayama Monkey Park, Arashiyamanishiichinicho, Nishikyo Ward, Kyoto 616-0007, Japan",
-          "mapQuery": "Iwatayama Monkey Park Arashiyama Kyoto"
+          "time": "15:00",
+          "activity": "Ōkōchi Sansō Villa — optional",
+          "status": "optional",
+          "notes": "15 min uphill walk from the bridge. Villa of 1920s samurai film star — stunning gardens over the Kyoto valley. ¥1,000pp includes matcha and tea. Worth it if energy allows after the cruise.",
+          "mapQuery": "Okochi Sanso Villa Arashiyama Kyoto"
         },
         {
-          "time": "14:00",
-          "activity": "Lunch — Kyoto Arashiyama Nishiki",
-          "status": "planning",
-          "notes": "Traditional kaiseki ryotei on Nakanoshibashi island, next to Togetsukyo Bridge. ⚠ Book ahead — ☎ 075-871-8888. Closed Tuesdays.",
-          "detail": "Kyoto Arashiyama Nishiki\nAddress: Nakanoshibashi Park, Arashiyama, Kyoto\nReservations: 075-871-8888 (10:00–21:00)\nWebsite: arashiyama-nishiki.com\nHours: 11:00–21:00 (L.O. 19:00) · Closed Tuesdays\nSignature dish: Sakura-juku-zen (seasonal kaiseki box set)\n⚠ Book ahead — busy in cherry blossom season",
-          "address": "Nakanoshibashi Park, Arashiyama, Ukyo Ward, Kyoto 616-0007, Japan",
-          "mapQuery": "Arashiyama Nishiki restaurant Kyoto"
-        },
-        {
-          "time": "15:30",
-          "activity": "Riverside café + free time",
+          "time": "16:00",
+          "activity": "Free time in Arashiyama",
           "status": "free",
-          "notes": "Relax by the river. Various cafés along the Arashiyama riverside.",
-          "address": "Togetsukyo Bridge area, Arashiyama, Ukyo Ward, Kyoto 616-8384, Japan",
-          "mapQuery": "Arashiyama riverside café Togetsukyo Bridge"
+          "notes": "Riverside wander, shops, Tenryu-ji garden exit, Togetsukyo Bridge photos with the mountains.",
+          "mapQuery": "Arashiyama Kyoto Japan"
         },
         {
           "time": "17:00",
-          "activity": "Return to Kyoto — Hankyu Arashiyama Line",
+          "activity": "Return to Kyoto",
           "status": "planning",
-          "notes": "Hankyu Arashiyama Station → Kawaramachi Station · ~25 min · ¥220pp",
-          "address": "Hankyu Arashiyama Station, Nishikyo Ward, Kyoto, Japan",
+          "notes": "Hankyu Arashiyama Line from Arashiyama Station → Katsura → Kawaramachi (35 min, ¥270pp). Or JR from Saga-Arashiyama → Kyoto Station (17 min, ¥240pp).",
           "mapQuery": "Hankyu Arashiyama Station Kyoto"
         },
         {
           "time": "19:00",
           "activity": "Dinner — Ponto-cho",
-          "status": "booked",
-          "notes": "⚠ BOOK AHEAD for riverside kawayuka terrace seats.",
-          "address": "Pontocho, Nakagyo-ku, Kyoto 604-8094, Japan",
-          "mapQuery": "Pontocho alley Kyoto"
+          "status": "not_booked",
+          "notes": "⚠ BOOK AHEAD — Sunday evening cherry blossom season, this will be very busy. Riverside kawayuka terrace dining. Book as soon as possible.",
+          "mapQuery": "Pontocho Kyoto dining"
         }
       ],
       "title": "Kyoto — Arashiyama",
@@ -1902,11 +1914,11 @@
       "group": "🔴 NOW — Do This Weekend",
       "items": [
         {
-          "task": "Book Sumo Morning Training × 4",
+          "task": "🤼 Arashio Stable sumo — check calendar week of departure",
           "who": "Andy",
-          "deadline": "TODAY",
-          "status": "booked",
-          "notes": "⚠ Awaiting confirmation from Keio Plaza concierge · Oshiage stable · Tue 7 Apr 7:30–9:00"
+          "deadline": "1 Apr 2026",
+          "status": "incomplete",
+          "notes": "Free walk-up window viewing — no booking needed. Check arashio.net/tour_e.html for April practice dates (posted a few weeks ahead). Aim for Day 4 (Tue 7 Apr) at 7:30am. Arrive 6:45am. If calendar shows no practice on 7 Apr, try another Tokyo day (Days 3–5)."
         },
         {
           "task": "✈️ Complete VA FlyReady — Andrew Evans (Sarah to do)",
@@ -1920,34 +1932,6 @@
     {
       "group": "🟡 THIS WEEK — Booking Windows",
       "items": [
-        {
-          "task": "Book Romancecar × 3 (Andy, Sarah, Charlie)",
-          "who": "Andy",
-          "deadline": "Mon 9 Mar",
-          "status": "confirmed",
-          "notes": "BOOKED · EMot app · Shinjuku→Hakone-Yumoto · Wed 8 Apr · Car 7 seats 5C/5D/6C/6D · Control E786"
-        },
-        {
-          "task": "Jack: Book own Romancecar ticket",
-          "who": "Jack",
-          "deadline": "Mon 9 Mar",
-          "status": "confirmed",
-          "notes": "BOOKED · Same train as family"
-        },
-        {
-          "task": "Book Shinkansen × 3 (Andy, Sarah, Charlie)",
-          "who": "Andy",
-          "deadline": "Tue 10 Mar",
-          "status": "confirmed",
-          "notes": "BOOKED · Hikari 641 · Odawara 12:07 → Kyoto 14:12 · Car 6 · Seats 14D/14E/15D/15E · Res 40422 · Paid Revolut 9666"
-        },
-        {
-          "task": "Jack: Book own Shinkansen ticket",
-          "who": "Jack",
-          "deadline": "Tue 10 Mar",
-          "status": "pending",
-          "notes": "Same service as family · Klook · ~¥13,000pp"
-        },
         {
           "task": "⚠️ Book Ginza Hachigo ramen — JACK RECOMMENDS",
           "who": "Andy",
@@ -2010,13 +1994,6 @@
           "notes": "Arrange at TEN-YU front desk Thu evening · ~¥1,500–2,000 per bag · Delivery Sat 11 Apr"
         },
         {
-          "task": "Book e-bikes for Arashiyama day (Sun 12 Apr)",
-          "who": "Andy",
-          "deadline": "Before 12 Apr",
-          "status": "pending",
-          "notes": "⚠ Book ahead — Sunday in cherry blossom season · ~¥1,500–2,000pp"
-        },
-        {
           "task": "Book Arashiyama Nishiki restaurant — lunch Sun 12 Apr",
           "who": "Andy",
           "deadline": "Before 12 Apr",
@@ -2059,13 +2036,6 @@
           "notes": "Unagi (eel) or high-end ramen · Osaka"
         },
         {
-          "task": "Book Sagano Romantic Train — Sun 12 Apr",
-          "who": "Andy",
-          "deadline": "Before 12 Apr",
-          "status": "pending",
-          "notes": "Torokko Saga → Kameoka · ⚠ Book in advance · ~¥880pp each way"
-        },
-        {
           "task": "🇰🇷 South Korea e-Arrival Card — OUTBOUND (Seoul 4 Apr)",
           "who": "All 4",
           "deadline": "2 Apr 2026",
@@ -2104,13 +2074,6 @@
           "deadline": "Day 1 · Narita",
           "status": "on_arrival",
           "notes": "Japan Post ATM or 7-Eleven inside airport"
-        },
-        {
-          "task": "Confirm Sumo ticket pick-up",
-          "who": "Andy",
-          "deadline": "Day 1 · Narita",
-          "status": "on_arrival",
-          "notes": "Tickets at venue — confirm email saved"
         }
       ]
     },
@@ -2221,6 +2184,20 @@
           "deadline": "✅ Booked",
           "status": "pay_at_property",
           "notes": "Exp 150513RA052227 · £277.04 · PAY AT PROPERTY · Fri 17–Sat 18 Apr"
+        },
+        {
+          "task": "Sagano Romantic Train × 4 — Torokko Saga → Kameoka",
+          "who": "Andy",
+          "deadline": "",
+          "status": "paid",
+          "notes": "✅ BOOKED · ARS_SAGANO_KANKO-20260323-4F63 · 4 adults · Car 3 · 10:02 · Sun 12 Apr 2026 · ¥3,520 · E-ticket: linkt.to/oGdvHgf1"
+        },
+        {
+          "task": "Hozugawa River Cruise × 4 — Kameoka → Arashiyama",
+          "who": "Andy",
+          "deadline": "",
+          "status": "paid",
+          "notes": "✅ BOOKED via Klook · £99.93 · 4 adults · Sun 12 Apr 2026 · ~2 hrs · Depart ~11:00 · Arrive Arashiyama ~13:15"
         }
       ]
     }
