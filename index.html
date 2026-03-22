@@ -587,6 +587,28 @@ function formatDayDate(ds){
   return ds;
 }
 
+function buildIdeasHTML(day, di){
+  const ideas = day.ideas||[];
+  if(!ideas.length) return '';
+  let rows = '';
+  for(const idea of ideas){
+    const mapLink = idea.mapQuery
+      ? '<a class="idea-map" href="https://maps.google.com/?q='+encodeURIComponent(idea.mapQuery)+'" target="_blank">📍 Map</a>'
+      : '';
+    const urlLink = idea.url
+      ? '<a class="idea-url" href="'+idea.url+'" target="_blank">🔗 Link</a>'
+      : '';
+    rows += '<div class="idea-item">'
+      + '<div class="idea-type">'+(idea.type||'Idea')+'</div>'
+      + '<div class="idea-title">'+(idea.title||'')+'</div>'
+      + '<div class="idea-notes">'+(idea.notes||'')+'</div>'
+      + mapLink + urlLink
+      + '</div>';
+  }
+  return '<button class="ideas-toggle" id="ideas-btn-'+di+'" onclick="toggleIdeas('+di+')">'
+    + '💡 '+ideas.length+' ideas &amp; tips for this day</button>'
+    + '<div class="ideas-section" id="ideas-'+di+'">'+rows+'</div>';
+}
 function renderDays(){
   const days=(tripData&&tripData.days)||[];
   const todayIdx=getTodayIndex();
@@ -642,17 +664,7 @@ function renderDays(){
       <div class="day-body">
         ${day.image?`<img class="day-banner-img" src="${day.image}" alt="${dayTitle}" loading="lazy" onerror="this.style.display='none'">`:''}
         ${mapSection}${itemsHTML}
-        ${(day.ideas&&day.ideas.length)?`
-        <button class="ideas-toggle" id="ideas-btn-${di}" onclick="toggleIdeas(${di})">💡 ${day.ideas.length} ideas & tips for this day</button>
-        <div class="ideas-section" id="ideas-${di}">
-          ${day.ideas.map((idea,ii)=>`<div class="idea-item">
-            <div class="idea-type">${idea.type||'Idea'}</div>
-            <div class="idea-title">${idea.title||''}</div>
-            <div class="idea-notes">${idea.notes||''}</div>
-            ${idea.mapQuery?`<a class="idea-map" href="https://maps.google.com/?q=${encodeURIComponent(idea.mapQuery)}" target="_blank">📍 Map</a>`:''}
-            ${idea.url?`<a class="idea-url" href="${idea.url}" target="_blank">🔗 Link</a>`:''}
-          </div>`).join('')}
-        </div>`:''}
+        ${buildIdeasHTML(day,di)}
       </div>
     </div>`;
   }).join('')+'</div>';
