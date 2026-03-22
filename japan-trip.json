@@ -362,6 +362,57 @@
           "type": "Bar",
           "notes": "Underground cocktail bar. Cover charge likely ¥500–1,000pp. Check sign at entrance.",
           "mapQuery": "Tir na Nog Ginza Tokyo"
+        },
+        {
+          "title": "[JACK] Parco Shibuya",
+          "type": "[JACK] Shopping",
+          "notes": "10-floor mall near Shibuya crossing — young, hip, cultural hub. Floor 6 is the draw: Nintendo Tokyo (Japan's first), Pokémon Center Shibuya, Capcom Store, SEGA Store, Godzilla Store. Serious queues on floor 6 — go early or expect 30–60 min waits. Floors 1–5 have excellent fashion (Acne Studios, APC, Brain Dead, AMBUSH, OUR LEGACY). Chaos Kitchen basement = winding alleyway food court. Rooftop terrace on floor 10. 5 min walk from Shibuya Station Hachiko exit.",
+          "mapQuery": "Parco Shibuya Tokyo",
+          "url": "https://shibuya.parco.jp"
+        },
+        {
+          "title": "[JACK] Super Bookoff / Bookoff Super Bazaar",
+          "type": "[JACK] Shopping — Multiple locations",
+          "notes": "Japan's biggest second-hand chain with 850+ stores. The Super Bazaar format is enormous — books, manga, CDs, retro video games, vintage clothing, instruments, branded goods, designer bags (authenticated). All items are cleaned and graded. Tax-free with passport on purchases over ¥5,000. Best Tokyo branches: Shibuya (fashion-forward), Shimokitazawa (curated vintage), Akihabara (6 floors, retro games and manga). Good for Japanese-label vintage and cheap CDs.",
+          "mapQuery": "BOOKOFF Shibuya Tokyo",
+          "url": "https://www.bookoff.co.jp"
+        },
+        {
+          "title": "[JACK] 2nd Street",
+          "type": "[JACK] Vintage Shopping — Multiple locations",
+          "notes": "Japan-wide chain of second-hand stores. Stock varies dramatically by neighbourhood. Harajuku/Shimokitazawa branches are best for vintage fashion — good for Japanese-label pieces, Americana, Levi's, workwear. Downstairs section at Harajuku branch is particularly strong. Also in Osaka (Amerikamura area). Prices mid-range — not thrift-cheap but fair for what you find.",
+          "mapQuery": "2nd Street Harajuku Tokyo vintage"
+        },
+        {
+          "title": "[JACK] Amam Dacotan — artisan bakery & café",
+          "type": "[JACK] Bakery/Café",
+          "notes": "Omotesando / Kita-Aoyama. One of Tokyo's most famous and talked-about bakeries — extraordinary bread, sandwiches and sweets. Two locations close together: main bakery at 3-7-6 Kita-Aoyama; café & bake at 3-6-23 Kita-Aoyama (1F). Both a few minutes from Omotesando Station Exit B2. Always a queue — arrive early. Perfect combination with Harajuku/Omotesando day.",
+          "mapQuery": "Amam Dacotan Omotesando Kita-Aoyama Tokyo",
+          "url": "https://amamdacotan.com"
+        },
+        {
+          "title": "[JACK] Pain des Philosophes — croissants",
+          "type": "[JACK] Bakery",
+          "notes": "Kagurazaka, Shinjuku City. Selected Tabelog Top 100 bakery 2022. Consistently called the best croissant in Tokyo — proper French technique, buttery and flaky with Japanese touches. Signature furikake-filled baguette is unusual and excellent. Pain au chocolat and Asama loaf also outstanding. Opens 9am, always has a queue, often sells out by noon. Tiny shop — go early, eat in the nearby park. 107-2 Yaraicho, Shinjuku City.",
+          "mapQuery": "Pain des Philosophes Kagurazaka Shinjuku Tokyo"
+        },
+        {
+          "title": "[JACK] Laitier — soft serve & desserts",
+          "type": "[JACK] Dessert",
+          "notes": "Sendagaya, Shibuya-ku. French-inspired dessert café — premium soft serve ice cream and sweets. 1-22-7 Sendagaya 1F. Near Sendagaya Station — easy detour between Harajuku and Shibuya.",
+          "mapQuery": "Laitier Sendagaya Shibuya Tokyo"
+        },
+        {
+          "title": "[JACK] Nephew — café-bar, carrot cake",
+          "type": "[JACK] Café/Bar",
+          "notes": "Tomigaya, Shibuya-ku — the cool, local Yoyogi-Hachiman / Yoyogi-Koen neighbourhood. Tiny house-style bar and sweets café. 1-7-2 Tomigaya. Jack specifically recommends for the carrot cake. Very local, off the tourist map — good escape from main strips.",
+          "mapQuery": "Nephew cafe Tomigaya Shibuya Tokyo"
+        },
+        {
+          "title": "[JACK] Poem Mano a Mano Coffee — fruit sandwiches",
+          "type": "[JACK] Café/Kissaten",
+          "notes": "Koenji, Suginami — a few minutes from Koenji Station on the Chuo Line. Classic old-school kissaten (Japanese coffee shop) style café. Famous for exceptional filter coffee, French toast and especially fruit sandwiches — seasonal fruit (Shine Muscat, mango, others) in soft shokupan with generous fresh cream. Regularly highlighted as a must-order. Koenji itself is the best thrift/vintage neighbourhood in Tokyo — pair this with a wander through the vintage shops and backstreets. Very local, retro, indie atmosphere.",
+          "mapQuery": "Poem Mano a Mano Coffee Koenji Tokyo"
         }
       ],
       "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day3.jpg"
@@ -463,6 +514,56 @@
           "type": "Food",
           "notes": "Solo-booth tonkotsu ramen. 24 hours. You order on a sheet, food arrives through a hatch. No social pressure. Classic.",
           "mapQuery": "Ichiran Ramen Tokyo"
+        },
+        {
+          "title": "[JACK] Age.3 Ginza — fried sweet sandwiches",
+          "type": "[JACK] Café/Street Food",
+          "notes": "Ginza 1-24-11 Sugiura Building 1F. Takeout-only specialty shop for deep-fried sandwiches — bread fried to order, then immediately filled. 30+ flavours, sweet and savoury. Must-order: Crème Brûlée (torched custard, very good), Chocolate Cream Strawberry, Ganache Matcha. Savoury options: Beef Yakiniku (excellent), Egg Salad. Around ¥850 each. Queue 30–60 min, especially weekends — go early morning or off-peak. Park across the street for eating. Takeout only, no seating.",
+          "mapQuery": "Age 3 sandwich Ginza Tokyo"
+        },
+        {
+          "title": "[JACK] American Diner Andra — bechamel burger",
+          "type": "[JACK] Restaurant",
+          "notes": "Higashi-Ueno, Taito-ku — close to Ueno and Asakusa. Signature dish: smash burger cut in half and lowered into a hot iron skillet of sizzling béchamel-style cheese sauce. Theatrical, flavourful, messy. American diner décor (sports jerseys, 80s videos, red/white/blue). 5 Chome-13-7 Higashiueno. Lunch 11am–2pm, Dinner 5pm–9pm. Closed Sundays. Very small (4 tables + 4 counter seats) — arrive before opening or expect a wait. Sign the name book outside first.",
+          "mapQuery": "American Diner Andra Higashi-Ueno Tokyo"
+        },
+        {
+          "title": "[JACK] Ginza Hachigo — Michelin ramen",
+          "type": "[JACK] Restaurant ⚠️ Book ahead",
+          "notes": "⚠️ BOOK THIS NOW — see checklist. Only 6 seats. Michelin-recognised French-trained chef makes extraordinary clear-broth ramen: duck, chicken, prosciutto, shellfish — no soy tare. Light, velvety, complex. Signature: Ajitama Chuka Soba with soft egg + tender chashu. Special version adds foie gras and truffle dumpling (+¥300). Side chashu rice worth it. Reservations via TableCheck open Saturdays 9am Japan time for following week. Walk-up: queue from 9am, ~30 bowls per day, sells out fast. Ginza 3-14-2.",
+          "mapQuery": "Ginza Hachigo ramen Ginza Tokyo",
+          "url": "https://katsumoto-japan.com/ginza_hachigou.html"
+        },
+        {
+          "title": "[JACK] Wagyu Mafia — katsu sando",
+          "type": "[JACK] Restaurant — Splurge",
+          "notes": "Nakameguro, 2 min from Nakameguro Station. Standing counter, 6 stools. Wagyu/Kobe beef chateaubriand deep-fried and served in milk bread — the katsu sando elevated to absurd levels. Multiple cuts available: Sirloin (¥5,000), Chateaubriand (¥18,000+), limited Kobe Champion (¥110,000 — 20 per year, sells in 10 mins). Jack probably isn't after the ¥110k one. The sirloin is the move. Open 11am–9pm. Closed Wednesdays. Nakameguro Atlas Tower 1F, 1-26-1 Kamimeguro.",
+          "mapQuery": "Wagyu Mafia Cutlet Sandwich Nakameguro Tokyo",
+          "url": "https://wagyumafia.com"
+        },
+        {
+          "title": "[JACK] The Front Room — milk bread pudding",
+          "type": "[JACK] Bakery/Café",
+          "notes": "Marunouchi Building 1F, 2-4-1 Marunouchi, Chiyoda-ku — directly beside Tokyo Station. All-day café and bakery in an office tower. Jack specifically recommends the milk bread pudding. Great stop if passing through Tokyo Station (e.g. on the way back from a day out).",
+          "mapQuery": "The Front Room Marunouchi Tokyo Station"
+        },
+        {
+          "title": "[JACK] Benizuru — Japanese pancakes",
+          "type": "[JACK] Café/Brunch",
+          "notes": "Nishi-Asakusa, Taito-ku. Pancake-focused brunch café. 2-1-11 Nishi-Asakusa. Walkable from Asakusa and Tawaramachi Stations — good add-on to Senso-ji visit. Jack recommends for the pancakes (Japanese-style thick hotcakes).",
+          "mapQuery": "Benizuru pancake Nishi-Asakusa Tokyo"
+        },
+        {
+          "title": "[JACK] Fukushimaya — oden, daikon radish",
+          "type": "[JACK] Restaurant",
+          "notes": "Azabu-Juban, Minato-ku — 2 min from Azabu-Juban Station. Founded 1921. Over 100 years of oden. Ground floor is takeaway fish cakes (satsuma-age); second floor is a cosy izakaya. Signature: miso oden (Maruya Haccho Miso), daikon radish soaked black in broth, beef tendon. Jack mentions fried radish — likely the daikon tempura side dish. Lunch sets very good value. English menu available.",
+          "mapQuery": "Fukushimaya oden Azabu-Juban Tokyo"
+        },
+        {
+          "title": "[JACK] Izumo — from Osaka (Okayama day trip)",
+          "type": "[JACK] Day Trip",
+          "notes": "Jack mentions Izumo — this is almost certainly Izumo Taisha, the ancient Shinto grand shrine in Shimane Prefecture, one of Japan's most sacred sites. It is a significant detour from your route (4–5 hrs from Osaka by Shinkansen + limited express). Not realistic on the current itinerary. However, if Jack means Okayama Day Trip instead — Himeji is already Day 13. Confirm with Jack what exactly he means.",
+          "mapQuery": "Izumo Taisha Shimane Japan"
         }
       ],
       "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day4.jpg"
@@ -1345,6 +1446,13 @@
           "type": "District",
           "notes": "Much better after dark with all the neon. Glico Running Man, Kani Doraku crab sign. Walk the canal. Don't plan too much — just wander.",
           "mapQuery": "Dotonbori Osaka"
+        },
+        {
+          "title": "[JACK] Namba Parks — Osaka",
+          "type": "[JACK] Shopping",
+          "notes": "9-floor mall built on the former Osaka baseball stadium footprint. Directly connected to Nankai Namba Station. 120+ shops and 40+ restaurants. Famous for the tiered terraced rooftop garden (Parks Garden) with 400+ plant species — free to walk. Fashion floors 1–5, restaurants floors 6–8. Good views of Osaka from upper levels. Opening hours: shops 11am–9pm, restaurants 11am–11pm.",
+          "mapQuery": "Namba Parks Osaka Nankai Namba",
+          "url": "https://nambaparks.com"
         }
       ],
       "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day11.jpg"
@@ -1457,6 +1565,30 @@
           "title": "Melon pan ice cream, Dotonbori",
           "type": "Street food",
           "notes": "Freshly baked melon bread with soft-serve inside. Very photogenic. Very Osaka."
+        },
+        {
+          "title": "[JACK] Acorn Vintage — Osaka",
+          "type": "[JACK] Vintage Shopping — High End",
+          "notes": "Described by experts as simply the most curated high-end vintage shop in Japan. Very small and selective — around 200 pieces at a time, only the finest examples: sun-faded M65 jackets in three perfect sizes, big-E Levi's in wearable condition, French moleskin workwear, faded hoodies. Not cheap, but genuinely exceptional. Worth hunting down the address (search Tabelog or Instagram @acorn_osaka before visiting).",
+          "mapQuery": "Acorn vintage shop Osaka"
+        },
+        {
+          "title": "[JACK] 2nd Street — Osaka",
+          "type": "[JACK] Vintage Shopping",
+          "notes": "Multiple locations in Osaka. Amerikamura and Shinsaibashi area branches are best. Same chain as Tokyo but different stock — worth checking. Good for mid-range vintage fashion and Japanese-label finds.",
+          "mapQuery": "2nd Street Osaka Amerikamura vintage"
+        },
+        {
+          "title": "[JACK] Super Bookoff — Osaka",
+          "type": "[JACK] Shopping",
+          "notes": "Large Bookoff locations in Namba and Shinsaibashi. Good for retro games, manga, vintage clothing. Tax-free over ¥5,000 with passport.",
+          "mapQuery": "BOOKOFF Namba Osaka"
+        },
+        {
+          "title": "[JACK] Onegi-chan — pickles",
+          "type": "[JACK] Food — Confirm location",
+          "notes": "Recommended by Jack for Japanese pickles (tsukemono). Could be a market stall, specialist pickle shop or konbini find. Exact location unclear — ask Jack or search Tabelog closer to the trip.",
+          "mapQuery": "Onegi Chan pickles Japan tsukemono"
         }
       ],
       "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day12.jpg"
@@ -1815,6 +1947,13 @@
           "deadline": "Tue 10 Mar",
           "status": "pending",
           "notes": "Same service as family · Klook · ~¥13,000pp"
+        },
+        {
+          "task": "⚠️ Book Ginza Hachigo ramen — JACK RECOMMENDS",
+          "who": "Andy",
+          "deadline": "28 Mar 2026",
+          "status": "incomplete",
+          "notes": "1 Michelin star, only 6 seats. Reservations open EVERY SATURDAY 9am Japan time (1am UK) via TableCheck for following week. You need Sat 28 Mar to book for week of 6 Apr. URL: https://www.tablecheck.com — search Ginza Hachigo. Or queue from 9am on the day (walk-up limited to ~30 bowls)."
         }
       ]
     },
