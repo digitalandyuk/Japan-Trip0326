@@ -117,6 +117,23 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .day-map-btn.active{background:rgba(232,130,154,0.25);}
 .day-osm-frame{width:100%;height:260px;border:none;border-radius:12px;border:1px solid var(--border);margin:8px 0;display:none;}
 .day-osm-frame.visible{display:block;}
+/* ── Day image banner ── */
+.day-banner-img{width:100%;height:180px;object-fit:cover;border-radius:12px;margin:10px 0 6px;display:block;border:1px solid var(--border);}
+/* ── Ideas section ── */
+.ideas-toggle{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--gold);background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.3);border-radius:20px;padding:5px 12px;cursor:pointer;margin:10px 0 4px;font-family:inherit;transition:all 0.2s;}
+.ideas-toggle:hover{background:rgba(201,168,76,0.2);}
+.ideas-toggle.open{background:rgba(201,168,76,0.2);}
+.ideas-section{display:none;margin-top:4px;border-top:1px solid var(--border);padding-top:10px;}
+.ideas-section.visible{display:block;}
+.idea-item{padding:9px 12px;margin-bottom:6px;background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.18);border-radius:10px;}
+.idea-title{font-size:12.5px;font-weight:600;color:var(--white);margin-bottom:3px;}
+.idea-type{display:inline-block;font-size:10px;color:var(--gold);background:rgba(201,168,76,0.15);border-radius:10px;padding:1px 7px;margin-bottom:4px;}
+.idea-notes{font-size:11px;color:var(--muted);line-height:1.5;}
+.idea-map{font-size:10.5px;color:var(--blossom);text-decoration:none;display:inline-block;margin-top:4px;opacity:0.8;}
+.idea-map:hover{opacity:1;}
+.idea-url{font-size:10.5px;color:var(--jade);text-decoration:none;display:inline-block;margin-top:4px;margin-left:8px;opacity:0.8;}
+.idea-url:hover{opacity:1;}
+.day-osm-frame.visible{display:block;}
 
 /* ITEMS */
 .item{display:grid;grid-template-columns:52px 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--item-border);align-items:start;}
@@ -129,6 +146,20 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .item-actions{display:flex;align-items:center;gap:8px;margin-top:6px;}
 .item-status-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:5px;}
 .item-info-row{margin-top:6px;}
+/* ── IDEAS PANEL ── */
+.ideas-toggle{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--gold);background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.25);border-radius:20px;padding:5px 12px;cursor:pointer;margin:10px 0 4px;font-family:inherit;transition:all 0.2s;}
+.ideas-toggle:hover{background:rgba(201,168,76,0.2);}
+.ideas-toggle.open{background:rgba(201,168,76,0.2);}
+.ideas-panel{display:none;margin:6px 0 4px;border:1px solid rgba(201,168,76,0.2);border-radius:10px;background:rgba(201,168,76,0.04);overflow:hidden;}
+.ideas-panel.open{display:block;}
+.ideas-header{font-size:10px;font-weight:600;color:var(--gold);letter-spacing:0.5px;text-transform:uppercase;padding:8px 12px 4px;}
+.idea-item{padding:8px 12px;border-top:1px solid rgba(201,168,76,0.12);}
+.idea-item:first-of-type{border-top:none;}
+.idea-title{font-size:12px;font-weight:600;color:var(--white);margin-bottom:2px;}
+.idea-type{font-size:10px;color:var(--gold);font-weight:500;margin-bottom:3px;}
+.idea-notes{font-size:11px;color:var(--muted);line-height:1.5;}
+.idea-link{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;color:var(--blossom);text-decoration:none;margin-top:4px;opacity:0.8;}
+.idea-link:hover{opacity:1;}
 .item-maplink{font-size:11px;color:var(--blossom);text-decoration:none;opacity:0.7;transition:opacity 0.2s;flex-shrink:0;}
 .item-maplink:hover{opacity:1;}
 .detail-btn{background:rgba(232,130,154,0.12);border:1px solid rgba(232,130,154,0.25);color:var(--blossom);font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;cursor:pointer;font-family:inherit;transition:all 0.2s;flex-shrink:0;letter-spacing:0.3px;}
@@ -608,7 +639,21 @@ function renderDays(){
         <div class="day-badge">${items.length} activities</div>
         <div class="day-chevron">›</div>
       </div>
-      <div class="day-body">${mapSection}${itemsHTML}</div>
+      <div class="day-body">
+        ${day.image?`<img class="day-banner-img" src="${day.image}" alt="${dayTitle}" loading="lazy" onerror="this.style.display='none'">`:''}
+        ${mapSection}${itemsHTML}
+        ${(day.ideas&&day.ideas.length)?`
+        <button class="ideas-toggle" id="ideas-btn-${di}" onclick="toggleIdeas(${di})">💡 ${day.ideas.length} ideas & tips for this day</button>
+        <div class="ideas-section" id="ideas-${di}">
+          ${day.ideas.map((idea,ii)=>`<div class="idea-item">
+            <div class="idea-type">${idea.type||'Idea'}</div>
+            <div class="idea-title">${idea.title||''}</div>
+            <div class="idea-notes">${idea.notes||''}</div>
+            ${idea.mapQuery?`<a class="idea-map" href="https://maps.google.com/?q=${encodeURIComponent(idea.mapQuery)}" target="_blank">📍 Map</a>`:''}
+            ${idea.url?`<a class="idea-url" href="${idea.url}" target="_blank">🔗 Link</a>`:''}
+          </div>`).join('')}
+        </div>`:''}
+      </div>
     </div>`;
   }).join('')+'</div>';
 
@@ -622,6 +667,15 @@ function renderDays(){
 }
 
 function toggleDay(di){document.getElementById('day-'+di).classList.toggle('open');}
+function toggleIdeas(di){
+  const section=document.getElementById('ideas-'+di);
+  const btn=document.getElementById('ideas-btn-'+di);
+  if(!section||!btn) return;
+  const open=section.classList.toggle('visible');
+  btn.classList.toggle('open',open);
+  btn.textContent=open?`✕ Hide ideas`:`💡 ${section.querySelectorAll('.idea-item').length} ideas & tips for this day`;
+}
+
 function toggleDayMap(di){
   const frame=document.getElementById('daymap-'+di);
   const btn=document.getElementById('mapbtn-'+di);
