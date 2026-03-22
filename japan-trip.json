@@ -657,6 +657,14 @@
           "notes": "In-room outdoor hot spring bath. Best after dinner.",
           "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
           "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "Before bed",
+          "activity": "⚠ Pack bags ready for Takuhaibin collection",
+          "status": "reminder",
+          "notes": "Bags must be ready at TEN-YU reception by lunchtime tomorrow (Thu 9 Apr) for Takuhaibin forwarding to Kyoto. Pack tonight — leave out only what you need for tomorrow's day out and one overnight set for tonight.",
+          "mapQuery": "Ten-yu Ryokan Hakone",
+          "detail": "Takuhaibin Bag Packing Reminder\n\nTonight: Pack all main luggage ready for collection.\n\nLeave out for tomorrow:\n- Day bag / backpack for the Hakone Loop day out\n- Yukata (stays at ryokan)\n- Toiletries and one overnight set for tonight\n\nEverything else goes in the forwarding bags.\n\nBags are collected by TEN-YU front desk in the morning and must be ready before you leave for the day.\nAsk front desk to confirm the latest drop-off time when you arrange Takuhaibin this evening.\n\nDelivery to: Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji\nDelivery date: Saturday 11 April 2026\nCost: ~¥1,500-2,000 per large bag"
         }
       ],
       "title": "Tokyo → Hakone",
@@ -682,6 +690,14 @@
       "locationAddress": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
       "mapQuery": "Ten-yu Ryokan Hakone",
       "items": [
+        {
+          "time": "Before leaving",
+          "activity": "⚠ Drop bags at TEN-YU reception before departure",
+          "status": "reminder",
+          "notes": "⚠ Leave all Takuhaibin bags at reception BEFORE taking the hotel shuttle to Gora. Bags must be with reception by lunchtime for collection. Confirm drop-off with front desk.",
+          "mapQuery": "Ten-yu Ryokan Hakone",
+          "detail": "Takuhaibin Drop-Off — BEFORE YOU LEAVE THIS MORNING\n\nLeave all forwarding bags at TEN-YU reception before boarding the hotel shuttle to Gora.\nThe ryokan needs them before lunchtime for the Takuhaibin collection.\n\nWhat to take with you today:\n- Day bag / backpack only\n- Hakone Freepass (EMot app)\n- Cash and cards\n- Water / snacks\n- Camera\n\nWhat goes in the forwarding bags:\n- All main luggage\n- Anything you won't need until Kyoto\n\nDelivery to: Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji\nDelivery date: Saturday 11 April 2026\nTip: Keep one change of clothes in your day bag in case bags arrive later than expected."
+        },
         {
           "time": "08:30",
           "activity": "Breakfast — TEN-YU",
