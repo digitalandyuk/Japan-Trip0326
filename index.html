@@ -1298,7 +1298,7 @@ function switchTab(tab,btn){
 ═══════════════════════════════════════════ */
 if('serviceWorker' in navigator){
   const SW_CODE=`
-const CACHE='japan-trip-v3';
+const CACHE='japan-trip-v4';
 const ASSETS=['${location.href}'];
 self.addEventListener('install',e=>{
   e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));
