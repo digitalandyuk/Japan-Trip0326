@@ -787,8 +787,7 @@ function renderMapTab(){
   document.getElementById('tab-map').innerHTML=`<div style="padding-top:12px;">
     <div class="section-title">Map Explorer</div>
     <div class="map-view-toggle">
-      <button class="map-toggle-btn active" id="mtbtn-osm" onclick="setMapView('osm',this)">🌍 Live Map</button>
-      <button class="map-toggle-btn" id="mtbtn-route" onclick="setMapView('route',this)">🗺 Route Overview</button>
+      <button class="map-toggle-btn active" id="mtbtn-osm" onclick="setMapView('osm',this)">🌍 Live City Maps</button>
     </div>
     <div class="map-city-tabs" id="city-tabs">
       ${CITIES.map((c,i)=>`<button class="map-city-btn${i===0?' active':''}" onclick="switchMapCity(${i},this)">${c.name}</button>`).join('')}
@@ -796,26 +795,13 @@ function renderMapTab(){
     <div id="map-osm-panel">
       <iframe id="main-osm-frame" class="osm-frame" src="${CITIES[0].osm}" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div id="map-route-panel" style="display:none;" class="route-svg-wrap">${routeSVG()}</div>
+    <div id="map-route-panel" class="route-svg-wrap" style="margin-bottom:16px;">${routeSVG()}</div>
     <p style="font-size:11px;color:var(--muted);padding:10px 0 4px;">Per-city maps also inside each day in the Day by Day tab.</p>
   </div>`;
 }
 function routeSVG(){
-  const W=560,H=320;
-  const stops=[
-    {label:'🇬🇧 London',x:40,y:60},{label:'🇰🇷 Seoul',x:160,y:90},{label:'🗼 Tokyo',x:310,y:80},
-    {label:'⛰️ Hakone',x:350,y:140},{label:'⛩️ Kyoto',x:330,y:210},{label:'🦌 Nara',x:345,y:245},
-    {label:'🎡 Osaka',x:315,y:265},{label:'🏰 Himeji',x:275,y:260},
-  ];
-  const pts=stops.map(s=>`${s.x},${s.y}`).join(' L ');
-  const last=stops[stops.length-1],first=stops[0];
-  return `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;background:#0f1520;">
-    ${[...Array(7)].map((_,i)=>`<line x1="0" y1="${i*50}" x2="${W}" y2="${i*50}" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>`).join('')}
-    <path d="M ${pts}" fill="none" stroke="#e8829a" stroke-width="2" stroke-dasharray="6,3" opacity="0.7"/>
-    <path d="M ${last.x},${last.y} Q 180,310 ${first.x},${first.y}" fill="none" stroke="#4a9e8e" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.5"/>
-    ${stops.map(s=>`<circle cx="${s.x}" cy="${s.y}" r="7" fill="#e8829a" stroke="#0f1520" stroke-width="2"/><circle cx="${s.x}" cy="${s.y}" r="3" fill="white"/><text x="${s.x}" y="${s.y-13}" font-family="DM Sans,sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="600">${s.label}</text>`).join('')}
-    <text x="${W-10}" y="${H-8}" font-family="DM Sans,sans-serif" font-size="9" fill="#c9a84c" text-anchor="end">Evans Family Japan 2026</text>
-  </svg>`;
+  const url='https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/route-map.jpg';
+  return `<img src="${url}" alt="Evans Family Japan 2026 Route Map" style="width:100%;aspect-ratio:16/9;object-fit:contain;border-radius:12px;display:block;background:var(--ink2);" onerror="this.style.display='none'">`;
 }
 function setMapView(v,btn){
   mapView=v;
@@ -1247,7 +1233,7 @@ function switchTab(tab,btn){
 ═══════════════════════════════════════════ */
 if('serviceWorker' in navigator){
   const SW_CODE=`
-const CACHE='japan-trip-v1';
+const CACHE='japan-trip-v3';
 const ASSETS=['${location.href}'];
 self.addEventListener('install',e=>{
   e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));
@@ -1258,6 +1244,11 @@ self.addEventListener('activate',e=>{
   self.clients.claim();
 });
 self.addEventListener('fetch',e=>{
+  // Never cache JSON fetches — always go to network so updates are instant
+  if(e.request.url.includes('.json')){
+    e.respondWith(fetch(e.request));
+    return;
+  }
   e.respondWith(
     fetch(e.request).then(r=>{
       if(r&&r.status===200){
