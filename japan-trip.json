@@ -60,7 +60,8 @@
           "type": "Tech",
           "notes": "Switch to your eSIM immediately at ICN. Avoid any accidental roaming on UK SIM."
         }
-      ]
+      ],
+      "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day0.jpg"
     },
     {
       "date": "2026-04-04",
@@ -166,7 +167,8 @@
           "type": "Practical",
           "notes": "Don't exchange at the airport. 7-Eleven ATMs accept UK cards and give much better rates."
         }
-      ]
+      ],
+      "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day1.jpg"
     },
     {
       "date": "2026-04-05",
@@ -269,7 +271,8 @@
           "type": "Tech",
           "notes": "Turn off Korean eSIM, activate Japan eSIM before leaving the arrivals hall. Check signal works."
         }
-      ]
+      ],
+      "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day2.jpg"
     },
     {
       "date": "2026-04-06",
@@ -360,7 +363,8 @@
           "notes": "Underground cocktail bar. Cover charge likely ¥500–1,000pp. Check sign at entrance.",
           "mapQuery": "Tir na Nog Ginza Tokyo"
         }
-      ]
+      ],
+      "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day3.jpg"
     },
     {
       "date": "2026-04-07",
@@ -460,7 +464,8 @@
           "notes": "Solo-booth tonkotsu ramen. 24 hours. You order on a sheet, food arrives through a hatch. No social pressure. Classic.",
           "mapQuery": "Ichiran Ramen Tokyo"
         }
-      ]
+      ],
+      "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day4.jpg"
     },
     {
       "date": "2026-04-08",
@@ -566,7 +571,8 @@
           "type": "Food",
           "notes": "Silky, delicate local speciality. Found in restaurants around Gora and the ryokan area."
         }
-      ]
+      ],
+      "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day5.jpg"
     },
     {
       "date": "2026-04-09",
@@ -720,7 +726,8 @@
           "type": "Transport/Attraction",
           "notes": "Covered by Freepass. Views of Mt Fuji on clear days. Very dramatic."
         }
-      ]
+      ],
+      "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day6.jpg"
     },
     {
       "date": "2026-04-10",
@@ -841,7 +848,8 @@
           "type": "Sightseeing",
           "notes": "Right-hand side (E seats — which you have). Visible from immediately after Odawara for first ~30 mins. Have your camera ready."
         }
-      ]
+      ],
+      "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day7.jpg"
     },
     {
       "date": "2026-04-11",
@@ -978,7 +986,8 @@
           "url": "https://www.tempura-endo.com/",
           "mapQuery": "Tempura Endo Gion Kyoto"
         }
-      ]
+      ],
+      "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day8.jpg"
     },
     {
       "date": "2026-04-12",
@@ -1112,7 +1121,8 @@
           "url": "https://www.hozugawakudari.jp/en",
           "mapQuery": "Hozugawa Pleasure Boat Kameoka"
         }
-      ]
+      ],
+      "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day9.jpg"
     },
     {
       "date": "2026-04-13",
@@ -1233,7 +1243,8 @@
           "type": "Restaurant",
           "notes": "Recommended by Tokyo locals for traditional Kyoto meals. Worth seeking out for farewell Kyoto dinner."
         }
-      ]
+      ],
+      "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day10.jpg"
     },
     {
       "date": "2026-04-14",
@@ -1335,7 +1346,8 @@
           "notes": "Much better after dark with all the neon. Glico Running Man, Kani Doraku crab sign. Walk the canal. Don't plan too much — just wander.",
           "mapQuery": "Dotonbori Osaka"
         }
-      ]
+      ],
+      "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day11.jpg"
     },
     {
       "date": "2026-04-15",
@@ -1446,7 +1458,8 @@
           "type": "Street food",
           "notes": "Freshly baked melon bread with soft-serve inside. Very photogenic. Very Osaka."
         }
-      ]
+      ],
+      "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day12.jpg"
     },
     {
       "date": "2026-04-16",
@@ -1562,7 +1575,8 @@
           "notes": "Enormous onsen complex in Shinsekai. Themed floors — Roman baths, Japanese onsen. ¥1,000pp. Ideal after a long Himeji day.",
           "mapQuery": "Spa World Osaka"
         }
-      ]
+      ],
+      "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day13.jpg"
     },
     {
       "date": "2026-04-17",
@@ -1671,7 +1685,8 @@
           "type": "Practical",
           "notes": "Buy at any drugstore or convenience store before leaving. Alinamin Night Recovery for the long flight home. Yukon no Chikara for sore legs."
         }
-      ]
+      ],
+      "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day14.jpg"
     },
     {
       "date": "2026-04-18",
@@ -1746,7 +1761,8 @@
           "type": "Shopping",
           "notes": "ICN T2 has outstanding duty free — cosmetics, luxury brands, electronics. Last chance for Korean beauty products if you missed Seoul."
         }
-      ]
+      ],
+      "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day15.jpg"
     }
   ],
   "checklist": [
