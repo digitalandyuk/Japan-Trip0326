@@ -41,9 +41,15 @@
       "title": "London → Seoul",
       "ideas": [
         {
+          "title": "Korea e-Arrival Card × 4 — complete before flying",
+          "type": "Admin",
+          "notes": "Mandatory digital arrival/customs declaration for South Korea — replaces the old paper landing card. Complete at e-arrivalcard.go.kr up to 72 hrs before arrival (earliest: Wed 1 Apr). You'll get a confirmation PDF — screenshot it. No K-ETA needed: UK passport holders are exempt until 31 Dec 2026.",
+          "url": "https://www.e-arrivalcard.go.kr"
+        },
+        {
           "title": "Complete Visit Japan Web immigration forms",
           "type": "Admin",
-          "notes": "Get your QR code for the express immigration lane at ICN. Saves 30–60 mins. vjw-lp.digital.go.jp",
+          "notes": "Register everyone before departure to get QR codes for the fast-track electronic declaration gates at NRT (Narita). Covers both immigration pre-clearance and customs declaration — no paper forms on landing. vjw-lp.digital.go.jp · Do this for all 4 of you.",
           "url": "https://www.vjw.digital.go.jp"
         },
         {
@@ -114,6 +120,15 @@
           "mapQuery": "Myeongdong Street Seoul Jung-gu"
         },
         {
+          "time": "14:00",
+          "activity": "Deoksugung Palace — Changing of the Guard",
+          "status": "planning",
+          "notes": "20 min walk from Crown Park. Guard ceremony at 14:00 most days (Tue–Sun). ₩1,000pp entry. Allow 1 hour.",
+          "address": "Deoksugung Palace, 99 Sejong-daero, Jung-gu, Seoul, South Korea",
+          "mapQuery": "Deoksugung Palace Seoul",
+          "detail": "Deoksugung (덕수궁) is one of Seoul's Five Grand Palaces — the most compact and easiest to visit.\n\nChanging of the Guard: Runs at 11:00, 14:00 and 15:30 (Tue–Sun). The 14:00 slot is most reliable. Ceremony at the Daehanmun Gate takes ~20 mins with guards in full Joseon-era costume.\n\nEntry: ₩1,000pp (under 7 free). Takes cash or card at the gate.\nTime needed: 1 hour covers the ceremony + a walk through the palace grounds.\nLocation: 20 min walk from Crown Park Hotel, or 5 min walk from Seoul City Hall metro."
+        },
+        {
           "time": "15:00",
           "activity": "Check in — Crown Park Hotel Seoul",
           "status": "confirmed",
@@ -121,6 +136,15 @@
           "detail": "Expedia Conf: 25301968\nSat 4 Apr → Sun 5 Apr (1 night)\nCost: £388.78 · PAID MC 3823\nBreakfast for 2 included\nCheck-in from 3pm",
           "address": "Crown Park Hotel, 5 Namsandong 2-ga, Jung-gu, Seoul 04605, South Korea",
           "mapQuery": "Crown Park Hotel Seoul"
+        },
+        {
+          "time": "16:00",
+          "activity": "N Seoul Tower — Namsan cable car",
+          "status": "optional",
+          "notes": "Cable car ₩9,500pp return · Tower entry ₩21,000pp. Late afternoon views over Seoul. 10 min taxi to cable car station.",
+          "address": "N Seoul Tower, 105 Namsangongwon-gil, Yongsan-gu, Seoul, South Korea",
+          "mapQuery": "N Seoul Tower Namsan Seoul",
+          "detail": "N Seoul Tower (남산서울타워) sits atop Namsan Hill, directly south of Myeongdong — very close to Crown Park.\n\nGetting there: 10 min taxi to the Namsan cable car station at Myeongdong or walk up the hill (~30 mins, well-signposted). Cable car: ₩9,500pp return.\nTower observation deck: ₩21,000pp adults / ₩15,000 under 12. Takes 30–45 mins at the top.\nLove locks: The fence around the tower is covered in padlocks — a Korean dating tradition.\nBring back by: 18:00 for the Myeongdong street food start.\nJet lag tip: The walk up through Namsan Park is gentle and the fresh air helps reset the body clock."
         },
         {
           "time": "18:30",
@@ -170,6 +194,24 @@
           "title": "7-Eleven ATM — get Korean won",
           "type": "Practical",
           "notes": "Don't exchange at the airport. 7-Eleven ATMs accept UK cards and give much better rates."
+        },
+        {
+          "title": "Namdaemun Market",
+          "type": "Sightseeing",
+          "notes": "One of Korea's largest traditional markets — 5 min walk from Crown Park. Good for a post-arrival wander. Stalls sell food, clothes, souvenirs. Open from 09:00.",
+          "mapQuery": "Namdaemun Market Seoul"
+        },
+        {
+          "title": "Gwangjang Market — covered food market",
+          "type": "Food",
+          "notes": "Seoul's most famous covered food market. Bindaetteok (mung bean pancakes), pajeon, yukhoe (raw beef). ~30 min taxi from Myeongdong. Worth it if energy allows.",
+          "mapQuery": "Gwangjang Market Seoul"
+        },
+        {
+          "title": "Insadong — traditional crafts street",
+          "type": "Shopping",
+          "notes": "Antiques, Korean crafts, tea houses and galleries. Great for gifts and souvenirs. ~20 min taxi from hotel. Combine with Bukchon Hanok Village if visiting both.",
+          "mapQuery": "Insadong Seoul"
         }
       ],
       "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day1.jpg"
