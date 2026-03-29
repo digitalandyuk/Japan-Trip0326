@@ -1597,13 +1597,13 @@
           "detail": "Amerikamura (アメリカ村) — American Village\nAccess: 5 min walk west of Dotonbori · Shinsaibashi-suji arcade connects the two\n\nOsaka's equivalent of Harajuku/Shimokitazawa. Radiates from Triangle Park.\n\nWhat's here:\n- Vintage and thrift: 2nd Street, Super Bookoff. Jack's territory.\n- Streetwear: Supreme, Carhartt, local Japanese streetwear labels\n- Record shops: Good vinyl selection\n- Food: American-style diners, unique cafés"
         },
         {
-          "time": "18:30",
-          "activity": "Dinner — Dotonbori / Namba",
-          "status": "planning",
-          "notes": "Osaka is Japan's food capital. Ichiran Ramen, takoyaki crawl, or kushikatsu izakaya.",
-          "address": "Dotonbori, 1-chome Dotonbori, Chuo Ward, Osaka 542-0071, Japan",
-          "mapQuery": "Dotonbori Osaka neon food street",
-          "detail": "First dinner in Osaka — the food capital of Japan.\n\nOsaka food ethos: 'Kuidaore' (食い倒れ) — 'eat until you drop'.\n\nOptions:\n- Takoyaki crawl: Hit 3–4 different stalls. Best: Aizuya (the original, since 1933), Kukuru, Wanaka.\n- Kushikatsu in Dotonbori: Multiple izakayas. ⚠ NEVER double dip the communal sauce.\n- Kinryu Ramen: Famous Dotonbori noodle shop (giant dragon sign on roof). Open until late.\n- Okonomiyaki: Mizuno on Dotonbori — Osaka-style savoury pancake made in front of you. Queue outside."
+          "time": "17:20",
+          "activity": "⭐ Osaka Deep Backstreets Walking Tour — BOOKED",
+          "status": "confirmed",
+          "notes": "Meet at Daikokucho Station Exit 1, top of stairs (Family Mart) — arrive by 17:20. 3.5 hrs with dinner. Ends ~21:00.",
+          "address": "Daikokucho Station, Naniwa Ward, Osaka, Japan",
+          "mapQuery": "Daikokucho Station Osaka",
+          "detail": "GETYOURGUIDE BOOKED\nOsaka Deep Backstreets Walking Tour with Dinner\nBooking ref: GYGLMR35M35H · GetYourGuide\nVoucher codes (1 per person): HXC95 / R72HK / HC11G / XO2VM\nTue 14 Apr · 17:30 start · 3.5 hrs (ends ~21:00)\nAdults × 4 · Cost: £184.32 · Paid\nCancel by: 17:30 Mon 13 Apr for full refund\nProvider phone: +8108070122238\n\nMeeting point: Daikokucho Station Exit 1, top of stairs (Family Mart) — arrive by 17:20.\nTour explores Osaka backstreets, covered markets, and local eateries with a knowledgeable guide. Dinner included."
         }
       ],
       "title": "Kyoto → Osaka",
@@ -1646,7 +1646,7 @@
     {
       "date": "2026-04-15",
       "label": "Day 12 — Wednesday 15 Apr",
-      "location": "Osaka",
+      "location": "Osaka → Nara → Osaka",
       "locationAddress": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
       "mapQuery": "Candeo Hotels Osaka The Tower",
       "items": [
@@ -1654,75 +1654,144 @@
           "time": "08:30",
           "activity": "Breakfast at Candeo",
           "status": "included",
-          "notes": "Hotel breakfast or nearby konbini.",
+          "notes": "Good start — Nara day ahead.",
           "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
           "mapQuery": "Candeo Hotels Osaka The Tower"
         },
         {
-          "time": "09:00",
-          "activity": "Osaka Castle & Park",
+          "time": "10:15",
+          "activity": "Travel to Osaka-Namba",
           "status": "planning",
-          "notes": "¥1,400pp for 8F observation deck. Park free — excellent cherry blossoms in mid-April.",
-          "address": "Osaka Castle, 1-1 Osakajo, Chuo Ward, Osaka 540-0002, Japan",
-          "mapQuery": "Osaka Castle Park Japan",
-          "detail": "Osaka Castle (大阪城)\nAccess: Osaka Metro Tanimachi Line from Higashi-Umeda → Tanimachi 4-chome (~10 min, ¥230pp), then 10 min walk east\nPark entry: Free · Castle tower: ¥1,400pp · Hours: 09:00–17:00\n\nThe park is one of Osaka's best hanami spots — 600+ cherry trees in mid-April (late varieties may still be in bloom).\n\nThe castle tower: 8 floors + observation deck. Exhibits cover Toyotomi Hideyoshi and the history of Osaka.\nHistorical context: Built by Toyotomi Hideyoshi in 1583. The original stone foundation walls are genuinely extraordinary — some stones weighing hundreds of tonnes, fitted without mortar."
+          "notes": "Osaka Metro Midosuji Line: Umeda → Namba · ~5 min · ¥230pp. ⚠ Also buy basic fare tickets to Kintetsu-Nara at station (¥680pp × 4 = ¥2,720 total) before boarding.",
+          "address": "Osaka-Namba Station, Chuo Ward, Osaka 542-0076, Japan",
+          "mapQuery": "Osaka Namba Station Kintetsu",
+          "detail": "Take Osaka Metro Midosuji Line from Umeda (near hotel) to Namba — 5 min, ¥230pp.\n\n⚠ IMPORTANT: At Namba, buy basic fare tickets to Kintetsu-Nara at the Kintetsu vending machine (¥680pp × 4 = ¥2,720). You need this in addition to your pre-booked Limited Express ticket.\n\nYou already have: Limited Express (Vistacar) ticket booked — Reservation A46746\nYou still need: Basic fare ticket at station — ¥680pp × 4"
+        },
+        {
+          "time": "10:47",
+          "activity": "⭐ Kintetsu Vistacar to Kintetsu-Nara — BOOKED",
+          "status": "confirmed",
+          "notes": "Reservation A46746 · Train 1017 · Car 2 · Seats 4A·4B·5A·5B · Upstairs · ¥2,080 total (4 adults). Show e-ticket on phone. Journey 35 min.",
+          "address": "Osaka-Namba Station, Chuo Ward, Osaka 542-0076, Japan",
+          "mapQuery": "Osaka Namba Kintetsu Station",
+          "detail": "KINTETSU BOOKED — Reservation A46746\nTrain: Ltd.Exp.Vistacar · Train No. 1017 · Car No. 2\nSeats: 4A · 4B · 5A · 5B · Upstairs\nDeparture: 10:47 Osaka-Namba → Arrival: 11:22 Kintetsu-Nara\nCost: ¥2,080 Limited Express charge (4 adults) · Paid card 3823\nTicket No: 3600-3065 · Certification: 27608\n\nShow e-ticket on phone — access via 'Review/refund/change of purchased ticket(s)' on Kintetsu site.\nAlso carry basic fare ticket purchased at station (¥680pp).\n\nVistacar is a double-decker sightseeing train — upper deck recommended for views across the Yamato plain."
+        },
+        {
+          "time": "11:22",
+          "activity": "Arrive Kintetsu-Nara — into the park",
+          "status": "planning",
+          "notes": "Kintetsu-Nara Station is 5 min walk from Nara Park. Deer will find you almost immediately.",
+          "address": "Kintetsu Nara Station, Nara 630-8122, Japan",
+          "mapQuery": "Kintetsu Nara Station",
+          "detail": "From Kintetsu-Nara Station: walk east ~5 min and you're in Nara Park. The deer roam freely on the path between the station and Todai-ji — you'll encounter them before you even reach the park proper.\n\nDeer crackers (shika-senbei): Buy from vendors for ¥200 a bundle. The deer bow to ask for them — a trained behaviour. Watch your bags."
+        },
+        {
+          "time": "11:30",
+          "activity": "Nara Park — deer",
+          "status": "free",
+          "notes": "1,200+ free-roaming deer. Sacred in Shinto — believed to be messengers of the gods. Deer crackers ¥200 from vendors.",
+          "address": "Nara Park, 469 Zoshicho, Nara 630-8212, Japan",
+          "mapQuery": "Nara Park deer Japan",
+          "detail": "Nara Park (奈良公園)\nThe park is enormous — 660 hectares. The deer are everywhere.\n\nThe deer are designated national treasures. They've lived here for 1,300 years. They're accustomed to people but are still wild — watch young children and don't tease them.\n\nBest photo spots: Deer in front of the Nandaimon gate (huge wooden entrance to Todai-ji), deer on the broad grass lawns south of Todai-ji, deer near the stone lanterns at Kasuga Taisha approach."
         },
         {
           "time": "12:00",
-          "activity": "Kuromon Ichiba Market — Osaka's Kitchen",
+          "activity": "⭐ Todai-ji — Great Buddha Hall",
           "status": "planning",
-          "notes": "170 stalls of fresh seafood, wagyu, fruit and street food. Eat as you walk.",
-          "address": "Kuromon Ichiba Market, 2-4-1 Nipponbashi, Chuo Ward, Osaka 542-0073, Japan",
-          "mapQuery": "Kuromon Ichiba Market Osaka",
-          "detail": "Kuromon Ichiba Market (黒門市場)\nAccess: Osaka Metro Sennichimae Line → Nippombashi Station. 2 min walk. Hours: Most stalls 07:00–18:00\n\nOsaka's professional food market — originally wholesale for restaurants, now open to the public. 170+ stalls in a covered 580m arcade.\n\nMust try:\n- Live sea urchin (uni) — some stalls cut it open right in front of you\n- A5 wagyu beef: Stalls offer skewers seared on charcoal grill\n- Tiger prawn tempura — huge, crispy, on a stick\n- Whole steamed snow crab legs\n- Fugu (pufferfish) — Osaka is the centre of fugu culture, safe when prepared by a licensed chef\n\nBudget ¥2,000–4,000pp for a walking lunch."
+          "notes": "World's largest wooden building. Daibutsu (Great Buddha) is 15m tall — extraordinary scale. ¥1,000pp. Allow 45 min.",
+          "address": "Todai-ji Temple, 406-1 Zoshicho, Nara 630-8211, Japan",
+          "mapQuery": "Todaiji Temple Great Buddha Nara",
+          "detail": "Todai-ji (東大寺) — Eastern Great Temple\nHours: 07:30–17:30 · Entry: ¥1,000pp\n\nThe Daibutsu (Great Buddha): 15m tall bronze Buddha, cast in 743 AD. The scale is genuinely overwhelming — you turn a corner inside the hall and it fills your vision. One of Japan's defining experiences.\n\nThe hall itself: Rebuilt in 1709 — still the world's largest wooden structure. Even after being rebuilt at 2/3 the original size.\n\nNandaimon Gate: The giant wooden gate before the hall with two fearsome nio guardian statues — worth stopping to look properly."
         },
         {
           "time": "13:30",
-          "activity": "Shinsekai + Tsutenkaku Tower",
+          "activity": "Lunch in Nara",
           "status": "planning",
-          "notes": "1920s retro entertainment district. Tsutenkaku observation deck ¥2,000pp.",
-          "address": "Shinsekai, Naniwa Ward, Osaka 556-0002, Japan",
-          "mapQuery": "Shinsekai Tsutenkaku Tower Osaka",
-          "detail": "Shinsekai (新世界) — New World\nAccess: Osaka Metro Midosuji Line → Dobutsuen-mae Station. 5 min walk.\n\nBuilt in 1912 modelled on New York and Paris. Now deliberately retro — untouched in a way that makes it extraordinary.\n\nTsutenkaku Tower (通天閣): 103m tower, symbol of Shinsekai. Observation deck ¥2,000pp. Biliken statue on top floor — rub his feet for good luck.\n\nKushikatsu in Shinsekai: This is the home of kushikatsu — authentic experience. Daruma is the most famous (established 1929). ⚠ NEVER double dip the communal sauce — this rule is taken very seriously, signs everywhere."
+          "notes": "Kakinoha-zushi (persimmon leaf sushi) is Nara's signature dish. Several restaurants near Todai-ji. Budget ¥1,500–2,500pp.",
+          "address": "Nara Park, 469 Zoshicho, Nara 630-8212, Japan",
+          "mapQuery": "Nara Park deer Japan",
+          "detail": "Nara food specialities:\n- Kakinoha-zushi: Pressed sushi wrapped in persimmon leaves — Nara's most distinctive local dish. The leaves add a subtle flavour and were originally used as a preservative. Look for Hiraso or Tanaka-ya near the park.\n- Miwa somen: Fine white noodles, served cold or in hot broth. Nara is the origin of somen noodles in Japan.\n- Kakigori: Shaved ice with matcha syrup — excellent in the Higashimuki arcade area."
         },
         {
-          "time": "15:00",
-          "activity": "Spa World (optional)",
-          "status": "optional",
-          "notes": "Enormous onsen complex. Themed floors. ¥1,000pp. Great after a long day.",
-          "address": "Spa World, 3-4-24 Ebisuhigashi, Naniwa Ward, Osaka 556-0002, Japan",
-          "mapQuery": "Spa World Osaka"
+          "time": "14:30",
+          "activity": "Kasuga Taisha Shrine",
+          "status": "planning",
+          "notes": "UNESCO World Heritage. 3,000 stone and bronze lanterns — lit twice a year. Free to approach; inner shrine ¥500pp. 10 min walk east of Todai-ji.",
+          "address": "Kasuga Taisha Shrine, 160 Kasuganocho, Nara 630-8212, Japan",
+          "mapQuery": "Kasuga Taisha Shrine Nara",
+          "detail": "Kasuga Taisha (春日大社) — UNESCO World Heritage\nHours: 06:30–17:30 · Outer shrine: Free · Inner sanctuary: ¥500pp\n\nFounded in 768 AD. The approach through the forest is lined with over 3,000 stone lanterns, all donated by worshippers. The deer wander freely here too.\n\nThe hanging bronze lanterns inside the covered corridor are extraordinary — imagine all 2,000 lit at once (only happens during Mandoro festivals in February and August)."
         },
         {
           "time": "16:00",
-          "activity": "Den Den Town — electronics & anime",
+          "activity": "Return to Osaka — Kintetsu express",
           "status": "planning",
-          "notes": "Osaka's Akihabara. Retro game shops, Gunpla, anime figures.",
-          "address": "Den Den Town, Nipponbashi, Naniwa Ward, Osaka 556-0005, Japan",
-          "mapQuery": "Den Den Town electronics Osaka",
-          "detail": "Den Den Town (でんでんタウン) — Nipponbashi\nAccess: Osaka Metro Sennichimae Line to Nippombashi · 10 min walk from Shinsekai\n\nOsaka's Akihabara — more compact and less overwhelming. Main street and side alleys lined with electronics, retro game stores, maid cafés, anime merchandise and Gunpla.\n\nFor Jack and Charlie:\n- Super Potato: Best retro game shop in Osaka — SNES, N64, PS1, Dreamcast, everything. Multiple floors.\n- Joshin Super Kids Land: 9-floor electronics and toy megastore. Gunpla floor exceptional.\n- Animate: Major anime merchandise chain. Figures, manga, doujinshi.\n- Lashinbang: Used anime goods — good for older figures at reasonable prices."
+          "notes": "Regular Kintetsu Express: Kintetsu-Nara → Osaka-Namba · ~35 min · ¥680pp. No reservation. Buy tickets at vending machine.",
+          "address": "Kintetsu Nara Station, Nara 630-8122, Japan",
+          "mapQuery": "Kintetsu Nara Station",
+          "detail": "Regular Kintetsu Express (no reservation needed).\nFrequency: Every 15–30 min throughout the day.\nCost: ¥680pp × 4 = ¥2,720 total. Buy at vending machine at Kintetsu-Nara Station.\nJourney: ~35 min direct to Osaka-Namba."
         },
         {
-          "time": "17:30",
-          "activity": "Shinsaibashi — shopping arcade",
-          "status": "planning",
-          "notes": "Longest covered shopping arcade in Japan. Good for souvenirs, beauty products, fashion.",
-          "address": "Shinsaibashi, Chuo Ward, Osaka 542-0085, Japan",
-          "mapQuery": "Shinsaibashi Osaka",
-          "detail": "Shinsaibashi-suji (心斎橋筋)\nAccess: Osaka Metro Midosuji Line → Shinsaibashi Station\nLength: 600m covered arcade · Hours: Most shops 11:00–21:00\n\nLongest covered shopping arcade in Japan — 600m running north-south, connecting directly to Dotonbori at the south end.\n\nGood for:\n- Japanese skincare and cosmetics: Matsumoto Kiyoshi, Daikoku Drug, Ainz & Tulpe\n- Souvenir shopping: Osaka-specific snacks, KitKat flavours, Pocky varieties\n- Electronics accessories at reasonable prices\n- Fast fashion (Zara, H&M, domestic brands)"
+          "time": "17:00",
+          "activity": "Back in Osaka — freshen up",
+          "status": "free",
+          "notes": "Back at hotel by ~17:30. Free time before dinner.",
+          "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
+          "mapQuery": "Candeo Hotels Osaka The Tower"
         },
         {
           "time": "19:30",
           "activity": "Dinner — Osaka yakiniku",
-          "status": "booked",
-          "notes": "⚠ BOOK AHEAD. Proper yakiniku — BBQ wagyu at the table. ~¥4,000–5,000pp. Namba area.",
+          "status": "planning",
+          "notes": "⚠ STILL NEEDS BOOKING. Proper yakiniku — BBQ wagyu at the table. ~¥4,000–5,000pp. Namba area.",
           "address": "Namba, Chuo Ward, Osaka 542-0075, Japan",
-          "mapQuery": "Namba Osaka",
+          "mapQuery": "yakiniku restaurant Namba Osaka",
           "detail": "Osaka yakiniku dinner — book in advance.\n\nOsaka has an extraordinary yakiniku culture — the largest concentration of Korean-Japanese communities in Japan developed this cuisine here.\n\nWhat to order:\n- Karubi (short rib): The classic cut, fatty and full of flavour\n- Harami (outside skirt): Tender, well-marbled, quick to cook\n- Tongue (tan): Thin sliced, grilled quickly, dipped in lemon\n- Wagyu special course: Worth the splurge for one proper wagyu night\n\nBudget: ¥4,000–5,000pp for a good set course with drinks."
         }
       ],
-      "title": "Osaka — Castle · Kuromon · Shinsekai",
+      "title": "Nara Day Trip",
       "ideas": [
+        {
+          "title": "Spa World (onsen)",
+          "type": "Onsen",
+          "notes": "Enormous onsen complex. Themed floors. ¥1,000pp. Great after a long day out.",
+          "address": "Spa World, 3-4-24 Ebisuhigashi, Naniwa Ward, Osaka 556-0002, Japan",
+          "mapQuery": "Spa World Osaka"
+        },
+        {
+          "title": "Shinsaibashi — covered shopping arcade",
+          "type": "Shopping",
+          "notes": "600m covered arcade. Japanese skincare, Osaka snacks, souvenirs, fashion. Connects to Dotonbori at south end.",
+          "address": "Shinsaibashi, Chuo Ward, Osaka 542-0085, Japan",
+          "mapQuery": "Shinsaibashi Osaka"
+        },
+        {
+          "title": "Den Den Town — electronics & anime",
+          "type": "Shopping",
+          "notes": "Osaka's Akihabara. Super Potato retro games, Joshin Super Kids Land, Animate. Jack and Charlie territory.",
+          "address": "Den Den Town, Nipponbashi, Naniwa Ward, Osaka 556-0005, Japan",
+          "mapQuery": "Den Den Town electronics Osaka"
+        },
+        {
+          "title": "Shinsekai + Tsutenkaku Tower",
+          "type": "District",
+          "notes": "1920s retro entertainment district. Tsutenkaku ¥2,000pp. Kushikatsu — DO NOT double dip.",
+          "address": "Shinsekai, Naniwa Ward, Osaka 556-0002, Japan",
+          "mapQuery": "Shinsekai Tsutenkaku Tower Osaka"
+        },
+        {
+          "title": "Kuromon Ichiba Market — Osaka's Kitchen",
+          "type": "Market",
+          "notes": "170 stalls of fresh seafood, wagyu, fruit and street food. Eat as you walk. ¥2,000–4,000pp for a walking lunch. Near Nippombashi Station.",
+          "address": "Kuromon Ichiba Market, 2-4-1 Nipponbashi, Chuo Ward, Osaka 542-0073, Japan",
+          "mapQuery": "Kuromon Ichiba Market Osaka"
+        },
+        {
+          "title": "Osaka Castle & Park",
+          "type": "Sightseeing",
+          "notes": "¥1,400pp for 8F observation deck. Park free — excellent cherry blossoms in mid-April. ~10 min from Higashi-Umeda on Tanimachi Line.",
+          "address": "Osaka Castle, 1-1 Osakajo, Chuo Ward, Osaka 540-0002, Japan",
+          "mapQuery": "Osaka Castle Park Japan"
+        },
         {
           "title": "Umeda Sky Building rooftop",
           "type": "Viewpoint",
@@ -1804,10 +1873,10 @@
           "time": "08:15",
           "activity": "JR Special Rapid: Osaka → Himeji",
           "status": "included",
-          "notes": "JR Pass fully covered. Direct, ~60 min.",
+          "notes": "Direct, ~60 min. · ¥1,520pp (buy at JR vending machine — no reservation needed)",
           "address": "Osaka Station, 3-1-1 Umeda, Kita Ward, Osaka 530-0001, Japan",
           "mapQuery": "Osaka Station JR Special Rapid",
-          "detail": "JR Special Rapid (新快速) from Osaka Station Platform 4–7\nRoute: Osaka → Himeji · Duration: ~60 min · ¥1,520pp or JR Pass\nDepartures: Every 15–30 mins. No reservation needed.\n\nHimeji is visible from the train on the right as you pull into the station — the castle is that close."
+          "detail": "JR Special Rapid (新快速) from Osaka Station Platform 4–7\nRoute: Osaka → Himeji · Duration: ~60 min · ¥1,520pp\nDepartures: Every 15–30 mins. No reservation needed.\n\nHimeji is visible from the train on the right as you pull into the station — the castle is that close."
         },
         {
           "time": "09:20",
@@ -1849,7 +1918,7 @@
           "time": "15:00",
           "activity": "JR back to Osaka",
           "status": "included",
-          "notes": "JR Pass covered. Direct, 60 min.",
+          "notes": "Direct, 60 min. · ¥1,520pp (buy at JR vending machine — no reservation needed)",
           "address": "Himeji Station, 68 Ekimae-cho, Himeji, Hyogo 670-0927, Japan",
           "mapQuery": "Himeji Station Japan"
         },
