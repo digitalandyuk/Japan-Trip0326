@@ -332,9 +332,9 @@
           "notes": "5 mins walk from hotel. One of Seoul's oldest markets. Good for last-minute Korean snacks and souvenirs before heading to ICN."
         },
         {
-          "title": "Buy yen at Korean convenience store ATM",
+          "title": "Get Japanese yen — 7-Eleven ATM on arrival at Narita",
           "type": "Practical",
-          "notes": "Better rates than airport or UK. Get ¥50,000 per person minimum before you leave Korea."
+          "notes": "Best options: Curve card or Revolut at any Seven Bank ATM (inside every 7-Eleven in Japan) — minimal fees, near-interbank rate. Do one large withdrawal (up to ¥100,000) on arrival at NRT rather than multiple small ones. Pound is at a 20-year high vs yen (~¥200/£1) so excellent value. Always pay in JPY — never accept Dynamic Currency Conversion. Korean ATMs only dispense KRW, so don't try to get yen before leaving Seoul."
         },
         {
           "title": "Activate Japanese eSIM at Narita",
@@ -361,6 +361,13 @@
           "detail": "Keio Plaza Hotel breakfast — included in room rate.\nVenue: Main dining room, floors 3–4. Hours: 07:00–10:00 (busy 08:00–09:00 — go early or late).\nJapanese breakfast: Miso soup, grilled salmon, tamagoyaki, natto, rice, pickles. Great introduction to Japanese breakfast culture.\nTip: Load up — full day of walking ahead."
         },
         {
+          "time": "09:30",
+          "activity": "JR Yamanote → Shibuya · Harajuku",
+          "status": "planning",
+          "notes": "Direct from Shinjuku Station (2 stops, 5 min). Exit Shibuya Hachiko or Harajuku for Takeshita Street / Meiji Shrine.",
+          "mapQuery": "Shibuya Station Tokyo"
+        },
+        {
           "time": "10:00",
           "activity": "Shibuya Crossing & Harajuku",
           "status": "planning",
@@ -370,6 +377,24 @@
           "detail": "Getting there: JR Yamanote Line from Shinjuku (1 stop to Harajuku, 2 to Shibuya). ~4 min. Use Suica.\n\nHarajuku (start here):\n- Takeshita Street: Famous youth fashion street. Narrow, colourful, chaotic. Crepe shops, kawaii fashion.\n- Omotesando: Wide tree-lined luxury boulevard 10 min south. Flagship stores, beautiful architecture.\n- Meiji Shrine: Enormous forested Shinto shrine. 10 min walk from Takeshita St. Free. Allow 45 mins.\n\nShibuya Crossing:\n- 3,000 people crossing simultaneously every 60 seconds. Best viewed from 2F Starbucks or Mag's Park.\n- Shibuya Scramble Square 12F: Free secret viewpoint behind the teppanyaki restaurant.\n- Parco Shibuya: Floor 6 = Nintendo Tokyo, Pokémon Center Shibuya. Queues 30–60 mins — go early."
         },
         {
+          "time": "11:30",
+          "activity": "Harajuku backstreets — Cat Street · Ura-Harajuku",
+          "status": "planning",
+          "notes": "Turn off Takeshita Street into the backstreets. Cat Street is a wide pedestrian lane of independent boutiques, serious vintage stores and streetwear labels. Where Tokyo fashion culture actually started — BAPE was born here. No tourists, relaxed pace. Allow 1–1.5 hrs.",
+          "address": "Cat Street, Jingumae, Shibuya City, Tokyo",
+          "mapQuery": "Cat Street Harajuku Tokyo",
+          "detail": "Ura-Harajuku (裏原宿) — the backstreets behind Takeshita Street.\n\nCat Street is the main artery: a wide, tree-lined pedestrian lane running south through Jingumae towards Omotesando. Unlike the spectacle of Takeshita, this is where serious fashion shopping happens.\n\nHighlights:\n- Vintage stores: Flamingo Vintage, Chicago Thrift, and dozens of independent curated shops\n- Streetwear: BAPE (A Bathing Ape) flagship is here — the brand that started in this exact neighbourhood in the 1990s\n- Omotesando Hills is at the south end — the underground mall designed by Tadao Ando built around a preserved apartment block\n- Good for: Japanese-label vintage, mid-century workwear, Americana, independent labels\n\nTip: Many of the best shops are in side alleys off Cat Street — explore. The neighbourhood rewards wandering."
+        },
+        {
+          "time": "13:00",
+          "activity": "Lunch — Amam Dacotan bakery, Omotesando",
+          "status": "optional",
+          "notes": "15 min walk from Parco Shibuya. One of Tokyo's most celebrated bakeries — extraordinary bread, sandwiches and seasonal sweets. Always a queue — arrive before 13:00 if possible. Sells out. Near Omotesando Station Exit B2.",
+          "address": "3-7-6 Kita-Aoyama, Minato City, Tokyo",
+          "mapQuery": "Amam Dacotan Omotesando Tokyo",
+          "detail": "Amam Dacotan (アマムダコタン) has two locations close together in Kita-Aoyama:\n- Main bakery: 3-7-6 Kita-Aoyama\n- Café & bake: 3-6-23 Kita-Aoyama\n\nBest items: seasonal fruit tarts, cream-filled pastries, sourdough loaves, sandwiches. Japanese precision applied to French baking. The queue moves fast. Order a mix — it works well as a shared lunch. Eat in the nearby Omotesando park area."
+        },
+        {
           "time": "14:00",
           "activity": "Senso-ji Temple, Asakusa",
           "status": "planning",
@@ -377,6 +402,32 @@
           "address": "Senso-ji Temple, 2-3-1 Asakusa, Taito-ku, Tokyo 111-0032, Japan",
           "mapQuery": "Senso-ji Temple Asakusa Tokyo",
           "detail": "Senso-ji Temple (浅草寺) — Asakusa\nAccess: Tokyo Metro Ginza Line from Shibuya → Asakusa (30 min, ¥260). Entry: Free\n\nKaminarimon Gate: The enormous red lantern gate is iconic. Nakamise-dori (souvenir street) leads to the main hall.\nThe main hall: Wave incense smoke over yourself for good health. ¥5 coin for a prayer.\nOmikuji: Fortune papers ¥100 — if the fortune is bad, tie it to the wire rack.\n\nBeat the crowds: Walk left or right of main Nakamise into the side alleys — same temple, fraction of the tourists. The five-storey pagoda is particularly peaceful.\nNearby: Asakusa Culture Tourist Information Centre (opposite main gate) — free 8th floor observation deck with great views."
+        },
+        {
+          "time": "15:30",
+          "activity": "Nakamise-dori shopping street · Asakusa backstreets",
+          "status": "planning",
+          "notes": "Leading up to Senso-ji — 250m of traditional craft stalls, snacks (ningyo-yaki, senbei), souvenirs. Then explore the smaller alleys behind the temple for less touristy craft shops.",
+          "address": "Nakamise-dori, Asakusa, Taito City, Tokyo",
+          "mapQuery": "Nakamise-dori Asakusa Tokyo"
+        },
+        {
+          "time": "16:30",
+          "activity": "Kappabashi — Kitchen Town",
+          "status": "planning",
+          "notes": "10 min walk from Senso-ji. Tokyo's wholesale kitchen equipment district — a full street of professional cookware shops, Japanese knives, ceramics, lacquerware and the famous plastic food models (sampuru). Free to explore. Excellent for gifts and genuinely fascinating as a cultural street.",
+          "address": "Kappabashi-dori, Taito City, Tokyo",
+          "mapQuery": "Kappabashi Kitchen Town Tokyo",
+          "detail": "Kappabashi-dori (合羽橋道具街) — a 200m street of around 170 specialist shops selling professional kitchen equipment.\n\nWhat to look for:\n- Sampuru (食品サンプル): The plastic food models used in Japanese restaurant windows. Shops here sell individual pieces — a bowl of ramen, a sushi set, a cream puff. Iconic, unusual gifts that pack flat.\n- Japanese knives: Professional-grade chef knives at better prices than tourist areas. Globals, Masamoto, Aritsugu. Shops will sharpen on the spot.\n- Ceramics and lacquerware: Proper Japanese tableware at wholesale prices — bowls, sake sets, bento boxes.\n- Café equipment: Coffee geeks will find specialist roasters and pour-over equipment.\n\nPractical: Most shops accept card. Tax-free with passport on purchases over ¥5,000.\nLocation: 10 min walk north from Senso-ji / Kaminarimon Gate."
+        },
+        {
+          "time": "18:45",
+          "activity": "Omoide Yokocho — pre-dinner yakitori",
+          "status": "planning",
+          "notes": "2 min walk from Keio Plaza. Tiny smoke-filled yakitori alleys behind Shinjuku Station west exit. Cash only. Order chicken skewers, cold Sapporo, sit at the counter. A classic Tokyo moment — allow 30–45 mins before moving on to Kabukicho.",
+          "address": "Omoide Yokocho, Nishishinjuku, Shinjuku City, Tokyo",
+          "mapQuery": "Omoide Yokocho Memory Lane Shinjuku Tokyo",
+          "detail": "Omoide Yokocho (思い出横丁) — Memory Lane.\n\nA narrow alley of ~20 tiny yakitori bars immediately behind Shinjuku Station west exit. Each bar seats about 10 people. Smoke hangs in the air, lanterns glow, there's always noise.\n\nWhat to order: Tsukune (chicken meatball), negima (chicken and leek), shishito peppers, pork belly skewers. Pair with cold Sapporo or shochu highball. Prices: ¥150–300 per skewer.\n\nCash only at almost all stalls.\nBest time: 18:30–20:00 before the full late-night crowd hits.\nWalk time from Keio Plaza: 2 minutes."
         },
         {
           "time": "19:00",
