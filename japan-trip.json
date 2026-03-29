@@ -1373,159 +1373,82 @@
       "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day9.jpg"
     },
     {
+      "day": "Day 10",
       "date": "2026-04-13",
-      "label": "Day 10 — Monday 13 Apr",
-      "location": "Kyoto / Nara day trip",
-      "locationAddress": "Nara Park, 469 Zoushicho, Nara 630-8211, Japan",
-      "mapQuery": "Nara Park Japan deer",
+      "title": "Kyoto — Fushimi Inari · Miyako Odori",
+      "location": "Kyoto",
       "items": [
         {
           "time": "08:30",
           "activity": "Breakfast — Mitsui Garden Hotel",
-          "status": "included",
-          "notes": "Hotel breakfast before early departure.",
-          "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
-          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
-          "detail": "Last free breakfast at Mitsui Garden Hotel.\n⚠ Today: Nara morning, back to Kyoto by 13:00 for the Miyako Odori tea ceremony at 13:45. Do NOT spend too long in Nara."
+          "notes": "Hotel breakfast. Last full Kyoto day — Fushimi Inari in the morning, Miyako Odori in the afternoon.",
+          "status": "included"
         },
         {
           "time": "09:15",
-          "activity": "JR Nara Line: Kyoto → Nara",
-          "status": "included",
-          "notes": "JR Pass covered. Direct, 45 min from Kyoto Station.",
-          "address": "Kyoto Station, Karasuma-dori, Shimogyo-ku, Kyoto 600-8216, Japan",
-          "mapQuery": "Kyoto Station",
-          "detail": "JR Nara Line: Kyoto Station → Nara Station\nDuration: ~45 min (Miyako Route Rapid) · ¥740pp or JR Pass\nDepartures: Every 30 mins from Platform 8\n\nAlternative: Kintetsu Line from Kintetsu-Kyoto Station → Kintetsu Nara. ~35 min, ¥760pp. Faster and drops closer to Nara Park.\n\n⚠ Time constraint: Need to be back in Kyoto by 13:00 to reach the Miyako Odori by 13:45. Plan accordingly."
-        },
-        {
-          "time": "10:00",
-          "activity": "Nara Park — deer feeding",
-          "status": "free",
-          "notes": "Walk east from Nara Station (~10 min). 1,200+ free-roaming sika deer. Deer crackers ¥200/pack.",
-          "address": "Nara Park, 469 Zoushicho, Nara 630-8211, Japan",
-          "mapQuery": "Nara Park deer Nara Japan",
-          "detail": "Nara Park (奈良公園)\nAccess: 10 min walk east from JR or Kintetsu Nara Station · Entry: Free\n\nOver 1,200 sika deer roam freely — considered sacred messengers of the gods, protected by law. They genuinely bow for shika senbei (deer crackers). Buy 5–6 packs (¥200 each) minimum — you will be completely surrounded.\n\nTip: Don't wave crackers in the air. Hold one at a time, low and forward. Small children may find the deer pushy — keep young ones behind adults."
-        },
-        {
-          "time": "11:00–12:30",
-          "activity": "Todai-ji Temple — The Great Buddha",
-          "status": "planning",
-          "notes": "Largest wooden structure in the world. 15m bronze Buddha. ¥1,400pp. Allow 90 min.",
-          "address": "Todai-ji Temple, 406-1 Zoshicho, Nara 630-8211, Japan",
-          "mapQuery": "Todai-ji Temple Nara Great Buddha",
-          "detail": "Todai-ji (東大寺)\nHours: 08:00–17:00 · Entry: ¥1,400pp · Access: 15 min walk from Nara Station through the park\n\nThe Daibutsuden (Great Buddha Hall): Largest wooden structure in the world (current building 1709, rebuilt after fire). Inside: Vairocana Buddha in bronze, 15m tall, 500 tonnes.\n\nThe pillar with the hole: Same size as the Great Buddha's nostril. Squeeze through and enlightenment is guaranteed. Children usually manage. Adults may struggle.\n\n⚠ Time constraint today: Leave Nara by 12:30 to reach the Miyako Odori theatre by 13:45."
-        },
-        {
-          "time": "12:30",
-          "activity": "Kasuga Taisha Shrine — forest path",
-          "status": "free",
-          "notes": "Ancient Shinto shrine. Hundreds of stone and bronze lanterns. Free to walk the approach.",
-          "address": "Kasuga Taisha Shrine, 160 Kasuganocho, Nara 630-8212, Japan",
-          "mapQuery": "Kasuga Taisha Shrine Nara"
-        },
-        {
-          "time": "13:30",
-          "activity": "Lunch — Naramachi old town",
-          "status": "planning",
-          "notes": "Kakinoha-zushi (persimmon leaf sushi, Nara's speciality) and mochi shops.",
-          "address": "Nara Park, 469 Zoushicho, Nara 630-8211, Japan",
-          "mapQuery": "Nara Park Japan"
-        },
-        {
-          "time": "15:30",
           "activity": "JR to Inari Station — Fushimi Inari",
+          "notes": "JR Nara Line: Kyoto Station → Inari (2 stops, ~5 min). ¥150pp — buy at vending machine. No reservation or JR Pass needed.",
+          "cost": 600,
           "status": "planning",
-          "notes": "JR Nara Line → Inari Station (40 min, JR Pass covered). Thousands of vermillion torii gates. Free, open 24hrs.",
-          "address": "Fushimi Inari Taisha, 68 Fukakusa Yabunouchicho, Fushimi Ward, Kyoto 612-0882, Japan",
-          "mapQuery": "Fushimi Inari Taisha Kyoto"
+          "mapQuery": "Fushimi Inari Taisha, Kyoto"
         },
         {
-          "time": "16:40–17:30",
-          "activity": "Fushimi Inari — lower gates walk",
-          "status": "planning",
-          "notes": "One of Japan's most photographed sites. Lower section to first viewing platform: ~35–40 mins return.",
-          "address": "Fushimi Inari Taisha, 68 Fukakusa Yabunouchicho, Fushimi Ward, Kyoto 612-0882, Japan",
-          "mapQuery": "Fushimi Inari Taisha Kyoto"
-        },
-        {
-          "time": "18:00",
-          "activity": "Nishiki Market browse",
+          "time": "09:30",
+          "activity": "⭐ Fushimi Inari — thousands of torii gates",
+          "notes": "One of Japan's most iconic sights. 10,000+ vermillion torii gates winding 4km up Mt Inari. Monday morning is much quieter than weekends. Walk to first viewing platform (~45 min return). Free, open 24hrs.",
+          "cost": 0,
           "status": "free",
-          "notes": "Last chance for Kyoto pickles, yuba tofu and matcha sweets. Stalls close ~18:00.",
-          "address": "Nishiki Market, Nishiki-koji, Nakagyo Ward, Kyoto 604-8054, Japan",
-          "mapQuery": "Nishiki Market Kyoto"
+          "mapQuery": "Fushimi Inari Taisha, Kyoto"
+        },
+        {
+          "time": "11:30",
+          "activity": "Return to Kyoto — Nishiki Market browse",
+          "notes": "JR back to Kyoto Station (¥150pp). Last chance for Kyoto pickles, yuba tofu, matcha sweets.",
+          "cost": 600,
+          "status": "planning"
+        },
+        {
+          "time": "13:00",
+          "activity": "Lunch near Gion",
+          "notes": "Light lunch before the performance. Plenty of options within 5 min of hotel on Shijo-dori.",
+          "cost": 6000,
+          "status": "planning"
         },
         {
           "time": "13:45",
-          "activity": "Arrive Gion Kobu Kaburenjo — tea ceremony check-in",
-          "status": "booked",
-          "notes": "Arrive by 13:45 for pre-show Ryurei-style tea ceremony. Show Order 00101707 QR codes at entrance.",
-          "address": "Gion Kobu Kaburenjo Theater, 570-2 Gionmachi Minamigawa, Higashiyama-ku, Kyoto 605-0074, Japan",
-          "mapQuery": "Gion Kobu Kaburenjo Theater Kyoto",
-          "detail": "Gion Kobu Kaburenjo Theatre\nAddress: 570-2 Gionmachi Minamigawa, Higashiyama-ku, Kyoto\nAccess: 8 min walk from Keihan Gion-Shijo Station Exit 6 · 3 min from Hankyu Kawaramachi Station Exit 1\n\n⚠ Arrive 13:45 — tea ceremony begins approximately 30 minutes before the 14:30 show.\n\nCheck in: Show QR codes at entrance (Order 00101707). Four separate QR codes — use the Show QR Code button in the e-get system to display each in turn, or send to each family member via email/LINE.\n\nTea ceremony: Ryurei-style (tables and chairs, no kneeling). Matcha and wagashi sweet served by geiko and maiko. The glazed sweet plate is yours to take home as a souvenir.\n\nThe renovated strolling garden is accessible before the show — worth a short walk through.\n\n⚠ Souvenirs: Buy any programme books or merchandise BEFORE the show. The exit after the performance leads to a different part of the building where no souvenir stalls exist."
+          "activity": "⭐ Arrive Gion Kobu Kaburenjo — tea ceremony",
+          "notes": "Arrive by 13:45 for Ryurei-style tea ceremony before the performance. Included in First Class ticket. Traditional matcha and wagashi served by apprentice geiko.",
+          "status": "included"
         },
         {
           "time": "14:30",
-          "activity": "152nd Miyako Odori — Geiko & Maiko dance performance",
+          "activity": "⭐ Miyako Odori — Geiko & Maiko dance — BOOKED",
+          "notes": "✅ BOOKED · Order 00101707 · 4 × First Class + Tea Service · Row 22 seats 6–9 · ¥28,860 total · Revolut 9666 · QR via Less Q — screenshot all 4 tickets as backup. 152nd Miyako Odori at Gion Kobu Kaburenjo. ~70 min performance.",
+          "cost": 28860,
           "status": "booked",
-          "notes": "Order 00101707 · 4 x First Class + Tea Service · Row 22 seats 6-9 · ¥28,860 · Revolut 9666 · QR tickets via Less Q — screenshot all 4 QR codes as backup",
-          "address": "Gion Kobu Kaburenjo Theater, 570-2 Gionmachi Minamigawa, Higashiyama-ku, Kyoto 605-0074, Japan",
-          "mapQuery": "Gion Kobu Kaburenjo Theater Kyoto",
-          "url": "https://miyako-odori.jp/english/",
-          "detail": "152nd Miyako Odori 2026\nOrder: 00101707\nDate: Monday 13 April 2026 · 14:30\nVenue: Gion Kobu Kaburenjo Theater, Kyoto\nTickets: 4 × First Class Seat with Tea Service · ¥7,000pp\nSeats: 1階 (Ground Floor) · Row 22 · Seats 6, 7, 8, 9\nTotal: ¥28,860 · Revolut Mastercard 9666\nTicket method: Less Q (electronic) — QR codes in email. Screenshot all 4 as backup.\n\nTheme: Kanei Gyoko Miyako Karei — commemorating the 400th anniversary of the Kanei Imperial Visit. ~50 geiko and maiko from Gion Kobu perform 8 seasonal dance scenes, running ~1 hour continuously with no curtain drops. Shamisen, taiko and vocal accompaniment throughout.\n\nFirst Class seats: Ground floor (1階) · Row 22 is forward-middle — good visibility of stage and side musicians (balcony cannot see side musicians).\n\nPhotography: NOT permitted during the performance.\n\n⚠ Souvenirs: Buy programme books BEFORE the show at the entrance stalls."
+          "detail": "Booking: Order 00101707\nEvent: 152nd Miyako Odori\nVenue: Gion Kobu Kaburenjo, Kyoto\nTickets: 4 × First Class + Tea Service\nSeats: Row 22, seats 6–9\nTotal: ¥28,860\nPayment: Revolut card 9666\nTickets: QR via Less Q app — screenshot all 4 as backup\nTea ceremony: Ryurei-style, from 13:45, included in First Class"
         },
         {
           "time": "15:45",
           "activity": "Post-show — Gion evening walk",
+          "notes": "Walk Hanamikoji Street after the performance. Machiya townhouses, paper lanterns. Geiko and maiko visible on their way to evening engagements.",
           "status": "free",
-          "notes": "Walk Hanamikoji after the performance. Geiko and maiko visible on their way to engagements from ~17:00. This is your last evening in Kyoto.",
-          "address": "Gion District, Higashiyama Ward, Kyoto 605-0073, Japan",
-          "mapQuery": "Gion District Kyoto Hanamikoji",
-          "detail": "After the Miyako Odori ends (~15:30), you are in the heart of Gion with the whole evening ahead.\n\nHanamikoji-dori: 5 min walk from the theatre. Post-show light is perfect for the machiya facades.\n\nGeiko sightings: Best window is 17:00–19:00 when maiko travel between engagements. After seeing them on stage, spotting one in the street in full costume is something else.\n\nMaruyama Park: 15 min walk north through Yasaka Shrine. The illuminated weeping cherry (if still in bloom mid-April) is one of Kyoto's most memorable evening sights.\n\nThis is your last evening in Kyoto — the most culturally rich city of the trip."
+          "mapQuery": "Hanamikoji Street, Gion, Kyoto"
+        },
+        {
+          "time": "17:00",
+          "activity": "Nishiki Market + Teramachi Arcade",
+          "notes": "Final stroll through Kyoto's covered markets. Teramachi has excellent knife and ceramics shops. Last chance for Kyoto-specific gifts.",
+          "status": "free"
         },
         {
           "time": "19:30",
           "activity": "Farewell Kyoto dinner",
-          "status": "booked",
-          "notes": "⚠ BOOK AHEAD. Last night in Kyoto. Traditional kaiseki or high-quality kaiseki donburi.",
-          "address": "Gion District, Hanamikoji-dori, Higashiyama-ku, Kyoto 605-0074, Japan",
-          "mapQuery": "Gion district Kyoto",
-          "detail": "Final dinner in Kyoto — make it count.\nOptions:\n- Mid-range kaiseki: ~¥8,000–12,000pp. Book through hotel concierge or Tablecheck.\n- Pontocho restaurant: If the earlier booking didn't happen on another evening, this is the night.\n- Gion Hanamikoji: Post-Miyako Odori, walking distance from the theatre.\n\nBook via Mitsui Garden Hotel concierge — explain it's your last night in Kyoto and you want something special."
+          "notes": "⚠ BOOK AHEAD. Last night in Kyoto. Traditional kaiseki or high-quality restaurant. Pack bags tonight — checkout tomorrow.",
+          "cost": 20000,
+          "status": "bookahead"
         }
-      ],
-      "title": "Kyoto / Nara Day Trip",
-      "ideas": [
-        {
-          "title": "Fushimi Inari Taisha (return from Nara)",
-          "type": "Shrine",
-          "notes": "Stop en route back. JR to Inari Station (5 min from Kyoto Station). Walk the lower gates to first viewpoint ~35–40 min. Free, open 24hrs. Thousands of vermillion torii gates.",
-          "mapQuery": "Fushimi Inari Taisha Kyoto"
-        },
-        {
-          "title": "Shika senbei — deer crackers, Nara Park",
-          "type": "Experience",
-          "notes": "Buy ¥200 packs from vendors. The deer genuinely bow for them. Buy 5–6 packs minimum — you will be mobbed.",
-          "mapQuery": "Nara Park Japan"
-        },
-        {
-          "title": "Naramachi old town",
-          "type": "District",
-          "notes": "Preserved Edo-era merchant houses. Craft shops, sake merchants, galleries. Quieter than the park area. 15 min south of Todai-ji.",
-          "mapQuery": "Naramachi Nara Japan"
-        },
-        {
-          "title": "Kakinoha-zushi (persimmon leaf sushi)",
-          "type": "Food",
-          "notes": "Nara's speciality. The persimmon leaf acts as a natural preservative and adds gentle flavour. Available throughout Naramachi.",
-          "mapQuery": "Naramachi Nara Japan"
-        },
-        {
-          "title": "Shim restaurant, Kyoto",
-          "type": "Restaurant",
-          "notes": "Recommended by Tokyo locals for traditional Kyoto meals. Worth seeking out for farewell Kyoto dinner."
-        }
-      ],
-      "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day10.jpg"
+      ]
     },
     {
       "date": "2026-04-14",
