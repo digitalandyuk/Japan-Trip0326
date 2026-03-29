@@ -6,7 +6,6 @@
 <title>🇯🇵 Japan Trip 2026 — Evans Family</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
-
 /* ── THEME VARIABLES ── */
 [data-theme="dark"] {
   --ink:#0f0f1a; --ink2:#1a1a2e; --ink3:#12121f;
@@ -22,10 +21,8 @@
   --card-bg:rgba(0,0,0,0.03); --card-hover:rgba(0,0,0,0.06);
   --item-border:rgba(0,0,0,0.07); --shadow:rgba(0,0,0,0.15);
 }
-
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);min-height:100vh;transition:background 0.3s,color 0.3s;}
-
 /* HEADER */
 .header{background:linear-gradient(160deg,#0f0f1a 0%,#1a1a2e 50%,#0f1520 100%);padding:24px 20px 16px;text-align:center;border-bottom:1px solid rgba(232,130,154,0.2);position:relative;overflow:hidden;}
 [data-theme="light"] .header{background:linear-gradient(160deg,#2a1a2e 0%,#3a1a2e 50%,#2a1520 100%);}
@@ -35,11 +32,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .header-dates{font-size:13px;color:var(--gold);margin-top:6px;letter-spacing:1px;font-weight:500;}
 .family-row{display:flex;justify-content:center;gap:8px;margin-top:10px;flex-wrap:wrap;align-items:center;}
 .family-pill{background:rgba(232,130,154,0.12);border:1px solid rgba(232,130,154,0.25);color:#e8829a;font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500;}
-
 /* THEME TOGGLE */
 .theme-toggle{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#fdfbf7;font-size:14px;padding:4px 10px;border-radius:20px;cursor:pointer;font-family:inherit;transition:all 0.2s;margin-left:6px;}
 .theme-toggle:hover{background:rgba(255,255,255,0.2);}
-
 .countdown-bar{display:flex;justify-content:center;gap:12px;margin-top:14px;flex-wrap:wrap;}
 .countdown-unit{text-align:center;background:rgba(232,130,154,0.08);border:1px solid rgba(232,130,154,0.2);border-radius:12px;padding:8px 14px;min-width:60px;}
 .countdown-num{font-family:'Noto Serif JP',serif;font-size:24px;font-weight:700;color:#e8829a;line-height:1;}
@@ -52,19 +47,16 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .sync-dot.error{background:#e05050;}
 .refresh-btn{background:none;border:1px solid rgba(255,255,255,0.15);color:var(--muted);font-size:11px;padding:3px 10px;border-radius:12px;cursor:pointer;font-family:inherit;transition:all 0.2s;}
 .refresh-btn:hover{border-color:var(--blossom);color:var(--blossom);}
-
 /* TODAY BANNER */
 .today-banner{background:linear-gradient(135deg,rgba(74,158,142,0.2),rgba(74,158,142,0.08));border:1px solid rgba(74,158,142,0.4);border-radius:12px;padding:12px 16px;margin:12px 0 4px;display:flex;align-items:center;gap:10px;cursor:pointer;transition:all 0.2s;}
 .today-banner:hover{background:rgba(74,158,142,0.25);}
 .today-banner-text{font-size:13px;font-weight:600;color:var(--jade);}
 .today-banner-sub{font-size:11px;color:var(--muted);margin-top:2px;}
 .today-badge{font-size:20px;flex-shrink:0;}
-
 /* TODAY DAY HIGHLIGHT */
 .day-card.today-day{border-color:rgba(74,158,142,0.5);box-shadow:0 0 0 1px rgba(74,158,142,0.3),0 4px 20px rgba(74,158,142,0.15);}
 .day-card.today-day .day-num{color:var(--jade);}
 .today-pill{font-size:9px;font-weight:700;background:rgba(74,158,142,0.2);color:var(--jade);border:1px solid rgba(74,158,142,0.4);padding:2px 7px;border-radius:8px;letter-spacing:0.5px;text-transform:uppercase;margin-left:6px;}
-
 /* NAV */
 .nav-tabs{display:flex;background:var(--ink2);border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none;justify-content:flex-start;}
 @media(min-width:700px){.nav-tabs{justify-content:center;}}
@@ -72,10 +64,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .nav-tab{flex-shrink:0;padding:12px 14px;font-size:11.5px;font-weight:500;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;font-family:inherit;background:none;border-top:none;border-left:none;border-right:none;}
 .nav-tab:hover{color:var(--white);}
 .nav-tab.active{color:var(--blossom);border-bottom-color:var(--blossom);}
-
 .content{max-width:760px;margin:0 auto;padding:0 16px 80px;}
 .section-title{font-size:11px;color:var(--gold);font-weight:600;letter-spacing:0.5px;text-transform:uppercase;padding:14px 0 8px;}
-
 /* OVERVIEW */
 .overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:20px 0 8px;}
 .stat-card{background:var(--card-bg);border:1px solid var(--border);border-radius:12px;padding:14px 12px;text-align:center;}
@@ -95,7 +85,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .status-legend{display:flex;flex-wrap:wrap;gap:8px;padding:4px 0 12px;}
 .legend-item{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--muted);}
 .legend-dot{width:8px;height:8px;border-radius:3px;flex-shrink:0;}
-
 /* DAYS */
 .days-container{padding-top:12px;}
 .day-card{margin-bottom:8px;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--card-bg);transition:border-color 0.3s,box-shadow 0.3s;}
@@ -110,7 +99,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .day-card.open .day-chevron{transform:rotate(90deg);}
 .day-body{display:none;padding:0 16px 14px;}
 .day-card.open .day-body{display:block;}
-
 /* Day map */
 .day-map-btn{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--blossom);background:rgba(232,130,154,0.1);border:1px solid rgba(232,130,154,0.25);border-radius:20px;padding:5px 12px;cursor:pointer;margin:8px 0 4px;font-family:inherit;transition:all 0.2s;}
 .day-map-btn:hover{background:rgba(232,130,154,0.2);}
@@ -119,7 +107,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .day-osm-frame.visible{display:block;}
 /* ── Day image banner ── */
 .day-banner-img{width:100%;aspect-ratio:16/9;object-fit:contain;border-radius:12px;margin:10px 0 6px;display:block;background:var(--ink2);}
-/* ── Ideas section ── */
+/* ── IDEAS section ── */
 .ideas-toggle{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--gold);background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.3);border-radius:20px;padding:5px 12px;cursor:pointer;margin:10px 0 4px;font-family:inherit;transition:all 0.2s;}
 .ideas-toggle:hover{background:rgba(201,168,76,0.2);}
 .ideas-toggle.open{background:rgba(201,168,76,0.2);}
@@ -133,38 +121,36 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .idea-map:hover{opacity:1;}
 .idea-url{font-size:10.5px;color:var(--jade);text-decoration:none;display:inline-block;margin-top:4px;margin-left:8px;opacity:0.8;}
 .idea-url:hover{opacity:1;}
-.day-osm-frame.visible{display:block;}
-
-/* ITEMS */
-.item{display:grid;grid-template-columns:52px 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--item-border);align-items:start;}
-.item-time{font-size:11px;color:var(--muted);font-weight:500;padding-top:2px;text-align:right;line-height:1.3;}
-.item-main{min-width:0;}
-.item-activity{font-size:13px;font-weight:500;line-height:1.4;}
-.item-notes{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.5;}
-
-/* ITEM ACTIONS — fixed layout, no crowding */
-.item-actions{display:flex;align-items:center;gap:8px;margin-top:6px;}
-.item-status-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:5px;}
-.item-info-row{margin-top:6px;}
+/* ── DON'T FORGET section ── */
+.dont-forget-section{margin-top:14px;border-top:1px solid rgba(201,168,76,0.2);padding-top:10px;}
+.dont-forget-title{font-size:10px;font-weight:700;color:var(--gold);letter-spacing:0.5px;text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:5px;}
+.dont-forget-item{display:flex;align-items:flex-start;gap:10px;padding:7px 10px;margin-bottom:5px;background:rgba(201,168,76,0.05);border:1px solid rgba(201,168,76,0.15);border-radius:8px;}
+.dont-forget-icon{font-size:13px;flex-shrink:0;margin-top:1px;}
+.dont-forget-main{flex:1;min-width:0;}
+.dont-forget-text{font-size:12px;font-weight:500;color:var(--white);line-height:1.4;}
+.dont-forget-tag{font-size:9px;font-weight:600;color:var(--gold);background:rgba(201,168,76,0.15);border-radius:6px;padding:1px 6px;margin-right:5px;text-transform:uppercase;letter-spacing:0.3px;}
+.dont-forget-notes{font-size:10.5px;color:var(--muted);margin-top:3px;line-height:1.4;}
+.dont-forget-link{font-size:10.5px;color:var(--jade);text-decoration:none;display:inline-block;margin-top:4px;opacity:0.8;}
+.dont-forget-link:hover{opacity:1;}
 /* ── IDEAS PANEL ── */
-.ideas-toggle{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--gold);background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.25);border-radius:20px;padding:5px 12px;cursor:pointer;margin:10px 0 4px;font-family:inherit;transition:all 0.2s;}
-.ideas-toggle:hover{background:rgba(201,168,76,0.2);}
-.ideas-toggle.open{background:rgba(201,168,76,0.2);}
 .ideas-panel{display:none;margin:6px 0 4px;border:1px solid rgba(201,168,76,0.2);border-radius:10px;background:rgba(201,168,76,0.04);overflow:hidden;}
 .ideas-panel.open{display:block;}
 .ideas-header{font-size:10px;font-weight:600;color:var(--gold);letter-spacing:0.5px;text-transform:uppercase;padding:8px 12px 4px;}
-.idea-item{padding:8px 12px;border-top:1px solid rgba(201,168,76,0.12);}
-.idea-item:first-of-type{border-top:none;}
-.idea-title{font-size:12px;font-weight:600;color:var(--white);margin-bottom:2px;}
-.idea-type{font-size:10px;color:var(--gold);font-weight:500;margin-bottom:3px;}
-.idea-notes{font-size:11px;color:var(--muted);line-height:1.5;}
 .idea-link{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;color:var(--blossom);text-decoration:none;margin-top:4px;opacity:0.8;}
 .idea-link:hover{opacity:1;}
 .item-maplink{font-size:11px;color:var(--blossom);text-decoration:none;opacity:0.7;transition:opacity 0.2s;flex-shrink:0;}
 .item-maplink:hover{opacity:1;}
 .detail-btn{background:rgba(232,130,154,0.12);border:1px solid rgba(232,130,154,0.25);color:var(--blossom);font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;cursor:pointer;font-family:inherit;transition:all 0.2s;flex-shrink:0;letter-spacing:0.3px;}
 .detail-btn:hover{background:rgba(232,130,154,0.25);}
-
+/* ITEMS */
+.item{display:grid;grid-template-columns:52px 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--item-border);align-items:start;}
+.item-time{font-size:11px;color:var(--muted);font-weight:500;padding-top:2px;text-align:right;line-height:1.3;}
+.item-main{min-width:0;}
+.item-activity{font-size:13px;font-weight:500;line-height:1.4;}
+.item-notes{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.5;}
+.item-actions{display:flex;align-items:center;gap:8px;margin-top:6px;}
+.item-status-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:5px;}
+.item-info-row{margin-top:6px;}
 /* STATUS BADGES */
 .status-badge{font-size:9px;font-weight:700;padding:2px 7px;border-radius:8px;letter-spacing:0.5px;margin-top:4px;display:inline-block;text-transform:uppercase;}
 .s-booked    {background:rgba(224,80,80,0.2);   color:#e05050; border:1px solid rgba(224,80,80,0.3);}
@@ -175,7 +161,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .s-optional  {background:rgba(158,110,201,0.2); color:#9e6ec9; border:1px solid rgba(158,110,201,0.3);}
 .s-free      {background:rgba(122,184,122,0.2); color:#7ab87a; border:1px solid rgba(122,184,122,0.3);}
 .s-paid      {background:rgba(74,158,142,0.2);  color:var(--jade); border:1px solid rgba(74,158,142,0.3);}
-
 /* MODAL */
 .modal-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:1000;align-items:flex-end;justify-content:center;}
 .modal-backdrop.open{display:flex;}
@@ -190,7 +175,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .modal-body{font-size:13px;color:rgba(255,255,255,0.85);line-height:1.9;white-space:pre-line;}
 [data-theme="light"] .modal-body{color:rgba(0,0,0,0.8);}
 [data-theme="light"] .modal-title{color:#1a1a2e;}
-
 /* TRANSPORT CARDS */
 .transport-card{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:10px;}
 .transport-route{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap;}
@@ -204,7 +188,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .transport-status.confirmed{background:rgba(74,158,142,0.15);color:var(--jade);}
 .transport-status.book{background:rgba(201,130,50,0.15);color:#e09040;}
 .transport-note{font-size:11px;color:var(--muted);margin-top:8px;padding-top:8px;border-top:1px solid var(--item-border);line-height:1.5;}
-
 /* LINKS TAB */
 .links-group{margin-bottom:20px;}
 .links-group-title{font-size:12px;font-weight:600;color:var(--gold);letter-spacing:0.5px;text-transform:uppercase;padding:10px 0 8px;}
@@ -214,7 +197,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .link-name{font-size:13px;font-weight:500;color:var(--white);}
 .link-desc{font-size:11px;color:var(--muted);margin-top:1px;}
 .link-arrow{margin-left:auto;color:var(--blossom);font-size:14px;flex-shrink:0;}
-
 /* CURRENCY */
 .currency-widget{background:var(--card-bg);border:1px solid var(--border);border-radius:16px;padding:20px;margin-top:12px;}
 .currency-title{font-size:13px;font-weight:600;margin-bottom:16px;color:var(--white);}
@@ -230,7 +212,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .quick-amounts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;}
 .quick-btn{font-size:11px;font-weight:600;padding:5px 12px;background:var(--card-bg);border:1px solid var(--border);color:var(--muted);border-radius:14px;cursor:pointer;font-family:inherit;transition:all 0.2s;}
 .quick-btn:hover{border-color:var(--blossom);color:var(--blossom);}
-
 /* EMERGENCY TAB */
 .emergency-card{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:10px;}
 .emergency-card.urgent{border-color:rgba(224,80,80,0.4);background:rgba(224,80,80,0.05);}
@@ -244,7 +225,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .emergency-value a:hover{text-decoration:underline;}
 .emergency-number{font-size:16px;font-weight:700;color:var(--jade);}
 .emergency-banner{background:rgba(224,80,80,0.1);border:1px solid rgba(224,80,80,0.3);border-radius:12px;padding:12px 16px;margin-bottom:16px;font-size:12px;color:#e05050;line-height:1.5;text-align:center;font-weight:600;}
-
 /* CHECKLIST */
 .checklist-container{padding-top:12px;}
 .checklist-group{margin-bottom:16px;}
@@ -254,7 +234,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .check-meta{font-size:11px;color:var(--muted);margin-top:2px;}
 .check-who{font-size:10px;padding:2px 8px;border-radius:8px;font-weight:600;flex-shrink:0;margin-top:2px;background:rgba(232,130,154,0.15);color:var(--blossom);border:1px solid rgba(232,130,154,0.25);}
 .checklist-notice{background:rgba(232,130,154,0.1);border:1px solid rgba(232,130,154,0.3);border-radius:12px;padding:12px 16px;margin-bottom:18px;font-size:12.5px;color:var(--blossom);line-height:1.5;text-align:center;}
-
 /* MAP */
 .map-view-toggle{display:flex;gap:8px;padding:12px 0 8px;}
 .map-toggle-btn{padding:6px 16px;font-size:12px;font-weight:500;background:var(--card-bg);border:1px solid var(--border);color:var(--muted);border-radius:20px;cursor:pointer;font-family:inherit;transition:all 0.2s;}
@@ -266,13 +245,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .map-city-btn.active{background:rgba(232,130,154,0.15);border-color:rgba(232,130,154,0.4);color:var(--blossom);}
 .osm-frame{width:100%;height:420px;border:none;border-radius:14px;border:1px solid var(--border);display:block;}
 .route-svg-wrap{border-radius:14px;overflow:hidden;border:1px solid var(--border);}
-
 /* PHRASES */
 .phrase-card{display:flex;align-items:center;gap:14px;padding:12px 16px;margin-bottom:8px;background:var(--card-bg);border:1px solid var(--border);border-radius:12px;}
 .phrase-jp{font-family:'Noto Serif JP',serif;font-size:18px;min-width:110px;}
 .phrase-en{font-size:13px;font-weight:500;}
 .phrase-rom{font-size:11px;color:var(--blossom);margin-top:2px;font-style:italic;}
-
 /* WEATHER */
 .weather-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding-top:4px;}
 @media(min-width:500px){.weather-grid{grid-template-columns:repeat(3,1fr);}}
@@ -284,7 +261,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .weather-range{font-size:11px;color:var(--muted);margin-top:2px;}
 .weather-desc{font-size:11px;color:var(--gold);margin-top:6px;font-weight:500;}
 .weather-detail{font-size:10px;color:var(--muted);margin-top:8px;line-height:1.6;}
-
 /* TIPS */
 .tip-section{margin-bottom:20px;}
 .tip-section-title{font-size:12px;font-weight:600;color:var(--gold);letter-spacing:0.5px;text-transform:uppercase;padding:10px 0 8px;}
@@ -293,7 +269,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 </style>
 </head>
 <body>
-
 <div class="header">
   <div class="header-jp">日本家族旅行</div>
   <h1>🇯🇵 Japan Family Trip 2026</h1>
@@ -310,7 +285,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
     <button class="refresh-btn" onclick="loadData()">↻ Refresh</button>
   </div>
 </div>
-
 <div class="nav-tabs">
   <button class="nav-tab active" onclick="switchTab('overview',this)">Overview</button>
   <button class="nav-tab" onclick="switchTab('days',this)">Day by Day</button>
@@ -324,7 +298,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
   <button class="nav-tab" onclick="switchTab('links',this)">🔗 Links</button>
   <button class="nav-tab" onclick="switchTab('emergency',this)">🆘 Emergency</button>
 </div>
-
 <div class="content">
   <div id="tab-overview"></div>
   <div id="tab-days"      style="display:none"></div>
@@ -338,7 +311,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
   <div id="tab-links"     style="display:none"></div>
   <div id="tab-emergency" style="display:none"></div>
 </div>
-
 <!-- DETAIL MODAL -->
 <div class="modal-backdrop" id="detail-modal" onclick="closeDetailModal(event)">
   <div class="modal-box">
@@ -349,7 +321,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
     <div class="modal-body" id="modal-body"></div>
   </div>
 </div>
-
 <script>
 /* ═══════════════════════════════════════════
    CONFIG & STATE
@@ -357,8 +328,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 const RAW_URL='https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japan-trip.json';
 const TRIP_START=new Date('2026-04-03');
 const TRIP_END  =new Date('2026-04-18');
-// Day dates for "on this day" matching
-// Each entry: { dayIndex, isoDate }
 const DAY_DATES=[
   {di:0, date:'2026-04-03'},{di:1, date:'2026-04-04'},{di:2, date:'2026-04-05'},
   {di:3, date:'2026-04-06'},{di:4, date:'2026-04-07'},{di:5, date:'2026-04-08'},
@@ -368,8 +337,15 @@ const DAY_DATES=[
   {di:15,date:'2026-04-18'},
 ];
 let tripData=null;
-let currencyMode='yenToGbp'; // or 'gbpToYen'
-const YEN_RATE=190; // ¥ per £1 — update before trip
+let currencyMode='yenToGbp';
+const YEN_RATE=190;
+
+/* ── Don't Forget classification ── */
+const DONT_FORGET_TYPES=['admin','prep','packing','tech','practical','note'];
+function isDontForget(idea){
+  const t=(idea.type||'').toLowerCase();
+  return DONT_FORGET_TYPES.some(dt=>t.includes(dt));
+}
 
 /* ═══════════════════════════════════════════
    THEME
@@ -380,7 +356,6 @@ function toggleTheme(){
   html.setAttribute('data-theme',isDark?'light':'dark');
   document.getElementById('theme-btn').textContent=isDark?'🌙 Dark':'☀️ Light';
 }
-
 /* ═══════════════════════════════════════════
    STATUS
 ═══════════════════════════════════════════ */
@@ -410,7 +385,6 @@ function resolveStatus(item){
   }
   return STATUS_MAP[s]||{cls:'s-planning',label:item.status||''};
 }
-
 /* ═══════════════════════════════════════════
    COUNTDOWN
 ═══════════════════════════════════════════ */
@@ -434,7 +408,6 @@ function renderCountdown(){
 }
 renderCountdown();
 setInterval(renderCountdown,1000);
-
 /* ═══════════════════════════════════════════
    TODAY DETECTION
 ═══════════════════════════════════════════ */
@@ -444,7 +417,6 @@ function getTodayIndex(){
   const match=DAY_DATES.find(d=>d.date===todayISO);
   return match?match.di:-1;
 }
-
 function renderTodayBanner(){
   const idx=getTodayIndex();
   if(idx<0) return '';
@@ -459,11 +431,9 @@ function renderTodayBanner(){
     </div>
   </div>`;
 }
-
 function goToToday(){
   const idx=getTodayIndex();
   if(idx<0) return;
-  // Switch to days tab
   switchTab('days',document.querySelector('.nav-tab:nth-child(2)'));
   setTimeout(()=>{
     const card=document.getElementById('day-'+idx);
@@ -472,7 +442,6 @@ function goToToday(){
     card.scrollIntoView({behavior:'smooth',block:'start'});
   },100);
 }
-
 /* ═══════════════════════════════════════════
    DATA LOAD
 ═══════════════════════════════════════════ */
@@ -482,7 +451,6 @@ function setSyncStatus(state,msg){
   if(dot) dot.className='sync-dot'+(state==='loading'?' loading':state==='error'?' error':'');
   if(txt) txt.textContent=msg;
 }
-
 async function loadData(){
   setSyncStatus('loading','Fetching latest data…');
   try{
@@ -498,7 +466,6 @@ async function loadData(){
   renderDays();
   renderChecklist();
 }
-
 /* ═══════════════════════════════════════════
    OVERVIEW
 ═══════════════════════════════════════════ */
@@ -559,7 +526,6 @@ function renderOverview(){
     </div>`;
   setTimeout(ovConvert,50);
 }
-
 /* ═══════════════════════════════════════════
    DAYS TAB
 ═══════════════════════════════════════════ */
@@ -580,7 +546,6 @@ function getOSMForDay(loc){
   return null;
 }
 const dayMapOpen={};
-
 function formatDayDate(ds){
   if(!ds) return'';
   if(/^\d{4}-\d{2}-\d{2}$/.test(ds)){
@@ -589,32 +554,55 @@ function formatDayDate(ds){
   return ds;
 }
 
-function buildIdeasHTML(day, di){
-  const ideas = day.ideas||[];
-  if(!ideas.length) return '';
-  let rows = '';
-  for(const idea of ideas){
-    const mapLink = idea.mapQuery
-      ? '<a class="idea-map" href="https://maps.google.com/?q='+encodeURIComponent(idea.mapQuery)+'" target="_blank">📍 Map</a>'
-      : '';
-    const urlLink = idea.url
-      ? '<a class="idea-url" href="'+idea.url+'" target="_blank">🔗 Link</a>'
-      : '';
-    rows += '<div class="idea-item">'
-      + '<div class="idea-type">'+(idea.type||'Idea')+'</div>'
-      + '<div class="idea-title">'+(idea.title||'')+'</div>'
-      + '<div class="idea-notes">'+(idea.notes||'')+'</div>'
-      + mapLink + urlLink
-      + '</div>';
-  }
-  return '<button class="ideas-toggle" id="ideas-btn-'+di+'" onclick="toggleIdeas('+di+')">'
-    + '💡 '+ideas.length+' ideas &amp; tips for this day</button>'
-    + '<div class="ideas-section" id="ideas-'+di+'">'+rows+'</div>';
+/* ── Don't Forget section ── */
+function buildDontForgetHTML(day,di){
+  const reminders=(day.ideas||[]).filter(isDontForget);
+  if(!reminders.length) return '';
+  const typeIcon={admin:'📋',prep:'🎒',packing:'🧳',tech:'📱',practical:'💡',note:'📌'};
+  const rows=reminders.map(idea=>{
+    const tKey=Object.keys(typeIcon).find(k=>(idea.type||'').toLowerCase().includes(k))||'note';
+    const icon=typeIcon[tKey];
+    const linkHtml=idea.url?`<a class="dont-forget-link" href="${idea.url}" target="_blank">🔗 Link</a>`:'';
+    return `<div class="dont-forget-item">
+      <div class="dont-forget-icon">${icon}</div>
+      <div class="dont-forget-main">
+        <div class="dont-forget-text"><span class="dont-forget-tag">${idea.type||''}</span>${idea.title||''}</div>
+        ${idea.notes?`<div class="dont-forget-notes">${idea.notes}</div>`:''}
+        ${linkHtml}
+      </div>
+    </div>`;
+  }).join('');
+  return `<div class="dont-forget-section">
+    <div class="dont-forget-title">⚠ Don't Forget</div>
+    ${rows}
+  </div>`;
 }
+
+/* ── Ideas section (activities, restaurants, tips only) ── */
+function buildIdeasHTML(day,di){
+  const ideas=(day.ideas||[]).filter(idea=>!isDontForget(idea));
+  if(!ideas.length) return '';
+  let rows='';
+  for(const idea of ideas){
+    const mapLink=idea.mapQuery
+      ?`<a class="idea-map" href="https://maps.google.com/?q=${encodeURIComponent(idea.mapQuery)}" target="_blank">📍 Map</a>`:'';
+    const urlLink=idea.url
+      ?`<a class="idea-url" href="${idea.url}" target="_blank">🔗 Link</a>`:'';
+    rows+=`<div class="idea-item">`
+      +`<div class="idea-type">${idea.type||'Idea'}</div>`
+      +`<div class="idea-title">${idea.title||''}</div>`
+      +`<div class="idea-notes">${idea.notes||''}</div>`
+      +mapLink+urlLink
+      +`</div>`;
+  }
+  return `<button class="ideas-toggle" id="ideas-btn-${di}" onclick="toggleIdeas(${di})">`
+    +`💡 ${ideas.length} idea${ideas.length===1?'':'s'} for this day</button>`
+    +`<div class="ideas-section" id="ideas-${di}">${rows}</div>`;
+}
+
 function renderDays(){
   const days=(tripData&&tripData.days)||[];
   const todayIdx=getTodayIndex();
-  // Build detail registry — avoids backtick/quote injection in onclick attributes
   window._details=[];
   document.getElementById('tab-days').innerHTML='<div class="days-container">'+days.map((day,di)=>{
     const items=day.items||[];
@@ -623,10 +611,8 @@ function renderDays(){
     const dayTitle=day.title||day.location||'';
     const osmInfo=getOSMForDay(day.location||'');
     const isToday=(di===todayIdx);
-
     const itemsHTML=items.map(item=>{
       const sm=resolveStatus(item);
-      // Map link and detail button go in item-actions row, clearly separated
       const mapLink=item.mapQuery
         ?`<a class="item-maplink" href="https://maps.google.com/?q=${encodeURIComponent(item.mapQuery)}" target="_blank" title="Open in Google Maps">📍 Map</a>`:'';
       let detailBtn='';
@@ -635,7 +621,6 @@ function renderDays(){
         window._details.push({title:item.activity||'',body:item.detail});
         detailBtn=`<button class="detail-btn" onclick="openDetailByIndex(${idx})">ℹ Info</button>`;
       }
-      // Map on right of status row; Info below on its own line
       const statusRow=`<div class="item-status-row"><span class="status-badge ${sm.cls}">${sm.label}</span>${mapLink}</div>`;
       return `<div class="item">
         <div class="item-time">${item.time||''}</div>
@@ -647,12 +632,10 @@ function renderDays(){
         </div>
       </div>`;
     }).join('');
-
     const mapSection=osmInfo?`
       <button class="day-map-btn" id="mapbtn-${di}" onclick="toggleDayMap(${di})">🗺 Show ${osmInfo.city} map</button>
       <iframe id="daymap-${di}" class="day-osm-frame" src="" data-src="${osmInfo.url}"
         allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`:'';
-
     return `<div class="day-card${isToday?' today-day':''}" id="day-${di}">
       <div class="day-header" onclick="toggleDay(${di})">
         <div class="day-num">${dayNum}</div>
@@ -667,11 +650,10 @@ function renderDays(){
         ${day.image?`<img class="day-banner-img" src="${day.image}" alt="${dayTitle}" loading="lazy" onerror="this.style.display='none'">`:''}
         ${mapSection}${itemsHTML}
         ${buildIdeasHTML(day,di)}
+        ${buildDontForgetHTML(day,di)}
       </div>
     </div>`;
   }).join('')+'</div>';
-
-  // Auto-open today's day if trip is underway
   if(todayIdx>=0){
     setTimeout(()=>{
       const card=document.getElementById('day-'+todayIdx);
@@ -679,7 +661,6 @@ function renderDays(){
     },200);
   }
 }
-
 function toggleDay(di){document.getElementById('day-'+di).classList.toggle('open');}
 function toggleIdeas(di){
   const section=document.getElementById('ideas-'+di);
@@ -687,9 +668,9 @@ function toggleIdeas(di){
   if(!section||!btn) return;
   const open=section.classList.toggle('visible');
   btn.classList.toggle('open',open);
-  btn.textContent=open?`✕ Hide ideas`:`💡 ${section.querySelectorAll('.idea-item').length} ideas & tips for this day`;
+  const count=section.querySelectorAll('.idea-item').length;
+  btn.textContent=open?`✕ Hide ideas`:`💡 ${count} idea${count===1?'':'s'} for this day`;
 }
-
 function toggleDayMap(di){
   const frame=document.getElementById('daymap-'+di);
   const btn=document.getElementById('mapbtn-'+di);
@@ -705,7 +686,6 @@ function toggleDayMap(di){
     btn.textContent=btn.textContent.replace('Hide','Show');
   }
 }
-
 /* ═══════════════════════════════════════════
    DETAIL MODAL
 ═══════════════════════════════════════════ */
@@ -725,7 +705,6 @@ function closeDetailModal(e){
   document.getElementById('detail-modal').classList.remove('open');
   document.body.style.overflow='';
 }
-
 /* ═══════════════════════════════════════════
    TRANSPORT TAB
 ═══════════════════════════════════════════ */
@@ -745,7 +724,6 @@ function renderTransport(){
     {from:'Kansai Airport',to:'Seoul Incheon T2',type:'Flight',date:'Fri 17 Apr',time:'19:45 → 21:40',duration:'1h 55m',cost:'Included',how:'Asiana OZ113 · A350 · Seats 24H,J / 25H,J',status:'confirmed',ref:'PNR D2MKD6'},
     {from:'Seoul Incheon',to:'London Heathrow',type:'Flight',date:'Sat 18 Apr',time:'12:25 → 18:50',duration:'~11h 45m',cost:'Included',how:'Virgin Atlantic VS209 · Seats 23D,23F,24D,24F',status:'confirmed',ref:'Ref E3FYHB'},
   ];
-
   document.getElementById('tab-transport').innerHTML=`<div style="padding-top:12px;">
     <div class="section-title">All Journey Legs — in order</div>
     <p style="font-size:11px;color:var(--muted);padding-bottom:12px;line-height:1.6;">Every major transfer, flight and train leg. Tap the day items for full booking details.</p>
@@ -770,7 +748,6 @@ function renderTransport(){
     </div>`).join('')}
   </div>`;
 }
-
 /* ═══════════════════════════════════════════
    MAPS TAB
 ═══════════════════════════════════════════ */
@@ -820,7 +797,6 @@ function switchMapCity(idx,btn){
   const f=document.getElementById('main-osm-frame');
   if(f) f.src=CITIES[idx].osm;
 }
-
 /* ═══════════════════════════════════════════
    CHECKLIST
 ═══════════════════════════════════════════ */
@@ -846,7 +822,6 @@ function renderChecklist(){
     ${html||'<p style="color:var(--muted);font-size:13px;padding:12px 0;">No checklist data loaded yet — tap Refresh above.</p>'}
   </div>`;
 }
-
 /* ═══════════════════════════════════════════
    WEATHER
 ═══════════════════════════════════════════ */
@@ -856,7 +831,7 @@ function renderWeather(){
     {city:'Tokyo',flag:'🇯🇵',dates:'5–8 Apr',icon:'🌸',avg:'16°C',range:'11–20°C',desc:'Peak cherry blossom season',details:'Warm days, cool evenings\nPossible light showers\nIdeal sightseeing weather'},
     {city:'Hakone',flag:'⛰️',dates:'8–10 Apr',icon:'⛅',avg:'12°C',range:'7–16°C',desc:'Cooler at altitude',details:'Fuji views best in morning\nCloud cover common afternoons\nWarm layers for onsen evenings'},
     {city:'Kyoto',flag:'⛩️',dates:'10–14 Apr',icon:'🌸',avg:'17°C',range:'11–21°C',desc:'Beautiful spring weather',details:'Late cherry blossoms likely\nComfortable walking temps\nGo early to avoid crowds'},
-    {city:'Nara',flag:'🦌',dates:'~13 Apr',icon:'🌤',avg:'17°C',range:'11–21°C',desc:'Same as Kyoto region',details:'Day trip — very pleasant\nDeer park lovely in spring\nLight layers sufficient'},
+    {city:'Nara',flag:'🦌',dates:'~15 Apr',icon:'🌤',avg:'17°C',range:'11–21°C',desc:'Same as Kyoto region',details:'Day trip — very pleasant\nDeer park lovely in spring\nLight layers sufficient'},
     {city:'Osaka',flag:'🎡',dates:'14–17 Apr',icon:'🌤',avg:'18°C',range:'13–22°C',desc:'Warm & bright',details:'Warmest city on the trip\nGreat street food weather\nLow rain probability'},
   ];
   document.getElementById('tab-weather').innerHTML=`<div style="padding-top:12px;">
@@ -873,7 +848,6 @@ function renderWeather(){
     <p style="font-size:11px;color:var(--muted);padding:12px 0 4px;text-align:center;font-style:italic;">Based on April historical averages. Check closer to departure.</p>
   </div>`;
 }
-
 /* ═══════════════════════════════════════════
    PHRASES
 ═══════════════════════════════════════════ */
@@ -904,7 +878,6 @@ function renderPhrases(){
   </div>`;
 }
 function copyPhrase(t){navigator.clipboard?.writeText(t).catch(()=>{});}
-
 /* ═══════════════════════════════════════════
    TIPS
 ═══════════════════════════════════════════ */
@@ -947,7 +920,6 @@ function renderTips(){
     </div>`).join('')
   }</div>`;
 }
-
 /* ═══════════════════════════════════════════
    LINKS TAB
 ═══════════════════════════════════════════ */
@@ -970,7 +942,7 @@ function renderLinks(){
       {icon:'🏨',name:'Grand Hyatt Incheon',desc:'Expedia Conf: 150513RA052227 · Pay at property',url:'https://www.hyatt.com'},
     ]},
     {title:'🍱 Restaurants & Food',links:[
-      {icon:'🎋',name:'Kyoto Arashiyama Nishiki',desc:'Traditional kaiseki in Arashiyama — signature sakura-juku-zen box-set, lunch & dinner, riverside setting next to Togetsukyo Bridge. Book ahead. Closed Tuesdays.',url:'https://www.arashiyama-nishiki.com/'},
+      {icon:'🎋',name:'Kyoto Arashiyama Nishiki',desc:'Traditional kaiseki in Arashiyama — signature sakura-juku-zen box-set, lunch & dinner',url:'https://www.arashiyama-nishiki.com/'},
     ]},
     {title:'🌏 Useful Sites',links:[
       {icon:'🌦',name:'Japan Meteorological Agency',desc:'Official Japan weather forecasts',url:'https://www.jma.go.jp/en/week/'},
@@ -978,7 +950,6 @@ function renderLinks(){
       {icon:'🎌',name:'Visit Japan Web (Entry)',desc:'Immigration & customs pre-registration',url:'https://vjw-lp.digital.go.jp/en/'},
       {icon:'💊',name:'JNTO Travel Info',desc:'Japan National Tourism Organisation',url:'https://www.japan.travel/en/'},
     ]},
-
   ];
   document.getElementById('tab-links').innerHTML=`<div style="padding-top:12px;">
     ${groups.map(g=>`<div class="links-group">
@@ -1015,7 +986,6 @@ function renderLinks(){
   </div>`;
   convertCurrency();
 }
-
 function ovConvert(){
   const input=parseFloat(document.getElementById('ov-currency-input')?.value)||0;
   const result=document.getElementById('ov-result');
@@ -1059,7 +1029,7 @@ function convertCurrency(){
   const result=document.getElementById('currency-result');
   if(!result) return;
   if(currencyMode==='yenToGbp'){
-    result.textContent='£'+( input/YEN_RATE).toFixed(2);
+    result.textContent='£'+(input/YEN_RATE).toFixed(2);
   }else{
     result.textContent='¥'+(input*YEN_RATE).toLocaleString('en-GB',{maximumFractionDigits:0});
   }
@@ -1092,134 +1062,54 @@ function setAmount(v){
   const inp=document.getElementById('currency-input');
   if(inp){inp.value=v;convertCurrency();}
 }
-
 /* ═══════════════════════════════════════════
    EMERGENCY TAB
 ═══════════════════════════════════════════ */
 function renderEmergency(){
   document.getElementById('tab-emergency').innerHTML=`<div style="padding-top:12px;">
     <div class="emergency-banner">🆘 Save this page to your home screen before you leave — it works offline</div>
-
     <div class="emergency-card urgent">
       <div class="emergency-card-title">🚨 Emergency Numbers</div>
-      <div class="emergency-row">
-        <span class="emergency-label">Police (Japan)</span>
-        <span class="emergency-value"><span class="emergency-number"><a href="tel:110">110</a></span></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Ambulance/Fire (Japan)</span>
-        <span class="emergency-value"><span class="emergency-number"><a href="tel:119">119</a></span></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Police (S. Korea)</span>
-        <span class="emergency-value"><span class="emergency-number"><a href="tel:112">112</a></span></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Ambulance (S. Korea)</span>
-        <span class="emergency-value"><span class="emergency-number"><a href="tel:119">119</a></span></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">KwikPark (car)</span>
-        <span class="emergency-value"><a href="tel:07850366784">07850 366784</a></span>
-      </div>
+      <div class="emergency-row"><span class="emergency-label">Police (Japan)</span><span class="emergency-value"><span class="emergency-number"><a href="tel:110">110</a></span></span></div>
+      <div class="emergency-row"><span class="emergency-label">Ambulance/Fire (Japan)</span><span class="emergency-value"><span class="emergency-number"><a href="tel:119">119</a></span></span></div>
+      <div class="emergency-row"><span class="emergency-label">Police (S. Korea)</span><span class="emergency-value"><span class="emergency-number"><a href="tel:112">112</a></span></span></div>
+      <div class="emergency-row"><span class="emergency-label">Ambulance (S. Korea)</span><span class="emergency-value"><span class="emergency-number"><a href="tel:119">119</a></span></span></div>
+      <div class="emergency-row"><span class="emergency-label">KwikPark (car)</span><span class="emergency-value"><a href="tel:07850366784">07850 366784</a></span></div>
     </div>
-
     <div class="emergency-card">
       <div class="emergency-card-title">🏛 UK Embassies / Consulates</div>
-      <div class="emergency-row">
-        <span class="emergency-label">UK Embassy Tokyo</span>
-        <span class="emergency-value"><a href="tel:+81352117100">+81 3 5211 1100</a><br><span style="font-size:10px;color:var(--muted);">1 Ichiban-cho, Chiyoda-ku, Tokyo</span></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">UK Consulate Osaka</span>
-        <span class="emergency-value"><a href="tel:+81662197200">+81 6 6219 7200</a></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">UK Embassy Seoul</span>
-        <span class="emergency-value"><a href="tel:+82234108600">+82 2 3210 5500</a><br><span style="font-size:10px;color:var(--muted);">Jeong-dong, Jung-gu, Seoul</span></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">FCDO 24hr Helpline</span>
-        <span class="emergency-value"><a href="tel:+442070081500">+44 20 7008 1500</a></span>
-      </div>
+      <div class="emergency-row"><span class="emergency-label">UK Embassy Tokyo</span><span class="emergency-value"><a href="tel:+81352117100">+81 3 5211 1100</a><br><span style="font-size:10px;color:var(--muted);">1 Ichiban-cho, Chiyoda-ku, Tokyo</span></span></div>
+      <div class="emergency-row"><span class="emergency-label">UK Consulate Osaka</span><span class="emergency-value"><a href="tel:+81662197200">+81 6 6219 7200</a></span></div>
+      <div class="emergency-row"><span class="emergency-label">UK Embassy Seoul</span><span class="emergency-value"><a href="tel:+82234108600">+82 2 3210 5500</a><br><span style="font-size:10px;color:var(--muted);">Jeong-dong, Jung-gu, Seoul</span></span></div>
+      <div class="emergency-row"><span class="emergency-label">FCDO 24hr Helpline</span><span class="emergency-value"><a href="tel:+442070081500">+44 20 7008 1500</a></span></div>
     </div>
-
     <div class="emergency-card">
       <div class="emergency-card-title">🏥 Medical & Medicines</div>
-      <div class="emergency-row">
-        <span class="emergency-label">Andy — medicines</span>
-        <span class="emergency-value">Naproxen · Omeprazole · Nortriptyline<br><span style="font-size:10px;color:var(--muted);">Sciatica / back pain — TENS + Voltarol gel</span></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Andy — blood type</span>
-        <span class="emergency-value">Update here before trip</span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Sarah — blood type</span>
-        <span class="emergency-value">Update here before trip</span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Jack — blood type</span>
-        <span class="emergency-value">Update here before trip</span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Charlie — blood type</span>
-        <span class="emergency-value">Update here before trip</span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">AMDA Japan helpline</span>
-        <span class="emergency-value"><a href="tel:+81662361990">+81 6 6636 2333</a><br><span style="font-size:10px;color:var(--muted);">English-speaking medical info, Tokyo area</span></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Japan Helpline (24hr)</span>
-        <span class="emergency-value"><a href="tel:0570000911">0570-000-911</a><br><span style="font-size:10px;color:var(--muted);">English crisis line, all Japan</span></span>
-      </div>
+      <div class="emergency-row"><span class="emergency-label">Andy — medicines</span><span class="emergency-value">Naproxen · Omeprazole · Nortriptyline<br><span style="font-size:10px;color:var(--muted);">Sciatica / back pain — TENS + Voltarol gel</span></span></div>
+      <div class="emergency-row"><span class="emergency-label">Andy — blood type</span><span class="emergency-value">Update here before trip</span></div>
+      <div class="emergency-row"><span class="emergency-label">Sarah — blood type</span><span class="emergency-value">Update here before trip</span></div>
+      <div class="emergency-row"><span class="emergency-label">Jack — blood type</span><span class="emergency-value">Update here before trip</span></div>
+      <div class="emergency-row"><span class="emergency-label">Charlie — blood type</span><span class="emergency-value">Update here before trip</span></div>
+      <div class="emergency-row"><span class="emergency-label">AMDA Japan helpline</span><span class="emergency-value"><a href="tel:+81662361990">+81 6 6636 2333</a></span></div>
+      <div class="emergency-row"><span class="emergency-label">Japan Helpline (24hr)</span><span class="emergency-value"><a href="tel:0570000911">0570-000-911</a></span></div>
     </div>
-
     <div class="emergency-card">
       <div class="emergency-card-title">🛡 Travel Insurance</div>
-      <div class="emergency-row">
-        <span class="emergency-label">Insurer</span>
-        <span class="emergency-value">Update before trip</span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Policy number</span>
-        <span class="emergency-value">Update before trip</span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Emergency claim no.</span>
-        <span class="emergency-value">Update before trip</span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">GP Surgery</span>
-        <span class="emergency-value">Update before trip</span>
-      </div>
+      <div class="emergency-row"><span class="emergency-label">Insurer</span><span class="emergency-value">Update before trip</span></div>
+      <div class="emergency-row"><span class="emergency-label">Policy number</span><span class="emergency-value">Update before trip</span></div>
+      <div class="emergency-row"><span class="emergency-label">Emergency claim no.</span><span class="emergency-value">Update before trip</span></div>
+      <div class="emergency-row"><span class="emergency-label">GP Surgery</span><span class="emergency-value">Update before trip</span></div>
     </div>
-
     <div class="emergency-card">
       <div class="emergency-card-title">📞 Key Contacts</div>
-      <div class="emergency-row">
-        <span class="emergency-label">Tourmaker (Korea taxi)</span>
-        <span class="emergency-value">WhatsApp via booking app<br><span style="font-size:10px;color:var(--muted);">Ref #1479-1 & #1479-2</span></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Klook support</span>
-        <span class="emergency-value"><a href="https://www.klook.com/en-GB/contacts/" target="_blank">klook.com/contacts</a></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Virgin Atlantic (24hr)</span>
-        <span class="emergency-value"><a href="tel:+443448092770">0344 809 2770</a></span>
-      </div>
-      <div class="emergency-row">
-        <span class="emergency-label">Asiana Airlines UK</span>
-        <span class="emergency-value"><a href="tel:+442074840228">+44 20 7484 0228</a></span>
-      </div>
+      <div class="emergency-row"><span class="emergency-label">Tourmaker (Korea taxi)</span><span class="emergency-value">WhatsApp via booking app<br><span style="font-size:10px;color:var(--muted);">Ref #1479-1 & #1479-2</span></span></div>
+      <div class="emergency-row"><span class="emergency-label">Klook support</span><span class="emergency-value"><a href="https://www.klook.com/en-GB/contacts/" target="_blank">klook.com/contacts</a></span></div>
+      <div class="emergency-row"><span class="emergency-label">Virgin Atlantic (24hr)</span><span class="emergency-value"><a href="tel:+443448092770">0344 809 2770</a></span></div>
+      <div class="emergency-row"><span class="emergency-label">Asiana Airlines UK</span><span class="emergency-value"><a href="tel:+442074840228">+44 20 7484 0228</a></span></div>
     </div>
-
-    <p style="font-size:11px;color:var(--muted);padding:12px 0 4px;line-height:1.6;text-align:center;">⚠️ Update blood types, insurance policy & GP details before leaving home. Tell Andy to update Claude so the app reflects current info.</p>
+    <p style="font-size:11px;color:var(--muted);padding:12px 0 4px;line-height:1.6;text-align:center;">⚠️ Update blood types, insurance policy & GP details before leaving home.</p>
   </div>`;
 }
-
 /* ═══════════════════════════════════════════
    TAB SWITCHING
 ═══════════════════════════════════════════ */
@@ -1234,41 +1124,27 @@ function renderBooked(){
   }
   const doneGroup=(tripData.checklist||[]).find(g=>g.group&&g.group.includes('DONE'));
   const raw=(doneGroup&&doneGroup.items)||[];
-
-  // Sort by sortDate field added to JSON
   const items=[...raw].sort((a,b)=>{
     const da=a.sortDate||'9999';
     const db=b.sortDate||'9999';
     return da<db?-1:da>db?1:0;
   });
-
   const LINKS={
     'VS208':'https://www.virginatlantic.com/','VS209':'https://www.virginatlantic.com/',
     'OZ106':'https://flyasiana.com/','OZ113':'https://flyasiana.com/',
     'Tourmaker':'https://www.tourmaker.co.kr/',
-    'Klook bus':'https://www.klook.com/',
-    'Hakone Freepass':'https://emot.jp/',
-    'Romancecar':'https://emot.jp/',
-    'Shinkansen':'https://smart-ex.jp/en/',
-    'KwikPark':'https://kwikpark.co.uk/',
-    'TEN-YU':'https://www.expedia.co.uk/',
-    'Keio Plaza':'https://www.expedia.co.uk/',
-    'Mitsui Garden':'https://www.expedia.co.uk/',
-    'Candeo':'https://www.expedia.co.uk/',
-    'Crown Park':'https://www.expedia.co.uk/',
+    'Klook bus':'https://www.klook.com/','Hakone Freepass':'https://emot.jp/',
+    'Romancecar':'https://emot.jp/','Shinkansen':'https://smart-ex.jp/en/',
+    'KwikPark':'https://kwikpark.co.uk/','TEN-YU':'https://www.expedia.co.uk/',
+    'Keio Plaza':'https://www.expedia.co.uk/','Mitsui Garden':'https://www.expedia.co.uk/',
+    'Candeo':'https://www.expedia.co.uk/','Crown Park':'https://www.expedia.co.uk/',
     'Grand Hyatt':'https://www.expedia.co.uk/',
     'Sagano Romantic':'https://sagano-kanko.uniproduct.net/en/',
-    'Hozugawa':'https://www.klook.com/',
-    'Miyako Odori':'https://s2.e-get.jp/m_odori/pt/',
+    'Hozugawa':'https://www.klook.com/','Miyako Odori':'https://s2.e-get.jp/m_odori/pt/',
   };
   const STATUS_COLOUR={'paid':'var(--blossom)','pay_at_property':'#e09040','confirmed':'var(--jade)'};
   const STATUS_LABEL={'paid':'Paid \u2714','pay_at_property':'Pay on arrival','confirmed':'Confirmed \u2714'};
-
-  function getLink(task){
-    for(const[k,v] of Object.entries(LINKS)){if(task.includes(k))return v;}
-    return null;
-  }
-
+  function getLink(task){for(const[k,v] of Object.entries(LINKS)){if(task.includes(k))return v;}return null;}
   let lastDate='';
   const cards=items.map((item,i)=>{
     const status=item.status||'paid';
@@ -1280,8 +1156,6 @@ function renderBooked(){
     const isNewDate=dateLabel!==lastDate;
     if(isNewDate) lastDate=dateLabel;
     const dateSep=isNewDate?`<div style="font-size:10px;font-weight:700;color:var(--gold);letter-spacing:0.05em;text-transform:uppercase;padding:${i===0?'4px':'16px'} 0 6px;">${dateLabel}</div>`:'';
-
-    // Inline expandable detail panel — no alert(), works in all contexts
     const detailId='bk-detail-'+i;
     const detailLines=(item.notes||'').split('\xb7').map(s=>s.trim()).filter(Boolean);
     const detailHtml=item.notes?`
@@ -1290,7 +1164,6 @@ function renderBooked(){
         ${linkHtml}
       </div>`:'';
     const infoBtn=item.notes?`<button onclick="(function(id){const el=document.getElementById(id);el.style.display=el.style.display==='none'?'block':'none';}('${detailId}'))" style="margin-left:8px;font-size:10px;padding:2px 8px;border-radius:10px;border:1px solid var(--jade);color:var(--jade);background:none;cursor:pointer;vertical-align:middle;">\u2139 details</button>`:'';
-
     return `${dateSep}<div style="background:var(--ink2);border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px;">
       <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;">
         <div style="font-size:13px;font-weight:600;color:var(--white);line-height:1.4;">${item.task||''}${infoBtn}</div>
@@ -1299,26 +1172,23 @@ function renderBooked(){
       ${detailHtml}
     </div>`;
   }).join('');
-
   document.getElementById('tab-booked').innerHTML=`<div style="padding:12px 0;">
     <p style="font-size:11px;color:var(--muted);padding:0 0 6px;">${items.length} confirmed bookings \u2014 sorted by travel date</p>
     ${cards}
   </div>`;
 }
-
 function switchTab(tab,btn){
   TABS.forEach(t=>{const el=document.getElementById('tab-'+t);if(el)el.style.display=(t===tab)?'block':'none';});
   document.querySelectorAll('.nav-tab').forEach(b=>b.classList.remove('active'));
   if(btn) btn.classList.add('active');
   if(tab==='booked') renderBooked();
 }
-
 /* ═══════════════════════════════════════════
    SERVICE WORKER (offline cache)
 ═══════════════════════════════════════════ */
 if('serviceWorker' in navigator){
   const SW_CODE=`
-const CACHE='japan-trip-v5';
+const CACHE='japan-trip-v6';
 const ASSETS=['${location.href}'];
 self.addEventListener('install',e=>{
   e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)));
@@ -1329,7 +1199,6 @@ self.addEventListener('activate',e=>{
   self.clients.claim();
 });
 self.addEventListener('fetch',e=>{
-  // Never cache JSON fetches — always go to network so updates are instant
   if(e.request.url.includes('.json')){
     e.respondWith(fetch(e.request));
     return;
@@ -1348,7 +1217,6 @@ self.addEventListener('fetch',e=>{
   const swUrl=URL.createObjectURL(blob);
   navigator.serviceWorker.register(swUrl).catch(()=>{});
 }
-
 /* ═══════════════════════════════════════════
    INIT
 ═══════════════════════════════════════════ */
