@@ -551,61 +551,72 @@
       "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku",
       "items": [
         {
-          "time": "07:30",
-          "activity": "Breakfast at Keio Plaza",
-          "status": "included",
-          "notes": "Early start — fuel up before Sumo.",
-          "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
-          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
-        },
-        {
-          "time": "07:30",
-          "activity": "Arashio Stable — Sumo Morning Practice",
-          "status": "confirmed",
-          "notes": "Free walk-up viewing through street-facing window. No reservation needed. 7:30–10:00am. Arrive by 6:45am in April — gets crowded fast. Watch wrestlers train from outside (window has mesh so photography is tricky — enjoy in person rather than worrying about shots). Wrestlers sometimes come outside for photos after practice. No talking, no flash, no food/drink. 2-47-2 Nihonbashihamacho, Chuo-ku — 2 min from Hamacho Station Exit A2 (Toei Shinjuku Line). Check calendar before going: arashio.net/tour_e.html",
-          "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
-          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
+          "time": "09:00",
+          "activity": "Hotel breakfast — Keio Plaza",
+          "status": "planning",
+          "notes": "Relaxed start. Enjoy the hotel buffet breakfast before heading out. No rush — Tsukiji stalls are open from 09:00 and peak is 10:00–12:00.",
+          "mapQuery": "Keio Plaza Hotel Shinjuku Tokyo"
         },
         {
           "time": "10:00",
-          "activity": "Tsukiji Outer Market",
+          "activity": "Tsukiji Outer Market — breakfast stalls",
           "status": "planning",
-          "notes": "Tamagoyaki, uni, grilled scallops. Go stall to stall — most sell out by late morning.",
-          "address": "Tsukiji Outer Market, 4-16-2 Tsukiji, Chuo-ku, Tokyo 104-0045, Japan",
+          "notes": "30 min from Shinjuku by metro. Tamagoyaki (sweet egg omelette), grilled scallops on sticks, uni, fresh oysters, tuna sashimi on rice. Most stalls open from 09:00, peak is 10:00–12:00 — go stall to stall and graze. Most stalls sell out or close by 13:00.",
+          "address": "Tsukiji Outer Market, 4-16-2 Tsukiji, Chuo-ku, Tokyo",
           "mapQuery": "Tsukiji Outer Market Tokyo",
-          "detail": "Tsukiji Outer Market (築地場外市場)\nAccess: From Hamacho after sumo, Toei Shinjuku Line to Shintomicho (~10 min) then 10 min walk. Or taxi ~¥700.\nHours: Most stalls 05:00–14:00. Go early for best selection.\n\nMust try while walking:\n- Tamagoyaki (sweet rolled omelette) on a stick — buy fresh from Tsukumo or Maruya\n- Uni (sea urchin) on a rice bowl — ¥1,500–2,000 for a small, rich bowl\n- Grilled scallops (hotate) with butter and soy — ¥500–800 each\n- Tamago sushi (egg nigiri) — simple and excellent here\n\nSouvenirs: Nori, bonito flakes, wasabi, kitchen knives (world-class), dashi stock packs.\nKnives: Budget ¥3,000–8,000 for a good Gyuto. Ask to sharpen before purchase."
+          "detail": "Tsukiji Outer Market (築地場外市場) is the public-facing part of the old fish market — still fully operating for retail and food stalls.\n\nMust-try:\n- Tamagoyaki: Sweet rolled egg omelette on a stick — the Tsukiji signature. Gyokudo and Marutake are the most famous stalls.\n- Grilled scallop: Hotate grilled in the shell with soy butter — ¥500–800 each.\n- Fresh tuna sashimi / tuna don: Intense flavour, eaten standing at a counter.\n- Sea urchin (uni): On a spoon or on rice. Eat only if a stall vendor cuts it fresh in front of you.\n- Tamagoyaki soft serve: Available at a few stalls — unusual, worth trying.\n\nTip: Arrive with an empty stomach. Move from stall to stall rather than committing to one place. Cash for stalls, card usually accepted at the sit-down spots at the edges."
+        },
+        {
+          "time": "12:00",
+          "activity": "Standing sushi bar — Tsukiji",
+          "status": "planning",
+          "notes": "Several excellent standing sushi counters in and around Tsukiji. Order 3–4 pieces at a time, eat at the counter. ¥200–500 per piece, significantly cheaper than a seated restaurant. Best experience: tell the chef your budget and let him choose.",
+          "address": "Tsukiji Outer Market, Chuo-ku, Tokyo",
+          "mapQuery": "Tsukiji Outer Market Tokyo",
+          "detail": "Standing sushi bars (立ち食い寿司) around Tsukiji are among the best-value sushi experiences in Tokyo.\n\nHow it works: You stand at a narrow counter. Order by pointing or naming fish. Sushi is made fresh in front of you. Eat as you go — no sitting, no ceremony.\nPrice: ¥200–500 per piece depending on fish. A full satisfying lunch is ¥1,500–2,500pp.\nRecommended fish: Toro (fatty tuna), ikura (salmon roe), aji (horse mackerel), kohada (gizzard shad — very traditional), and whatever the chef recommends as fresh that day.\nTip: Say 'Omakase de onegaishimasu' (おまかせでお願いします) — 'Chef's choice please.' He'll pick the best of the day within your budget."
         },
         {
           "time": "14:00",
-          "activity": "Ueno Park — Cherry Blossom Viewing",
-          "status": "free",
-          "notes": "One of Tokyo's best hanami spots in early April.",
-          "address": "Ueno Park, 5-20 Ueno Koen, Taito-ku, Tokyo 110-0007, Japan",
+          "activity": "Ueno Park — cherry blossom viewing",
+          "status": "planning",
+          "notes": "One of Tokyo's best hanami spots. By 7 April blossoms may be past peak but late bloom (petals falling = hanafubuki) is still beautiful. Free entry to the park. Shinobazu Pond is worth a walk around.",
+          "address": "Ueno Park, Uenokoen, Taito City, Tokyo",
           "mapQuery": "Ueno Park Tokyo",
-          "detail": "Ueno Park (上野公園) — Hanami\nAccess: JR Yamanote Line to Ueno Station (Shinobazu Exit). ~20 min from Tsukiji.\nEntry: Free\n\nUeno has 1,000+ cherry trees. In early April the blossoms canopy is extraordinary. Buy konbini picnic food and find a patch of grass — this is how locals do hanami.\n\nWhile in Ueno:\n- Tokyo National Museum: Japan's largest museum. ¥1,000pp. Extraordinary samurai armour, pottery, Buddhist sculpture. Allow 90 mins.\n- Shinobazu Pond: The lotus pond at the south end. Paddle boats for hire.\n- Ameya-Yokocho (Ameyoko): Busy street market directly outside Ueno Station — snacks, cheap cosmetics, dried fish."
+          "detail": "Ueno Park (上野公園) is Tokyo's most famous cherry blossom spot — around 800 trees line the main avenue.\n\nTiming note: Tokyo's cherry blossoms typically peak late March to early April. By 7 April they may be at late bloom or beginning to fall. Hanafubuki (花吹雪) — petals drifting like snow — is its own beautiful experience, not a disappointment.\n\nOther highlights in the park:\n- Shinobazu Pond: A large lake with a small Benten shrine on an island. Rowboat hire (¥700/30 mins) if the mood takes.\n- Tokyo National Museum: Japan's largest museum, exceptional Japanese art and cultural artefacts. Worth 2–3 hours if anyone is interested. ¥1,000pp entry.\n- Ueno Zoo: Japan's oldest zoo, if relevant for the group.\n\nTip: The main avenue (Sakura-dori) gets packed on weekends. Tuesday afternoon will be noticeably quieter."
         },
         {
-          "time": "18:00",
+          "time": "15:30",
+          "activity": "Ameyoko Market",
+          "status": "planning",
+          "notes": "5 min walk from Ueno Park south exit. 500m covered market street between Ueno and Okachimachi stations — one of Tokyo's most atmospheric street markets. Street food, cheap clothing, dried goods, Korean and Middle Eastern stalls mixed in with Japanese vendors.",
+          "address": "Ameyoko Market, Ueno, Taito City, Tokyo",
+          "mapQuery": "Ameyoko Market Ueno Tokyo",
+          "detail": "Ameyoko (アメ横) started as a black market after WW2 — now a dense, lively street market stretching 500m under the elevated JR tracks.\n\nWhat's there:\n- Street food: Grilled squid, takoyaki (octopus balls), grilled corn, fresh fruit. Korean tteokbokki stalls mixed in.\n- Dried goods: Nuts, dried seafood, pickles — popular gift items at good prices.\n- Clothing: Cheap casual wear, military surplus, trainers. Very different to Harajuku.\n- Skincare and cosmetics: Discounted Japanese brands, good for gifts.\n\nAtmosphere: Packed, noisy, very alive. Vendors shout offers. Feels like a market, not a shopping mall.\nTime needed: 45–60 minutes to walk through properly.\nNote: Gets significantly busier from 17:00 — going at 15:30 on a Tuesday means you'll have it relatively to yourselves."
+        },
+        {
+          "time": "16:45",
+          "activity": "Yokozuna Tonkatsu Dosukoi Tanaka — Sumo Show",
+          "status": "confirmed",
+          "notes": "The SUMO Show (no meal). Doors 16:45, show 17:00–18:00. Sumo demonstration by retired professional wrestlers, interactive experience (chance to step into the ring), photo session and Q&A. Two bookings of 2 seats each. 15 min from Ameyoko by metro (Toei Shinjuku Line to Kikukawa).",
+          "address": "3-1-11 Tatekawa, Sumida-ku, Tokyo",
+          "mapQuery": "Yokozuna Tonkatsu Dosukoi Tanaka Sumida Tokyo",
+          "detail": "Yokozuna Tonkatsu Dosukoi Tanaka (横綱とんかつ どすこい田中) — sumo entertainment venue run by a retired professional wrestler.\n\nTimetable:\n16:45 — Open for entry\n17:00 — Opening video screening\n17:10 — Sumo demonstration\n17:40 — Sumo experience (interactive)\n17:50 — Photo session & Q&A\n18:00 — End\n\nBooking 1: Reservation ID GSSFO38 · Table 6 · 2 adults · ¥24,200\nBooking 2: Reservation ID UYKE2V5 · Table 3 · 2 adults · ¥22,000\nTotal: 4 seats · ¥46,200\n\nNote: This is the show-only option — no meal included. Dinner afterwards.\nContact: info@osumo-3.com\nBooked via: sumoexperience.com"
+        },
+        {
+          "time": "19:00",
           "activity": "Dinner — Shibuya",
           "status": "planning",
-          "notes": "Ramen, izakaya or yakiniku. Options: Uobei (conveyor belt sushi), Han no Daidokoro (yakiniku).",
-          "address": "Shibuya Crossing, 2-2-1 Dogenzaka, Shibuya-ku, Tokyo 150-0043, Japan",
-          "mapQuery": "Shibuya Crossing Tokyo",
-          "detail": "Dinner options around Shibuya for 4:\n\nUobei (魚べい): Touch-screen conveyor belt sushi — plates delivered by express rail to your seat. Very fun, ~¥1,500–2,000pp.\n\nFuunji (風雲児): Outstanding tsukemen (dipping ramen). Usually a 30 min queue outside. Near Shinjuku.\n\nGyukatsu Motomura: Lightly breaded beef cutlet you cook on a hot stone at your table. ¥1,500–2,000pp. Queue outside ~20 min, worth it.\n\nQuick and local: Yoshinoya or Sukiya — Japanese beef bowl chains, 24hrs, ¥500–700pp. Not fancy but genuinely delicious and very Japanese."
+          "notes": "40 min from Kikukawa to Shibuya by metro. Options: Uobei conveyor belt sushi, Han no Daidokoro yakiniku, or Ichiran tonkotsu ramen if keeping it simple after a long day.",
+          "address": "Shibuya, Tokyo",
+          "mapQuery": "Shibuya Station Tokyo"
         }
       ],
-      "title": "Tokyo — Sumo · Tsukiji · Ueno",
+      "title": "Tokyo — Tsukiji · Ueno · Sumo Show",
       "ideas": [
         {
-          "title": "Sumo Museum (free)",
-          "type": "Culture",
-          "notes": "Free entry. In the Ryogoku Kokugikan sumo stadium. Good intro to sumo history and culture. Near the Oshiage stable area.",
-          "mapQuery": "Sumo Museum Ryogoku Tokyo"
-        },
-        {
-          "title": "Chankonabe (sumo stew)",
+          "title": "Chankonabe (sumo stew) near Ryogoku",
           "type": "Food",
-          "notes": "Traditional sumo wrestler diet. Restaurants near Ryogoku station. Hearty, warming, very local. About ¥1,500–2,500pp."
+          "notes": "Traditional sumo wrestler diet. Restaurants near Ryogoku station (close to the sumo show venue). Hearty, warming, very local. About ¥1,500–2,500pp. Could work as a post-show dinner alternative to Shibuya."
         },
         {
           "title": "TeamLab Planets (Toyosu)",
@@ -2195,11 +2206,11 @@
       "group": "🔴 NOW — Do This Weekend",
       "items": [
         {
-          "task": "🤼 Arashio Stable sumo — check calendar week of departure",
+          "task": "🤼 Sumo Show — Yokozuna Tonkatsu Dosukoi Tanaka ✅ BOOKED",
           "who": "Andy",
-          "deadline": "1 Apr 2026",
-          "status": "incomplete",
-          "notes": "Free walk-up window viewing — no booking needed. Check arashio.net/tour_e.html for April practice dates (posted a few weeks ahead). Aim for Day 4 (Tue 7 Apr) at 7:30am. Arrive 6:45am. If calendar shows no practice on 7 Apr, try another Tokyo day (Days 3–5)."
+          "deadline": "7 Apr 2026",
+          "status": "complete",
+          "notes": "Booked! Two reservations for Tue 7 Apr at 17:00. Booking 1: GSSFO38 (Table 6, 2 seats, ¥24,200). Booking 2: UYKE2V5 (Table 3, 2 seats, ¥22,000). Total ¥46,200. Show only (no meal). Contact: info@osumo-3.com. Address: 3-1-11 Tatekawa, Sumida-ku, Tokyo."
         },
         {
           "task": "✈️ Complete VA FlyReady — Andrew Evans (Sarah to do)",
