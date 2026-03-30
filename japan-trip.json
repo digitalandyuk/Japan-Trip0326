@@ -163,6 +163,13 @@
           "address": "Myeongdong Street, Jung-gu, Seoul 04534, South Korea",
           "mapQuery": "Myeongdong Street Seoul Jung-gu",
           "detail": "Korean BBQ — meat grilled at the table, eaten wrapped in lettuce with garlic, gochujang and banchan (side dishes).\n\nBest cuts for first-timers:\n- Samgyeopsal (삼겹살): Thick-cut pork belly — juicy, fatty, the default\n- Chadolbaegi (차돌박이): Very thinly sliced beef brisket — cooks in seconds\n- Galbi (갈비): Marinated beef short ribs — sweet, tender\n\nHow it works: Order meat by the portion. Staff usually cook the first batch. Banchan (side dishes) are refillable free — always ask for more.\nDrinks: Soju (₩5,000/bottle) or somaek (beer + soju mixed)."
+        },
+        {
+          "time": "21:30",
+          "activity": "Return to Crown Park Hotel",
+          "status": "planning",
+          "notes": "15 min walk or 5 min taxi from Myeongdong to hotel. Early night recommended — long travel day tomorrow.",
+          "mapQuery": "Crown Park Hotel Seoul"
         }
       ],
       "title": "Seoul Arrival",
@@ -322,6 +329,13 @@
           "address": "Omoide Yokocho, Shinjuku-ku, Tokyo 160-0021, Japan",
           "mapQuery": "Omoide Yokocho Memory Lane Tokyo",
           "detail": "Omoide Yokocho (思い出横丁) — Memory Lane\nDistance: 2 min walk northwest of Shinjuku Station West Exit\nHours: Most bars open from 17:00 until midnight+\n⚠ Cash only in almost all bars\n\nOne of Tokyo's most atmospheric spots — barely 2m wide, tiny bars seating 6–8 people each, filled with charcoal smoke and grilling chicken. Looks exactly as it did in the 1960s.\n\nHow it works: Walk in, pick a bar with seats. Point at what you want. Best skewers: Negima (chicken and spring onion), tsukune (meatball), kawa (crispy skin), torikawa (cartilage). Usually ¥150–300 each.\n\nTip: 'Kore kudasai' (this please) + pointing works perfectly. The atmosphere is the whole point on night one."
+        },
+        {
+          "time": "22:30",
+          "activity": "Return to Keio Plaza Hotel",
+          "status": "planning",
+          "notes": "10 min walk from Omoide Yokocho — both in Shinjuku. First night in Tokyo.",
+          "mapQuery": "Keio Plaza Hotel Shinjuku Tokyo"
         }
       ],
       "title": "Seoul → Tokyo",
@@ -446,6 +460,13 @@
           "address": "Golden Gai, Kabukicho, Shinjuku-ku, Tokyo 160-0021, Japan",
           "mapQuery": "Golden Gai Shinjuku Tokyo",
           "detail": "Golden Gai (ゴールデン街)\nLocation: Off Hanazono Shrine, east of Kabukicho — 12 min walk from Keio Plaza\nHours: Most bars 19:00 until late · ⚠ Cash only · Cover charge ¥500–1,000 in many bars\n\n~200 tiny bars across 6 narrow alleyways. Each bar seats 4–12 people, each has its own theme — film, jazz, horror, art, manga. Some for regulars only (English sign if so). Most welcome tourists.\n\nHow it works: Walk the alleys, find a bar that appeals, check cover charge sign, sit down. Drinks ¥800–1,500 each.\nBest approach: No plan — the discovery is the point. Don't like a bar? Finish your drink and move on.\nNearby: Hanazono Shrine is right next to Golden Gai — lantern-lit at night, free, always open."
+        },
+        {
+          "time": "22:00",
+          "activity": "Return to Keio Plaza Hotel",
+          "status": "planning",
+          "notes": "10 min walk from Golden Gai — right next to the hotel in Shinjuku.",
+          "mapQuery": "Keio Plaza Hotel Shinjuku Tokyo"
         }
       ],
       "title": "Tokyo — Shibuya · Harajuku · Asakusa",
@@ -609,6 +630,13 @@
           "notes": "40 min from Kikukawa to Shibuya by metro. Options: Uobei conveyor belt sushi, Han no Daidokoro yakiniku, or Ichiran tonkotsu ramen if keeping it simple after a long day.",
           "address": "Shibuya, Tokyo",
           "mapQuery": "Shibuya Station Tokyo"
+        },
+        {
+          "time": "20:30",
+          "activity": "Return to Keio Plaza Hotel",
+          "status": "planning",
+          "notes": "JR Yamanote Line Shibuya → Shinjuku, 7 mins direct. Quick and easy.",
+          "mapQuery": "Keio Plaza Hotel Shinjuku Tokyo"
         }
       ],
       "title": "Tokyo — Tsukiji · Ueno · Sumo Show",
@@ -1154,6 +1182,13 @@
           "address": "Pontocho, Nakagyo-ku, Kyoto 604-8094, Japan",
           "mapQuery": "Pontocho alley Kyoto",
           "detail": "First dinner in Kyoto — the start of what many consider the finest food city in Japan.\n\nPonto-cho (先斗町): The narrow alley running parallel to the Kamo River. 5 min walk from hotel. In April the kawayuka (riverside platforms) may just be opening. Best: Pontocho Fujita (kaiseki, Tablecheck), Pontocho Robin (hotpot, private rooms).\n\nGion (祇園): 10 min walk. More upscale. Tempura Endo is excellent (book ahead).\n\n⚠ Book in advance — cherry blossom season is the busiest time in Kyoto."
+        },
+        {
+          "time": "21:00",
+          "activity": "Return to Mitsui Garden Hotel",
+          "status": "planning",
+          "notes": "10 min walk from Ponto-cho along the river to the hotel. Kawaramachi is very close.",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
         }
       ],
       "title": "Hakone → Kyoto",
@@ -1274,6 +1309,13 @@
           "address": "Gion District, Higashiyama Ward, Kyoto 605-0073, Japan",
           "mapQuery": "Gion District Kyoto Hanamikoji",
           "detail": "Gion after dark — arguably the most atmospheric urban experience of the trip.\n\nHanamikoji-dori at night: Ochaya (teahouses) glow with orange lantern light. Quieter than day but still lively. Between 20:00–22:00 you may see maiko being escorted to appointments. Quiet, respectful observation only.\n\nYasaka Shrine (八坂神社): Free, open all night. Stone lanterns lit, broad promenade beautiful. The Okera Lantern burns with sacred fire — used traditionally to light New Year fires in Kyoto homes.\n\nMaruyama Park: Beyond the shrine. Giant illuminated weeping cherry (shidarezakura) in April. The park fills with picnickers and revellers. Very festive, very local."
+        },
+        {
+          "time": "21:30",
+          "activity": "Return to Mitsui Garden Hotel",
+          "status": "planning",
+          "notes": "20 min walk from Gion back to Kawaramachi, or 10 min by bus/taxi. Nice evening stroll through the streets.",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
         }
       ],
       "title": "Kyoto — Northern Temples · Gion",
@@ -1436,6 +1478,13 @@
           "notes": "⚠ BOOK AHEAD — Sunday evening cherry blossom season, this will be very busy. Riverside kawayuka terrace dining. Book as soon as possible.",
           "mapQuery": "Pontocho Kyoto dining",
           "detail": "Ponto-cho Sunday dinner — book in advance.\n\nRecommended:\n- Pontocho Robin (Rubin): Traditional Japanese hotpot (duck, kinmedai). Private rooms 4–6 people. River views. ¥8,800–16,500pp. Tabelog bookable.\n- Pontocho Fujita: Kaiseki, dashi-focused, private rooms. Tablecheck bookable.\n- Via hotel concierge: Ask Mitsui Garden to call on your behalf — most reliable for cherry blossom season.\n\nKawayuka: Riverside dining platforms may just be opening in mid-April — worth asking when you call."
+        },
+        {
+          "time": "20:30",
+          "activity": "Return to Mitsui Garden Hotel",
+          "status": "planning",
+          "notes": "10 min walk from Ponto-cho. Same easy route as Friday night.",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
         }
       ],
       "title": "Kyoto — Arashiyama",
@@ -1551,6 +1600,13 @@
           "notes": "⚠ BOOK AHEAD. Last night in Kyoto. Traditional kaiseki or high-quality restaurant. Pack bags tonight — checkout tomorrow.",
           "cost": 20000,
           "status": "bookahead"
+        },
+        {
+          "time": "21:00",
+          "activity": "Return to Mitsui Garden Hotel — last night in Kyoto",
+          "status": "planning",
+          "notes": "Walk or short taxi back depending on restaurant location. Pack tonight — checking out tomorrow for Osaka.",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
         }
       ]
     },
@@ -1631,6 +1687,13 @@
           "address": "Daikokucho Station, Naniwa Ward, Osaka, Japan",
           "mapQuery": "Daikokucho Station Osaka",
           "detail": "GETYOURGUIDE BOOKED\nOsaka Deep Backstreets Walking Tour with Dinner\nBooking ref: GYGLMR35M35H · GetYourGuide\nVoucher codes (1 per person): HXC95 / R72HK / HC11G / XO2VM\nTue 14 Apr · 17:30 start · 3.5 hrs (ends ~21:00)\nAdults × 4 · Cost: £184.32 · Paid\nCancel by: 17:30 Mon 13 Apr for full refund\nProvider phone: +8108070122238\n\nMeeting point: Daikokucho Station Exit 1, top of stairs (Family Mart) — arrive by 17:20.\nTour explores Osaka backstreets, covered markets, and local eateries with a knowledgeable guide. Dinner included."
+        },
+        {
+          "time": "21:15",
+          "activity": "Return to Candeo Hotels Osaka The Tower",
+          "status": "planning",
+          "notes": "Tour ends near Daikokucho ~21:00. 20 min metro to Umeda/hotel area (Midosuji Line Daikokucho → Umeda). First night in Osaka.",
+          "mapQuery": "Candeo Hotels Osaka The Tower Kita-ku"
         }
       ],
       "title": "Kyoto → Osaka",
@@ -1773,6 +1836,13 @@
           "address": "Namba, Chuo Ward, Osaka 542-0075, Japan",
           "mapQuery": "yakiniku restaurant Namba Osaka",
           "detail": "Osaka yakiniku dinner — book in advance.\n\nOsaka has an extraordinary yakiniku culture — the largest concentration of Korean-Japanese communities in Japan developed this cuisine here.\n\nWhat to order:\n- Karubi (short rib): The classic cut, fatty and full of flavour\n- Harami (outside skirt): Tender, well-marbled, quick to cook\n- Tongue (tan): Thin sliced, grilled quickly, dipped in lemon\n- Wagyu special course: Worth the splurge for one proper wagyu night\n\nBudget: ¥4,000–5,000pp for a good set course with drinks."
+        },
+        {
+          "time": "21:00",
+          "activity": "Return to Candeo Hotels Osaka The Tower",
+          "status": "planning",
+          "notes": "15 min metro from Namba to Umeda (Midosuji Line direct), then 5 min walk to hotel.",
+          "mapQuery": "Candeo Hotels Osaka The Tower Kita-ku"
         }
       ],
       "title": "Nara Day Trip",
