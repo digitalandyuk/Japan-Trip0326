@@ -632,17 +632,17 @@
           "mapQuery": "Shibuya Station Tokyo"
         },
         {
-          "time": "21:00",
-          "activity": "🧺 Use Laundry? — Keio Plaza coin laundry",
-          "status": "optional",
-          "notes": "Self-service coin laundry on 19F (Main Tower) or 18F (South Tower). 24 hours. Wash + dry ~¥500–700 per load (~£3). Last night in Tokyo — good time to refresh clothes before Hakone. Bring ¥100 coins.",
-          "mapQuery": "Keio Plaza Hotel Shinjuku Tokyo"
-        },
-        {
           "time": "20:30",
           "activity": "Return to Keio Plaza Hotel",
           "status": "planning",
           "notes": "JR Yamanote Line Shibuya → Shinjuku, 7 mins direct. Quick and easy.",
+          "mapQuery": "Keio Plaza Hotel Shinjuku Tokyo"
+        },
+        {
+          "time": "",
+          "activity": "🧺 Use Laundry? — Keio Plaza coin laundry",
+          "status": "optional",
+          "notes": "Self-service coin laundry on 19F (Main Tower) or 18F (South Tower). 24 hours. Wash + dry ~¥500–700 per load (~£3). Last night in Tokyo — good time to refresh clothes before Hakone. Bring ¥100 coins.",
           "mapQuery": "Keio Plaza Hotel Shinjuku Tokyo"
         }
       ],
@@ -991,13 +991,6 @@
           "mapQuery": "Hakone-Yumoto Station"
         },
         {
-          "time": "21:00",
-          "activity": "🧺 Use Laundry? — TEN-YU coin laundry",
-          "status": "optional",
-          "notes": "Self-service coin laundry on 8F. Needs 8 × ¥100 coins (¥800 per load, ~£4). Mid-trip laundry reset — you've been travelling 6 days. Ask front desk for coins if needed. Wash takes ~40 mins, dry ~30 mins.",
-          "mapQuery": "Hakone Kowakien Ten-yu"
-        },
-        {
           "time": "16:30",
           "activity": "Return to TEN-YU — rotenburo",
           "status": "included",
@@ -1022,6 +1015,13 @@
           "notes": "Ask front desk to forward luggage to Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji for Sat 11 Apr delivery. ~¥1,500–2,000 per bag. Must arrange tonight.",
           "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
           "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+        },
+        {
+          "time": "",
+          "activity": "🧺 Use Laundry? — TEN-YU coin laundry",
+          "status": "optional",
+          "notes": "Self-service coin laundry on 8F. Needs 8 × ¥100 coins (¥800 per load, ~£4). Mid-trip laundry reset — you've been travelling 6 days. Ask front desk for coins if needed. Wash takes ~40 mins, dry ~30 mins.",
+          "mapQuery": "Hakone Kowakien Ten-yu"
         }
       ],
       "title": "Hakone — Ropeway · Lake Ashi · Shrine",
@@ -1299,13 +1299,6 @@
           "detail": "Lunch options around Nanzen-ji:\n\nYudofu (湯豆腐): Kyoto's most traditional dish — silken tofu simmered in kombu dashi broth. Multiple dedicated restaurants near Nanzen-ji (Junsei, Okutan). ~¥2,500–3,500pp. Famous and busy — expect a short wait.\n\nOmen (おめん): Famous handmade udon on the Philosopher's Path (north end). Thick, chewy noodles in a light broth. Queue moves fast. ~¥1,200–1,500pp. Very popular with locals."
         },
         {
-          "time": "09:00",
-          "activity": "🧺 Use Laundry? — Mitsui Garden drop-off service",
-          "status": "optional",
-          "notes": "No self-service coin laundry at this hotel. Drop-off laundry service only: hand in at front desk before 10:00am, returned same day by 18:00. Charged per item (~¥500–1,000+ per piece) — expensive for a full load. Consider waiting for Candeo Osaka coin laundry instead unless you're desperate.",
-          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
-        },
-        {
           "time": "16:30",
           "activity": "Return to hotel — rest before Gion",
           "status": "planning",
@@ -1336,6 +1329,13 @@
           "activity": "Return to Mitsui Garden Hotel",
           "status": "planning",
           "notes": "20 min walk from Gion back to Kawaramachi, or 10 min by bus/taxi. Nice evening stroll through the streets.",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+        },
+        {
+          "time": "",
+          "activity": "🧺 Use Laundry? — Mitsui Garden drop-off service",
+          "status": "optional",
+          "notes": "No self-service coin laundry at this hotel. Drop-off laundry service only: hand in at front desk before 10:00am, returned same day by 18:00. Charged per item (~¥500–1,000+ per piece) — expensive for a full load. Consider waiting for Candeo Osaka coin laundry instead unless you're desperate.",
           "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
         }
       ],
@@ -1833,13 +1833,6 @@
           "detail": "Kasuga Taisha (春日大社) — UNESCO World Heritage\nHours: 06:30–17:30 · Outer shrine: Free · Inner sanctuary: ¥500pp\n\nFounded in 768 AD. The approach through the forest is lined with over 3,000 stone lanterns, all donated by worshippers. The deer wander freely here too.\n\nThe hanging bronze lanterns inside the covered corridor are extraordinary — imagine all 2,000 lit at once (only happens during Mandoro festivals in February and August)."
         },
         {
-          "time": "21:30",
-          "activity": "🧺 Use Laundry? — Candeo coin laundry",
-          "status": "optional",
-          "notes": "Self-service coin laundry on site. Wash + dry ~¥500–700 per load (~£3). Day 12 of 15 — last good chance to do laundry before flying home. Saves packing dirty clothes.",
-          "mapQuery": "Candeo Hotels Osaka The Tower Kita-ku"
-        },
-        {
           "time": "19:30",
           "activity": "✈️ Asiana OZ113 online check-in — opens now",
           "status": "planning",
@@ -1876,6 +1869,13 @@
           "activity": "Return to Candeo Hotels Osaka The Tower",
           "status": "planning",
           "notes": "15 min metro from Namba to Umeda (Midosuji Line direct), then 5 min walk to hotel.",
+          "mapQuery": "Candeo Hotels Osaka The Tower Kita-ku"
+        },
+        {
+          "time": "",
+          "activity": "🧺 Use Laundry? — Candeo coin laundry",
+          "status": "optional",
+          "notes": "Self-service coin laundry on site. Wash + dry ~¥500–700 per load (~£3). Day 12 of 15 — last good chance to do laundry before flying home. Saves packing dirty clothes.",
           "mapQuery": "Candeo Hotels Osaka The Tower Kita-ku"
         }
       ],
