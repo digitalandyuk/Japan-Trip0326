@@ -632,6 +632,13 @@
           "mapQuery": "Shibuya Station Tokyo"
         },
         {
+          "time": "21:00",
+          "activity": "🧺 Use Laundry? — Keio Plaza coin laundry",
+          "status": "optional",
+          "notes": "Self-service coin laundry on 19F (Main Tower) or 18F (South Tower). 24 hours. Wash + dry ~¥500–700 per load (~£3). Last night in Tokyo — good time to refresh clothes before Hakone. Bring ¥100 coins.",
+          "mapQuery": "Keio Plaza Hotel Shinjuku Tokyo"
+        },
+        {
           "time": "20:30",
           "activity": "Return to Keio Plaza Hotel",
           "status": "planning",
@@ -984,6 +991,13 @@
           "mapQuery": "Hakone-Yumoto Station"
         },
         {
+          "time": "21:00",
+          "activity": "🧺 Use Laundry? — TEN-YU coin laundry",
+          "status": "optional",
+          "notes": "Self-service coin laundry on 8F. Needs 8 × ¥100 coins (¥800 per load, ~£4). Mid-trip laundry reset — you've been travelling 6 days. Ask front desk for coins if needed. Wash takes ~40 mins, dry ~30 mins.",
+          "mapQuery": "Hakone Kowakien Ten-yu"
+        },
+        {
           "time": "16:30",
           "activity": "Return to TEN-YU — rotenburo",
           "status": "included",
@@ -1283,6 +1297,13 @@
           "address": "Nanzen-ji Temple, 86 Fukuchicho, Sakyo-ku, Kyoto 606-8435, Japan",
           "mapQuery": "Nanzen-ji Temple Kyoto",
           "detail": "Lunch options around Nanzen-ji:\n\nYudofu (湯豆腐): Kyoto's most traditional dish — silken tofu simmered in kombu dashi broth. Multiple dedicated restaurants near Nanzen-ji (Junsei, Okutan). ~¥2,500–3,500pp. Famous and busy — expect a short wait.\n\nOmen (おめん): Famous handmade udon on the Philosopher's Path (north end). Thick, chewy noodles in a light broth. Queue moves fast. ~¥1,200–1,500pp. Very popular with locals."
+        },
+        {
+          "time": "09:00",
+          "activity": "🧺 Use Laundry? — Mitsui Garden drop-off service",
+          "status": "optional",
+          "notes": "No self-service coin laundry at this hotel. Drop-off laundry service only: hand in at front desk before 10:00am, returned same day by 18:00. Charged per item (~¥500–1,000+ per piece) — expensive for a full load. Consider waiting for Candeo Osaka coin laundry instead unless you're desperate.",
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
         },
         {
           "time": "16:30",
@@ -1810,6 +1831,19 @@
           "address": "Kasuga Taisha Shrine, 160 Kasuganocho, Nara 630-8212, Japan",
           "mapQuery": "Kasuga Taisha Shrine Nara",
           "detail": "Kasuga Taisha (春日大社) — UNESCO World Heritage\nHours: 06:30–17:30 · Outer shrine: Free · Inner sanctuary: ¥500pp\n\nFounded in 768 AD. The approach through the forest is lined with over 3,000 stone lanterns, all donated by worshippers. The deer wander freely here too.\n\nThe hanging bronze lanterns inside the covered corridor are extraordinary — imagine all 2,000 lit at once (only happens during Mandoro festivals in February and August)."
+        },
+        {
+          "time": "21:30",
+          "activity": "🧺 Use Laundry? — Candeo coin laundry",
+          "status": "optional",
+          "notes": "Self-service coin laundry on site. Wash + dry ~¥500–700 per load (~£3). Day 12 of 15 — last good chance to do laundry before flying home. Saves packing dirty clothes.",
+          "mapQuery": "Candeo Hotels Osaka The Tower Kita-ku"
+        },
+        {
+          "time": "19:30",
+          "activity": "✈️ Asiana OZ113 online check-in — opens now",
+          "status": "planning",
+          "notes": "Check-in opens 48hrs before Fri 17 Apr 19:25 departure = now (Wed 15 Apr 19:25 JST). Use flyasiana.com or Asiana app. PNR: D2MKD6. Check in all 4: Andy (9882489958593), Sarah (9882489958594), Jack (9882489958595), Charlie (9882489958596)."
         },
         {
           "time": "16:00",
@@ -2410,6 +2444,20 @@
           "deadline": "15 Apr 2026",
           "status": "incomplete",
           "notes": "Complete again for the return Seoul transit/overnight (arriving KIX→ICN 17 Apr, departing ICN→LHR 18 Apr). Site: e-arrivalcard.go.kr — same process, complete within 72 hrs of the Asiana OZ113 Osaka→Seoul flight. Save the PDF confirmation."
+        },
+        {
+          "task": "✈️ Asiana OZ106 online check-in (Seoul → Tokyo)",
+          "who": "Andy",
+          "deadline": "Thu 3 Apr 14:15 (48hrs before dep)",
+          "status": "incomplete",
+          "notes": "Online check-in opens 48 hours before departure. OZ106 departs Sun 5 Apr at 14:15 ICN → check-in opens Thu 3 Apr 14:15 UK time. Check in all 4 passengers. Ticket numbers: Andy 9882489958593 · Sarah 9882489958594 · Jack 9882489958595 · Charlie 9882489958596. PNR: E3FYHB. Use flyasiana.com or Asiana app."
+        },
+        {
+          "task": "✈️ Asiana OZ113 online check-in (Osaka → Seoul)",
+          "who": "Andy",
+          "deadline": "Wed 15 Apr 19:25 JST (48hrs before dep)",
+          "status": "incomplete",
+          "notes": "Online check-in opens 48 hours before departure. OZ113 departs Fri 17 Apr at 19:25 KIX → check-in opens Wed 15 Apr at 19:25 Japan time. Do this on the Nara day trip evening. Check in all 4 passengers. Ticket numbers: Andy 9882489958593 · Sarah 9882489958594 · Jack 9882489958595 · Charlie 9882489958596. PNR: D2MKD6. Use flyasiana.com or Asiana app."
         }
       ]
     },
