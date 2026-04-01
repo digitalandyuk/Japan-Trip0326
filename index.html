@@ -379,7 +379,8 @@ function resolveStatus(item){
       n.toLowerCase().includes('klook')||n.toLowerCase().includes('expedia')||
       /\u00a3\d/.test(n)||/\u00a5[\d,]+(paid|total)/i.test(n)||
       n.toLowerCase().includes('booked via')||n.toLowerCase().includes('pre-booked')||
-      n.toLowerCase().includes('emot')||n.toLowerCase().includes('odakyu')
+      n.toLowerCase().includes('emot')||n.toLowerCase().includes('odakyu')||
+      /order\s*#?\s*\d+/i.test(n)||/\u00a5[\d,]+\s*(paid|total)/i.test(n)
     );
     if(!hasRef) return{cls:'s-bookahead',label:'Book Ahead'};
   }
