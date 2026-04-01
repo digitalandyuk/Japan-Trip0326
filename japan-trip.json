@@ -17,7 +17,8 @@
           "notes": "Order ID: L4PUK-777209 · Plate: GL74VLV · Call 07850366784 when 30 mins away · T3 Short Stay Level 4 Row B · Airport Access Fee £7.50",
           "detail": "Order ID: L4PUK-777209\nPlate: GL74VLV\n📞 Call 07850366784 when 30 mins from airport\n➡ T3 Short Stay Car Park · Level 4 · Row B\nSign vehicle inspection document on handover\n⚠ Airport Access Fee £7.50 payable on drop-off\n⚠ ULEZ payable for Fri 3 Apr\n\nReturn instructions:\n📞 Call 1 — as soon as you land\n📞 Call 2 — after collecting luggage\n➡ T3 Short Stay Car Park · Level 4 · Row B",
           "address": "KwikPark Terminal 3, Heathrow Airport, Hounslow TW6 1QG, UK",
-          "mapQuery": "KwikPark Heathrow Terminal 3"
+          "mapQuery": "KwikPark Heathrow Terminal 3",
+          "url": "https://www.looking4.com/uk/manage-booking"
         },
         {
           "time": "10:30",
@@ -35,7 +36,8 @@
           "notes": "Boeing 787-9 · Direct to Seoul Incheon T2 · ~11h · Ref E3FYHB",
           "address": "London Heathrow Airport Terminal 3, Hounslow TW6 1QG, UK",
           "mapQuery": "Heathrow Terminal 3",
-          "detail": "Flight: VS208 · Boeing 787-9 Dreamliner\nRoute: LHR → ICN T2 · Duration: ~11 hours\nSeats: 24D/24F (row 24) + 25D/25F (row 25)\n\nThe 787 has larger windows, better cabin pressure and humidity than older aircraft — less dehydrating on long haul.\n\nTime zone: Seoul is UTC+9. London (BST) is UTC+1 in April — 8 hours ahead.\nTip: Set watches to Seoul time as you board and try to sleep — arrival Day 1 has a full afternoon planned."
+          "detail": "Flight: VS208 · Boeing 787-9 Dreamliner\nRoute: LHR → ICN T2 · Duration: ~11 hours\nSeats: 24D/24F (row 24) + 25D/25F (row 25)\n\nThe 787 has larger windows, better cabin pressure and humidity than older aircraft — less dehydrating on long haul.\n\nTime zone: Seoul is UTC+9. London (BST) is UTC+1 in April — 8 hours ahead.\nTip: Set watches to Seoul time as you board and try to sleep — arrival Day 1 has a full afternoon planned.",
+          "url": "https://www.virginatlantic.com/mytrips"
         }
       ],
       "title": "London → Seoul",
@@ -136,7 +138,8 @@
           "notes": "Booked via Expedia. Central location near Myeongdong, Namdaemun Market, Namsan Hill.",
           "detail": "Expedia Conf: 25301968\nSat 4 Apr → Sun 5 Apr (1 night)\nCost: £388.78 · PAID MC 3823\nBreakfast for 2 included\nCheck-in from 3pm",
           "address": "Crown Park Hotel, 5 Namsandong 2-ga, Jung-gu, Seoul 04605, South Korea",
-          "mapQuery": "Crown Park Hotel Seoul"
+          "mapQuery": "Crown Park Hotel Seoul",
+          "url": "https://www.expedia.co.uk/trips/72068508725700"
         },
         {
           "time": "16:00",
@@ -265,7 +268,8 @@
           "notes": "Asiana Airlines counter, Terminal 1. Allow 30 mins check-in plus 20–30 mins security.",
           "detail": "Flight: Asiana OZ106\nRoute: ICN T1 → NRT T1\nDate: Sunday 5 April 2026\nDeparts: 15:30 | Arrives: 17:40\nPNR: D2MKD6 · Cost: £951.48 total",
           "address": "Incheon International Airport Terminal 1, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Incheon International Airport Terminal 1"
+          "mapQuery": "Incheon International Airport Terminal 1",
+          "url": "https://flyasiana.com/C/GB/EN/contents/booking/manage-booking"
         },
         {
           "time": "15:30",
@@ -273,7 +277,8 @@
           "status": "confirmed",
           "notes": "~2h 10m. PNR: D2MKD6 · PAID £951.48",
           "address": "Incheon International Airport Terminal 1, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Incheon International Airport Terminal 1"
+          "mapQuery": "Incheon International Airport Terminal 1",
+          "url": "https://flyasiana.com/C/GB/EN/contents/booking/manage-booking"
         },
         {
           "time": "17:40",
@@ -309,10 +314,11 @@
           "time": "18:30",
           "activity": "Narita → Shinjuku transfer (Klook bus × 4)",
           "status": "confirmed",
-          "notes": "PAID · £91.28 · Direct bus to Shinjuku",
+          "notes": "PAID · £91.28 · Direct bus to Shinjuku · Klook ref: XEB644582",
           "detail": "Klook Transfer — PAID\nCost: £91.28 for 4\nDirect bus NRT → Busta Shinjuku Bus Terminal",
           "address": "Tokyo Narita International Airport, 1-1 Furugome, Narita, Chiba 282-0004, Japan",
-          "mapQuery": "Narita International Airport Tokyo"
+          "mapQuery": "Narita International Airport Tokyo",
+          "url": "https://www.klook.com/en-GB/account/booking"
         },
         {
           "time": "21:00",
@@ -321,7 +327,8 @@
           "notes": "3 nights. West Shinjuku — central for metro, walkable to Kabukicho and Golden Gai.",
           "detail": "Expedia Itinerary: 73304498303010\n¥472,014 · PAY AT PROPERTY\nFree breakfast · 2 rooms\nCheck-in: Sun 5 Apr | Check-out: Wed 8 Apr\n➡ Show Expedia confirmation at check-in",
           "address": "Keio Plaza Hotel Tokyo, 2-2-1 Nishishinjuku, Shinjuku-ku, Tokyo 160-8330, Japan",
-          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku"
+          "mapQuery": "Keio Plaza Hotel Tokyo Shinjuku",
+          "url": "https://www.expedia.co.uk/trips/73304498303010"
         },
         {
           "time": "21:30",
@@ -623,7 +630,8 @@
           "notes": "The SUMO Show (no meal). Doors 16:45, show 17:00–18:00. Sumo demonstration by retired professional wrestlers, interactive experience (chance to step into the ring), photo session and Q&A. Two bookings of 2 seats each. 15 min from Ameyoko by metro (Toei Shinjuku Line to Kikukawa).",
           "address": "3-1-11 Tatekawa, Sumida-ku, Tokyo",
           "mapQuery": "Yokozuna Tonkatsu Dosukoi Tanaka Sumida Tokyo",
-          "detail": "Yokozuna Tonkatsu Dosukoi Tanaka (横綱とんかつ どすこい田中) — sumo entertainment venue run by a retired professional wrestler.\n\nTimetable:\n16:45 — Open for entry\n17:00 — Opening video screening\n17:10 — Sumo demonstration\n17:40 — Sumo experience (interactive)\n17:50 — Photo session & Q&A\n18:00 — End\n\nBooking 1: Reservation ID GSSFO38 · Table 6 · 2 adults · ¥24,200\nBooking 2: Reservation ID UYKE2V5 · Table 3 · 2 adults · ¥22,000\nTotal: 4 seats · ¥46,200\n\nNote: This is the show-only option — no meal included. Dinner afterwards.\nContact: info@osumo-3.com\nBooked via: sumoexperience.com"
+          "detail": "Yokozuna Tonkatsu Dosukoi Tanaka (横綱とんかつ どすこい田中) — sumo entertainment venue run by a retired professional wrestler.\n\nTimetable:\n16:45 — Open for entry\n17:00 — Opening video screening\n17:10 — Sumo demonstration\n17:40 — Sumo experience (interactive)\n17:50 — Photo session & Q&A\n18:00 — End\n\nBooking 1: Reservation ID GSSFO38 · Table 6 · 2 adults · ¥24,200\nBooking 2: Reservation ID UYKE2V5 · Table 3 · 2 adults · ¥22,000\nTotal: 4 seats · ¥46,200\n\nNote: This is the show-only option — no meal included. Dinner afterwards.\nContact: info@osumo-3.com\nBooked via: sumoexperience.com\n\nManage reservation: https://www.dumbonet.com/tanaka/reserve/index1.html",
+          "url": "https://www.sumoexperience.com/"
         },
         {
           "time": "19:00",
@@ -783,10 +791,11 @@
           "time": "10:00",
           "activity": "Romancecar Hakone 3 GSE — Shinjuku → Hakone-Yumoto",
           "status": "confirmed",
-          "notes": "Car 7, seats 5C/5D/6C/6D — surcharge only, base fare covered by Freepass.",
-          "detail": "Romancecar: Hakone 3 (GSE) — BOOKED\nDate: Wed 8 Apr\nDeparts: 10:00 Shinjuku → Arrives: 11:27 Hakone-Yumoto\nSeats: Car 7 — 5C, 5D, 6C, 6D\nCost: ¥4,600 total (surcharge — base fare via Freepass)\nControl no: E786\nEMot: sarahevansemail@googlemail.com",
+          "notes": "Hakone 3 (GSE) · 10:00 Shinjuku → 11:27 Hakone-Yumoto · Car 7 seats 5C/5D/6C/6D · ¥4,600 · Control no. E786 · Booked via EMot (Sarah's account) · Use with Hakone Freepass",
+          "detail": "EMot Romancecar Limited Express Ticket\nTrain: Hakone 3 (GSE)\n10:00 Shinjuku → 11:27 Hakone-Yumoto\n\nCar 7 · Standard seats: 5C, 5D, 6C, 6D (4 adults)\nCost: ¥4,600 (10% tax incl.)\nPayment: Credit card (3-D Secure)\n\nControl number: E786\nTicket ID: 94230999-a660-42c6-8997-a7ed3e1862c6\nBooked under: Sarah's EMot account (sarahevansemail@googlemail.com)\n\n⚠ Must be used with a regular ticket, Freepass, or IC card (Suica/PASMO)\n→ Using Hakone Freepass for the base fare\n\nEMot support: support@emot.jp\nFAQ: https://www.emot.jp/emot_online_tickets_faq_en.html",
           "address": "Shinjuku Station, 3-38-1 Shinjuku, Shinjuku-ku, Tokyo 160-0022, Japan",
-          "mapQuery": "Shinjuku Station Tokyo"
+          "mapQuery": "Shinjuku Station Tokyo",
+          "url": "https://www.emot.jp/emot_online_tickets_faq_en.html"
         },
         {
           "time": "11:27",
@@ -821,7 +830,8 @@
           "notes": "Superior Rooms with private open-air rotenburo bath. Yukatas provided.",
           "detail": "Ryokan: TEN-YU (Hakone Kowakien)\nConf: 20251118076112540 · Expedia: 73304509243260\nCheck-in: Wed 8 Apr | Check-out: Fri 10 Apr (2 nights)\nRoom 1: Andrew Evans (2 adults) · Room 2: Andrew Evans (1 adult + 1 child)\nCost: £1,765.14 + £5.88 at property · MC 3823\nF&B credit ¥5,605 per room · Buffet dinner from 5pm\n⚠ Arrange Takuhaibin luggage forwarding Thu evening",
           "address": "Hakone Kowakien Ten-yu, 1297 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japan",
-          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira"
+          "mapQuery": "Ten-yu Ryokan Hakone Ninotaira",
+          "url": "https://www.expedia.co.uk/trips/73304509243260"
         },
         {
           "time": "18:30",
@@ -1126,10 +1136,11 @@
           "time": "12:07",
           "activity": "Hikari 641: Odawara → Kyoto",
           "status": "confirmed",
-          "notes": "Ordinary Car, Car 6. Seats 14D, 14E, 15D, 15E. Mt. Fuji visible on right (E seats) first ~30 mins.",
-          "detail": "JR CENTRAL — BOOKED\nReservation No: 40422\nReceipt ID: ADK3908L\nTrain: Hikari 641\nOdawara 12:07 → Kyoto 14:12\nOrdinary Car — CAR 6\nSeats: 14-D, 14-E, 15-D, 15-E\nTotal: ¥49,200 (¥12,300pp)\nPaid: Revolut Mastercard ending 9666\n⚠ Bring physical Revolut card to collect tickets",
+          "notes": "Reservation 40422 · Receipt ADK3908L · Car 6 seats 14D/14E/15D/15E · ¥49,200 · ⚠ Collect physical tickets at Odawara Station JR Central machines before boarding",
+          "detail": "JR-WEST Online Train Reservation\nReservation No: 40422\nReceipt ID: ADK3908L\n\nHikari 641 · Reserved seat, ordinary car, non-smoking\nOdawara 12:07 → Kyoto 14:12\nCar 6 · Seats 14D, 14E, 15D, 15E (4 adults)\n\nCost: ¥49,200 (¥12,300 pp — limited express ¥5,150 + basic fare ¥7,150)\nPaid: Mastercard ****9666\n\n⚠ MUST collect physical tickets before boarding at Odawara Station\nUse JR Central ticket vending machine or ticket office (NOT JR East machines)\nNeed: the credit card used to book (physical card, not virtual) + 4-digit ID number\nBasic fare ticket valid 10–13 April\n\nManage/change/refund: https://www.westjr.co.jp/travel-information/en/tickets-passes/\nStation ticket collection info: https://www.westjr.co.jp/global/en/howto/train-reservation/receive/",
           "address": "Odawara Station, 1-1 Jonai, Odawara, Kanagawa 250-0011, Japan",
-          "mapQuery": "Odawara Station Shinkansen Kanagawa"
+          "mapQuery": "Odawara Station Shinkansen Kanagawa",
+          "url": "https://www.westjr.co.jp/travel-information/en/tickets-passes/"
         },
         {
           "time": "14:12",
@@ -1156,7 +1167,8 @@
           "notes": "4-night stay. Hotel built around 500-year-old Jokyoji Temple. Large public bath free for guests (15:00–10:00). Walking distance to Gion, Nishiki Market, Ponto-cho.",
           "detail": "EXPEDIA BOOKED\nMitsui Garden Hotel Kyoto Kawaramachi Jokyoji\nExp: 20251124078897910\n4 nights: Fri 10 – Tue 14 April · 2 rooms · 4 guests\nTotal: £1,932.76 · PAID MC 3823\nFree breakfast included\n➡ Show Expedia booking confirmation at check-in\nNearest station: Kyoto-Kawaramachi (Hankyu) — 1 min walk\nPublic bath: Free for guests, 15:00–10:00",
           "address": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji, 563 Shimogoriomachi, Shimogyo Ward, Kyoto 600-8096, Japan",
-          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+          "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
+          "url": "https://www.expedia.co.uk/trips/72068513747786"
         },
         {
           "time": "15:00",
@@ -1436,7 +1448,8 @@
           "status": "booked",
           "notes": "✅ BOOKED · 4 adults · Car 3 · ¥3,520 paid · E-ticket: linkt.to/oGdvHgf1 — show screen at ticket gate, not the PDF · Arrives Torokko Kameoka ~10:27",
           "mapQuery": "Torokko Saga Station Arashiyama Kyoto",
-          "detail": "Booking ref: ARS_SAGANO_KANKO-20260323-4F63 · Supplier ref: I-260323-1106180 · Traveller: Andy Evans · Route: Torokko Saga (嵯峨駅) → Kameoka (亀岡駅) · Date: Sun 12 Apr 2026 · 4 adults · ¥3,520 paid · Purchased: 23 Mar 2026\n\nE-TICKET: linkt.to/oGdvHgf1 — click this link before boarding and show the screen at the ticket gate. The printed/PDF voucher CANNOT be used for boarding.\n\nCar 3 is an enclosed car with opening windows. The No.5 \"Rich\" open-air car has no glass — great views but you may get wet in rain, and umbrellas are not allowed onboard.\n\nJourney: 25 minutes through the Hozugawa River gorge. 7.3km of preserved 1989 railway line. Cherry blossoms line the gorge in April.\n\nBoarding: Torokko Saga Station is 1 min from JR Saga-Arashiyama Station south exit. Business hours open ~08:35. Timetable: sagano-kanko.co.jp/en/train-info\n\nSeat changes allowed up to 1 day before departure (max 3 changes)."
+          "detail": "Booking ref: ARS_SAGANO_KANKO-20260323-4F63 · Supplier ref: I-260323-1106180 · Traveller: Andy Evans · Route: Torokko Saga (嵯峨駅) → Kameoka (亀岡駅) · Date: Sun 12 Apr 2026 · 4 adults · ¥3,520 paid · Purchased: 23 Mar 2026\n\nE-TICKET: linkt.to/oGdvHgf1 — click this link before boarding and show the screen at the ticket gate. The printed/PDF voucher CANNOT be used for boarding.\n\nCar 3 is an enclosed car with opening windows. The No.5 \"Rich\" open-air car has no glass — great views but you may get wet in rain, and umbrellas are not allowed onboard.\n\nJourney: 25 minutes through the Hozugawa River gorge. 7.3km of preserved 1989 railway line. Cherry blossoms line the gorge in April.\n\nBoarding: Torokko Saga Station is 1 min from JR Saga-Arashiyama Station south exit. Business hours open ~08:35. Timetable: sagano-kanko.co.jp/en/train-info\n\nSeat changes allowed up to 1 day before departure (max 3 changes).",
+          "url": "https://linkt.to/oGdvHgf1"
         },
         {
           "time": "10:27",
@@ -1452,7 +1465,8 @@
           "status": "booked",
           "notes": "✅ BOOKED via Klook · £99.93 · 4 adults (Andrew, Sarah, Jack, Charlie Evans) · Booking: KLOOK-20260323-DB5V · Participation time: 11:00 · Allow up to 30 min wait at dock before departure · Arrives Arashiyama ~13:15 · Show smartphone QR code ticket at reception desk on arrival",
           "mapQuery": "Hozugawa River Boat Ride Kameoka Kyoto",
-          "detail": "Booking ref: KLOOK-20260323-DB5V · Provider: 保津川下り（保津川遊船企業組合）\nTravellers: Andrew Evans, Sarah Evans, Jack Evans, Charlie Evans · 4 adults\nDate: Sun 12 Apr 2026 · Participation time: 11:00 · £99.93 paid via Klook · Purchased: 23 Mar 2026\n\nTICKET: Show smartphone QR code at the reception desk at the boarding area.\nLocation: 2 Shimo-Nakajima Hozu-cho Kameoka, 621-0005, Kyoto\nGoogle Maps: https://goo.gl/maps/8pULEHy6xMJswXDj8\n\nDEPARTURE: Regular departures at 9:00 / 10:00 / 11:00 / 12:00 / 13:00 / 14:00 / 15:00\nYour slot: 11:00 — allow up to 30 minutes after scheduled time before the boat departs.\nIf you arrive late for your check-in time, boarding may not be permitted.\n\nWHAT'S INCLUDED: 2-hour boat ride along the Hozugawa River with skilled boatmen.\nLife jackets compulsory — provided at the boarding point.\nNo restrooms on the boat — use facilities before boarding.\nFood and beverages are permitted on board.\nPhotography allowed — inform boatman if you intend to stand up.\n\nWEATHER: Runs in light rain (covered by canopy). May be suspended in severe weather or river flooding.\nCheck operation status on the day: hozugawakudari.jp\n\nACCESS FROM TOROKKO KAMEOKA: Free shuttle bus from Torokko Kameoka Station to the boat dock (~15 min). Horse-drawn carriage also available. Departures timed to the train arrivals.\nAlternatively: 10 min walk from JR Kameoka Station (North exit)."
+          "detail": "Booking ref: KLOOK-20260323-DB5V · Provider: 保津川下り（保津川遊船企業組合）\nTravellers: Andrew Evans, Sarah Evans, Jack Evans, Charlie Evans · 4 adults\nDate: Sun 12 Apr 2026 · Participation time: 11:00 · £99.93 paid via Klook · Purchased: 23 Mar 2026\n\nTICKET: Show smartphone QR code at the reception desk at the boarding area.\nLocation: 2 Shimo-Nakajima Hozu-cho Kameoka, 621-0005, Kyoto\nGoogle Maps: https://goo.gl/maps/8pULEHy6xMJswXDj8\n\nDEPARTURE: Regular departures at 9:00 / 10:00 / 11:00 / 12:00 / 13:00 / 14:00 / 15:00\nYour slot: 11:00 — allow up to 30 minutes after scheduled time before the boat departs.\nIf you arrive late for your check-in time, boarding may not be permitted.\n\nWHAT'S INCLUDED: 2-hour boat ride along the Hozugawa River with skilled boatmen.\nLife jackets compulsory — provided at the boarding point.\nNo restrooms on the boat — use facilities before boarding.\nFood and beverages are permitted on board.\nPhotography allowed — inform boatman if you intend to stand up.\n\nWEATHER: Runs in light rain (covered by canopy). May be suspended in severe weather or river flooding.\nCheck operation status on the day: hozugawakudari.jp\n\nACCESS FROM TOROKKO KAMEOKA: Free shuttle bus from Torokko Kameoka Station to the boat dock (~15 min). Horse-drawn carriage also available. Departures timed to the train arrivals.\nAlternatively: 10 min walk from JR Kameoka Station (North exit).",
+          "url": "https://www.klook.com/en-GB/account/booking"
         },
         {
           "time": "13:15",
@@ -1607,18 +1621,20 @@
           "status": "planning"
         },
         {
-          "time": "13:45",
+          "time": "13:30",
           "activity": "⭐ Arrive Gion Kobu Kaburenjo — tea ceremony",
-          "notes": "Arrive by 13:45 for Ryurei-style tea ceremony before the performance. Included in First Class ticket. Traditional matcha and wagashi served by apprentice geiko.",
-          "status": "included"
+          "notes": "Arrive by 13:30 (60 mins before 14:30 performance) for Ryurei-style tea ceremony. Included in First Class ticket. Traditional matcha and wagashi served by apprentice geiko.",
+          "status": "included",
+          "url": "https://miyako-odori.jp/timetable.pdf"
         },
         {
           "time": "14:30",
           "activity": "⭐ Miyako Odori — Geiko & Maiko dance — BOOKED",
-          "notes": "✅ BOOKED · Order 00101707 · 4 × First Class + Tea Service · Row 22 seats 6–9 · ¥28,860 total · Revolut 9666 · QR via Less Q — screenshot all 4 tickets as backup. 152nd Miyako Odori at Gion Kobu Kaburenjo. ~70 min performance.",
+          "notes": "✅ BOOKED · Order 00101707 · 4 × First Class + Tea Service · 1F Row 22 seats 6-9 · ¥28,860 total · Revolut 9666 · QR tickets: tap link for all 4 QR codes — screenshot as backup. 152nd Miyako Odori at Gion-kobu Kaburenjo. ~70 min performance. Arrive by 13:30 for tea ceremony.",
           "cost": 28860,
           "status": "booked",
-          "detail": "Booking: Order 00101707\nEvent: 152nd Miyako Odori\nVenue: Gion Kobu Kaburenjo, Kyoto\nTickets: 4 × First Class + Tea Service\nSeats: Row 22, seats 6–9\nTotal: ¥28,860\nPayment: Revolut card 9666\nTickets: QR via Less Q app — screenshot all 4 as backup\nTea ceremony: Ryurei-style, from 13:45, included in First Class"
+          "detail": "Booking: Order 00101707\nEvent: 152nd Miyako Odori 2026\nVenue: Gion-kobu Kaburenjo Theater, Kyoto\nDate: Mon 13 Apr 2026 · 14:30 (JST)\nTickets: 4 × First Class Seat with Tea Service · ¥7,000 each\nSeats:\n  1F Row 22 Seat 6 (1階 22列 6番)\n  1F Row 22 Seat 7 (1階 22列 7番)\n  1F Row 22 Seat 8 (1階 22列 8番)\n  1F Row 22 Seat 9 (1階 22列 9番)\n\nCost breakdown:\n  Tickets: ¥28,000\n  Service charge: ¥200\n  Ticketing charge: ¥660\n  Total: ¥28,860\nPayment: Revolut card ****9666 · Exp 11/2030\n\n🎟 QR TICKETS (Less Q):\nhttps://www.s2.e-get.jp/gtset4/pq/?tn=5885b58957698b899eb1a9bda3a1a5f692af1bd683b33eb4462adbf37a1dab20l4&E=1\n⚠ Screenshot all 4 QR codes before you go — one per seat.\nQR codes are issued per seat. Show each QR at the entrance individually.\nThe representative can display all QR codes in turn, or send to companions via email/LINE.\nHow-to guide: https://www.s2.e-get.jp/howto/resq/resq_en.html\n\n🍵 Tea ceremony: Arrive 60 mins before performance (by 13:30).\nTimetable: https://miyako-odori.jp/timetable.pdf\nRyurei-style tea ceremony included in First Class ticket.\n\nContact: ticket-info@miyako-odori.jp\nWebsite: http://www.miyako-odori.jp/",
+          "url": "https://www.s2.e-get.jp/gtset4/pq/?tn=5885b58957698b899eb1a9bda3a1a5f692af1bd683b33eb4462adbf37a1dab20l4&E=1"
         },
         {
           "time": "15:45",
@@ -1698,7 +1714,8 @@
           "notes": "Or drop bags if too early. 3 nights. Hotel is in Kita-ku (Umeda area) — Dotonbori is ~25 min walk south or metro.",
           "detail": "EXPEDIA BOOKED\nCandeo Hotels Osaka The Tower\nExp: 20251124078913429\nTue 14 – Fri 17 April · 3 nights · 2 rooms · 4 guests\nTotal: £1,579.20 · PAID MC 3823\nFree breakfast + Exec Bar Lounge\n➡ Show Expedia booking confirmation at check-in\nLocation: Kita-ku (Umeda) — near Osaka Station\nNote: Dotonbori is ~25 min walk south or Midosuji Line (2 stops)",
           "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
-          "mapQuery": "Candeo Hotels Osaka The Tower"
+          "mapQuery": "Candeo Hotels Osaka The Tower",
+          "url": "https://www.expedia.co.uk/trips/72068515678580"
         },
         {
           "time": "14:30",
@@ -1725,7 +1742,8 @@
           "notes": "Meet at Daikokucho Station Exit 1, top of stairs (Family Mart) — arrive by 17:20. 3.5 hrs with dinner. Ends ~21:00.",
           "address": "Daikokucho Station, Naniwa Ward, Osaka, Japan",
           "mapQuery": "Daikokucho Station Osaka",
-          "detail": "GETYOURGUIDE BOOKED\nOsaka Deep Backstreets Walking Tour with Dinner\nBooking ref: GYGLMR35M35H · GetYourGuide\nVoucher codes (1 per person): HXC95 / R72HK / HC11G / XO2VM\nTue 14 Apr · 17:30 start · 3.5 hrs (ends ~21:00)\nAdults × 4 · Cost: £184.32 · Paid\nCancel by: 17:30 Mon 13 Apr for full refund\nProvider phone: +8108070122238\n\nMeeting point: Daikokucho Station Exit 1, top of stairs (Family Mart) — arrive by 17:20.\nTour explores Osaka backstreets, covered markets, and local eateries with a knowledgeable guide. Dinner included."
+          "detail": "GETYOURGUIDE BOOKED\nOsaka Deep Backstreets Walking Tour with Dinner\nBooking ref: GYGLMR35M35H · GetYourGuide\nVoucher codes (1 per person): HXC95 / R72HK / HC11G / XO2VM\nTue 14 Apr · 17:30 start · 3.5 hrs (ends ~21:00)\nAdults × 4 · Cost: £184.32 · Paid\nCancel by: 17:30 Mon 13 Apr for full refund\nProvider phone: +8108070122238\n\nMeeting point: Daikokucho Station Exit 1, top of stairs (Family Mart) — arrive by 17:20.\nTour explores Osaka backstreets, covered markets, and local eateries with a knowledgeable guide. Dinner included.",
+          "url": "https://www.getyourguide.com/account/bookings"
         },
         {
           "time": "21:15",
@@ -1803,7 +1821,8 @@
           "notes": "Reservation A46746 · Train 1017 · Car 2 · Seats 4A·4B·5A·5B · Upstairs · ¥2,080 total (4 adults). Show e-ticket on phone. Journey 35 min.",
           "address": "Osaka-Namba Station, Chuo Ward, Osaka 542-0076, Japan",
           "mapQuery": "Osaka Namba Kintetsu Station",
-          "detail": "KINTETSU BOOKED — Reservation A46746\nTrain: Ltd.Exp.Vistacar · Train No. 1017 · Car No. 2\nSeats: 4A · 4B · 5A · 5B · Upstairs\nDeparture: 10:47 Osaka-Namba → Arrival: 11:22 Kintetsu-Nara\nCost: ¥2,080 Limited Express charge (4 adults) · Paid card 3823\nTicket No: 3600-3065 · Certification: 27608\n\nShow e-ticket on phone — access via 'Review/refund/change of purchased ticket(s)' on Kintetsu site.\nAlso carry basic fare ticket purchased at station (¥680pp).\n\nVistacar is a double-decker sightseeing train — upper deck recommended for views across the Yamato plain."
+          "detail": "KINTETSU BOOKED — Reservation A46746\nTrain: Ltd.Exp.Vistacar · Train No. 1017 · Car No. 2\nSeats: 4A · 4B · 5A · 5B · Upstairs\nDeparture: 10:47 Osaka-Namba → Arrival: 11:22 Kintetsu-Nara\nCost: ¥2,080 Limited Express charge (4 adults) · Paid card 3823\nTicket No: 3600-3065 · Certification: 27608\n\nShow e-ticket on phone — access via 'Review/refund/change of purchased ticket(s)' on Kintetsu site.\nAlso carry basic fare ticket purchased at station (¥680pp).\n\nVistacar is a double-decker sightseeing train — upper deck recommended for views across the Yamato plain.",
+          "url": "https://www.ticket.kintetsu.co.jp/vs/en/T/TZZ/TZZ10.do?op=tDisplayVisitorMenu#vs-ticketinfo"
         },
         {
           "time": "11:22",
@@ -2185,7 +2204,8 @@
           "notes": "Kansai Airport T1. Check-in opens ~2hrs before departure.",
           "detail": "Flight: Asiana OZ113\nRoute: KIX T1 → ICN T2\nDate: Friday 17 April 2026\nDeparts: 19:25 | Arrives: 21:30 | Flying time: ~1h 55m\nPNR: D2MKD6\nSeats: Andy 24H · Sarah 24J | Jack 25H · Charlie 25J",
           "address": "Kansai International Airport, 1 Senshukukokita, Izumisano, Osaka 549-0001, Japan",
-          "mapQuery": "Kansai International Airport KIX"
+          "mapQuery": "Kansai International Airport KIX",
+          "url": "https://flyasiana.com/C/GB/EN/contents/booking/manage-booking"
         },
         {
           "time": "19:25",
@@ -2193,7 +2213,8 @@
           "status": "confirmed",
           "notes": "~1h 55m. PNR: D2MKD6. Seats: Andy 24H · Sarah 24J | Jack 25H · Charlie 25J.",
           "address": "Kansai International Airport, 1 Senshukukokita, Izumisano, Osaka 549-0001, Japan",
-          "mapQuery": "Kansai International Airport KIX"
+          "mapQuery": "Kansai International Airport KIX",
+          "url": "https://flyasiana.com/C/GB/EN/contents/booking/manage-booking"
         },
         {
           "time": "21:30",
@@ -2211,7 +2232,8 @@
           "notes": "Free shuttle from ICN T2. Early start tomorrow. Hotel connected to airport complex.",
           "detail": "Expedia Conf: 150513RA052227\nGrand Hyatt Incheon\nFri 17 → Sat 18 April\nCost: £277.04\n⚠ PAY AT PROPERTY (not prepaid)\n➡ Free hotel shuttle from ICN Terminal 2\nNo breakfast included",
           "address": "Grand Hyatt Incheon, 208 Yeongjonghaean-ro 321beon-gil, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Grand Hyatt Incheon Airport Hotel"
+          "mapQuery": "Grand Hyatt Incheon Airport Hotel",
+          "url": "https://www.expedia.co.uk/trips/72068509828739"
         }
       ],
       "title": "Osaka → Seoul Incheon",
@@ -2291,7 +2313,8 @@
           "notes": "Direct, ~11h 45m. Arrive LHR Terminal 3. Ref E3FYHB.",
           "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
           "mapQuery": "Incheon International Airport Terminal 2",
-          "detail": "VS209 · ICN T2 → LHR T3 · ~11h 45m\nSeats: 23D/23F/24D/24F\n\nLast flight. The sky outside Korea as you depart — final views of Asia.\n\nTime zone: Arrive London 18:50 BST (UTC+1). Japan/Korea were UTC+9 — clock goes back 8 hours.\n\nHeathrow: UK passport eGates. Baggage reclaim T3. KwikPark Meet & Greet — call as soon as you land, then again after collecting luggage."
+          "detail": "VS209 · ICN T2 → LHR T3 · ~11h 45m\nSeats: 23D/23F/24D/24F\n\nLast flight. The sky outside Korea as you depart — final views of Asia.\n\nTime zone: Arrive London 18:50 BST (UTC+1). Japan/Korea were UTC+9 — clock goes back 8 hours.\n\nHeathrow: UK passport eGates. Baggage reclaim T3. KwikPark Meet & Greet — call as soon as you land, then again after collecting luggage.",
+          "url": "https://www.virginatlantic.com/mytrips"
         },
         {
           "time": "18:50",
@@ -2309,7 +2332,8 @@
           "notes": "Order ID: L4PUK-777209 · Plate: GL74VLV · Call 1: as soon as you land — 07850366784 · Call 2: after collecting luggage · T3 Short Stay Car Park Level 4 Row B",
           "detail": "Order ID: L4PUK-777209\nPlate: GL74VLV\n📞 Call 1 — as soon as you land: 07850366784\n📞 Call 2 — after collecting luggage: 07850366784\n➡ T3 Short Stay Car Park · Level 4 · Row B\n⚠ Airport Access Fee £7.50 payable on return\n⚠ ULEZ payable for Sat 18 Apr",
           "address": "KwikPark Terminal 3, Heathrow Airport, Hounslow TW6 1QG, UK",
-          "mapQuery": "KwikPark Heathrow Terminal 3"
+          "mapQuery": "KwikPark Heathrow Terminal 3",
+          "url": "https://www.looking4.com/uk/manage-booking"
         }
       ],
       "title": "Seoul → London",
@@ -2327,13 +2351,6 @@
     {
       "group": "🔴 NOW — Do This Weekend",
       "items": [
-        {
-          "task": "🤼 Sumo Show — Yokozuna Tonkatsu Dosukoi Tanaka ✅ BOOKED",
-          "who": "Andy",
-          "deadline": "7 Apr 2026",
-          "status": "complete",
-          "notes": "Booked! Two reservations for Tue 7 Apr at 17:00. Booking 1: GSSFO38 (Table 6, 2 seats, ¥24,200). Booking 2: UYKE2V5 (Table 3, 2 seats, ¥22,000). Total ¥46,200. Show only (no meal). Contact: info@osumo-3.com. Address: 3-1-11 Tatekawa, Sumida-ku, Tokyo."
-        },
         {
           "task": "✈️ Complete VA FlyReady — Andrew Evans (Sarah to do)",
           "who": "Sarah",
@@ -2492,22 +2509,13 @@
           "dateLabel": "Fri 3 Apr"
         },
         {
-          "task": "Seoul → Tokyo Asiana OZ106 × 4",
+          "task": "LHR Parking — KwikPark Meet & Greet T3",
           "who": "Andy",
           "deadline": "✅ Done",
           "status": "paid",
-          "notes": "Sun 5 Apr · ICN T1 → NRT · £951.48 · PNR D2MKD6",
-          "sortDate": "2026-04-05",
-          "dateLabel": "Sun 5 Apr"
-        },
-        {
-          "task": "Osaka → Seoul Asiana OZ113 × 4",
-          "who": "Andy",
-          "deadline": "✅ Done",
-          "status": "paid",
-          "notes": "Fri 17 Apr · KIX T1→ICN T2 · 19:45→21:40 · PNR D2MKD6 · A350 · Seats: Andy 24H · Sarah 24J · Jack 25H · Charlie 25J",
-          "sortDate": "2026-04-17",
-          "dateLabel": "Fri 17 Apr"
+          "notes": "Order ID: L4PUK-777209 · £119.18 · Dep Fri 3 Apr / Return Sat 18 Apr · Plate GL74VLV",
+          "sortDate": "2026-04-03",
+          "dateLabel": "Fri 3 Apr"
         },
         {
           "task": "Seoul arrival taxi — Tourmaker #1479-1",
@@ -2517,6 +2525,24 @@
           "notes": "Sat 4 Apr · ICN T2 → Crown Park Seoul · £71.12",
           "sortDate": "2026-04-04",
           "dateLabel": "Sat 4 Apr"
+        },
+        {
+          "task": "Crown Park Hotel Seoul",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Exp 25301968 · £388.78 · PAID MC 3823 · Breakfast for 2 · Sat 4–Sun 5 Apr",
+          "sortDate": "2026-04-04",
+          "dateLabel": "Sat 4 Apr"
+        },
+        {
+          "task": "Seoul → Tokyo Asiana OZ106 × 4",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Sun 5 Apr · ICN T1 → NRT · £951.48 · PNR D2MKD6",
+          "sortDate": "2026-04-05",
+          "dateLabel": "Sun 5 Apr"
         },
         {
           "task": "Seoul departure taxi — Tourmaker #1479-2",
@@ -2537,6 +2563,24 @@
           "dateLabel": "Sun 5 Apr"
         },
         {
+          "task": "Keio Plaza Hotel Tokyo",
+          "who": "Andy",
+          "deadline": "✅ Booked",
+          "status": "pay_at_property",
+          "notes": "Exp 73304498303010 · ¥472,014 PAY AT PROPERTY · Free breakfast · 2 rooms · Sun 5–Wed 8 Apr",
+          "sortDate": "2026-04-05",
+          "dateLabel": "Sun 5 Apr"
+        },
+        {
+          "task": "Sumo Show — Yokozuna Tonkatsu Dosukoi Tanaka × 4",
+          "who": "Andy",
+          "deadline": "",
+          "status": "paid",
+          "notes": "Mon 7 Apr · 2 bookings × 2 seats · Doors 16:45, show 17:00–18:00 · dumbonet.com",
+          "sortDate": "2026-04-07",
+          "dateLabel": "Mon 7 Apr"
+        },
+        {
           "task": "Hakone Freepass × 4",
           "who": "Sarah",
           "deadline": "✅ Done",
@@ -2555,24 +2599,6 @@
           "dateLabel": "Wed 8 Apr"
         },
         {
-          "task": "Shinkansen Hikari 641 × 4",
-          "who": "Andy",
-          "deadline": "✅ Done",
-          "status": "paid",
-          "notes": "Fri 10 Apr · Odawara 12:07 → Kyoto 14:12 · Res 40422 · Car 6 seats 14D/14E/15D/15E · ¥49,200 · Revolut card 9666",
-          "sortDate": "2026-04-10",
-          "dateLabel": "Fri 10 Apr"
-        },
-        {
-          "task": "LHR Parking — KwikPark Meet & Greet T3",
-          "who": "Andy",
-          "deadline": "✅ Done",
-          "status": "paid",
-          "notes": "Order ID: L4PUK-777209 · £119.18 · Dep Fri 3 Apr / Return Sat 18 Apr · Plate GL74VLV",
-          "sortDate": "2026-04-03",
-          "dateLabel": "Fri 3 Apr"
-        },
-        {
           "task": "TEN-YU Ryokan Hakone",
           "who": "Andy",
           "deadline": "✅ Done",
@@ -2582,13 +2608,13 @@
           "dateLabel": "Wed 8 Apr"
         },
         {
-          "task": "Keio Plaza Hotel Tokyo",
+          "task": "Shinkansen Hikari 641 × 4",
           "who": "Andy",
-          "deadline": "✅ Booked",
-          "status": "pay_at_property",
-          "notes": "Exp 73304498303010 · ¥472,014 PAY AT PROPERTY · Free breakfast · 2 rooms · Sun 5–Wed 8 Apr",
-          "sortDate": "2026-04-05",
-          "dateLabel": "Sun 5 Apr"
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Fri 10 Apr · Odawara 12:07 → Kyoto 14:12 · Res 40422 · Car 6 seats 14D/14E/15D/15E · ¥49,200 · Revolut card 9666",
+          "sortDate": "2026-04-10",
+          "dateLabel": "Fri 10 Apr"
         },
         {
           "task": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
@@ -2598,33 +2624,6 @@
           "notes": "Exp 20251124078897910 · £1,932.76 · PAID MC 3823 · Free breakfast · 2 rooms · Fri 10–Tue 14 Apr",
           "sortDate": "2026-04-10",
           "dateLabel": "Fri 10 Apr"
-        },
-        {
-          "task": "Candeo Hotels Osaka The Tower",
-          "who": "Andy",
-          "deadline": "✅ Done",
-          "status": "paid",
-          "notes": "Exp 20251124078913429 · £1,579.20 · PAID MC 3823 · Free breakfast + Exec Bar Lounge · 2 rooms · Tue 14–Fri 17 Apr",
-          "sortDate": "2026-04-14",
-          "dateLabel": "Tue 14 Apr"
-        },
-        {
-          "task": "Crown Park Hotel Seoul",
-          "who": "Andy",
-          "deadline": "✅ Done",
-          "status": "paid",
-          "notes": "Exp 25301968 · £388.78 · PAID MC 3823 · Breakfast for 2 · Sat 4–Sun 5 Apr",
-          "sortDate": "2026-04-04",
-          "dateLabel": "Sat 4 Apr"
-        },
-        {
-          "task": "Grand Hyatt Incheon (airport hotel)",
-          "who": "Andy",
-          "deadline": "✅ Booked",
-          "status": "pay_at_property",
-          "notes": "Exp 150513RA052227 · £277.04 · PAY AT PROPERTY · Fri 17–Sat 18 Apr",
-          "sortDate": "2026-04-17",
-          "dateLabel": "Fri 17 Apr"
         },
         {
           "task": "Sagano Romantic Train × 4 — Torokko Saga → Kameoka",
@@ -2652,6 +2651,51 @@
           "notes": "Order 00101707 · 4 x First Class + Tea Service · Row 22 seats 6-9 · ¥28,860 · Revolut 9666 · QR via Less Q",
           "sortDate": "2026-04-13",
           "dateLabel": "Mon 13 Apr"
+        },
+        {
+          "task": "Candeo Hotels Osaka The Tower",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Exp 20251124078913429 · £1,579.20 · PAID MC 3823 · Free breakfast + Exec Bar Lounge · 2 rooms · Tue 14–Fri 17 Apr",
+          "sortDate": "2026-04-14",
+          "dateLabel": "Tue 14 Apr"
+        },
+        {
+          "task": "Osaka Deep Backstreets Walking Tour × 4 (GetYourGuide)",
+          "who": "Andy",
+          "deadline": "",
+          "status": "paid",
+          "notes": "Tue 14 Apr · Ref GYGLMR35M35H · Meet Daikokucho Station Exit 1 · 17:30–21:00 · Includes dinner",
+          "sortDate": "2026-04-14",
+          "dateLabel": "Tue 14 Apr"
+        },
+        {
+          "task": "Kintetsu Vistacar Osaka-Namba → Kintetsu-Nara × 4",
+          "who": "Andy",
+          "deadline": "",
+          "status": "paid",
+          "notes": "Wed 15 Apr · Res A46746 · Train 1017 · Car 2 seats 4A/4B/5A/5B (upstairs) · ¥2,080 total",
+          "sortDate": "2026-04-15",
+          "dateLabel": "Wed 15 Apr"
+        },
+        {
+          "task": "Osaka → Seoul Asiana OZ113 × 4",
+          "who": "Andy",
+          "deadline": "✅ Done",
+          "status": "paid",
+          "notes": "Fri 17 Apr · KIX T1→ICN T2 · 19:45→21:40 · PNR D2MKD6 · A350 · Seats: Andy 24H · Sarah 24J · Jack 25H · Charlie 25J",
+          "sortDate": "2026-04-17",
+          "dateLabel": "Fri 17 Apr"
+        },
+        {
+          "task": "Grand Hyatt Incheon (airport hotel)",
+          "who": "Andy",
+          "deadline": "✅ Booked",
+          "status": "pay_at_property",
+          "notes": "Exp 150513RA052227 · £277.04 · PAY AT PROPERTY · Fri 17–Sat 18 Apr",
+          "sortDate": "2026-04-17",
+          "dateLabel": "Fri 17 Apr"
         }
       ]
     }
