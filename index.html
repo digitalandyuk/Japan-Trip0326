@@ -338,7 +338,29 @@ const DAY_DATES=[
 ];
 let tripData=null;
 let currencyMode='yenToGbp';
-const YEN_RATE=190;
+let YEN_RATE=190;
+let YEN_RATE_LIVE=false;
+let YEN_RATE_TIME='';
+async function fetchLiveRate(){
+  try{
+    const r=await fetch('https://api.frankfurter.app/latest?from=GBP&to=JPY');
+    if(!r.ok) throw new Error(r.status);
+    const d=await r.json();
+    if(d.rates&&d.rates.JPY){
+      YEN_RATE=Math.round(d.rates.JPY);
+      YEN_RATE_LIVE=true;
+      YEN_RATE_TIME=d.date||'';
+      updateRateLabels();
+      ovConvert();
+      if(typeof convertCurrency==='function') convertCurrency();
+    }
+  }catch(e){console.warn('Currency fetch failed, using fallback ¥'+YEN_RATE,e);}
+}
+function updateRateLabels(){
+  const tag=YEN_RATE_LIVE?`Live rate: ¥${YEN_RATE} = £1 (ECB ${YEN_RATE_TIME})`:`Fallback rate: ¥${YEN_RATE} = £1`;
+  document.querySelectorAll('.currency-rate-live').forEach(el=>{el.textContent=tag;});
+}
+fetchLiveRate();
 
 /* ── Don't Forget classification ── */
 const DONT_FORGET_TYPES=['admin','prep','packing','tech','practical','note'];
@@ -466,6 +488,7 @@ async function loadData(){
   renderOverview();
   renderDays();
   renderChecklist();
+  updateRateLabels();
 }
 /* ═══════════════════════════════════════════
    OVERVIEW
@@ -474,12 +497,12 @@ function renderOverview(){
   const days=(tripData&&tripData.days)||[];
   const totalItems=days.reduce((a,d)=>a+(d.items||[]).length,0);
   const hotels=[
-    {name:'Crown Park Hotel Seoul',       dates:'Sat 4 – Sun 5 Apr',   status:'paid'},
-    {name:'Keio Plaza Hotel Tokyo',        dates:'Sun 5 – Wed 8 Apr',   status:'property'},
-    {name:'TEN-YU Ryokan, Hakone',         dates:'Wed 8 – Fri 10 Apr',  status:'paid'},
-    {name:'Mitsui Garden Hotel Kyoto',     dates:'Fri 10 – Tue 14 Apr', status:'paid'},
-    {name:'Candeo Hotels Osaka The Tower', dates:'Tue 14 – Fri 17 Apr', status:'paid'},
-    {name:'Grand Hyatt Incheon',           dates:'Fri 17 – Sat 18 Apr', status:'property'},
+    {name:'Crown Park Hotel Seoul',       dates:'Sat 4 – Sun 5 Apr',   status:'paid',    url:'https://www.expedia.co.uk/trips/72068508725700'},
+    {name:'Keio Plaza Hotel Tokyo',        dates:'Sun 5 – Wed 8 Apr',   status:'property',url:'https://www.expedia.co.uk/trips/73304498303010'},
+    {name:'TEN-YU Ryokan, Hakone',         dates:'Wed 8 – Fri 10 Apr',  status:'paid',    url:'https://www.expedia.co.uk/trips/73304509243260'},
+    {name:'Mitsui Garden Hotel Kyoto',     dates:'Fri 10 – Tue 14 Apr', status:'paid',    url:'https://www.expedia.co.uk/trips/72068513747786'},
+    {name:'Candeo Hotels Osaka The Tower', dates:'Tue 14 – Fri 17 Apr', status:'paid',    url:'https://www.expedia.co.uk/trips/72068515678580'},
+    {name:'Grand Hyatt Incheon',           dates:'Fri 17 – Sat 18 Apr', status:'property',url:'https://www.expedia.co.uk/trips/72068509828739'},
   ];
   const icons=['🏨','🏙️','🛁','🌸','🎡','✈️'];
   document.getElementById('tab-overview').innerHTML=`
@@ -507,14 +530,14 @@ function renderOverview(){
         <button class="quick-btn" onclick="ovSet(10000)">¥10,000</button>
         <button class="quick-btn" onclick="ovSet(50000)">¥50,000</button>
       </div>
-      <div class="currency-rate">Rate: ¥${YEN_RATE} = £1 &nbsp;·&nbsp; Update <code>YEN_RATE</code> before departure</div>
+      <div class="currency-rate currency-rate-live">Loading live rate…</div>
     </div>
     <div class="section-title">Accommodation</div>
-    ${hotels.map((h,i)=>`<div class="hotel-card">
+    ${hotels.map((h,i)=>`<a class="hotel-card" href="${h.url}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;cursor:pointer;">
       <div class="hotel-icon">${icons[i]}</div>
       <div><div class="hotel-name">${h.name}</div><div class="hotel-dates">${h.dates}</div></div>
       <div class="hotel-status ${h.status==='paid'?'paid':'property'}">${h.status==='paid'?'Paid':'Pay on Arrival'}</div>
-    </div>`).join('')}
+    </a>`).join('')}
     <div class="section-title" style="margin-top:20px;">Status Key</div>
     <div class="status-legend">
       <div class="legend-item"><div class="legend-dot" style="background:#e05050"></div>Booked & confirmed</div>
@@ -601,6 +624,55 @@ function buildIdeasHTML(day,di){
     +`<div class="ideas-section" id="ideas-${di}">${rows}</div>`;
 }
 
+/* ── Activity emoji prefix ── */
+function activityEmoji(a){
+  const t=(a||'').toLowerCase();
+  // Flights
+  if(/\b(depart|arrive|check.?in.*asiana|check.?in.*virgin|VS\d|OZ\d|flight|icn|lhr|kix|nrt)/i.test(a)) return '✈️ ';
+  // Taxi / private transfer
+  if(/tourmaker|taxi|private transfer|alphard/i.test(a)) return '🚕 ';
+  // Parking
+  if(/kwikpark|parking/i.test(a)) return '🅿️ ';
+  // Shinkansen
+  if(/shinkansen|hikari|nozomi|kodama/i.test(a)) return '🚅 ';
+  // Train (romancecar, tozan, JR, haruka, metro, subway)
+  if(/romancecar|tozan|haruka|\bJR\b|metro|subway|train|odakyu|gora.*hakone|hakone.*gora/i.test(a)) return '🚃 ';
+  // Bus
+  if(/\bbus\b/i.test(a)) return '🚌 ';
+  // Cable car / ropeway
+  if(/cable.?car|ropeway/i.test(a)) return '🚡 ';
+  // Boat / river cruise
+  if(/boat|cruise|pirate ship|hozugawa|ferry/i.test(a)) return '⛴ ';
+  // Hotel check-in / check-out
+  if(/check.?in|check.?out/i.test(a)) return '🏨 ';
+  // Onsen / rotenburo / bath
+  if(/onsen|rotenburo|bath|soak/i.test(a)) return '🛁 ';
+  // Temples & shrines
+  if(/temple|shrine|kinkaku|ryoan|fushimi|senso|meiji|toshogu|kaburenjo/i.test(a)) return '⛩️ ';
+  // Castle
+  if(/castle|himeji/i.test(a)) return '🏯 ';
+  // Cultural show / sumo / miyako odori / tea ceremony
+  if(/sumo|odori|geiko|maiko|tea ceremony|kabuki/i.test(a)) return '🎭 ';
+  // Cherry blossom / garden / park
+  if(/gyoen|garden|park|blossom|hanami/i.test(a)) return '🌸 ';
+  // Walking tour
+  if(/walking tour|backstreets/i.test(a)) return '🚶 ';
+  // Deer / Nara
+  if(/deer|nara park/i.test(a)) return '🦌 ';
+  // Shopping / arcade / market
+  if(/market|nishiki|ameyoko|arcade|teramachi|shinkyogoku|shopping|duty free/i.test(a)) return '🛍️ ';
+  // Food / restaurant / breakfast / lunch / dinner
+  if(/breakfast|lunch|dinner|food|ramen|tonkatsu|ekiben|restaurant|izakaya|kaiseki|yakiniku/i.test(a)) return '🍜 ';
+  // Sightseeing / explore / wander / walk
+  if(/wander|explore|stroll|walk|bamboo|canal|river walk|scramble|shibuya|golden gai|dotonbori/i.test(a)) return '📸 ';
+  // Immigration / baggage
+  if(/immigration|baggage|customs/i.test(a)) return '🛂 ';
+  // Pack / luggage
+  if(/\bpack\b|luggage/i.test(a)) return '🧳 ';
+  // Freepass / ticket collection
+  if(/freepass|activate|collect ticket/i.test(a)) return '🎫 ';
+  return '';
+}
 function renderDays(){
   const days=(tripData&&tripData.days)||[];
   const todayIdx=getTodayIndex();
@@ -622,11 +694,12 @@ function renderDays(){
         window._details.push({title:item.activity||'',body:item.detail});
         detailBtn=`<button class="detail-btn" onclick="openDetailByIndex(${idx})">ℹ Info</button>`;
       }
+      const emoji=activityEmoji(item.activity);
       const statusRow=`<div class="item-status-row"><span class="status-badge ${sm.cls}">${sm.label}</span>${mapLink}</div>`;
       return `<div class="item">
         <div class="item-time">${item.time||''}</div>
         <div class="item-main">
-          <div class="item-activity">${item.activity||''}</div>
+          <div class="item-activity">${emoji}${item.activity||''}</div>
           ${item.notes?`<div class="item-notes">${item.notes}</div>`:''}
           ${statusRow}
           ${detailBtn?`<div class="item-info-row">${detailBtn}</div>`:''}
@@ -662,7 +735,15 @@ function renderDays(){
     },200);
   }
 }
-function toggleDay(di){document.getElementById('day-'+di).classList.toggle('open');}
+function toggleDay(di){
+  const card=document.getElementById('day-'+di);
+  const wasOpen=card.classList.contains('open');
+  document.querySelectorAll('.day-card.open').forEach(c=>c.classList.remove('open'));
+  if(!wasOpen){
+    card.classList.add('open');
+    setTimeout(()=>card.scrollIntoView({behavior:'smooth',block:'start'}),50);
+  }
+}
 function toggleIdeas(di){
   const section=document.getElementById('ideas-'+di);
   const btn=document.getElementById('ideas-btn-'+di);
@@ -718,7 +799,7 @@ function renderTransport(){
     {from:'Hakone-Yumoto',to:'Gora (& back)',type:'Mountain Rail',date:'Wed–Fri 8–10 Apr',time:'Various',duration:'~40 min',cost:'Included in Freepass',how:'Hakone Tozan Railway · All-day use',status:'confirmed',ref:'3-day Hakone Freepass × 4'},
     {from:'Gora',to:'Owakudani via Sounzan',type:'Cable Car + Ropeway',date:'Thu 9 Apr',time:'~10:15',duration:'~45 min',cost:'Included in Freepass',how:'Cable car Gora→Sounzan then ropeway over volcanic ridge',status:'confirmed',ref:'Check ropeway closure due to volcanic activity'},
     {from:'Owakudani',to:'Moto-Hakone (Lake Ashi)',type:'Ropeway + Boat',date:'Thu 9 Apr',time:'~12:20',duration:'~30 min ropeway + 40 min boat',cost:'Included in Freepass',how:'Ropeway descent then Hakone Pirate Ship cruise',status:'confirmed',ref:'Disembark at Moto-Hakone pier'},
-    {from:'Odawara',to:'Kyoto',type:'Shinkansen',date:'Fri 10 Apr',time:'~13:00',duration:'~2h 10m',cost:'Book via Klook',how:'Hikari Shinkansen · Green Car D seats rows 10–15 · Book from Tue 10 Mar',status:'book',ref:'Fuji visible on right first 30 mins from Odawara'},
+    {from:'Odawara',to:'Kyoto',type:'Shinkansen',date:'Fri 10 Apr',time:'12:07 → 14:12',duration:'2h 5m',cost:'¥49,200 (4 pax)',how:'Hikari 641 · Car 6 Seats 14D,14E,15D,15E · JR-WEST Reservation 40422',status:'confirmed',ref:'Receipt ADK3908L · Collect physical tickets at Odawara JR Central machines'},
     {from:'Kyoto',to:'Osaka',type:'JR Train',date:'Tue 14 Apr',time:'~12:30',duration:'15–30 min',cost:'JR Pass covered',how:'Shinkansen (15 min) or JR Special Rapid (30 min)',status:'confirmed',ref:'No surcharge on Special Rapid with JR Pass'},
     {from:'Osaka',to:'Himeji & back',type:'JR Train',date:'Thu 16 Apr',time:'08:15 depart',duration:'~60 min each way',cost:'JR Pass covered',how:'JR Special Rapid · No Shinkansen needed',status:'confirmed',ref:'Direct Osaka → Himeji · Walk north 15 min from station'},
     {from:'Osaka (Tennoji)',to:'Kansai Airport KIX',type:'Haruka Express',date:'Fri 17 Apr',time:'~16:30',duration:'~29 min',cost:'~¥2,000–2,200pp',how:'Metro Namba→Tennoji (~¥230pp, 10 min) then JR Haruka · No booking needed',status:'confirmed',ref:'Buy at Tennoji JR machines on the day'},
@@ -824,29 +905,84 @@ function renderChecklist(){
   </div>`;
 }
 /* ═══════════════════════════════════════════
-   WEATHER
+   WEATHER (live via Open-Meteo)
 ═══════════════════════════════════════════ */
-function renderWeather(){
-  const data=[
-    {city:'Seoul',flag:'🇰🇷',dates:'4–5 Apr',icon:'🌤',avg:'13°C',range:'8–17°C',desc:'Mild spring, partly cloudy',details:'Light jacket needed evenings\nCherry blossom may still linger\nLow rain probability'},
-    {city:'Tokyo',flag:'🇯🇵',dates:'5–8 Apr',icon:'🌸',avg:'16°C',range:'11–20°C',desc:'Peak cherry blossom season',details:'Warm days, cool evenings\nPossible light showers\nIdeal sightseeing weather'},
-    {city:'Hakone',flag:'⛰️',dates:'8–10 Apr',icon:'⛅',avg:'12°C',range:'7–16°C',desc:'Cooler at altitude',details:'Fuji views best in morning\nCloud cover common afternoons\nWarm layers for onsen evenings'},
-    {city:'Kyoto',flag:'⛩️',dates:'10–14 Apr',icon:'🌸',avg:'17°C',range:'11–21°C',desc:'Beautiful spring weather',details:'Late cherry blossoms likely\nComfortable walking temps\nGo early to avoid crowds'},
-    {city:'Nara',flag:'🦌',dates:'~15 Apr',icon:'🌤',avg:'17°C',range:'11–21°C',desc:'Same as Kyoto region',details:'Day trip — very pleasant\nDeer park lovely in spring\nLight layers sufficient'},
-    {city:'Osaka',flag:'🎡',dates:'14–17 Apr',icon:'🌤',avg:'18°C',range:'13–22°C',desc:'Warm & bright',details:'Warmest city on the trip\nGreat street food weather\nLow rain probability'},
-  ];
+const WEATHER_CITIES=[
+  {city:'Seoul',  flag:'🇰🇷',dates:'4–5 Apr',  lat:37.5665,lon:126.978, startDay:'2026-04-04',endDay:'2026-04-05'},
+  {city:'Tokyo',  flag:'🇯🇵',dates:'5–8 Apr',  lat:35.6895,lon:139.692, startDay:'2026-04-05',endDay:'2026-04-08'},
+  {city:'Hakone', flag:'⛰️',dates:'8–10 Apr', lat:35.2324,lon:139.107, startDay:'2026-04-08',endDay:'2026-04-10'},
+  {city:'Kyoto',  flag:'⛩️',dates:'10–14 Apr',lat:35.0116,lon:135.768, startDay:'2026-04-10',endDay:'2026-04-14'},
+  {city:'Nara',   flag:'🦌',dates:'~15 Apr',  lat:34.6851,lon:135.805, startDay:'2026-04-15',endDay:'2026-04-15'},
+  {city:'Osaka',  flag:'🎡',dates:'14–17 Apr',lat:34.6937,lon:135.502, startDay:'2026-04-14',endDay:'2026-04-17'},
+];
+const WMO_ICON={0:'☀️',1:'🌤',2:'⛅',3:'☁️',45:'🌫',48:'🌫',51:'🌦',53:'🌧',55:'🌧',56:'🌧',57:'🌧',61:'🌧',63:'🌧',65:'🌧',66:'🌧',67:'🌧',71:'🌨',73:'🌨',75:'🌨',77:'🌨',80:'🌦',81:'🌧',82:'⛈',85:'🌨',86:'🌨',95:'⛈',96:'⛈',99:'⛈'};
+const WMO_DESC={0:'Clear sky',1:'Mainly clear',2:'Partly cloudy',3:'Overcast',45:'Fog',48:'Rime fog',51:'Light drizzle',53:'Drizzle',55:'Heavy drizzle',61:'Light rain',63:'Rain',65:'Heavy rain',71:'Light snow',73:'Snow',75:'Heavy snow',80:'Light showers',81:'Showers',82:'Heavy showers',95:'Thunderstorm',96:'Thunderstorm + hail',99:'Severe thunderstorm'};
+
+async function fetchWeatherForCity(c){
+  const url=`https://api.open-meteo.com/v1/forecast?latitude=${c.lat}&longitude=${c.lon}&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,weathercode,wind_speed_10m_max&timezone=auto&start_date=${c.startDay}&end_date=${c.endDay}`;
+  try{
+    const res=await fetch(url);
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const j=await res.json();
+    const d=j.daily;
+    if(!d||!d.time||!d.time.length) return null;
+    const maxT=Math.round(Math.max(...d.temperature_2m_max));
+    const minT=Math.round(Math.min(...d.temperature_2m_min));
+    const avgT=Math.round(d.temperature_2m_max.reduce((a,v,i)=>(a+v+d.temperature_2m_min[i]),0)/(d.time.length*2));
+    const totalRain=d.precipitation_sum.reduce((a,v)=>a+v,0).toFixed(1);
+    const maxWind=Math.round(Math.max(...d.wind_speed_10m_max));
+    // Use the most common weather code
+    const codeCounts={};
+    d.weathercode.forEach(wc=>{codeCounts[wc]=(codeCounts[wc]||0)+1;});
+    const dominantCode=+Object.entries(codeCounts).sort((a,b)=>b[1]-a[1])[0][0];
+    return {avgT,minT,maxT,totalRain,maxWind,code:dominantCode,days:d.time.length,
+      dailyData:d.time.map((t,i)=>({date:t,max:Math.round(d.temperature_2m_max[i]),min:Math.round(d.temperature_2m_min[i]),rain:d.precipitation_sum[i],code:d.weathercode[i],wind:Math.round(d.wind_speed_10m_max[i])}))
+    };
+  }catch(e){return null;}
+}
+
+function renderWeatherCard(c,w){
+  if(!w) return `<div class="weather-card">
+    <div class="weather-city">${c.flag} ${c.city}</div>
+    <div class="weather-dates">${c.dates}</div>
+    <div class="weather-icon">⏳</div>
+    <div class="weather-temp">--</div>
+    <div class="weather-desc">Forecast not yet available</div>
+    <div class="weather-detail">Forecasts appear ~14 days before travel</div>
+  </div>`;
+  const icon=WMO_ICON[w.code]||'🌤';
+  const desc=WMO_DESC[w.code]||'';
+  const dailyRows=w.dailyData.map(d=>{
+    const dayName=new Date(d.date+'T12:00:00').toLocaleDateString('en-GB',{weekday:'short',day:'numeric'});
+    return `${WMO_ICON[d.code]||'🌤'} ${dayName}: ${d.min}–${d.max}°C${d.rain>0?' · '+d.rain+'mm':''}`;
+  }).join('<br>');
+  return `<div class="weather-card">
+    <div class="weather-city">${c.flag} ${c.city}</div>
+    <div class="weather-dates">${c.dates}</div>
+    <div class="weather-icon">${icon}</div>
+    <div class="weather-temp">${w.avgT}°C</div>
+    <div class="weather-range">${w.minT}–${w.maxT}°C</div>
+    <div class="weather-desc">${desc}</div>
+    <div class="weather-detail">${dailyRows}<br>💨 Wind up to ${w.maxWind} km/h<br>💧 Total rain: ${w.totalRain}mm</div>
+  </div>`;
+}
+
+async function renderWeather(){
   document.getElementById('tab-weather').innerHTML=`<div style="padding-top:12px;">
-    <div class="section-title">April Weather by City</div>
-    <div class="weather-grid">${data.map(w=>`<div class="weather-card">
-      <div class="weather-city">${w.flag} ${w.city}</div>
-      <div class="weather-dates">${w.dates}</div>
-      <div class="weather-icon">${w.icon}</div>
-      <div class="weather-temp">${w.avg}</div>
-      <div class="weather-range">${w.range}</div>
-      <div class="weather-desc">${w.desc}</div>
-      <div class="weather-detail">${w.details.replace(/\n/g,'<br>')}</div>
+    <div class="section-title">🌤 Live Weather Forecast</div>
+    <div class="weather-grid">${WEATHER_CITIES.map(c=>`<div class="weather-card">
+      <div class="weather-city">${c.flag} ${c.city}</div>
+      <div class="weather-dates">${c.dates}</div>
+      <div class="weather-icon" style="animation:pulse 1.5s infinite;">⏳</div>
+      <div class="weather-temp">Loading...</div>
     </div>`).join('')}</div>
-    <p style="font-size:11px;color:var(--muted);padding:12px 0 4px;text-align:center;font-style:italic;">Based on April historical averages. Check closer to departure.</p>
+    <p style="font-size:11px;color:var(--muted);padding:12px 0 4px;text-align:center;font-style:italic;">Live forecast via Open-Meteo. Updates on each page load.</p>
+  </div>`;
+  const results=await Promise.all(WEATHER_CITIES.map(fetchWeatherForCity));
+  document.getElementById('tab-weather').innerHTML=`<div style="padding-top:12px;">
+    <div class="section-title">🌤 Live Weather Forecast</div>
+    <div class="weather-grid">${WEATHER_CITIES.map((c,i)=>renderWeatherCard(c,results[i])).join('')}</div>
+    <p style="font-size:11px;color:var(--muted);padding:12px 0 4px;text-align:center;font-style:italic;">Live forecast via <a href="https://open-meteo.com/" target="_blank" style="color:var(--blossom);text-decoration:none;">Open-Meteo</a> · Updated ${new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'})} · Forecasts available ~14 days ahead</p>
   </div>`;
 }
 /* ═══════════════════════════════════════════
@@ -927,28 +1063,40 @@ function renderTips(){
 function renderLinks(){
   const groups=[
     {title:'✈️ Flights & Transfers',links:[
-      {icon:'🛫',name:'Virgin Atlantic — Manage Booking',desc:'Ref E3FYHB · LHR↔ICN',url:'https://www.virginatlantic.com/gb/en/manage-booking.html'},
-      {icon:'🛫',name:'Asiana Airlines — Manage Booking',desc:'PNR D2MKD6 · ICN↔NRT, KIX↔ICN',url:'https://flyasiana.com/C/GB/EN/manage-booking/reservation-inquiry'},
-      {icon:'🚗',name:'KwikPark — My Booking',desc:'Order L4PUK-777209 · LHR T3 Meet & Greet',url:'https://kwikpark.co.uk'},
-      {icon:'🚐',name:'Klook — My Bookings',desc:'Narita transfer XEB644582 & more',url:'https://www.klook.com/en-GB/profile/orders/'},
+      {icon:'🛫',name:'Virgin Atlantic — Manage Booking',desc:'Ref E3FYHB · VS208 LHR→ICN · VS209 ICN→LHR',url:'https://www.virginatlantic.com/mytrips'},
+      {icon:'🛫',name:'Asiana Airlines — Manage Booking',desc:'PNR D2MKD6 · OZ106 ICN→NRT · OZ113 KIX→ICN',url:'https://flyasiana.com/C/GB/EN/contents/booking/manage-booking'},
+      {icon:'🅿️',name:'Looking4 Parking (KwikPark)',desc:'Order L4PUK-777209 · LHR T3 Meet & Greet',url:'https://www.looking4.com/uk/manage-booking'},
+      {icon:'🚕',name:'Tourmaker — Seoul Transfers',desc:'Order #1479 · ICN↔Crown Park Hotel × 2 legs',url:'https://account.tourmaker.co.kr/orders?locale=en&region_country=GB'},
+      {icon:'🚐',name:'Klook — My Bookings',desc:'Narita transfer XEB644582 · Hozugawa RZZ886795',url:'https://www.klook.com/en-GB/account/booking'},
     ]},
     {title:'🚄 Japan Transport',links:[
-      {icon:'🚃',name:'EMot — My Tickets',desc:'Hakone Freepass × 4 · sarahevansemail@googlemail.com',url:'https://emot-tickets.jp/my-tickets'},
-      {icon:'🚄',name:'Odakyu Romancecar Booking',desc:'Book return leg if needed',url:'https://www.odakyu.jp/english/romancecar/'},
-      {icon:'🚅',name:'JR Ticket Booking (Klook)',desc:'Odawara → Kyoto Shinkansen — book from Tue 10 Mar',url:'https://www.klook.com/en-GB/search/?query=japan+rail+pass'},
+      {icon:'🚅',name:'JR-WEST — Shinkansen Reservation',desc:'Hikari 641 · Res 40422 · Odawara→Kyoto 10 Apr · BOOKED',url:'https://www.westjr.co.jp/travel-information/en/tickets-passes/'},
+      {icon:'🚃',name:'EMot — Romancecar & Freepass',desc:'Hakone 3 GSE · Control E786 · Sarah\'s account',url:'https://www.emot.jp/emot_online_tickets_faq_en.html'},
+      {icon:'🚃',name:'Kintetsu — Vistacar e-Ticket',desc:'Osaka→Nara · 15 Apr · BOOKED',url:'https://www.ticket.kintetsu.co.jp/vs/en/T/TZZ/TZZ10.do?op=tDisplayVisitorMenu#vs-ticketinfo'},
     ]},
-    {title:'🏨 Hotels',links:[
-      {icon:'🛎',name:'Expedia — My Trips',desc:'Crown Park Seoul · Keio Plaza · Mitsui Kyoto · Candeo Osaka',url:'https://www.expedia.co.uk/trips'},
-      {icon:'🏯',name:'TEN-YU Ryokan',desc:'Wed 8 – Fri 10 Apr · 2 nights · Paid',url:'https://www.tenyugroup.com'},
-      {icon:'🏨',name:'Grand Hyatt Incheon',desc:'Expedia Conf: 150513RA052227 · Pay at property',url:'https://www.hyatt.com'},
+    {title:'🎭 Activities & Experiences',links:[
+      {icon:'🎭',name:'Sumo Show — Manage Reservation',desc:'7 Apr · Refs GSSFO38 + UYKE2V5 · 2 × 2 seats',url:'https://www.dumbonet.com/tanaka/reserve/index1.html'},
+      {icon:'🚂',name:'Sagano Romantic Train',desc:'12 Apr · Torokko Saga→Kameoka',url:'https://linkt.to/oGdvHgf1'},
+      {icon:'⛴',name:'Hozugawa River Cruise (Klook)',desc:'12 Apr · Ref RZZ886795',url:'https://www.klook.com/en-GB/account/booking'},
+      {icon:'🌸',name:'Miyako Odori — QR Tickets',desc:'13 Apr · 1F Row 22 Seats 6–9 · Order #00101707',url:'https://www.s2.e-get.jp/gtset4/pq/?tn=5885b58957698b899eb1a9bda3a1a5f692af1bd683'},
+      {icon:'🚶',name:'GetYourGuide — Osaka Walking Tour',desc:'14 Apr · Ref GYGLMR35M35H',url:'https://www.getyourguide.com/account/bookings'},
+    ]},
+    {title:'🏨 Hotels (all via Expedia)',links:[
+      {icon:'🏨',name:'Crown Park Hotel Seoul',desc:'Sat 4–Sun 5 Apr · Itinerary 72068508725700',url:'https://www.expedia.co.uk/trips/72068508725700'},
+      {icon:'🏙️',name:'Keio Plaza Hotel Tokyo',desc:'Sun 5–Wed 8 Apr · Itinerary 73304498303010 · Pay on arrival',url:'https://www.expedia.co.uk/trips/73304498303010'},
+      {icon:'🛁',name:'TEN-YU Ryokan Hakone',desc:'Wed 8–Fri 10 Apr · Itinerary 73304509243260',url:'https://www.expedia.co.uk/trips/73304509243260'},
+      {icon:'🌸',name:'Mitsui Garden Hotel Kyoto',desc:'Fri 10–Tue 14 Apr · Itinerary 72068513747786',url:'https://www.expedia.co.uk/trips/72068513747786'},
+      {icon:'🎡',name:'Candeo Hotels Osaka The Tower',desc:'Tue 14–Fri 17 Apr · Itinerary 72068515678580',url:'https://www.expedia.co.uk/trips/72068515678580'},
+      {icon:'✈️',name:'Grand Hyatt Incheon',desc:'Fri 17–Sat 18 Apr · Itinerary 72068509828739 · Pay on arrival',url:'https://www.expedia.co.uk/trips/72068509828739'},
     ]},
     {title:'🍱 Restaurants & Food',links:[
-      {icon:'🎋',name:'Kyoto Arashiyama Nishiki',desc:'Traditional kaiseki in Arashiyama — signature sakura-juku-zen box-set, lunch & dinner',url:'https://www.arashiyama-nishiki.com/'},
+      {icon:'🎋',name:'Kyoto Arashiyama Nishiki',desc:'Traditional kaiseki in Arashiyama — signature sakura-juku-zen box-set',url:'https://www.arashiyama-nishiki.com/'},
     ]},
     {title:'🌏 Useful Sites',links:[
-      {icon:'🌦',name:'Japan Meteorological Agency',desc:'Official Japan weather forecasts',url:'https://www.jma.go.jp/en/week/'},
+      {icon:'🌦',name:'Japan Meteorological Agency',desc:'Official Japan weather forecasts',url:'https://www.jma.go.jp/bosai/forecast/'},
       {icon:'🗺',name:'Google Maps — Japan',desc:'Open in browser for saved lists',url:'https://maps.google.com/?hl=en'},
-      {icon:'🎌',name:'Visit Japan Web (Entry)',desc:'Immigration & customs pre-registration',url:'https://vjw-lp.digital.go.jp/en/'},
+      {icon:'🎌',name:'Visit Japan Web (Entry)',desc:'Immigration & customs QR codes',url:'https://vjw-lp.digital.go.jp/en/'},
+      {icon:'🇰🇷',name:'Korea e-Arrival Card',desc:'Must complete within 72hrs of arrival',url:'https://www.e-arrivalcard.go.kr'},
       {icon:'💊',name:'JNTO Travel Info',desc:'Japan National Tourism Organisation',url:'https://www.japan.travel/en/'},
     ]},
   ];
@@ -964,7 +1112,7 @@ function renderLinks(){
     <div style="padding-top:12px;border-top:1px solid var(--border);">
       <div class="section-title">¥ / £ Currency Converter</div>
       <div class="currency-widget">
-        <div class="currency-title">Quick Converter <span style="font-size:11px;font-weight:400;color:var(--muted);">— Static rate: ¥${YEN_RATE} per £1</span></div>
+        <div class="currency-title">Quick Converter</div>
         <div class="currency-row">
           <input class="currency-input" type="number" id="currency-input" value="1000" oninput="convertCurrency()" min="0">
           <span class="currency-label" id="currency-from-label">¥</span>
@@ -981,11 +1129,12 @@ function renderLinks(){
           <button class="quick-btn" onclick="setAmount(10000)">¥10,000</button>
           <button class="quick-btn" onclick="setAmount(50000)">¥50,000</button>
         </div>
-        <div class="currency-rate">Rate set to ¥${YEN_RATE} = £1 · Update in app code before departure if needed.</div>
+        <div class="currency-rate currency-rate-live">Loading live rate…</div>
       </div>
     </div>
   </div>`;
   convertCurrency();
+  updateRateLabels();
 }
 function ovConvert(){
   const input=parseFloat(document.getElementById('ov-currency-input')?.value)||0;
@@ -1134,14 +1283,23 @@ function renderBooked(){
     'VS208':'https://www.virginatlantic.com/','VS209':'https://www.virginatlantic.com/',
     'OZ106':'https://flyasiana.com/','OZ113':'https://flyasiana.com/',
     'Tourmaker':'https://www.tourmaker.co.kr/',
-    'Klook bus':'https://www.klook.com/','Hakone Freepass':'https://emot.jp/',
-    'Romancecar':'https://emot.jp/','Shinkansen':'https://smart-ex.jp/en/',
-    'KwikPark':'https://kwikpark.co.uk/','TEN-YU':'https://www.expedia.co.uk/',
-    'Keio Plaza':'https://www.expedia.co.uk/','Mitsui Garden':'https://www.expedia.co.uk/',
-    'Candeo':'https://www.expedia.co.uk/','Crown Park':'https://www.expedia.co.uk/',
-    'Grand Hyatt':'https://www.expedia.co.uk/',
+    'Klook bus':'https://www.klook.com/en-GB/account/booking',
+    'Hakone Freepass':'https://www.emot.jp/emot_online_tickets_faq_en.html',
+    'Romancecar':'https://www.emot.jp/emot_online_tickets_faq_en.html',
+    'Shinkansen':'https://www.westjr.co.jp/travel-information/en/tickets-passes/',
+    'KwikPark':'https://www.looking4.com/uk/manage-booking',
+    'TEN-YU':'https://www.expedia.co.uk/trips/71508849581060',
+    'Keio Plaza':'https://www.expedia.co.uk/trips/73304498303010',
+    'Mitsui Garden':'https://www.expedia.co.uk/trips/20251124078897910',
+    'Candeo':'https://www.expedia.co.uk/trips/20251124078913429',
+    'Crown Park':'https://www.expedia.co.uk/trips/25301968',
+    'Grand Hyatt':'https://www.expedia.co.uk/trips/150513RA052227',
     'Sagano Romantic':'https://sagano-kanko.uniproduct.net/en/',
-    'Hozugawa':'https://www.klook.com/','Miyako Odori':'https://s2.e-get.jp/m_odori/pt/',
+    'Hozugawa':'https://www.klook.com/en-GB/account/booking',
+    'Miyako Odori':'https://s2.e-get.jp/m_odori/pt/',
+    'Sumo':'https://www.sumoexperience.com/',
+    'Osaka Deep':'https://www.getyourguide.com/account/bookings',
+    'Kintetsu Vistacar':'https://www.ticket.kintetsu.co.jp/vs/en/T/TZZ/TZZ10.do?op=tDisplayVisitorMenu#vs-ticketinfo',
   };
   const STATUS_COLOUR={'paid':'var(--blossom)','pay_at_property':'#e09040','confirmed':'var(--jade)'};
   const STATUS_LABEL={'paid':'Paid \u2714','pay_at_property':'Pay on arrival','confirmed':'Confirmed \u2714'};
@@ -1152,7 +1310,7 @@ function renderBooked(){
     const badgeColour=STATUS_COLOUR[status]||'var(--jade)';
     const badgeLabel=STATUS_LABEL[status]||status;
     const link=getLink(item.task||'');
-    const linkHtml=link?`<a href="${link}" target="_blank" rel="noopener" style="font-size:11px;color:var(--jade);text-decoration:none;margin-top:7px;display:inline-block;">\uD83D\uDD17 View booking site</a>`:'';
+    const linkHtml=link?`<a href="${link}" target="_blank" rel="noopener" style="font-size:11px;color:var(--jade);text-decoration:none;margin-top:7px;display:inline-block;">\uD83D\uDD17 View booking</a>`:'';
     const dateLabel=item.dateLabel||item.sortDate||'';
     const isNewDate=dateLabel!==lastDate;
     if(isNewDate) lastDate=dateLabel;
