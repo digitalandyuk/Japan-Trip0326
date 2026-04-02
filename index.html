@@ -36,11 +36,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 /* THEME TOGGLE */
 .theme-toggle{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:#fdfbf7;font-size:14px;padding:4px 10px;border-radius:20px;cursor:pointer;font-family:inherit;transition:all 0.2s;margin-left:6px;}
 .theme-toggle:hover{background:rgba(255,255,255,0.2);}
-.countdown-bar{display:flex;justify-content:center;gap:12px;margin-top:14px;flex-wrap:wrap;}
-.countdown-unit{text-align:center;background:rgba(232,130,154,0.08);border:1px solid rgba(232,130,154,0.2);border-radius:12px;padding:8px 14px;min-width:60px;}
-.countdown-num{font-family:'Noto Serif JP',serif;font-size:24px;font-weight:700;color:#e8829a;line-height:1;}
-.countdown-lbl{font-size:10px;color:var(--muted);margin-top:3px;letter-spacing:0.5px;text-transform:uppercase;}
-.countdown-gone{font-size:13px;color:var(--jade);font-weight:600;margin-top:12px;letter-spacing:0.5px;}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
 .sync-bar{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px;font-size:11px;color:var(--muted);}
 .sync-dot{width:6px;height:6px;border-radius:50%;background:var(--jade);flex-shrink:0;}
@@ -94,7 +89,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .day-card{margin-bottom:8px;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--card-bg);transition:border-color 0.3s,box-shadow 0.3s;}
 .day-header{display:flex;align-items:center;gap:12px;padding:14px 16px;cursor:pointer;transition:background 0.2s;user-select:none;}
 .day-header:hover{background:var(--card-hover);}
-.day-num{font-family:'Noto Serif JP',serif;font-size:22px;font-weight:700;color:var(--blossom);line-height:1;min-width:30px;}
+.day-num{font-size:10px;font-weight:600;color:var(--muted);letter-spacing:0.3px;text-transform:uppercase;line-height:1;}
+.day-date-primary{font-family:'Noto Serif JP',serif;font-size:15px;font-weight:700;color:var(--blossom);line-height:1.2;}
 .day-info{flex:1;min-width:0;}
 .day-title{font-size:14px;font-weight:600;display:flex;align-items:center;flex-wrap:wrap;gap:4px;}
 .day-loc{font-size:11px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
@@ -270,6 +266,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .tip-section-title{font-size:12px;font-weight:600;color:var(--gold);letter-spacing:0.5px;text-transform:uppercase;padding:10px 0 8px;}
 .tip-item{padding:10px 14px;margin-bottom:6px;background:var(--card-bg);border:1px solid var(--border);border-radius:10px;font-size:13px;line-height:1.5;}
 .tip-item strong{color:var(--blossom);}
+.ref-section-toggle{background:none;border:none;cursor:pointer;padding:12px;text-align:left;width:100%;display:flex;align-items:center;justify-content:space-between;color:inherit;font-size:15px;font-weight:600;color:var(--blossom);margin:12px 0 0;}
+.ref-section-toggle:hover{opacity:0.8;}
+.ref-chevron{display:inline-block;transition:transform 0.2s;font-size:18px;}
+.ref-section-toggle.open .ref-chevron{transform:rotate(90deg);}
+.ref-section{display:none;padding:0 12px 12px;}
+.ref-section.open{display:block;}
+.ref-section-title{font-size:12px;font-weight:600;color:var(--gold);letter-spacing:0.5px;text-transform:uppercase;padding:10px 0 8px;}
+.ref-item{padding:10px 14px;margin-bottom:6px;background:var(--card-bg);border:1px solid var(--border);border-radius:10px;font-size:13px;line-height:1.5;}
 </style>
 </head>
 <body>
@@ -282,7 +286,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
     <span class="family-pill">Jack</span><span class="family-pill">Charlie</span>
     <button class="theme-toggle" onclick="toggleTheme()" id="theme-btn">☀️ Light</button>
   </div>
-  <div class="countdown-bar" id="countdown-bar"></div>
   <div class="sync-bar">
     <div class="sync-dot loading" id="sync-dot"></div>
     <span id="sync-status">Loading trip data…</span>
@@ -292,31 +295,31 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 <div class="nav-tabs">
   <button class="nav-tab active" onclick="switchTab('overview',this)">Overview</button>
   <button class="nav-tab" onclick="switchTab('days',this)">Day by Day</button>
+  <button class="nav-tab" onclick="switchTab('search',this)">🔍 Search</button>
   <button class="nav-tab" onclick="switchTab('transport',this)">🚄 Transport</button>
+  <button class="nav-tab" onclick="switchTab('booked',this)">✅ Booked</button>
   <button class="nav-tab" onclick="switchTab('map',this)">🗺 Maps</button>
   <button class="nav-tab" onclick="switchTab('weather',this)">🌤 Weather</button>
-  <button class="nav-tab" onclick="switchTab('booked',this)">✅ Booked</button>
   <button class="nav-tab" onclick="switchTab('checklist',this)">Checklist</button>
-  <button class="nav-tab" onclick="switchTab('phrases',this)">Japanese</button>
-  <button class="nav-tab" onclick="switchTab('tips',this)">Tips</button>
   <button class="nav-tab" onclick="switchTab('links',this)">🔗 Links</button>
-  <button class="nav-tab" onclick="switchTab('emergency',this)">🆘 Emergency</button>
-  <button class="nav-tab" onclick="switchTab('search',this)">🔍 Search</button>
+  <button class="nav-tab" onclick="switchTab('reference',this)">📖 Reference</button>
 </div>
 <div class="content">
   <div id="tab-overview"></div>
   <div id="tab-days"      style="display:none"></div>
+  <div id="tab-search"    style="display:none"></div>
   <div id="tab-transport" style="display:none"></div>
+  <div id="tab-booked"    style="display:none"></div>
   <div id="tab-map"       style="display:none"></div>
   <div id="tab-weather"   style="display:none"></div>
-  <div id="tab-booked"    style="display:none"></div>
   <div id="tab-checklist" style="display:none"></div>
-  <div id="tab-phrases"   style="display:none"></div>
-  <div id="tab-tips"      style="display:none"></div>
   <div id="tab-links"     style="display:none"></div>
-  <div id="tab-emergency" style="display:none"></div>
-  <div id="tab-search"    style="display:none"></div>
+  <div id="tab-reference" style="display:none"></div>
 </div>
+<!-- Hidden containers for Reference sub-sections -->
+<div style="display:none" id="tab-phrases"></div>
+<div style="display:none" id="tab-tips"></div>
+<div style="display:none" id="tab-emergency"></div>
 <!-- DETAIL MODAL -->
 <div class="modal-backdrop" id="detail-modal" onclick="closeDetailModal(event)">
   <div class="modal-box">
@@ -415,35 +418,19 @@ function resolveStatus(item){
   return STATUS_MAP[s]||{cls:'s-planning',label:item.status||''};
 }
 /* ═══════════════════════════════════════════
-   COUNTDOWN
-═══════════════════════════════════════════ */
-function renderCountdown(){
-  const dep=new Date('2026-04-03T00:00:00'),now=new Date(),diff=dep-now;
-  const bar=document.getElementById('countdown-bar');
-  if(!bar) return;
-  if(diff<=0){
-    const end=new Date('2026-04-18T23:59:59');
-    if(now<=end) bar.innerHTML='<div class="countdown-gone">✈️ Trip is underway — enjoy Japan! 🌸</div>';
-    else bar.innerHTML='<div class="countdown-gone">🏡 Back home — what a trip!</div>';
-    return;
-  }
-  const d=Math.floor(diff/86400000),h=Math.floor((diff%86400000)/3600000),
-        m=Math.floor((diff%3600000)/60000),s=Math.floor((diff%60000)/1000);
-  bar.innerHTML=`
-    <div class="countdown-unit"><div class="countdown-num">${d}</div><div class="countdown-lbl">Days</div></div>
-    <div class="countdown-unit"><div class="countdown-num">${String(h).padStart(2,'0')}</div><div class="countdown-lbl">Hours</div></div>
-    <div class="countdown-unit"><div class="countdown-num">${String(m).padStart(2,'0')}</div><div class="countdown-lbl">Mins</div></div>
-    <div class="countdown-unit"><div class="countdown-num">${String(s).padStart(2,'0')}</div><div class="countdown-lbl">Secs</div></div>`;
-}
-renderCountdown();
-setInterval(renderCountdown,1000);
-/* ═══════════════════════════════════════════
    TODAY DETECTION
 ═══════════════════════════════════════════ */
 function getTodayIndex(){
   const now=new Date();
   const todayISO=now.toISOString().slice(0,10);
   const match=DAY_DATES.find(d=>d.date===todayISO);
+  return match?match.di:-1;
+}
+function getTomorrowIndex(){
+  const now=new Date();
+  now.setDate(now.getDate()+1);
+  const tomorrowISO=now.toISOString().slice(0,10);
+  const match=DAY_DATES.find(d=>d.date===tomorrowISO);
   return match?match.di:-1;
 }
 function renderTodayBanner(){
@@ -495,6 +482,11 @@ async function loadData(){
   renderDays();
   renderChecklist();
   updateRateLabels();
+  const todayIdx=getTodayIndex();
+  const tomorrowIdx=getTomorrowIndex();
+  if(todayIdx>=0||tomorrowIdx>=0){
+    switchTab('days',document.querySelector('[data-tab="days"]'));
+  }
 }
 /* ═══════════════════════════════════════════
    OVERVIEW
@@ -716,12 +708,13 @@ function renderDays(){
       <button class="day-map-btn" id="mapbtn-${di}" onclick="toggleDayMap(${di})">🗺 Show ${osmInfo.city} map</button>
       <iframe id="daymap-${di}" class="day-osm-frame" src="" data-src="${osmInfo.url}"
         allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`:'';
+    const tomorrowIdx=getTomorrowIndex();
+    const isTomorrow=(di===tomorrowIdx);
     return `<div class="day-card${isToday?' today-day':''}" id="day-${di}">
       <div class="day-header" onclick="toggleDay(${di})">
-        <div class="day-num">${dayNum}</div>
-        <div class="day-info">
-          <div class="day-title">${dayTitle||formatDayDate(day.date)}${isToday?'<span class="today-pill">TODAY</span>':''}</div>
-          <div class="day-loc">${formatDayDate(day.date)}${day.location?' · '+day.location:''}</div>
+        <div class="day-info" style="flex:1;min-width:0;">
+          <div class="day-date-primary">${formatDayDate(day.date)}${isToday?'<span class="today-pill">TODAY</span>':''}${isTomorrow?'<span class="today-pill" style="background:rgba(201,168,76,0.2);color:var(--gold);border-color:rgba(201,168,76,0.4);">TOMORROW</span>':''}</div>
+          <div class="day-loc"><span class="day-num">Day ${dayNum}</span>${day.location?' · '+day.location:''}${dayTitle?' · '+dayTitle:''}</div>
         </div>
         <div class="day-badge">${items.length} activities</div>
         <div class="day-chevron">›</div>
@@ -1283,10 +1276,37 @@ function renderEmergency(){
     <p style="font-size:11px;color:var(--muted);padding:12px 0 4px;line-height:1.6;text-align:center;">⚠️ Update blood types, insurance policy & GP details before leaving home.</p>
   </div>`;
 }
+function renderReference(){
+  const phrasesHTML=document.getElementById('tab-phrases')?.innerHTML||'';
+  const tipsHTML=document.getElementById('tab-tips')?.innerHTML||'';
+  const emergencyHTML=document.getElementById('tab-emergency')?.innerHTML||'';
+  document.getElementById('tab-reference').innerHTML=`<div style="padding-top:12px;">
+    <div class="ref-section-toggle" onclick="toggleRefSection('ref-emergency')">
+      <span>🆘 Emergency Info</span><span class="ref-chevron" id="chevron-ref-emergency">›</span>
+    </div>
+    <div id="ref-emergency" class="ref-section open">${emergencyHTML}</div>
+    <div class="ref-section-toggle" onclick="toggleRefSection('ref-phrases')">
+      <span>🇯🇵 Japanese Phrases</span><span class="ref-chevron" id="chevron-ref-phrases">›</span>
+    </div>
+    <div id="ref-phrases" class="ref-section">${phrasesHTML}</div>
+    <div class="ref-section-toggle" onclick="toggleRefSection('ref-tips')">
+      <span>💡 Tips & Etiquette</span><span class="ref-chevron" id="chevron-ref-tips">›</span>
+    </div>
+    <div id="ref-tips" class="ref-section">${tipsHTML}</div>
+  </div>`;
+}
+function toggleRefSection(id){
+  const el=document.getElementById(id);
+  if(!el) return;
+  const isOpen=el.classList.contains('open');
+  el.classList.toggle('open');
+  const chev=document.getElementById('chevron-'+id);
+  if(chev) chev.style.transform=isOpen?'':'rotate(90deg)';
+}
 /* ═══════════════════════════════════════════
    TAB SWITCHING
 ═══════════════════════════════════════════ */
-const TABS=['overview','days','transport','map','weather','booked','checklist','phrases','tips','links','emergency','search'];
+const TABS=['overview','days','search','transport','booked','map','weather','checklist','links','reference'];
 /* ═══════════════════════════════════════════
    BOOKED TAB
 ═══════════════════════════════════════════ */
@@ -1433,6 +1453,7 @@ function switchTab(tab,btn){
   if(btn) btn.classList.add('active');
   if(tab==='booked') renderBooked();
   if(tab==='search') renderSearch();
+  if(tab==='reference') renderReference();
 }
 /* ═══════════════════════════════════════════
    SERVICE WORKER (offline cache)
