@@ -65,7 +65,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .nav-tab{flex-shrink:0;padding:12px 14px;font-size:11.5px;font-weight:500;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;font-family:inherit;background:none;border-top:none;border-left:none;border-right:none;}
 .nav-tab:hover{color:var(--white);}
 .nav-tab.active{color:var(--blossom);border-bottom-color:var(--blossom);}
-.content{max-width:760px;margin:0 auto;padding:0 16px 80px;}
+.content{max-width:760px;margin:0 auto;padding:0 16px 80px;overflow-x:hidden;width:100%;}
+#tab-search{overflow-x:hidden;width:100%;}
+#tab-search input{width:100%;max-width:100%;box-sizing:border-box;}
+#search-results>div{max-width:100%;overflow:hidden;word-break:break-word;}
 .section-title{font-size:11px;color:var(--gold);font-weight:600;letter-spacing:0.5px;text-transform:uppercase;padding:14px 0 8px;}
 /* OVERVIEW */
 .overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:20px 0 8px;}
@@ -1415,12 +1418,12 @@ function runSearch(q){
   if(!hits.length){out.innerHTML='<span style="color:var(--muted)">No results for <em>'+q.replace(/</g,'&lt;')+'</em></span>';return;}
   const tagColour={itinerary:'var(--jade)',checklist:'var(--gold)',booked:'var(--blossom)',idea:'var(--muted)'};
   out.innerHTML=`<div style="color:var(--muted);margin-bottom:8px;">${hits.length} result${hits.length===1?'':'s'}</div>`+
-    hits.map(h=>`<div onclick="${h.action}" style="background:var(--ink2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:8px;${h.action?'cursor:pointer;':''}" >
-      <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
-        <span style="font-size:10px;padding:2px 7px;border-radius:8px;background:${tagColour[h.tag]||'var(--muted)'};color:var(--ink);font-weight:700;">${h.tag}</span>
-        <span style="font-size:11px;color:var(--muted);">${h.label}</span>
+    hits.map(h=>`<div onclick="${h.action}" style="background:var(--ink2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:8px;max-width:100%;overflow:hidden;box-sizing:border-box;${h.action?'cursor:pointer;':''}" >
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;flex-wrap:wrap;">
+        <span style="font-size:10px;padding:2px 7px;border-radius:8px;background:${tagColour[h.tag]||'var(--muted)'};color:var(--ink);font-weight:700;flex-shrink:0;">${h.tag}</span>
+        <span style="font-size:11px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${h.label}</span>
       </div>
-      <div style="font-size:13px;color:var(--white);line-height:1.5;">${h.text}</div>
+      <div style="font-size:13px;color:var(--white);line-height:1.5;word-break:break-word;overflow-wrap:break-word;">${h.text}</div>
       ${h.action?'<div style="font-size:10px;color:var(--jade);margin-top:4px;">Tap to jump →</div>':''}
     </div>`).join('');
 }
