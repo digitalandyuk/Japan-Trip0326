@@ -2182,23 +2182,14 @@
           "url": "https://flyasiana.com/C/GB/EN/contents/booking/manage-booking"
         },
         {
-          "time": "21:30",
-          "activity": "Arrive Seoul ICN T2",
-          "status": "confirmed",
-          "notes": "Transfer to Grand Hyatt Incheon. Free hotel shuttle from T2.",
-          "address": "Incheon International Airport Terminal 2, 272 Gonghang-daero, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Incheon International Airport Terminal 2",
-          "detail": "Arriving at ICN Terminal 2.\n⚠ This is the return Korea entry — have your second e-Arrival Card QR ready (completed at e-arrivalcard.go.kr, deadline 15 Apr).\n\nProcess: Immigration → baggage → customs → arrivals hall → Grand Hyatt shuttle bus.\nGrand Hyatt Incheon shuttle: Free, departs from outside arrivals hall. Hotel connected to airport complex — journey ~10 mins."
-        },
-        {
           "time": "22:00",
-          "activity": "Shuttle to Grand Hyatt Incheon & check in",
+          "activity": "Check in — Nest Hotel Incheon",
           "status": "confirmed",
-          "notes": "Free shuttle from ICN T2. Early start tomorrow. Hotel connected to airport complex.",
-          "detail": "Expedia Conf: 150513RA052227\nGrand Hyatt Incheon\nFri 17 → Sat 18 April\nCost: £277.04\n⚠ PAY AT PROPERTY (not prepaid)\n➡ Free hotel shuttle from ICN Terminal 2\nNo breakfast included",
-          "address": "Grand Hyatt Incheon, 208 Yeongjonghaean-ro 321beon-gil, Jung-gu, Incheon 22382, South Korea",
-          "mapQuery": "Grand Hyatt Incheon Airport Hotel",
-          "url": "https://www.expedia.co.uk/trips/72068509828739"
+          "notes": "2 rooms · Standard Twin, Mountain View · Expedia 72072850760534 · £250.64 PAID MC3823",
+          "detail": "Nest Hotel Incheon\n19-5, Yeongjonghaeannam-ro, Jung-gu, Incheon 400-340, South Korea\n\nExpedia Itinerary: 72072850760534\nCheck-in: Fri 17 Apr | Check-out: Sat 18 Apr\n2 × Standard Twin Room, Mountain View\nTotal: £250.64 · PAID MasterCard 3823\n\n⚠ Note: Grand Hyatt Incheon has permanently closed — this is the replacement booking.\n⚠ Confirm shuttle/taxi availability from ICN T2 to hotel on arrival (~21:30)",
+          "address": "19-5, Yeongjonghaeannam-ro, Jung-gu, Incheon 400-340, South Korea",
+          "mapQuery": "Nest Hotel Incheon",
+          "url": "https://www.expedia.co.uk/trips/72072850760534"
         }
       ],
       "title": "Osaka → Seoul Incheon",
@@ -2237,12 +2228,12 @@
       "items": [
         {
           "time": "07:00",
-          "activity": "Breakfast — Grand Hyatt or airport",
+          "activity": "Breakfast — Nest Hotel Incheon or airport",
           "status": "planning",
-          "notes": "No breakfast included at Grand Hyatt. ICN T2 food options open from 06:00.",
+          "notes": "No breakfast included at Nest Hotel Incheon. ICN T2 food options open from 06:00.",
           "address": "Grand Hyatt Incheon, 208 Yeongjonghaean-ro 321beon-gil, Jung-gu, Incheon 22382, South Korea",
           "mapQuery": "Grand Hyatt Incheon Airport Hotel",
-          "detail": "No breakfast included at Grand Hyatt Incheon.\n\nOptions:\n- Grand Hyatt restaurant: À la carte (expensive, ₩30,000–50,000pp)\n- ICN T2 airside: Multiple options from 06:00 including Korean restaurant, café, bakery. Far cheaper.\n\nRecommendation: Quick hotel coffee, then eat airside after check-in."
+          "detail": "No breakfast included at Nest Hotel Incheon.\n\nOptions:\n- Nest Hotel Incheon restaurant: À la carte (expensive, ₩30,000–50,000pp)\n- ICN T2 airside: Multiple options from 06:00 including Korean restaurant, café, bakery. Far cheaper.\n\nRecommendation: Quick hotel coffee, then eat airside after check-in."
         },
         {
           "time": "08:30",
@@ -2251,7 +2242,7 @@
           "notes": "Free hotel shuttle. Confirm pickup time at reception tonight. 10–15 min.",
           "address": "Grand Hyatt Incheon, 208 Yeongjonghaean-ro 321beon-gil, Jung-gu, Incheon 22382, South Korea",
           "mapQuery": "Grand Hyatt Incheon Airport Hotel",
-          "detail": "Free Grand Hyatt Incheon shuttle to ICN T2.\n⚠ Confirm shuttle time at reception tonight.\nJourney: ~10–15 mins. Hotel is directly connected to the airport complex.\nVS209 check-in opens at 09:00 — being at the terminal by 08:45 gives a comfortable margin."
+          "detail": "Free Nest Hotel Incheon shuttle to ICN T2.\n⚠ Confirm shuttle time at reception tonight.\nJourney: ~10–15 mins. Hotel is directly connected to the airport complex.\nVS209 check-in opens at 09:00 — being at the terminal by 08:45 gives a comfortable margin."
         },
         {
           "time": "09:00",
@@ -2654,11 +2645,11 @@
           "dateLabel": "Fri 17 Apr"
         },
         {
-          "task": "Grand Hyatt Incheon (airport hotel)",
+          "task": "Nest Hotel Incheon (airport hotel)",
           "who": "Andy",
           "deadline": "✅ Booked",
           "status": "pay_at_property",
-          "notes": "Exp 150513RA052227 · £277.04 · PAY AT PROPERTY · Fri 17–Sat 18 Apr",
+          "notes": "Expedia 72072850760534 · £250.64 PAID · Grand Hyatt permanently closed — rebooked at Nest Hotel Incheon",
           "sortDate": "2026-04-17",
           "dateLabel": "Fri 17 Apr"
         }
