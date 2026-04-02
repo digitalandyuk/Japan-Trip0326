@@ -11,6 +11,12 @@
       "mapQuery": "London Heathrow Airport",
       "items": [
         {
+          "time": "",
+          "activity": "🔋 Pack power banks in HAND LUGGAGE",
+          "status": "reminder",
+          "notes": "Lithium batteries must be carry-on only (IATA). Check all 4 are packed in hand luggage, not hold bags."
+        },
+        {
           "time": "11:00",
           "activity": "KwikPark Meet & Greet — T3",
           "status": "confirmed",
@@ -38,6 +44,12 @@
           "mapQuery": "Heathrow Terminal 3",
           "detail": "Flight: VS208 · Boeing 787-9 Dreamliner\nRoute: LHR → ICN T2 · Duration: ~11 hours\nSeats: 24D/24F (row 24) + 25D/25F (row 25)\n\nThe 787 has larger windows, better cabin pressure and humidity than older aircraft — less dehydrating on long haul.\n\nTime zone: Seoul is UTC+9. London (BST) is UTC+1 in April — 8 hours ahead.\nTip: Set watches to Seoul time as you board and try to sleep — arrival Day 1 has a full afternoon planned.",
           "url": "https://www.virginatlantic.com/mytrips"
+        },
+        {
+          "time": "14:15",
+          "activity": "✈️ Asiana OZ106 online check-in opens",
+          "status": "reminder",
+          "notes": "Check in at flyasiana.com · OZ106 ICN→NRT · Sun 5 Apr 14:15 · PNR D2MKD6 · Seats: request again if needed."
         }
       ],
       "title": "London → Seoul",
@@ -569,6 +581,12 @@
           "type": "[JACK] Café/Kissaten",
           "notes": "Koenji, Suginami — a few minutes from Koenji Station on the Chuo Line. Classic old-school kissaten (Japanese coffee shop) style café. Famous for exceptional filter coffee, French toast and especially fruit sandwiches — seasonal fruit (Shine Muscat, mango, others) in soft shokupan with generous fresh cream. Regularly highlighted as a must-order. Koenji itself is the best thrift/vintage neighbourhood in Tokyo — pair this with a wander through the vintage shops and backstreets. Very local, retro, indie atmosphere.",
           "mapQuery": "Poem Mano a Mano Coffee Koenji Tokyo"
+        },
+        {
+          "title": "Ginza Hachigo ramen — JACK RECOMMENDS",
+          "type": "Food",
+          "notes": "1 Michelin star, only 6 seats. Reservations via TableCheck. Extremely hard to get — check availability.",
+          "mapQuery": "Ginza Hachigo ramen Tokyo"
         }
       ],
       "image": "https://raw.githubusercontent.com/digitalandyuk/Japan-Trip0326/main/japimages/day3.jpg"
@@ -1269,6 +1287,18 @@
           "detail": "Route: Walk 1 min to Karasuma-Shijo Station → Karasuma Line northbound → Kitaoji Station (3 stops, ¥260pp, ~9 min)\nFrom Kitaoji: Bus 101 or 102 or taxi (~¥1,000) to Kinkaku-ji, 10–15 min.\n\nTiming: Arrive at Kinkaku-ji by 09:30 to beat tour buses which start arriving from 10:00. The difference is significant."
         },
         {
+          "time": "08:30",
+          "activity": "📞 Book Arashiyama Nishiki lunch for tomorrow",
+          "status": "reminder",
+          "notes": "☎ 075-871-8888 · arashiyama-nishiki.com · Book for Sun 12 Apr lunch after river cruise (~13:30)."
+        },
+        {
+          "time": "08:30",
+          "activity": "📞 Book Ponto-cho dinner for Sun 12 Apr evening",
+          "status": "reminder",
+          "notes": "Kawayuka riverside terrace if available. Pontocho Fujita (kaiseki, TableCheck) or Pontocho Robin (hotpot). Book 24hrs ahead."
+        },
+        {
           "time": "09:30–10:30",
           "activity": "Kinkaku-ji — Golden Pavilion",
           "status": "planning",
@@ -1533,6 +1563,12 @@
           "status": "planning",
           "notes": "10 min walk from Ponto-cho. Same easy route as Friday night.",
           "mapQuery": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji"
+        },
+        {
+          "time": "",
+          "activity": "📞 Book farewell Kyoto dinner — Mon 13 Apr",
+          "status": "reminder",
+          "notes": "Traditional kaiseki · Shijo/Gion area · Book 24hrs ahead."
         }
       ],
       "title": "Kyoto — Arashiyama",
@@ -1727,6 +1763,12 @@
           "status": "planning",
           "notes": "Tour ends near Daikokucho ~21:00. 20 min metro to Umeda/hotel area (Midosuji Line Daikokucho → Umeda). First night in Osaka.",
           "mapQuery": "Candeo Hotels Osaka The Tower Kita-ku"
+        },
+        {
+          "time": "",
+          "activity": "📞 Book yakiniku dinner — Wed 15 Apr, 19:30, Namba",
+          "status": "reminder",
+          "notes": "Proper yakiniku · ~¥4,000–5,000pp · Namba area. Book ahead."
         }
       ],
       "title": "Kyoto → Osaka",
@@ -1883,6 +1925,18 @@
           "status": "optional",
           "notes": "Self-service coin laundry on site. Wash + dry ~¥500–700 per load (~£3). Day 12 of 15 — last good chance to do laundry before flying home. Saves packing dirty clothes.",
           "mapQuery": "Candeo Hotels Osaka The Tower Kita-ku"
+        },
+        {
+          "time": "",
+          "activity": "📞 Book final Japan dinner — Thu 16 Apr",
+          "status": "reminder",
+          "notes": "Unagi (eel) or high-end ramen · Osaka. Last proper dinner in Japan."
+        },
+        {
+          "time": "",
+          "activity": "🇰🇷 Complete Korea e-Arrival Card — RETURN (all 4)",
+          "status": "reminder",
+          "notes": "e-arrivalcard.go.kr · Complete for all 4 family members for Incheon arrival Fri 17 Apr. Must be done within 72hrs of arrival."
         }
       ],
       "title": "Nara Day Trip",
@@ -2124,6 +2178,12 @@
       "mapQuery": "Kansai International Airport KIX Osaka",
       "items": [
         {
+          "time": "",
+          "activity": "🔋 Power banks in HAND LUGGAGE for return",
+          "status": "reminder",
+          "notes": "Check all power banks are in carry-on before checking hold bags at KIX."
+        },
+        {
           "time": "08:00",
           "activity": "Breakfast — Candeo Hotels",
           "status": "included",
@@ -2316,7 +2376,8 @@
           "who": "Sarah",
           "deadline": "Before 3 Apr",
           "status": "incomplete",
-          "notes": "Virgin app shows remaining steps · scan passport + docs · virginatlantic.com → My Booking → FlyReady"
+          "notes": "Virgin app shows remaining steps · scan passport + docs · virginatlantic.com → My Booking → FlyReady",
+          "done": true
         }
       ]
     },
@@ -2340,28 +2401,24 @@
           "who": "All",
           "deadline": "By 2 Apr",
           "status": "pending",
-          "notes": "Airalo or Holafly · 10–15 day data plan"
+          "notes": "Airalo or Holafly · 10–15 day data plan",
+          "done": true
         },
         {
           "task": "Set up Suica cards on iPhone Wallet",
           "who": "All",
           "deadline": "By 2 Apr",
           "status": "pending",
-          "notes": "Apple Pay Suica from UK · or collect physical at Narita"
+          "notes": "Apple Pay Suica from UK · or collect physical at Narita",
+          "done": true
         },
         {
           "task": "Download offline Google Maps",
           "who": "All",
           "deadline": "By 2 Apr",
           "status": "pending",
-          "notes": "Tokyo, Hakone, Kyoto, Osaka, Nara areas"
-        },
-        {
-          "task": "Jack: Install EMot + Klook + Navitime apps",
-          "who": "Jack",
-          "deadline": "By 2 Apr",
-          "status": "pending",
-          "notes": "So Jack can manage own bookings on the go"
+          "notes": "Tokyo, Hakone, Kyoto, Osaka, Nara areas",
+          "done": true
         },
         {
           "task": "Pack power banks in HAND LUGGAGE",
@@ -2375,7 +2432,8 @@
           "who": "Andy",
           "deadline": "Before 8 Apr",
           "status": "reminder",
-          "notes": "Control numbers: 2837515, 2837519, 2837521, 2837523 · Activate in EMot app at first use only"
+          "notes": "Control numbers: 2837515, 2837519, 2837521, 2837523 · Activate in EMot app at first use only",
+          "done": true
         },
         {
           "task": "Luggage forwarding TEN-YU → Mitsui Garden Kyoto (Takuhaibin)",
@@ -2396,7 +2454,8 @@
           "who": "Andy",
           "deadline": "ASAP",
           "status": "pending",
-          "notes": "⚠ Saturday in Gion during cherry blossom season fills weeks ahead · Tempura Endo or similar"
+          "notes": "✅ Hachikian Marutamachi · Sat 11 Apr 18:30 · Booked via TableCheck · ¥43,560",
+          "done": true
         },
         {
           "task": "Book Ponto-cho dinner — Sun 12 Apr",
@@ -2431,7 +2490,8 @@
           "who": "All 4",
           "deadline": "2 Apr 2026",
           "status": "incomplete",
-          "notes": "Complete online within 72 hrs of flying to Seoul. Site: e-arrivalcard.go.kr — fill in for all 4 family members, save/print the PDF confirmation. No visa or K-ETA required (UK passports exempt until Dec 2026). Have PDF ready at ICN immigration on arrival 4 Apr."
+          "notes": "Complete online within 72 hrs of flying to Seoul. Site: e-arrivalcard.go.kr — fill in for all 4 family members, save/print the PDF confirmation. No visa or K-ETA required (UK passports exempt until Dec 2026). Have PDF ready at ICN immigration on arrival 4 Apr.",
+          "done": true
         },
         {
           "task": "🇰🇷 South Korea e-Arrival Card — RETURN (Incheon 17 Apr)",
@@ -2466,7 +2526,8 @@
           "status": "paid",
           "notes": "Ref E3FYHB · VS208 LHR 13:25→ICN 10:05 Sat 4 Apr · Seats 24D/24F/25D/25F · VS209 ICN 12:25→LHR 18:50 Sat 18 Apr · Seats 23D/23F/24D/24F · £2,276.76 · 328k pts + Visa 7377",
           "sortDate": "2026-04-03",
-          "dateLabel": "Fri 3 Apr"
+          "dateLabel": "Fri 3 Apr",
+          "done": true
         },
         {
           "task": "LHR Parking — KwikPark Meet & Greet T3",
@@ -2475,7 +2536,8 @@
           "status": "paid",
           "notes": "Order ID: L4PUK-777209 · £119.18 · Dep Fri 3 Apr / Return Sat 18 Apr · Plate GL74VLV",
           "sortDate": "2026-04-03",
-          "dateLabel": "Fri 3 Apr"
+          "dateLabel": "Fri 3 Apr",
+          "done": true
         },
         {
           "task": "Seoul arrival taxi — Tourmaker #1479-1",
@@ -2484,7 +2546,8 @@
           "status": "paid",
           "notes": "Sat 4 Apr · ICN T2 → Crown Park Seoul · £71.12",
           "sortDate": "2026-04-04",
-          "dateLabel": "Sat 4 Apr"
+          "dateLabel": "Sat 4 Apr",
+          "done": true
         },
         {
           "task": "Crown Park Hotel Seoul",
@@ -2493,7 +2556,8 @@
           "status": "paid",
           "notes": "Exp 25301968 · £388.78 · PAID MC 3823 · Breakfast for 2 · Sat 4–Sun 5 Apr",
           "sortDate": "2026-04-04",
-          "dateLabel": "Sat 4 Apr"
+          "dateLabel": "Sat 4 Apr",
+          "done": true
         },
         {
           "task": "Seoul → Tokyo Asiana OZ106 × 4",
@@ -2502,7 +2566,8 @@
           "status": "paid",
           "notes": "Sun 5 Apr · ICN T1 → NRT · £951.48 · PNR D2MKD6",
           "sortDate": "2026-04-05",
-          "dateLabel": "Sun 5 Apr"
+          "dateLabel": "Sun 5 Apr",
+          "done": true
         },
         {
           "task": "Seoul departure taxi — Tourmaker #1479-2",
@@ -2511,7 +2576,8 @@
           "status": "paid",
           "notes": "Sun 5 Apr · Crown Park Seoul → ICN · pickup 12:00 · £71.12",
           "sortDate": "2026-04-05",
-          "dateLabel": "Sun 5 Apr"
+          "dateLabel": "Sun 5 Apr",
+          "done": true
         },
         {
           "task": "Narita → Shinjuku Transfer (Klook bus × 4)",
@@ -2520,7 +2586,8 @@
           "status": "paid",
           "notes": "Sun 5 Apr · £91.28",
           "sortDate": "2026-04-05",
-          "dateLabel": "Sun 5 Apr"
+          "dateLabel": "Sun 5 Apr",
+          "done": true
         },
         {
           "task": "Keio Plaza Hotel Tokyo",
@@ -2529,7 +2596,8 @@
           "status": "pay_at_property",
           "notes": "Exp 73304498303010 · ¥472,014 PAY AT PROPERTY · Free breakfast · 2 rooms · Sun 5–Wed 8 Apr",
           "sortDate": "2026-04-05",
-          "dateLabel": "Sun 5 Apr"
+          "dateLabel": "Sun 5 Apr",
+          "done": true
         },
         {
           "task": "Sumo Show — Yokozuna Tonkatsu Dosukoi Tanaka × 4",
@@ -2538,7 +2606,8 @@
           "status": "paid",
           "notes": "Mon 7 Apr · 2 bookings × 2 seats · Doors 16:45, show 17:00–18:00 · dumbonet.com",
           "sortDate": "2026-04-07",
-          "dateLabel": "Mon 7 Apr"
+          "dateLabel": "Mon 7 Apr",
+          "done": true
         },
         {
           "task": "Hakone Freepass × 4",
@@ -2547,7 +2616,8 @@
           "status": "paid",
           "notes": "Digital EMot · ¥7,500pp (3-day) · all Hakone transport · Control: 2837515/2837519/2837521/2837523",
           "sortDate": "2026-04-08",
-          "dateLabel": "Wed 8 Apr"
+          "dateLabel": "Wed 8 Apr",
+          "done": true
         },
         {
           "task": "Romancecar Hakone 3 (GSE) × 4",
@@ -2556,7 +2626,8 @@
           "status": "paid",
           "notes": "Wed 8 Apr · Shinjuku 10:00→Hakone-Yumoto 11:27 · Car 7 seats 5C/5D/6C/6D · Control E786 · ¥4,600 total",
           "sortDate": "2026-04-08",
-          "dateLabel": "Wed 8 Apr"
+          "dateLabel": "Wed 8 Apr",
+          "done": true
         },
         {
           "task": "TEN-YU Ryokan Hakone",
@@ -2565,7 +2636,8 @@
           "status": "paid",
           "notes": "Conf: 20251118076112540 · Wed 8–Fri 10 Apr · £1,765.14 + £5.88 at property · MC 3823",
           "sortDate": "2026-04-08",
-          "dateLabel": "Wed 8 Apr"
+          "dateLabel": "Wed 8 Apr",
+          "done": true
         },
         {
           "task": "Shinkansen Hikari 641 × 4",
@@ -2574,7 +2646,8 @@
           "status": "paid",
           "notes": "Fri 10 Apr · Odawara 12:07 → Kyoto 14:12 · Res 40422 · Car 6 seats 14D/14E/15D/15E · ¥49,200 · Revolut card 9666",
           "sortDate": "2026-04-10",
-          "dateLabel": "Fri 10 Apr"
+          "dateLabel": "Fri 10 Apr",
+          "done": true
         },
         {
           "task": "Mitsui Garden Hotel Kyoto Kawaramachi Jokyoji",
@@ -2583,7 +2656,8 @@
           "status": "paid",
           "notes": "Exp 20251124078897910 · £1,932.76 · PAID MC 3823 · Free breakfast · 2 rooms · Fri 10–Tue 14 Apr",
           "sortDate": "2026-04-10",
-          "dateLabel": "Fri 10 Apr"
+          "dateLabel": "Fri 10 Apr",
+          "done": true
         },
         {
           "task": "Sagano Romantic Train × 4 — Torokko Saga → Kameoka",
@@ -2592,7 +2666,8 @@
           "status": "paid",
           "notes": "✅ BOOKED · ARS_SAGANO_KANKO-20260323-4F63 · 4 adults · Car 3 · 10:02 · Sun 12 Apr 2026 · ¥3,520 · E-ticket: linkt.to/oGdvHgf1",
           "sortDate": "2026-04-12",
-          "dateLabel": "Sun 12 Apr"
+          "dateLabel": "Sun 12 Apr",
+          "done": true
         },
         {
           "task": "Hozugawa River Cruise × 4 — Kameoka → Arashiyama",
@@ -2601,7 +2676,8 @@
           "status": "paid",
           "notes": "✅ BOOKED via Klook · KLOOK-20260323-DB5V · £99.93 · 4 adults (Andrew, Sarah, Jack, Charlie Evans) · Sun 12 Apr · 11:00 slot · Show QR code smartphone ticket at dock",
           "sortDate": "2026-04-12",
-          "dateLabel": "Sun 12 Apr"
+          "dateLabel": "Sun 12 Apr",
+          "done": true
         },
         {
           "task": "152nd Miyako Odori × 4 — Mon 13 Apr 14:30",
@@ -2610,7 +2686,8 @@
           "status": "paid",
           "notes": "Order 00101707 · 4 x First Class + Tea Service · Row 22 seats 6-9 · ¥28,860 · Revolut 9666 · QR via Less Q",
           "sortDate": "2026-04-13",
-          "dateLabel": "Mon 13 Apr"
+          "dateLabel": "Mon 13 Apr",
+          "done": true
         },
         {
           "task": "Candeo Hotels Osaka The Tower",
@@ -2619,7 +2696,8 @@
           "status": "paid",
           "notes": "Exp 20251124078913429 · £1,579.20 · PAID MC 3823 · Free breakfast + Exec Bar Lounge · 2 rooms · Tue 14–Fri 17 Apr",
           "sortDate": "2026-04-14",
-          "dateLabel": "Tue 14 Apr"
+          "dateLabel": "Tue 14 Apr",
+          "done": true
         },
         {
           "task": "Osaka Deep Backstreets Walking Tour × 4 (GetYourGuide)",
@@ -2628,7 +2706,8 @@
           "status": "paid",
           "notes": "Tue 14 Apr · Ref GYGLMR35M35H · Meet Daikokucho Station Exit 1 · 17:30–21:00 · Includes dinner",
           "sortDate": "2026-04-14",
-          "dateLabel": "Tue 14 Apr"
+          "dateLabel": "Tue 14 Apr",
+          "done": true
         },
         {
           "task": "Kintetsu Vistacar Osaka-Namba → Kintetsu-Nara × 4",
@@ -2637,7 +2716,8 @@
           "status": "paid",
           "notes": "Wed 15 Apr · Res A46746 · Train 1017 · Car 2 seats 4A/4B/5A/5B (upstairs) · ¥2,080 total",
           "sortDate": "2026-04-15",
-          "dateLabel": "Wed 15 Apr"
+          "dateLabel": "Wed 15 Apr",
+          "done": true
         },
         {
           "task": "Osaka → Seoul Asiana OZ113 × 4",
@@ -2646,16 +2726,30 @@
           "status": "paid",
           "notes": "Fri 17 Apr · KIX T1→ICN T2 · 19:45→21:40 · PNR D2MKD6 · A350 · Seats: Andy 24H · Sarah 24J · Jack 25H · Charlie 25J",
           "sortDate": "2026-04-17",
-          "dateLabel": "Fri 17 Apr"
+          "dateLabel": "Fri 17 Apr",
+          "done": true
         },
         {
           "task": "Nest Hotel Incheon (airport hotel)",
           "who": "Andy",
           "deadline": "✅ Booked",
           "status": "pay_at_property",
-          "notes": "Expedia 72072850760534 · £250.64 PAID · Grand Hyatt permanently closed — rebooked at Nest Hotel Incheon",
+          "notes": "Expedia 72072850760534 · Conf 20260402147570165 · £250.64 PAID MC 3823 · 2 × Standard Twin Mountain View · Breakfast incl. · Fri 17–Sat 18 Apr",
           "sortDate": "2026-04-17",
-          "dateLabel": "Fri 17 Apr"
+          "dateLabel": "Fri 17 Apr",
+          "done": true
+        },
+        {
+          "task": "Tea Ceremony Experience — Osaka Doutonbori × 4",
+          "who": "Andy",
+          "done": true,
+          "notes": "Tue 14 Apr · 14:00 · Ref TS-88310234 · ¥16,800 · Dotonbori, Namba/Shinsaibashi"
+        },
+        {
+          "task": "Hachikian Marutamachi dinner × 4",
+          "who": "Andy",
+          "done": true,
+          "notes": "Sat 11 Apr · 18:30 · Booked via TableCheck · Chicken mizutaki · ¥43,560"
         }
       ]
     }
