@@ -1251,6 +1251,15 @@
           "detail": "Free breakfast included. Restaurant: Sanga Ono, ground floor. Hours: 07:00–10:00.\nJapanese set (miso soup, grilled fish, rice, pickles) or Western option.\nToday is a full day out — eat well."
         },
         {
+          "time": "08:30",
+          "activity": "📞 Book Kichikichi for tomorrow night (19:30 sitting)",
+          "status": "reminder",
+          "notes": "Call or book online at kichikichi.com after breakfast. Request 4 seats at 19:30 sitting for Sun 12 Apr. Counter seating only — must book the day before.",
+          "detail": "Kichikichi (きちきち)\nWebsite: https://www.kichikichi.com/\nAddress: 64 Nakano-cho, Muromachi-Nishiru, Oike-dori, Nakagyo-ku, Kyoto 604-0051\nPhone: +81-75-254-4070\n\nBook the 19:30 second sitting for 4 people on Sunday 12 April.\nDo this after breakfast before heading out for the day.",
+          "url": "https://www.kichikichi.com/",
+          "mapQuery": "Kichikichi restaurant Kyoto Nakagyo"
+        },
+        {
           "time": "09:00",
           "activity": "Subway: Shijo → Kitaoji",
           "status": "planning",
@@ -1323,11 +1332,12 @@
         },
         {
           "time": "18:30",
-          "activity": "Dinner — Gion district",
-          "status": "bookahead",
-          "notes": "⚠ Not yet booked — Sat 11 Apr is peak cherry blossom season, book ASAP. Gion/Hanamikoji area. Try Tableall or Tablecheck for kaiseki or good izakaya.",
-          "address": "Gion District, Higashiyama Ward, Kyoto 605-0073, Japan",
-          "mapQuery": "Gion District Kyoto Hanamikoji"
+          "activity": "Dinner — Hachikian Marutamachi",
+          "status": "booked",
+          "notes": "✅ BOOKED via TableCheck · 4 guests · Sat 11 Apr · 18:30 · Chicken mizutaki course · ¥43,560 total (incl. service charge) · No truffle noted · ☎ 075-761-5470",
+          "detail": "Hachikian Kyoto Marutamachi Honten (八起庵 京都丸太町本店)\nAddress: 8 Higashimarutamachi, Sakyo Ward, Kyoto\nPhone: 075-761-5470\nWebsite: https://www.tablecheck.com/en/hachikian-marutamachi\n\nBOOKING CONFIRMED\nDate: Saturday 11 April 2026 · 18:30\nGuests: 4 · Purpose: Family · First visit\nExperience: Chicken mizutaki (chicken hot pot) — 4 people\nCost: ¥39,600 + ¥3,960 service charge = ¥43,560 total\nAllergens noted: No truffle\n\nABOUT THE EXPERIENCE\nKyoto's premier poultry restaurant, housed in a 126-year-old machiya. Chef selects and ages chicken and duck to deepen umami. Mizutaki is their signature — a delicate clear-broth chicken hot pot, cooked tableside. The private room setting makes this a genuinely special family dinner.\n\nIMPORTANT NOTES\n⚠ If more than 30 minutes late and unreachable, reservation may be cancelled — call ahead: 075-761-5470\n⚠ Private seating requests cannot be guaranteed\n\nGETTING THERE\nTaxi from hotel: ~10 mins, ~¥1,000. Or subway: Karasuma Oike → Marutamachi (2 stops), short walk east.",
+          "url": "https://www.tablecheck.com/en/hachikian-marutamachi",
+          "mapQuery": "Hachikian Marutamachi Kyoto"
         },
         {
           "time": "20:00",
@@ -1509,12 +1519,13 @@
           "detail": "Two return options:\n1. Hankyu Arashiyama Line: Hankyu Arashiyama Station → Katsura → Kawaramachi. ~35 min, ¥270pp. Drops very close to the hotel. Recommended.\n2. JR Sagano Line: JR Saga-Arashiyama → Kyoto Station. ~17 min, ¥240pp. Faster but requires subway or taxi from Kyoto Station."
         },
         {
-          "time": "19:00",
-          "activity": "Dinner — Ponto-cho",
-          "status": "not_booked",
-          "notes": "⚠ BOOK AHEAD — Sunday evening cherry blossom season, this will be very busy. Riverside kawayuka terrace dining. Book as soon as possible.",
-          "mapQuery": "Pontocho Kyoto dining",
-          "detail": "Ponto-cho Sunday dinner — book in advance.\n\nRecommended:\n- Pontocho Robin (Rubin): Traditional Japanese hotpot (duck, kinmedai). Private rooms 4–6 people. River views. ¥8,800–16,500pp. Tabelog bookable.\n- Pontocho Fujita: Kaiseki, dashi-focused, private rooms. Tablecheck bookable.\n- Via hotel concierge: Ask Mitsui Garden to call on your behalf — most reliable for cherry blossom season.\n\nKawayuka: Riverside dining platforms may just be opening in mid-April — worth asking when you call."
+          "time": "19:30",
+          "activity": "Dinner — Kichikichi",
+          "status": "bookahead",
+          "notes": "⚠ BOOK THE DAY BEFORE (11 Apr morning) — see reminder on Day 8. Counter seats only (~6 seats). Request 19:30 sitting for 4. Chef Motokichi Yukimura's theatrical omurice performance. ¥3,000–¥5,000pp.",
+          "detail": "Kichikichi (きちきち)\nWebsite: https://www.kichikichi.com/\nAddress: 64 Nakano-cho, Muromachi-Nishiru, Oike-dori, Nakagyo-ku, Kyoto 604-0051\nPhone: +81-75-254-4070\n\nChef Motokichi Yukimura's legendary omurice — a theatrical counter dining experience. You watch the chef fold a perfect omurice envelope at speed, the egg opened at the table over rice and demi-glace sauce. One of Kyoto's most talked-about dining moments.\n\nSEATING: Counter only. ~6 seats. Two sittings (typically 17:30 and 19:30). A party of 4 fills most of the counter.\n\nPRICE: Around ¥3,000–¥5,000pp. Cash and cards accepted.\n\nGETTING THERE: 10 min taxi from the hotel (~¥700) or 20 min walk north via Kawaramachi-dori. Just west of Nijo on Oike-dori.\n\n⚠ Book the day before — reminder set for morning of Saturday 11 April.",
+          "url": "https://www.kichikichi.com/",
+          "mapQuery": "Kichikichi restaurant Nakagyo Kyoto"
         },
         {
           "time": "20:30",
@@ -2185,8 +2196,8 @@
           "time": "22:00",
           "activity": "Check in — Nest Hotel Incheon",
           "status": "confirmed",
-          "notes": "2 rooms · Standard Twin, Mountain View · Expedia 72072850760534 · £250.64 PAID MC3823",
-          "detail": "Nest Hotel Incheon\n19-5, Yeongjonghaeannam-ro, Jung-gu, Incheon 400-340, South Korea\n\nExpedia Itinerary: 72072850760534\nCheck-in: Fri 17 Apr | Check-out: Sat 18 Apr\n2 × Standard Twin Room, Mountain View\nTotal: £250.64 · PAID MasterCard 3823\n\n⚠ Note: Grand Hyatt Incheon has permanently closed — this is the replacement booking.\n⚠ Confirm shuttle/taxi availability from ICN T2 to hotel on arrival (~21:30)",
+          "notes": "2 × Standard Twin, Mountain View · Breakfast included × 4 · Expedia 72072850760534 · Conf: 20260402147570165 · £250.64 PAID MC3823",
+          "detail": "Nest Hotel Incheon\n19-5, Yeongjonghaeannam-ro, Jung-gu, Incheon 400-340, South Korea\n\nExpedia Itinerary: 72072850760534\nConfirmation: 20260402147570165\nCheck-in: Fri 17 Apr | Check-out: Sat 18 Apr\n2 × Standard Twin Room, Mountain View\nBreakfast included for 2 per room (all 4 covered)\nNon-smoking · £250.64 · PAID MasterCard 3823\n\n⚠ Airport transfer: 8 min drive from ICN — take a taxi from T2 arrivals on landing (~21:30). No shuttle listed — confirm with hotel.\nNote: Grand Hyatt Incheon permanently closed — this is the replacement booking.",
           "address": "19-5, Yeongjonghaeannam-ro, Jung-gu, Incheon 400-340, South Korea",
           "mapQuery": "Nest Hotel Incheon",
           "url": "https://www.expedia.co.uk/trips/72072850760534"
@@ -2228,9 +2239,9 @@
       "items": [
         {
           "time": "07:00",
-          "activity": "Breakfast — Nest Hotel Incheon or airport",
-          "status": "planning",
-          "notes": "No breakfast included at Nest Hotel Incheon. ICN T2 food options open from 06:00.",
+          "activity": "Breakfast — Nest Hotel Incheon (included)",
+          "status": "included",
+          "notes": "Breakfast included in room rate for both rooms. Early start needed — hotel shuttle to ICN T2 at 08:30.",
           "address": "Grand Hyatt Incheon, 208 Yeongjonghaean-ro 321beon-gil, Jung-gu, Incheon 22382, South Korea",
           "mapQuery": "Grand Hyatt Incheon Airport Hotel",
           "detail": "No breakfast included at Nest Hotel Incheon.\n\nOptions:\n- Nest Hotel Incheon restaurant: À la carte (expensive, ₩30,000–50,000pp)\n- ICN T2 airside: Multiple options from 06:00 including Korean restaurant, café, bakery. Far cheaper.\n\nRecommendation: Quick hotel coffee, then eat airside after check-in."
