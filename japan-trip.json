@@ -419,6 +419,15 @@
         },
         {
           "time": "14:00",
+          "activity": "Kappabashi — Kitchen Town",
+          "status": "planning",
+          "notes": "10 min walk from Senso-ji area. Tokyo's wholesale kitchen equipment district — knives, ceramics, plastic food models (sampuru). ⚠ Most shops close 17:00–17:30 — arrive early.",
+          "address": "Kappabashi-dori, Taito City, Tokyo",
+          "mapQuery": "Kappabashi Kitchen Town Tokyo",
+          "detail": "Kappabashi-dori (合羽橋道具街) — a 200m street of around 170 specialist shops selling professional kitchen equipment.\n\nWhat to look for:\n- Sampuru (食品サンプル): The plastic food models used in Japanese restaurant windows. Shops here sell individual pieces — a bowl of ramen, a sushi set, a cream puff. Iconic, unusual gifts that pack flat.\n- Japanese knives: Professional-grade chef knives at better prices than tourist areas. Globals, Masamoto, Aritsugu. Shops will sharpen on the spot.\n- Ceramics and lacquerware: Proper Japanese tableware at wholesale prices — bowls, sake sets, bento boxes.\n- Café equipment: Coffee geeks will find specialist roasters and pour-over equipment.\n\nPractical: Most shops accept card. Tax-free with passport on purchases over ¥5,000.\nLocation: 10 min walk north from Senso-ji / Kaminarimon Gate."
+        },
+        {
+          "time": "15:30",
           "activity": "Senso-ji Temple, Asakusa",
           "status": "planning",
           "notes": "Oldest Tokyo temple (645 AD). Kaminarimon Gate, side streets to beat crowds. Free entry.",
@@ -427,21 +436,12 @@
           "detail": "Senso-ji Temple (浅草寺) — Asakusa\nAccess: Tokyo Metro Ginza Line from Shibuya → Asakusa (30 min, ¥260). Entry: Free\n\nKaminarimon Gate: The enormous red lantern gate is iconic. Nakamise-dori (souvenir street) leads to the main hall.\nThe main hall: Wave incense smoke over yourself for good health. ¥5 coin for a prayer.\nOmikuji: Fortune papers ¥100 — if the fortune is bad, tie it to the wire rack.\n\nBeat the crowds: Walk left or right of main Nakamise into the side alleys — same temple, fraction of the tourists. The five-storey pagoda is particularly peaceful.\nNearby: Asakusa Culture Tourist Information Centre (opposite main gate) — free 8th floor observation deck with great views."
         },
         {
-          "time": "15:30",
+          "time": "17:00",
           "activity": "Nakamise-dori shopping street · Asakusa backstreets",
           "status": "planning",
           "notes": "Leading up to Senso-ji — 250m of traditional craft stalls, snacks (ningyo-yaki, senbei), souvenirs. Then explore the smaller alleys behind the temple for less touristy craft shops.",
           "address": "Nakamise-dori, Asakusa, Taito City, Tokyo",
           "mapQuery": "Nakamise-dori Asakusa Tokyo"
-        },
-        {
-          "time": "16:30",
-          "activity": "Kappabashi — Kitchen Town",
-          "status": "planning",
-          "notes": "10 min walk from Senso-ji. Tokyo's wholesale kitchen equipment district — a full street of professional cookware shops, Japanese knives, ceramics, lacquerware and the famous plastic food models (sampuru). Free to explore. Excellent for gifts and genuinely fascinating as a cultural street.",
-          "address": "Kappabashi-dori, Taito City, Tokyo",
-          "mapQuery": "Kappabashi Kitchen Town Tokyo",
-          "detail": "Kappabashi-dori (合羽橋道具街) — a 200m street of around 170 specialist shops selling professional kitchen equipment.\n\nWhat to look for:\n- Sampuru (食品サンプル): The plastic food models used in Japanese restaurant windows. Shops here sell individual pieces — a bowl of ramen, a sushi set, a cream puff. Iconic, unusual gifts that pack flat.\n- Japanese knives: Professional-grade chef knives at better prices than tourist areas. Globals, Masamoto, Aritsugu. Shops will sharpen on the spot.\n- Ceramics and lacquerware: Proper Japanese tableware at wholesale prices — bowls, sake sets, bento boxes.\n- Café equipment: Coffee geeks will find specialist roasters and pour-over equipment.\n\nPractical: Most shops accept card. Tax-free with passport on purchases over ¥5,000.\nLocation: 10 min walk north from Senso-ji / Kaminarimon Gate."
         },
         {
           "time": "18:45",
@@ -1324,8 +1324,8 @@
         {
           "time": "18:30",
           "activity": "Dinner — Gion district",
-          "status": "booked",
-          "notes": "⚠ BOOK NOW — Saturday in Gion during cherry blossom season fills weeks ahead. Tempura Endo or walk Hanamikoji.",
+          "status": "bookahead",
+          "notes": "⚠ Not yet booked — Sat 11 Apr is peak cherry blossom season, book ASAP. Gion/Hanamikoji area. Try Tableall or Tablecheck for kaiseki or good izakaya.",
           "address": "Gion District, Higashiyama Ward, Kyoto 605-0073, Japan",
           "mapQuery": "Gion District Kyoto Hanamikoji"
         },
@@ -1565,60 +1565,30 @@
     {
       "day": "Day 10",
       "date": "2026-04-13",
-      "title": "Kyoto — North Kyoto + Miyako Odori",
+      "title": "Kyoto — Fushimi Inari · Miyako Odori",
       "location": "Kyoto",
       "items": [
         {
-          "time": "08:30",
+          "time": "07:00",
           "activity": "Breakfast — Mitsui Garden Hotel",
-          "notes": "Hotel breakfast. Kinkaku-ji and Ryoan-ji this morning, Miyako Odori this afternoon.",
+          "notes": "Early start — Fushimi Inari morning. Quick breakfast before heading to Kyoto Station.",
           "status": "included"
         },
         {
-          "time": "09:00",
-          "activity": "Bus to Kinkaku-ji",
-          "notes": "Kyoto City Bus 205 from Kawaramachi Shijo → Kinkaku-ji-michi. ~40 min, ¥230pp. Or taxi ~20 min, ~¥2,000.",
-          "cost": 920,
+          "time": "08:00",
+          "activity": "Fushimi Inari — 10,000 Torii Gates",
           "status": "planning",
-          "mapQuery": "Kinkaku-ji Golden Pavilion Kyoto",
-          "detail": "From Mitsui Garden Hotel:\nOption 1: Kyoto City Bus 205 from Shijo-Kawaramachi stop → Kinkaku-ji-michi. ~40 min, ¥230pp.\nOption 2: Taxi from hotel — ~20 min, ~¥2,000 total. Easier with the family.\n\nKinkaku-ji is in northwest Kyoto — no direct train line, so bus or taxi is the way."
+          "notes": "JR Nara Line from Kyoto Station → Inari Station (5 mins, ¥150). Go early — gates are quiet before 09:00. Allow 1.5–2 hrs for the lower circuit. Free entry.",
+          "address": "Fushimi Inari Taisha, 68 Fukakusa Yabunouchicho, Fushimi Ward, Kyoto",
+          "mapQuery": "Fushimi Inari Taisha Kyoto",
+          "detail": "Fushimi Inari Taisha (伏見稲荷大社)\nAccess: JR Nara Line from Kyoto Station → Inari Station (2 stops, ¥150, 5 mins). Shrine is 2 min walk.\nEntry: Free, open 24hrs\n\nThousands of vermilion torii gates winding up Mt. Inari. The most iconic section (Senbon Torii) takes 20–30 mins. Full circuit to the summit and back is 2–3 hrs.\n\n⚠ Peak cherry blossom season — 08:00 start gives you the gates in morning light with minimal crowds. By 10:00 it gets very busy.\n\nRecommended: Walk to Yotsutsuji intersection (~40 mins up) — panoramic view over Kyoto. The upper mountain is quieter and more atmospheric.\n\nWear comfortable shoes — all steps and uneven stone."
         },
         {
-          "time": "09:30",
-          "activity": "Kinkaku-ji — Golden Pavilion",
-          "notes": "One of Japan's most iconic sights. Gold-leaf covered pavilion reflected in the mirror pond. ¥500pp. Allow 45 min.",
-          "cost": 2000,
+          "time": "10:00",
+          "activity": "Return to central Kyoto — Nishiki Market",
           "status": "planning",
-          "address": "Kinkaku-ji, 1 Kinkakujicho, Kita Ward, Kyoto 603-8361, Japan",
-          "mapQuery": "Kinkaku-ji Golden Pavilion Kyoto",
-          "detail": "Kinkaku-ji (金閣寺) — Temple of the Golden Pavilion\nEntry: ¥500pp (adults)\nHours: 09:00–17:00\n\nOriginally built in 1397 as a retirement villa for Shogun Ashikaga Yoshimitsu. The top two floors are entirely covered in gold leaf. The reflection in the mirror pond (Kyoko-chi) is the classic photo.\n\nThe current structure is a 1955 reconstruction — the original was burned down by a novice monk in 1950 (the subject of Mishima Yukio's famous novel 'The Temple of the Golden Pavilion').\n\nTip: The garden circuit path takes 30–40 min. Best photos from the first viewpoint immediately after entering."
-        },
-        {
-          "time": "10:30",
-          "activity": "Ryoan-ji — famous rock garden",
-          "notes": "10 min walk from Kinkaku-ji. Japan's most celebrated Zen rock garden — 15 stones on raked white gravel. ¥600pp. Allow 30–40 min.",
-          "cost": 2400,
-          "status": "planning",
-          "address": "Ryoan-ji, 13 Ryoanji Goryonoshitacho, Ukyo Ward, Kyoto 616-8001, Japan",
-          "mapQuery": "Ryoan-ji Temple Kyoto",
-          "detail": "Ryoan-ji (龍安寺) — Temple of the Peaceful Dragon\nEntry: ¥600pp (adults)\nHours: 08:00–17:00 (Mar–Nov)\n\n15 rocks arranged on raked white gravel — Japan's most famous Zen garden (karesansui). Created around 1500, the arrangement is designed so you can never see all 15 stones from any single vantage point.\n\nThe temple also has a beautiful mirror pond (Kyoyochi) surrounded by cherry and maple trees — often overlooked by visitors who only see the rock garden.\n\nTip: Sit on the wooden veranda for 5–10 minutes. The garden changes character as your eyes adjust."
-        },
-        {
-          "time": "11:30",
-          "activity": "Nishiki Market — lunch & street food",
-          "notes": "Bus or taxi back to central Kyoto. Nishiki Market ('Kyoto's Kitchen') — 400m covered arcade. Pickles, fresh tofu, matcha sweets, grilled seafood. Perfect for grazing lunch.",
-          "cost": 8000,
-          "status": "planning",
-          "mapQuery": "Nishiki Market Kyoto",
-          "address": "Nishiki Market, Nishikikoji-dori, Nakagyo Ward, Kyoto 604-8054, Japan",
-          "detail": "Nishiki Market (錦市場) — 'Kyoto's Kitchen'\nA 400m covered shopping arcade with 130+ shops and stalls.\n\nHighlights:\n- Aritsugu: Kyoto's most famous knife shop (est. 1560). Serious knives, serious prices.\n- Nishiki Tenmangu Shrine: Tiny shrine at the east end with a distinctive stone torii\n- Fresh yuba (tofu skin): Kyoto specialty — creamy, delicate, nothing like packaged versions\n- Pickles (tsukemono): Kyoto is Japan's pickle capital. Dozens of varieties to sample.\n- Dango (rice dumplings), tamagoyaki (rolled omelette), fresh matcha everything.\n\nBest approach: Walk end to end first, then circle back to buy. Gets busy after 11:30."
-        },
-        {
-          "time": "13:00",
-          "activity": "Lunch near Gion",
-          "notes": "Light lunch before the performance. Plenty of options within 5 min of hotel on Shijo-dori.",
-          "cost": 6000,
-          "status": "planning"
+          "notes": "JR back to Kyoto Station, then walk or subway to Nishiki Market. Browse and graze — tamagoyaki skewers, pickles, tofu donuts. Lunch from the stalls before heading to Gion for Miyako Odori.",
+          "mapQuery": "Nishiki Market Kyoto"
         },
         {
           "time": "13:30",
@@ -1642,12 +1612,6 @@
           "notes": "Walk Hanamikoji Street after the performance. Machiya townhouses, paper lanterns. Geiko and maiko visible on their way to evening engagements.",
           "status": "free",
           "mapQuery": "Hanamikoji Street, Gion, Kyoto"
-        },
-        {
-          "time": "17:00",
-          "activity": "Nishiki Market + Teramachi Arcade",
-          "notes": "Final stroll through Kyoto's covered markets. Teramachi has excellent knife and ceramics shops. Last chance for Kyoto-specific gifts.",
-          "status": "free"
         },
         {
           "time": "19:30",
@@ -1682,12 +1646,13 @@
           "detail": "Final breakfast at Mitsui Garden Hotel. Pack everything — checkout is 10:30.\nThis is your last morning in Kyoto. A short optional tea ceremony (09:30) could fit if you want one final cultural experience before Osaka."
         },
         {
-          "time": "09:30",
-          "activity": "⭐ Traditional Tea Ceremony (optional)",
-          "status": "optional",
-          "notes": "90 min experience. Multiple operators in Kyoto. Book in advance.",
+          "time": "09:00",
+          "activity": "⭐ Traditional Tea Ceremony — farewell Kyoto morning",
+          "status": "bookahead",
+          "notes": "⚠ Book ahead — Camellia Flower Teahouse (tea-kyoto.com/reservation/flower), Tea Ceremony Nagomi (kyoto-nagomi-tea.com), or En tea ceremony. 09:00–10:15. Final Kyoto experience before checkout.",
           "address": "Camellia Tea Experience, 184-6 Shimogawaracho, Higashiyama-ku, Kyoto 605-0814, Japan",
-          "mapQuery": "tea ceremony Kyoto"
+          "mapQuery": "Tea Ceremony Kyoto",
+          "detail": "Standalone tea ceremony — Kyoto farewell morning\n\nVenues to book (all near central Kyoto):\n• Camellia Flower Teahouse — tea-kyoto.com/reservation/flower\n• Tea Ceremony Nagomi — kyoto-nagomi-tea.com\n• En Tea Ceremony\n• Urasenke Foundation (most authentic) — urasenke.or.jp\n\nAllow 60–75 mins. Most offer kimono/yukata dressing as an add-on (¥1,500–2,000pp extra).\n\nNote: The Miyako Odori on Mon 13 Apr includes a brief pre-show matcha service — this is a completely separate full seated ceremony experience.\n\nBest slot: 09:00 start, finished by 10:15, plenty of time to check out at 10:30 and travel to Osaka."
         },
         {
           "time": "10:30",
@@ -1872,8 +1837,8 @@
         {
           "time": "19:30",
           "activity": "✈️ Asiana OZ113 online check-in — opens now",
-          "status": "planning",
-          "notes": "Check-in opens 48hrs before Fri 17 Apr 19:25 departure = now (Wed 15 Apr 19:25 JST). Use flyasiana.com or Asiana app. PNR: D2MKD6. Check in all 4: Andy (9882489958593), Sarah (9882489958594), Jack (9882489958595), Charlie (9882489958596)."
+          "status": "reminder",
+          "notes": "Check-in opens now (48hrs before 19:25 departure). Do on your phone — takes 2 mins. Can do at dinner."
         },
         {
           "time": "16:00",
@@ -2111,8 +2076,8 @@
         {
           "time": "19:30",
           "activity": "Final Japan dinner",
-          "status": "booked",
-          "notes": "⚠ BOOK AHEAD. Osaka is Japan's food capital — make this one count.",
+          "status": "bookahead",
+          "notes": "⚠ Not yet confirmed. Final dinner in Japan — Osaka Namba area. Book via Tableall, Tablecheck, or hotel concierge. Yakiniku, kaiseki, or omakase sushi for a memorable last night.",
           "address": "Candeo Hotels Osaka The Tower, 5-2-28 Shibata, Kita-ku, Osaka 530-0012, Japan",
           "mapQuery": "Candeo Hotels Osaka The Tower",
           "detail": "Final dinner in Japan — make it exceptional.\n\nOsaka is the right city for a memorable last dinner. Options:\n\nKobe beef experience: Certified Kobe beef restaurant. ¥8,000–15,000pp. Look for the official Kobe beef certification mark.\n\nHigh-end sushi (omakase): Counter omakase with a skilled chef making each piece in front of you. ¥8,000–15,000pp. Book well ahead.\n\nFarewell izakaya crawl: 2–3 excellent izakayas in Dotonbori, each for 1–2 dishes and a drink. Total ~¥4,000pp but memorable.\n\nBook via hotel concierge or Tablecheck."
