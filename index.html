@@ -54,7 +54,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .day-card.today-day .day-num{color:var(--jade);}
 .today-pill{font-size:9px;font-weight:700;background:rgba(74,158,142,0.2);color:var(--jade);border:1px solid rgba(74,158,142,0.4);padding:2px 7px;border-radius:8px;letter-spacing:0.5px;text-transform:uppercase;margin-left:6px;}
 /* NAV */
-.nav-tabs{display:flex;background:var(--ink2);border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none;justify-content:flex-start;width:100%;max-width:100vw;}
+.nav-tabs{display:flex;background:var(--ink2);border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none;justify-content:flex-start;width:100%;max-width:100vw;position:sticky;top:46px;z-index:99;}
 @media(min-width:700px){.nav-tabs{justify-content:center;}}
 .nav-tabs::-webkit-scrollbar{display:none;}
 .nav-tab{flex-shrink:0;padding:12px 14px;font-size:11.5px;font-weight:500;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all 0.2s;white-space:nowrap;font-family:inherit;background:none;border-top:none;border-left:none;border-right:none;}
@@ -197,21 +197,21 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
 .link-name{font-size:13px;font-weight:500;color:var(--white);}
 .link-desc{font-size:11px;color:var(--muted);margin-top:1px;}
 .link-arrow{margin-left:auto;color:var(--blossom);font-size:14px;flex-shrink:0;}
-/* CURRENCY */
-.currency-widget{background:var(--card-bg);border:1px solid var(--border);border-radius:16px;padding:20px;margin-top:12px;}
-.currency-title{font-size:13px;font-weight:600;margin-bottom:16px;color:var(--white);}
-.currency-row{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
-.currency-input{flex:1;background:var(--ink2);border:1px solid var(--border);color:var(--white);font-size:18px;font-weight:600;padding:10px 14px;border-radius:10px;font-family:inherit;outline:none;transition:border-color 0.2s;-moz-appearance:textfield;}
-.currency-input::-webkit-outer-spin-button,.currency-input::-webkit-inner-spin-button{-webkit-appearance:none;}
-.currency-input:focus{border-color:var(--blossom);}
-.currency-label{font-size:13px;font-weight:600;min-width:28px;color:var(--muted);}
-.currency-result{font-size:24px;font-weight:700;color:var(--blossom);font-family:'Noto Serif JP',serif;}
-.currency-swap{background:rgba(232,130,154,0.12);border:1px solid rgba(232,130,154,0.25);color:var(--blossom);padding:8px 16px;border-radius:20px;cursor:pointer;font-size:12px;font-weight:600;font-family:inherit;transition:all 0.2s;margin-top:4px;}
-.currency-swap:hover{background:rgba(232,130,154,0.25);}
-.currency-rate{font-size:11px;color:var(--muted);margin-top:10px;padding-top:10px;border-top:1px solid var(--item-border);}
-.quick-amounts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;}
-.quick-btn{font-size:11px;font-weight:600;padding:5px 12px;background:var(--card-bg);border:1px solid var(--border);color:var(--muted);border-radius:14px;cursor:pointer;font-family:inherit;transition:all 0.2s;}
-.quick-btn:hover{border-color:var(--blossom);color:var(--blossom);}
+/* CURRENCY BAR (sticky compact) */
+.currency-bar{position:sticky;top:0;z-index:100;background:var(--ink);border-bottom:1px solid var(--border);padding:6px 16px;display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;}
+.currency-bar input{width:80px;background:var(--ink2);border:1px solid var(--border);color:var(--white);font-size:15px;font-weight:600;padding:5px 8px;border-radius:8px;font-family:inherit;outline:none;-moz-appearance:textfield;}
+.currency-bar input::-webkit-outer-spin-button,.currency-bar input::-webkit-inner-spin-button{-webkit-appearance:none;}
+.currency-bar input:focus{border-color:var(--blossom);}
+.currency-bar .cb-label{font-size:12px;font-weight:600;color:var(--muted);}
+.currency-bar .cb-arrow{font-size:14px;color:var(--muted);}
+.currency-bar .cb-result{font-size:15px;font-weight:700;color:var(--blossom);font-family:'Noto Serif JP',serif;}
+.currency-bar .cb-swap{background:rgba(232,130,154,0.12);border:1px solid rgba(232,130,154,0.25);color:var(--blossom);padding:3px 10px;border-radius:14px;cursor:pointer;font-size:11px;font-weight:600;font-family:inherit;transition:all 0.2s;}
+.currency-bar .cb-swap:hover{background:rgba(232,130,154,0.25);}
+.currency-bar .cb-rate{font-size:10px;color:var(--muted);}
+.currency-bar .cb-quick{display:flex;gap:5px;width:100%;padding-top:4px;justify-content:center;}
+.currency-bar .cb-quick button{font-size:10px;font-weight:600;padding:2px 8px;background:var(--card-bg);border:1px solid var(--border);color:var(--muted);border-radius:10px;cursor:pointer;font-family:inherit;transition:all 0.2s;}
+.currency-bar .cb-quick button:hover{border-color:var(--blossom);color:var(--blossom);}
+.currency-bar .cb-quick .cb-qlabel{font-size:10px;color:var(--muted);align-self:center;}
 /* EMERGENCY TAB */
 .emergency-card{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:10px;}
 .emergency-card.urgent{border-color:rgba(224,80,80,0.4);background:rgba(224,80,80,0.05);}
@@ -292,6 +292,23 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
     <button class="refresh-btn" onclick="loadData()">↻ Refresh</button>
   </div>
 </div>
+<div class="currency-bar" id="currency-bar">
+  <input type="number" id="cb-input" value="1000" oninput="cbConvert()" min="0">
+  <span class="cb-label" id="cb-from">¥</span>
+  <span class="cb-arrow">→</span>
+  <span class="cb-result" id="cb-result">...</span>
+  <span class="cb-label" id="cb-to">£</span>
+  <button class="cb-swap" onclick="cbSwap()">⇄</button>
+  <span class="cb-rate currency-rate-live">...</span>
+  <div class="cb-quick" id="cb-quick">
+    <span class="cb-qlabel">Quick:</span>
+    <button onclick="cbSet(500)">¥500</button>
+    <button onclick="cbSet(1000)">¥1k</button>
+    <button onclick="cbSet(5000)">¥5k</button>
+    <button onclick="cbSet(10000)">¥10k</button>
+    <button onclick="cbSet(50000)">¥50k</button>
+  </div>
+</div>
 <div class="nav-tabs">
   <button class="nav-tab active" onclick="switchTab('overview',this)">Overview</button>
   <button class="nav-tab" onclick="switchTab('days',this)">Day by Day</button>
@@ -300,7 +317,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
   <button class="nav-tab" onclick="switchTab('booked',this)">✅ Booked</button>
   <button class="nav-tab" onclick="switchTab('map',this)">🗺 Maps</button>
   <button class="nav-tab" onclick="switchTab('weather',this)">🌤 Weather</button>
-  <button class="nav-tab" onclick="switchTab('checklist',this)">Checklist</button>
   <button class="nav-tab" onclick="switchTab('links',this)">🔗 Links</button>
   <button class="nav-tab" onclick="switchTab('reference',this)">📖 Reference</button>
 </div>
@@ -312,7 +328,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
   <div id="tab-booked"    style="display:none"></div>
   <div id="tab-map"       style="display:none"></div>
   <div id="tab-weather"   style="display:none"></div>
-  <div id="tab-checklist" style="display:none"></div>
   <div id="tab-links"     style="display:none"></div>
   <div id="tab-reference" style="display:none"></div>
 </div>
@@ -360,8 +375,7 @@ async function fetchLiveRate(){
       YEN_RATE_LIVE=true;
       YEN_RATE_TIME=d.date||'';
       updateRateLabels();
-      ovConvert();
-      if(typeof convertCurrency==='function') convertCurrency();
+      cbConvert();
     }
   }catch(e){console.warn('Currency fetch failed, using fallback ¥'+YEN_RATE,e);}
 }
@@ -370,6 +384,7 @@ function updateRateLabels(){
   document.querySelectorAll('.currency-rate-live').forEach(el=>{el.textContent=tag;});
 }
 fetchLiveRate();
+cbConvert();
 
 /* ── Don't Forget classification ── */
 const DONT_FORGET_TYPES=['admin','prep','packing','tech','practical','note'];
@@ -480,12 +495,12 @@ async function loadData(){
   }
   renderOverview();
   renderDays();
-  renderChecklist();
   updateRateLabels();
+  cbConvert();
   const todayIdx=getTodayIndex();
   const tomorrowIdx=getTomorrowIndex();
   if(todayIdx>=0||tomorrowIdx>=0){
-    switchTab('days',document.querySelector('[data-tab="days"]'));
+    switchTab('days',document.querySelectorAll('.nav-tab')[1]);
   }
 }
 /* ═══════════════════════════════════════════
@@ -510,26 +525,6 @@ function renderOverview(){
       <div class="stat-card"><div class="stat-num">5</div><div class="stat-label">Cities</div></div>
       <div class="stat-card"><div class="stat-num">${totalItems||'60+'}</div><div class="stat-label">Activities</div></div>
     </div>
-    <div class="section-title">¥ / £ Quick Converter</div>
-    <div class="currency-widget" style="margin-bottom:16px;">
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
-        <input class="currency-input" type="number" id="ov-currency-input" value="1000" oninput="ovConvert()" min="0" style="max-width:130px;">
-        <span class="currency-label" id="ov-from-label">¥</span>
-        <span style="font-size:18px;color:var(--muted)">→</span>
-        <span class="currency-result" id="ov-result">£5.26</span>
-        <span class="currency-label" id="ov-to-label">£</span>
-        <button class="currency-swap" style="margin-top:0;" onclick="ovSwap()">⇄</button>
-      </div>
-      <div class="quick-amounts" id="ov-quick">
-        <span style="font-size:11px;color:var(--muted);align-self:center;">Quick:</span>
-        <button class="quick-btn" onclick="ovSet(500)">¥500</button>
-        <button class="quick-btn" onclick="ovSet(1000)">¥1,000</button>
-        <button class="quick-btn" onclick="ovSet(5000)">¥5,000</button>
-        <button class="quick-btn" onclick="ovSet(10000)">¥10,000</button>
-        <button class="quick-btn" onclick="ovSet(50000)">¥50,000</button>
-      </div>
-      <div class="currency-rate currency-rate-live">Loading live rate…</div>
-    </div>
     <div class="section-title">Accommodation</div>
     ${hotels.map((h,i)=>`<a class="hotel-card" href="${h.url}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;cursor:pointer;">
       <div class="hotel-icon">${icons[i]}</div>
@@ -546,7 +541,6 @@ function renderOverview(){
       <div class="legend-item"><div class="legend-dot" style="background:#9e6ec9"></div>Optional</div>
       <div class="legend-item"><div class="legend-dot" style="background:#7ab87a"></div>Free</div>
     </div>`;
-  setTimeout(ovConvert,50);
 }
 /* ═══════════════════════════════════════════
    DAYS TAB
@@ -1152,82 +1146,44 @@ function renderLinks(){
   convertCurrency();
   updateRateLabels();
 }
-function ovConvert(){
-  const input=parseFloat(document.getElementById('ov-currency-input')?.value)||0;
-  const result=document.getElementById('ov-result');
+/* ── Compact currency bar functions ── */
+function cbConvert(){
+  const input=parseFloat(document.getElementById('cb-input')?.value)||0;
+  const result=document.getElementById('cb-result');
   if(!result) return;
-  if(window._ovMode!=='gbpToYen'){
+  if(currencyMode==='yenToGbp'){
     result.textContent='£'+(input/YEN_RATE).toFixed(2);
   }else{
     result.textContent='¥'+(input*YEN_RATE).toLocaleString('en-GB',{maximumFractionDigits:0});
   }
 }
-function ovSwap(){
-  window._ovMode=(window._ovMode!=='gbpToYen')?'gbpToYen':'yenToGbp';
-  const fl=document.getElementById('ov-from-label');
-  const tl=document.getElementById('ov-to-label');
-  const qa=document.getElementById('ov-quick');
-  if(window._ovMode!=='gbpToYen'){
+function cbSwap(){
+  currencyMode=currencyMode==='yenToGbp'?'gbpToYen':'yenToGbp';
+  const fl=document.getElementById('cb-from');
+  const tl=document.getElementById('cb-to');
+  const qa=document.getElementById('cb-quick');
+  if(currencyMode==='yenToGbp'){
     if(fl)fl.textContent='¥';if(tl)tl.textContent='£';
-    if(qa)qa.innerHTML=`<span style="font-size:11px;color:var(--muted);align-self:center;">Quick:</span>
-      <button class="quick-btn" onclick="ovSet(500)">¥500</button>
-      <button class="quick-btn" onclick="ovSet(1000)">¥1,000</button>
-      <button class="quick-btn" onclick="ovSet(5000)">¥5,000</button>
-      <button class="quick-btn" onclick="ovSet(10000)">¥10,000</button>
-      <button class="quick-btn" onclick="ovSet(50000)">¥50,000</button>`;
+    if(qa)qa.innerHTML=`<span class="cb-qlabel">Quick:</span>
+      <button onclick="cbSet(500)">¥500</button><button onclick="cbSet(1000)">¥1k</button>
+      <button onclick="cbSet(5000)">¥5k</button><button onclick="cbSet(10000)">¥10k</button>
+      <button onclick="cbSet(50000)">¥50k</button>`;
   }else{
     if(fl)fl.textContent='£';if(tl)tl.textContent='¥';
-    if(qa)qa.innerHTML=`<span style="font-size:11px;color:var(--muted);align-self:center;">Quick:</span>
-      <button class="quick-btn" onclick="ovSet(5)">£5</button>
-      <button class="quick-btn" onclick="ovSet(10)">£10</button>
-      <button class="quick-btn" onclick="ovSet(20)">£20</button>
-      <button class="quick-btn" onclick="ovSet(50)">£50</button>
-      <button class="quick-btn" onclick="ovSet(100)">£100</button>`;
+    if(qa)qa.innerHTML=`<span class="cb-qlabel">Quick:</span>
+      <button onclick="cbSet(5)">£5</button><button onclick="cbSet(10)">£10</button>
+      <button onclick="cbSet(20)">£20</button><button onclick="cbSet(50)">£50</button>
+      <button onclick="cbSet(100)">£100</button>`;
   }
-  ovConvert();
+  cbConvert();
 }
-function ovSet(v){
-  const inp=document.getElementById('ov-currency-input');
-  if(inp){inp.value=v;ovConvert();}
+function cbSet(v){
+  const inp=document.getElementById('cb-input');
+  if(inp){inp.value=v;cbConvert();}
 }
-function convertCurrency(){
-  const input=parseFloat(document.getElementById('currency-input')?.value)||0;
-  const result=document.getElementById('currency-result');
-  if(!result) return;
-  if(currencyMode==='yenToGbp'){
-    result.textContent='£'+(input/YEN_RATE).toFixed(2);
-  }else{
-    result.textContent='¥'+(input*YEN_RATE).toLocaleString('en-GB',{maximumFractionDigits:0});
-  }
-}
-function swapCurrency(){
-  currencyMode=currencyMode==='yenToGbp'?'gbpToYen':'yenToGbp';
-  const fl=document.getElementById('currency-from-label');
-  const tl=document.getElementById('currency-to-label');
-  const qa=document.getElementById('quick-amounts');
-  if(currencyMode==='yenToGbp'){
-    if(fl) fl.textContent='¥'; if(tl) tl.textContent='£';
-    if(qa) qa.innerHTML=`<span style="font-size:11px;color:var(--muted);align-self:center;">Quick:</span>
-      <button class="quick-btn" onclick="setAmount(500)">¥500</button>
-      <button class="quick-btn" onclick="setAmount(1000)">¥1,000</button>
-      <button class="quick-btn" onclick="setAmount(5000)">¥5,000</button>
-      <button class="quick-btn" onclick="setAmount(10000)">¥10,000</button>
-      <button class="quick-btn" onclick="setAmount(50000)">¥50,000</button>`;
-  }else{
-    if(fl) fl.textContent='£'; if(tl) tl.textContent='¥';
-    if(qa) qa.innerHTML=`<span style="font-size:11px;color:var(--muted);align-self:center;">Quick:</span>
-      <button class="quick-btn" onclick="setAmount(5)">£5</button>
-      <button class="quick-btn" onclick="setAmount(10)">£10</button>
-      <button class="quick-btn" onclick="setAmount(20)">£20</button>
-      <button class="quick-btn" onclick="setAmount(50)">£50</button>
-      <button class="quick-btn" onclick="setAmount(100)">£100</button>`;
-  }
-  convertCurrency();
-}
-function setAmount(v){
-  const inp=document.getElementById('currency-input');
-  if(inp){inp.value=v;convertCurrency();}
-}
+/* keep old names as aliases for fetchLiveRate callback */
+function ovConvert(){cbConvert();}
+function convertCurrency(){cbConvert();}
 /* ═══════════════════════════════════════════
    EMERGENCY TAB
 ═══════════════════════════════════════════ */
@@ -1306,7 +1262,7 @@ function toggleRefSection(id){
 /* ═══════════════════════════════════════════
    TAB SWITCHING
 ═══════════════════════════════════════════ */
-const TABS=['overview','days','search','transport','booked','map','weather','checklist','links','reference'];
+const TABS=['overview','days','search','transport','booked','map','weather','links','reference'];
 /* ═══════════════════════════════════════════
    BOOKED TAB
 ═══════════════════════════════════════════ */
