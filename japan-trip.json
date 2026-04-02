@@ -1657,15 +1657,6 @@
           "detail": "Final breakfast at Mitsui Garden Hotel. Pack everything — checkout is 10:30.\nThis is your last morning in Kyoto. A short optional tea ceremony (09:30) could fit if you want one final cultural experience before Osaka."
         },
         {
-          "time": "09:00",
-          "activity": "⭐ Traditional Tea Ceremony — farewell Kyoto morning",
-          "status": "bookahead",
-          "notes": "⚠ Book ahead — Camellia Flower Teahouse (tea-kyoto.com/reservation/flower), Tea Ceremony Nagomi (kyoto-nagomi-tea.com), or En tea ceremony. 09:00–10:15. Final Kyoto experience before checkout.",
-          "address": "Camellia Tea Experience, 184-6 Shimogawaracho, Higashiyama-ku, Kyoto 605-0814, Japan",
-          "mapQuery": "Tea Ceremony Kyoto",
-          "detail": "Standalone tea ceremony — Kyoto farewell morning\n\nVenues to book (all near central Kyoto):\n• Camellia Flower Teahouse — tea-kyoto.com/reservation/flower\n• Tea Ceremony Nagomi — kyoto-nagomi-tea.com\n• En Tea Ceremony\n• Urasenke Foundation (most authentic) — urasenke.or.jp\n\nAllow 60–75 mins. Most offer kimono/yukata dressing as an add-on (¥1,500–2,000pp extra).\n\nNote: The Miyako Odori on Mon 13 Apr includes a brief pre-show matcha service — this is a completely separate full seated ceremony experience.\n\nBest slot: 09:00 start, finished by 10:15, plenty of time to check out at 10:30 and travel to Osaka."
-        },
-        {
           "time": "10:30",
           "activity": "Check out — Mitsui Garden Hotel Kyoto",
           "status": "planning",
@@ -1694,7 +1685,16 @@
           "url": "https://www.expedia.co.uk/trips/72068515678580"
         },
         {
-          "time": "14:30",
+          "time": "14:00",
+          "activity": "⭐ Tea Ceremony Experience — Osaka Doutonbori — BOOKED",
+          "status": "booked",
+          "notes": "✅ BOOKED · Ref TS-88310234 · 4 adults · ¥16,800 (¥4,200pp) · Paid · 45 mins · Arrive 10 mins early (13:50). English-speaking instructor. Shared plan.",
+          "address": "Dotonbori, Namba/Shinsaibashi, Chuo-ku, Osaka, Japan",
+          "mapQuery": "Tea Ceremony Osaka Dotonbori",
+          "detail": "Booking ref: TS-88310234\nLead traveller: Andrew Evans\nDate: Tue 14 Apr 2026 · 14:00 (2:00 PM)\nParticipants: 4 adults\nCost: ¥16,800 (4 × ¥4,200) inc. ¥1,528 tax · Paid\nDuration: 45 minutes\nVenue: Tea Ceremony Experience in Osaka Doutonbori, Namba/Shinsaibashi district\n\nWhat's included: Matcha tea, bowl, tea sweets. English-speaking instructor with 10+ years experience.\nExperience: Learn the culture and history, watch Otemae demonstration, make your own matcha, enjoy tea and sweets.\n\nArrive by 13:50 (10 mins before start).\nChildren welcome — caffeine-free matcha milk available.\nNot wheelchair accessible.\nPublic transportation nearby.\n\nConfirmation email to follow."
+        },
+        {
+          "time": "15:00",
           "activity": "Dotonbori — first impressions",
           "status": "free",
           "notes": "Metro or walk south. Glico Running Man photo, Kani Doraku crab sign.",
@@ -1736,13 +1736,6 @@
           "type": "Shrine",
           "notes": "Enormous 24m vermillion torii — one of Japan's largest. Free to approach. Garden ¥1,500pp optional. 5 min from Okazaki area.",
           "mapQuery": "Heian Jingu Shrine Kyoto"
-        },
-        {
-          "title": "Tea ceremony (final Kyoto morning)",
-          "type": "Experience",
-          "notes": "Multiple operators. Camellia Tea Experience recommended — English-speaking, 75 min, near Higashiyama. Book ahead.",
-          "url": "https://www.tea-kyoto.com/",
-          "mapQuery": "tea ceremony Kyoto"
         },
         {
           "title": "Nishiki Market — last Kyoto browse",
