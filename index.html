@@ -1395,19 +1395,21 @@ function runSearch(q){
       if(hay.includes(term)) hits.push({label:`<strong>${day.label||'Day '+(di+1)}</strong> · Ideas`,text:typeof idea==='string'?idea:(idea.text||''),action:'',tag:'idea'});
     });
   });
-  // Search checklist
-  const cl=(tripData&&tripData.checklist)||{};
-  Object.entries(cl).forEach(([group,items])=>{
-    (items||[]).forEach(item=>{
-      const hay=[item.task,item.notes].filter(Boolean).join(' ').toLowerCase();
-      if(hay.includes(term)) hits.push({label:`<strong>Checklist</strong> · ${group}`,text:item.task||'',action:`switchTab('checklist',document.querySelectorAll('.nav-tab')[6]);`,tag:'checklist'});
+  // Search checklist (array of {group, items})
+  const cl=(tripData&&tripData.checklist)||[];
+  cl.forEach(function(grp){
+    const group=grp.group||'';
+    const isBooked=group.includes('DONE');
+    (grp.items||[]).forEach(function(item){
+      const hay=[item.task,item.notes,item.who,item.deadline].filter(Boolean).join(' ').toLowerCase();
+      if(hay.includes(term)){
+        if(isBooked){
+          hits.push({label:`<strong>Booked</strong>`,text:item.task||'',action:`switchTab('booked',document.querySelectorAll('.nav-tab')[5]);`,tag:'booked'});
+        } else {
+          hits.push({label:`<strong>Checklist</strong> · ${group}`,text:item.task||'',action:`switchTab('checklist',document.querySelectorAll('.nav-tab')[6]);`,tag:'checklist'});
+        }
+      }
     });
-  });
-  // Search booked
-  const booked=(tripData&&tripData.booked)||[];
-  booked.forEach(item=>{
-    const hay=[item.task,item.notes,item.ref].filter(Boolean).join(' ').toLowerCase();
-    if(hay.includes(term)) hits.push({label:`<strong>Booked</strong>`,text:item.task||'',action:`switchTab('booked',document.querySelectorAll('.nav-tab')[5]);`,tag:'booked'});
   });
   if(!hits.length){out.innerHTML='<span style="color:var(--muted)">No results for <em>'+q.replace(/</g,'&lt;')+'</em></span>';return;}
   const tagColour={itinerary:'var(--jade)',checklist:'var(--gold)',booked:'var(--blossom)',idea:'var(--muted)'};
