@@ -297,6 +297,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
   <button class="nav-tab" onclick="switchTab('tips',this)">Tips</button>
   <button class="nav-tab" onclick="switchTab('links',this)">🔗 Links</button>
   <button class="nav-tab" onclick="switchTab('emergency',this)">🆘 Emergency</button>
+  <button class="nav-tab" onclick="switchTab('search',this)">🔍 Search</button>
 </div>
 <div class="content">
   <div id="tab-overview"></div>
@@ -310,6 +311,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--ink);color:var(--white);m
   <div id="tab-tips"      style="display:none"></div>
   <div id="tab-links"     style="display:none"></div>
   <div id="tab-emergency" style="display:none"></div>
+  <div id="tab-search"    style="display:none"></div>
 </div>
 <!-- DETAIL MODAL -->
 <div class="modal-backdrop" id="detail-modal" onclick="closeDetailModal(event)">
@@ -776,9 +778,26 @@ function openDetailByIndex(i){
   if(!d) return;
   openDetailModal(d.title,d.body);
 }
+function linkifyText(text){
+  // Escape HTML entities
+  let s=text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  // Preserve line breaks
+  s=s.replace(/\n/g,'<br>');
+  // Linkify URLs (http/https)
+  s=s.replace(/(https?:\/\/[^\s<"]+)/g,'<a href="$1" target="_blank" rel="noopener" style="color:var(--jade);word-break:break-all;">$1</a>');
+  // Linkify international phone numbers e.g. +81-75-1234-5678, +44 1234 567890
+  s=s.replace(/(\+\d{1,3}[\s\-\.]?\(?\d{1,4}\)?[\s\-\.]?\d{2,4}[\s\-\.]?\d{2,4}[\s\-\.]?\d{0,4})/g,function(m){
+    const digits=m.replace(/\D/g,'');
+    if(digits.length>=10) return '<a href="tel:+'+digits+'" style="color:var(--gold);">'+m+'</a>';
+    return m;
+  });
+  // Linkify local Japanese phone numbers e.g. 075-123-4567, 0120-123-456
+  s=s.replace(/\b(0\d{1,4}[\-\s]\d{2,4}[\-\s]\d{3,4})\b/g,'<a href="tel:$1" style="color:var(--gold);">$1</a>');
+  return s;
+}
 function openDetailModal(title,detail){
   document.getElementById('modal-title').textContent=title;
-  document.getElementById('modal-body').textContent=detail;
+  document.getElementById('modal-body').innerHTML=linkifyText(detail);
   document.getElementById('detail-modal').classList.add('open');
   document.body.style.overflow='hidden';
 }
@@ -1263,7 +1282,7 @@ function renderEmergency(){
 /* ═══════════════════════════════════════════
    TAB SWITCHING
 ═══════════════════════════════════════════ */
-const TABS=['overview','days','transport','map','weather','booked','checklist','phrases','tips','links','emergency'];
+const TABS=['overview','days','transport','map','weather','booked','checklist','phrases','tips','links','emergency','search'];
 /* ═══════════════════════════════════════════
    BOOKED TAB
 ═══════════════════════════════════════════ */
@@ -1336,11 +1355,78 @@ function renderBooked(){
     ${cards}
   </div>`;
 }
+/* ═══════════════════════════════════════════
+   SEARCH TAB
+═══════════════════════════════════════════ */
+function renderSearch(){
+  document.getElementById('tab-search').innerHTML=`
+    <div style="padding:12px 0 6px;">
+      <div class="section-title">🔍 Search the trip</div>
+      <input id="search-input" type="search" placeholder="Search activities, bookings, notes…"
+        oninput="runSearch(this.value)"
+        style="width:100%;box-sizing:border-box;padding:10px 14px;border-radius:12px;border:1px solid var(--border);
+               background:var(--ink2);color:var(--white);font-size:14px;margin-bottom:12px;outline:none;">
+      <div id="search-results" style="font-size:12px;color:var(--muted);padding:4px 0;">Start typing to search…</div>
+    </div>`;
+  setTimeout(()=>{const el=document.getElementById('search-input');if(el)el.focus();},100);
+}
+function runSearch(q){
+  const out=document.getElementById('search-results');
+  if(!q||q.trim().length<2){out.innerHTML='<span style="color:var(--muted)">Start typing to search…</span>';return;}
+  const term=q.trim().toLowerCase();
+  const hits=[];
+  // Search itinerary days
+  const days=(tripData&&tripData.days)||[];
+  days.forEach((day,di)=>{
+    (day.items||[]).forEach(item=>{
+      const hay=[item.activity,item.notes,item.detail,item.time].filter(Boolean).join(' ').toLowerCase();
+      if(hay.includes(term)){
+        hits.push({
+          label:`<strong>${day.label||'Day '+(di+1)}</strong> · ${day.title||day.location||''}`,
+          text:`${item.time?'<span style="color:var(--muted)">'+item.time+'</span> ':''}${item.activity||''}${item.notes?'<br><span style="color:var(--muted);font-size:11px;">'+item.notes+'</span>':''}`,
+          action:`switchTab('days',document.querySelectorAll('.nav-tab')[1]);setTimeout(()=>{document.querySelectorAll('.day-card.open').forEach(c=>c.classList.remove('open'));const c=document.getElementById('day-${di}');if(c){c.classList.add('open');c.scrollIntoView({behavior:'smooth',block:'start'});}},100);`,
+          tag:'itinerary'
+        });
+      }
+    });
+    // Search ideas / don't-forget
+    (day.ideas||[]).forEach(idea=>{
+      const hay=(typeof idea==='string'?idea:(idea.text||'')).toLowerCase();
+      if(hay.includes(term)) hits.push({label:`<strong>${day.label||'Day '+(di+1)}</strong> · Ideas`,text:typeof idea==='string'?idea:(idea.text||''),action:'',tag:'idea'});
+    });
+  });
+  // Search checklist
+  const cl=(tripData&&tripData.checklist)||{};
+  Object.entries(cl).forEach(([group,items])=>{
+    (items||[]).forEach(item=>{
+      const hay=[item.task,item.notes].filter(Boolean).join(' ').toLowerCase();
+      if(hay.includes(term)) hits.push({label:`<strong>Checklist</strong> · ${group}`,text:item.task||'',action:`switchTab('checklist',document.querySelectorAll('.nav-tab')[6]);`,tag:'checklist'});
+    });
+  });
+  // Search booked
+  const booked=(tripData&&tripData.booked)||[];
+  booked.forEach(item=>{
+    const hay=[item.task,item.notes,item.ref].filter(Boolean).join(' ').toLowerCase();
+    if(hay.includes(term)) hits.push({label:`<strong>Booked</strong>`,text:item.task||'',action:`switchTab('booked',document.querySelectorAll('.nav-tab')[5]);`,tag:'booked'});
+  });
+  if(!hits.length){out.innerHTML='<span style="color:var(--muted)">No results for <em>'+q.replace(/</g,'&lt;')+'</em></span>';return;}
+  const tagColour={itinerary:'var(--jade)',checklist:'var(--gold)',booked:'var(--blossom)',idea:'var(--muted)'};
+  out.innerHTML=`<div style="color:var(--muted);margin-bottom:8px;">${hits.length} result${hits.length===1?'':'s'}</div>`+
+    hits.map(h=>`<div onclick="${h.action}" style="background:var(--ink2);border:1px solid var(--border);border-radius:10px;padding:10px 12px;margin-bottom:8px;${h.action?'cursor:pointer;':''}" >
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+        <span style="font-size:10px;padding:2px 7px;border-radius:8px;background:${tagColour[h.tag]||'var(--muted)'};color:var(--ink);font-weight:700;">${h.tag}</span>
+        <span style="font-size:11px;color:var(--muted);">${h.label}</span>
+      </div>
+      <div style="font-size:13px;color:var(--white);line-height:1.5;">${h.text}</div>
+      ${h.action?'<div style="font-size:10px;color:var(--jade);margin-top:4px;">Tap to jump →</div>':''}
+    </div>`).join('');
+}
 function switchTab(tab,btn){
   TABS.forEach(t=>{const el=document.getElementById('tab-'+t);if(el)el.style.display=(t===tab)?'block':'none';});
   document.querySelectorAll('.nav-tab').forEach(b=>b.classList.remove('active'));
   if(btn) btn.classList.add('active');
   if(tab==='booked') renderBooked();
+  if(tab==='search') renderSearch();
 }
 /* ═══════════════════════════════════════════
    SERVICE WORKER (offline cache)
