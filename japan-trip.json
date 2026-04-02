@@ -55,28 +55,6 @@
       "title": "London → Seoul",
       "ideas": [
         {
-          "title": "Korea e-Arrival Card × 4 — complete before flying",
-          "type": "Admin",
-          "notes": "Mandatory digital arrival/customs declaration for South Korea — replaces the old paper landing card. Complete at e-arrivalcard.go.kr up to 72 hrs before arrival (earliest: Wed 1 Apr). You'll get a confirmation PDF — screenshot it. No K-ETA needed: UK passport holders are exempt until 31 Dec 2026.",
-          "url": "https://www.e-arrivalcard.go.kr"
-        },
-        {
-          "title": "Complete Visit Japan Web immigration forms",
-          "type": "Admin",
-          "notes": "Register everyone before departure to get QR codes for the fast-track electronic declaration gates at NRT (Narita). Covers both immigration pre-clearance and customs declaration — no paper forms on landing. vjw-lp.digital.go.jp · Do this for all 4 of you.",
-          "url": "https://www.vjw.digital.go.jp"
-        },
-        {
-          "title": "Download all Japan apps before leaving",
-          "type": "Prep",
-          "notes": "Tabelog, Navitime, Klook, Airalo eSIM (code ERICA20 for 20% off), Ramen Beast, Flush, Payke, KuliKuli, Japan Travel. Add Suica to Apple Wallet now — much easier from the UK."
-        },
-        {
-          "title": "Pack coin purse",
-          "type": "Packing",
-          "notes": "Japan uses coins constantly. ¥100 and ¥500 coins are the workhorses."
-        },
-        {
           "title": "Disable cellular data on landing",
           "type": "Tech",
           "notes": "Switch to your eSIM immediately at ICN. Avoid any accidental roaming on UK SIM."
