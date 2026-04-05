@@ -623,11 +623,12 @@
           "time": "16:45",
           "activity": "Yokozuna Tonkatsu Dosukoi Tanaka — Sumo Show",
           "status": "confirmed",
-          "notes": "The SUMO Show (no meal). Doors 16:45, show 17:00–18:00. Sumo demonstration by retired professional wrestlers, interactive experience (chance to step into the ring), photo session and Q&A. Two bookings of 2 seats each. 15 min from Ameyoko by metro (Toei Shinjuku Line to Kikukawa).",
+          "notes": "The SUMO Show (no meal). TUESDAY 7 APR · Doors 16:45, show 17:00–18:00. Sumo demonstration by retired professional wrestlers, interactive experience (chance to step into the ring), photo session and Q&A. Two bookings of 2 seats each. 15 min from Ameyoko by metro (Toei Shinjuku Line to Kikukawa).",
           "address": "3-1-11 Tatekawa, Sumida-ku, Tokyo",
           "mapQuery": "Yokozuna Tonkatsu Dosukoi Tanaka Sumida Tokyo",
           "detail": "Yokozuna Tonkatsu Dosukoi Tanaka (横綱とんかつ どすこい田中) — sumo entertainment venue run by a retired professional wrestler.\n\nTimetable:\n16:45 — Open for entry\n17:00 — Opening video screening\n17:10 — Sumo demonstration\n17:40 — Sumo experience (interactive)\n17:50 — Photo session & Q&A\n18:00 — End\n\nBooking 1: Reservation ID GSSFO38 · Table 6 · 2 adults · ¥24,200\nBooking 2: Reservation ID UYKE2V5 · Table 3 · 2 adults · ¥22,000\nTotal: 4 seats · ¥46,200\n\nNote: This is the show-only option — no meal included. Dinner afterwards.\nContact: info@osumo-3.com\nBooked via: sumoexperience.com\n\nManage reservation: https://www.dumbonet.com/tanaka/reserve/index1.html",
-          "url": "https://www.sumoexperience.com/"
+          "url": "https://www.sumoexperience.com/",
+          "isoDateTime": "2026-04-07T17:00:00+09:00"
         },
         {
           "time": "19:00",
